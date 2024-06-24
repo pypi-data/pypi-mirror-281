@@ -1,0 +1,14 @@
+README.md
+setup.py
+rmrag/__init__.py
+rmrag.egg-info/PKG-INFO
+rmrag.egg-info/SOURCES.txt
+rmrag.egg-info/dependency_links.txt
+rmrag.egg-info/top_level.txt
+rmrag/embedding/__init__.py
+rmrag/loaders/__init__.py
+rmrag/pipelines/__init__.py
+rmrag/pipelines/directory_into_FAISS.py
+rmrag/pipelines/response_from_faiss.py
+rmrag/text_processing/__init__.py
+rmrag/vectorstores/__init__.py
