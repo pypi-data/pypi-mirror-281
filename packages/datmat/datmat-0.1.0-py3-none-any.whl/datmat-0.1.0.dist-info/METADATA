@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: datmat
+Version: 0.1.0
+Summary: Datmat is a tool for data materalisation; it gets your data where it is, to where you need it to be.
+Home-page: https://gitlab.com/radiology/infrastructure/data-materialisation
+Author: H.C. Achterberg, M. Koek, A. Versteeg, M. Birhanu, A.G.J. Harms, I. Bocharov
+Author-email: h.achterberg@erasmusmc.nl, m.koek@erasmusmc.nl, a.versteeg@erasmusmc.nl, m.birhanu@erasmusmc.nl
+License: Apache 2.0
+Project-URL: Documentation, https://datmat.readthedocs.io
+Project-URL: Issues, https://gitlab.com/radiology/infrastructure/data-materialisation/-/issues
+Project-URL: Download, https://gitlab.com/radiology/infrastructure/data-materialisation/-/archive/master/data-materialisation-master.zip
+Project-URL: CI/CD, https://gitlab.com/radiology/infrastructure/data-materialisation/-/pipelines
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click ==8.1.7
+Requires-Dist: requests >=2.13.0
+Requires-Dist: xnat >=0.6.1
+Requires-Dist: yarl >=1.7.0
+Requires-Dist: pydantic ~=2.7.1
+
+# Data Materialisation
+
+
+## Getting started
+
+Install `datmat` from PyPI:
+```commandline
+pip install datmat
+```
+
+In `datmat` you can interface with multiple data sources and storage solutions through a plugin system.
+By linking together different plugins you can move data from one place to another.
+A set of plugins is already installed when installing the package, but the program is set up to support development
+of custom plugins. The plugins can be called by using a URL scheme to preface the path or URL to your file. For example,
+by using `file:///home/user/file.txt` you can access the local file `/home/user/file.txt`, or by using
+`xnat+https://xnat.bmia.nl/projects/sandbox` you can access the XNAT project `sandbox` on `xnat.bmia.nl` over HTTPS.
+
+See below examples of various use cases.
+
+## Downloading from XNAT into EUCAIM directory structure
+
+Through the use of the `xnat+https://` plugin it is possible to download files from an XNAT instance.
+The `eucaimdir://` plugin will store the files in the destination folder in the following nested folder structure:
+
+```
+/dest_folder/project_name/subject_label/experiment_label/{scan_id}_{scan_type}/file
+```
+
+The path `/dest_folder` needs to be supplied with the starting `/`, so the URL will be `eucaimdir:///dest_folder`.
+
+### A complete project
+
+```python
+import datmat
+
+datmat.materialize('xnat+https://xnat.bmia.nl/projects/sandbox',
+                   'eucaimdir:///dest_folder',
+                   tempdir='/temp_directory')
+```
+
+### A single subject
+```python
+import datmat
+
+datmat.materialize('xnat+https://xnat.bmia.nl/search?projects=sandbox&subjects=TEST01&resources=DICOM',
+                   'eucaimdir:///dest_folder',
+                   tempdir='/temp_directory')
+```
+
+The `datmat` package is based on the IOPlugin system of Fastr. See the documentation for the [XNATStorage IOPlugin](https://fastr.readthedocs.io/en/stable/_autogen/fastr.reference.html#xnatstorage)
+for more information on querying XNAT.
+
+# Other use cases
+## Copy file to file
+```python
+import datmat
+
+datmat.materialize('file:///input_file',
+                   'file:///dest_file',
+                   tempdir='/temp_directory')
+```
+
+## Copy XNAT to XNAT
+To be implemented.
