@@ -1,0 +1,54 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: buildkit
+  namespace: kube-system
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      containers:
+        - name: buildkit
+          image: moby/buildkit:master
+          command: #TODO
+            - /bin/sh
+            - -c
+            - |
+              apk add --no-cache curl unzip aws-cli docker
+              aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ACCNO.dkr.ecr.us-east-1.amazonaws.com
+              buildctl-daemonless.sh build --frontend dockerfile.v0 --local context=/data/build/PROJECT --local dockerfile=/data/build/PROJECT --output type=tar,dest=/data/images/PROJECT.tar
+          securityContext:
+            privileged: true
+          resources:
+            requests:
+              ephemeral-storage: "100Gi"
+              memory: "63Gi"
+            limits:
+              ephemeral-storage: "100Gi"
+              memory: "63Gi"
+          env:
+          - name: AWS_DEFAULT_REGION
+            value: REGION #TODO
+          - name: AWS_ACCESS_KEY_ID
+            valueFrom:
+              secretKeyRef:
+                name: aws-secret
+                key: AWS_ACCESS_KEY_ID
+          - name: AWS_SECRET_ACCESS_KEY
+            valueFrom:
+              secretKeyRef:
+                name: aws-secret
+                key: AWS_SECRET_ACCESS_KEY
+          - name: AWS_SESSION_TOKEN
+            valueFrom:
+              secretKeyRef:
+                name: aws-secret
+                key: AWS_SESSION_TOKEN
+          volumeMounts:
+            - name: persistent-storage
+              mountPath: /data
+      restartPolicy: Never
+      volumes:
+        - name: persistent-storage
+          persistentVolumeClaim:
+            claimName: s3-claim
