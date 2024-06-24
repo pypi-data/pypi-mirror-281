@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: Termix
+Version: 0.0.1
+Summary: A small base class for Terminal App
+Project-URL: Developer, https://armedjuror.in
+Author-email: Armed Juror <armedjuror@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Welcome to Termix
+It's a simple boilerplate for a terminal app.
+
+
+### Give me some time to add more details
+:)
+
+
