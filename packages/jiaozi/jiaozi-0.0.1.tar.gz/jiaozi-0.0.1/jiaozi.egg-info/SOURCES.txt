@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+jiaozi.egg-info/PKG-INFO
+jiaozi.egg-info/SOURCES.txt
+jiaozi.egg-info/dependency_links.txt
+jiaozi.egg-info/requires.txt
+jiaozi.egg-info/top_level.txt
