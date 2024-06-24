@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/jojoapi/__init__.py
+src/jojoapi.egg-info/PKG-INFO
+src/jojoapi.egg-info/SOURCES.txt
+src/jojoapi.egg-info/dependency_links.txt
+src/jojoapi.egg-info/requires.txt
+src/jojoapi.egg-info/top_level.txt
