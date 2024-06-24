@@ -1,0 +1,22 @@
+[project]
+name = "jojoapi"
+version = "1.0.2"
+authors = [
+  { name="CombineSoldier14", email="littlelatta@outlook.com" },
+]
+description = "A package for getting data from Jojo's Bizarre Api."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "requests"
+]
+
+[project.urls]
+Homepage = "https://github.com/CombineSoldier14/jojoapi/tree/master"
+Issues = "https://github.com/CombineSoldier14/jojoapi/issues"
+
