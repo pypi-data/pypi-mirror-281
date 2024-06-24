@@ -1,0 +1,13 @@
+gridsource/__init__.py,sha256=RKOpQ93nacGlRzjSkp-9Vkwzp0Wcvuy_xKN9C8Ik7hE,1314
+gridsource/autodoc.py,sha256=-E9TDpOvmyet-57KOkYn7SvO45zKndr77-5JeKtvt74,21594
+gridsource/cli.py,sha256=MrGiTj3ne68QHFK-JC7gWsycmC5PRHiKIBcb-9nTi_c,5960
+gridsource/custom_systems.txt,sha256=2Txjr4rcyWOz-niK15u4BPf0PPMyc8NI2DAAFyikRt8,230
+gridsource/io.py,sha256=F8piD58dKuhcNeeXPptmOeQM6yfb6z5nhGTvSq_6xug,11837
+gridsource/utils.py,sha256=cRR_YvQLJJdv_GZ8ETH_1T5GKrjazqi6D29ct5iDqJU,2179
+gridsource/validation.py,sha256=8wKJEsJ93rSN5Yz1X0IOxK8xJfdrsh1jMfuPEZ3lBuk,41698
+gridsource-2.1.0.dist-info/AUTHORS.rst,sha256=X5AqA4Ffeti2yFkfSZ-9ZSdGP4uNb0VhNWkGy7AwdxY,153
+gridsource-2.1.0.dist-info/LICENSE,sha256=YNc5tLb846XekZZQAgP33R7feYsHwnLU4aIzfXZFGE8,1074
+gridsource-2.1.0.dist-info/METADATA,sha256=VM3PfKztzfrD4wqmdraF8g96DrtUadXruiLFHAqoojc,838
+gridsource-2.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gridsource-2.1.0.dist-info/entry_points.txt,sha256=WHJKVgWvWE8CiMCxvO0mUAJ5QXiQ6Ev2rFAzeBex_uU,49
+gridsource-2.1.0.dist-info/RECORD,,
