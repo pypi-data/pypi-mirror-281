@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "noggin-messages"
+version = "1.1.0"
+description = "Fedora Messaging message schemas for Noggin."
+
+license = "MIT"
+
+authors = [
+  "Fedora Infrastructure <admin@fedoraproject.org>"
+]
+
+readme = "README.md"
+repository = "https://github.com/fedora-infra/noggin-messages"
+homepage = "https://github.com/fedora-infra/noggin-messages"
+keywords = ['security']
+
+include = [
+    "tox.ini",
+    "docs/*",
+    "docs/*/*",
+]
+
+[tool.poetry.plugins."fedora.messages"]
+"noggin.group.member.sponsor.v1"="noggin_messages:MemberSponsorV1"
+"noggin.group.member.removed.v1"="noggin_messages:MemberRemovedV1"
+"noggin.user.create.v1"="noggin_messages:UserCreateV1"
+"noggin.user.update.v1"="noggin_messages:UserUpdateV1"
+
+
+[tool.poetry.dependencies]
+python = "^3.8.0"
+fedora-messaging = ">=2.0.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-cov = "*"
+sphinx = "*"
+bandit = ">=1.6"
+black = "*"
+flake8 = ">=3.7"
+liccheck = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
