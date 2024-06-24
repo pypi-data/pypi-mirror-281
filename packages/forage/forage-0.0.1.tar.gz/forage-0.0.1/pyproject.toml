@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "forage"
+version = "0.0.1"
+description = "Retrieval augmentation for humans"
+authors = ["Foo <foo@bar.co>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "forks"}]
+repository = "https://github.com/phiweger/forks"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
