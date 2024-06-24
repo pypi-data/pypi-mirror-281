@@ -1,0 +1,7 @@
+setup.py
+ganquan.egg-info/PKG-INFO
+ganquan.egg-info/SOURCES.txt
+ganquan.egg-info/dependency_links.txt
+ganquan.egg-info/top_level.txt
+gq_py/__init__.py
+gq_py/test.py
