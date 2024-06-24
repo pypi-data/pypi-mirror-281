@@ -1,0 +1,11 @@
+Parser4LLM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Parser4LLM/notification.py,sha256=droA6sj40sgWQgKlaIvCWxM9h0AYHeem-O60fjADKoE,242
+Parser4LLM/parsers.py,sha256=CG2fmemALH01MdcDsvqkTWgjX7xV1A72M9WjJWgSSTs,2423
+Parser4LLM/pdf_converter.py,sha256=En8BozADud_s2iIJuAckyQf2DfQomq36hg7wGC67b-c,6500
+Parser4LLM/ppt_converter.py,sha256=0y_rFw1cGjuDTmc3vkT-wU-ODPFnTcbZK4i1oRfgPLo,4253
+Parser4LLM/url_converter.py,sha256=ep_Pkngi3aAXonzyuGpuNch67bbZwNKNUKtXP1ZDS9M,741
+Parser4LLM/word_converter.py,sha256=fkqoj34sGUj4VHMJaalgZW4p1m5h_YuwAyEpuxX8djg,4406
+Parser4LLM-0.0.5.dist-info/METADATA,sha256=wnH8fSzz0MgpHbeoeu9eWWrIfX3JsPALlg0lF-ZIwyk,590
+Parser4LLM-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+Parser4LLM-0.0.5.dist-info/top_level.txt,sha256=ibOEj96wIGX68JluF7EVsk-e0gtROlorYwvHbYRjXv0,11
+Parser4LLM-0.0.5.dist-info/RECORD,,
