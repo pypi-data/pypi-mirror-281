@@ -1,0 +1,43 @@
+import logging
+
+import requests
+
+from .logger import Logging
+
+Logging()
+
+
+class RequestUtil:
+    def __init__(self):
+        self.session = requests.Session()
+
+    def _request(self, method, url, **kwargs):
+        """通用请求方法"""
+        try:
+            response = self.session.request(method, url, **kwargs)
+            response.raise_for_status()
+            logging.info(f"{method.upper()}请求成功: {response.url}")
+            return response.json()
+        except requests.HTTPError as http_err:
+            logging.error(f"HTTP错误: {http_err}")
+        except requests.ConnectionError as conn_err:
+            logging.error(f"连接错误: {conn_err}")
+        except requests.Timeout as timeout_err:
+            logging.error(f"请求超时: {timeout_err}")
+        except requests.RequestException as req_err:
+            logging.error(f"请求错误: {req_err}")
+        except ValueError as json_err:
+            logging.error(f"JSON解析错误: {json_err}")
+        return None
+
+    def get(self, url, params=None, headers=None):
+        return self._request('get', url, params=params, headers=headers)
+
+    def post(self, url, json=None, headers=None):
+        return self._request('post', url, json=json, headers=headers)
+
+    def put(self, url, json=None, headers=None):
+        return self._request('put', url, json=json, headers=headers)
+
+    def delete(self, url, json=None, headers=None):
+        return self._request('delete', url, json=json, headers=headers)
