@@ -1,0 +1,11 @@
+BrowserTray/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BrowserTray/__main__.py,sha256=QYhocfSCX0qrbm-s6Qr6NkhOTQZpyqxqa24T4iLtLGo,30
+BrowserTray/chromium.png,sha256=S1WWnBqfLCvU4EMc6pIdUmrLVop91NAoZILU-ZF5TUs,56248
+BrowserTray/tray.py,sha256=VElRoP8gVxUfA24KqiFrlK67uDZYk_kYYRaJQvlF3mM,4998
+BrowserTray/Repl/__init__.py,sha256=3ugmFZx7OUfZ5IHqJfw1DHXO0K-LgdCsNXWyzZZoTLI,444
+BrowserTray/Repl/__main__.py,sha256=nU5RELN7iZviZc7V47K4dOkct966iAGGSDebJQr4I8M,30
+BrowserTray/Repl/repl.py,sha256=kXNEEiWIrdrsNRqvUxnWh0LFAH37KbGPt8dFo88hoVI,1700
+robotframework_browser_tray-1.5.0.dist-info/entry_points.txt,sha256=5NJlKUYvDWzS1xW0zjXzhFDk-s8nfd_9nBHgrK3d2aw,88
+robotframework_browser_tray-1.5.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+robotframework_browser_tray-1.5.0.dist-info/METADATA,sha256=wd2qf6sXauihCLnyvzXyfHpELaz5jm9WS-SLFNNiMME,3041
+robotframework_browser_tray-1.5.0.dist-info/RECORD,,
