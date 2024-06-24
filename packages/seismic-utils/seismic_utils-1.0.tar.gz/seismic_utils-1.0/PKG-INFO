@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: seismic-utils
+Version: 1.0
+Summary: A python package including some seismic toolkits
+Author: Wenchen Lie
+Author-email: 666@e.gzhu.edu.cn
+Requires-Dist: pandas
+Requires-Dist: dill
+Requires-Dist: numpy
+Requires-Dist: matplotlib
