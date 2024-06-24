@@ -1,0 +1,6 @@
+sqlalchemy
+
+[test]
+pytest
+pytest-cov
+flake8
