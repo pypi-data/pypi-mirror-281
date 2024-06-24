@@ -1,0 +1,10 @@
+picodi/__init__.py,sha256=6InRVEVdyVQnOyKt8kLwqjx450kY3gXIqQV7Q1zWSbM,541
+picodi/_picodi.py,sha256=SxChslIY6Jgd7V_Z4fgZcEmjtrsI0Q8k44hu-qa3mzY,23090
+picodi/_scopes.py,sha256=yUWGxHbwby5ehdAqmuD6RsoUvU1-kYzDF7xCxEGM2JY,6829
+picodi/helpers.py,sha256=X1DFlwaOhEEbJ407kQBns0Razts5fH4XuG8MCk3sWWQ,7936
+picodi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+picodi/support.py,sha256=bXNpjgqyRAcsVkLM5htkGK2L2ICeTccXHu326g-Kux4,3964
+picodi-0.20.0.dist-info/LICENSE,sha256=a1mQ_h1SHuV45sBrH7snPeQMcrL6PoDmbCrmT4BMrtg,1064
+picodi-0.20.0.dist-info/METADATA,sha256=bA9LAq8ish3_WVVMKRty2wJryb88t5J9nghP_oO_Lgw,6742
+picodi-0.20.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+picodi-0.20.0.dist-info/RECORD,,
