@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ternion_python
+Version: 0.0.2
+Summary: Python packaged for Ternion board
+Author: Santi Nuratch
+Author-email: santi.inc.kmutt@gmail.com
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: pyserial
+Requires-Dist: colorlog
+Requires-Dist: customtkinter
+
+Python packaged for Ternion board
