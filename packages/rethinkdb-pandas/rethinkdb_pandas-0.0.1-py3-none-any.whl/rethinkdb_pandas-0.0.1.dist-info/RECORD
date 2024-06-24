@@ -1,0 +1,9 @@
+rethinkdb_pandas/__init__.py,sha256=hv6ViGlfPyGrpdall4jpMVsWm_EvNGJFmLgm7pnDXIw,247
+rethinkdb_pandas/core/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+rethinkdb_pandas/core/db.py,sha256=KT24NZlxo58z1VgTiRdEWZLCKUn6m0E7bV_X3ULwyu4,296
+rethinkdb_pandas/core/rethinkdb.py,sha256=qzXOPTh1CDo_okv2HtbEFkMx-liVgdE3XPmQwRf8QAs,1079
+rethinkdb_pandas/core/table.py,sha256=GHEWu74-TPPeDNMzth8pNhZU3UPpustIWHiYHVTfjME,1157
+rethinkdb_pandas-0.0.1.dist-info/LICENSE,sha256=ieEKJ-VczfHpbzAARBk5cBwN-Qfu4_jjKLNpnH1JyAg,9161
+rethinkdb_pandas-0.0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+rethinkdb_pandas-0.0.1.dist-info/METADATA,sha256=BtGuP0_jgUrkCTmCLv4B047-6fkaTUgvrYA__suRGno,2523
+rethinkdb_pandas-0.0.1.dist-info/RECORD,,
