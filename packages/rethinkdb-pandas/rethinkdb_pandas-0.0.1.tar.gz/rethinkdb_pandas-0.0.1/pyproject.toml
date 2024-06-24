@@ -1,0 +1,36 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "rethinkdb-pandas"
+authors = [{name = "somehitDev", email = "this.dev.somehit@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX",
+    "Operating System :: Microsoft :: Windows",
+
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+
+    "Topic :: Database",
+    "Topic :: Utilities"
+]
+dynamic = ["version", "description"]
+requires-python = ">=3.9"
+dependencies = [
+    "rethinkdb==2.4.10.post1",
+    "pandas==2.2.2"
+]
+
+[tool.flit.module]
+name = "rethinkdb_pandas"
+
+[project.urls]
+Home = "https://github.com/somehitDev/rethinkdb_pandas"
