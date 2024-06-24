@@ -1,0 +1,8 @@
+recursive-include scient/data *
+recursive-include scient/test *
+exclude scient/__process (2).py
+exclude scient/image/__assess.py
+exclude scient/language/__tokenize_.py
+exclude scient/language/__vocab_.py
+exclude scient/neuralnet/__attention (2).py
+exclude scient/neuralnet/__dataset (2).py
