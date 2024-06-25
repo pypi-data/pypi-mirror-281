@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ gettext("Administration panel") }}{% endblock %}
+
+{% block content %}
+<div style="width: 100%;">
+  <div style="float:left; width: 50%">
+    <h4>{{ gettext("Upload a new quizz") }}</h4>
+    <form method="post" enctype=multipart/form-data>
+      <label for="file">{{ gettext("Select a quizz file") }}</label>
+      <input type="file" name="file" id="file" required>
+      <input type="submit" value="{{ gettext('Send') }}">
+    </form>
+  </div>
+  <div style="float:right; width: 50%">
+    <h4>{{ gettext("List of available quizzes") }}</h4>
+    {% for quizz_id, quizz_state in quizzes.items() %}
+    <p><a class="action" href=/quizz/{{ quizz_id }}>{{ quizz_state.quizz.name }}</a> {{ quizz_state.get_formated_creation_date() }}</p>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

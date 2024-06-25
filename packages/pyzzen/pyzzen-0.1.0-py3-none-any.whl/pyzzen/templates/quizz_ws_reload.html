@@ -1,0 +1,9 @@
+<script type=text/javascript>
+  const ws = new WebSocket(`${'https:' == document.location.protocol ? 'wss' : 'ws'}://${location.host}/ws_reload/{{ quizz_id }}`);
+
+  ws.addEventListener('message', function (event) {
+      if (event.data == 'reload') {
+          window.location.reload();
+      }
+  });
+</script>

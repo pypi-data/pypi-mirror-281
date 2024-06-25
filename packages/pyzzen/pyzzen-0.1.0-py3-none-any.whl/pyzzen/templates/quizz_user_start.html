@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% include 'quizz_ws_reload.html' %}
+
+{% block title %}{{ quizz.name }}{% endblock %}
+
+{% block content %}
+  <p>{{ gettext("The quizz will soon begin") }}</p>
+{% endblock %}
