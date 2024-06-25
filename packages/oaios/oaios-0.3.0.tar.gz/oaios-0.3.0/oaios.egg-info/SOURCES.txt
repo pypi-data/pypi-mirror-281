@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+setup.py
+oaios/__init__.py
+oaios/asgi.py
+oaios/settings.py
+oaios/urls.py
+oaios/wsgi.py
+oaios.egg-info/PKG-INFO
+oaios.egg-info/SOURCES.txt
+oaios.egg-info/dependency_links.txt
+oaios.egg-info/not-zip-safe
+oaios.egg-info/requires.txt
+oaios.egg-info/top_level.txt
+tests/test_oaios.py

@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: oaios
+Version: 0.3.0
+Summary: oaios django: Our Asynchronously Interchangeable Objects Server
+Home-page: https://gitlab.com/oaios-group/oaios
+Author: AndiEcker
+Author-email: aecker2@gmail.com
+License: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Project-URL: Documentation, https://oaios.readthedocs.io/en/latest/_autosummary/oaios.html
+Project-URL: Repository, https://gitlab.com/oaios-group/oaios
+Project-URL: Source, https://oaios.readthedocs.io/en/latest/_modules/oaios.html
+Keywords: configuration,development,environment,productivity
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: djangocms-versioning
+Requires-Dist: djangocms-alias
+Requires-Dist: djangocms-frontend
+Requires-Dist: django-filer
+Requires-Dist: djangocms-text-ckeditor
+Requires-Dist: django-fsm<3
+Provides-Extra: dev
+Requires-Dist: aedev_tpl_project; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: sphinx-rtd-theme; extra == "dev"
+Requires-Dist: sphinx_autodoc_typehints; extra == "dev"
+Requires-Dist: sphinx_paramlinks; extra == "dev"
+Requires-Dist: aedev_setup_project; extra == "dev"
+Requires-Dist: anybadge; extra == "dev"
+Requires-Dist: coverage-badge; extra == "dev"
+Requires-Dist: aedev_git_repo_manager; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pylint; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: typing; extra == "dev"
+Requires-Dist: types-setuptools; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+Requires-Dist: sphinx_autodoc_typehints; extra == "docs"
+Requires-Dist: sphinx_paramlinks; extra == "docs"
+Requires-Dist: aedev_setup_project; extra == "docs"
+Provides-Extra: tests
+Requires-Dist: anybadge; extra == "tests"
+Requires-Dist: coverage-badge; extra == "tests"
+Requires-Dist: aedev_git_repo_manager; extra == "tests"
+Requires-Dist: flake8; extra == "tests"
+Requires-Dist: mypy; extra == "tests"
+Requires-Dist: pylint; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: pytest-cov; extra == "tests"
+Requires-Dist: typing; extra == "tests"
+Requires-Dist: types-setuptools; extra == "tests"
+Requires-Dist: wheel; extra == "tests"
+Requires-Dist: twine; extra == "tests"
+
+# Our Asynchronously Interchangeable Objects Server
+
+this open source Python django server project allows you to share, backup and synchronize any data between
+multiple hosts, users and their devices.
+
+
+## credits
+
+the [freely available prooject code](https://gitlab.com/ae-group/oaios) is based on portions of the
+[__ae__ namespace (Application Environment)](https://ae.readthedocs.io "ae on rtd"),
+maintained by the [GitLab User Group ae-group](https://gitlab.com/ae-group).
+
+additional credits to:
+
+* [__Erokia__](https://freesound.org/people/Erokia/) and 
+  [__plasterbrain__](https://freesound.org/people/plasterbrain/) at
+  [freesound.org](https://freesound.org) for the sounds.
+* [__iconmonstr__](https://iconmonstr.com/interface/) and
+  [__Google__](https://fonts.google.com/icons?icon.set=Material+Symbols) for the icon images.
