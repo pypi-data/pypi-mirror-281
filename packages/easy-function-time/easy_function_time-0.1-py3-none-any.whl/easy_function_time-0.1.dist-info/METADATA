@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: easy-function-time
+Version: 0.1
+Summary: A simple decorator to measure function execution time
+Home-page: https://github.com/lukesudom/easy-function-time
+Author: lukesud0m
+Author-email: lukemarshall511@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## Function-time
+
+Simple decorator that can be used to print the time taken for python functions to run
+
+## Registries
+
+- Pypi
