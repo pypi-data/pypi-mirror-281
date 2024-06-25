@@ -1,0 +1,10 @@
+techzdl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+techzdl/api.py,sha256=sUs6z8-9tlkvaLCahTAukO2sHW6KScXB-wxpOA2tRM0,4187
+techzdl/downloader.py,sha256=PMPkCAC1Kad1Lo4W0ZF9EDt3Ep7qZUPxq2z8TxM4Jk8,18598
+techzdl/extra.py,sha256=fOHsgshFz7qcwlIhJlVvYkUJJmINVaHf3SffJd_wK88,4546
+techzdl/logger.py,sha256=EpKvXt_je1hCxri3-ZT7a9gYYDLErIWZhSPhDWr8u-Q,806
+techzdl-1.1.6.dist-info/LICENSE,sha256=ufPX_nA9yIE0vJPxTjVeEzyHiL1-5uyRTm5oDk86nTg,1100
+techzdl-1.1.6.dist-info/METADATA,sha256=EKeMQJr6kS5bgEin1azCN9NQtu11eskNnvVD96nSk0M,3729
+techzdl-1.1.6.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+techzdl-1.1.6.dist-info/top_level.txt,sha256=trIJn57G6QgoXjYYv_fLradCOlIB36YBLqtsmGccQ8o,8
+techzdl-1.1.6.dist-info/RECORD,,
