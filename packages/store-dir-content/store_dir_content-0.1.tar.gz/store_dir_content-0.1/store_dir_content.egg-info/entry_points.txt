@@ -1,0 +1,2 @@
+[console_scripts]
+store-dir-content = store_dir_content.cli:main
