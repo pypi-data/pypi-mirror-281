@@ -1,0 +1,6 @@
+python-ldap
+requests
+progress
+python-dotenv
+loguru
+click
