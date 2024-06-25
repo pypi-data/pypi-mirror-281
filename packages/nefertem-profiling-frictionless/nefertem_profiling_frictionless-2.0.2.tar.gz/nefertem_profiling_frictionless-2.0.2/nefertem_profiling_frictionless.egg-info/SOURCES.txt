@@ -1,0 +1,9 @@
+pyproject.toml
+nefertem_profiling_frictionless/__init__.py
+nefertem_profiling_frictionless/builder.py
+nefertem_profiling_frictionless/plugin.py
+nefertem_profiling_frictionless.egg-info/PKG-INFO
+nefertem_profiling_frictionless.egg-info/SOURCES.txt
+nefertem_profiling_frictionless.egg-info/dependency_links.txt
+nefertem_profiling_frictionless.egg-info/requires.txt
+nefertem_profiling_frictionless.egg-info/top_level.txt
