@@ -1,0 +1,12 @@
+README.md
+setup.py
+tfseqrec/__init__.py
+tfseqrec/loader.py
+tfseqrec/losses.py
+tfseqrec/metrics.py
+tfseqrec/utils.py
+tfseqrec/visualizer.py
+tfseqrec.egg-info/PKG-INFO
+tfseqrec.egg-info/SOURCES.txt
+tfseqrec.egg-info/dependency_links.txt
+tfseqrec.egg-info/top_level.txt
