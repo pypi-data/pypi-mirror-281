@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: gcn-trainer
+Version: 0.1.0
+Summary: A package for training GCN models with regularization following https://github.com/Zaehyeon2/FDGNN-Fraud-Address-Detection-on-Ethereum-using-Graph-Neural-Network
+Home-page: https://github.com/yuanye126/FDGNNImplementation
+Author: Ye Yuan
+Author-email: yuanyuan125@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: torchmetrics
+Requires-Dist: tqdm
+
+# GCN Trainer
+
+A Python package for training Graph Convolutional Network (GCN) models with regularization.
+
+## Installation
+
+```sh
+pip install gcn_trainer
+
+
