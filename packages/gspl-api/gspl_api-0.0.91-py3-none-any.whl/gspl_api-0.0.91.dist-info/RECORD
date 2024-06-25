@@ -1,0 +1,12 @@
+gspl/__init__.py,sha256=hndOE-3OnagFXNT8o2J0TzRoToymF8t7zhv4baycCm4,202
+gspl/_chunks.py,sha256=CRjHJn3MRsTwjuwTnKBC_-7XQC19KFI0qMN27115GEM,3424
+gspl/_decorators.py,sha256=eQpBfRnPrYFqKLgkXFhWtO29otUYUpt-Q4HUjdCDZPI,5293
+gspl/_logger.py,sha256=ZxUkIxZxq5t3etKEAKlnkezPRaXcHEEr9AONHLn-7sg,3943
+gspl/_retrieval.py,sha256=DhnG2vd-ytToA6HElahRTRe_bqc26VZm_ik-cg_2vyI,13282
+gspl/_tokenizer.py,sha256=PJWjC-U5N-D1eG3N0QDvNjd9t8ticJ1QU_Gjf1J6ZtQ,3919
+gspl/gspl.py,sha256=lxCwdX2rQt4vjbehIGsQXo3154LvaaG_8qE7DdbOTSU,19994
+gspl_api-0.0.91.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gspl_api-0.0.91.dist-info/METADATA,sha256=N6kT0DUu67TWPmd0f1nNHKdh5GNaJInF-7WEUbuSDuk,13139
+gspl_api-0.0.91.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+gspl_api-0.0.91.dist-info/top_level.txt,sha256=pVVGpCeF-GzQDLgSVIMfQJ7w3dcLESsjodfy-PqhsIE,5
+gspl_api-0.0.91.dist-info/RECORD,,
