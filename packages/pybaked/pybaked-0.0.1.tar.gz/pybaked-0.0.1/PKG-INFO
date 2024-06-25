@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pybaked
+Version: 0.0.1
+Summary: 
+Author: kuyugama
+Author-email: mail.kuyugama@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
