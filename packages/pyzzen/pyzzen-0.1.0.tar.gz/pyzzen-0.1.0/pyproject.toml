@@ -1,0 +1,26 @@
+[build-system]
+requires = ["flit_core>=3.4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pyzzen"
+version = "0.1.0"
+authors = [
+    {name="Arsène Volte", email="ninjananas@tuta.io"},
+]
+description = "A small and simple self-hosted python quizz engine"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent", # TODO
+]
+dependencies = [
+    "toml; python_version < '3.11'",
+    "pydantic",
+    "quart",
+    "quart_babel",
+]
+

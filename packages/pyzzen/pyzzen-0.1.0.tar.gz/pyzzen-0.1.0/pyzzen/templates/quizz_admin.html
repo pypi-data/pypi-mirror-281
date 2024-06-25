@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% include 'quizz_ws_reload.html' %}
+
+{% block title %}{{ quizz.name }}{% endblock %}
+
+{% block content %}
+
+{% include 'progress.html' %}
+
+<form action="" method="post">
+  <button name="prev" value="prev">{{ gettext("Previous") }}</button>
+  <button name="next" value="next">{{ gettext("Next") }}</button>
+</form>
+<form action="" method="post">
+  {% if question_locked %}
+  <button name="unlock" value="unlock">{{ gettext("Unlock") }}</button>
+  {% else %}
+  <button name="lock" value="lock">{{ gettext("Lock") }}</button>
+  {% endif %}
+</form>
+
+<article>
+  {{ quizz.questions[question_idx].question|safe }}
+</article>
+
+{% for answer_idx in answer_order %}
+<b>#{{ answer_idx }} :</b> {{ quizz.questions[question_idx].answers[answer_idx].answer|safe }}</br>
+{% endfor %}
+
+<div style="width: 100%;">
+  <div style="float:left; width: 50%">
+    <h4>{{ gettext("Answers for this question") }}</h4>
+    <table>
+      <thead><tr>
+          <th>{{ gettext("Name") }}</th><th>{{ gettext("Answer") }}</th>
+      </tr></thead>
+      <tbody>
+        {% for name, answer in quizz_state.get_answers_for_current_question() %}
+        <tr><td>{{ name }}</td><td>#{{ answer }}</td></tr>
+        {% endfor %}
+    </tbody>
+    </table>
+  </div>
+  <div style="float:right;">
+    <h4>{{ gettext("Global Leaderboard") }}</h4>
+    <table>
+      <thead><tr>
+          <th>{{ gettext("Name") }}</th><th>{{ gettext("Score") }}</th>
+      </tr></thead>
+      <tbody>
+        {% for name, score in quizz_state.get_global_ranking_with_names() %}
+        <tr><td>{{ name }}</td><td>{{ score }}</td></tr>
+        {% endfor %}
+    </tbody>
+    </table>
+  </div>
+</div>
+<div style="clear:both"></div>
+
+{% endblock %}

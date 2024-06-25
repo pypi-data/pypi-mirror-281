@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% include 'quizz_ws_reload.html' %}
+
+{% block title %}{{ quizz.name }}{% endblock %}
+
+{% block content %}
+<h4>{{ gettext("Global Leaderboard") }}</h4>
+<table>
+  <thead><tr>
+      <th>{{ gettext("Name") }}</th><th>{{ gettext("Score") }}</th>
+  </tr></thead>
+  <tbody>
+    {% for name, score in quizz_state.get_global_ranking_with_names() %}
+    <tr><td>{{ name }}</td><td>{{ score }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

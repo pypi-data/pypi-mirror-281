@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='simple.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='custom.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <script id="MathJax-script" async src="{{ url_for('static', filename='mathjax/tex-chtml.js') }}"></script>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+
+
+<body>
+  <header>
+    <h1>{{ self.title() }}</h1>
+    <div><mark>
+    {% if session['is_admin'] %}
+    {{ gettext("Authenticated as administrator") }}
+    {% elif session['username'] %}
+    {{ gettext("Connected as %(username)s", username=session['username']) }}
+    {% else %}
+    {{ gettext("Not Connected") }}
+    {% endif %}
+    </mark></div>
+  </header>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul class=flashes>
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endwith %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

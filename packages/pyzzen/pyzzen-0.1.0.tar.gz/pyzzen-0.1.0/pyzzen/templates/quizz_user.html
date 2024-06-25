@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% include 'quizz_ws_reload.html' %}
+
+{% block title %}{{ quizz.name }}{% endblock %}
+
+{% block content %}
+
+{% include 'progress.html' %}
+
+<article>
+  {{ quizz.questions[question_idx].question|safe }}
+</article>
+
+<form action="" method="post">
+{% for answer_idx in answer_order %}
+<button name="answer"
+        {% if answer_idx==answer %}
+        class="selected"
+        {% else %}
+        class="answer"
+        {% endif %}
+        value={{ answer_idx }}>
+  {{ quizz.questions[question_idx].answers[answer_idx].answer|safe }}
+</button>
+{% endfor %}
+</form>
+
+{% endblock %}
