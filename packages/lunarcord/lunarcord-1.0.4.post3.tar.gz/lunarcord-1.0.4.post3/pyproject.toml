@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lunarcord"
+version = "1.0.4post3"
+authors = [
+  { name="Revolno", email="revolnohtyp@gmail.com" },
+]
+description = "A Library for easily writing multi-purpose Discord Bots."
+readme = "README.rst"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "aiohttp>=3.9.1",
+    "discord_emoji>=1.4.2",
+    "orjson>=3.10.4",
+    "pillow>=10.1.0"
+]
+username = "__token__"
+password = "pypi-AgEIcHlwaS5vcmcCJDE5ZTY2MWUzLThlMTEtNGM5ZS1iMjE5LWI3YjcwYzA0ZTY2ZgACEVsxLFsibHVuYXJjb3JkIl1dAAIsWzIsWyI3ZjBiOTczNy02ODM2LTQxMzUtYjg5MC0wNjU1ZmM4NGQxYTIiXV0AAAYgYn2uAmNIQgJwn5IGY03tMOh42qoX7x6HxNKgZzQKSA4"
