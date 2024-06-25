@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: agiflow-sdk
+Version: 0.0.17
+Summary: Agiflow Software Development Kit (SDK) for Python
+Home-page: https://github.com/agiflowAI/agiflow
+License: Business Source License
+Author: Vuong Ngo
+Author-email: vuongngo.pd@gmail.com
+Requires-Python: >=3.9,<4
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: colorama (>=0.4.6,<0.5.0)
+Requires-Dist: deprecated (>=1.2.14,<2.0.0)
+Requires-Dist: opentelemetry-api (>=1.23.0,<2.0.0)
+Requires-Dist: opentelemetry-exporter-otlp-proto-http (>=1.20.0,<2.0.0)
+Requires-Dist: opentelemetry-instrumentation-requests (==0.44b0)
+Requires-Dist: opentelemetry-instrumentation-sqlalchemy (==0.44b0)
+Requires-Dist: opentelemetry-instrumentation-urllib3 (==0.44b0)
+Requires-Dist: opentelemetry-sdk (>=1.20.0,<2.0.0)
+Requires-Dist: posthog (>=3.0.2,<4.0.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: tenacity (>=8.2.3,<9.0.0)
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
+Project-URL: Documentation, https://docs.agiflow.io/python
+Project-URL: Repository, https://github.com/agiflowAI/agiflow
+Description-Content-Type: text/markdown
+
+# AGIFlow SDK
+
+## Getting Started
+To get started with AGIFlow SDK, simply install the package using pip:
+
+``` sh
+pip install agiflow-sdk
+```
+
+## SDK Overview
+AGIFlow SDK provides the following functionalities:
+
+- Automatic tracing with OpenTelemetry.
+- Decorators for manual tracing.
+- Helpers to interact with backend APIs.
+
+## Setup SDK
+To set up the AGIFlow SDK client, initialize it once at the entry point of your application:
+
+``` python
+from agiflow import Agiflow
+
+Agiflow.init(
+  app_name="<YOUR_APP_NAME>",
+  api_key="<AGIFLOW_API_KEY>"  # Or set AGIFLOW_API_KEY environment variable
+)
+```
+
+You can find the API key on the Environment > Settings > API Key page of the AGIFlow Dashboard.
+
+That's it! If you run your backend application with supported LLM frameworks, traces should be logged on the AGIFlow dashboard under Environment > Logs.
+
+## Environment Variables
+- AGIFLOW_BASE_URL: If you use AGIFlow with docker-compose for local development or self-hosting, set this to your self-hosted endpoint.
+- AGIFLOW_API_KEY: Use different API keys for different environments.
+
+
+NOTE: AGIFlow uses a separate global OpenTelemetry trace provider to ensure all LLM traces are sent to support user feedback. To use the default OpenTelemetry global trace provider, set the AGIFLOW_OTEL_PYTHON_TRACER_PROVIDER_GLOBAL environment variable to true.
+
+## Documentation
+For a complete guide, please visit [our documentation](https://docs.agiflow.io/python). 
+
+
+
