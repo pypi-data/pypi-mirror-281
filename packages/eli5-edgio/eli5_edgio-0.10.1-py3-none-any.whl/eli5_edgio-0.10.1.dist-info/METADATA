@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: eli5_edgio
+Version: 0.10.1
+Summary: An updated version of eli5 to explain predictions of ML classifier
+Author: Miley Xu
+Author-email: mxu@edg.io
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: attrs >16.0.0
+Requires-Dist: jinja2
+Requires-Dist: numpy >=1.9.0
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: scikit-learn >=0.18
+Requires-Dist: graphviz
+Requires-Dist: tabulate >=0.7.7
+Requires-Dist: typing ; python_version<'3.5'
+Requires-Dist: singledispatch >=3.4.0.3 ; python_version<'3.5.6'
+
+eli5_edgio is an updated Python library build upon the eli5 library. 
+It explains predictions of Machine Learning classifiers such as XGBoost.
+
