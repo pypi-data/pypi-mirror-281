@@ -1,0 +1,8 @@
+benchify/__init__.py,sha256=luN7ZKktijORwfHbpMeO-V2Ql433Q1c4NUN2PikcgHA,35
+benchify/main.py,sha256=knXLGSxL7EIcCwuUpFY4ActVd_kCse7oNlGUJP6Oi6o,11460
+benchify/source_manipulation.py,sha256=M-v9zU-HawuxkaavkssaILp6BJrWhFM3CUV0vxyJbls,18815
+benchify-0.0.18.dist-info/METADATA,sha256=nffrRK-1jbZQTVDslpsMkSl826X5dUXPgVbTtk19RM0,1026
+benchify-0.0.18.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+benchify-0.0.18.dist-info/entry_points.txt,sha256=-ghcKOVAfxCg3JHKSdcrPeP53tHeRX3RYxP8ATSsSfU,51
+benchify-0.0.18.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+benchify-0.0.18.dist-info/RECORD,,
