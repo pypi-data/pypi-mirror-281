@@ -1,0 +1,96 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = [
+  "hatch-vcs",
+  "hatchling",
+]
+
+[project]
+name = "tinytext"
+description = "A helpful converter to change any normal text into cuter tinier text"
+readme = "README.md"
+keywords = [
+  "botally",
+  "cute text",
+  "generator",
+  "tiny text",
+  "tiny type",
+]
+license = {text = "MIT"}
+authors = [{name = "Hugo van Kemenade"}]
+requires-python = ">=3.8"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Topic :: Artistic Software",
+  "Topic :: Text Processing",
+]
+dynamic = [
+  "version",
+]
+[project.optional-dependencies]
+tests = [
+  "pytest",
+  "pytest-cov",
+]
+[project.urls]
+Changelog = "https://github.com/hugovk/tinytext/releases"
+Homepage = "https://github.com/hugovk/tinytext"
+Source = "https://github.com/hugovk/tinytext"
+[project.scripts]
+tinytext = "tinytext.cli:main"
+
+[tool.hatch]
+version.source = "vcs"
+
+[tool.hatch.version.raw-options]
+local_scheme = "no-local-version"
+
+[tool.ruff]
+fix = true
+
+[tool.ruff.lint]
+select = [
+  "C4",     # flake8-comprehensions
+  "E",      # pycodestyle errors
+  "EM",     # flake8-errmsg
+  "F",      # pyflakes errors
+  "I",      # isort
+  "ISC",    # flake8-implicit-str-concat
+  "LOG",    # flake8-logging
+  "PGH",    # pygrep-hooks
+  "PYI",    # flake8-pyi
+  "RUF100", # unused noqa (yesqa)
+  "RUF022", # unsorted-dunder-all
+  "UP",     # pyupgrade
+  "W",      # pycodestyle warnings
+  "YTT",    # flake8-2020
+]
+ignore = [
+  "E203",   # Whitespace before ':'
+  "E221",   # Multiple spaces before operator
+  "E226",   # Missing whitespace around arithmetic operator
+  "E241",   # Multiple spaces after ','
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["tinytext"]
+required-imports = ["from __future__ import annotations"]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+  # Python <= 3.11
+  "ignore:sys.monitoring isn't available, using default core:coverage.exceptions.CoverageWarning",
+]
+testpaths = ["tests"]
