@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+green_lib/__init__.py
+green_lib.egg-info/PKG-INFO
+green_lib.egg-info/SOURCES.txt
+green_lib.egg-info/dependency_links.txt
+green_lib.egg-info/top_level.txt
