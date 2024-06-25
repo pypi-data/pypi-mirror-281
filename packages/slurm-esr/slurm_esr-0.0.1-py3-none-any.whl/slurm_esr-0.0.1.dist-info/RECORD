@@ -1,0 +1,7 @@
+slurm/__init__.py,sha256=mWx3ul1RcGesas8f8Zxc53UbA66lEZLi3tQHiLSZPWE,214
+slurm/submit.py,sha256=Uzz2wj7s6dIB-puppiiOw7-nsCS9FUMFOXq-qGiRPw0,3185
+slurm_esr-0.0.1.dist-info/METADATA,sha256=TxwFkjLyGoVudP4u1pxDBsSG1TXjWRdCJx0XrYGK28c,54
+slurm_esr-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+slurm_esr-0.0.1.dist-info/entry_points.txt,sha256=oahUY6okUSk8Ffpt1ULVYQRoJmLGakWkzxpGdItvI1g,47
+slurm_esr-0.0.1.dist-info/top_level.txt,sha256=6mk-DRioFtcBKvCZgdTxMCN3PpSdVFrJq5I6xTxNZV0,6
+slurm_esr-0.0.1.dist-info/RECORD,,
