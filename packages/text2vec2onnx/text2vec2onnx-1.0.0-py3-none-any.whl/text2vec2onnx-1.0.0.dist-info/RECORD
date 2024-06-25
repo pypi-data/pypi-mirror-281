@@ -1,0 +1,9 @@
+text2vec2onnx/__init__.py,sha256=11PgWDwCVbm471Dcnmqt5RU4ScbEmj4-YyG-xvYyYjk,239
+text2vec2onnx/sentence_model.py,sha256=VZRVxtGvaBBxVQ_rLgZnSkVWqQfvmBrA6Vw0q8JUEpE,7373
+text2vec2onnx/similarity.py,sha256=hbXSLclyoPohAkFa41UtTkDd_dH4wvmPh1xrYYbpH30,4638
+text2vec2onnx/version.py,sha256=1TV2lmvwenVIyF-xGE84ndI1mqz8Xhtmq6T9FGXzRuc,22
+text2vec2onnx-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+text2vec2onnx-1.0.0.dist-info/METADATA,sha256=djFG-Rt8t7zS3hkwiAveQg7rn_qNE2PNBH-E5YyO1Gs,3663
+text2vec2onnx-1.0.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+text2vec2onnx-1.0.0.dist-info/top_level.txt,sha256=Do51DZ1NnbDXSJtfWkOGpaTFr5j6lXYkomBiyNeLp2o,14
+text2vec2onnx-1.0.0.dist-info/RECORD,,
