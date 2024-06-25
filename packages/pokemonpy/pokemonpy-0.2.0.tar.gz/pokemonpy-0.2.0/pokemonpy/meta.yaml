@@ -1,0 +1,41 @@
+{% set name = "pokemonpy" %}
+{% set version = "0.0.3" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pokemonpy-{{ version }}.tar.gz
+  sha256: 4269e9b93b7172c21e91d6eab164b7e0415e889d4a2bb858cbc4745a861942fc
+
+build:
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
+
+requirements:
+  host:
+    - python >=3.7
+    - hatchling
+    - pip
+  run:
+    - python >=3.7
+    - numpy >=1.26.4,<1.27.dev0
+
+test:
+  imports:
+    - pokemonpy
+  commands:
+    - pip check
+  requires:
+    - pip
+
+about:
+  summary: A package that contains a Pokémon simulation game.
+  license: GPL-3.0
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - antoine
