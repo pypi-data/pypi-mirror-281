@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+atty/__init__.py
+atty/main.py
+atty/py.typed
+atty/version.py
+atty.egg-info/PKG-INFO
+atty.egg-info/SOURCES.txt
+atty.egg-info/dependency_links.txt
+atty.egg-info/entry_points.txt
+atty.egg-info/requires.txt
+atty.egg-info/top_level.txt
+tests/test_main.py
