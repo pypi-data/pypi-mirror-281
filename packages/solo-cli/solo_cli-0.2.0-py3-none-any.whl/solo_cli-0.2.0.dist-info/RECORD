@@ -1,0 +1,15 @@
+solo_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solo_cli/constants.py,sha256=YlBKchubt4x7ids-BRxBIMqZNV6RiwNQet_6MD1uQ2s,1617
+solo_cli/main.py,sha256=i_eAjKEpnJi3MW7jACqLzAiViJ5q6DMbcZngD1cFaDU,4393
+solo_cli/utils.py,sha256=jfK0w9HyjR10J1Yke49lg7y-jYkaLrAKKu17_j_zFGs,3696
+solo_cli/config/__init__.py,sha256=4iLN5x6nuFRKjHyEN8dj-Hwh-UnEzwoe5h261dbEbTo,715
+solo_cli/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solo_cli/utils/chat_ui.py,sha256=GE-4vrotWGP7KXMLedJg2KaovQMCPREnu2gswqquOm8,7352
+solo_cli/utils/llama_server.py,sha256=WrWY4v8SjImURBt77K_vQ-J_-aGexXVtfYIuUMrEtZE,3640
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=CGgY2L5ckdKtdqgOjX0-y8es45QTJKkaEvPKBS5CLq8,368
+solo_cli-0.2.0.dist-info/METADATA,sha256=dOQkcnrmTw4fF5YUfnWUYLkwgaJRQo5OjpcjKs45Q4Y,1783
+solo_cli-0.2.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+solo_cli-0.2.0.dist-info/entry_points.txt,sha256=KWyX1Rb4auvP8hX7TsLZFF27ZtVezLCkZkkWrF1-Xzs,47
+solo_cli-0.2.0.dist-info/top_level.txt,sha256=HQ7yNXpWiJf1h6rS63hH3-qS2yc5d8YxfN99zP27ZhU,15
+solo_cli-0.2.0.dist-info/RECORD,,
