@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyosmanager
+Version: 0.1
+Summary: Python client for Open Surplus Manager
+Home-page: https://github.com/JoseRa9/pyOSManager/
+Author: Jose R. Morales
+Author-email: dev@josermorales.com
+License: MIT
+Keywords: API,Open Surplus Manager,API client,API wrapper,async,iot
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: backoff
+
+# pyOSManager
+
+> Python client for Open Surplus Manager
