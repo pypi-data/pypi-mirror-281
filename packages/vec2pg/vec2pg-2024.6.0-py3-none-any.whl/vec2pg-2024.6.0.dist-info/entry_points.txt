@@ -1,0 +1,3 @@
+[console_scripts]
+vec2pg=vec2pg.cli:app
+

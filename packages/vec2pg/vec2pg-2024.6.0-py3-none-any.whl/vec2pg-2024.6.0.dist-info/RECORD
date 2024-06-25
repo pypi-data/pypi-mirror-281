@@ -1,0 +1,9 @@
+vec2pg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vec2pg/cli.py,sha256=VGlFZWLdAMu9q2oL6XwYQP8T1XwqpFP0IUOypPkBnvo,154
+vec2pg/plugins/__init__.py,sha256=YMvK0PLqxHAHyOnVYzFrLindtTeZ8e3xIh8yPfDEavU,60
+vec2pg/plugins/pinecone.py,sha256=49XXNyJOee7FoueGqn5HBntf9YHv6AzGM62CALxW4ig,3292
+vec2pg-2024.6.0.dist-info/LICENSE,sha256=_TE8eEwuPJZP4EP9t7z_qPhGJ9U9LPOmHGFYb_bD9ME,932
+vec2pg-2024.6.0.dist-info/METADATA,sha256=wvD51wLWcaCzLNxKCRLZkGUMnpvc7mZ2295PU2Gt94U,549
+vec2pg-2024.6.0.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+vec2pg-2024.6.0.dist-info/entry_points.txt,sha256=9m5fuNc6Ffngz03SGVSWlcChTTS1GFcuaWYX441o3dI,41
+vec2pg-2024.6.0.dist-info/RECORD,,
