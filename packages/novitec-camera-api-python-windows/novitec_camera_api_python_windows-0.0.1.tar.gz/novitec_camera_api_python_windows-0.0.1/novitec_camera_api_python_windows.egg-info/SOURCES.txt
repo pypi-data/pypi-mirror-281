@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+novitec_camera_api_python_windows.egg-info/PKG-INFO
+novitec_camera_api_python_windows.egg-info/SOURCES.txt
+novitec_camera_api_python_windows.egg-info/dependency_links.txt
+novitec_camera_api_python_windows.egg-info/top_level.txt
+python_api/NOVITECCAMERAAPIC.dll
+python_api/NovitecCameraAPIWrapper.py

@@ -1,0 +1,2 @@
+include python_api/NovitecCameraAPIWrapper.py
+include python_api/NOVITECCAMERAAPIC.dll
