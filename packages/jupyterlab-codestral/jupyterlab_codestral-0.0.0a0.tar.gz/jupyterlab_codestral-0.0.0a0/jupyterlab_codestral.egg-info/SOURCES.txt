@@ -1,0 +1,5 @@
+setup.py
+jupyterlab_codestral.egg-info/PKG-INFO
+jupyterlab_codestral.egg-info/SOURCES.txt
+jupyterlab_codestral.egg-info/dependency_links.txt
+jupyterlab_codestral.egg-info/top_level.txt
