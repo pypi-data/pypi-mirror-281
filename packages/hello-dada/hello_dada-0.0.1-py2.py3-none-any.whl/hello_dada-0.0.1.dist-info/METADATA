@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: hello-dada
+Version: 0.0.1
+Summary: My First Python project
+Author-email: Abdulwahhab <dada.madina@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/Abddada/hello-dada
+Keywords: hello-dada
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: hello-dada[extra] ; extra == 'all'
+Provides-Extra: extra
+Requires-Dist: pandas ; extra == 'extra'
+
+# hello-dada
+
+
+[![image](https://img.shields.io/pypi/v/hello-dada.svg)](https://pypi.python.org/pypi/hello-dada)
+[![image](https://img.shields.io/conda/vn/conda-forge/hello-dada.svg)](https://anaconda.org/conda-forge/hello-dada)
+
+
+**My First Python project**
+
+
+-   Free software: MIT License
+-   Documentation: https://Abddada.github.io/hello-dada
+    
+
+## Features
+
+-   TODO
