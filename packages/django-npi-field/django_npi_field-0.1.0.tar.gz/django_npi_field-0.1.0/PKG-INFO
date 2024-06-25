@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: django-npi-field
+Version: 0.1.0
+Summary: Creates a Django field for National Provider Identifier numbers w/ Custom Domains in PostgreSQL
+License: MIT
+Keywords: django
+Author: Kyle Jensen
+Author-email: kyle@nullandvoid.digital
+Requires-Python: >=3.12,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Dist: django (>=5.0.6,<6.0.0)
+Description-Content-Type: text/x-rst
+
+
