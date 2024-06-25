@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+agentic/__init__.py
+agentic/agentic.py
+agentic/state.py
+agentic/backend/__init__.py
+agentic/backend/agent.py
+agentic/components/__init__.py
+agentic/components/chat.py
+agentic/components/loading_icon.py
+agentic/components/modal.py
+agentic/components/navbar.py
+agentify.egg-info/PKG-INFO
+agentify.egg-info/SOURCES.txt
+agentify.egg-info/dependency_links.txt
+agentify.egg-info/top_level.txt
