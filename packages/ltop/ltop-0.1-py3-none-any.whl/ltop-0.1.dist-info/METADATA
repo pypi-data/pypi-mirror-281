@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ltop
+Version: 0.1
+Summary: A versatile tool for SREs and DevOps to monitor system resources and log resource utilization.
+Home-page: https://github.com/pkdeva/ltop
+Author: Priyanshu K
+Author-email: priyanshu.txt@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: psutil
+
