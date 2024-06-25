@@ -1,0 +1,8 @@
+BASE_URL="http://localhost:8080"
+BASE_CLIENT_URL="http://localhost:3000"
+# BASE_URL="https://lyraml-api-2-7c3apmua4a-uc.a.run.app"
+PROJECT_BASE_URL = BASE_URL + "/projects"
+RUN_BASE_URL = BASE_URL + "/runs"
+DATASET_BASE_URL = BASE_URL + "/datasets"
+JUDGE_BASE_URL = BASE_URL + "/judges"
+EVALUATION_BASE_URL = BASE_URL + "/evaluations"
