@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: uk_address_matcher
+Version: 0.0.1.dev3
+Summary: A package for matching UK addresses using a pretrained Splink model
+License: MIT
+Author: Robin Linacre
+Author-email: robinlinacre@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: duckdb (>=1.0.0)
+Requires-Dist: splink (>=3.9.15,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Matching UK addresses using Splink
+
+This repo contains generic code for address matching using a pre-trained Splink model.
+
+It's assumed you have two input files of addresses in this format:
+
+| unique_id | address_concat               | postcode  |
+|-----------|------------------------------|-----------|
+| 1         | 123 Fake Street, Faketown    | FA1 2KE   |
+| 2         | 456 Other Road, Otherville   | NO1 3WY   |
+| ...       | ...                          | ...       |
+
+Refer to [the example](example.py), which has detailed comments, for how to match your data.
+
+See [an example of comparing two addresses](example_compare_two.py) to get a sense of what it does/how it scores
