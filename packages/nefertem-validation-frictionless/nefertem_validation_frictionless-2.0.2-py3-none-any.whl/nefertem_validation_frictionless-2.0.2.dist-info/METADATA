@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nefertem-validation-frictionless
+Version: 2.0.2
+Summary: Python data validation library
+Author-email: Fondazione Bruno Kessler <dslab@fbk.eu>, Matteo Martini <mmartini@fbk.eu>
+Project-URL: Homepage, https://github.com/scc-digitalhub/nefertem
+Keywords: data,validation,quality
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: nefertem-validation ~=2.0
+Requires-Dist: frictionless ==5.15.0
+
