@@ -1,0 +1,6 @@
+include README.txt
+include LICENSE
+exclude venv/
+exclude testing.py
+exclude keys.py
+recursive-exclude venv *
