@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/vector_cache.egg-info/PKG-INFO
+src/vector_cache.egg-info/SOURCES.txt
+src/vector_cache.egg-info/dependency_links.txt
+src/vector_cache.egg-info/requires.txt
+src/vector_cache.egg-info/top_level.txt
