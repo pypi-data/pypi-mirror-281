@@ -1,0 +1,5 @@
+torch_lib_with_rust-0.1.0.dist-info/METADATA,sha256=qmUkHWJ55erSCA8rLQzkfctM7xAdg3xRdypaUQGXt5c,755
+torch_lib_with_rust-0.1.0.dist-info/WHEEL,sha256=aKUCmFq2kXEX5szv4-pwZ-uM4t7uN65gQyevv1sV0TM,127
+torch_lib_with_rust/__init__.py,sha256=gz-cOH0hloP_nwaHQkZNl9Xr7K4WU80fspo_KtBgV2Y,159
+torch_lib_with_rust/torch_lib_with_rust.abi3.so,sha256=sx05Kt40-vdJDx5bQktiQ41LmWeeU002kIDUIWzxHSM,793632
+torch_lib_with_rust-0.1.0.dist-info/RECORD,,
