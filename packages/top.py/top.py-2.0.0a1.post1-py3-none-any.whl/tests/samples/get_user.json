@@ -1,0 +1,14 @@
+{
+  "discriminator": "7574",
+  "avatar": "abcdef0123456789",
+  "id": "421698654189912064",
+  "username": "eek",
+  "defAvatar": "abcdef0123456789",
+  "bio": "bio",
+  "color": "#9c43be",
+  "admin": false,
+  "webMod": false,
+  "mod": false,
+  "certifiedDev": false,
+  "supporter": false
+}
