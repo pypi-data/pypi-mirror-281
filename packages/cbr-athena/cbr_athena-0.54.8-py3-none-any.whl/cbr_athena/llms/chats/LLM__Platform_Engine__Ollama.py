@@ -1,0 +1,52 @@
+import requests
+from osbot_utils.utils.Env import get_env
+
+from cbr_athena.llms.providers.ollama.LLM__Ollama import LLM__Ollama
+from cbr_athena.schemas.for_fastapi.LLMs__Chat_Completion import LLMs__Chat_Completion
+from osbot_utils.base_classes.Type_Safe                   import Type_Safe
+from osbot_utils.testing.Logging import Logging
+from osbot_utils.utils.Dev import pprint
+from osbot_utils.utils.Http import is_port_open, GET
+from osbot_utils.utils.Json import to_json_str, from_json_str
+
+OLLAMA__BASE_URL= "http://localhost:11434"
+ENV_VAR__OLLAMA__BASE_URL = 'OLLAMA__BASE_URL'
+
+class LLM__Platform_Engine(Type_Safe):
+    def is_provider_available(self):
+        pass
+
+    def execute_request(self):
+        pass
+
+class LLM__Platform_Engine__Ollama(LLM__Platform_Engine):
+    llm_platform       : str
+    llm_provider       : str
+    llm_model          : str
+    llm_chat_completion: LLMs__Chat_Completion
+
+    def is_provider_available(self):
+        try:
+            response = requests.get(self.ollama_base_url())
+            if response.text == "Ollama is running":
+                return True
+        except requests.RequestException:
+            pass
+        return False
+
+    def llm_ollama(self):
+        return LLM__Ollama(base_url=self.ollama_base_url())
+
+    def ollama_base_url(self):
+        return get_env(ENV_VAR__OLLAMA__BASE_URL)  or OLLAMA__BASE_URL
+
+    def execute_request(self):
+        if self.is_provider_available():
+            prompt = self.llm_chat_completion.user_prompt
+            result = self.llm_ollama().api_generate(prompt, stream=True)
+            for json_line in result:
+                if json_line:
+                    chunk = from_json_str(json_line)
+                    yield chunk.get('response')
+
+        #return "Ollama is not available locally"
