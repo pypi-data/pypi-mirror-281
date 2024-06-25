@@ -1,0 +1,7 @@
+breez_sdk/__init__.py,sha256=XfWWZjhYHs2XseXb8eBHZRfOPywvjoa6pqcDk5ej6DQ,34
+breez_sdk/breez_sdk.py,sha256=awu3Qr3xM9hygUJnIzw_i2YXK7w1S0Pn3m0vi8srxjQ,275267
+breez_sdk/libbreez_sdk_bindings.dylib,sha256=ylYnKJjRE95U69yJ-zKqMeoNsK29exlRWmFY1CuDQCE,37483688
+breez_sdk-0.4.3rc1.dist-info/METADATA,sha256=YFJV_ErTQyhHiGHeDNQf-34rSAPG-CstAFsqpP0eabY,470
+breez_sdk-0.4.3rc1.dist-info/WHEEL,sha256=Wj8fa6wSHMPy42yuBzjAvutH-ae2Y5RuOU0dAIe8WeQ,114
+breez_sdk-0.4.3rc1.dist-info/top_level.txt,sha256=ODUlftZqLYNOiQMgNS89NcRyfIRAGWNRha-UALToWCE,10
+breez_sdk-0.4.3rc1.dist-info/RECORD,,
