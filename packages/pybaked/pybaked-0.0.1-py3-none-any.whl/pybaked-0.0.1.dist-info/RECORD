@@ -1,0 +1,10 @@
+pybaked/__init__.py,sha256=xqi7FOMRTsm5SCvY04iPpDMtwu4lc9Bp2Dl90lhWCVg,97
+pybaked/bakedreader.py,sha256=AcCFcmb88vC7jxdyvanZAGjkCLnztYyJ7pdv9tO2fSU,2326
+pybaked/cli.py,sha256=5RM_VQXHxgHlOhnWUQL6YDQeik-bh-5GGqqcYZnHjWE,4835
+pybaked/loader.py,sha256=dTVPoMON2yL5oU-J0Mi0oIrduH1VByTNbAb1KAphw9Y,3219
+pybaked/protocol.py,sha256=jUGWLuMSU99_9fdf72_q4WwnoYfRr5edt6FtUAfvKjo,6610
+pybaked/pybaker.py,sha256=y_SdtZw11sifdxenbmgXRwDsvg5Yloaein2nZE3TUVs,2666
+pybaked-0.0.1.dist-info/METADATA,sha256=IOmOIa8VUv1cwmCp-DdVB2D7yMyU6QTWgXh44NkttwE,295
+pybaked-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pybaked-0.0.1.dist-info/entry_points.txt,sha256=xLzbzMquB8ZzNrEkHTG-xH-9kz-qKSfQmSzxpPn1Md8,75
+pybaked-0.0.1.dist-info/RECORD,,
