@@ -1,0 +1,3 @@
+[console_scripts]
+ltop-log-retention = ltop.log_retention:delete_old_logs
+ltop-monitor = ltop.ltop:monitor_system
