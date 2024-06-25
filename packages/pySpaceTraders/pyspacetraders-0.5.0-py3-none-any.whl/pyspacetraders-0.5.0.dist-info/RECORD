@@ -1,0 +1,13 @@
+pySpaceTraders/__init__.py,sha256=fdRwv6sEIHws0YWUks9TZOkT3dLahrkQDTbGzG7-1Ks,101
+pySpaceTraders/api.py,sha256=YdOIOB1E9la4GhZtcvOKtSXqcaslB0zcbHlZlZE-ZRY,33484
+pySpaceTraders/constants.py,sha256=GAHiyg7Ob1_aQf6KB2w9MCOInh70xH35BBo-qJ1a_eM,527
+pySpaceTraders/models/enums.py,sha256=DBC-ga05fC2Z4NtSQ-hvlNIbQ5A-sQ0bhx3s9uCZdxg,24909
+pySpaceTraders/models/models.py,sha256=2_YoMEqfs1rto5AzLF1ivs1MpJh8FhckzkZ-ShxXaSs,13092
+pySpaceTraders/utils/pySpaceLimiter.py,sha256=OW780RACnpmLy3j8q9A_M7o7YUQ9qwvTol3ARY_In5I,2615
+pySpaceTraders/utils/pySpaceLogger.py,sha256=pSZ2r_vLfnsu8XqE8F9Jea63xVnui3KOorXCmWpo3_E,1310
+pySpaceTraders/utils/pySpaceParsers.py,sha256=8ytMhK702oDLekFktm4R40gojSfWGMzvbtQqRuNSPcU,14657
+pySpaceTraders/utils/pySpaceRequest.py,sha256=T4wXjl17zLAVTKPxkoDBHawreKjmreNzaw62QgVBdlI,4094
+pyspacetraders-0.5.0.dist-info/LICENSE,sha256=bGNheBjf1YdmoWdTQCVVVpiTdZMJp-Uz7fMXR5zwrVE,1091
+pyspacetraders-0.5.0.dist-info/METADATA,sha256=rUQKhbf0IdaFulLupbfLLLa8fk4mxDyMzrZCJBCuYHs,2723
+pyspacetraders-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pyspacetraders-0.5.0.dist-info/RECORD,,
