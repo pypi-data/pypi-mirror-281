@@ -1,0 +1,9 @@
+pyproject.toml
+nefertem_inference_frictionless/__init__.py
+nefertem_inference_frictionless/builder.py
+nefertem_inference_frictionless/plugin.py
+nefertem_inference_frictionless.egg-info/PKG-INFO
+nefertem_inference_frictionless.egg-info/SOURCES.txt
+nefertem_inference_frictionless.egg-info/dependency_links.txt
+nefertem_inference_frictionless.egg-info/requires.txt
+nefertem_inference_frictionless.egg-info/top_level.txt
