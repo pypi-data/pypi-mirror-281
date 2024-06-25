@@ -1,0 +1,12 @@
+simple_build_tools/__init__.py,sha256=4ziWva1ziWgGaTTgfIj0wGUmzqF30m62r-ZIOES2ZeE,356
+simple_build_tools/cli.py,sha256=-lWL8IzQYkQn3uAe1bgj5YEuwIA2_xqJyY9O1Xncd18,1002
+simple_build_tools/environment_tools.py,sha256=Sd0-w9zpD9VWG7vU_bT2d9VnPLgZv7VjlhL7xq-oLBY,5695
+simple_build_tools/flake8.py,sha256=4V3RDHRDS6wI3-pPn2pMY9fGXGSX8GiqGK7IjFgjGuI,733
+simple_build_tools/flake8.txt,sha256=gTt9lqbW6jnlIERjDITuav_RMK-MBBAzG19g6-uM6Bc,775
+simple_build_tools/gitignore.py,sha256=8k05tPESAv7ENX-YL5U2bf7M2vGCVPg0OH2skaZ1doI,828
+simple_build_tools/gitignore.txt,sha256=X_BStxkoWSwL4DfkEdSLXaEYWCc7ljuPI_0T3tE1iBk,2173
+simple_build_tools/nexus.py,sha256=twBDuNiinh8HFtcKgQR-YP5AYpgEoVx0PiFVtbWoo9s,2479
+simple_build_tools-0.1.1.dist-info/entry_points.txt,sha256=I6h7Tb-nMZsNj7EwBmkh79YAysVDzFLpCtf5xQjNZZo,50
+simple_build_tools-0.1.1.dist-info/METADATA,sha256=0FTf4ZMixCWWG0IehIBqwPla5XVGIK3gnkBEK7dEmwg,2483
+simple_build_tools-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+simple_build_tools-0.1.1.dist-info/RECORD,,
