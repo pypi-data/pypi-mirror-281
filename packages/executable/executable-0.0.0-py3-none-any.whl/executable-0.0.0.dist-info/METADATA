@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: executable
+Version: 0.0.0
+Summary: Create windows .exe files that just wrap a Python script.
+Home-page: https://github.com/tusharsadhwani/executable
+Author: Tushar Sadhwani
+Author-email: tushar.sadhwani000@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+
+# executable
+
+TODO
