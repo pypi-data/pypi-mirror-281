@@ -1,0 +1,4 @@
+cmake
+h5py
+numpy
+scikit-build
