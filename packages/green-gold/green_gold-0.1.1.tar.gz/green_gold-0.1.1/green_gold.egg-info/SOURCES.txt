@@ -1,0 +1,7 @@
+README
+setup.py
+green_gold/__init__.py
+green_gold.egg-info/PKG-INFO
+green_gold.egg-info/SOURCES.txt
+green_gold.egg-info/dependency_links.txt
+green_gold.egg-info/top_level.txt
