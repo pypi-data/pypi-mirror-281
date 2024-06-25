@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+CDBio/__init__.py
+CDBio/tools.py
+CrossDarkBiology.egg-info/PKG-INFO
+CrossDarkBiology.egg-info/SOURCES.txt
+CrossDarkBiology.egg-info/dependency_links.txt
+CrossDarkBiology.egg-info/entry_points.txt
+CrossDarkBiology.egg-info/requires.txt
+CrossDarkBiology.egg-info/top_level.txt
