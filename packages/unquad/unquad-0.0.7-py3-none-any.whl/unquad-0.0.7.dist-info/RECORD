@@ -1,0 +1,16 @@
+unquad/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unquad/enums/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unquad/enums/adjustment.py,sha256=ugF4KRS1x2WwY4ZybCiw5iIEk0rcvy7sGsGP11RKSBM,211
+unquad/enums/aggregation.py,sha256=o6Yikk6zTNPzU8E8lMnLgQyH_bGWjBbwMLbD9vsYd8U,249
+unquad/enums/method.py,sha256=bQwySWL_lojJmO33blPXRMw67qqjhXt4j8COC17FjwI,401
+unquad/errors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unquad/errors/forbidden_model_error.py,sha256=vKi9oxmJAJz28w3Ir7pvnBI7KCFL6RHzOTFWziWur6E,327
+unquad/estimator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unquad/estimator/conformal_estimator.py,sha256=0onhndfbjr7-VptsrMpuSDLqiL4Es7SPSIYWV13J6Vk,12222
+unquad/estimator/split_configuration.py,sha256=JyNaj2n4vfOcSm2IiXBmJAUU6RxH1TFd6n0Oj0E3-Og,2667
+unquad/evaluation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unquad/evaluation/metrics.py,sha256=x2WAA9MFU5CrwpPfeWnaQPbYuuKjdQ7bIenn_fEBHFg,1354
+unquad-0.0.7.dist-info/METADATA,sha256=wpZuHxN536wK24LrbUCzOh7ryVlSjDlrxMVYTjj4qW8,10722
+unquad-0.0.7.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+unquad-0.0.7.dist-info/licenses/LICENSE,sha256=qMss-gzpDaDiFu-elhCk7k4DP6zATM-aOFTj5PRCQ3M,1530
+unquad-0.0.7.dist-info/RECORD,,
