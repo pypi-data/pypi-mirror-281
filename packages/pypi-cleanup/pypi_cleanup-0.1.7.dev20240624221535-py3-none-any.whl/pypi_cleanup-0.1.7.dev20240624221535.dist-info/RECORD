@@ -1,0 +1,10 @@
+pypi_cleanup/LICENSE,sha256=9z_llch5QMCa8rdVK9S7upNGXafOGxIZsaYYkk-oMkk,11369
+pypi_cleanup/__init__.py,sha256=hdvnx7xaG9DP3N5yKu7H_OzB2i3dKT7TKUJr8pHEPa0,12916
+pypi_cleanup/__version__.py,sha256=kQlbZKQoXYJzqU7shyCwiBqLVOJrIU-33TJIn5TgY5g,692
+pypi_cleanup-0.1.7.dev20240624221535.dist-info/METADATA,sha256=Xp3eJDHIUTennPdI81pIfedlMZkpltD8YDiEWtp5c-o,5202
+pypi_cleanup-0.1.7.dev20240624221535.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+pypi_cleanup-0.1.7.dev20240624221535.dist-info/entry_points.txt,sha256=DFRxJx6oxFwoV5PODxTxj2_qLPCvxD1utjRr8uxb2d4,51
+pypi_cleanup-0.1.7.dev20240624221535.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pypi_cleanup-0.1.7.dev20240624221535.dist-info/top_level.txt,sha256=cDy9JVfHSyMtglUcaFaDjEKIVv4QBdprhAJ7k1xnMeQ,13
+pypi_cleanup-0.1.7.dev20240624221535.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pypi_cleanup-0.1.7.dev20240624221535.dist-info/RECORD,,
