@@ -1,0 +1,11 @@
+petitgrad/__init__.py,sha256=ZveqgxbzQ3yHHGBC_LvJRM9eB5nKdI5OK641zNxkodE,54
+petitgrad/engine.py,sha256=jq72j2pOQmg-Ma1fC622vEQROqSL8VGBl29F8laOvg8,7045
+petitgrad/nn.py,sha256=jIWaQGzivTzWTH9S8J2J5QaCU0JOa9hYDn18nNnmdw4,2298
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_engine.py,sha256=DdfR-NXCIvljOgPWt7BmRamBuZeb6-y-ghc80YB2720,1693
+tests/test_nn.py,sha256=2mHs0GQ_L8DKqrdES4evLhbrUlE1Yx3McBEcoT4m_Zw,1017
+petitgrad-0.1.1.dist-info/LICENCE,sha256=O28S1mbXDhh3eaCyXTKv1AySBskVCKROwyeezJh45xs,1085
+petitgrad-0.1.1.dist-info/METADATA,sha256=tjoxK_qYvZF148tJylSKZL4RZOKadiv9KwC9M8OYNlo,7729
+petitgrad-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+petitgrad-0.1.1.dist-info/top_level.txt,sha256=cRCx5WrwF6sr3vncrbsBpvGaV0ZeRgwbOH6OanfixF0,16
+petitgrad-0.1.1.dist-info/RECORD,,
