@@ -1,0 +1,2 @@
+nefertem-validation~=2.0
+frictionless==5.15.0

@@ -1,0 +1,11 @@
+pyproject.toml
+nefertem_validation_frictionless/__init__.py
+nefertem_validation_frictionless/builder.py
+nefertem_validation_frictionless/constraints.py
+nefertem_validation_frictionless/plugin.py
+nefertem_validation_frictionless/utils.py
+nefertem_validation_frictionless.egg-info/PKG-INFO
+nefertem_validation_frictionless.egg-info/SOURCES.txt
+nefertem_validation_frictionless.egg-info/dependency_links.txt
+nefertem_validation_frictionless.egg-info/requires.txt
+nefertem_validation_frictionless.egg-info/top_level.txt
