@@ -1,0 +1,122 @@
+stages:
+  - deploy
+  - quality
+  - test
+  - documentation
+
+image: python:3.10
+before_script:
+  - pip install tox
+
+lint:
+  stage: quality
+  script:
+    - tox -e lint
+
+unittest:
+  stage: test
+  image: python:$PYTHON_VER
+  script:
+    - tox -e $ENV
+    - tox -e coverage-report
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: build/cobertura.xml
+  parallel:
+    matrix:
+      - ENV: py38
+        PYTHON_VER: "3.8"
+      - ENV: py39
+        PYTHON_VER: "3.9"
+      - ENV: py310
+        PYTHON_VER: "3.10"
+      - ENV: py311
+        PYTHON_VER: "3.11"
+      - ENV: py312
+        PYTHON_VER: "3.12"
+
+docs:
+  stage: documentation
+  script:
+    - tox -e docs
+
+changelog:
+  stage: documentation
+  script:
+    - tox -e changelog
+
+description:
+  stage: documentation
+  script:
+    - tox -e pypi-description
+
+publish_docs:
+  stage: deploy
+  script:
+    - tox -e docs
+    - mv docs/_build/html html
+    # - mv docs/_build/rinoh pdf
+  artifacts:
+    name: "docs-$CI_COMMIT_REF_NAME"
+    paths:
+      - html
+      # - pdf/mlnext.pdf
+  only:
+    - main
+    - tags
+
+connection:
+  stage: deploy
+  before_script:
+    - pip install --upgrade requests
+  script:
+    - python -c 'import requests; print(requests.head("http://upload.pypi.org"))'
+
+build:
+  stage: deploy
+  artifacts:
+    name: dist
+    paths:
+      - ./dist
+    expire_in: 1h
+  script:
+    - tox -e build
+  only:
+    - pypi-release
+    - main
+    - tags
+
+release-private:
+  stage: deploy
+  needs:
+    - build
+  before_script:
+    - pip install twine
+  script:
+    - python -m twine upload --verbose --skip-existing dist/*
+  only:
+    - tags
+
+release-public-pypi:
+  stage: deploy
+  needs:
+    - build
+  before_script:
+    - pip install twine
+    - pip install --upgrade certifi
+  script:
+    - >
+      python
+      -m twine upload
+      --verbose
+      --skip-existing
+      --repository-url ${PYPI_REPOSITORY_URL}
+      --cert ${PYPI_CERT}
+      -u ${PYPI_USER}
+      -p ${PYPI_TOKEN}
+      dist/*
+  only:
+    - pypi-release
+    - tags
