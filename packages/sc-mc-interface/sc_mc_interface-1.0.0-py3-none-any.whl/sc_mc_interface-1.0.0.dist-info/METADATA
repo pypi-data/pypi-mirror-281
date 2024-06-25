@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sc_mc_interface
+Version: 1.0.0
+Summary: mc查询会话conversation接口
+Author: dyy
+Requires-Dist: requests >=2.0.0
+
