@@ -1,0 +1,8 @@
+utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils/chunk_analyzer.py,sha256=2IV9T_neEIsHcY7ogZXiK2AOZqJv49Wz_pIvy7P-PMo,1473
+utils/chunk_joiner.py,sha256=2hLe8z_UVVHokfGs_o731NCUc_cpjd6n0wezcjhs9HY,1069
+splitview-0.0.1.dist-info/LICENSE,sha256=5YpA4Gz6v8khynAIR77i7cfCyZvOrADdlYQvgizbxMo,1091
+splitview-0.0.1.dist-info/METADATA,sha256=RA3Su13s8b0tXK5n1BtHpPhSIWdw-sLFjsrSQKb3dyQ,562
+splitview-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+splitview-0.0.1.dist-info/top_level.txt,sha256=BXdhaaHBJTl5WDScj-NdcpdW6F1g7hNN3YP0CLPxk-0,6
+splitview-0.0.1.dist-info/RECORD,,

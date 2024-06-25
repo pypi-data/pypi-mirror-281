@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: splitview
+Version: 0.0.1
+Summary: Simple tool for viewing the split text of your documents
+Home-page: https://github.com/yourusername/your-repo
+Author: Kenneth Leung
+Author-email: tbd@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ✂️ SplitView
+Visualization of document text chunks before feeding into vector store
