@@ -1,0 +1,7 @@
+beautifulsoup4
+openpyxl
+httpx
+dateutils
+anticaptchaofficial
+capsolver
+2captcha-python
