@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/chess_dataset/__init__.py
+src/chess_dataset.egg-info/PKG-INFO
+src/chess_dataset.egg-info/SOURCES.txt
+src/chess_dataset.egg-info/dependency_links.txt
+src/chess_dataset.egg-info/top_level.txt
