@@ -1,0 +1,5 @@
+typing_extensions
+numpy<3.0,>=1.15
+pyqtgraph~=0.11
+dvg-ringbuffer~=1.1
+qtpy
