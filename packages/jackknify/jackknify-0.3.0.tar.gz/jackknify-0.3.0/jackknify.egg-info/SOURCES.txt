@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+jackknify/ImSettings.py
+jackknify/Main.py
+jackknify/MsManager.py
+jackknify/Plot.py
+jackknify/__init__.py
+jackknify/io.py
+jackknify.egg-info/PKG-INFO
+jackknify.egg-info/SOURCES.txt
+jackknify.egg-info/dependency_links.txt
+jackknify.egg-info/requires.txt
+jackknify.egg-info/top_level.txt

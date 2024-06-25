@@ -1,0 +1,9 @@
+astropy
+casatasks
+casatools
+casadata
+jupyterlab
+matplotlib
+numpy
+scipy
+tqdm
