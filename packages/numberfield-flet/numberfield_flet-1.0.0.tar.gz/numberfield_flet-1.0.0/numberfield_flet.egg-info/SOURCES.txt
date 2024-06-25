@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+numberfield_flet/__init__.py
+numberfield_flet.egg-info/PKG-INFO
+numberfield_flet.egg-info/SOURCES.txt
+numberfield_flet.egg-info/dependency_links.txt
+numberfield_flet.egg-info/requires.txt
+numberfield_flet.egg-info/top_level.txt
