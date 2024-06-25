@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: experimentalTreatingIsiPol
+Version: 0.0.2
+Summary: Um package para auxialar no tratamento de dados
+Project-URL: Homepage, https://github.com/jonastieppo/PostProcessingData
+Author-email: Example Author <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# Introdução e filosofia da implementação
+
+Esse repositório é uma iniciativa, por parte da PDI, de criar ferramentas para pós-processamento de resultados experimentais. Tais ferramentas serão auditáveis, abertas, e com o intuito de ser colaborativa.
+
+A ferramenta irá gerar uma classe que irá herdar 
