@@ -1,0 +1,11 @@
+cvpl_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cvpl_tools/array_key_dict.py,sha256=TqdWQ0rZBSluE2A5K4oKvG2UmDhQsgh0bKdI-_eBrwM,8037
+cvpl_tools/dataset_reference.py,sha256=dLIoPkwzCQjhhh1LcYN4rweFOpiTmN7GWxSvZ1hqilc,2437
+cvpl_tools/fs.py,sha256=yANlYZb8pju6V2Al0WLvcspugsrN1EMVjczUBBr0pLw,17157
+cvpl_tools/persistence.py,sha256=5QuvFpRfmf6TOvRYhHAu9umnM-oW4MHtnss-OOf7gRo,1794
+cvpl_tools/reader_from_cmd.py,sha256=VTBQ6TJJ1jRSSuSkmUftaS45TTeMJm61y6RBlLyDkbU,1871
+cvpl_tools/strenc.py,sha256=4yZT3cEARNhtvDB3qNs0rPmi11P95ClFiyya8m1ZerM,4236
+cvpl_tools-0.1.2.dist-info/LICENSE,sha256=AT7eiFXkdK2Z7FBi3vTD-WjJetQAWnCoil8Mg6fA2YI,1088
+cvpl_tools-0.1.2.dist-info/METADATA,sha256=1eVX2W1X-U5LfWS4FHzbXjDYf-LBO19zYCTEdUyJ2bo,1756
+cvpl_tools-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cvpl_tools-0.1.2.dist-info/RECORD,,
