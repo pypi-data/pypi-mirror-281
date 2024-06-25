@@ -1,0 +1,7 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datadog-serverless-agent-linux-amd64/datadog-serverless-trace-mini-agent,sha256=98DaWjcDUIUM4E70EwolgZbZ3Ha9Va7pX8g8Yv2HcYo,1380720
+datadog-serverless-agent-windows-amd64/datadog-serverless-trace-mini-agent.exe,sha256=u8bty1yWw0fSMsVBY_Bi7_ccXd9qht2h3Y1BvGlZwGw,1317376
+datadog_sma-0.4.1.dist-info/METADATA,sha256=Biaw7a0h3qUHUTSoC-5BHRjE9AFuJoS7N2IFdN00WX4,56
+datadog_sma-0.4.1.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+datadog_sma-0.4.1.dist-info/top_level.txt,sha256=i6mslYUbN8IycQD35NMlhZ1O5OTRVoD8UhTOtDME-jc,85
+datadog_sma-0.4.1.dist-info/RECORD,,
