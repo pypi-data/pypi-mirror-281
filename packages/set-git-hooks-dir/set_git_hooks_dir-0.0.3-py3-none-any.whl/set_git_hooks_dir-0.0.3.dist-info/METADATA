@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: set-git-hooks-dir
+Version: 0.0.3
+Summary: Deadly simple Git hooks directory setup tool
+Author-email: rhysd <lin90162@yahoo.co.jp>
+Project-URL: Homepage, https://github.com/rhysd/set-git-hooks-dir
+Project-URL: Issues, https://github.com/rhysd/set-git-hooks-dir/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+TODO
