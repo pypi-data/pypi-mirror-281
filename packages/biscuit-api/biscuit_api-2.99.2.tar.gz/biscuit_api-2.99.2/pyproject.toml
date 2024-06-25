@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "biscuit-api"
+version = "2.99.2"
+description = "The uncompromising code editor"
+authors = ["Billy <billydevbusiness@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "biscuit", from = "src" },
+    { include = "cli", from = "src" },
+]
+
+[tool.poetry.scripts]
+biscuit = "cli.cli:run"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+hintedtext = "^0.6.0"
+watchdog = "^4.0.1"
+filetype = "^1.2.0"
+GitPython = "^3.1.43"
+tkextrafont = "^0.6.3"
+Pygments = "^2.18.0"
+toml = "^0.10.2"
+sv-ttk = "^2.6.0"
+Pillow = "^10.3.0"
+requests = "^2.32.2"
+pyperclip = "^1.8.2"
+tkinterweb = "^3.23.9"
+mistune = "^3.0.2"
+tarts = "^0.12.0"
+chardet = "^5.2.0"
+pywinpty = { version = "^2.0.13", platform = "win32" }
+ptyprocess = { version = "^0.7.0", platform = "linux" }
+python-tkdnd = "^0.2.1"
+psutil = "^5.9.8"
+google-generativeai = "^0.5.4"
+sortedcontainers = "^2.4.0"
+click = "^8.1.7"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+pytest-dotenv = "^0.5.2"
+git-changelog = "^2.5.2"
+pyperclip = "^1.8.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
