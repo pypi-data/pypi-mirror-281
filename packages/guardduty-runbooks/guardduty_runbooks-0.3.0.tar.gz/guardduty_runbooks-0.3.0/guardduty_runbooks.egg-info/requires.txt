@@ -1,0 +1,4 @@
+markdownify>=0.12.1
+docopt>=0.6.2
+requests>=2.32.3
+beautifulsoup4>=4.12.3
