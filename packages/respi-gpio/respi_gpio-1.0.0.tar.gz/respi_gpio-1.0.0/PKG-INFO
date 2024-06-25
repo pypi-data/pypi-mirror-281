@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: respi_gpio
+Version: 1.0.0
+Summary: respi_socket_gpio
+Home-page: https://pypi.org/project/respi_gpio/
+Author: zhubin
+Author-email: zhu2000410@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Python tools
+
+## Installation
+
+```shell
+pip3 uninstall respi_gpio
+pip3 install respi_gpio
+```
+
