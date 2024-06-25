@@ -1,0 +1,9 @@
+duo_hmac/duo_canonicalize.py,sha256=BDxpUxsBYWMmz1-FgK3zfaGCwKVXLP29qA4FksObJYg,2788
+duo_hmac/duo_hmac.py,sha256=S3KO_LvUV1RbYVT8jZUyIPzinGO6iz8OEHvY6qShUCQ,4773
+duo_hmac/duo_hmac_utils.py,sha256=yqjXa-vbDXKZbQyxVEx65cIiefBDMdO_dTTWjcl16_M,2732
+duo_hmac/duo_hmac_validation.py,sha256=DvyjE05FiocFBSCDsSth9K14o2r_BlQV-s75szjJkvE,1276
+duo_hmac-0.1.0.dist-info/LICENSE,sha256=1uDF3rT7pWJJG5WJYxXmL--A9EuloysR6lB1izSD3Bw,1069
+duo_hmac-0.1.0.dist-info/METADATA,sha256=bwQaYrTIBcqrJUPJPsTVmKhtELHgh56jkM6Y7ZClhtY,3806
+duo_hmac-0.1.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+duo_hmac-0.1.0.dist-info/top_level.txt,sha256=8VrPRQ_GouEMIRBsZlxOrKFfReeAK5x9ICBPfYX65WU,9
+duo_hmac-0.1.0.dist-info/RECORD,,
