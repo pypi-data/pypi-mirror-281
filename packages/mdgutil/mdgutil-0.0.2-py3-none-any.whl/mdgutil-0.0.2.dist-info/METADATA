@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: mdgutil
+Version: 0.0.2
+Summary: Package for various data processing pipelines used by MDG
+Project-URL: Homepage, https://https://github.com/kr0401/mdgutil
+Project-URL: Issues, https://github.com/kr0401/mdgutil/issues
+Author-email: Kevin Regan <kregan4196@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# mdgutil
