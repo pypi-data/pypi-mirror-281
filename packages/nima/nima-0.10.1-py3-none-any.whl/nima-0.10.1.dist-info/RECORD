@@ -1,0 +1,13 @@
+nima/__init__.py,sha256=LaigvSZRYUSFmYJ0FlegtIrMHT7SecDp5fDilM6a7WU,43
+nima/__main__.py,sha256=-9qOWiTcvS3EFzx1TtKOE_SWsemkaX3LcJV9Y6t5dbI,19804
+nima/generat.py,sha256=UGTS7V1IbIKATLkXDIVk3wPK5KdwtMScBkrkgZ998eo,3484
+nima/nima.py,sha256=FYenKz_wRENvz8fs-7jFZjSGntlU0k7tY6TtkCghYAs,27990
+nima/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nima/segmentation.py,sha256=E1eO_e7pk_Svh8P9ceOwLM8uNwVdXJ0aTO8H43lQX-0,19225
+nima/types.py,sha256=KL6vlcTp7xZJzhaiVaQQZfEtyioB7_PcAOCXBteNs4E,370
+nima/utils.py,sha256=Vzdr8D8-b-J_5W2OnLzVZ3iaSgIT--zWZWj2PWXVLws,5305
+nima-0.10.1.dist-info/METADATA,sha256=AeiupGI9lzhZ1APtrz6TXvcXnRf-SHZwjIy5o6fbVQw,6997
+nima-0.10.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+nima-0.10.1.dist-info/entry_points.txt,sha256=RVR6Xp6R1Emu7zg-N8TRcRrL_4a7hUwINessRZoL8vM,70
+nima-0.10.1.dist-info/licenses/LICENSE.txt,sha256=moE9QHfvJv6WRpomTTxP1Qvmaxvorc_26ZE-4cu90wg,1476
+nima-0.10.1.dist-info/RECORD,,
