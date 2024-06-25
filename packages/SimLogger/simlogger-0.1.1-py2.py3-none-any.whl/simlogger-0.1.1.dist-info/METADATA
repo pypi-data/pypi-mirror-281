@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: SimLogger
+Version: 0.1.1
+Author-email: Joey Kilgore <joey.a.kilgore@gmail.com>
+License-File: LICENSE
+Requires-Dist: datetime
+Requires-Dist: logging
+Requires-Dist: os
+Requires-Dist: pandas
+Requires-Dist: pathlib
+Requires-Dist: pickle
+Description-Content-Type: text/markdown
+
+# simLogger
+Logger and python data archiving
