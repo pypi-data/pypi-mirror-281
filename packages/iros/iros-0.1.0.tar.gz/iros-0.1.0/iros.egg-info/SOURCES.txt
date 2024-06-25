@@ -1,0 +1,17 @@
+LICENCE
+README.md
+setup.py
+iros/__init__.py
+iros/activations.py
+iros/layers.py
+iros/network.py
+iros.egg-info/PKG-INFO
+iros.egg-info/SOURCES.txt
+iros.egg-info/dependency_links.txt
+iros.egg-info/requires.txt
+iros.egg-info/top_level.txt
+tests/__init__.py
+tests/test_activations.py
+tests/test_layers.py
+tests/test_network.py
+tests/test_save_load.py
