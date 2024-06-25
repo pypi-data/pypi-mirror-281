@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ons_sds_publisher_demo/__init__.py
+ons_sds_publisher_demo/publisher_service.py
+ons_sds_publisher_demo.egg-info/PKG-INFO
+ons_sds_publisher_demo.egg-info/SOURCES.txt
+ons_sds_publisher_demo.egg-info/dependency_links.txt
+ons_sds_publisher_demo.egg-info/not-zip-safe
+ons_sds_publisher_demo.egg-info/requires.txt
+ons_sds_publisher_demo.egg-info/top_level.txt

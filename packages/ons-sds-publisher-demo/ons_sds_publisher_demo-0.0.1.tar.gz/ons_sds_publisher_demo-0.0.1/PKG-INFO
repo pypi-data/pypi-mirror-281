@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ons_sds_publisher_demo
+Version: 0.0.1
+Summary: A demo of GCP publisher service
+Home-page: 
+Author: Isaiah Lai
+Author-email: isaiah.lai@ons.gov.uk
+License: MIT
+License-File: LICENSE
+Requires-Dist: google-cloud-pubsub
