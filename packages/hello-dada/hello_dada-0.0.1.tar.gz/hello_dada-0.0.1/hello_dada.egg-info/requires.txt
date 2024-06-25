@@ -1,0 +1,7 @@
+numpy
+
+[all]
+hello-dada[extra]
+
+[extra]
+pandas
