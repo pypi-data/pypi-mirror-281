@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: ttoa-cli
+Version: 0.0.1
+Summary: CLI for TTOA
+Home-page: https://github.com/TapTarget/TTO
+Author: Rick Lamers
+Author-email: rick@orchest.io
+License: Apache 2.0
+Project-URL: Documentation, https://docs.orchest.io/en/stable/
+Project-URL: Source Code, https://github.com/TapTarget/TTO/tree/master/orchest-cli
+Keywords: TTOA
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click >=8.0.0
+Requires-Dist: requests
+
+# TapTarget Orchest API CLI
+
+[Website](https://www.orchest.io) —
+[Docs](https://docs.orchest.io/en/stable/)
+
+---
+
+Wrapper around the Orchest API to interact with
+[Orchest](https://github.com/TapTarget/TTO) on your Kubernetes cluster. 
+
+## Installation
+
+```sh
+pip install ttoa-cli
+
+# set the correct env variables from the bash cmd line
+export URL={{ URL }}
+export USERNAME={{ USERNAME }}
+export PASSWORD={{ PASSWORD }}
+
+# run the --help command to get more info
+ttoa --help
+```
+
+
