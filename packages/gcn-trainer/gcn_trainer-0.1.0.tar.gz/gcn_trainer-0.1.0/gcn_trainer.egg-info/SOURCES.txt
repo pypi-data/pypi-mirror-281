@@ -1,0 +1,7 @@
+README.md
+setup.py
+gcn_trainer.egg-info/PKG-INFO
+gcn_trainer.egg-info/SOURCES.txt
+gcn_trainer.egg-info/dependency_links.txt
+gcn_trainer.egg-info/requires.txt
+gcn_trainer.egg-info/top_level.txt
