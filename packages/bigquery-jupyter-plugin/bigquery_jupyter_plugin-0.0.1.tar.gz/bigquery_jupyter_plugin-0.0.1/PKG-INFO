@@ -1,0 +1,121 @@
+Metadata-Version: 2.3
+Name: bigquery_jupyter_plugin
+Version: 0.0.1
+Dynamic: Keywords
+Summary: BigQuery JupyterLab Plugin
+Project-URL: Homepage, https://github.com/GoogleCloudPlatform/bigquery-jupyter-plugin
+Project-URL: Bug Tracker, https://github.com/GoogleCloudPlatform/bigquery-jupyter-plugin/issues
+Project-URL: Repository, https://github.com/GoogleCloudPlatform/bigquery-jupyter-plugin.git
+Author-email: "Google Inc." <dataproc-plugins@google.com>
+License: Redistribution and use in source and binary forms, with or without modification,
+        are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its contributors
+           may be used to endorse or promote products derived from this software without
+           specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+        ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+        LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+        ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 4
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: dataproc-jupyter-plugin>=0.1.74
+Requires-Dist: jupyter-server<3,>=2.0.1
+Provides-Extra: test
+Requires-Dist: coverage; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Requires-Dist: pytest-asyncio; extra == 'test'
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest-jupyter[server]>=0.6.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+# bigquery_jupyter_plugin
+
+BigQuery JupyterLab Plugin
+
+This extension provides extensions to JupyterLab for working with BigQuery.
+
+## Requirements
+
+- JupyterLab >= 4.0.0
+
+## Install
+
+To install the extension, execute:
+
+```bash
+pip install bigquery_jupyter_plugin
+```
+
+## Uninstall
+
+To remove the extension, execute:
+
+```bash
+pip uninstall bigquery_jupyter_plugin
+```
+
+## Troubleshoot
+
+To check if the server extension is enabled:
+
+```bash
+jupyter server extension list
+```
+
+## Contributing
+
+### Installing from your local repo/branch
+
+```bash
+pip install -e ".[test]"
+```
+
+### Testing the extension
+
+#### Server tests
+
+This extension is using [Pytest](https://docs.pytest.org/) for Python code testing.
+
+Install test dependencies (needed only once):
+
+```sh
+pip install -e ".[test]"
+```
+
+To execute them, run:
+
+```sh
+pytest -vv -r ap --cov bigquery_jupyter_plugin
+```
+
+### Packaging the extension
+
+See [RELEASE](RELEASE.md)
