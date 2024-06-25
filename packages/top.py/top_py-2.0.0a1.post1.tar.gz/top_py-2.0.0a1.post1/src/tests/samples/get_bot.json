@@ -1,0 +1,30 @@
+{
+  "defAvatar": "abcdef0123456789",
+  "invite": "https://invite.example",
+  "website": "https://website.example/",
+  "support": "AbCdEfG",
+  "github": null,
+  "longdesc": "A very long description",
+  "shortdesc": "A very short description",
+  "prefix": "!",
+  "lib": "discord.py",
+  "clientid": "235148962103951360",
+  "avatar": "abcdef0123456789",
+  "id": "235148962103951360",
+  "discriminator": "1234",
+  "username": "Example",
+  "date": "2018-02-15T17:25:12.552Z",
+  "server_count": 1,
+  "shard_count": null,
+  "guilds": ["729779146682793984"],
+  "shards": null,
+  "monthlyPoints": 1,
+  "points": 2,
+  "certifiedBot": false,
+  "owners": [
+    "421698654189912064"
+  ],
+  "tags": ["example"],
+  "bannerUrl": null,
+  "donatebotguildid": null
+}

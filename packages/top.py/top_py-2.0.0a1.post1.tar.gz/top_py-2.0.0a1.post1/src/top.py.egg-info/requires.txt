@@ -1,0 +1,12 @@
+
+[dev]
+discord-py
+pytest
+pytest-asyncio
+pytest-benchmark
+pytest-dependency
+ruff
+isort
+sphinx
+sphinx-rtd-dark-mode
+aioresponses
