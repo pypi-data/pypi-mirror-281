@@ -1,0 +1,2 @@
+[console_scripts]
+clonebuildregister = src.clonebuildregister.__main__:main
