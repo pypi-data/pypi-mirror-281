@@ -1,0 +1,17 @@
+README.md
+setup.py
+solo_cli/__init__.py
+solo_cli/constants.py
+solo_cli/main.py
+solo_cli.egg-info/PKG-INFO
+solo_cli.egg-info/SOURCES.txt
+solo_cli.egg-info/dependency_links.txt
+solo_cli.egg-info/entry_points.txt
+solo_cli.egg-info/requires.txt
+solo_cli.egg-info/top_level.txt
+solo_cli/config/__init__.py
+solo_cli/utils/__init__.py
+solo_cli/utils/chat_ui.py
+solo_cli/utils/llama_server.py
+tests/__init__.py
+tests/test_main.py
