@@ -1,0 +1,13 @@
+data2notion_main.py,sha256=j0tzTUVl9Pn2QN-dom3k11BZpsXx-pRqPAgLv-dxJAk,17284
+data2notion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data2notion/serialization.py,sha256=5QkeKT5ycHecE19Jm50P1mHD17rZYWNcr-AhVzE7Qv8,9293
+data2notion/plugins/__init__.py,sha256=3UtDe6LrNgUC5faTWwAEqEbFsWBe8h_isNNHIftIX2g,34
+data2notion/plugins/csv_plugin.py,sha256=R5WNVyQbaNT7detB0PQMmHgGDzCE7bUk01V-fdXjY90,2509
+data2notion/plugins/json_plugin.py,sha256=Ol7udf6NBe8W1hIG1dUFaHalyrrexeRcqgCkggVNkkY,2478
+data2notion/plugins/plugin.py,sha256=fKIHGevPm8tX3Mz7gHFmudrwFFiESGpwClpU9FQkcOI,3071
+data2notion/plugins/prometheus_plugin.py,sha256=FeqLy2FMLdUPtOjjsB_K5s71ZU643U_KDEOSDvrMjM4,6382
+data2notion-0.0.1.dist-info/METADATA,sha256=msxZnyHYZChb3dvILOh-ORvdYrKwhy5japaNYB-t5P0,5776
+data2notion-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+data2notion-0.0.1.dist-info/entry_points.txt,sha256=1lXRB5FJucRTs8VbmcK3dubzI4t022tI0GW_a3I5PkI,54
+data2notion-0.0.1.dist-info/licenses/LICENSE,sha256=hTVhNPAJADwATVllsu3sPlQSVg83MaXvAnsPpjGWksE,1071
+data2notion-0.0.1.dist-info/RECORD,,
