@@ -1,0 +1,3 @@
+[console_scripts]
+django-ts-exporter = django_ts_exporter.exporter:main
+
