@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: rexia_ai
+Version: 0.1
+License-File: LICENSE
+Requires-Dist: langchain_community==0.2.5
+Requires-Dist: langchain_google_community==1.0.5
+Requires-Dist: langchain_openai==0.1.9
+Requires-Dist: llmware==0.3.0
+Requires-Dist: moviepy==1.0.3
+Requires-Dist: openai==1.35.3
+Requires-Dist: opencv_python==4.10.0.82
+Requires-Dist: opencv_python_headless==4.10.0.82
+Requires-Dist: pydantic==2.7.4
+Requires-Dist: pytube==15.0.0
+Requires-Dist: Requests==2.32.3
+Requires-Dist: setuptools==69.5.1
+Requires-Dist: transformers==4.41.2
