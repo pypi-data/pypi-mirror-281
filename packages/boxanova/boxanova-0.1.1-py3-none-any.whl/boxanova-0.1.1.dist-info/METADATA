@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: boxanova
+Version: 0.1.1
+Summary: 
+Author: PascalHessler
+Author-email: PascalHessler@outlook.de
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: matplotlib (>=3.9.0,<4.0.0)
+Requires-Dist: scipy (>=1.13.1,<2.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Requires-Dist: statsmodels (>=0.14.2,<0.15.0)
+Description-Content-Type: text/markdown
+
+# BoxAnova
+This package is build on Seaborn Boxplots. Its main purpose ist to create Boxplots with additional significance information.
+Using ANOVAs to evaluate if group and hue differnces are significant, it adds significance information to the plot.
