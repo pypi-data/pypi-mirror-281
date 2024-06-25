@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+splitview.egg-info/PKG-INFO
+splitview.egg-info/SOURCES.txt
+splitview.egg-info/dependency_links.txt
+splitview.egg-info/top_level.txt
+utils/__init__.py
+utils/chunk_analyzer.py
+utils/chunk_joiner.py
