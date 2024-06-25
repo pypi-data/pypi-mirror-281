@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: stack-gen
+Version: 0.0.9
+Summary: A cli tool to generate frontend and backend base structure app.
+Home-page: 
+Author: Devoteam digital lab
+Author-email: valdo.negou.tawembe@devoteamgcloud.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click ==8.1.7
+
+# Stack Generator
+
+Stack generator is a CLI tool that allows you to generate an application template in one command.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install stack generator.
+
+```bash
+pip install stack-gen
+```
+
+## Usage
+
+```bash
+sg --template=fastapi
+sg --template=vuejs
+```
+
+## Help
+
+```bash
+Options:
+  -r, --github_repository TEXT       Name of repository containing the template to generate
+  --u TEXT                           Name of github's user owning the repository
+  -gac, --github_access_token TEXT   Github access token used to manage branch protection on generation (optional)
+                                  
+  --help                             Show this message and exit.
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Deploy a new version
+
+```bash
+pip install wheel
+cd stack-gen
+python setup.py sdist bdist_wheel
+twine upload dist/*
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
