@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+danny_pip/__init__.py
+danny_pip/util.py
+danny_pip.egg-info/PKG-INFO
+danny_pip.egg-info/SOURCES.txt
+danny_pip.egg-info/dependency_links.txt
+danny_pip.egg-info/top_level.txt
