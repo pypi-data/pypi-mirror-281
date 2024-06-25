@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: power_controller
+Version: 0.0.1
+Summary: description
+Author-email: Raul Shahi <rahulfromnepal2013@gmail.com>
+Project-URL: Homepage, https://github.com/RaulShahi/power_controller
+Project-URL: Issues, https://github.com/RaulShahi/power_controller/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# power_controller
+Novel transmit power controller
