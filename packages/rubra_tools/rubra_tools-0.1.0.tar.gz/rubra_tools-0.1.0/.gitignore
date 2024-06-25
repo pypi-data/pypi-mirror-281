@@ -1,0 +1,8 @@
+# *.ipynb
+*.DS_Store
+*__pycache__
+*dist
+package-lock.json
+package.json
+node_modules
+test_llamacpp.ipynb
