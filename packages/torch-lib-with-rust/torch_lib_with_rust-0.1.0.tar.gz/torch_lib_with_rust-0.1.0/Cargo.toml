@@ -1,0 +1,17 @@
+[package]
+name = "torch-lib-with-rust"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[lib]
+name = "torch_lib_with_rust"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3-tch = "0.16.0"
+torch-sys = "0.16.0"
+
+[dependencies.pyo3]
+version = "0.21.2"
+features = ["abi3-py38", "extension-module"]
