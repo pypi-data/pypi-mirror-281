@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: vypex
+Version: 0.0.0.1
+Summary: vypex
+Home-page: http://pypi.python.org/pypi/veilcord
+Author: @imvast
+Author-email: dev@vast.sh
+License: MIT
+Project-URL: Homepage, https://github.com/imvast
+Project-URL: Suggestions, https://github.com/imvast/veilcord/issues
+Project-URL: Support, https://t.me/skiddos
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: terminut >=0.0.0.901
+Requires-Dist: colorama >=0.4.6
+Requires-Dist: requests >=2.30.0
+Requires-Dist: httpx >=0.25.0
+Requires-Dist: tls-client >=0.2.1
+Requires-Dist: websocket-client >=1.5.1
+Requires-Dist: google-re2 >=1.1
+
