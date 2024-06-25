@@ -1,0 +1,10 @@
+mrisegmentator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mrisegmentator/cmdline.py,sha256=WpCwry50LEZ6Yrk_3go5nDZ6MzUl5WtbR1vF3CEzsyA,1326
+mrisegmentator/download_weights.py,sha256=7FJVbSSDZUqmE0blfcWjVCqkwk-l9Tj6qqFLkhk0hTo,2513
+mrisegmentator/inference.py,sha256=c4DkbXWCyhEL_HsZ24UrObtaeoY6X8EOV4Y6sWbR0BI,3325
+MRISegmentator-0.3.0.dist-info/LICENSE,sha256=5qXJ-ON8G09bgdND5SCnZtJ8quE1nlGbCCwrmKgFjtk,21548
+MRISegmentator-0.3.0.dist-info/METADATA,sha256=m1_ocH1mXaMDq-YBdbovu7nURziQkIKvV_-AdSHvlmE,6965
+MRISegmentator-0.3.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+MRISegmentator-0.3.0.dist-info/entry_points.txt,sha256=WCLnegMrltYU5VZbfL4hOz5cKokjOh4jETKJ_JfmI4U,140
+MRISegmentator-0.3.0.dist-info/top_level.txt,sha256=um2GT_6x3DxjmzpHggoX-Ekj1OopsVDt9CU0hAqoAQc,15
+MRISegmentator-0.3.0.dist-info/RECORD,,
