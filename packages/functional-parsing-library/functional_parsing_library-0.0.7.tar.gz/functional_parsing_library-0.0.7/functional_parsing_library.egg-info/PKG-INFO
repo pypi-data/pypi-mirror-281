@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: functional_parsing_library
+Version: 0.0.7
+Summary: A type-safe applicative parsing library
+Author-email: Wessel Bindt <wesselbindt@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+Has to be included, apparently.
