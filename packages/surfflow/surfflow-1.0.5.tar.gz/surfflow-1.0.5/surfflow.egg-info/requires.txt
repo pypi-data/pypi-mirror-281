@@ -1,0 +1,10 @@
+atomate
+pymatgen==2023.12.18
+custodian
+fireworks
+numpy==1.26.4
+ruamel.yaml==0.17.40
+streamlit
+htflow-utils[workflows]
+custodian
+colorful
