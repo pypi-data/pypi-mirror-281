@@ -1,0 +1,3 @@
+numpy==1.26.0
+oemof.tabular
+oemof-industry
