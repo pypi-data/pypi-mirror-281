@@ -1,0 +1,3 @@
+[airflow.plugins]
+granulate_plugin=apache_airflow_granulate_databricks.granulate_plugin:GranulatePlugin
+

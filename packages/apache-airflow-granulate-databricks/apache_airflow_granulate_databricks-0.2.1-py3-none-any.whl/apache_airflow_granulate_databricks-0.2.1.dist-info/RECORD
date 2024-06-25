@@ -1,0 +1,7 @@
+apache_airflow_granulate_databricks/__init__.py,sha256=1KkrwTvb3m4yowtjHZSahgUqLWAuol66sks8VQrJqLs,1321
+apache_airflow_granulate_databricks/granulate_plugin.py,sha256=N4-c2F7-ympFrfmZ3epBNv7aBrC8QFraX6jbU_BS5Lo,6181
+apache_airflow_granulate_databricks-0.2.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+apache_airflow_granulate_databricks-0.2.1.dist-info/METADATA,sha256=Jqdnkf2wsuzwumDtnAaCHtjWEQ9suKwSGhI3dDv886Y,4175
+apache_airflow_granulate_databricks-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+apache_airflow_granulate_databricks-0.2.1.dist-info/entry_points.txt,sha256=3jZNT3GOTM6PaCMdZ3zC4KHtTaojsecD3-hepfqk8uk,105
+apache_airflow_granulate_databricks-0.2.1.dist-info/RECORD,,
