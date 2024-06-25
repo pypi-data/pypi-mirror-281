@@ -1,0 +1,10 @@
+roter/__init__.py,sha256=OTveAquz_QTtyNREKf8J91-vh9wR4gJfil0rXn0k1Sg,2836
+roter/__main__.py,sha256=hfeehdxJ-T1UaGRDu8quBiiIvYhqeH7yOYt5oE2Bsbw,120
+roter/api.py,sha256=KFJi3dElAU4M_7_fxJfTbBNQEt_HG1_tYbRAYK4dLHM,5585
+roter/cli.py,sha256=QGJviIpwxBb3at2KXOVgF3lhIN2YXaHAtgqk4_0-Xso,5540
+roter-2024.6.25.dist-info/LICENSE,sha256=eqdkndlPYDpi8OOVFayzNx11t0H98qhWXk7NzwiZvl4,1069
+roter-2024.6.25.dist-info/METADATA,sha256=SYDNBKR0qCWCRUZ3q5SeV41cU18nl6JkbxGn9w7VBZA,5317
+roter-2024.6.25.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+roter-2024.6.25.dist-info/entry_points.txt,sha256=KrHmQhSMgtXHtw7dsoRravMQw7loqLsHn1MzfMvFdQY,41
+roter-2024.6.25.dist-info/top_level.txt,sha256=R5oaVQj9PU6zEb_oX-a_svL08Oj2tu0SSQUUWYXCoxQ,6
+roter-2024.6.25.dist-info/RECORD,,
