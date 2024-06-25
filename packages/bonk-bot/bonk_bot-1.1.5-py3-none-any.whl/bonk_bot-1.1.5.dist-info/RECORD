@@ -1,0 +1,15 @@
+bonk_bot/Avatar.py,sha256=K0dvMuvIx_SwX2mIduZHzjmyXvQYBw_m5_SfhAwFHPI,99
+bonk_bot/BonkBot.py,sha256=WShn7t2lPSXWqWdJ_KgKZQDI3D1ugflNDEJxsEcHs5k,13293
+bonk_bot/BonkMaps.py,sha256=SZMoHVPPZpm-4klnCcGvFFWDXn2cn29DXedENFr8jR4,3393
+bonk_bot/FriendList.py,sha256=4EFoWxeQl1r472J_yX_IkdOI4Rgr40gRAj65tVOFswo,4414
+bonk_bot/Game.py,sha256=P7oVBReFyHb2Rmoal5jY4WcJjFHN4NQANKUXFSqpILI,30678
+bonk_bot/Parsers.py,sha256=zLtft3bQtqZXQvzAN5ZQtKnfpkee3dxVLBuOKlvt8tE,3905
+bonk_bot/Room.py,sha256=7hSrpXeY3FT7kMT0XwERMsy4wCK4HDUK_t4DMrwbWY0,2426
+bonk_bot/Settings.py,sha256=NENsda_cF0seR2A3D1TBUKSivETU5l84I0DEeRNoIFY,536
+bonk_bot/Types.py,sha256=ayHj4Z0ICaqxgjuz7ZBO_OCnPQ4ZTaPGcCX-ACIRxkY,5499
+bonk_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bonk_bot-1.1.5.dist-info/LICENSE,sha256=Ld2FaR-zvzyUlwkLQ7dAuvEj84dbj4EwS7T0zUqa1Y8,1086
+bonk_bot-1.1.5.dist-info/METADATA,sha256=guR9AhHQ8Y9cAo_A_39S4ypxdm0s33M0KOtCZeh1ABg,5006
+bonk_bot-1.1.5.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+bonk_bot-1.1.5.dist-info/top_level.txt,sha256=AqYQsPhiajik87drMMcXtytC06QpbIMeJ4-Usteu7X8,9
+bonk_bot-1.1.5.dist-info/RECORD,,
