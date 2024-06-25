@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: scoringrules
+Version: 0.5.3
+Summary: Scoring rules for probabilistic forecast evaluation.
+Home-page: https://github.com/frazane/scoringrules
+Keywords: probabilistic,forecasting,verification
+Author: Francesco Zanetta
+Author-email: zanetta.francesco@gmail.com
+Requires-Python: >=3.10,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numba (>=0.57.0,<1.0.0)
+Requires-Dist: numpy (>=1.25.0,<2.0.0)
+Requires-Dist: scipy (>=1.10.0,<2.0.0)
+Project-URL: Documentation, https://frazane.github.io/scoringrules/
