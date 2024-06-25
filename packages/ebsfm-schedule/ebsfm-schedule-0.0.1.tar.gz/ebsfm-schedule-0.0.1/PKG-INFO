@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ebsfm-schedule
+Version: 0.0.1
+Summary: Crwaling EBS FM, EBS 외국어전문 방송 편성표
+Home-page: https://github.com/cheddars/pypi-ebsfm-schedule
+Author: cheddars
+Author-email: nezahrish@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
