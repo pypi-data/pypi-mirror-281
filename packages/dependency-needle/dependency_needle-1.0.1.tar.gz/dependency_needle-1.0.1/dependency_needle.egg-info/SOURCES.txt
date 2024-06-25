@@ -1,0 +1,7 @@
+README.md
+setup.py
+dependency_needle/__init__.py
+dependency_needle.egg-info/PKG-INFO
+dependency_needle.egg-info/SOURCES.txt
+dependency_needle.egg-info/dependency_links.txt
+dependency_needle.egg-info/top_level.txt
