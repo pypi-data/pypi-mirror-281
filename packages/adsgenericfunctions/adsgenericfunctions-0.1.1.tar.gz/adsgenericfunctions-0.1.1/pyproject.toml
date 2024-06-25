@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "adsgenericfunctions"
+version = "0.1.1"
+description = "Generic functions"
+authors = ["Olivier Siguré <olivier.sigure@alchimiedatasolutions.com>","Matthieu Vannin <matthieu.vannin@alchimiedatasolutions.com>", "Antoine Ducoulombier <antoine.ducoulombier@alchimiedatasolutions.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+psycopg2-binary = "2.9.5"
+sendgrid = "6.10.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
