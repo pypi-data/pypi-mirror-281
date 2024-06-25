@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: green_lib
+Version: 1.0.0
+Summary: A Python package for making HTTP requests using green_requests.so
+Home-page: https://github.com/MR-GREEN-143/green_lib
+Author: Tamim Ahmed
+Author-email: admin@teamgreenxd.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
