@@ -1,0 +1,2 @@
+[console_scripts]
+swirlc = swirlc.main:run
