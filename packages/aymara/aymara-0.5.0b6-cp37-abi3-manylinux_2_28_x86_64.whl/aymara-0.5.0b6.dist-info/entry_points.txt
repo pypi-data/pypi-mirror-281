@@ -1,0 +1,4 @@
+[console_scripts]
+deeplima_models = aymara.deeplima_models:main
+lima = aymara.lima:main
+lima_models = aymara.lima_models:main
