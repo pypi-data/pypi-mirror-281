@@ -1,0 +1,12 @@
+iitkgp_erp_login/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iitkgp_erp_login/endpoints.py,sha256=TROXXkgziH8XIZz2KxaZ-_qMd6ljnjaZYTBTvnasrBg,403
+iitkgp_erp_login/erp.py,sha256=0N38aU0t_4YeexuPm3UrW_bmbzv2JgQbPikWMldq05E,9354
+iitkgp_erp_login/erp_responses.py,sha256=VwFyI4JOYmMgLrQ2w8shMTv9MHgbb7xWS48lMy8STN0,375
+iitkgp_erp_login/read_mail.py,sha256=yJc3MN_7gkNXTNs25s2Qxb0q6DceMJKvN3JHjFtt6Ig,1515
+iitkgp_erp_login/session_manager.py,sha256=18nnVL40VRNTFqenqQKR5eee6gOnh9Z5bj8bsWMmH7Y,4633
+iitkgp_erp_login/utils.py,sha256=-_wQDb6C-PIB4j73uzWvFiG7RRkcWvAj5WOlLe1NIZQ,3558
+iitkgp_erp_login-2.4.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+iitkgp_erp_login-2.4.0.dist-info/METADATA,sha256=bfpeLZ-NqEfGHtOsRtT9z_PgMyAAE3u6KuNKIpR2K-c,20637
+iitkgp_erp_login-2.4.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+iitkgp_erp_login-2.4.0.dist-info/top_level.txt,sha256=mV1jfpu4TYdWU7hf9iKvHn30X4-FsoyCDJ3x60cNlbg,17
+iitkgp_erp_login-2.4.0.dist-info/RECORD,,
