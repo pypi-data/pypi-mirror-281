@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: pornLib
+Version: 1.0.2
+Summary: Get videos from porn sites
+Home-page: https://github.com/sofia-gros/porn-lib-python
+License: MIT
+Author: sofiagros
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/sofia-gros/porn-lib-python
+Description-Content-Type: text/markdown
+
+# porn-lib-python
+
+https://github.com/sofia-gros/porn-lib-python
+
+- [x] 動画リンクからダウンロードリンクの発行
+- [x] チャンネル名で検索
+- [x] カテゴリー・タグリストの取得 
+- [ ] 他のサイトを追加する(Pornhub系は別ライブラリに任せるので対応しない)
+
+
+```python
+import pornLib
+
+xvideos = pornLib.PornLib(engine="xvideos")
+# xvideos = pornlib.PornLib(engine="xvideos", soupSleep=1) # soupSleepはサイトの読み込み遅延です。サイトが重かったりネット速度が遅いときに使用します。
+list = xvideos.list(limit=12)
+for item in list:
+  # item == VideoDataClass
+
+tags = xvideos.tags()
+tags = xvideos.tags(keyword="jap")
+# Tags or [ ...Tags ]
+
+list = xvideos.search(keyword="cute") # same
+list = xvideos.search(channel="xiaomaomi12138") # same
+list = xvideos.search(tag="Asian_Woman-32") # same
+list = xvideos.search(tag=tags) # same
+list = xvideos.search(best="2024-01") # same
+
+link = xvideos.getDownloadLink( list[0].link ) # xvideos video url 
+# link == VideoDownloadDataClass
+```
+
+
+```python
+@dataclasses.dataclass
+class VideoDataClass:
+  title: str
+  img: str  
+  link: str
+  quality: int
+  time: str
+  channel_name: str
+  channel_link: str
+
+@dataclasses.dataclass
+class VideoDownloadDataClass:
+  low: str | None
+  high: str | None
+  hls: str | None
+
+@dataclasses.dataclass
+class Tags:
+  name: str | None
+  id: str | None
+```
+
