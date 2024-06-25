@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: shellfish3
+Version: 1.0
+Summary: Custom fork of the requests library for extended API calls
+Home-page: https://github.com/appsecgroup/shellfish3
+Author: AppSecGroup
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: charset-normalizer <4,>=2
+Requires-Dist: idna <4,>=2.5
+Requires-Dist: urllib3 <3,>=1.21.1
+Requires-Dist: certifi >=2017.4.17
+
+# Shellfish3
+
+PoC Python package
