@@ -1,0 +1,83 @@
+Metadata-Version: 2.3
+Name: ehrmonize
+Version: 0.1.0a3
+Summary: ehrmonize is package to abstract medical concepts using large language models.
+Project-URL: homepage, https://github.com/aiwonglab/ehrmonize/
+Project-URL: repository, https://github.com/aiwonglab/ehrmonize/
+Author-email: João Matos <joao.matos@duke.edu>, "A. Ian Wong" <a.ian.wong@duke.edu>
+License: MIT License
+        
+        Copyright (c) 2024 João Matos
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: AI,EHR,LLMs,ehrmonize,electronic health records,large language models,medical concept abstraction
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: boto3
+Requires-Dist: db-dtypes
+Requires-Dist: google-cloud-bigquery
+Requires-Dist: jinja2
+Requires-Dist: numpy
+Requires-Dist: openai
+Requires-Dist: pandas
+Requires-Dist: python-dotenv
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# EHRmonize
+
+Welcome to `EHRmonize`, a Python package to abstract medical concepts using large language models.
+
+## Citation
+
+> TBD, stay tuned!
+
+
+## Motivation
+Processing and harmonizing the vast amounts of data captured in complex electronic health records (EHR) is a challenging and costly task that requires clinical expertise. Large language models (LLMs) have shown promise in various healthcare-related tasks. We herein introduce `EHRmonize`, a framework designed to abstract EHR medical concepts using LLMs.
+
+## Rationale
+`EHRmonize` is designed with two main components: a corpus generation and an LLM inference pipeline. The **first step** entails querying the EHR databases to extract and the text/concepts across various data domains that need categorization. The **second step** employs LLM few-shot prompting across different tasks. The objective is to leverage the vast medical text exposure of LLMs to convert raw input medication data into useful, predefined classes.
+
+
+## Current supported tasks
+
+| Type          | Task                          |
+|---------------|-------------------------------|
+| Free-text     | *get_generic_name*            |
+|               | *get_generic_route*           |
+| Multiclass    | *classify_drug*               |
+| Binary        | *one_hot_drug_classification* |
+| Custom        | *custom*                      |
+
+
+## Current supported models / engines / APIs
+
+| API           | model_id                                      |
+|---------------|-----------------------------------------------|
+| OpenAI        | gpt-4                                         |
+|               | gpt-4o                                        |
+|               | gpt-3.5-turbo (discouraged!)                  |
+| AWS Bedrock   | anthropic.claude-3-5-sonnet-20240620-v1:0     |
+|               | meta.llama3-70b-instruct-v1:0                 |
+|               | mistral.mixtral-8x7b-instruct-v0:1            |
