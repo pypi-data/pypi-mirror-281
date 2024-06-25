@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+tests/test_similarity.py
+text2vec2onnx/__init__.py
+text2vec2onnx/sentence_model.py
+text2vec2onnx/similarity.py
+text2vec2onnx/version.py
+text2vec2onnx.egg-info/PKG-INFO
+text2vec2onnx.egg-info/SOURCES.txt
+text2vec2onnx.egg-info/dependency_links.txt
+text2vec2onnx.egg-info/not-zip-safe
+text2vec2onnx.egg-info/requires.txt
+text2vec2onnx.egg-info/top_level.txt
