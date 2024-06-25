@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/AssessEdge.egg-info/PKG-INFO
+src/AssessEdge.egg-info/SOURCES.txt
+src/AssessEdge.egg-info/dependency_links.txt
+src/AssessEdge.egg-info/requires.txt
+src/AssessEdge.egg-info/top_level.txt
