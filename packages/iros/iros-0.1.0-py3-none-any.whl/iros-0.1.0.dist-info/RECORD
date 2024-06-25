@@ -1,0 +1,14 @@
+iros/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iros/activations.py,sha256=Vmxl1p-AouRPU_WkjhVFrsx51qdndk7pRMXYNrFKPso,275
+iros/layers.py,sha256=CdHX3NsLsdVCOYEKcgU6L0Wzq-Nf5zzXuEayizFaE5w,2170
+iros/network.py,sha256=2tSXqeXzb4Y3Z0NisGhISzg6s94uaWHq5S_Ui6DTPVU,1472
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_activations.py,sha256=I68RxQAxYdA09Eg8Iw4cPVmQEzdimo4DFahVkN9FY5w,500
+tests/test_layers.py,sha256=UGJf97sXBKfaMMMcmO2CaHQB-wcNNJhT-xNK2dn_bGE,376
+tests/test_network.py,sha256=lVDOPchxhvLQBYef7YxlGThmqmyyfpO6zUihA5Rztr8,507
+tests/test_save_load.py,sha256=pksRYhwDRH3jrVizz-z3gG6nL6wyuZx5sCcB78ChwsU,785
+iros-0.1.0.dist-info/LICENCE,sha256=nrb2nUih3XZOijPxSlhPRg087GU0d8E2qV3W35wkkhE,1055
+iros-0.1.0.dist-info/METADATA,sha256=fAH5ZB57K_MDmLSQucrwgJMgV8inRmDjJXb0mGUKaa0,416
+iros-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+iros-0.1.0.dist-info/top_level.txt,sha256=tbHX1-Am_KdydlU7WSKZewTPwCdpbrLRVsH-ModCs5Q,11
+iros-0.1.0.dist-info/RECORD,,
