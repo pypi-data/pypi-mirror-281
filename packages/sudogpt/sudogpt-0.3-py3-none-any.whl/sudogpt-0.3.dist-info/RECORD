@@ -1,0 +1,8 @@
+sudogpt/__init__.py,sha256=dF4EsJGYfUrPTYchp-z6gzEmIZANC6BuqeMEiVAH3MA,5615
+sudogpt/command_line.py,sha256=lJ0CfhXhLVYHvKIYMQLXB5sMl856JfgVD5Ff35LyMvE,705
+sudogpt/prompts.py,sha256=y8gbVxGU6GSX7gDCgmvgyUFn-JEmCIKfIMpkE_Vn4oA,1230
+sudogpt-0.3.dist-info/METADATA,sha256=x4OebmzQxos3rOmiYWSQELtaVStRDTtKINP4oWxyd9s,258
+sudogpt-0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+sudogpt-0.3.dist-info/entry_points.txt,sha256=HlFsSw-OA_k2r8IGwPLVlni6qLnGTO2jJTB3emRdN8g,54
+sudogpt-0.3.dist-info/top_level.txt,sha256=i54fVPk7soL1xtiCHyZ8MWIc9Ep5YKMmS2bU3cZ6Cvc,8
+sudogpt-0.3.dist-info/RECORD,,
