@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: liblrs_python
+Version: 0.1.1
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# LibLRS Python
+
+Bindings with PyO3 to liblrs
+
