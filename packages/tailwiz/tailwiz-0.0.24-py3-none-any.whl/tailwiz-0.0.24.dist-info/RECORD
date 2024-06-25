@@ -1,0 +1,13 @@
+tailwiz/__init__.py,sha256=H1qGmaXVmORr24WtEYQ_0wSF1rVjwVTSz1gyQ_Ntoso,80
+tailwiz/list_tasks.py,sha256=LJrs_ql-GOs028UgIq2hXgp6UucPY_cojNEyVNkPfsM,201
+tailwiz/tasks/__init__.py,sha256=R0H33bncvwEiOhQlO0t5gqd5Y8Gvbtx4qtqgtHHz8EI,86
+tailwiz/tasks/classify.py,sha256=RrsRjHsb9cPifChK6vmwBiAm9drt7TKejbDF38bqHCc,9295
+tailwiz/tasks/generate.py,sha256=JSCyCFf6YYEc1ttPkxxq4cNN-Qgh4a9d57BYKLvElJk,6482
+tailwiz/tasks/parse.py,sha256=nfWdyXOWoF6YMHPQAlr2a8piJMbjmzpyhSegy0DC3MI,10592
+tailwiz/tasks/task.py,sha256=tkzLMu0gXckMAlNQ6_aYGLM3jz2-oYD6L_idflCk5EI,268
+tailwiz/tasks/utils.py,sha256=hU7HNi9hGl_i0Jigm-kowBFkFKR-NJEoMTI5_pZy0Is,668
+tailwiz-0.0.24.dist-info/LICENSE,sha256=ZWYAhQkANwnxDck1UZo0JuFtv0OAw9no8phg0d1WaX8,1068
+tailwiz-0.0.24.dist-info/METADATA,sha256=FMDeU3mRYS85GlVtv4OeAAyBJky4xCCqpyO5hzY4Hqk,9488
+tailwiz-0.0.24.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+tailwiz-0.0.24.dist-info/top_level.txt,sha256=tpDApaLAV2-BkeKRdFeAvcSpOGRz7EgLm47YVzUnCxs,8
+tailwiz-0.0.24.dist-info/RECORD,,
