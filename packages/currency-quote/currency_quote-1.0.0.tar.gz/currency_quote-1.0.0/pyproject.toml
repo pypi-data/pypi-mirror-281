@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "currency-quote"
+version = "1.0.0"
+description = "Complete solution for extracting currency pair quotes data"
+authors = ["IvanildoBarauna <ivanildo.jnr@outlook.com>"]
+readme = "README.md"
+license = "MIT"
+
+classifiers=[
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+]
+
+
+[tool.poetry.urls]
+homepage = "https://pypi.org/project/currency-quote-wrapper"
+repository = "https://github.com/IvanildoBarauna/currency-quote-wrapper"
+documentation = "https://github.com/IvanildoBarauna/currency-quote-wrapper/blob/main/README.md"
+issues = "https://github.com/IvanildoBarauna/currency-quote-wrapper/issues"
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+include = ["currency_quote*"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+api-to-dataframe = "^1.2.3"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.5.4"
+pytest = "^8.2.2"
+poetry-dynamic-versioning = "^1.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+versioning = "semantic"
