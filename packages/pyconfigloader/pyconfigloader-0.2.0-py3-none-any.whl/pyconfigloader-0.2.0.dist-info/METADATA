@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyconfigloader
+Version: 0.2.0
+Summary: Application config loader helper with multiple config file format supported
+Home-page: https://github.com/Fifan31/pyconfigloader
+License: MIT
+Author: saime
+Author-email: stephan.aime@gmail.com
+Requires-Python: >=3.10.0,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: attrdictionary (>=1.0.0,<2.0.0)
+Requires-Dist: jproperties (>=2.1.1,<3.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Bug Tracker, https://github.com/Fifan31/pyconfigloader/issues
+Project-URL: Repository, https://github.com/Fifan31/pyconfigloader
+Description-Content-Type: text/markdown
+
+
