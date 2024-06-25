@@ -1,0 +1,3 @@
+[console_scripts]
+MRISegmentator = mrisegmentator.cmdline:main
+MRISegmentator_Redownload = mrisegmentator.download_weights:force_redownload
