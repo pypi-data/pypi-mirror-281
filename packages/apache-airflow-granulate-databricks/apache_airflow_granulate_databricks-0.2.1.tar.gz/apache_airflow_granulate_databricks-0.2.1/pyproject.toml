@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "apache-airflow-granulate-databricks"
+version = "0.2.1"
+authors = ["Granulate <databricks.publisher@granulate.io>"]
+description = "The Granulate Airflow-Databricks Integration is an open-source plugin for Apache Airflow. It's specifically designed to set environment variables that allow Granulate's performance monitoring agent to identify and integrate with Databricks jobs orchestrated by Airflow. This plugin tags Databricks jobs, aiding the Granulate optimizing agent."
+readme = "README.md"
+license = "LICENSE"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+# docutils 0.21 cannot be installed with poetry
+# See https://github.com/python-poetry/poetry/issues/9293
+docutils = "!=0.21"
+importlib-metadata = "*"
+apache-airflow-granulate-databricks-auto-patch = {version = "0.1.0", optional = true}
+
+
+[tool.poetry.group.dev.dependencies]
+apache-airflow= "2.9.2"
+apache-airflow-providers-databricks = "6.5.0"
+mypy = "^1.1.1"
+ruff = "^0.1.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.extras]
+auto-patch = ["apache-airflow-granulate-databricks-auto-patch"]
+
+[tool.poetry.plugins."airflow.plugins"]
+granulate_plugin = "apache_airflow_granulate_databricks.granulate_plugin:GranulatePlugin"
+
+[tool.mypy]
+strict = true
+files = "apache_airflow_granulate_databricks"
+
+[[tool.mypy.overrides]]
+module = "airflow.*"
+ignore_missing_imports = true
+
+[tool.ruff]
+select = ["E", "F", "I"]
+ignore = ["E402"]
+line-length = 120
+src = ["apache_airflow_granulate_databricks"]
