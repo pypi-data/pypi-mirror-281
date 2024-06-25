@@ -1,0 +1,2 @@
+[console_scripts]
+sudogpt = sudogpt.command_line:main

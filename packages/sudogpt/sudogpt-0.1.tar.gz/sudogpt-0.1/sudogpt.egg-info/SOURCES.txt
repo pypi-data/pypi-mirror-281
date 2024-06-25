@@ -1,0 +1,11 @@
+setup.py
+sudogpt/__init__.py
+sudogpt/command_line.py
+sudogpt/prompts.py
+sudogpt.egg-info/PKG-INFO
+sudogpt.egg-info/SOURCES.txt
+sudogpt.egg-info/dependency_links.txt
+sudogpt.egg-info/entry_points.txt
+sudogpt.egg-info/not-zip-safe
+sudogpt.egg-info/requires.txt
+sudogpt.egg-info/top_level.txt
