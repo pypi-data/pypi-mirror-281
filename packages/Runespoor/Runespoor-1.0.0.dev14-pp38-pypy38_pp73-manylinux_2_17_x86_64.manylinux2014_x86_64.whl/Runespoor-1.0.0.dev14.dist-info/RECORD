@@ -1,0 +1,13 @@
+Runespoor-1.0.0.dev14.dist-info/LICENSE,sha256=kFWpeNoYjfwrGE2Z7zY6s0WBYIdnN06uhTci0y5pzeo,1071
+Runespoor-1.0.0.dev14.dist-info/WHEEL,sha256=D6k6aSCMDqXnLE5MoH6DXyAVak4QtlrmIFjzlXfoBlY,161
+Runespoor-1.0.0.dev14.dist-info/top_level.txt,sha256=3MxCZZz_VimNf5gk3ym8WfGyfr951wT6JawdQDEU82A,10
+Runespoor-1.0.0.dev14.dist-info/RECORD,,
+Runespoor-1.0.0.dev14.dist-info/METADATA,sha256=aBSgv6x_3n20qerDodtQe59PswTxkE2ScCRruDW5DhA,6402
+Runespoor/default_fragment.glsl,sha256=I0KTM3M-e4N4HeDe26Za-uBXtC77HSyaG8HhtOjpXFU,149
+Runespoor/core.pyx,sha256=4sr56-H12VnQge99e9fwlv0O6ChMy0y3eZXh3z_CuUI,19779
+Runespoor/core.pyi,sha256=NlAlUrkzmunvcly3lDMcAUOsv82KQtILd0Woo1M4_mw,11947
+Runespoor/default_vertex.glsl,sha256=PHu80jNBA0xV4npgecW4qMkszpSPPIHPsPU1yDWsZxI,282
+Runespoor/core.pypy38-pp73-x86_64-linux-gnu.so,sha256=lVjP66LU5aj4lksOV5YwIM-lo-lRCh4PiO9kcqGxBbo,14477729
+Runespoor/core.pxd,sha256=NHWaaacXeiOnsq8fPMUB7pSxq0IbQCEpnmrOhADw6i4,14553
+Runespoor/__init__.py,sha256=7IedXGqKhjjT-vnrEJwyrrPTZ_J-zejMZUeNvQAkj1g,28
+Runespoor.libs/libSDL2-2-00949601.0.so.0.3000.4,sha256=vTFOX3yeNX2P06TXn33o1mHFleXmwB3RNxGOLcm3JJ0,2191297
