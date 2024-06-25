@@ -1,0 +1,6 @@
+setup.py
+compositio.egg-info/PKG-INFO
+compositio.egg-info/SOURCES.txt
+compositio.egg-info/dependency_links.txt
+compositio.egg-info/top_level.txt
+tests/test_web_browser.py
