@@ -1,0 +1,12 @@
+htr_iiif_claude/__init__.py,sha256=Juh1hKtCMeOHok6981aoSE8h2ar9ugVVHcggvvH2bh4,90
+htr_iiif_claude/claude/__init__.py,sha256=ojgxovPRsCkm7s4xbeG4lf__aETyCR6WQctClbiOPRc,33
+htr_iiif_claude/claude/claude.py,sha256=Aqf3dCkIHXiGpLblUidO2us9PhWE5K2qIrhAEclS9Ak,1637
+htr_iiif_claude/htr.py,sha256=owK7CGmVoWBzG9nuBQ9fl21KSL6oiOW1EtmJW2aUfUI,1921
+htr_iiif_claude/image/__init__.py,sha256=EmAlz6atTfwu49gkNqTj_6GDbNXLSbJCu9TNQJ5tSY8,25
+htr_iiif_claude/image/image.py,sha256=S4hySxyfQnzJ75kq4S37BNdyy06d7J3OSU8lL0UUS-M,1046
+htr_iiif_claude/manifest/__init__.py,sha256=KcpLB_o6G539FcW39lBYDRo-66jTqyn0Ep8dLKS_MxE,31
+htr_iiif_claude/manifest/manifest.py,sha256=TmAVqpNHpXY3kwhRD9V26BY7wIPTawlhTwDddLULTJs,1326
+htr_iiif_claude-0.1.0.dist-info/METADATA,sha256=G6Ko-Oj4__csCmCZ45k_ZGLBzRlf8kwzWp4FZTvdlW8,1237
+htr_iiif_claude-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+htr_iiif_claude-0.1.0.dist-info/entry_points.txt,sha256=H9lbtSjg6ZQKI4nvCyyGtwH6_OG9Gr2Ty9oIc7D4isw,47
+htr_iiif_claude-0.1.0.dist-info/RECORD,,
