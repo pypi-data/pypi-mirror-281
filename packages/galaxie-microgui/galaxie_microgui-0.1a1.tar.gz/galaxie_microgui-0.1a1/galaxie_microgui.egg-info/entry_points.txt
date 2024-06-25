@@ -1,0 +1,2 @@
+[console_scripts]
+microGUI-demo = microGUI.__main__:main

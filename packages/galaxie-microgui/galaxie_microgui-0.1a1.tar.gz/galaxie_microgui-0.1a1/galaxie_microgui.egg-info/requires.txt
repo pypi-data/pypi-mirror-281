@@ -1,0 +1,15 @@
+wheel
+setuptools
+
+[doc]
+sphinx-rtd-theme
+sphinxemoji
+sphinx-autoapi
+sphinx-notfound-page
+
+[tests]
+coverage
+unittest
+discover
+setuptools
+wheel
