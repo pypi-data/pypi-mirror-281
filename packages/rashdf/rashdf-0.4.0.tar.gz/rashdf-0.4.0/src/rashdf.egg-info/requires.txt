@@ -1,0 +1,15 @@
+h5py
+geopandas<0.15,>=0.14
+pyarrow
+xarray
+
+[dev]
+pre-commit
+ruff
+pytest
+pytest-cov
+
+[docs]
+sphinx
+numpydoc
+sphinx_rtd_theme
