@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: AdvanceCalculatorProject
+Version: 0.0.2
+Summary: Simple advance calculator 
+Author: Napain (Simon Torrealba)
+Author-email: storrealba24@gmail.com
+Keywords: python,calculus,ploting,solver,calculator
+Description-Content-Type: text/markdown
+Requires-Dist: simpy
+Requires-Dist: numpy
+
+A package that allows to perfoming simple calculus integrals and derivative, ploting any type of graph as well as solving simple cuadratic equations with the help of Numpy and Simpy packages

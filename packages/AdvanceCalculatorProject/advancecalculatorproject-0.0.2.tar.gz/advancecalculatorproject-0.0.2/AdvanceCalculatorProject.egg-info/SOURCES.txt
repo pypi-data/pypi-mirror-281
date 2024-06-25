@@ -1,0 +1,15 @@
+setup.py
+AdvanceCalculator/__init__.py
+AdvanceCalculator/main.py
+AdvanceCalculator/methods/__init__.py
+AdvanceCalculator/methods/calculator.py
+AdvanceCalculator/methods/calculus.py
+AdvanceCalculator/methods/check_inputs.py
+AdvanceCalculator/methods/plots.py
+AdvanceCalculator/utility/__init__.py
+AdvanceCalculator/utility/ui.py
+AdvanceCalculatorProject.egg-info/PKG-INFO
+AdvanceCalculatorProject.egg-info/SOURCES.txt
+AdvanceCalculatorProject.egg-info/dependency_links.txt
+AdvanceCalculatorProject.egg-info/requires.txt
+AdvanceCalculatorProject.egg-info/top_level.txt
