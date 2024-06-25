@@ -1,0 +1,12 @@
+pyflow_manager/__init__.py,sha256=wysmehnzqic9fFRLANrDjfqklTL0nfx7X9c5gim4T7E,42
+pyflow_manager/pyflow_manager.py,sha256=20d7iYzeRj1WeIDacubFIJE7YavnJl3zxwYVfEJ4odo,4333
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/sample_task.py,sha256=-gqqDPThhfyRCRBvtb4V0daj62QmamFq09qfvtGkBSk,122
+tests/sample_task2.py,sha256=kKVFMHynflSYBVGmUWFr5cs1pZtwotabGXildrhocOI,268
+tests/test_pyflow_manager.py,sha256=ZCwnRbAN0qQM4X5OP3jpxieeiJjyavfWQC7875CYfrc,1576
+pyflow_manager-0.3.1.dist-info/LICENSE,sha256=z0sg6Ux83_XdZhtawG48Ux83mvbnZ6GFuvD8D17thlw,1069
+pyflow_manager-0.3.1.dist-info/METADATA,sha256=pv6G8aLUc83Ri2GjunrWyXWRrKbNSXVy9RQOMjUj_EI,1570
+pyflow_manager-0.3.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+pyflow_manager-0.3.1.dist-info/entry_points.txt,sha256=EhnvXkB3zPpDdxReYoPS-hORVnacJhYYm2pT2z3ORGI,70
+pyflow_manager-0.3.1.dist-info/top_level.txt,sha256=UqfiVlVuSz0d4cimzBW5Nq2efjH8qixc_eEiR0S7K80,21
+pyflow_manager-0.3.1.dist-info/RECORD,,
