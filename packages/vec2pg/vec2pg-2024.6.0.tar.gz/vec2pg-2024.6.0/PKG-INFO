@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vec2pg
+Version: 2024.6.0
+Summary: vec2pg
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=2.0.0,<3.0.0)
+Requires-Dist: parse (>=1.20.2,<2.0.0)
+Requires-Dist: pgvector (>=0.2.5,<0.3.0)
+Requires-Dist: pinecone-client (>=4.1.0,<5.0.0)
+Requires-Dist: psycopg (>=3.1.19,<4.0.0)
+Requires-Dist: typer-slim (>=0.12.3,<0.13.0)
