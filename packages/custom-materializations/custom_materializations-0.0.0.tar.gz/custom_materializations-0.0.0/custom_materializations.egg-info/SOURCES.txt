@@ -1,0 +1,9 @@
+setup.py
+custom_materializations/__init__.py
+custom_materializations/full.py
+custom_materializations.egg-info/PKG-INFO
+custom_materializations.egg-info/SOURCES.txt
+custom_materializations.egg-info/dependency_links.txt
+custom_materializations.egg-info/entry_points.txt
+custom_materializations.egg-info/requires.txt
+custom_materializations.egg-info/top_level.txt
