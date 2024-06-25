@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: CrossDarkBiology
+Version: 0.0.0
+Summary: CrossDark's biology tool
+Home-page: https://github.com/CrossDark/CellSpeedMeasure
+Author: CrossDark
+Author-email: liuhanbo333@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: moviepy
+Requires-Dist: av
+Requires-Dist: ultralytics
+Requires-Dist: pymysql
+
