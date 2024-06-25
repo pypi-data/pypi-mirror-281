@@ -1,0 +1,14 @@
+autokitteh/__init__.py,sha256=b2U_bh_0on_6TmjS-Tx6Buxu2nr3moS9-WGdbbseIzQ,287
+autokitteh/atlassian.py,sha256=xYK4kZjiOy2m_54VIU2ZqVXp_qeQSg8Btj_tLs3v32E,3797
+autokitteh/attr_dict.py,sha256=O-bcGCx5P3mWA3O7N0EuQ4sHpNMYCDepBoojNtFrzrE,776
+autokitteh/connections.py,sha256=y0QI6bWm_XlNgD7WuE7ehO_K21OfvBDdcx9ZqjRjqm4,443
+autokitteh/decorators.py,sha256=oFwO8W7QHkPGFFoGlX0u64I4GSGN0Qgo8wU34a7MHyc,649
+autokitteh/errors.py,sha256=3Rdio9EUO8jwAfQ4hFl20LfQC1z46mS8Y-VjtGIdu9Y,659
+autokitteh/events.py,sha256=WDP9xsKCZDRpfMy6yM8E2uZ81UIjRadp5xlLQgH2UFQ,651
+autokitteh/google.py,sha256=JUbzZSezulqxL2hL9EFNQoI1oaLzFrB3z5GuAWSj1Uo,6888
+autokitteh/slack.py,sha256=KO0ToJcXo3PBP_0hv_lIgO7LVPDS1YbrJWz609U_0nY,1277
+autokitteh-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+autokitteh-0.2.0.dist-info/METADATA,sha256=I9eyHcA-Y3lKmmAPFhOQ2kA9A6zVUrk46U47rc1CPvc,13777
+autokitteh-0.2.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+autokitteh-0.2.0.dist-info/top_level.txt,sha256=BGIJFleywoBDN-RyhlALwKb1aevCJZSWIo6-tS-832k,11
+autokitteh-0.2.0.dist-info/RECORD,,
