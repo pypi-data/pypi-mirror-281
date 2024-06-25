@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-segmentation-overlap-filter = napari_segmentation_overlap_filter:napari.yaml
