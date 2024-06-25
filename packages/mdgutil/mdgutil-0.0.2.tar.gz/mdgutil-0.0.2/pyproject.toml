@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mdgutil"
+version = "0.0.2"
+authors = [
+  { name="Kevin Regan", email="kregan4196@gmail.com" },
+]
+description = "Package for various data processing pipelines used by MDG"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://https://github.com/kr0401/mdgutil"
+Issues = "https://github.com/kr0401/mdgutil/issues"
