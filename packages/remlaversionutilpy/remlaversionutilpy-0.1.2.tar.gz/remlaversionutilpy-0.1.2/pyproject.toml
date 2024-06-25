@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "remlaversionutilpy"
+version = "0.1.2"
+description = "Versioning for REMLA frontend"
+authors = ["Erik Wallinder-Mahler <e.f.w.wallindermaehler@student.tudelft.nl>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+setuptools = "69.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

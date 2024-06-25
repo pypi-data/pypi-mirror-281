@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: remlaversionutilpy
+Version: 0.1.2
+Summary: Versioning for REMLA frontend
+Author: Erik Wallinder-Mahler
+Author-email: e.f.w.wallindermaehler@student.tudelft.nl
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: setuptools (==69.5.1)
+Description-Content-Type: text/markdown
+
+# Versioning tool for REMLA frontend
+
+Installs using Poetry
