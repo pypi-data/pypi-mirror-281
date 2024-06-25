@@ -1,0 +1,11 @@
+scrapy_playwright/__init__.py,sha256=oSKhQHo_8dYEVv3A19nCmQysoh4TbOzHl508xX9iHoo,23
+scrapy_playwright/_utils.py,sha256=UEwPxkJzeWqwe6kFyIVLvFK3DX4ZqxiEojILsi5S4yo,4218
+scrapy_playwright/handler.py,sha256=dShczG1XymTdP7sHhNF1f7cflPDKfmXz8LdAh7sS08c,32542
+scrapy_playwright/headers.py,sha256=EjmUuSR4TlYl4f0oa0Ov0CpXLxv__Wb7IavHIFoKOhk,1547
+scrapy_playwright/memusage.py,sha256=WZBM106N9bsrWlmodFNgRJd1NzZhUzliZxGB0vM1skw,2129
+scrapy_playwright/page.py,sha256=xe9bJXjKTMG8R8xwAkrfqC18xyoDtuFEoNyfoDKri8U,548
+scrapy_playwright-0.0.36.dist-info/LICENSE,sha256=irgaybyKbgi_FWAP_B5YejcPBH0Amj-mtT0O6bmr0A0,1461
+scrapy_playwright-0.0.36.dist-info/METADATA,sha256=6CDPQTU3AGa8KFq_aLfVgwOIkcoltBbWBMk0b-XPUR8,37974
+scrapy_playwright-0.0.36.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+scrapy_playwright-0.0.36.dist-info/top_level.txt,sha256=fqJFEe3cmLk5KUhETnjsNoEZl72tM_BEOWWjNHPJNRA,18
+scrapy_playwright-0.0.36.dist-info/RECORD,,
