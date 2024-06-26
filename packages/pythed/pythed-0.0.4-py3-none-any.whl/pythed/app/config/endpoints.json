@@ -1,0 +1,42 @@
+{
+  "BASE_URL": "https://www.vinted.fr/api/v2",
+  "endpoints": {
+    "search": {
+      "value": "/catalog/items",
+      "params": {
+        "page": null,
+        "per_page": null,
+        "search_text": null,
+        "price_from": null,
+        "price_to": null,
+        "catalog_ids": null,
+        "size_ids": null,
+        "brand_ids": null,
+        "status_ids": null,
+        "color_ids": null,
+        "material_ids": null
+      }
+    },
+    "similar_items": {
+      "value": "/items/{id}/similar_items"
+    },
+    "user_info": {
+      "value": "/users/{user_id}?localize=true"
+    },
+    "user_reviews": {
+      "value": "/user_feedbacks",
+      "params": {
+        "user_id": null,
+        "page": null,
+        "per_page": null,
+        "by": "all"
+      }
+    },
+    "shipping_details": {
+      "value": "/items/{id}/shipping_details"
+    },
+    "item_details": {
+      "value": "/items/{id}"
+    }
+  }
+}
