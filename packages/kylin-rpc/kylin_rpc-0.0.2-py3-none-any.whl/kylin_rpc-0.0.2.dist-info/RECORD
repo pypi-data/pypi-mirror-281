@@ -1,0 +1,9 @@
+krpc/__init__.py,sha256=u_ySaiEctwCWuEYWuYSEuULdYwO-3iOrOuCq_1VCTjc,250
+krpc/client.py,sha256=bdFfUzCGcV50FTVBJXgcZZ5_0bNC1JPAIxS8J7OjqxU,9528
+krpc/core.py,sha256=EzQ5MtprtopWhML-JMcCKCyT7aWfhtNSMPClK2on1eQ,1594
+krpc/errors.py,sha256=1gq0R8HDyFXXRIsQKh3t9ht770hvyoaGKPGRaTz-P_Q,988
+krpc/message.py,sha256=kkELnKtrgBvUA310XZBCi2h9ZTquFKELbzGqqOWB0OQ,4045
+krpc/models.py,sha256=26qfq4Yg2TqCGZ7Cp43Fnvi5BWrGTlpy6GZ6Ze7lPgE,346
+kylin_rpc-0.0.2.dist-info/METADATA,sha256=WKyGXxnXyrDENccObz7D7mXgfUgsGrmbugW48ZOFRSQ,5053
+kylin_rpc-0.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+kylin_rpc-0.0.2.dist-info/RECORD,,
