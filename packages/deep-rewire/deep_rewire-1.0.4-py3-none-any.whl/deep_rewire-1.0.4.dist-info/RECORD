@@ -1,0 +1,11 @@
+deep_rewire/__init__.py,sha256=V1lrZksc3Ec3g1DL7zfcJIQefBerV-wcSmlndrM7tfE,98
+deep_rewire/convert.py,sha256=JWFLXPSg7WTcsEQjLlHvDZh6OPFdA-03NA8qoD6n7j8,10138
+deep_rewire/converter.py,sha256=IHcuDBeml4Tx2W9sy3x_0F-w2f9LgPD5fiT0C4WItP8,9368
+deep_rewire/optim.py,sha256=ZUvI2ii6vNeAGcQOLaa_ODoyGFEewuj6jH88ZdHofQE,7442
+deep_rewire/optimizer.py,sha256=wO1sAYPXW8Mzvc5gZueMvsAl-aYtfiTZmpGrGrOrvQA,7835
+deep_rewire/utils.py,sha256=9yWFwBOP50mMEiyBSPGu8iyh6e0NweRfl95JNJuUVs4,1330
+deep_rewire-1.0.4.dist-info/LICENSE,sha256=ToYE4C_n92XtK7XnzZKO9jVlSEVXkGqatzffD1cxsug,1069
+deep_rewire-1.0.4.dist-info/METADATA,sha256=9pScbxqEfjCHOUhtVtfhJ9IeV3rTt8rrBpAP-pEl0Js,4764
+deep_rewire-1.0.4.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+deep_rewire-1.0.4.dist-info/top_level.txt,sha256=el0_Ka3C_RS31ZmPfaDWR2Kfw9CrUxring7ey_AHmAI,12
+deep_rewire-1.0.4.dist-info/RECORD,,
