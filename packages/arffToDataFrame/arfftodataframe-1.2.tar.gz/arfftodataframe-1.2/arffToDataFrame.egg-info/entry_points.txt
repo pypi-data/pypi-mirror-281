@@ -1,0 +1,2 @@
+[console_scripts]
+arffToDataFrame = main:convertToDataFrame

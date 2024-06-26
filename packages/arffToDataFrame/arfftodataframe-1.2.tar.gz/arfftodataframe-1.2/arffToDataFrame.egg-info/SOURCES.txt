@@ -1,0 +1,16 @@
+README.md
+setup.py
+arffToDataFrame/__init__.py
+arffToDataFrame/main.py
+arffToDataFrame.egg-info/PKG-INFO
+arffToDataFrame.egg-info/SOURCES.txt
+arffToDataFrame.egg-info/dependency_links.txt
+arffToDataFrame.egg-info/entry_points.txt
+arffToDataFrame.egg-info/requires.txt
+arffToDataFrame.egg-info/top_level.txt
+arffToDataframe.egg-info/PKG-INFO
+arffToDataframe.egg-info/SOURCES.txt
+arffToDataframe.egg-info/dependency_links.txt
+arffToDataframe.egg-info/entry_points.txt
+arffToDataframe.egg-info/requires.txt
+arffToDataframe.egg-info/top_level.txt
