@@ -1,0 +1,8 @@
+smolarith-0.2.0.dist-info/METADATA,sha256=EMNoEdhpxoDxHfbRg8juOpNXNTYGi3nRG5Nmprbszvs,6706
+smolarith-0.2.0.dist-info/WHEEL,sha256=SOP-4bEE0jbVaCHQGVvF08uWxk5rcSsfEybvoQVHlD8,90
+smolarith-0.2.0.dist-info/licenses/LICENSE.md,sha256=KBtYVVLf32_hydFa6IPNAgpN-UT-S21h5y2YvYZM3bs,1310
+smolarith/__init__.py,sha256=eWMZjWtRWpEx-Vny0pN4fM4LKFbK55jbfCZ7_mA4-Rc,48
+smolarith/div.py,sha256=dXkRrvXVKwlrbLWkWZdnl-eVWQKRFzC3KpRuSbfjroU,34367
+smolarith/mul.py,sha256=7wbxjvJQNKeRQxuPanTmDfKKzUUotGgueeHkBdBYu3A,26474
+smolarith/version.txt,sha256=H5MN0fEzwfl6lP46y42zQ3LPTAH_2ys_9Mpy-UlBIek,6
+smolarith-0.2.0.dist-info/RECORD,,
