@@ -1,0 +1,36 @@
+[build-system]
+requires = [
+    "maturin>=1.6,<2.0",
+    "patchelf"
+]
+build-backend = "maturin"
+
+[project]
+name = "gitpyapi"
+version = "1.0.0"
+description = "Python Git Client"
+authors = [
+    { name = "Kevin Alexander Krefting", email = "kakrefting@gmail.com" },
+    { name = "pyrootcpp", email = "pyrootcpp@outlook.de" },
+    { name = "pacflypy", email = "pacflypy@outlook.com" }
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Version Control",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+dynamic = ["version"]
+[tool.maturin]
+features = ["pyo3/extension-module"]
+
+[project.scripts]
+gitpyapi = "gitpyapi.__main__:main"

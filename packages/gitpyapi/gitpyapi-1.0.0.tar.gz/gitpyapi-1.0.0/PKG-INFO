@@ -1,0 +1,34 @@
+Metadata-Version: 2.3
+Name: gitpyapi
+Version: 1.0.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Version Control
+Classifier: Topic :: Software Development :: Version Control :: Git
+License-File: LICENSE
+Summary: Python Git Client
+Author-email: Kevin Alexander Krefting <kakrefting@gmail.com>, pyrootcpp <pyrootcpp@outlook.de>, pacflypy <pacflypy@outlook.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst; charset=UTF-8
+
+gitpyapi
+========
+
+This Module Provides an Git Module and and CLI.
+
+Usage
+=====
+
+.. code-block:: bash
+
+    gitpyapi clone -u <url> -p <path>
+    gitpyapi add -f <file>
+    gitpyapi commit -m <message>
+    gitpyapi push -r <remote> -b <branch>
