@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: devkit-math
+Version: 1.0
+Summary: Some useful maths functions. 
+Author-email: Pemrilect <49397056@qq.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+There are some useful maths functions.
