@@ -1,0 +1,62 @@
+#!/usr/bin/env python
+from setuptools import setup, find_packages
+import re
+import os
+
+
+def get_version():
+    return '0.10.3'
+
+
+def get_long_description():
+    readme = open('README.rst').read()
+    # changelog = open('CHANGES.rst').read()
+    return "\n\n".join([
+        readme
+        #,changelog.replace(':func:', '').replace(':ref:', '')
+    ])
+
+setup(
+    name='eli5_edgio',
+    version=get_version(),
+    author='Miley Xu',
+    author_email='mxu@edg.io',
+    long_description=get_long_description(),
+    description="An updated version of eli5 to explain predictions of ML classifier",
+    zip_safe=False,
+    include_package_data=True,
+    packages=find_packages(exclude=['tests']),
+    package_data={
+        'eli5_edgio': ['templates/*.html'], 
+    },
+    install_requires=[
+        'attrs > 16.0.0',
+        'jinja2',
+        'numpy >= 1.9.0',
+        'scipy',
+        'six',
+        'scikit-learn >= 0.18',
+        'graphviz',
+        'tabulate>=0.7.7',
+    ],
+    extras_require={
+        ":python_version<'3.5.6'": [
+            'singledispatch >= 3.4.0.3',
+        ],
+        ":python_version<'3.5'": ['typing'],
+    },
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'License :: OSI Approved :: MIT License',
+        'Intended Audience :: Developers',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+    ],
+)
