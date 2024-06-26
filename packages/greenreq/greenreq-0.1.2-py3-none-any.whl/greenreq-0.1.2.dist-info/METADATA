@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: greenreq
+Version: 0.1.2
+Summary: A Python package for making HTTP requests
+Home-page: https://github.com/mr-green-143/greenreq
+Author: Tamim Ahmed
+Author-email: admin@teamgreenxd.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# greenreq
+
+greenreq is a Python package that simplifies making HTTP requests
+
+
+#### Installing `greenreq`
+
+1. **Linux**:
+   - Download `green_requests.so` from [teamgreenxd.com/greenreq](https://teamgreenxd.com/greenreq) or install it using your package manager (e.g., `apt-get install green_requests` for Debian-based systems).
+
+2. **macOS**:
+   - Download `greenreq` from [teamgreenxd.com/greenreq](https://teamgreenxd.com/greenreq) or use Homebrew (`brew install greenreq`).
+
+3. **Windows**:
+   - Download `greenreq` from [teamgreenxd.com/green_requests.so](https://teamgreenxd.com/green_lib/green_requests.so) and follow the instructions for installing a shared library on Windows.
+
+You can install `greenreq` using pip:
+
+```bash
+pip install greenreq
