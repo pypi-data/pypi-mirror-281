@@ -1,0 +1,2 @@
+[console_scripts]
+text_emotion_description = text_emotion_description.main:main
