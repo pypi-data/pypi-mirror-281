@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: reposter
+Version: 24.1.0
+Requires-Python: >=3.11
+Requires-Dist: tgcrypto-pyrofork
+Requires-Dist: pyrofork
+Requires-Dist: rich
+Provides-Extra: tests
+Requires-Dist: pyright; extra == "tests"
+Requires-Dist: ruff; extra == "tests"
+Provides-Extra: build
+Requires-Dist: setuptools; extra == "build"
+Requires-Dist: twine; extra == "build"
+Requires-Dist: build; extra == "build"
+Requires-Dist: pip; extra == "build"

@@ -1,0 +1,32 @@
+[project]
+dependencies = [
+    'tgcrypto-pyrofork',
+    'pyrofork',
+    'rich',
+]
+name = 'reposter'
+version = '24.1.0'
+requires-python = '>=3.11'
+
+[project.optional-dependencies]
+tests = [
+    'pyright',
+    'ruff',
+]
+build = [
+    'setuptools',
+    'twine',
+    'build',
+    'pip',
+]
+
+[project.scripts]
+galaxy_backend = 'reposter.__main__:main'
+
+[tool.pyright]
+venvPath = '.'
+venv = '.venv'
+
+[tool.setuptools.packages.find]
+where = ['reposter']
+
