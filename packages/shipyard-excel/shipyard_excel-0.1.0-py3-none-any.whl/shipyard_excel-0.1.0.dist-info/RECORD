@@ -1,0 +1,8 @@
+shipyard_excel/__init__.py,sha256=WUasuDzvTxHGf04f-SvyWj_QWCRSxwd54UM2ZoeOGi0,38
+shipyard_excel/cli/authtest.py,sha256=FEfW77uw1yrFjwjs-aWSJ7TKN-Dq9467Mn-g54FDX3k,743
+shipyard_excel/cli/download.py,sha256=wLKIEHLPFJyZ3SKJcH6UCAjWO0j6Zz2HyPKlvebVNiQ,3183
+shipyard_excel/cli/upload.py,sha256=7KfnOT8qLukC68-q85EUTi2n8msmjx6sTz2Y6xQx2d4,3802
+shipyard_excel/excel_client.py,sha256=_o2VHrE9yetXL0Yt2W7BTdz7ecWQSDYPXCyCfheKw8E,3141
+shipyard_excel-0.1.0.dist-info/METADATA,sha256=LxIAe9jKsWZawKDANLwlZIcnkCgqH1WR3DTt7JdVyhA,2228
+shipyard_excel-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+shipyard_excel-0.1.0.dist-info/RECORD,,
