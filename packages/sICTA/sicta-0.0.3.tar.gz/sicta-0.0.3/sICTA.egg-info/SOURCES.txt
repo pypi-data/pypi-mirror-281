@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+data/GO_bp.gmt
+data/Muraro.h5ad
+sICTA/__init__.py
+sICTA/customized_linear.py
+sICTA/main.py
+sICTA/pre.py
+sICTA/sICTA_model.py
+sICTA/train.py
+sICTA.egg-info/PKG-INFO
+sICTA.egg-info/SOURCES.txt
+sICTA.egg-info/dependency_links.txt
+sICTA.egg-info/top_level.txt
