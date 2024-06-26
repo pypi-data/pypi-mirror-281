@@ -1,0 +1,14 @@
+_kastore.cp310-win_amd64.pyd,sha256=bp6n1JuZ7LAI7QDUEa9B3p0QPPJzd6NsW4adhT41PiQ,25088
+kastore/__init__.py,sha256=fCOI15nY3ffbW-9IZi-j7MrQ9WHd_dSAPSx3rMHGWfE,5268
+kastore/__main__.py,sha256=g-QTU5kCtQNLicvPRNQYHwdSoWhGHwdZ_i9rGxUR_Tc,112
+kastore/_version.py,sha256=buMlTtHZuhBoNr6JHKljFa_R2-Vkao4zUTb8wmk5-ak,74
+kastore/cli.py,sha256=pZhsTSURlx1lEERpbsrnX7PZbTlTpZZ7N0GA72bEGuE,3730
+kastore/exceptions.py,sha256=CIhAZBTOZTdmMuwGIH8wLwS8sGwhUUpCz1fwRY0H4lc,1003
+kastore/store.py,sha256=8_Bg_xFvxkhVpDrtY47dGYfh1HJnX1hRvBQqBU-qmSk,16929
+kastore/include/kastore.h,sha256=l1nAgm7lyRxFOxgNOqCRxM5GwP8ODIQ0I-D7PvEnJT0,22061
+kastore-0.3.3.dist-info/LICENSE,sha256=q7_5ky5cNeUVuAbrCKauE0PEpxztn8Fu9TCVA4EpAvw,1087
+kastore-0.3.3.dist-info/METADATA,sha256=o6oS6Lw_2Qf4ZDttG_KQVYRpftDMKPU90LAGVRFMrR8,1245
+kastore-0.3.3.dist-info/WHEEL,sha256=H-K32IiNZYCPWcWlZi7cxr5Zu8ogRQGVOyOK_jygsF0,101
+kastore-0.3.3.dist-info/entry_points.txt,sha256=wmE3_roaEzHVQsa5wtDj1FDhWBSk2fghJqww9HeclFU,50
+kastore-0.3.3.dist-info/top_level.txt,sha256=PgrfLcUlww4xBX9iGRs4qwTnb5Kh8R_iHdP3grp6gRI,17
+kastore-0.3.3.dist-info/RECORD,,
