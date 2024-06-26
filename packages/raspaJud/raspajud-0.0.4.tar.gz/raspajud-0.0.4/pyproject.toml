@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "raspaJud"
+version = "0.0.4"
+authors = [
+  { name="Bruno Oliveira", email="bruno.oliveira.pgsp@gmail.com" },
+]
+description = "Package to convert scrap judicial decisions."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "selenium",
+  "webdriver_manager",
+  "bs4",
+  "pandas"
+]
+
+[project.urls]
+Homepage = "https://github.com/bdcdo/raspaJud"
+Issues = "https://github.com/bdcdo/raspaJud/issues"
