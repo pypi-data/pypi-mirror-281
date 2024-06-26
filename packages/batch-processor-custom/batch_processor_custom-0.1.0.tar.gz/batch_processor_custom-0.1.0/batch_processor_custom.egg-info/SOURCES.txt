@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+batch_processor_custom/__init__.py
+batch_processor_custom/batch_processor.py
+batch_processor_custom.egg-info/PKG-INFO
+batch_processor_custom.egg-info/SOURCES.txt
+batch_processor_custom.egg-info/dependency_links.txt
+batch_processor_custom.egg-info/requires.txt
+batch_processor_custom.egg-info/top_level.txt
