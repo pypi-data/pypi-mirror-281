@@ -1,0 +1,12 @@
+.gitignore
+README.md
+makefile
+setup.py
+slurm/__init__.py
+slurm/submit.py
+slurm_esr.egg-info/PKG-INFO
+slurm_esr.egg-info/SOURCES.txt
+slurm_esr.egg-info/dependency_links.txt
+slurm_esr.egg-info/entry_points.txt
+slurm_esr.egg-info/top_level.txt
+test/test.py
