@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: wiseman_library
+Version: 0.0.4
+Summary: wiseman bundles the voice assistant infrastructure into a python library
+Author-email: adem öcel <ademocel83@gmail.com>
+Project-URL: Homepage, https://github.com/adem-ocel/wiseman-library
+Project-URL: Issues, https://github.com/adem-ocel/wiseman-library/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE

@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+src/wiseman_library/Lissener.py
+src/wiseman_library/Recognizer.py
+src/wiseman_library/Recorder.py
+src/wiseman_library/__init__.py
+src/wiseman_library/speaker.py
+src/wiseman_library.egg-info/PKG-INFO
+src/wiseman_library.egg-info/SOURCES.txt
+src/wiseman_library.egg-info/dependency_links.txt
+src/wiseman_library.egg-info/top_level.txt

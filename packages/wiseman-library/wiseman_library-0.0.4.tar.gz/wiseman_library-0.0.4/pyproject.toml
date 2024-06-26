@@ -1,0 +1,18 @@
+[project]
+authors = [
+  {name = "adem öcel", email = "ademocel83@gmail.com"},
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+description = "wiseman bundles the voice assistant infrastructure into a python library"
+name = "wiseman_library"
+readme = "README.md"
+requires-python = ">=3.12"
+version = "0.0.4"
+
+[project.urls]
+Homepage = "https://github.com/adem-ocel/wiseman-library"
+Issues = "https://github.com/adem-ocel/wiseman-library/issues"
