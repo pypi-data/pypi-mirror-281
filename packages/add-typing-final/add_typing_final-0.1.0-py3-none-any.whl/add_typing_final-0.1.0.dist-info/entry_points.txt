@@ -1,0 +1,2 @@
+[console_scripts]
+add-typing-final = add_typing_final.main:main
