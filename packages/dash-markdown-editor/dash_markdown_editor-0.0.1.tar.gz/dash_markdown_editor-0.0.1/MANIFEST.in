@@ -1,0 +1,11 @@
+include dash_markdown_editor/dash_markdown_editor.min.js
+include dash_markdown_editor/dash_markdown_editor.min.js.map
+include dash_markdown_editor/async-*.js
+include dash_markdown_editor/async-*.js.map
+include dash_markdown_editor/*-shared.js
+include dash_markdown_editor/*-shared.js.map
+include dash_markdown_editor/metadata.json
+include dash_markdown_editor/package-info.json
+include README.md
+include LICENSE
+include package.json
