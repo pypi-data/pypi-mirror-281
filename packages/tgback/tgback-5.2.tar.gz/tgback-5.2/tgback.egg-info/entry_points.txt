@@ -1,0 +1,2 @@
+[console_scripts]
+tgback = tgback.app:entry
