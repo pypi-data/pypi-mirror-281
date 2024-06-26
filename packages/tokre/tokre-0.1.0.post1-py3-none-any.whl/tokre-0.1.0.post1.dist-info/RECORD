@@ -1,0 +1,10 @@
+tokre/__init__.py,sha256=UunxtehApcYELJan7SuFbw8F80QJ67FsZnPQd_OEfcY,1145
+tokre/setup_workspace.py,sha256=thTDkwow7VOqgVd2XlkcfoCwB5KEGCviP1cmjTeRGrY,2089
+tokre/synth_feat.py,sha256=ZWm9CgD1-NjDAF0nFR-pOwNzPl_gDT7tiu_fEdNWrOU,14623
+tokre/tokre_core/faster_matcher.py,sha256=HLXmCxwcY2sLUug5KOgIGIqjjh18BvObOMscNALfAwM,9624
+tokre/tokre_core/get_nfa.py,sha256=ty5dKMqysJw8abgjMO-Ev1lEhYxviWbiRgriChrKt78,29286
+tokre/tokre_core/parse.py,sha256=fDCqhNLUR1u5DsRoRlMf0dD1vrWHZP2v0o-H29H5ZPY,22416
+tokre/utils.py,sha256=UTSkHcc5e3QVUKIzL9yBqLAFlbe56MFQ00DEET7m-yk,3980
+tokre-0.1.0.post1.dist-info/METADATA,sha256=nm6_wNj1um1KvqG2RPZD1NLJI4A6dm8O1INLmhUCeas,626
+tokre-0.1.0.post1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tokre-0.1.0.post1.dist-info/RECORD,,
