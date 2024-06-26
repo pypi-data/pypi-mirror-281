@@ -1,0 +1,8 @@
+blocks/__init__.py,sha256=SKddptWmRbFHOkVhzasL45R3egPTSG692BeKmbEs5MQ,73
+blocks/models.py,sha256=D4R4ePvoUpGo5eVfNx2dwLwOae9XQWpwYcaDvtGF5Pk,2868
+blocks/pipeline.py,sha256=XQdhuU5-B-TDvqcS04CyHiUXf2xr38Wwy6BTJYVgKzU,17220
+blocks/transformers.py,sha256=CJ-_w4N__arap3DoN96HAId4T6pvweZGPm-YPaKgPfU,4398
+python_blocks-0.1.2.dist-info/LICENSE,sha256=21uLyapFHtmAwFu9xSuBgWtL49QtMIzTmI9Lq0w94MI,1502
+python_blocks-0.1.2.dist-info/METADATA,sha256=qdrhjkrzehCBQ79WPSmjShe2YUp7Sa5u-G_92uSntN0,6111
+python_blocks-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+python_blocks-0.1.2.dist-info/RECORD,,
