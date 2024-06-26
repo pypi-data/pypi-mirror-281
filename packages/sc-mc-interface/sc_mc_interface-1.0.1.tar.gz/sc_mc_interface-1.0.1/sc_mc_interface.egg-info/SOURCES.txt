@@ -1,0 +1,8 @@
+setup.py
+sc_mc_interface/__init__.py
+sc_mc_interface/mc_conversation.py
+sc_mc_interface.egg-info/PKG-INFO
+sc_mc_interface.egg-info/SOURCES.txt
+sc_mc_interface.egg-info/dependency_links.txt
+sc_mc_interface.egg-info/requires.txt
+sc_mc_interface.egg-info/top_level.txt
