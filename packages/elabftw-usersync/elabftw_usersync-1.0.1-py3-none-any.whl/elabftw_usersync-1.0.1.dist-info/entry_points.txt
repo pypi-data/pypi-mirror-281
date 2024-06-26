@@ -1,0 +1,2 @@
+[console_scripts]
+elabus = elabftw_usersync.main:start_sync
