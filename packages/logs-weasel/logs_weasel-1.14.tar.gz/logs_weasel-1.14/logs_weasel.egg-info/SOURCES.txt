@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+logs_weasel/__init__.py
+logs_weasel/main.py
+logs_weasel.egg-info/PKG-INFO
+logs_weasel.egg-info/SOURCES.txt
+logs_weasel.egg-info/dependency_links.txt
+logs_weasel.egg-info/requires.txt
+logs_weasel.egg-info/top_level.txt

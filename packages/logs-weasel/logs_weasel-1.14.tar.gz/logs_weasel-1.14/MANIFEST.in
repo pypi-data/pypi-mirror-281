@@ -1,0 +1,12 @@
+include README.md
+include requirements.txt
+include setup.py
+include pyproject.toml
+include logs_weasel/*
+include LICENSE
+include main.py
+exclude venv/*
+exclude .git/*
+exclude __pycache__/*
+exclude *.py[cod]
+exclude .DS_Store
