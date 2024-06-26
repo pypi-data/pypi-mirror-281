@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+funpay_scrapper/__init__.py
+funpay_scrapper/lots.py
+funpay_scrapper/profile.py
+funpay_scrapper.egg-info/PKG-INFO
+funpay_scrapper.egg-info/SOURCES.txt
+funpay_scrapper.egg-info/dependency_links.txt
+funpay_scrapper.egg-info/requires.txt
+funpay_scrapper.egg-info/top_level.txt
