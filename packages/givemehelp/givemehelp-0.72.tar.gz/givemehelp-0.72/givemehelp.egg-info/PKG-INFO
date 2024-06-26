@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: givemehelp
+Version: 0.72
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: boto3
+Requires-Dist: google-generativeai
+Requires-Dist: spacy
