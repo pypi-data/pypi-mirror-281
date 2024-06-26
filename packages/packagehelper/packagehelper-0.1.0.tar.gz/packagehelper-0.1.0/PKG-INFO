@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: packagehelper
+Version: 0.1.0
+Summary: Helpers for working with packages
+License: MIT
+Author: mm21
+Author-email: mm21.dev@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pyrollup (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+# packagehelper
+
+Helpers for working with packages, e.g. extracting resources. Documentation is pending, but the code itself is documented.
