@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+src/asmat.egg-info/PKG-INFO
+src/asmat.egg-info/SOURCES.txt
+src/asmat.egg-info/dependency_links.txt
+src/asmat.egg-info/requires.txt
+src/asmat.egg-info/top_level.txt
+tests/test.py
+tests/test_atp.py
+tests/test_extract_assembly.py
+tests/test_generation.py
+tests/test_reader.py
+tests/test_utils.py
