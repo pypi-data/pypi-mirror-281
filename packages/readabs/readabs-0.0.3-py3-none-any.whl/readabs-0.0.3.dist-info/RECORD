@@ -1,0 +1,17 @@
+readabs/__init__.py,sha256=VzKd_THyNuROzvgP2qH5MFCIBTFvCeqH83iYPPcdrBQ,68
+readabs/abs_catalogue_map.py,sha256=XrTc844NEV0g6CaxadS0HsCJweOGUQwpRMEdi2I5iBY,8922
+readabs/abs_meta_data_support.py,sha256=PgVOWIGb3_axFwYDnCIZ0IBJ5WUTtBIfNwkdjFfQ9zs,705
+readabs/download_cache.py,sha256=h_ElUmdJJuBm5DAB9KefShOWxCvMHskHDwVlV6L5IiE,6960
+readabs/generate_catalogue_map.py,sha256=5Air2d4fvZVezJt9fzUQc7WLX1aHsv2y4Yn0SJtXbRk,2011
+readabs/get_data_links.py,sha256=wLL2p8cZMUVM-PYCoh5XKO2-lt3J9QwEGL17CFaYDq4,4116
+readabs/read_abs_cat.py,sha256=6Sb1meL_NlcjXRB3J7VbjbtDvIlRP5GzKzmKD5ZpUGI,13464
+readabs/read_abs_series.py,sha256=R0ogok9Wm4fgL59ZYcI2TObPLEQjAH5QxRZ2qoUjhmc,3175
+readabs/read_support.py,sha256=AQAvOQ-FlpQBRHrLQHx44OiUDgN1twRPrwVHcekh6Bk,1007
+readabs/readabs.py,sha256=D1zJXYbrc1mipDCp9rKmPjuGx91MLIKlRMHKH-pq0ig,909
+readabs/readabs.pyi,sha256=N6psbIWpV5obaltk0BbFl2Eip0LUaPN0hCFzhr5wQXs,524
+readabs/utilities.py,sha256=-L2kSe-141l-8s5fKj-bSPxs7o5VKFDU5JKaqU5rGDU,3124
+readabs-0.0.3.dist-info/LICENSE,sha256=YMg097MHV-y9Yg1sZK7T9nueRGswD4cEcCRtst9FGxE,1082
+readabs-0.0.3.dist-info/METADATA,sha256=hjSsLNGXFnpbXjzoXgmTH6m6DcFpKAdEll5Spz88xls,5921
+readabs-0.0.3.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+readabs-0.0.3.dist-info/top_level.txt,sha256=lA7BwCI3L6fvTyx0HcMTcS3FhgXkCiEL3sXUQ2WtLbE,8
+readabs-0.0.3.dist-info/RECORD,,
