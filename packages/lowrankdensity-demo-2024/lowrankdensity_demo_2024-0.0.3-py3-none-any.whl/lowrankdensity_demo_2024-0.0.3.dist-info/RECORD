@@ -1,0 +1,12 @@
+lowrankdensity/.DS_Store,sha256=mZwUOTbO4ulPwEAb4GSAlUPBRSJXmNGVOlY9R3hiJGY,6148
+lowrankdensity/__init__.py,sha256=Cdfo-r1auC1A-9m8FDRo-1a-QU4aj7WnVmpA6bdKN1o,59
+lowrankdensity/datasets/__init__.py,sha256=zALvuXVRptxODSCBdvvIjPp3pLQCXaRpteNWdPA37aE,54
+lowrankdensity/datasets/generate_samples.py,sha256=5VJKh39iIaZb_93RewNlUAXkxB1DaYYfvPhcuVwA0gk,3737
+lowrankdensity/models/__init__.py,sha256=3m2u783TxndPfXZL6CzwoKq3bS6uTO4jM0_znDg_GxM,35
+lowrankdensity/models/continuous.py,sha256=6eJTD2iDZizL_6YOj09ADxSnpiUWstPsP7oqvKvgnzc,7445
+lowrankdensity/models/discrete.py,sha256=9N9rN654qHaykkD7iNULOaqA74_tsJEdpK0AAMTQ4uI,6976
+lowrankdensity_demo_2024-0.0.3.dist-info/LICENSE,sha256=agOLgn6hjQMJJs2csXUowH5ZYTp0jv1hp0j8AtbzLjA,1063
+lowrankdensity_demo_2024-0.0.3.dist-info/METADATA,sha256=-A5e8feEkNlXcRyjvxEdhItpzGSl2L4n9AVWQH4f-Xc,404
+lowrankdensity_demo_2024-0.0.3.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+lowrankdensity_demo_2024-0.0.3.dist-info/top_level.txt,sha256=84BTdzxqEZ25zLg0Xq2IH4LFlHFOJI6XuZ2n87Ry1HQ,15
+lowrankdensity_demo_2024-0.0.3.dist-info/RECORD,,
