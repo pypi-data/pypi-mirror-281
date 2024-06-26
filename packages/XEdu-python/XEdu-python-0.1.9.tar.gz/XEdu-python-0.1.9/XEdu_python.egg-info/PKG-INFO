@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: XEdu-python
+Version: 0.1.9
+Summary: XEdu
+Home-page: https://github.com/OpenXLab-Edu/OpenMMLab-Edu
+Author: OpenXLab
+Author-email: wangbolun@pjlab.org.cn
+License: MIT License
+Requires-Python: >=3.6
