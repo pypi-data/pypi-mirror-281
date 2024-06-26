@@ -1,0 +1,84 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# IDE
+.idea
+.vscode/*
+.cache
+
+# Environment and Dependency
+venv*
+dependency/.spack-env
+dependency/spack.lock
+/build_env/
+/venv-new/
+/env.txt
+
+# Build directories
+build
+/build-dlio/
+/build_dlio/
+/cmake_example.egg-info/
+/cmake-build-debug/
+/cmake-build-debug-1/
+/temp/dlio_profiler/
+/Testing/Temporary/
+
+# Additional aux files
+logs/*.log
+/examples/dlp_analyzer/dlp.log
+/examples/dlp_analyzer/dlp_analyzer_main.log
+/dlp_analyzer/test.pfw.gz.zindex
+/dlp_analyzer/dask/run_dir/*.pid
+/dlp_analyzer/dask/run_dir/*.json
+/data/unet3d/
+/dlp_analyzer/dask/logs/*.log
+/dlp_analyzer/.nfs*
+/hydra_log/unet3d/
+/STDERR
+install
+__pycache__
+dlio_profiler/__pycache__
+
+# Install files
+dlio_profiler_py.egg-info
+/dist/
+/output/
+
+# Python checkpoints
+/examples/.ipynb_checkpoints/
+/examples/dlp_analyzer/.ipynb_checkpoints/
+
+# Debug files
+/*.core
+
