@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "rag-helper"
+version = "0.0.1"
+description = ""
+authors = ["contact.nampham.work <contact.nampham.work@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "rag_helper" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+instructor = "^1.3.3"
+google-generativeai = "^0.7.0"
+lancedb = "^0.8.2"
+numpy = "1.26.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
