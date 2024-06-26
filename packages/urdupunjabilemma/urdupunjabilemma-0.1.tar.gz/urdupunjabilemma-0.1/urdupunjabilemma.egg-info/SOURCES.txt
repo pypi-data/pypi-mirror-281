@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+urdupunjabilemma/__init__.py
+urdupunjabilemma.egg-info/PKG-INFO
+urdupunjabilemma.egg-info/SOURCES.txt
+urdupunjabilemma.egg-info/dependency_links.txt
+urdupunjabilemma.egg-info/top_level.txt
