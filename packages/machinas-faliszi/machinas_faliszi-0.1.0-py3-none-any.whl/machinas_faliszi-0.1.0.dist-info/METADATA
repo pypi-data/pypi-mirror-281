@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: machinas-faliszi
+Version: 0.1.0
+Summary: 
+Author: integraledelebesgue
+Author-email: jsmolka@student.agh.edu.pl
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+A well-known set of utilities used in Graph Algorithms and Computionally Hard Problems courses at AGH UST in a convinient form.
+
