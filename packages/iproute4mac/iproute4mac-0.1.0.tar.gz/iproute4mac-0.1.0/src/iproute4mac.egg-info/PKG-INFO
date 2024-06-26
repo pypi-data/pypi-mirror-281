@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: iproute4mac
+Version: 0.1.0
+Summary: iproute for Mac
+Home-page: https://github.com/signal-09/iproute4mac
+Author: Ettore Simone
+Author-email: ettore.simone@gmail.com
+Project-URL: Source, https://github.com/signal-09/iproute4mac
+Keywords: iproute2,ip,bridge
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Networking
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# iproute4mac
+
+This is a macOS network wrapper to imitate GNU/Linux [iproute2](https://wiki.linuxfoundation.org/networking/iproute2) inspired by the [iproute2mac](https://github.com/brona/iproute2mac) project.
