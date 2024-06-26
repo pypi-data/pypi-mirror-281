@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: heros-time-syncronizer
+Version: 0.1.0
+Summary: A Time Syncronizer for HEROS
+Home-page: http://192.168.0.203:7990/projects/HERO/repos/time_sync/browse
+Author: Lee Suhyun
+Author-email: shlee2@withtech.co.kr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pyqt5
+
+1. 패키지를 빌드하기 위해 setuptools와 wheel을 설치합니다.: pip install setuptools wheel
+2. 그런 다음 패키지를 빌드합니다: python setup.py sdist bdist_wheel
+3. PyPI에 업로드하기 위해 twine을 설치합니다: pip install twine
+4. PyPI에 업로드합니다: twine upload dist/*
+
+

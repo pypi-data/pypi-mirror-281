@@ -1,0 +1,2 @@
+[console_scripts]
+heros-time-sync = heros_time_sync.main:main
