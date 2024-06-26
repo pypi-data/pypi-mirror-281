@@ -1,0 +1,10 @@
+mecoda_inat/__init__.py,sha256=ydPTUi0cmkKDJACr4LIjTaEN7C0cbVqDJbvmlH5_qyA,509
+mecoda_inat/mecoda_inat.py,sha256=quSbi50jAdLjpXl7R0D7WNjne9M478xuBB0cFXWzLEM,20582
+mecoda_inat/models.py,sha256=LvV69XK3nquYQR0Hc_fC8fqfyKxnOciGaMRaAqR-M-8,2366
+mecoda_inat/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mecoda_inat/data/taxon_tree.csv,sha256=VdeqqzreoLsrIDCsYuPm2xlljMZy3rbYyd9TVZwuf2E,1931452
+mecoda_inat-1.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mecoda_inat-1.0.2.dist-info/METADATA,sha256=1tZ_pjeR-fdxvqmunvavKYTHXN75yugUvjUtyaTLlx8,11308
+mecoda_inat-1.0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mecoda_inat-1.0.2.dist-info/top_level.txt,sha256=r3fFDUpAAkejq7LnKeFjQOXvcaggvEeN1LHHlE25p5U,12
+mecoda_inat-1.0.2.dist-info/RECORD,,
