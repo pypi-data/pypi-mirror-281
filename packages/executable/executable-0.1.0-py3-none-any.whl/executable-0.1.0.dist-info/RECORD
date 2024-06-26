@@ -1,0 +1,11 @@
+executable/__init__.py,sha256=qeYEcHlAVYGy3zE4zMJ2_zYT_R5iPn7dVgB4zg5aPSo,1603
+executable/__main__.py,sha256=lP6swiTmq9e9O9wNgmvEPZrYgCUGdXtXD8pn6FQCsVw,177
+executable/cli.exe,sha256=MqzBvFQxFsviz_EMuGd3LfLyVP8mNMhwrvC0bEtpb9s,11776
+executable/cli.py,sha256=9BPOXRWdAel9b_GXSA7W-pU5pSDA0cc1nC9Ty7YFqys,1060
+executable/py.typed,sha256=-iPtxftU8G1qwXw8jhb2RRoV38oTBriahST6CMXv_qY,60
+executable-0.1.0.dist-info/LICENSE,sha256=sKlbDAGSQGR4vJmsfidK8BxVvg2y5kE3z-lxzXu358M,1093
+executable-0.1.0.dist-info/METADATA,sha256=LG1rwQQJ75p4zIxhqsHbaYVwv-f0PN2KuxrfpIY50Lc,1984
+executable-0.1.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+executable-0.1.0.dist-info/entry_points.txt,sha256=akCddZVrk22C7adCChySznyEXYMl_gLKm8d6KTLH1hc,50
+executable-0.1.0.dist-info/top_level.txt,sha256=b8RMOddZXdmR5sXvEJW_iICXix4WQ0SrFeskArOS2Jk,11
+executable-0.1.0.dist-info/RECORD,,
