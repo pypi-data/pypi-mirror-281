@@ -1,0 +1,2 @@
+[console_scripts]
+cryptotrade = pycryptoex._cli:cli
