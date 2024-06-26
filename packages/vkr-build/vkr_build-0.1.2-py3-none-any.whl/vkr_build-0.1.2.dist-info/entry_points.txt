@@ -1,0 +1,3 @@
+[console_scripts]
+vkr-build=vkr_build.console:run
+
