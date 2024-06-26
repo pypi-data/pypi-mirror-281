@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+EZ_project_creator.egg-info/PKG-INFO
+EZ_project_creator.egg-info/SOURCES.txt
+EZ_project_creator.egg-info/dependency_links.txt
+EZ_project_creator.egg-info/entry_points.txt
+EZ_project_creator.egg-info/top_level.txt
+project_creator/__init__.py
+project_creator/config.py
+project_creator/main.py
+project_creator/utils.py
