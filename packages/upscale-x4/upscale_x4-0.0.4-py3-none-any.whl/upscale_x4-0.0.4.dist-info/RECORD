@@ -1,0 +1,8 @@
+upscale_x4/__init__.py,sha256=ewifHx1io5j3EOYQGxNk2cLCVMAGuJxwZrFYu3SPX6o,3505
+upscale_x4/models/FSRCNN_x4.pb,sha256=XGjRjbVhrtjq1P_t8biX6mFbqvYOv2w1-OZB-PpKIb8,41661
+upscale_x4/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upscale_x4-0.0.4.dist-info/LICENSE,sha256=v7VapOUjIfnpkVnoQ5HqUF_WvUscHDXKyH7029mM8G0,1087
+upscale_x4-0.0.4.dist-info/METADATA,sha256=_xBBN-KBrv-WK2WqZLAR3lU7jCp9c7YNb55FopO8res,2292
+upscale_x4-0.0.4.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+upscale_x4-0.0.4.dist-info/top_level.txt,sha256=XL9zQ2P8DbMP846QPYOBW0ZLZCzeltAPJ8jL_UM7rmQ,11
+upscale_x4-0.0.4.dist-info/RECORD,,
