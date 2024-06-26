@@ -1,0 +1,14 @@
+ResearchTools/Caching.py,sha256=t-HPCl0XTdwRYguKbmeQV0TrSGqf4JrRdhYeOYsuhDU,4815
+ResearchTools/Dict.py,sha256=wPbqkppYHXOJOykI7ZQz1k5fDcwJJULHl5f8Iq1E-2Q,2781
+ResearchTools/Events.py,sha256=ptbR4Vzh9LqjCveytTYHq0kNQ7Jgfl-ksbcpnKsDMmQ,1962
+ResearchTools/Filesystem.py,sha256=0BB53j_z_fSbMNCrOpkrSfcEMUeqWxKBTYuU5QQHN3E,1915
+ResearchTools/Geometry.py,sha256=vWvGMycmjkPiAucZE2QkFwk3V_-_idLj8C8yKpp8Mo0,3260
+ResearchTools/Integration.py,sha256=4ZTm1ju2DHm52MMAnflvGN6183-TFPGYT1wV18iddyQ,1114
+ResearchTools/Iterable.py,sha256=C4IWjCnmkeceOiG7U4rlOKjB-4rNC0dIDTwa9cHOvk4,461
+ResearchTools/Multiprocessing.py,sha256=g2lueBKdxPtl6iitcuDAwe7bfHy0aLmWSuByw_pulmU,1422
+ResearchTools/Sweep.py,sha256=pzVSYfEwm-f3Rs_medolGrVabMfO1yYtDDtdS3IesQM,9930
+ResearchTools/__init__.py,sha256=sTjsdt8MZowuy4VC-bMNK6lBs4MPso9L1hx_MBIK24o,109
+researchtools-0.0.1.dist-info/LICENSE,sha256=DeXDW8ij2rJYhHgWa_nlHciHOhcQZrmkva01W33ky6w,1071
+researchtools-0.0.1.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+researchtools-0.0.1.dist-info/METADATA,sha256=dsul8IO3VUArP1zT-qazAWJLgzo_ZPiHhcKTxNAJp7Y,1313
+researchtools-0.0.1.dist-info/RECORD,,
