@@ -1,0 +1,4 @@
+[console_scripts]
+checkcommit = immunity_utils.qa:check_commit_message
+checkmigrations = immunity_utils.qa:check_migration_name
+checkrst = immunity_utils.qa:check_rst_files
