@@ -1,0 +1,10 @@
+oashya/__init__.py,sha256=nNn4aI5qhdZyEajS5AcVfy7hHpCs5kaAQPp1sEvWaEw,109
+oashya/labels.py,sha256=1esNbjo6erFF_N-EGarH9aFR8U6wtLCdJIsjO8lzykk,7824
+oashya/oashya_fp32.onnx,sha256=e1FEzlaEUmZzNTN1pkFpvhJHKkDwtWl9SkHJqakeUMo,12943564
+oashya/oashya_int8.onnx,sha256=4prxJfssTKh3-2VonVDH2iqlFRZde6VWuVeMLKuO3Ek,2130
+oashya/tracker.cp310-win_amd64.pyd,sha256=WCqYtgadh3fBxdjeHZedlnfTQq-hA4VxLh-e-Ugt-so,490496
+oashya/utils.py,sha256=mXUnOK_Q2elQS8rXOrA6MW_XWDgwzw9Xk4AN8AkeLKU,5914
+oashya-0.0.7.dist-info/METADATA,sha256=s8fV3JOqfeg4DFAT6bhkd9S18A8KtGB92WOkptug3QQ,556
+oashya-0.0.7.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+oashya-0.0.7.dist-info/top_level.txt,sha256=JBwmlG4jpe4Y-UH0olhanafP2L9UUAqOoez5bSFDC6c,7
+oashya-0.0.7.dist-info/RECORD,,
