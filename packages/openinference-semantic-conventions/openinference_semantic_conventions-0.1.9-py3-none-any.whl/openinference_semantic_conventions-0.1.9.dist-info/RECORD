@@ -1,0 +1,9 @@
+openinference/semconv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openinference/semconv/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openinference/semconv/version.py,sha256=XIaxbMbyiP-L3kguR1GhxirFblTXiHR1lMfDVITvHUI,22
+openinference/semconv/resource/__init__.py,sha256=xiHsJhSMOhgtJOiKoz-x-cFMIlf2ho9LyoxQOGz8jAw,74
+openinference/semconv/trace/__init__.py,sha256=OKr0ZQIozlmyNhQh1fCv1ONrVAEUuDj-pZZv_JgK7Ao,7402
+openinference_semantic_conventions-0.1.9.dist-info/METADATA,sha256=w5yU1zIhnnoEDxh_aQ74LZCAxi34C2mMFmHbf1OPhLU,1225
+openinference_semantic_conventions-0.1.9.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+openinference_semantic_conventions-0.1.9.dist-info/licenses/LICENSE,sha256=Qd7mEYbriakf6dZkV8o1YKJfwuVxladksZj_3rcO53g,10870
+openinference_semantic_conventions-0.1.9.dist-info/RECORD,,
