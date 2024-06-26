@@ -1,0 +1,8 @@
+xpipe_client/__init__.py,sha256=zNOS07vnUKw_MSzArwXeR1mC18VbidSmto4L9Bq4T3s,40
+xpipe_client/clients.py,sha256=tI5KgrINa1_sb6m0NeZvbXFZTqZ-wLy4PS8vulj4Iww,14796
+xpipe_client/exceptions.py,sha256=FdkNKLV1gOH8mOuNM9wH_q3hYNFEdMbQwAEZUX4yZQU,410
+xpipe_client/logging.py,sha256=6Riwa-9ecdn8wha5ZEFgnjWScPInUDDGNa7oXGcWvvw,18
+xpipe_client-0.1.17.dist-info/LICENSE,sha256=5UgirbkGDOAN4dGpVYJgkoGoTBcfj8PPRb4u_jYass0,1064
+xpipe_client-0.1.17.dist-info/METADATA,sha256=7FI6i5ieIgNl2G1h0ljjqGJRGxx8fWJVUX_j9TBbCgs,3669
+xpipe_client-0.1.17.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+xpipe_client-0.1.17.dist-info/RECORD,,
