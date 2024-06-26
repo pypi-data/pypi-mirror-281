@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+digiffer_wallets_dev.egg-info/PKG-INFO
+digiffer_wallets_dev.egg-info/SOURCES.txt
+digiffer_wallets_dev.egg-info/dependency_links.txt
+digiffer_wallets_dev.egg-info/entry_points.txt
+digiffer_wallets_dev.egg-info/requires.txt
+digiffer_wallets_dev.egg-info/top_level.txt
+tests/__init__.py
+tests/test_wallet.py
