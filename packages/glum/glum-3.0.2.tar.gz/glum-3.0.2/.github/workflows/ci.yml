@@ -1,0 +1,56 @@
+name: CI
+on: [push]
+
+jobs:
+  pre-commit-checks:
+    name: Linux - pre-commit checks
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    env:
+      PRE_COMMIT_USE_MICROMAMBA: 1
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+      - name: Set up pixi
+        uses: prefix-dev/setup-pixi@v0.8.0
+        with:
+          environments: lint default
+      - name: pre-commit
+        run: pixi run -e lint pre-commit-run --color=always --show-diff-on-failure
+
+  unit-tests:
+    name: Tests
+    runs-on: ${{ matrix.os }}
+    env:
+      CI: True
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - { os: ubuntu-latest, environment: 'py39' }
+          - { os: ubuntu-latest, environment: 'py310' }
+          - { os: ubuntu-latest, environment: 'py311' }
+          - { os: ubuntu-latest, environment: 'py312' }
+          - { os: ubuntu-latest, environment: 'oldies' }
+          - { os: windows-latest, environment: 'py312' }
+          - { os: macos-latest, environment: 'py312' }
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+      - name: Set up pixi
+        uses: prefix-dev/setup-pixi@ba3bb36eb2066252b2363392b7739741bb777659
+        with:
+          environments: ${{ matrix.environment }}
+      - name: Install repository
+        run: pixi run -e ${{ matrix.environment }} postinstall
+      - name: Run pytest
+        run: pixi run -e ${{ matrix.environment }} test -nauto
+      - name: Run doctest
+        # Check that the readme example will work by running via doctest.
+        # We run outside the repo to make the test a bit more similar to
+        # a user running after installing with conda.
+        run: |
+          mkdir ../temp
+          cp README.md ../temp
+          cd ../temp
+          pixi run --manifest-path ../glum/pixi.toml -e ${{ matrix.environment }} python -m doctest -v README.md
