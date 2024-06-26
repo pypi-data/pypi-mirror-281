@@ -1,0 +1,27 @@
+site_name: NeoPipe Documentation
+nav:
+  - Home: index.md
+  - Examples: 
+      - Basic Use: examples/basic_use.md
+      - Lambda Function: examples/lambda_function.md
+  - API Reference:
+      - Pipeline: api/pipeline.md
+      - Result: api/result.md
+      - Task: api/task.md
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+
+markdown_extensions:
+  - codehilite
+  - admonition
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - mkdocstrings
+
