@@ -1,0 +1,9 @@
+ollama
+groq
+pydantic
+
+[groq]
+groq
+
+[ollama]
+ollama
