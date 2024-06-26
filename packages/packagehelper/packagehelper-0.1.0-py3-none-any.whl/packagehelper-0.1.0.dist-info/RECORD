@@ -1,0 +1,11 @@
+packagehelper/__init__.py,sha256=cDB1iBc9NCoVpBSZ2T6QlemeNsQe-Dq0fyk6rIBnWPk,209
+packagehelper/_test_assets/__init__.py,sha256=OgveTsGagCbic9Zu4I4fRwkOxCDDn7DjV155Iv3hzYM,67
+packagehelper/_test_assets/test1.txt,sha256=AdRpXGh_XK69n18izAzoBteg-ZC7XBGajRtBlpB6E8w,23
+packagehelper/_test_assets/test2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packagehelper/_test_assets/test2/test2.txt,sha256=ZpwwolhXtbme6dPHJ7CMo0obnzMNwDiH1fxyz2eJ2Ng,23
+packagehelper/packages.py,sha256=8dbewHqQfuH-Mg2CR1yHJVMz_aK2D27OFz4qku4fQjY,1539
+packagehelper/resources.py,sha256=ToGS5OE6hGpy8QljaUhDp-WijhlemeDhFW-wzsR9e6U,2767
+packagehelper-0.1.0.dist-info/LICENSE,sha256=dYOnVlGLQifVo5n-SitSN9BY_2v1xP504bd4nAMEgqw,1061
+packagehelper-0.1.0.dist-info/METADATA,sha256=WWHiR7Sbxj1E2IM8fGUEYdPyhh6AIGzwDvX0vGi9mnw,560
+packagehelper-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+packagehelper-0.1.0.dist-info/RECORD,,
