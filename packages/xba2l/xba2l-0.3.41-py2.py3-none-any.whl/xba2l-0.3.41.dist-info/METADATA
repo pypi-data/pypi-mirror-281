@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: xba2l
+Version: 0.3.41
+Summary: A simple and fast A2L file parser.
+Home-page: https://xiangbei-tech.com/
+Author: Sun Bo
+Author-email: sunboemail@sina.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pympler >=1.0.1
+Requires-Dist: chardet >=5.2.0
+
+A simple and fast A2L file parser.
