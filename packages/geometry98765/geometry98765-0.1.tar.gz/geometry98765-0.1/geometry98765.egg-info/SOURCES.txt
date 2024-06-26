@@ -1,0 +1,9 @@
+setup.py
+geometry98765/__init__.py
+geometry98765/add.py
+geometry98765/circle.py
+geometry98765/rectangle.py
+geometry98765.egg-info/PKG-INFO
+geometry98765.egg-info/SOURCES.txt
+geometry98765.egg-info/dependency_links.txt
+geometry98765.egg-info/top_level.txt
