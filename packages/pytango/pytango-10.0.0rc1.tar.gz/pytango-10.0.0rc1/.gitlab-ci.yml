@@ -1,0 +1,865 @@
+---
+stages:
+  - check
+  - build
+  - image
+  - test
+  - release
+
+default:
+  interruptible: false
+
+variables:
+  CPP_TANGO_VERSION: "10.0.0rc2"
+  TANGO_TEST_VERSION: "3.9"
+  TWINE_USERNAME: __token__
+  TWINE_PASSWORD: secret
+  PYTHONUNBUFFERED: "1"
+
+.macos:setup-micromamba:
+  script:
+    # Default shell is zsh on macOS but gitlab-runners are starting a bash shell
+    - curl -L micro.mamba.pm/install.sh | bash
+    - source /Users/gitlab/.bash_profile
+    - micromamba config set channel_priority flexible
+
+.win:setup-micromamba:
+  script:
+    - |
+      if ( $CI_RUNNER_TAGS.Contains("desy") ) {
+        . C:\Windows\System32\WindowsPowerShell\v1.0\Microsoft.PowerShell_profile.ps1
+      } else {
+        Invoke-Webrequest -URI https://micro.mamba.pm/api/micromamba/win-64/latest -OutFile micromamba.tar.bz2
+        7z x micromamba.tar.bz2 -aoa
+        7z x micromamba.tar -aoa -ttar -r Library\bin\micromamba.exe
+        MOVE -Force Library\bin\micromamba.exe micromamba.exe
+        .\micromamba.exe shell init -s powershell -p "C:\\micromambaenv\\"
+        . C:\Users\gitlab_runner\Documents\WindowsPowerShell\profile.ps1
+      }
+
+.matrix-wheel-linux:
+  image: ${IMAGE_REGISTRY}:${MANYLINUX}_${ARCH}_v2.0.0-rc.2
+  tags:
+    - linux
+    - docker
+    - $RUNNER_TAG
+  variables:
+    IMAGE_REGISTRY: registry.gitlab.com/tango-controls/docker/pytango-builder
+    MANYLINUX: manylinux2014
+    GLIBC_TAG: '2_17' # depends on manylinux
+    PYTHON_TAG: 'cp${PYTHON_VER}-cp${PYTHON_VER}${ABI_SUFFIX}'
+    WHEEL_GLOB_PATTERN: pytango-*${PYTHON_TAG}*${ARCH}.whl
+  parallel:
+    matrix:
+      - RUNNER_TAG: amd64
+        ARCH: [x86_64, i686]
+        PYTHON_VER: [39, 310, 311, 312]
+      - RUNNER_TAG: aarch64
+        ARCH: aarch64
+        PYTHON_VER: [39, 310, 311, 312]
+
+.matrix-wheel-macos:
+  image: macos-14-xcode-15
+  tags:
+    - saas-macos-medium-m1
+  parallel:
+    matrix:
+      - PLATFORM: ["osx-arm64", "osx-64"]
+        PYTHON_VERSION: ["3.9", "3.10", "3.11", '3.12']
+        BOOST_VERSION: "1.85.0"
+
+.matrix-wheel-win:
+  tags:
+    - windows
+    - desy
+  parallel:
+    matrix:
+        - PYTHON_VERSION: ["3.9", "3.10", "3.11", '3.12']
+          ARCH: ["Win32", "x64"]
+          BOOST_VERSION: "1.85.0"
+
+.rules-wheel:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+      when: never
+    - if: '$CI_COMMIT_TAG'
+    - if: $CI_JOB_NAME =~ /.*win:.*-wheel.*/ && $CPP_TANGO_VERSION =~ /.*dev.*/ && $CI_PIPELINE_SOURCE != "merge_request_event"
+      when: manual
+      allow_failure: true
+    - if: $CI_JOB_NAME =~ /.*macos:.*-wheel.*/ && $CPP_TANGO_VERSION =~ /.*dev.*/ && $CI_PIPELINE_SOURCE != "merge_request_event"
+      when: manual
+      allow_failure: true
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE != "merge_request_event"
+      when: manual
+      allow_failure: true
+
+run-triage:
+  stage: check
+  image: ruby:3.3-slim
+  tags:
+    - linux
+    - docker
+    - amd64
+  script:
+    - gem install gitlab-triage
+    - gitlab-triage --token $GITLAB_TRIAGE_API_TOKEN --source-id $CI_PROJECT_PATH
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+
+run-pre-commit:
+  stage: check
+  image: registry.gitlab.com/tango-controls/docker/pre-commit
+  tags:
+    - linux
+    - docker
+    - amd64
+  variables:
+    PRE_COMMIT_HOME: ${CI_PROJECT_DIR}/.cache/pre-commit
+  cache:
+    key: pre-commit-cache
+    paths:
+      - ${PRE_COMMIT_HOME}
+  script:
+    - pre-commit run --all-files
+
+.build-wheel:
+  stage: build
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - dist/
+  rules:
+    - !reference [.rules-wheel, rules]
+
+linux:build-wheel:
+  extends: [.matrix-wheel-linux, .build-wheel]
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+    CMAKE_ARGS: "--preset=ci-Linux-quiet"
+  script:
+    # build wheel
+    - export BOOST_PYTHON_SUFFIX=$(/opt/python/${PYTHON_TAG}/bin/python -c "import sys;print(f'{sys.version_info[0]}{sys.version_info[1]}')")
+    - |
+      /opt/python/${PYTHON_TAG}/bin/python -m pip install build
+      /opt/python/${PYTHON_TAG}/bin/python -m build --wheel
+    # repair wheel, keeping any debug symbols (output will be in the 'wheelhouse' directory)
+    - auditwheel repair dist/${WHEEL_GLOB_PATTERN}
+    # rename file so it starts with 'pytango_dbg' instead of just 'pytango'
+    - export WHEEL_FILE=$( basename $( ls wheelhouse/${WHEEL_GLOB_PATTERN} | head -n 1 ) )
+    - export WHEEL_FILE_WITH_DEBUG_INFO="${WHEEL_FILE/pytango/pytango_dbg}"
+    - mv wheelhouse/${WHEEL_FILE} wheelhouse/${WHEEL_FILE_WITH_DEBUG_INFO}
+    # repair wheel, but this time strip all debug symbols, and keep the standard name
+    - auditwheel repair --strip dist/${WHEEL_GLOB_PATTERN}
+    # delete unrepaired wheel
+    - rm -rf dist/*.whl
+    # move repaired wheels to dist
+    - mv wheelhouse/*.whl dist/
+
+macos:build-wheel:
+  extends: [.matrix-wheel-macos, .build-wheel]
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+    CMAKE_ARGS: "--preset=ci-macOS"
+  before_script:
+    - !reference [.macos:setup-micromamba, script]
+    - export MACOSX_DEPLOYMENT_TARGET="12.0"
+    - >
+      micromamba install -y -n base -c conda-forge
+      -c conda-forge/label/cpptango_rc --platform $PLATFORM
+      cpptango=${CPP_TANGO_VERSION} boost=${BOOST_VERSION} cppzmq cxx-compiler pkg-config
+      python=${PYTHON_VERSION} pip build wheel delocate cmake ninja
+    - micromamba activate base
+  script:
+    - python -m build --wheel
+    # Include dependencies in wheel
+    - delocate-wheel -v dist/*.whl
+
+win:build-wheel:
+  extends: [.matrix-wheel-win, .build-wheel]
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+    CMAKE_ARGS: "--preset=ci-Windows -A ${ARCH}"
+    MSVC_VERSION: "v143"
+    CPP_TANGO_PROJECT_ID:  "tango-controls%2FcppTango"
+    TC_BOOST_CI_DOWNLOADS: "https://github.com/tango-controls/boost-ci/releases/download"
+    CPP_TANGO_BUILD_TYPE: "shared_release"
+    CPP_TANGO_VERSION: "10.0.0-rc2"
+  before_script:
+    - $PythonTag = ${PYTHON_VERSION}.replace(".", "")
+    - $PythonPath = "${PythonTag}"
+    # DESY runner is shell-runner, so we have to reset env and use pre-installed python
+    - |
+      if ( $CI_RUNNER_TAGS.Contains("desy") ) {
+        $env:PATH = Get-Content -Path c:\gitlab-runner\original_path.txt
+        if ($ARCH -eq "Win32") { $PythonPath = "${PythonPath}-32" }
+      } else {
+        if ($ARCH -eq "Win32") { $Forcex86 = "--x86" }
+        choco install -y python --version=${PYTHON_VERSION} $Forcex86
+      }
+    - $env:PATH = "C:\Python${PythonPath};C:\Python${PythonPath}\Scripts;" + $env:PATH
+    - python -m pip install -U delvewheel build
+
+    - $DEPARCH = if ($ARCH -eq "Win32") { "x86" } else { "x64" }
+    - $BoostPython = "boost-python-${BOOST_VERSION}_v142_${DEPARCH}_py${PythonTag}"
+    - $LibTango = "libtango_${CPP_TANGO_VERSION}_${MSVC_VERSION}_${DEPARCH}_${CPP_TANGO_BUILD_TYPE}"
+
+    - $DependenciesPath = "C:\dependencies\${PythonPath}"
+    # Make sure there are no old dependencies
+    - Get-ChildItem -Path "${DependenciesPath}" -Recurse | Remove-Item -force -recurse
+    - mkdir -Force "${DependenciesPath}"
+
+    # Get Boost Python
+    - Invoke-WebRequest -URI "${TC_BOOST_CI_DOWNLOADS}/${BOOST_VERSION}/${BoostPython}.zip" -OutFile "${DependenciesPath}\boost.zip"
+    - Expand-Archive -Path "${DependenciesPath}\boost.zip" -DestinationPath "${DependenciesPath}" -Force
+
+    # Find the cppTango asset for the CPP_TANGO_VERSION we are targeting use gitlab's REST API
+    - $TangoReleases = Invoke-Webrequest -UseBasicParsing "${CI_API_V4_URL}/projects/${CPP_TANGO_PROJECT_ID}/releases" | Select-Object -Expand Content | ConvertFrom-Json
+    - $TangoAsset = ($TangoReleases | Where-Object { $_.tag_name -eq "$CPP_TANGO_VERSION" }).assets.links | Where-Object { $_.name -eq "${LibTango}.zip" }
+    - $TangoAsset
+    - $TangoUrl = $TangoAsset.url
+
+    # Get cppTango
+    - Invoke-WebRequest -URI $TangoUrl -OutFile libtango.zip
+    - Expand-Archive -Path libtango.zip -DestinationPath "${DependenciesPath}" -Force
+
+    # Setup environment
+    - $env:BOOST_ROOT = "${DependenciesPath}\Boost"
+    - $env:BOOST_PYTHON_SUFFIX = "${PythonTag}"
+    - $env:TANGO_ROOT = "${DependenciesPath}\$LibTango"
+    - $env:PYTHON_ROOT = "C:\Python${PythonPath}"
+    - $env:PATH += ";$env:BOOST_ROOT\lib;$env:TANGO_ROOT\bin"
+  script:
+    - $WheelArch = if ($ARCH -eq "Win32") { "win32" } else { "win_amd64" }
+    - $WheelGlob = "pytango*cp$PythonTag-cp$PythonTag*$WheelArch*"
+    - python -m build --wheel
+    - delvewheel repair $(Get-ChildItem -Path dist -Filter $WheelGlob | Select -Expand FullName)
+    - Remove-Item dist\$WheelGlob
+    - Move-Item wheelhouse\$WheelGlob dist\
+  rules:
+    - if: $CI_COMMIT_BRANCH =~ /.*windows.*/
+    - !reference [.rules-wheel, rules]
+
+linux:build-sdist:
+  stage: build
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  image: python:3.9
+  tags:
+    - linux
+    - docker
+    - amd64
+  before_script:
+    - pip install twine build
+  script:
+    - python -m build --sdist
+    - twine check dist/*
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - dist/
+
+build-docker-image:
+  stage: image
+  image: docker:latest
+  tags:
+    - linux
+    - dind
+    - amd64
+  services:
+    - docker:20.10.16-dind
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_TLS_CERTDIR: ""
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - export COMMIT_TAG=$(echo $CI_COMMIT_TAG | sed --expression="s/v//g")
+    - export LOWER_PROJECT_NAMESPACE=$(echo ${CI_PROJECT_NAMESPACE} | tr '[:upper:]' '[:lower:]')
+    - cd .devcontainer # Minimize build context migrated to docker container
+    - docker build -t $CI_REGISTRY/${LOWER_PROJECT_NAMESPACE}/$CI_PROJECT_NAME/pytango-dev:py${PYTHON_VERSION}-tango${CPP_TANGO_VERSION}-pytango${COMMIT_TAG} --build-arg PYTHON_VERSION --build-arg CPP_TANGO_VERSION -f Dockerfile .
+    - docker push $CI_REGISTRY/${LOWER_PROJECT_NAMESPACE}/$CI_PROJECT_NAME/pytango-dev:py${PYTHON_VERSION}-tango${CPP_TANGO_VERSION}-pytango${COMMIT_TAG}
+  parallel:
+    matrix:
+      - PYTHON_VERSION: ['3.9', '3.10', '3.11', '3.12']
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+      when: never
+    - if: '$CI_COMMIT_TAG'
+      when: manual
+      allow_failure: true
+
+linux:test-source:
+  stage: test
+  image: mambaorg/micromamba
+  tags:
+    - linux
+    - docker
+    - amd64
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+    CMAKE_ARGS: "--preset=ci-Linux"
+  # Avoid job to wait on wheels building
+  needs: [linux:build-sdist]
+  before_script:
+    - ulimit -c unlimited
+    - eval "$(/bin/micromamba shell hook -s bash)"
+    # Install build dependencies
+    - >
+      micromamba install -y -n base -c conda-forge
+      boost cppzmq cxx-compiler pkg-config
+      python=$PYTHON_VERSION numpy git make
+      packaging psutil pytest pytest-forked pytest-cov pystack gevent
+      opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp-proto-grpc opentelemetry-exporter-otlp-proto-http
+      cmake clang-format clang-tools cppcheck ninja
+    - micromamba activate base
+    - |
+      {
+        if [[ $CPP_TANGO_VERSION == *"dev"* ]]; then
+          micromamba install -c conda-forge -c tango-controls/label/dev cpptango-dbg=$CPP_TANGO_VERSION tango-test=${TANGO_TEST_VERSION}
+        else
+          micromamba install -c conda-forge -c conda-forge/label/cpptango_rc cpptango=$CPP_TANGO_VERSION tango-test=${TANGO_TEST_VERSION}
+        fi
+      } || {
+        echo "Cannot find matching TangoTest, trying to building TangoTest against dev cpp_tango"
+        if [[ $CPP_TANGO_VERSION == *"dev"* ]]; then
+          micromamba install -c conda-forge -c tango-controls/label/dev cpptango-dbg=$CPP_TANGO_VERSION
+        else
+          micromamba install -c conda-forge -c conda-forge/label/cpptango_rc cpptango=$CPP_TANGO_VERSION
+        fi
+        pushd /tmp
+        git clone --recurse-submodules https://gitlab.com/tango-controls/TangoTest.git
+        cd TangoTest
+        cmake --install-prefix="$CONDA_PREFIX" -B build
+        make -C build install
+        popd
+      }
+    # Install pytango
+    - python -m pip install -v -e ".[tests,telemetry]"
+  script:
+    # run full test suite with telemetry disabled (default), then re-run telemetry-specific tests with it enabled
+    - pytest --cov --cov-branch --cov-report=term
+    - >
+      TANGO_TELEMETRY_ENABLE=on pytest -k telemetry
+      --cov --cov-branch --cov-report=term --cov-report=html --cov-report=xml --cov-append
+  after_script:
+    # Core files configuration
+    - python_executable=$(which python)
+    - dline="================================================================================"
+    - |
+      pattern=$(cat /proc/sys/kernel/core_pattern)
+      if [ "$pattern" == "core.%e.%p.%t" ]; then
+        echo "Core pattern is correct: $pattern";
+        for core_file in core.*; do
+          if [ -f "$core_file" ]; then
+            echo -e "$dline\nAnalyzing core file: $core_file\n$dline\n"
+            pystack core $core_file $python_executable --native-all --locals
+            echo -e "$dline\n"
+          fi
+        done
+      else
+        echo "Core pattern is incorrect(expected: core.%e.%p.%t): $pattern";
+      fi
+  parallel:
+    matrix:
+      - PYTHON_VERSION: ['3.9', '3.10', '3.11', '3.12']
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    when: always
+    paths:
+      - htmlcov/
+      - coverage.xml
+      - report.xml
+    reports:
+      junit: report.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+
+linux:test-source-against-develop-dependencies:
+  stage: test
+  when: manual
+  image: mambaorg/micromamba
+  tags:
+    - linux
+    - docker
+    - amd64
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+    CMAKE_ARGS: "--preset=ci-Linux"
+    IDL_SOURCE: "main"
+    CPPTANGO_SOURCE: "main"
+    TANGOTEST_SOURCE: "main"
+    PYTHON_VERSION: "3.12"
+  # Avoid job to wait on wheels building
+  needs: [linux:build-sdist]
+  before_script:
+    - ulimit -c unlimited
+    - eval "$(/bin/micromamba shell hook -s bash)"
+    # Install build dependencies
+    - >
+      micromamba install -y -n base -c conda-forge
+      boost cmake cppzmq cxx-compiler omniorb libtool pkg-config gnuconfig autoconf zeromq jpeg
+      cpp-opentelemetry-api cpp-opentelemetry-sdk
+      git make ninja python numpy packaging psutil pytest pytest-forked pytest-cov pystack gevent
+      clang-format clang-tools cppcheck python=$PYTHON_VERSION
+      opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp-proto-grpc opentelemetry-exporter-otlp-proto-http
+    - micromamba activate base
+    # check which idl should we use and install it
+    - |
+      if [[ $IDL_SOURCE == "conda" ]]; then
+        echo "Installing idl from conda-forge"
+        micromamba install -c conda-forge tango-idl
+      else
+          echo "Building and installing idl from ${IDL_SOURCE} branch"
+          pushd /tmp
+          git clone --recurse-submodules --depth 1 -b $IDL_SOURCE https://gitlab.com/tango-controls/tango-idl
+          cd tango-idl
+          cmake --install-prefix="$CONDA_PREFIX" -B build
+          make -C build install
+          popd
+      fi
+    # check which cpptango should we use and install it
+    - |
+      if [[ $CPPTANGO_SOURCE = "conda" ]] ; then
+        echo "Installing cpptango from conda-forge"
+        micromamba install  -c conda-forge -c tango-controls/label/dev -c conda-forge/label/cpptango_rc cpptango-dbg=$CPP_TANGO_VERSION
+      else
+        echo "Building and installing cpptango from ${CPPTANGO_SOURCE} branch"
+        pushd /tmp
+        git clone --recurse-submodules --depth 1 -b $CPPTANGO_SOURCE https://gitlab.com/tango-controls/cppTango
+        cd cppTango
+        mkdir build
+        cd build
+        cmake ${CMAKE_ARGS} -DCMAKE_BUILD_TYPE=Debug -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_INSTALL_PREFIX="$CONDA_PREFIX" -DCMAKE_PREFIX_PATH="$CONDA_PREFIX" -DBUILD_TESTING=OFF -DCMAKE_CXX_STANDARD=17 -DTANGO_USE_TELEMETRY=ON ..
+        make
+        make install
+        popd
+      fi
+    # check which tango test should we use and install it
+    - |
+      if [[ $TANGOTEST_SOURCE = "conda" ]] && [[$CPP_TANGO_VERSION != *"dev"*]]; then
+        echo "Installing tangotest from conda-forge"
+        micromamba install  -c conda-forge -c conda-forge/label/tango-test_rc tango-test=${TANGO_TEST_VERSION}
+      else
+        pushd /tmp
+        if [[ $CPP_TANGO_VERSION == *"dev"* ]]; then
+          echo "Building TangoTest head against dev cpp_tango"
+          git clone --recurse-submodules https://gitlab.com/tango-controls/TangoTest.git
+        else
+          echo "Building and installing TangoTest from ${TANGOTEST_SOURCE}"
+          git clone --recurse-submodules -b $TANGOTEST_SOURCE https://gitlab.com/tango-controls/TangoTest.git
+        fi
+        cd TangoTest
+        cmake --install-prefix="$CONDA_PREFIX" -B build
+        make -C build install
+        popd
+      fi
+    # Install pytango
+    - python -m pip install -v -e ".[tests,telemetry]"
+  script:
+    # run full test suite with telemetry disabled (default), then re-run telemetry-specific tests with it enabled
+    - pytest
+    - TANGO_TELEMETRY_ENABLE=on pytest -k telemetry
+    # now remove opentelemetry packages (all depend on opentelemetry-api), and see if some tests still pass
+    - micromamba remove -y opentelemetry-api
+    - TANGO_TELEMETRY_ENABLE=on pytest -k telemetry
+  after_script:
+    # Core files configuration
+    - python_executable=$(which python)
+    - dline="================================================================================"
+    - |
+      pattern=$(cat /proc/sys/kernel/core_pattern)
+      if [ "$pattern" == "core.%e.%p.%t" ]; then
+        echo "Core pattern is correct: $pattern";
+        for core_file in core.*; do
+          if [ -f "$core_file" ]; then
+            echo -e "$dline\nAnalyzing core file: $core_file\n$dline\n"
+            pystack core $core_file $python_executable --native-all --locals
+            echo -e "$dline\n"
+          fi
+        done
+      else
+        echo "Core pattern is incorrect(expected: core.%e.%p.%t): $pattern";
+      fi
+
+linux:test-main-cpptango:
+  stage: test
+  image: mambaorg/micromamba
+  tags:
+    - linux
+    - docker
+    - amd64
+  # Avoid job to wait on wheels building
+  needs: [linux:build-sdist]
+  before_script:
+    - eval "$(/bin/micromamba shell hook -s bash)"
+    # Install build and test dependencies
+    - >
+      micromamba install -y -n base -c tango-controls/label/dev -c conda-forge
+      cpptango boost cmake cppzmq cxx-compiler git make pkg-config ninja
+      python numpy
+      packaging psutil pytest pytest-forked gevent
+      opentelemetry-api opentelemetry-sdk opentelemetry-exporter-otlp-proto-grpc opentelemetry-exporter-otlp-proto-http
+    - micromamba activate base
+    # build and install TangoTest
+    - pushd /tmp
+    - git clone --recurse-submodules https://gitlab.com/tango-controls/TangoTest.git
+    - cd TangoTest
+    - cmake --install-prefix="$CONDA_PREFIX" -B build
+    - make -C build install
+    - popd
+    # Install pytango
+    - python -m pip install -v $(ls dist/pytango*.tar.gz)[tests,telemetry]
+  script:
+    # run telemetry-specific tests with telemetry enabled, then full test suite with it disabled (default)
+    - TANGO_TELEMETRY_ENABLE=on pytest -k telemetry
+    - pytest
+    # now remove opentelemetry packages (all depend on opentelemetry-api), and see if some tests still pass
+    - micromamba uninstall -y opentelemetry-api
+    - TANGO_TELEMETRY_ENABLE=on pytest -k telemetry
+  artifacts:
+    when: always
+    paths:
+      - report.xml
+    reports:
+      junit: report.xml
+  rules:
+    # Disable detached pipeline on MR
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      when: never
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      allow_failure: false
+    - if: $CI_COMMIT_BRANCH || $CI_COMMIT_TAG
+      when: manual
+      allow_failure: true
+
+.linux-test-wheel:
+  stage: test
+  extends: .matrix-wheel-linux
+  needs: [linux:build-wheel]
+  before_script:
+    - /opt/python/${PYTHON_TAG}/bin/python -m venv venv
+    - source venv/bin/activate
+    - pip install --upgrade pip
+    - pip install --prefer-binary $(find dist/${WHEEL_GLOB_PATTERN})[tests,telemetry]
+  script:
+    # run telemetry-specific tests with telemetry enabled, then full test suite with it disabled (default)
+    - TANGO_TELEMETRY_ENABLE=on pytest -k telemetry
+    - pytest
+  rules:
+    - if: $CI_COMMIT_TAG && $ARCH == "aarch64"
+      allow_failure: true
+    - !reference [.rules-wheel, rules]
+
+# All linux wheels need to be built to trigger those jobs
+linux:test-wheel:
+  extends: .linux-test-wheel
+
+# Only wait on linux wheel for x86_64 python 3.12
+linux:test-wheel:x86_64:3.12:
+  extends: .linux-test-wheel
+  when: manual
+  parallel:
+    matrix:
+      - RUNNER_TAG: amd64
+        ARCH: x86_64
+        PYTHON_VER: "312"
+  needs:
+    - job: linux:build-wheel
+      parallel:
+        matrix:
+          - RUNNER_TAG: amd64
+            ARCH: x86_64
+            PYTHON_VER: "312"
+
+# Only wait on linux wheel for aarch64 python 3.12
+linux:test-wheel:aarch64:3.12:
+  extends: .linux-test-wheel
+  when: manual
+  parallel:
+    matrix:
+      - RUNNER_TAG: aarch64
+        ARCH: aarch64
+        PYTHON_VER: "312"
+  needs:
+    - job: linux:build-wheel
+      parallel:
+        matrix:
+          - RUNNER_TAG: aarch64
+            ARCH: aarch64
+            PYTHON_VER: "312"
+
+.macos-test-wheel:
+  stage: test
+  extends: .matrix-wheel-macos
+  needs: [macos:build-wheel]
+  before_script:
+    - !reference [.macos:setup-micromamba, script]
+    - ABI_TAG=$(echo "cp${PYTHON_VERSION}" | sed "s/\.//")
+    - |
+      if [[ "$PLATFORM" == "osx-arm64" ]]; then
+        WHEEL_FILE=$(ls dist/pytango-*-${ABI_TAG}-macosx_*_arm64.whl)
+      else
+        WHEEL_FILE=$(ls dist/pytango-*-${ABI_TAG}-macosx_*_x86_64.whl)
+      fi
+    - micromamba install -y -n base -c conda-forge --platform $PLATFORM python=${PYTHON_VERSION} pip
+    # Install TangoTest in a separate env to make sure the wheel isn't using
+    # the tango libraries installed with it
+    - micromamba create -y -n tango -c conda-forge --platform $PLATFORM tango-test=${TANGO_TEST_VERSION}
+    - ln -s ~/micromamba/envs/tango/bin/TangoTest ~/micromamba/bin/TangoTest
+    - micromamba activate base
+    - echo "Testing $WHEEL_FILE"
+    - python -m pip install ${WHEEL_FILE}[tests,telemetry]
+  script:
+    # run telemetry-specific tests with telemetry enabled, then full test suite with it disabled (default)
+    - TANGO_TELEMETRY_ENABLE=on pytest -k telemetry
+    - pytest
+  rules:
+    - !reference [.rules-wheel, rules]
+
+# All macos wheels need to be built to trigger those jobs
+macos:test-wheel:
+  extends: .macos-test-wheel
+
+# Only wait on macos wheel for osx-arm64 python 3.12
+macos:test-wheel:arm64:3.12:
+  extends: .macos-test-wheel
+  when: manual
+  parallel:
+    matrix:
+      - PLATFORM: "osx-arm64"
+        PYTHON_VERSION: "3.12"
+        BOOST_VERSION: "1.85.0"
+  needs:
+    - job: macos:build-wheel
+      parallel:
+        matrix:
+          - PLATFORM: "osx-arm64"
+            PYTHON_VERSION: "3.12"
+            BOOST_VERSION: "1.85.0"
+
+.win-test-wheel:
+  stage: test
+  extends: .matrix-wheel-win
+  needs: [win:build-wheel]
+  before_script:
+    - !reference [.win:setup-micromamba, script]
+    - micromamba install -y -n base -c conda-forge tango-test=$env:TANGO_TEST_VERSION
+    - micromamba activate base
+    - $PythonTag = ${PYTHON_VERSION}.replace(".", "")
+    - $PythonPath = "${PythonTag}"
+    - |
+      if ( $CI_RUNNER_TAGS.Contains("desy") ) {
+        $env:PATH = Get-Content -Path c:\gitlab-runner\original_path.txt
+        if ($ARCH -eq "Win32") { $PythonPath = "${PythonPath}-32" }
+      } else {
+        if ($ARCH -eq "Win32") { $Forcex86 = "--x86" }
+        choco install -y python --version=${PYTHON_VERSION} $Forcex86
+      }
+    - $env:PATH = "C:\Python${PythonPath};C:\Python${PythonPath}\Scripts;" + $env:PATH
+    - $WheelArch = if ($ARCH -eq "Win32") { "win32" } else { "win_amd64" }
+    - $WheelGlob = "pytango*cp$PythonTag-cp$PythonTag*$WheelArch*"
+    - python -m pip install --force-reinstall "$(Get-ChildItem -Path dist -Filter $WheelGlob | Select -Expand FullName)[tests,telemetry]"
+  script:
+    - $null > pytest_empty_config.txt
+    - set "TANGO_TELEMETRY_ENABLE=on"
+    - pytest --collect-only -q -k "telemetry"
+    - .\tests\run_tests_win.bat
+    - set TANGO_TELEMETRY_ENABLE=
+    - pytest --collect-only -q -k "not test_client.py and not gevent and not test_event"  # test most with telemetry disabled (default)
+    - .\tests\run_tests_win.bat
+  after_script:
+    - |
+      if ( $CI_RUNNER_TAGS.Contains("desy") ) {
+        $PythonPath = ${PYTHON_VERSION}.replace(".", "")
+        if ($ARCH -eq "Win32") { $PythonPath = "${PythonPath}-32" }
+        $env:PATH = "C:\Python${PythonPath};C:\Python${PythonPath}\Scripts;" + $env:PATH
+        python -m pip uninstall -y pytango
+      }
+    - set TANGO_TELEMETRY_ENABLE=
+  rules:
+    - if: $CI_COMMIT_BRANCH =~ /.*windows.*/
+    - !reference [.rules-wheel, rules]
+
+# All windows wheels need to be built to trigger those jobs
+win:test-wheel:
+  extends: .win-test-wheel
+
+# Only wait on win wheel for x64 python 3.12
+win:test-wheel:x64:3.12:
+  extends: .win-test-wheel
+  when: manual
+  parallel:
+    matrix:
+      - PYTHON_VERSION: "3.12"
+        ARCH: "x64"
+        BOOST_VERSION: "1.85.0"
+  needs:
+    - job: win:build-wheel
+      parallel:
+        matrix:
+          - PYTHON_VERSION: "3.12"
+            ARCH: "x64"
+            BOOST_VERSION: "1.85.0"
+
+test-docs:
+  # official build is on https://readthedocs.org/projects/pytango/ but we test doc generation
+  stage: test
+  image: sphinxdoc/sphinx:latest
+  tags:
+    - linux
+    - docker
+    - amd64
+  # Avoid job to wait on wheels building
+  needs: [linux:build-sdist]
+  script:
+    - python -m pip install numpy gevent psutil sphinx_rtd_theme
+    - python -m sphinx doc build/sphinx
+    - echo "Documentation can be found at https://$CI_PROJECT_NAMESPACE.gitlab.io/-/$CI_PROJECT_NAME/-/jobs/$CI_JOB_ID/artifacts/build/sphinx/index.html"
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - build/sphinx
+  environment:
+    name: Docs-dev
+    url: "https://$CI_PROJECT_NAMESPACE.gitlab.io/-/$CI_PROJECT_NAME/-/jobs/$CI_JOB_ID/artifacts/build/sphinx/index.html"
+
+release-pypi-package:
+  stage: release
+  image: python:3.9
+  tags:
+    - linux
+    - docker
+    - amd64
+  before_script:
+    - pip install twine
+  script:
+    - twine upload dist/*
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+      when: never
+    - if: '$CI_COMMIT_TAG'
+      when: manual
+
+release-debug-packages:
+  stage: release
+  variables:
+    PACKAGE_REGISTRY_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/${CI_PROJECT_NAME}"
+    RELEASE_URL_PREFIX: "${PACKAGE_REGISTRY_URL}/${CI_COMMIT_TAG}"
+    PY39_x86_64_DEBUG_WHEEL: "pytango_dbg-${CI_COMMIT_TAG}-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+    PY310_x86_64_DEBUG_WHEEL: "pytango_dbg-${CI_COMMIT_TAG}-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+    PY311_x86_64_DEBUG_WHEEL: "pytango_dbg-${CI_COMMIT_TAG}-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+    PY312_x86_64_DEBUG_WHEEL: "pytango_dbg-${CI_COMMIT_TAG}-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl"
+    PY39_i686_DEBUG_WHEEL: "pytango_dbg-${CI_COMMIT_TAG}-cp39-cp39-manylinux_2_17_i686.manylinux2014_i686.whl"
+    PY310_i686_DEBUG_WHEEL: "pytango_dbg-${CI_COMMIT_TAG}-cp310-cp310-manylinux_2_17_i686.manylinux2014_i686.whl"
+    PY311_i686_DEBUG_WHEEL: "pytango_dbg-${CI_COMMIT_TAG}-cp311-cp311-manylinux_2_17_i686.manylinux2014_i686.whl"
+    PY312_i686_DEBUG_WHEEL: "pytango_dbg-${CI_COMMIT_TAG}-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl"
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  needs: [linux:build-wheel]
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+      when: never
+    - if: '$CI_COMMIT_TAG'
+      when: manual
+      allow_failure: true
+  before_script:
+    - apk update
+    - apk add curl
+    - apk --no-cache add findutils
+  script:
+    - cd dist
+    - >
+      find pytango_dbg*.whl -type f -printf "\n%f\n" -exec curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file {} "${PACKAGE_REGISTRY_URL}/${CI_COMMIT_TAG}/{}" \;
+  release:
+    name: "Release $CI_COMMIT_TAG"
+    tag_name: "$CI_COMMIT_TAG"
+    description: "Release $CI_COMMIT_TAG"
+    ref: "$CI_COMMIT_SHA"
+    assets:
+      links:
+        - name: "${PY39_x86_64_DEBUG_WHEEL}"
+          url: "${RELEASE_URL_PREFIX}/${PY39_x86_64_DEBUG_WHEEL}"
+
+        - name: "${PY310_x86_64_DEBUG_WHEEL}"
+          url: "${RELEASE_URL_PREFIX}/${PY310_x86_64_DEBUG_WHEEL}"
+
+        - name: "${PY311_x86_64_DEBUG_WHEEL}"
+          url: "${RELEASE_URL_PREFIX}/${PY311_x86_64_DEBUG_WHEEL}"
+
+        - name: "${PY312_x86_64_DEBUG_WHEEL}"
+          url: "${RELEASE_URL_PREFIX}/${PY312_x86_64_DEBUG_WHEEL}"
+
+        - name: "${PY39_i686_DEBUG_WHEEL}"
+          url: "${RELEASE_URL_PREFIX}/${PY39_i686_DEBUG_WHEEL}"
+
+        - name: "${PY310_i686_DEBUG_WHEEL}"
+          url: "${RELEASE_URL_PREFIX}/${PY310_i686_DEBUG_WHEEL}"
+
+        - name: "${PY311_i686_DEBUG_WHEEL}"
+          url: "${RELEASE_URL_PREFIX}/${PY311_i686_DEBUG_WHEEL}"
+
+        - name: "${PY312_i686_DEBUG_WHEEL}"
+          url: "${RELEASE_URL_PREFIX}/${PY312_i686_DEBUG_WHEEL}"
+
+include:
+  - project: 'tango-controls/gitlab-ci-templates'
+    file: 'ArchiveWithSubmodules.gitlab-ci.yml'
+
+
+.test-pixi:
+  stage: test
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  script:
+    - pixi info
+    - pixi run install
+    - pixi run check
+    - pixi install -e tangotest
+    - pixi run pytest -v -k test_ping
+    - pixi run install-cpptango
+  dependencies: []
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: '$CI_COMMIT_TAG'
+      when: never
+    - if: $CI_PIPELINE_SOURCE != "merge_request_event"
+      when: manual
+      allow_failure: true
+
+linux:test-pixi:
+  extends: .test-pixi
+  image: ghcr.io/prefix-dev/pixi:latest
+  tags:
+    - linux
+    - docker
+    - amd64
+  before_script:
+    - apt-get update
+    - apt-get install -y git
+
+macos:test-pixi:
+  extends: .test-pixi
+  parallel:
+    matrix:
+      - PIXI_ARCH: ["aarch64", "x86_64"]
+  image: macos-12-xcode-14
+  tags:
+    - saas-macos-medium-m1
+  before_script:
+    - curl -fsSL https://pixi.sh/install.sh | bash
+    - export PATH=~/.pixi/bin:$PATH
+
+windows:test-pixi:
+  extends: .test-pixi
+  tags:
+    - windows
+    - desy
+  before_script:
+    - iwr -useb https://pixi.sh/install.ps1 | iex
+    - $env:PATH = "C:\windows\system32\config\systemprofile\.pixi\bin;" + $env:PATH
+    - pixi global install git
+  after_script:
+    - $env:PATH = "C:\windows\system32\config\systemprofile\.pixi\bin;" + $env:PATH
+    - pixi global remove git
+    - pixi run clean-all
