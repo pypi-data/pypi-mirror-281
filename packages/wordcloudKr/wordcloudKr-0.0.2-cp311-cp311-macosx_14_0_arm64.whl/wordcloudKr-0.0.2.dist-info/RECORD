@@ -1,0 +1,14 @@
+wordcloud/__init__.py,sha256=YlNvQO4bprYCyTyan9kMA9wjsNoWbK9gwyO4n3DpFkE,341
+wordcloud/__main__.py,sha256=-01S2_v5GIMrG3J1Bp7fhCm40YxsHIzwVXja5sV21Rg,857
+wordcloud/_version.py,sha256=Aj77VL1d5Mdku7sgCgKQmPuYavPpAHuZuJcy6bygQZE,21
+wordcloud/color_from_image.py,sha256=VvqpbeMYLUUiO7jjcwolrRIvLTfKcn878Ia9KSOoFt0,2621
+wordcloud/query_integral_image.cpython-311-darwin.so,sha256=FgTkYHW8DYFfLI25XRHghKV9yic80Bw7g4gTgKlOfkU,187208
+wordcloud/tokenization.py,sha256=LprQUk4OQ-xrRPJQXHDvj0IrTnNc4IHGpO2xqkeUCfk,5364
+wordcloud/wordcloud.py,sha256=AOO9-To0hRnJtwTzpP1OqFuGEdoJWAdvb7PmSWXmv8Q,38211
+wordcloud/wordcloud_cli.py,sha256=V2QYNyHHpHZS7OakDySQZzDRYiX3gJCADJELua9taco,9006
+wordcloudKr-0.0.2.dist-info/LICENSE,sha256=wsYYyx-MqLUtLAr8g-j1-OJgY_DK_faRF1O8wcr3EJM,1069
+wordcloudKr-0.0.2.dist-info/METADATA,sha256=d-EkMLfLCiQKEj4vmCEL_q12YuvkIImynM4-M9J_-TA,3364
+wordcloudKr-0.0.2.dist-info/WHEEL,sha256=BX_vNUJRhaJPOSriwJSkq1Qee3N8gwGOKSKvPeaMVy0,109
+wordcloudKr-0.0.2.dist-info/entry_points.txt,sha256=ksbX1ssYDeTPVKXAnOaujQMb2-qUutA7Ww7UOudGAes,58
+wordcloudKr-0.0.2.dist-info/top_level.txt,sha256=SrNxEn1ZwJK4XnqavaEjplDLWbW-tMuQAebo3Ufj2fM,10
+wordcloudKr-0.0.2.dist-info/RECORD,,
