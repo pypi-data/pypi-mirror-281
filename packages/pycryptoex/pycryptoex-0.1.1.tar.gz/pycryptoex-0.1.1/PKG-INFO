@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: pycryptoex
+Version: 0.1.1
+Project-URL: Homepage, https://github.com/ren3104/pycryptoex
+Project-URL: Repository, https://github.com/ren3104/pycryptoex
+Project-URL: Bug Tracker, https://github.com/ren3104/pycryptoex/issues
+Author-email: ren3104 <2ren3104@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Requires-Dist: aiohttp
+Requires-Dist: typing-extensions; python_version < '3.11'
+Description-Content-Type: text/markdown
+
+# pycryptoex
