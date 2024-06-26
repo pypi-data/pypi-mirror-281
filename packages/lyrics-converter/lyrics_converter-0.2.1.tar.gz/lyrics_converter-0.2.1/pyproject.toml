@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lyrics-converter"
+dynamic = ["version"]
+description = 'Tool to convert between different text-based lyrics formats (e.g. LRC, MidiCo LRC, ASS, TXT)'
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Andrew Beveridge", email = "andrew@beveridge.uk" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[project.scripts]
+lyrics-converter = "lyrics_converter.cli:main"
+
+[project.urls]
+Documentation = "https://github.com/beveradb/lyrics-converter#readme"
+Issues = "https://github.com/beveradb/lyrics-converter/issues"
+Source = "https://github.com/beveradb/lyrics-converter"
+"Homepage" = "https://github.com/beveradb/lyrics-converter"
+
+[tool.hatch.version]
+path = "src/lyrics_converter/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/lyrics_converter tests}"
+
+[tool.coverage.run]
+source_pkgs = ["lyrics_converter", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/lyrics_converter/__about__.py",
+]
+
+[tool.coverage.paths]
+lyrics_converter = ["src/lyrics_converter", "*/lyrics-converter/src/lyrics_converter"]
+tests = ["tests", "*/lyrics-converter/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
