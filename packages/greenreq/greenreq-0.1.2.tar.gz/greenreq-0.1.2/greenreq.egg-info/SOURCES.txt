@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+greenreq/__init__.py
+greenreq/green_requests.so
+greenreq.egg-info/PKG-INFO
+greenreq.egg-info/SOURCES.txt
+greenreq.egg-info/dependency_links.txt
+greenreq.egg-info/top_level.txt
