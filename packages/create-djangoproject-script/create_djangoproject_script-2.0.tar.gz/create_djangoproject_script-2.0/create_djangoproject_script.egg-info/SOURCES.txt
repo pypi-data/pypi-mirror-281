@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+create_django_project.py
+setup.py
+create_djangoproject_script.egg-info/PKG-INFO
+create_djangoproject_script.egg-info/SOURCES.txt
+create_djangoproject_script.egg-info/dependency_links.txt
+create_djangoproject_script.egg-info/entry_points.txt
+create_djangoproject_script.egg-info/requires.txt
+create_djangoproject_script.egg-info/top_level.txt
