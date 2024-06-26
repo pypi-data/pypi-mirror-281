@@ -1,0 +1,10 @@
+serial_toolbox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serial_toolbox/connect.py,sha256=RAIZi5S7C3ikOlhjhiGym0G4ocxkV5ST3mKBtBNRprQ,4901
+serial_toolbox/gui.py,sha256=4d-gjblZNveL2TNhXQ0FzDnIrzCCEWHdB6k1fTJ5PBs,6605
+serial_toolbox/interface_core.py,sha256=8r4835cq_MZc4H0Ub7vPW6ECCDJEJw2sI1aqBzSUSBg,6170
+serial_toolbox/log_init.py,sha256=8R-8k8Z44arlNrXqSoKQEPQ8nyUXb8dIJ0ysdPowzYw,1983
+serial_toolbox-0.1.5.dist-info/entry_points.txt,sha256=VA5RkoOGzvr4XO0rAmPry5cje5PwpiQbtSH1rUm8QWo,136
+serial_toolbox-0.1.5.dist-info/LICENSE,sha256=9vn_ZNWO5ZqXqwyxEvex24bfznsQWvmWnARPeDb0MXk,11546
+serial_toolbox-0.1.5.dist-info/METADATA,sha256=wHgmn8gDu69n_ZMdQlf_mMk5JxywLrNGSr7ObRLdqWY,2136
+serial_toolbox-0.1.5.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+serial_toolbox-0.1.5.dist-info/RECORD,,
