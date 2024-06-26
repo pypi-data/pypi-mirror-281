@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: numba-cuda
+Version: 0.0.1
+Summary: Placeholder
+Author-email: Graham Markall <gmarkall@nvidia.com>
+Description-Content-Type: text/markdown
+
+# numba-cuda
+
+Presently a placeholder for a package containing the Numba CUDA target.
