@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: unav
+Version: 0.1.32
+Summary: UNav is designed for helping navigation of visually impaired people
+Home-page: https://github.com/yourusername/UNav
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: opencv-python
+Requires-Dist: h5py
+Requires-Dist: scikit-image
+Requires-Dist: requests
+
+# UNav
+
+UNav is designed for helping navigation of visually impaired people. It leverages various features and algorithms to provide accurate localization and navigation assistance.
+
+## Features
+
+- **Global Feature Extraction**: Using NetVLAD for image-based localization.
+- **Local Feature Extraction**: Using SuperPoint and SuperGlue for detailed image matching.
+- **Navigation and Localization**: Combines global and local features for accurate navigation.
+
+## Developer Installation
+
+To install UNav as a developer, follow these steps:
+
+### Prerequisites
+
+- Python 3.6 or higher
+- Cython
+- NumPy
+- PyTorch
+- OpenCV
+- h5py
+- scikit-image
+
+### Instructions
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/ai4ce/UNav_Server.git
+    cd UNav_Server
+    ```
+
+2. Build the Cython extensions in place:
+    ```bash
+    python setup_so.py build_ext --inplace
+    ```
+
+3. Create the source distribution and wheel:
+    ```bash
+    python setup.py sdist bdist_wheel
+    ```
+
+4. Upload the package to PyPI:
+    ```bash
+    twine upload --verbose dist/*
+    ```
+
+## User Installation
+
+Users can directly install UNav from PyPI:
+
+```bash
+pip install unav
