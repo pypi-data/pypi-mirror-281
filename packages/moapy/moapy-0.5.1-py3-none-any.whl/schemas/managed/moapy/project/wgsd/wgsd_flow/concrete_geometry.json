@@ -1,0 +1,224 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "FastAPI",
+    "version": "0.1.0"
+  },
+  "servers": [
+    {
+      "url": "https://moa.rpm.kr-dv-midasit.com/backend/function-executor/python-execute/"
+    }
+  ],
+  "paths": {
+    "/moapy/project/wgsd/wgsd_flow/concrete_geometry": {
+      "post": {
+        "summary": "Concrete Geometry",
+        "operationId": "concrete geometry",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/concrete_geometry"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/gsdConcreteGeometry"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "concrete_geometry": {
+        "properties": {
+          "Polygon": {
+            "$ref": "#/components/schemas/gsdPoints"
+          },
+          "matl": {
+            "$ref": "#/components/schemas/gsdConcreteGrade"
+          }
+        },
+        "type": "object",
+        "required": [
+          "Polygon",
+          "matl"
+        ],
+        "title": "concrete geometry"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "gsdConcreteGeometry": {
+        "properties": {
+          "outerPolygon": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/gsdPoints"
+              }
+            ],
+            "description": "Outer polygon of the concrete",
+            "default": {
+              "HEAD": [
+                "x",
+                "y"
+              ],
+              "DATA": [
+                [
+                  0.0,
+                  400.0,
+                  400.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  600.0,
+                  600.0
+                ]
+              ]
+            }
+          },
+          "innerPolygon": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/gsdPoints"
+              }
+            ],
+            "description": "Inner polygon of the concrete"
+          },
+          "material": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/gsdConcreteGrade"
+              }
+            ],
+            "description": "Material of the concrete",
+            "default": {
+              "design_code": "ACI318M-19",
+              "grade": "C12"
+            }
+          }
+        },
+        "type": "object",
+        "title": "GSD Concrete Geometry",
+        "description": "GSD concrete geometry class"
+      },
+      "gsdConcreteGrade": {
+        "properties": {
+          "design_code": {
+            "type": "string",
+            "title": "Design Code",
+            "description": "Design code",
+            "default": "ACI318M-19"
+          },
+          "grade": {
+            "type": "string",
+            "title": "Grade",
+            "description": "Grade of the concrete",
+            "default": "C12"
+          }
+        },
+        "type": "object",
+        "title": "GSD Concrete Grade",
+        "description": "GSD concrete class"
+      },
+      "gsdPoints": {
+        "properties": {
+          "HEAD": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 2,
+            "minItems": 2,
+            "title": "Head"
+          },
+          "DATA": {
+            "items": {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            "type": "array",
+            "maxItems": 2,
+            "minItems": 2,
+            "title": "Data"
+          }
+        },
+        "type": "object",
+        "required": [
+          "HEAD",
+          "DATA"
+        ],
+        "title": "GSD Points",
+        "description": "GSD Points class\n\"HEAD\": [\"x\", \"y\"],\n\"DATA\": [[0.0, 400.0, 400.0, 0.0], [0.0, 0.0, 600.0, 600.0]],"
+      }
+    }
+  }
+}
