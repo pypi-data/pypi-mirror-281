@@ -1,0 +1,30 @@
+[project]
+name = "gamebun"
+version = "0.0.1"
+authors = [
+  { name="NinjaBunny", email="ninjabunnydev@gmail.com" },
+]
+description = ""
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+long_description_content_type = "text/markdown"
+
+dependencies = [
+
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.sources]
+"src/gamebun" = "gamebun"
