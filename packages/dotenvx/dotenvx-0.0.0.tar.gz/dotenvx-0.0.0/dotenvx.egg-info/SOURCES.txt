@@ -1,0 +1,6 @@
+README.md
+setup.py
+dotenvx.egg-info/PKG-INFO
+dotenvx.egg-info/SOURCES.txt
+dotenvx.egg-info/dependency_links.txt
+dotenvx.egg-info/top_level.txt
