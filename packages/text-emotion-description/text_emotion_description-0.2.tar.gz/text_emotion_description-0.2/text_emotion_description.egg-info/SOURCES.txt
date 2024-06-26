@@ -1,0 +1,12 @@
+setup.py
+text_emotion_description.egg-info/PKG-INFO
+text_emotion_description.egg-info/SOURCES.txt
+text_emotion_description.egg-info/dependency_links.txt
+text_emotion_description.egg-info/entry_points.txt
+text_emotion_description.egg-info/requires.txt
+text_emotion_description.egg-info/top_level.txt
+text_emotion_detection/__init__.py
+text_emotion_detection/main.py
+text_emotion_detection/model.py
+text_emotion_detection/preprocessing.py
+text_emotion_detection/utils.py
