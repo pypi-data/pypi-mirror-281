@@ -1,0 +1,3 @@
+aiocoap[oscore]==0.4.10
+cbor2
+cbor-diag
