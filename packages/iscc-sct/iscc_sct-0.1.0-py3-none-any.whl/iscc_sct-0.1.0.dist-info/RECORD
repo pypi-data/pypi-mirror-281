@@ -1,0 +1,13 @@
+iscc_sct/__init__.py,sha256=t1IqHeXq2E_keyfWf1aDdMfYn4w6wGZPU_hGRyVoNGU,182
+iscc_sct/cli.py,sha256=kQLBomzkJCYnREJYjQnMvEs1O_pkegNSy6zsG4PVtE4,1263
+iscc_sct/code_semantic_text.py,sha256=dTifsHehFuckoWhXb2Ka18omzjsnGVO_bkseDMfxYKM,11659
+iscc_sct/main.py,sha256=0c3FgHAPE66YEagq0cvRlmyEdHiklDRRqQSLyliGF78,1010
+iscc_sct/models.py,sha256=9A236ufMEdceNdZzRh8Z8C8vLgXx1fHS0MHvugj8K5I,1625
+iscc_sct/options.py,sha256=mfdos44l7Pe0A_9bPOAlX0mQMA64TvA-jA_1Y7ZHZKU,2324
+iscc_sct/tokenizer.json,sha256=WPl8S2oSNFHFI81lTf-CTXCNw63qRiBvZ7bB7jdpzqk,9081590
+iscc_sct/utils.py,sha256=EnM914_-I42qACd6h2vioyPcVZq6V9zYX93rtZjc0wM,3328
+iscc_sct-0.1.0.dist-info/entry_points.txt,sha256=qTQdagL7Flc7lsQDXiT07uZz3JVtCBrKMpIdkRq1sjc,41
+iscc_sct-0.1.0.dist-info/LICENSE,sha256=Wk3eDVVsObZuBIA26dDv5pYgG0voPOXhJuNsgmbm9Sk,347
+iscc_sct-0.1.0.dist-info/METADATA,sha256=2ryj6cPW7DkgVwzL82hbwSs3hXovcRep-qFAe1hXdHg,6345
+iscc_sct-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+iscc_sct-0.1.0.dist-info/RECORD,,
