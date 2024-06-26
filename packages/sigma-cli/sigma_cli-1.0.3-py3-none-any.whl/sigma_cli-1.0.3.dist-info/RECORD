@@ -1,0 +1,13 @@
+sigma/analyze/attack.py,sha256=BQb5EBvZamnl0wxhH-n88eJfDjtNudHTQ5BKFtmsabk,1747
+sigma/cli/analyze.py,sha256=xIATu7ALlsZoA6WurfmWx_Yw3xMnZY5qizNp4bzguF4,3201
+sigma/cli/check.py,sha256=XGWan6dJCNXlWk_CoJ0eIQYbJ5JHNZ2Xl0mSmFoxvSY,9018
+sigma/cli/convert.py,sha256=6VwKkUgrDG1yQmlUB50qVJG_Tk2cRqtrk-B2xS8wfsE,11206
+sigma/cli/list.py,sha256=KmXlPPaxEeHLAIFeLlK4_bIHw12hIjKmDeCcDt-DAmU,6594
+sigma/cli/main.py,sha256=yrobSzH632KtMuzHbKZf4l6Ppuov9zkQaNJnnR83f84,2046
+sigma/cli/plugin.py,sha256=SblAXzockX7ZO8fQz9lSjB7CW47FcbDCj_OuleztaRo,7046
+sigma/cli/pysigma.py,sha256=Y50T2gHSzwEF17AkMgRR-LTCG96ojiGnC0aIsYILAaE,2986
+sigma/cli/rules.py,sha256=Dh_ub9UvqpFHUowVDcDU56g0fCw7o832rON-u-ZHYrY,1153
+sigma_cli-1.0.3.dist-info/METADATA,sha256=lgtEoFAinPl2WG-W9yr0yPui0RTZHVEO9mCy5zczMIM,4884
+sigma_cli-1.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sigma_cli-1.0.3.dist-info/entry_points.txt,sha256=fL_kango_RlVu3xYbxj9a9Lh5EKKNkq_pYF9_9wkg-k,45
+sigma_cli-1.0.3.dist-info/RECORD,,
