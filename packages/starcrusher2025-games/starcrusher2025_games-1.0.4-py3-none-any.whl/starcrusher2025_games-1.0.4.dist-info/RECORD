@@ -1,0 +1,14 @@
+starcrusher2025_games/__init__.py,sha256=3dsuW3lLRTplu4QYNRi_Ae11YY0JFO1fhB8qJG6KbRA,22
+starcrusher2025_games/game.py,sha256=TgbR12VTCFgpsTpsHGNNFVvklFH1gCsdPJ0v0R3PFVg,3938
+starcrusher2025_games/configs/GameObject.py,sha256=h_12OciZWE36-x57ym2Bw5e0IRfGsqoZv-HW6uk6eU4,2104
+starcrusher2025_games/configs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starcrusher2025_games/configs/player.py,sha256=kP9wbkS2bfcwjLbgMnnlxTLVVn6uY6H0TfEwv0OOPwA,3511
+starcrusher2025_games/configs/window.py,sha256=Qq9L5qkqgf96xumJ8_BCHSgRkeUSJvFK-q188vqDPsk,2157
+starcrusher2025_games/update/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starcrusher2025_games/update/requests.py,sha256=fag1BbzvsgY8zhxeH1JIulDnkpjIDrb1asi9sww51nU,1462
+starcrusher2025_games-1.0.4.dist-info/LICENSE.md,sha256=vibre31iMc8tp6wPfPm6O5QO4GgynlESRC-swpYHwpE,1091
+starcrusher2025_games-1.0.4.dist-info/METADATA,sha256=4s16D2aJGKFNzwfioCtFYM06ghDLj1OW2_9-kXP3zIg,4334
+starcrusher2025_games-1.0.4.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+starcrusher2025_games-1.0.4.dist-info/entry_points.txt,sha256=cu31vfW5Ml4X6Zsf15DMJ3EW7jFx5cMU29MzivUQk1c,74
+starcrusher2025_games-1.0.4.dist-info/top_level.txt,sha256=NaIxNWklqnhnlM4WCMWwDu7yzy57VDwpz6IzCcgMtV0,22
+starcrusher2025_games-1.0.4.dist-info/RECORD,,
