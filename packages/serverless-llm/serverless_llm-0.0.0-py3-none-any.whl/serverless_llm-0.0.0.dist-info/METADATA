@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: serverless_llm
+Version: 0.0.0
+Summary: A simple description of your package
+Home-page: https://github.com/ServerlessLLM/ServerlessLLM
+Author: Yao Fu
+Author-email: fuyao3860@gmail.com
+Description-Content-Type: text/markdown
+
+# Serverless LLM
