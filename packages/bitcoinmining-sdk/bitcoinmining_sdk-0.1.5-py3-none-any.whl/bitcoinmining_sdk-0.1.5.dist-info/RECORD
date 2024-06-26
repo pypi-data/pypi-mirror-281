@@ -1,0 +1,6 @@
+bitcoinmining_sdk/__init__.py,sha256=fFDGps_KSBQXNoyxC1hFwHZAS7jGM5o6WS9gHEnHZ2A,28
+bitcoinmining_sdk/BitcoinMining.pyd,sha256=BTuWKEvGLIysCFT010-DwkxhSIDmotLyQHIcdavUWY4,486400
+bitcoinmining_sdk/BitcoinMining.so,sha256=cpgefx-b32qh1zSD28HO_pCjf816Hp_x-zEHEjlqRyE,4109488
+bitcoinmining_sdk-0.1.5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+bitcoinmining_sdk-0.1.5.dist-info/METADATA,sha256=SvlzEYFmuvdhJ4mfTSkn5vnbPPJxc3W128McWra1WJ8,1385
+bitcoinmining_sdk-0.1.5.dist-info/RECORD,,
