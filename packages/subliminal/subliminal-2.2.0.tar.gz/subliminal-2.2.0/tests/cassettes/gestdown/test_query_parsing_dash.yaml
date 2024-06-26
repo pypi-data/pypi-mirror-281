@@ -1,0 +1,108 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Subliminal/2.1
+      accept:
+      - application/json
+    method: GET
+    uri: https://api.gestdown.info/shows/search/The%20X-Files
+  response:
+    body:
+      string: '{"shows":[{"id":"d4ea29c3-29e0-47a0-8a13-69b2a329b3a7","name":"The
+        X-Files","nbSeasons":11,"seasons":[1,2,3,4,5,6,7,8,9,10,11],"tvDbId":77398,"tmdbId":4087,"slug":"the-x-files"}]}'
+    headers:
+      CF-Cache-Status:
+      - HIT
+      CF-RAY:
+      - 88ba5f3c5adf5bd8-LIS
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - br
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 May 2024 23:47:52 GMT
+      Last-Modified:
+      - Wed, 29 May 2024 11:08:17 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=NUx7qJavs4n6bofq7L%2FkKeJqnWhQmdxpshQ1hgyPJSPx%2Bxu%2FGYp8yvQoYIlp2gdoIVk2HoXVCbAMp%2FqOtLy8F3kIK90eoHD11CRiEY3Rbz%2BJ7enpyxQBNPVrPbOv1e2PYhn%2B8g%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Subliminal/2.1
+      accept:
+      - application/json
+    method: GET
+    uri: https://api.gestdown.info/subtitles/get/d4ea29c3-29e0-47a0-8a13-69b2a329b3a7/10/2/fra
+  response:
+    body:
+      string: '{"matchingSubtitles":[{"subtitleId":"41ecae8e-0110-4bb0-8266-644c3b0a97ba","version":"Web-DL.IMPERIUM","completed":true,"hearingImpaired":false,"corrected":true,"hd":true,"downloadUri":"/subtitles/download/41ecae8e-0110-4bb0-8266-644c3b0a97ba","language":"French","discovered":"2022-05-28T18:54:35.590745Z","downloadCount":51},{"subtitleId":"2fcab6e2-8713-40d1-afee-f9904e1d8fde","version":"Web-DL.RARBG","completed":true,"hearingImpaired":false,"corrected":true,"hd":true,"downloadUri":"/subtitles/download/2fcab6e2-8713-40d1-afee-f9904e1d8fde","language":"French","discovered":"2022-05-28T18:54:35.590746Z","downloadCount":0},{"subtitleId":"345385a9-9fd9-450a-bdc3-f4e6e7ea54b6","version":"AVS","completed":true,"hearingImpaired":false,"corrected":true,"hd":true,"downloadUri":"/subtitles/download/345385a9-9fd9-450a-bdc3-f4e6e7ea54b6","language":"French","discovered":"2022-05-28T18:54:35.590759Z","downloadCount":0},{"subtitleId":"b21937ff-b3eb-45d5-9d85-8d0d8cc59f7c","version":"Web-DL.Dracula","completed":true,"hearingImpaired":false,"corrected":true,"hd":true,"downloadUri":"/subtitles/download/b21937ff-b3eb-45d5-9d85-8d0d8cc59f7c","language":"French","discovered":"2022-05-28T18:54:35.59076Z","downloadCount":16},{"subtitleId":"82efacfe-9a35-49ae-9ea8-a43af308e7e2","version":"KILLERS","completed":true,"hearingImpaired":false,"corrected":true,"hd":true,"downloadUri":"/subtitles/download/82efacfe-9a35-49ae-9ea8-a43af308e7e2","language":"French","discovered":"2022-05-28T18:54:35.590762Z","downloadCount":0}],"episode":{"season":10,"number":2,"title":"Founder''s
+        Mutation","show":"The X-Files","discovered":"2022-05-28T18:54:35.590723Z"}}'
+    headers:
+      CF-Cache-Status:
+      - EXPIRED
+      CF-RAY:
+      - 88ba5f3ceb445bda-LIS
+      Cache-Control:
+      - public, max-age=7200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - br
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 May 2024 23:47:52 GMT
+      Last-Modified:
+      - Wed, 29 May 2024 19:47:27 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=FWcj19DQcSXv4s80Lgvp63EW69TuTWn9h1LkIZrfojiW7Bzm97PenKaoscexfm%2BDygupE0ibYuc06X8KPXu3X7NvInhU7troBCNww8hyLOwDEwCizzkLW6KTvMen%2B8BKQWQtCQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1

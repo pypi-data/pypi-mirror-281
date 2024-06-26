@@ -1,0 +1,162 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Subliminal/2.1
+      accept:
+      - application/json
+    method: GET
+    uri: https://api.gestdown.info/shows/search/The%20End%20of%20the%20Fucking%20World
+  response:
+    body:
+      string: '"Couldn''t find show: The End of the Fucking World"'
+    headers:
+      Age:
+      - '2'
+      CF-Cache-Status:
+      - HIT
+      CF-RAY:
+      - 88ba5f442d655be0-LIS
+      Cache-Control:
+      - public, max-age=43200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - br
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 May 2024 23:47:53 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=V6Nnpz0JVhjVksNKEqz9jG3zaFpo8uZnvWI2sRX%2FuMEpSMwhiFECOuUa%2F2cRRDpZcAUp0VQtv0b8NiTqouJkTQfIX%2BFY%2BJdZ0hTF6sbA13iuTYCQ7CehHE1d%2Fz5nye4OaGvkpA%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Subliminal/2.1
+      accept:
+      - application/json
+    method: GET
+    uri: https://api.gestdown.info/shows/search/The%20end%20of%20the%20f***ing%20world
+  response:
+    body:
+      string: '{"shows":[{"id":"e789f371-ae07-4db4-b9aa-6b34e7e9e7b0","name":"The
+        End of the F***ing World","nbSeasons":2,"seasons":[1,2],"tvDbId":336522,"tmdbId":74577,"slug":"the-end-of-the-fing-world"}]}'
+    headers:
+      Age:
+      - '2'
+      CF-Cache-Status:
+      - HIT
+      CF-RAY:
+      - 88ba5f445fa55bde-LIS
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - br
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 May 2024 23:47:53 GMT
+      Last-Modified:
+      - Wed, 29 May 2024 19:47:25 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Qzux1Fm2zfu%2FcsRk1rIyRHYFJ8GPdX6EcyUltAk2jyU36hyY%2FNZPEoBtk%2BKUpWjAe3oj48ot3%2Blx2uosa3hpBFt9nt8D9sMLbVsFxqnSciBexzeDlXtmAV4CJlNlD12Ap2eL6w%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Subliminal/2.1
+      accept:
+      - application/json
+    method: GET
+    uri: https://api.gestdown.info/subtitles/get/e789f371-ae07-4db4-b9aa-6b34e7e9e7b0/1/4/eng
+  response:
+    body:
+      string: '{"matchingSubtitles":[{"subtitleId":"b54fb204-c809-4405-844b-f1fd6fe12925","version":"SCREENCRAP","completed":true,"hearingImpaired":true,"corrected":true,"hd":false,"downloadUri":"/subtitles/download/b54fb204-c809-4405-844b-f1fd6fe12925","language":"English","discovered":"2022-06-03T16:16:46.910908Z","downloadCount":4},{"subtitleId":"0594bbe3-aef4-41a7-8673-c7d7c1b40334","version":"WEB-DL.QOQ","completed":true,"hearingImpaired":true,"corrected":true,"hd":true,"downloadUri":"/subtitles/download/0594bbe3-aef4-41a7-8673-c7d7c1b40334","language":"English","discovered":"2022-06-03T16:16:46.91091Z","downloadCount":2},{"subtitleId":"425506e2-2981-481a-b048-6b4e1efa145f","version":"WEB-DL.QOQ","completed":true,"hearingImpaired":false,"corrected":true,"hd":true,"downloadUri":"/subtitles/download/425506e2-2981-481a-b048-6b4e1efa145f","language":"English","discovered":"2022-06-03T16:16:46.910912Z","downloadCount":192}],"episode":{"season":1,"number":4,"title":"Episode
+        4","show":"The End of the F***ing World","discovered":"2022-06-03T16:16:46.910906Z"}}'
+    headers:
+      CF-Cache-Status:
+      - EXPIRED
+      CF-RAY:
+      - 88ba5f449ebb5bd5-LIS
+      Cache-Control:
+      - public, max-age=7200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - br
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 May 2024 23:47:53 GMT
+      Last-Modified:
+      - Wed, 29 May 2024 19:47:30 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=aGLT0QfG1rucX99vMKkPN3Rgj%2FZIushH24xNU%2FitYCK0%2Flr3j6uP74kR61UXppEGOC6XcJ4gilZX%2F3ZUYTEaRD%2B4wfWjkzoHqJLFFF8IELm8vLlS2p1NbBM7ngCElQGiQYyaBg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1

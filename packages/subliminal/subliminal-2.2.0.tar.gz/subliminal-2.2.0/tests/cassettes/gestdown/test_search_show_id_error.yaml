@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Subliminal/2.1
+      accept:
+      - application/json
+    method: GET
+    uri: https://api.gestdown.info/shows/search/The%20Big%20How%20I%20Met%20Your%20Mother
+  response:
+    body:
+      string: '"Couldn''t find show: The Big How I Met Your Mother"'
+    headers:
+      CF-Cache-Status:
+      - EXPIRED
+      CF-RAY:
+      - 88ba5f309e555be6-LIS
+      Cache-Control:
+      - public, max-age=43200
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - br
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 May 2024 23:47:50 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=yl7C6z7kRGBZ9Vcg3H45Jh9qA4rFixeGMAr2j3%2BEE1dY8jqQqSRJlvAosviKyUSZ4UlmUJQg8Au3AE%2By3NgfcgBV1H4ZpZZxa7CqF75Keo9UhEV0cpGaTuYyC0XxooCj3Qze8A%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
+version: 1

@@ -1,0 +1,100 @@
+interactions:
+- request:
+    body: '{"apikey": "5EC930FB90DA1ADA", "username": null, "password": null}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Accept-Language:
+      - en
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Subliminal/2.1
+    method: POST
+    uri: https://api.thetvdb.com/login
+  response:
+    body:
+      string: '{"token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTY5OTMyMTMsImlkIjoic3VibGltaW5hbCIsIm9yaWdfaWF0IjoxNzE2Mzg4NDEzfQ.pop3CJJhjHMHmJ3EHLf0ZYE2ORD-MFqBEi8w9yO9RlIbqkzTkyfLAiUOpflZ7AiASGnkdCLyFZagZKaHcK86YjHRBrrQOQ5jSCN13oVT2d7yOwFP6U4WSLiA8HdHIxLh0Jkh_mnyBUoFJSkJr12WiuouW8mi2HsSfPv1S5kS0m149atLnJFQxXh5BD1AzQaeED1RKNzVvktwGLXDe01yKxsk0xkOYFNDWt3kUh3thH8GwQrsEKn1-L7wxm5s-q7r3xSH7Hqt9RL--M2NVfgAAwmZy0l1-hMr6zJyNgaxx9ClTWbHWh83zIb3M_Op0Oa4iL7rsQ60xkvp96OjNBUbAw"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '470'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 May 2024 14:33:33 GMT
+      Vary:
+      - Accept-Language
+      Via:
+      - 1.1 5a9df1bcd5f48109e94a8e34d807b686.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - U2nsPyjuHOKknP9J4T1FAONBcCjKXsx5Mc_oDclhWlaZi8YeeCOnPg==
+      X-Amz-Cf-Pop:
+      - LIS50-P1
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - Thundar!
+      X-Thetvdb-Api-Version:
+      - 3.0.0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Accept-Language:
+      - en
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTY5OTMyMTMsImlkIjoic3VibGltaW5hbCIsIm9yaWdfaWF0IjoxNzE2Mzg4NDEzfQ.pop3CJJhjHMHmJ3EHLf0ZYE2ORD-MFqBEi8w9yO9RlIbqkzTkyfLAiUOpflZ7AiASGnkdCLyFZagZKaHcK86YjHRBrrQOQ5jSCN13oVT2d7yOwFP6U4WSLiA8HdHIxLh0Jkh_mnyBUoFJSkJr12WiuouW8mi2HsSfPv1S5kS0m149atLnJFQxXh5BD1AzQaeED1RKNzVvktwGLXDe01yKxsk0xkOYFNDWt3kUh3thH8GwQrsEKn1-L7wxm5s-q7r3xSH7Hqt9RL--M2NVfgAAwmZy0l1-hMr6zJyNgaxx9ClTWbHWh83zIb3M_Op0Oa4iL7rsQ60xkvp96OjNBUbAw
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Subliminal/2.1
+    method: GET
+    uri: https://api.thetvdb.com/series/999999999/actors
+  response:
+    body:
+      string: '{"data":[]}'
+    headers:
+      Cache-Control:
+      - private, max-age=86400
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '11'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 May 2024 14:33:33 GMT
+      Vary:
+      - Accept-Language
+      Via:
+      - 1.1 735dd7fa3c296627cd805d04e3e3a3e8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - qEsZe0BZb51fX6Ypz4CjxxqzcnmVXvC0y0Urlj0uEGWMAqnuHrFrLQ==
+      X-Amz-Cf-Pop:
+      - LIS50-P1
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - Thundar!
+      X-Thetvdb-Api-Version:
+      - 3.0.0
+    status:
+      code: 200
+      message: OK
+version: 1

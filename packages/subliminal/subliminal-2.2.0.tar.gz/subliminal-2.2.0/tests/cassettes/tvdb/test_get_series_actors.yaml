@@ -1,0 +1,126 @@
+interactions:
+- request:
+    body: '{"apikey": "5EC930FB90DA1ADA", "username": null, "password": null}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Accept-Language:
+      - en
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Subliminal/2.1
+    method: POST
+    uri: https://api.thetvdb.com/login
+  response:
+    body:
+      string: '{"token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTY5OTMyMTIsImlkIjoic3VibGltaW5hbCIsIm9yaWdfaWF0IjoxNzE2Mzg4NDEyfQ.1Lu-Q6xIniiNn660Qms8vXHAcKjVX7XqRCoJz4KYrk9q_uGNGZUVcBNYe0SljeqNz4gHDMWVUZs-1qCdhIXciP77h5Gh00k-uHua_BiPJcgtyiQpsu4Zitg4WUkQlAsb0w1uHbUAuxH0WbBEBiiWKw82EwZ15iglu7hu2zGVT-gI-ZOWfmlL_Ld-YQrZ7a-ZibX8hhn8a81-25Wxk8wBJAU_z5Kd03zDXV7mINlob1RypYIndxvu8VUnb2c9k4eNCojE-QHiTR2IsvN8L6wF8yfrMrh_PC-wKluirWYS2L8qTZFh96st_fzxZLBNw2bBaclLCpD1Rgp7GwlX9nkJ_A"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '470'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 May 2024 14:33:32 GMT
+      Vary:
+      - Accept-Language
+      Via:
+      - 1.1 68c9162ccc29f8f3ca30be36950cea58.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - IqaRO311puOmzQC6vNDXgdwv5xXNHCeGKEeceJoLg5ohMDW88WF4zw==
+      X-Amz-Cf-Pop:
+      - LIS50-P1
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - Thundar!
+      X-Thetvdb-Api-Version:
+      - 3.0.0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Accept-Language:
+      - en
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTY5OTMyMTIsImlkIjoic3VibGltaW5hbCIsIm9yaWdfaWF0IjoxNzE2Mzg4NDEyfQ.1Lu-Q6xIniiNn660Qms8vXHAcKjVX7XqRCoJz4KYrk9q_uGNGZUVcBNYe0SljeqNz4gHDMWVUZs-1qCdhIXciP77h5Gh00k-uHua_BiPJcgtyiQpsu4Zitg4WUkQlAsb0w1uHbUAuxH0WbBEBiiWKw82EwZ15iglu7hu2zGVT-gI-ZOWfmlL_Ld-YQrZ7a-ZibX8hhn8a81-25Wxk8wBJAU_z5Kd03zDXV7mINlob1RypYIndxvu8VUnb2c9k4eNCojE-QHiTR2IsvN8L6wF8yfrMrh_PC-wKluirWYS2L8qTZFh96st_fzxZLBNw2bBaclLCpD1Rgp7GwlX9nkJ_A
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Subliminal/2.1
+    method: GET
+    uri: https://api.thetvdb.com/series/80379/actors
+  response:
+    body:
+      string: '{"data":[{"id":64621184,"seriesId":80379,"name":"Jim Parsons","role":"Sheldon
+        Cooper","sortOrder":1,"image":"actors/325467.jpg","imageAuthor":171,"imageAdded":"2019-06-09
+        10:15:15","lastUpdated":"2019-06-09 10:15:15"},{"id":64621179,"seriesId":80379,"name":"Johnny
+        Galecki","role":"Leonard Hofstadter","sortOrder":2,"image":"actors/325466.jpg","imageAuthor":171,"imageAdded":"2019-06-09
+        10:16:14","lastUpdated":"2019-06-09 10:16:14"},{"id":64621175,"seriesId":80379,"name":"Kaley
+        Cuoco","role":"Penny","sortOrder":3,"image":"actors/325465.jpg","imageAuthor":171,"imageAdded":"2019-06-09
+        10:18:24","lastUpdated":"2019-06-09 10:18:24"},{"id":64621164,"seriesId":80379,"name":"Kunal
+        Nayyar","role":"Rajesh Koothrappali","sortOrder":4,"image":"actors/325463.jpg","imageAuthor":171,"imageAdded":"2019-06-09
+        10:22:36","lastUpdated":"2019-06-09 10:22:36"},{"id":64621170,"seriesId":80379,"name":"Simon
+        Helberg","role":"Howard Wolowitz","sortOrder":5,"image":"actors/325464.jpg","imageAuthor":171,"imageAdded":"2019-06-09
+        10:20:33","lastUpdated":"2019-06-09 10:20:33"},{"id":64621160,"seriesId":80379,"name":"Melissa
+        Rauch","role":"Bernadette Rostenkowski","sortOrder":6,"image":"actors/325462.jpg","imageAuthor":171,"imageAdded":"2019-06-09
+        10:26:07","lastUpdated":"2019-06-09 10:26:07"},{"id":64621157,"seriesId":80379,"name":"Mayim
+        Bialik","role":"Amy Farrah Fowler","sortOrder":7,"image":"actors/325461.jpg","imageAuthor":171,"imageAdded":"2019-06-09
+        10:24:19","lastUpdated":"2019-06-09 10:24:19"},{"id":64621188,"seriesId":80379,"name":"Laura
+        Spencer","role":"Emily Sweeney","sortOrder":8,"image":"actors/358188.jpg","imageAuthor":123690,"imageAdded":"2015-10-20
+        21:50:07","lastUpdated":"2015-10-20 21:50:07"},{"id":64621192,"seriesId":80379,"name":"Sara
+        Gilbert","role":"Leslie Winkle","sortOrder":9,"image":"actors/378343.jpg","imageAuthor":153951,"imageAdded":"2016-06-08
+        06:29:31","lastUpdated":"2016-06-08 06:29:31"},{"id":64621196,"seriesId":80379,"name":"Kevin
+        Sussman","role":"Stuart Bloom","sortOrder":10,"image":"actors/378344.jpg","imageAuthor":122513,"imageAdded":"2016-05-17
+        08:36:29","lastUpdated":"2016-05-17 08:36:29"},{"id":64621200,"seriesId":80379,"name":"John
+        Ross Bowie","role":"Barry Kripke","sortOrder":11,"image":"actors/382566.jpg","imageAuthor":153951,"imageAdded":"2016-06-08
+        06:26:32","lastUpdated":"2016-06-08 06:26:32"},{"id":64621204,"seriesId":80379,"name":"Carol
+        Ann Susi","role":"Debbie Wolowitz","sortOrder":12,"image":"actors/403186.jpg","imageAuthor":161470,"imageAdded":"2016-12-08
+        17:03:27","lastUpdated":"2016-12-08 17:03:27"}]}'
+    headers:
+      Age:
+      - '39623'
+      Cache-Control:
+      - private, max-age=86400
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 May 2024 03:33:09 GMT
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Language
+      Via:
+      - 1.1 f2dd3b65381fad5aad94ac94ad7043f8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - zT1ObAoVdMD2LAJxaJf_JRFz6VjAysWMopM2hIu-xHp0YCcq2BNCJg==
+      X-Amz-Cf-Pop:
+      - LIS50-P1
+      X-Cache:
+      - Hit from cloudfront
+      X-Powered-By:
+      - Thundar!
+      X-Thetvdb-Api-Version:
+      - 3.0.0
+    status:
+      code: 200
+      message: OK
+version: 1

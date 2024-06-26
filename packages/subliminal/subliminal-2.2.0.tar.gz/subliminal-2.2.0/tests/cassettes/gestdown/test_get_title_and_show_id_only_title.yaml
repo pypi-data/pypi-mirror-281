@@ -1,0 +1,56 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Subliminal/2.1
+      accept:
+      - application/json
+    method: GET
+    uri: https://api.gestdown.info/shows/search/Marvel's%20Agents%20of%20S.H.I.E.L.D.
+  response:
+    body:
+      string: '{"shows":[{"id":"8976d3bb-a213-4210-9a03-f4b6d17ce540","name":"Marvel''s
+        Agents of S.H.I.E.L.D.","nbSeasons":7,"seasons":[1,2,3,4,5,6,7],"tvDbId":263365,"tmdbId":1403,"slug":"marvels-agents-of-shield"},{"id":"9039b72e-89eb-401e-9d03-0419bf7d1273","name":"Marvel''s
+        Agents of S.H.I.E.L.D.: Slingshot","nbSeasons":0,"seasons":[],"tvDbId":null,"tmdbId":69088,"slug":"marvels-agents-of-shield-slingshot"}]}'
+    headers:
+      CF-Cache-Status:
+      - HIT
+      CF-RAY:
+      - 88ba5f323efb6924-LIS
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - br
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 May 2024 23:47:50 GMT
+      Last-Modified:
+      - Wed, 29 May 2024 19:47:24 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Bq9WlqbYndalfXDQXZGqdWPlpwHKUzniipjxPTs1LZHpeHt89CPPIc%2BtHpLaiSjq6Iv0czqkA3MUlu%2B9eEak4JF8uzobG3jNFVXUYrFrJnqfHbaHS707qrEFrzbYIeZqRioG5A%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1

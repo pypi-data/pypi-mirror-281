@@ -1,0 +1,55 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Subliminal/2.1
+      accept:
+      - application/json
+    method: GET
+    uri: https://api.gestdown.info/shows/search/Grey's%20Anatomy
+  response:
+    body:
+      string: '{"shows":[{"id":"cb13bb68-c637-4e0f-b79d-d4f1b4972380","name":"Grey''s
+        Anatomy","nbSeasons":20,"seasons":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],"tvDbId":73762,"tmdbId":1416,"slug":"greys-anatomy"}]}'
+    headers:
+      CF-Cache-Status:
+      - HIT
+      CF-RAY:
+      - 88ba5f315e0e5bde-LIS
+      Cache-Control:
+      - public, max-age=14400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - br
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 29 May 2024 23:47:50 GMT
+      Last-Modified:
+      - Wed, 29 May 2024 22:57:07 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=qKUUT9RxcspBOBuTLiAzMDXwnCPTxBpUr0OLxNf82spAsvW5adzGGcGHK7xGHXp4wa5fm9eJ%2FAcbL2u5PVK1l2v9JCuAHSAL7wK27%2BI1IMflcJVFHrIqCOpYzwDx0YE9a8bEbQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      alt-svc:
+      - h3=":443"; ma=86400
+      vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1
