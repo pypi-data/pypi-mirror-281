@@ -1,0 +1,9 @@
+antiseptic-0.1.0.dist-info/METADATA,sha256=G0TT-Xb5Cp835_ZmFStJc7O35TuaVeIOwmIDqoDL6O8,503
+antiseptic-0.1.0.dist-info/WHEEL,sha256=D5cP3kgsEJ0lgxRqyO9DXgrbimFqUu0b_jhJwYgzYlI,127
+antiseptic-0.1.0.dist-info/entry_points.txt,sha256=LtolX6OtpxJ7PSG72DPCMS-odZCxiL1En1kKdyZRSNU,45
+antiseptic-0.1.0.dist-info/license_files/LICENSE.txt,sha256=QcRUmEzLA-FbkP7NSsZEBd3bG2Hoqrp-aq225Uo0RW4,34021
+antiseptic/__init__.py,sha256=jhMkQMEAcJh-AlWsZwOpveoqHs8RDC0-v1CDFvjofYk,359
+antiseptic/assets/dictionaries/en.txt,sha256=QpWTFNpgeVwph5uzJNFS11xSWTGe5_7TL8Nv9ufcObY,1576775
+antiseptic/_lowlevel.pyi,sha256=Sd84fUl7uo6zA3ICNftxDnPKbT3jnHFlEeSznbxxYsY,93
+antiseptic/_lowlevel.cpython-38-x86_64-linux-gnu.so,sha256=pf1KfKRkwwuppQjxWjft0Mw8c3Z1uypk5RAz0xyGcLI,2642672
+antiseptic-0.1.0.dist-info/RECORD,,

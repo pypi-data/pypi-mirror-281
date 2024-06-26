@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: antiseptic
+Version: 0.1.0
+License-File: LICENSE.txt
+Summary: CI spell-checking tool
+License: AGPL-3.0-only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/clockback/antiseptic
+Project-URL: Issues, https://github.com/clockback/antiseptic/issues
+
+# Antiseptic
+
+The Rust-built Python package for spell-checking, purposed for continuous integration.
+
+## Usage
+
+```console
+$ antiseptic
+...
+```
+
