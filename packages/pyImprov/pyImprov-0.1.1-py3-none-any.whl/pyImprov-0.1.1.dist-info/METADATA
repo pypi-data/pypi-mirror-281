@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pyImprov
+Version: 0.1.1
+Summary: Host a Improv wifi provisioning server
+Author-email: Mimoja <pyimprov@mimoja.de>
+License: LGPL-2.1-or-later
+Keywords: improv,wifi,provisioning,ble
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bless
+Requires-Dist: dbus-next ; sys_platform == "linux"
+
+# pyImprov
+
+POC implementation of the Improv-wifi protocol in python3.10
+
+
+### Installation
+pyImprov is available through pypi:
+```
+pip install pyImprov
+```
+
+To run from this folder
+
+```
+pip install venv
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+You can then run the example with 
+```
+python3 example.py
+```
