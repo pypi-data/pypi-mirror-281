@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: l1st
+Version: 127.0.1
+Summary: A 1-indexed list in Python
+Author: shotnothing
+Author-email: shotnothinggg@gmail.com
+Keywords: python,index,list,matlab,brain,damage
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+
+A, very unnecessary, 1-indexed list in Python
