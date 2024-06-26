@@ -1,0 +1,4 @@
+[console_scripts]
+CRMod = CRMod:main
+CRTomo = CRTomo:main
+CutMcK = CutMcK:main

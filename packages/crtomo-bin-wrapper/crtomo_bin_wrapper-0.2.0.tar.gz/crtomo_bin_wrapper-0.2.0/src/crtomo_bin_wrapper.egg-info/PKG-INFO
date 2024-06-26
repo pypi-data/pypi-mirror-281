@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: crtomo-bin-wrapper
+Version: 0.2.0
+Summary: CRTomo Binary Wrapper Toolbox
+Home-page: https://github.com/geophysics-ubonn/crtomo_bin_wrapper
+Author: Maximilian Weigand
+Author-email: mweigand@geo.uni-bonn.de
+License: MIT
