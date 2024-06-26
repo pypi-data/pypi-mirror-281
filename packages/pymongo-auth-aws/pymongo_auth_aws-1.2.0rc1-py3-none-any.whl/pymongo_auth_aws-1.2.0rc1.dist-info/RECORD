@@ -1,0 +1,8 @@
+pymongo_auth_aws/__init__.py,sha256=vVXmWNpo2AelXeZjPr10gU0FKzLB_w3iIS7RP4xki2A,751
+pymongo_auth_aws/auth.py,sha256=fDHX-zotCrFXpzHCWx56dfplHApsZgoG_9bhUFicCEo,8361
+pymongo_auth_aws/errors.py,sha256=ilEemepO2UD-cW5C7ZjiQWhZCmidDHlSheoWB1_2rro,725
+pymongo_auth_aws/version.py,sha256=J5NyDBVSHRDVi2vDjBSTTHKmOduLc-ktCRzJWNN2Yx8,607
+pymongo_auth_aws-1.2.0rc1.dist-info/METADATA,sha256=HtewnFueRdNqD-4dn-jmDjR8fdO8w0IcY6Xrj5VEcFo,17681
+pymongo_auth_aws-1.2.0rc1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pymongo_auth_aws-1.2.0rc1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pymongo_auth_aws-1.2.0rc1.dist-info/RECORD,,
