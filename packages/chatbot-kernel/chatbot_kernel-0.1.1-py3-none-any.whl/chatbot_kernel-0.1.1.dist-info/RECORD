@@ -1,0 +1,8 @@
+chatbot_kernel/__init__.py,sha256=qZgFanuS_hfNP4cnhfcBTMTVtMELVtfX7z5GduypS6w,115
+chatbot_kernel/__main__.py,sha256=_2TjjP_yiVDRR_HSV8se9nR-ePyNH4hODd3WzFzyP6U,129
+chatbot_kernel/kernel.py,sha256=shps-NrROsJkbIRleIcCEoYa7ueFSZX8hXjTPYY3FWc,3969
+chatbot_kernel-0.1.1.data/data/share/jupyter/kernels/chatbot/kernel.json,sha256=h5PwBrWPzJOCzFeP9rbmCjkeZtcllw3va9iL0zZMG4M,227
+chatbot_kernel-0.1.1.dist-info/METADATA,sha256=wYFYUWyAmxbto7yOVuwet5ANWeWFGpE5h1NYUIiLGYI,2399
+chatbot_kernel-0.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+chatbot_kernel-0.1.1.dist-info/licenses/LICENSE,sha256=FYv5cXfYOcACjieZdzpj764Vc4liQvUYPpihKN1LECY,1500
+chatbot_kernel-0.1.1.dist-info/RECORD,,
