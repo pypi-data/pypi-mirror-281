@@ -1,0 +1,12 @@
+requests
+numpy
+pymatgen
+mp-api
+vise
+pydefect
+sumo
+pymatgen-analysis-defects
+niet
+
+[:python_version < "3.12"]
+importlib-metadata
