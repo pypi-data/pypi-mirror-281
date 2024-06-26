@@ -1,0 +1,9 @@
+multidaq/__init__.py,sha256=w4E7zYv5VP3NqQ5hpxW3F8q4s2Kj0xd3SqK8z7VOQvY,89
+multidaq/biovisionMultiDaq.dll,sha256=vBp5BPnSeLS05OrxybOX5jN_FJa39AF20GTLIgOOrH4,5197824
+multidaq/libbiovisionMultiDaq.so,sha256=v424ow_N85v6jXbjCBpV9qeqvCR6hj0kGcP0FFi0IVc,2073464
+multidaq/multiDaq.py,sha256=DmnvYof4_UQb5_AkqvzfbK4B-endn82hYon7wzH2cGI,24460
+multidaq-0.0.3.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+multidaq-0.0.3.dist-info/METADATA,sha256=Aropp6FMMPetDo9kbzvGe154sAxAzgJgYrjwQk5Zg94,1324
+multidaq-0.0.3.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+multidaq-0.0.3.dist-info/top_level.txt,sha256=l-SBGA3ypcrgh1bxuK958txprOyecEH8DZ4k8E7_BKk,9
+multidaq-0.0.3.dist-info/RECORD,,
