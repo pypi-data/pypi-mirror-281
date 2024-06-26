@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ikomia-client
+Version: 0.1.0
+Summary: Ikomia Scale client library
+Author-email: Ludovic Barusseau <ludovic.barusseau@ikomia.com>
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: httpx[http2] <1.0.0,>=0.27.0
+Requires-Dist: pillow <11.0.0,>=10.2.0
+Requires-Dist: yarl <2.0.0,>=1.8.1
+Provides-Extra: client
+Requires-Dist: click <9.0.0,>=8.1.7 ; extra == 'client'
+Requires-Dist: rich <14.0.0,>=13.7.1 ; extra == 'client'
+
