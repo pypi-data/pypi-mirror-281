@@ -1,0 +1,9 @@
+README.md
+setup.py
+ntnx_backupclient_sdk/__init__.py
+ntnx_backupclient_sdk/client.py
+nutanix_backup_client_sdk.egg-info/PKG-INFO
+nutanix_backup_client_sdk.egg-info/SOURCES.txt
+nutanix_backup_client_sdk.egg-info/dependency_links.txt
+nutanix_backup_client_sdk.egg-info/requires.txt
+nutanix_backup_client_sdk.egg-info/top_level.txt
