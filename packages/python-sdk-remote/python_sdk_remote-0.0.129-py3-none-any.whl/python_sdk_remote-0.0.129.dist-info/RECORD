@@ -1,0 +1,15 @@
+python_sdk_remote/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_sdk_remote/constants.py,sha256=0bg3t_4wzZLWFapseENer7qSx3NvniEF5n0H8AZ2G38,751
+python_sdk_remote/http_response.py,sha256=yD82-CKNNTWGYMIb-2jnekWwM-nloI84X-uCRM0t8N8,6183
+python_sdk_remote/item.py,sha256=Z6ZOjelGhpkfyRLyGjoDJXQIf40hQNzUTXkI7z6X_Uk,397
+python_sdk_remote/mini_logger.py,sha256=E6OUZ39uBkPN_cjemO6hfJcRcYtP1xh1ZwaCFyZYsXA,4132
+python_sdk_remote/our_object.py,sha256=i9zc9RU6_JSKus-c3y5D6_3QUf4GiDmAVale1k-nLqs,2218
+python_sdk_remote/temp.py,sha256=4CaEB6IJb6G1ezizpKwGb0qofukSp9hO566ILWtLLeY,568
+python_sdk_remote/unified_json.py,sha256=df6FMgewkQTY2EpB7Np0IXsaFh4j-z3ncGM9X3uPSXU,955
+python_sdk_remote/utilities.py,sha256=uOee6HvqYs7m-cu8ZTQCYLyp60_rYzuFLJJJ3k5DLoU,16381
+python_sdk_remote/valid_json_versions.py,sha256=-ZU65JYI6gTEfK8o6gu9Dmm9SQmwzj5pDbEXiyUbBhQ,138
+python_sdk_remote/validate_environment.py,sha256=nzCHZDw56G56ekrTQT3gG48utjsU4VCwQi9dVsBDas0,2268
+python_sdk_remote-0.0.129.dist-info/METADATA,sha256=3z_SJ05KzK_p0IV7zhBPEajEAhcIdBqgwtEscyWpe-I,606
+python_sdk_remote-0.0.129.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+python_sdk_remote-0.0.129.dist-info/top_level.txt,sha256=JTpEq_svPlI5hTlPq30Ne-NkR-u5464gjVDP2U74PvE,18
+python_sdk_remote-0.0.129.dist-info/RECORD,,
