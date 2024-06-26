@@ -1,0 +1,3 @@
+[console_scripts]
+hyp = hyperparam.hyp:main
+hyperparam = hyperparam.hyp:main
