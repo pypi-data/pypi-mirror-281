@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+src/mas-uninstall
+src/mas-upgrade
+src/mas/cli/__init__.py
+src/mas/cli/cli.py
+src/mas_cli.egg-info/PKG-INFO
+src/mas_cli.egg-info/SOURCES.txt
+src/mas_cli.egg-info/dependency_links.txt
+src/mas_cli.egg-info/requires.txt
+src/mas_cli.egg-info/top_level.txt

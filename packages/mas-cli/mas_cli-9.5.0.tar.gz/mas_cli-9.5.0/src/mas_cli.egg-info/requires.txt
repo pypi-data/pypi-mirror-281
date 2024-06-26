@@ -1,0 +1,11 @@
+mas-devops
+halo
+prompt_toolkit
+openshift
+kubernetes
+
+[dev]
+build
+flake8
+pytest
+pyinstaller
