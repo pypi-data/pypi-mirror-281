@@ -1,0 +1,3 @@
+[console_scripts]
+luckytask=src.main:cli
+
