@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: data_transformation_lib
+Version: 0.1.0
+Summary: A Python library for common data transformations in machine learning
+Author: Valentinas
+Author-email: valentinas98@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy (>=2.0.0,<3.0.0)
+Requires-Dist: pytest (>=8.2.2,<9.0.0)
+Description-Content-Type: text/markdown
+
+

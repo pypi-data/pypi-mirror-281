@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "data_transformation_lib"
+version = "0.1.0"
+description = "A Python library for common data transformations in machine learning"
+authors = ["Valentinas <valentinas98@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.0.0"
+pytest = "^8.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
