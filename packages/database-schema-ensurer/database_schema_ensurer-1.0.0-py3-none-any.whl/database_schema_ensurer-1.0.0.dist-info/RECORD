@@ -1,0 +1,5 @@
+database_schema_ensurer/__init__.py,sha256=Jv6dzvjXRd6toeO0TqDB3yzE1dnSRfYV0XbKg1NlKbM,109
+database_schema_ensurer/database_schema_ensurer.py,sha256=E5Zv-Brq3eAzKJ3mElSGLtDGdgT8Ngp-PsIrhfdhNIU,3510
+database_schema_ensurer-1.0.0.dist-info/METADATA,sha256=lhTcHTo9Nw7UJvi57ihG2KNTjGuRHkpWTvytfObJ7eU,1301
+database_schema_ensurer-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+database_schema_ensurer-1.0.0.dist-info/RECORD,,
