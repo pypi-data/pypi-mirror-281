@@ -1,0 +1,3 @@
+[console_scripts]
+fix-imports = fix_imports.commandline.cli:cli
+
