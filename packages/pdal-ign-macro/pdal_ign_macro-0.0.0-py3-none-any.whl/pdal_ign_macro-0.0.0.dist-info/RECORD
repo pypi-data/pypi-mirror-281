@@ -1,0 +1,9 @@
+pdal_ign_macro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdal_ign_macro/macro.py,sha256=xtUDKr6zAD6afFPOnmLb1aQi24syWjNAc5GuY6aRn4o,3614
+pdal_ign_macro/mark_points_to_use_for_digital_models_with_new_dimension.py,sha256=kptNJCt9m5xHy009Ny_vb8yjM1p4n5bIUroPWHAnMPU,6876
+pdal_ign_macro/reassign_classification_for_digital_model.py,sha256=MmGT9zuLaIIqfr4aU7ZHil_iz0s5t3WESJmRaWfYL2A,7012
+pdal_ign_macro/version.py,sha256=egzVBV-WDOo_07OADl5jci_nYBTK9cCkWCwpvhc7Pp8,74
+pdal_ign_macro-0.0.0.dist-info/METADATA,sha256=__fU77Kn-zUgYEgxOE24YCnt_AeNdWyQ4V0KQj7iQro,3470
+pdal_ign_macro-0.0.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+pdal_ign_macro-0.0.0.dist-info/top_level.txt,sha256=CUD1tm5AIqsBvmrdne0qxi1K5CJzsLKP2oSnFa3D8tc,15
+pdal_ign_macro-0.0.0.dist-info/RECORD,,
