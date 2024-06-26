@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+csp_chat.egg-info/PKG-INFO
+csp_chat.egg-info/SOURCES.txt
+csp_chat.egg-info/dependency_links.txt
+csp_chat.egg-info/top_level.txt
