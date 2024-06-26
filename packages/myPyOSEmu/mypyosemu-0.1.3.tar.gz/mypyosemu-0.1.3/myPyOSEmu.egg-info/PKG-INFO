@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: myPyOSEmu
+Version: 0.1.3
+Summary: An emulated OS in Python
+Home-page: https://github.com/yourusername/pyos
+Author: Darren Chase Papa
+Author-email: darenchasepapa@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: colorama
+
+https://ChaseDevelopmentGroup.pythonanywhere.com/docs

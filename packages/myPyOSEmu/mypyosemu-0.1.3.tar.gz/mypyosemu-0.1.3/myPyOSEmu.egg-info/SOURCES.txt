@@ -1,0 +1,7 @@
+setup.py
+myPyOSEmu.egg-info/PKG-INFO
+myPyOSEmu.egg-info/SOURCES.txt
+myPyOSEmu.egg-info/dependency_links.txt
+myPyOSEmu.egg-info/entry_points.txt
+myPyOSEmu.egg-info/requires.txt
+myPyOSEmu.egg-info/top_level.txt
