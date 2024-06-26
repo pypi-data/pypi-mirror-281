@@ -1,0 +1,4 @@
+[console_scripts]
+python-treedir=treedir.__main__:main
+treedir=treedir.__main__:main
+
