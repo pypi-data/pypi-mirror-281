@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: couchbase-sqlalchemy
+Version: 0.1.0
+Summary: A SQLAlchemy dialect for Couchbase Columnar.
+Author: Ayush Tripathi
+Author-email: ayush.tripathi@couchbase.com
+Requires-Dist: sqlalchemy
+Requires-Dist: couchbase
+

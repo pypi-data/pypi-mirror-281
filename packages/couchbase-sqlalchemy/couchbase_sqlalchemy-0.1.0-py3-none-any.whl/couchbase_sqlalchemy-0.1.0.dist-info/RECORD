@@ -1,0 +1,15 @@
+couchbase-sqlalchemy/__init__.py,sha256=VDlZfp1q_XRqRlV1LHSVVtKUcrlnBwoa-ewxaHKqXHE,307
+couchbase-sqlalchemy/dbapi/__init__.py,sha256=zporX3pfeGrtLIfOAm5_bdPAcuC676bih0NkMjIyfaI,93
+couchbase-sqlalchemy/dbapi/couchbase_dbapi.py,sha256=Q6U1RPm2VhsyVWPVxmxv0mRyPIT-1y6lQlIof-5qcs4,6785
+couchbase-sqlalchemy/dialect/__init__.py,sha256=KV7GCMiluw_Q7JwtdvBpraefNkbwFJkJPNbtIhc2LZM,251
+couchbase-sqlalchemy/dialect/couchbase_dialect.py,sha256=IwdS_NxCGHI0jkcmUA9TywE2RoopW9DQ_gt-FYzUj-0,6607
+src/__init__.py,sha256=VDlZfp1q_XRqRlV1LHSVVtKUcrlnBwoa-ewxaHKqXHE,307
+src/dbapi/__init__.py,sha256=zporX3pfeGrtLIfOAm5_bdPAcuC676bih0NkMjIyfaI,93
+src/dbapi/couchbase_dbapi.py,sha256=Q6U1RPm2VhsyVWPVxmxv0mRyPIT-1y6lQlIof-5qcs4,6785
+src/dialect/__init__.py,sha256=KV7GCMiluw_Q7JwtdvBpraefNkbwFJkJPNbtIhc2LZM,251
+src/dialect/couchbase_dialect.py,sha256=IwdS_NxCGHI0jkcmUA9TywE2RoopW9DQ_gt-FYzUj-0,6607
+couchbase_sqlalchemy-0.1.0.dist-info/METADATA,sha256=-OJvh0WJG52dq1Bt1HaES_acNawy_TIRaQ0iN_tImsY,236
+couchbase_sqlalchemy-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+couchbase_sqlalchemy-0.1.0.dist-info/entry_points.txt,sha256=_gvhTJeDEUVG-JxpUOAp_XYfaIf4qVyxFcXJuQ2b1Qk,90
+couchbase_sqlalchemy-0.1.0.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+couchbase_sqlalchemy-0.1.0.dist-info/RECORD,,
