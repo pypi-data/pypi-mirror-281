@@ -1,0 +1,14 @@
+LICENSE
+pyproject.toml
+readme.md
+setup.cfg
+setup.py
+MoDE_embeddings.egg-info/PKG-INFO
+MoDE_embeddings.egg-info/SOURCES.txt
+MoDE_embeddings.egg-info/dependency_links.txt
+MoDE_embeddings.egg-info/requires.txt
+MoDE_embeddings.egg-info/top_level.txt
+src/MoDE_embeddings/fast_mat_mul/fastgd/bootstrap.c
+src/MoDE_embeddings/fast_mat_mul/fastgd/fastgd_base.c
+src/MoDE_embeddings/fast_mat_mul/fastgd/fastgd_cython.c
+src/MoDE_embeddings/fast_mat_mul/fastgd/fastgd_faster.c
