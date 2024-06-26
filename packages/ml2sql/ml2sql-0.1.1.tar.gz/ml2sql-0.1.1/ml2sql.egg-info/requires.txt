@@ -1,0 +1,15 @@
+interpret==0.5.1
+imblearn
+kaleido
+typer
+
+[:platform_system == "Windows"]
+pywin32
+
+[dev]
+duckdb
+pytest
+pip-tools
+ruff
+pre-commit
+coverage
