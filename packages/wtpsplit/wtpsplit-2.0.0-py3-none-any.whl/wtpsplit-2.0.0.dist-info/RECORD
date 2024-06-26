@@ -1,0 +1,16 @@
+wtpsplit/__init__.py,sha256=YSVNWr9jdMOW0wVj3ti3k_Hhdep_cjQBd1kKIMfVKCI,29980
+wtpsplit/configs.py,sha256=EBbh8FRODe4ccm1umHNXn_5IKIF5mqM7PThVgAAGrQQ,1650
+wtpsplit/extract.py,sha256=yrGU_-txqg2mgqwZOo-nsAaY9hlXSfmE48e8dOrgadw,9943
+wtpsplit/extract_batched.py,sha256=IYv7x7yPpug0-hThHhyrE0RjnydDpaLvr4ylRxHcShY,5078
+wtpsplit/models.py,sha256=9rr38Iv0_UEvOhLnsua-krmg8_VpK9KL-txvjmAKgJM,62240
+wtpsplit/utils.py,sha256=30fB72KCA54xpUAMR-UDMeFlb-vuCRIBQxsVSzt7Pj0,16899
+wtpsplit/data/language_info.csv,sha256=2tm7pUzb91yrlf1j9PQZx3zFpNhikO7MXeFUiQPzcck,3434
+wtpsplit/data/punctuation.json,sha256=XFcw8ATsR_70YGpXas4LmLeFV6haVmVBCL800tXaE7M,38208
+wtpsplit/data/punctuation.txt,sha256=bTJvs46ATy2SfRv9KsINj44gph3i987hzD1qCQLLTXE,408
+wtpsplit/data/punctuation_xlmr.txt,sha256=NJQkzoGuepjiaxEXG1RZPrBxwFOjCyJlu_Wyzty4sso,345
+wtpsplit/data/punctuation_xlmr_unk.txt,sha256=10CMkz0CPJadNM5ReDBtdVFU1t-DQ8RbXdiPTDeqgDQ,351
+wtpsplit-2.0.0.dist-info/LICENSE,sha256=lwFbW_1aEzhKUr1flQpHCpb134nsD6sEjgzRGAHUpqg,1107
+wtpsplit-2.0.0.dist-info/METADATA,sha256=lDjoYGnxC4NDZCjSp7o9mKYcjrMdQOSWjcPWEhxHON0,613
+wtpsplit-2.0.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+wtpsplit-2.0.0.dist-info/top_level.txt,sha256=R0vXoJVWNZdOdsTs_qZaRevixA53n3cJwpuy_4GQHIU,9
+wtpsplit-2.0.0.dist-info/RECORD,,
