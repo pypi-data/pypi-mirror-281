@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/custom_bench_fsr/__init__.py
+src/custom_bench_fsr/reporter.py
+src/custom_bench_fsr.egg-info/PKG-INFO
+src/custom_bench_fsr.egg-info/SOURCES.txt
+src/custom_bench_fsr.egg-info/dependency_links.txt
+src/custom_bench_fsr.egg-info/requires.txt
+src/custom_bench_fsr.egg-info/top_level.txt
