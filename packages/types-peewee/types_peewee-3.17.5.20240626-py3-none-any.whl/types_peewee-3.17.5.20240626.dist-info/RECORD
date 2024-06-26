@@ -1,0 +1,11 @@
+peewee-stubs/METADATA.toml,sha256=RnliR48mPR4VXXK0FMFBmivHLsJN-IHk8Trn_WnJrnM,393
+peewee-stubs/__init__.pyi,sha256=mSPP0UynPiEtYzCeWLzTQrgNzoUlc46oKx1TXBo_vN8,63424
+peewee-stubs/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
+playhouse-stubs/METADATA.toml,sha256=RnliR48mPR4VXXK0FMFBmivHLsJN-IHk8Trn_WnJrnM,393
+playhouse-stubs/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+playhouse-stubs/flask_utils.pyi,sha256=7BQVRr3pMwpSfcn7JXOS0x30q2sM_mIWjdbcJXC8Gxk,990
+playhouse-stubs/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
+types_peewee-3.17.5.20240626.dist-info/METADATA,sha256=PsS9--zwRnqWqJ4QBRnJBjJtiYKzlB0on38tQoHuLMw,1746
+types_peewee-3.17.5.20240626.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+types_peewee-3.17.5.20240626.dist-info/top_level.txt,sha256=t97coVbntdi9fcg-4GOiJR8GE8fHsrNi_VcxXgimA6o,29
+types_peewee-3.17.5.20240626.dist-info/RECORD,,
