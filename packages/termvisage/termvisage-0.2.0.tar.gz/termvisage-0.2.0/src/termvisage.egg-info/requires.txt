@@ -1,0 +1,6 @@
+Pillow<11,>=10.1
+term-image<0.7,>=0.6
+urwid<3,>=2.1
+
+[completions]
+argcomplete<4,>=2
