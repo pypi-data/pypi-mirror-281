@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: pyheimdall
+Version: 0.1.0
+Summary: High End Interoperability Module when Data is ALL over the place
+Project-URL: Homepage, https://gitlab.huma-num.fr/datasphere/heimdall/python/
+Project-URL: Issues, https://gitlab.huma-num.fr/datasphere/heimdall/python/-/issues
+Author-email: Régis Witz <regis.witz@cnrs.fr>
+License: aGPL
+License-File: LICENSE
+Keywords: databases,hera,interoperability
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Classifier: Topic :: Documentation
+Classifier: Topic :: File Formats
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Requires-Dist: lxml
+Description-Content-Type: text/x-rst
+
+tkt ça va être bien
