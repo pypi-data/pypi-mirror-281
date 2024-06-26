@@ -1,0 +1,11 @@
+esycord/__init__.py,sha256=zi1-v26ETrBxYatZN_qD1ZFvtqQPBZFDtsCLRtaRef0,962
+esycord/__main__.py,sha256=BnXtJBruwyH6Q7UjttM0ZLJTNiC16Wdg8jyeYDBp3DI,1127
+esycord/bot.py,sha256=2lXlTijM1Oe1zegL6EijvkGeVpzQHwxlF2a-rEbc1xo,3451
+esycord/slash.py,sha256=tDGP4yiJADBfk8o7GRKLLdfZPNJ6q1pObI8d9XoA1qg,1010
+esycord/data/__init__.py,sha256=Ht4WKuFczYnE6zg1N9VvYObCXvn8uuP1DXOzwrqQCHw,481
+esycord/data/channel.py,sha256=iY9Z_MFMu_TqDbOdeBMhUGMoBQk0u7MRwU31SaUtIJk,3018
+esycord/data/guild.py,sha256=q6hFx6OgCGtjOqXSdSpWZsKYmJ7EopedkyPrswCeSkg,2932
+esycord/data/user.py,sha256=xwW9SpRNgBiUXqPGoypo54t5r3zu08GYSgzNy0vqJpU,6828
+esycord-0.2.dist-info/METADATA,sha256=NL9iTYgyj9gMNampJPGucUkKg2njSe6vPNjQuoOQObU,702
+esycord-0.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+esycord-0.2.dist-info/RECORD,,
