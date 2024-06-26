@@ -1,0 +1,9 @@
+[cbr_website]
+aws_enabled   = true
+login_enabled = true
+assets_root   = '/assets'
+athena_path   = '/api
+cbr_logo      = "cbr/cbr-logo-beta.png"
+
+[cbr_dev]
+capture_exceptions = true
