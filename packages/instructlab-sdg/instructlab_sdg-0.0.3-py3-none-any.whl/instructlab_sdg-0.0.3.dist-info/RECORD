@@ -1,0 +1,12 @@
+instructlab/sdg/README.md,sha256=0og-r6-G5cfDAmjn5xXAwKWCs2xqncb_V5GLhsNhGls,11625
+instructlab/sdg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+instructlab/sdg/_version.py,sha256=hB095avW4HuDZxn8qPHRG1UMzSSonb8ZDAsLxt9hmk8,411
+instructlab/sdg/generate_data.py,sha256=M5ycEtVQ6O4zE1CCLDwc4oT2ktWefHKZdBrErByAaiU,25729
+instructlab/sdg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+instructlab/sdg/seed_tasks.jsonl,sha256=VCJb84fQIk8wDRbazUGRj2EFn5jXy204DMc8LP-Ipqk,110936
+instructlab/sdg/utils.py,sha256=OVEyXTuMHLPB-p0ilrWnelPUvQuBZCaPu8xj0Ig9lZM,11629
+instructlab_sdg-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+instructlab_sdg-0.0.3.dist-info/METADATA,sha256=h-n62HTyKsw2Qw4-e8jtsA48gQhYD03RVqjbDDl048A,1706
+instructlab_sdg-0.0.3.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+instructlab_sdg-0.0.3.dist-info/top_level.txt,sha256=0r2RZ4_KkuJG7G0dJBV-sWHaBsBxGXUifCCY9-jyRN4,12
+instructlab_sdg-0.0.3.dist-info/RECORD,,
