@@ -1,0 +1,13 @@
+COPYING
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+selectaudio/__init__.py
+selectaudio/__main__.py
+selectaudio.egg-info/PKG-INFO
+selectaudio.egg-info/SOURCES.txt
+selectaudio.egg-info/dependency_links.txt
+selectaudio.egg-info/entry_points.txt
+selectaudio.egg-info/requires.txt
+selectaudio.egg-info/top_level.txt
