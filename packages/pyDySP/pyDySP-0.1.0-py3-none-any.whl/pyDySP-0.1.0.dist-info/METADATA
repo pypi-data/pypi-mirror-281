@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pyDySP
+Version: 0.1.0
+Summary: Python Dynamic Signal Processing
+Author-email: Dr Dimitris Karamitros <d.karamitros@bristol.ac.uk>
+Project-URL: Homepage, https://github.com/dkaramitros/pyDySP
+Project-URL: Documentation, https://pydysp.readthedocs.io/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+# pyDySP
+
+Dynamic Signal Processing
+
+[![Read the Docs](https://img.shields.io/readthedocs/pydysp)](https://pydysp.readthedocs.io/en/latest/)
+![GitHub License](https://img.shields.io/github/license/dkaramitros/python-dysp)
+
+## Information
+
+Python classes are provided to process laboratory data from the Shaking Table experimental facilities at the University of Bristol.
+
+## Instructions
+
+The package `pyDySP` includes two classes:
+
+- The `Test` class provides methods to add, manage, and plot data from multiple channels. Transfer functions can also be produced and analyzed.
+
+- The `Channel` class provides methods for signal processing, including baseline correction, filtering, and trimming. Plotting methods are also provided.
+
+Example Jupyter notebooks are also provided.
