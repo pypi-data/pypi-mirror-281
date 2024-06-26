@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: Deep_Dummy_Maths
+Version: 0.0.2
+Summary: A dummy library for mathematical functions created by Deependu Jha.
+License: MIT
+Author: deependujha
+Author-email: deependujha21@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Deep-Dummy-Maths
+
+A dummy library for mathematical functions created by Deependu Jha.
+
+## Installation
+
+```bash
+pip install deep-dummy-maths
+```
+
+## Usage
+
+```python
+from deep_dummy_maths import my_sum, my_diff, my_pro, my_div
+
+my_sum(1, 2)  # Output: 3
+my_diff(1, 2)  # Output: -1
+my_pro(1, 2)  # Output: 0.5
+my_div(1, 2)  # Output: 0.5
+```
+
+## Contributing
+
+Contributions are welcome!
+
