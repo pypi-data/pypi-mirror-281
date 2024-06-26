@@ -1,0 +1,19 @@
+interpret==0.5.1
+numpy<2
+imblearn
+kaleido
+typer
+
+[:platform_system == "Windows"]
+pywin32
+
+[dev]
+duckdb
+pytest
+pytest-mock
+pip-tools
+ruff
+pre-commit
+coverage
+twine
+wheel
