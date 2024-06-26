@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyfuc
+Version: 0.1.0
+Summary: Piaget's FUCs filler
+Home-page: UNKNOWN
+Author: Natanael Quintino
+Author-email: natanael.quintino@ipiaget.pt
+License: CC0 1.0 Universal
+Keywords: automation,curricular unit,FUC,piaget
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+

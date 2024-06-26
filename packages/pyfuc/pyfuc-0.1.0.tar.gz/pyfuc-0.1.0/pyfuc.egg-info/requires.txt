@@ -1,0 +1,4 @@
+deepl
+langchain_openai
+pdflatex
+sydney-py

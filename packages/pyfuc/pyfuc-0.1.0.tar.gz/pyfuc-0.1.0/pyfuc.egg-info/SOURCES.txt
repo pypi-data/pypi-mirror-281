@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+pyfuc/FUCClass.py
+pyfuc/__init__.py
+pyfuc/chatMessagesVersions.py
+pyfuc/fucsFiller.py
+pyfuc/pyle.py
+pyfuc.egg-info/PKG-INFO
+pyfuc.egg-info/SOURCES.txt
+pyfuc.egg-info/dependency_links.txt
+pyfuc.egg-info/requires.txt
+pyfuc.egg-info/top_level.txt
