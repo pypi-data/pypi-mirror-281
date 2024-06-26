@@ -1,0 +1,12 @@
+myhook/__init__.py,sha256=k_NIVUYzp6U4oWEb6XGK6-DmFWrMjTfvAP06qtRVmtI,2330
+oaipmharvest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oaipmharvest/cli.py,sha256=q_mQX2dkmWMGM2IfFWqEs0dwqClNov00DBrN4AwyXIM,3391
+oaipmharvest/commons.py,sha256=Mh4WocRWoUztLA7jBTvwlcW1JiGGqYDn6SsAdiDW6DY,3102
+oaipmharvest/oaistuff.py,sha256=awkmHXa6QqWsWvNgjiFGdT3dMzWRYCY3r7Eg-Yh02Vc,9308
+oaipmharvest/settings.py,sha256=xoNt1co9ZfDRSbLnqM4MJc7EJyHsDkjKS94OTfHxBqg,2433
+oaipmharvest-0.0.3.dist-info/LICENSE,sha256=-rPda9qyJvHAhjCx3ZF-Efy07F4eAg4sFvg6ChOGPoU,16726
+oaipmharvest-0.0.3.dist-info/METADATA,sha256=pBMhB5BUBV_LQXkGNtT1maw2CMt0kPrscIhWRsnfwZc,3682
+oaipmharvest-0.0.3.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+oaipmharvest-0.0.3.dist-info/entry_points.txt,sha256=f43w9fpFLfr6jUAYJYBzzjHo6eWOoh4CGBMXFjtOaR8,56
+oaipmharvest-0.0.3.dist-info/top_level.txt,sha256=B0_Vn5WiWV5PgMIWnl8TUmzRJqiihlnSekmj0lMibUQ,20
+oaipmharvest-0.0.3.dist-info/RECORD,,
