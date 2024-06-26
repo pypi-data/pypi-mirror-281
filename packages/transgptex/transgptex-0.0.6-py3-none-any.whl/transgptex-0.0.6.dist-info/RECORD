@@ -1,0 +1,15 @@
+transgptex/__init__.py,sha256=dkQv8RMfFKqfvJwMEIYeAxwUgJ2MNaUErA-AspCeJ_o,59
+transgptex/command_line.py,sha256=ECfU3XjE-t2BHs1SXWhsQGURslTVQ8ddop8_94LioG8,7254
+transgptex/config.py,sha256=EPCI7T_vJUDgOZQSChUBWsjugY2m9jzQejRB5PxqJu8,950
+transgptex/download_paper.py,sha256=N3caL9Kiue4DW0KkdvcPDyOwKQWcquEF9I9gW5ZfZ5Y,1337
+transgptex/file_selector.py,sha256=WeM1Z8SvRnlVNFGCV_N6mEQ5CO4ZPvtuCEtRxiopHNk,3198
+transgptex/latex_spilter.py,sha256=iz824kiaQDWKdjSKgdWxxGFQQaqEuurGjpT8v8Ubzzg,2300
+transgptex/llm_api_async.py,sha256=f5cx7h2xBJbZhBuK3dVEk6-NyrsrsyVsRxF5FMRM5q0,4398
+transgptex/preprocess_tex.py,sha256=th9YJE6NDeFL9DwUxAgNIbqvzKqJTrTP5PAcoPTG66Y,5229
+transgptex/translate_tex.py,sha256=i_OFuNT8mLKr9JGnM_m36EvvL5rvk5ltLzCYctYXW5o,4758
+transgptex-0.0.6.dist-info/LICENSE,sha256=tBPBe2soIayVW5iPiX3GXsYcS5FN4uBB5635Vz7-NwI,1068
+transgptex-0.0.6.dist-info/METADATA,sha256=4TYHIi9lD3sS8DzQv8mHBjAQr2hwDNLaR53cqHxP7eE,2829
+transgptex-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+transgptex-0.0.6.dist-info/entry_points.txt,sha256=n91S7PXKqGCDl_1dfbG2zUqLarsK4DYks-aNfyVs0eo,56
+transgptex-0.0.6.dist-info/top_level.txt,sha256=8GzmBoBYMj9ER4B8BZTNIFVawB0FYB_CdgdSNXVdNQc,11
+transgptex-0.0.6.dist-info/RECORD,,
