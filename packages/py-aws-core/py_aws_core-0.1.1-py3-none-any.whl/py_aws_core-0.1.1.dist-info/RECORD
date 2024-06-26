@@ -1,0 +1,12 @@
+py_aws_core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_aws_core/cognito.py,sha256=r9-bSqpnjhszHVqRfEA0vnuFzI0GZOroKufQ0Y-GbvA,4836
+py_aws_core/decorators.py,sha256=DfxXib_KNOo1Ogjxwa_inCsAMkKj7ZkFcvAkltK0pqE,1889
+py_aws_core/dynamodb.py,sha256=NSiIKxatxxr3a8XML_PKLg4WoCXpnfR7qtNcFNQKK6s,3907
+py_aws_core/exceptions.py,sha256=GRrn3CnaohqrWs-2Q6i-c_Ztd86SEgT5CosnZ6jAKz8,1155
+py_aws_core/logs.py,sha256=EgXTcIQVI6QIPOwdTQX1pb5EncStUXLocviiZHCBIoc,994
+py_aws_core/secrets_manager.py,sha256=jxPS3p5GGK5zJ6RAK6AauXQx_0ZS8mOUmKTemMN55E4,976
+py_aws_core/utils.py,sha256=0JE27YeruwSSAek5lvn2Sb1HLZhE90tuebQpfKXx5OA,224
+py_aws_core-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+py_aws_core-0.1.1.dist-info/METADATA,sha256=lDGFjJLPMt7QtebpQmwPd0P4YAh7J5mt1wzZEqbFIBo,486
+py_aws_core-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+py_aws_core-0.1.1.dist-info/RECORD,,
