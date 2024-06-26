@@ -1,0 +1,5 @@
+[console_scripts]
+configure-aws = app1.scripts.configure_aws:main
+copy-validate-api-key = copy_validate_api_key:copy_validate_api_key
+manage.py = app1.manage:main
+readme = app1.scripts.readme:main
