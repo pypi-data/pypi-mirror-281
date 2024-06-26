@@ -1,0 +1,9 @@
+pyxelxl-0.0.13.dist-info/METADATA,sha256=WzzxOxeGuoKO8TQ2Qagj0DRrrkGH5y_VpO7pvpj_l5U,3744
+pyxelxl-0.0.13.dist-info/WHEEL,sha256=7INNoKFEbzwx6YXE3imetO71LEXFnNY8XRj7pFr3oO0,129
+pyxelxl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxelxl/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxelxl/rotate.py,sha256=6ZdC7C-ks5e7xpRas8oOCGekcbHPn50CBl-pvST9_1U,1311
+pyxelxl/font.py,sha256=cAUFY1bbepx9GSh5Bo67HZgdAyWz9jZwpByEgn7_NW8,4715
+pyxelxl/__init__.py,sha256=-IM2g-BxYrY5lMHlk41DEC0KH54P1Suh3teZwMgPFSY,89
+pyxelxl/pyxelxl.abi3.so,sha256=Tie7WXvZ2FRcJv25GzKBGGFUX7i0iybo-6CyWilA_iM,1170368
+pyxelxl-0.0.13.dist-info/RECORD,,
