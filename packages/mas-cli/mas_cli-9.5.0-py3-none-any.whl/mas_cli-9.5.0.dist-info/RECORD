@@ -1,0 +1,8 @@
+mas/cli/__init__.py,sha256=gtCpZLbQvVbt2Kyub5QSZEF-tEs4fZvBlYW9rtVzHAg,490
+mas/cli/cli.py,sha256=6FoiYRG297LN2P02p5f28qjTQ__4x_WV0f8yBjZEX2I,8649
+mas_cli-9.5.0.data/scripts/mas-uninstall,sha256=aCySCt7zJvoB2HMPR0Ftt9O0hKT5a1-GTFbMw2ZJ33k,13176
+mas_cli-9.5.0.data/scripts/mas-upgrade,sha256=5zMbjueTAzwmaSxa1F3oiaQvOeiPobsOtwUxXqrg36Y,6834
+mas_cli-9.5.0.dist-info/METADATA,sha256=5mVGmPn5jL1w4SdYqqpO_e2-L-Mn5CsORfiTTPpniWc,2051
+mas_cli-9.5.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+mas_cli-9.5.0.dist-info/top_level.txt,sha256=_Hlsp7pvMvyV14LFg-vk1hULq30j61EILnnxMFIhhc8,4
+mas_cli-9.5.0.dist-info/RECORD,,
