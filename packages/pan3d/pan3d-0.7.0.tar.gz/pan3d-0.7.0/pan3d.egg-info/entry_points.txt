@@ -1,0 +1,2 @@
+[console_scripts]
+pan3d-viewer = pan3d.serve_viewer:serve
