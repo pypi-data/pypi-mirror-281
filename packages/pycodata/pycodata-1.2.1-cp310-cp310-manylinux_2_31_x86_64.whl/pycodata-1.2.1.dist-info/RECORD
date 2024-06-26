@@ -1,0 +1,14 @@
+pycodata-1.2.1.dist-info/RECORD,,
+pycodata-1.2.1.dist-info/WHEEL,sha256=jo0ySw_Sv-MmNYklrcywN8DHYifM6ZDlsu9cU8bd6JE,113
+pycodata-1.2.1.dist-info/METADATA,sha256=CDLiEGXt2w_ttAhedQWAadDx__E2QYm3PfCzUFgZOHI,1960
+pycodata-1.2.1.dist-info/top_level.txt,sha256=2a1LaR8nqhf7ws8R-8fYwctq4kHd-jFd2edMIUHLeRQ,9
+pycodata-1.2.1.dist-info/LICENSE,sha256=X9z2HI0PLFE-8XCLZPKXm1j8Qq9n05aHdq6T-fISeI8,1051
+pycodata/constants_2014.cpython-310-x86_64-linux-gnu.so,sha256=gJcXz_vNCWCyHmPsve6erBr63OclqNNoHzFohdPP2lE,265625
+pycodata/__init__.py,sha256=jUpNidq_yB2Zgeyl5PJp5iojliOBcUsGUN2xKrI9rIg,461
+pycodata/libcodata.so,sha256=AfFsQBjpfZtZWhmO5XK2Vg-VCwIGi6iczdebXMXGeWY,1226353
+pycodata/constants_2010.cpython-310-x86_64-linux-gnu.so,sha256=_TCKyRfMMADRPKVrb8lvGgWWJUOTd4GI61iRsqy5CJU,265625
+pycodata/constants_2018.cpython-310-x86_64-linux-gnu.so,sha256=DSIYW83Oi2PthaG-N0n1Y_vZbnhOHQySDd5xSnqkt5U,283041
+pycodata/constants_2022.cpython-310-x86_64-linux-gnu.so,sha256=fCsca1EY6fyDrsiKVt_6ACNCVKdmNITtD53Y72bNq8I,273225
+pycodata/version.cpython-310-x86_64-linux-gnu.so,sha256=tWjVFdLso4XqNq12iZu8skJkiNmkP0gp4c4T1lReBEc,29705
+pycodata.libs/libgfortran-01b35462.so.5.0.0,sha256=R_VVEuURDssfCK9V8QOt9wZ_cNqbnDSIdEL2_X9Kj20,2930985
+pycodata.libs/libquadmath-1843afa6.so.0.0.0,sha256=Dph6LhCn3rMHar6rBKuOTiGA7UyXdhBP8kn67kF834Q,296993
