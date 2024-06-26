@@ -1,0 +1,3 @@
+[console_scripts]
+acgetip=actool.network.get_ip:get_ip
+
