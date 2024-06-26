@@ -1,0 +1,10 @@
+PyMuPDFb-1.24.6.dist-info/entry_points.txt,sha256=9NcH_CVkHVuLNxE1TYbfwXwClVkMcM890TMTJ3C5fDA,51
+PyMuPDFb-1.24.6.dist-info/README.md,sha256=xkECNGCvNG8SAONoKxvucjLQ7nMBNIe1vDOpxKDqRKM,289
+PyMuPDFb-1.24.6.dist-info/WHEEL,sha256=CU8KcklJEdRImfqNTFF0hYf46g9JwpHnxFwOriHu_qI,94
+PyMuPDFb-1.24.6.dist-info/COPYING,sha256=4Fv7ClDSjhDuQgCg-BeJPyaVMFWkyVp40FN4tIg7QBM,18
+PyMuPDFb-1.24.6.dist-info/RECORD,,
+PyMuPDFb-1.24.6.dist-info/METADATA,sha256=c1NT1E2h_K5acoa4CnKjtKQd8LCzwUhZox0-Vfd5fm8,1417
+PyMuPDFb.libs/libstdc++-496613c0.so.6.0.32,sha256=AwZhL5WFT99I2Q6vIxXOhW7qddfuOZ1xecxiP9QTVY4,3494361
+PyMuPDFb.libs/libgcc_s-a3a07607.so.1,sha256=5ptIUeAzZweNZrFehN0_Bb5B0FcJgux7NbAFoU8vwwo,148041
+pymupdf/libmupdfcpp.so.24.4,sha256=1j6y-wUPEOcbyRnzNOn9cPeGSMkAEu9hzKZTGTCCoIs,3505425
+pymupdf/libmupdf.so.24.4,sha256=15FOZQMCgzUAAqFFQG2GAwcroVOF9WqIaUyTRXnFFMk,28009593
