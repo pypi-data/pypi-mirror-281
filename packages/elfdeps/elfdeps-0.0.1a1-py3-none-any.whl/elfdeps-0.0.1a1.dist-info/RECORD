@@ -1,0 +1,9 @@
+elfdeps/__init__.py,sha256=OZEppkddoAZTcudG2i03Gd7dN7_9CVA_DBm8vgMJhto,93
+elfdeps/__main__.py,sha256=2Prjk4_b0QbhRHBJtGIf4etzUr3sFd5xLXudwaswcSc,1629
+elfdeps/_elfdeps.py,sha256=m-xoM19kQjr9fGalDdTjQhcqCRACY8YX_PPZe-WQVjY,8432
+elfdeps-0.0.1a1.dist-info/LICENSE,sha256=xwU7CabsRiEMQaOiFOtvI3-YHzPDyepGLbPCKS7d5Ec,11349
+elfdeps-0.0.1a1.dist-info/METADATA,sha256=gVof53_aH-m1plSnrrt4VbhpylFA2EwsN7jMfngTHBI,14170
+elfdeps-0.0.1a1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+elfdeps-0.0.1a1.dist-info/entry_points.txt,sha256=d_XTSZEMfAqutKdYgcWxEpzT1pFJb17SCqDZoQbNNwE,50
+elfdeps-0.0.1a1.dist-info/top_level.txt,sha256=tZYXxASUotV2ntNR9p8z0M4qbUatrz9WtbmwVM7THXo,8
+elfdeps-0.0.1a1.dist-info/RECORD,,
