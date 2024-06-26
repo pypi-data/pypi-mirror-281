@@ -1,0 +1,16 @@
+django_ts_exporter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ts_exporter/exporter.py,sha256=UEifnuK6KX6EIPiN-qs1h8EMIVi8zK_E3iE7ddiIPu4,4654
+django_ts_exporter/models_exporter.py,sha256=mI4tjfwczVxuxbUWGeGQS1bB6T8LVhj8H1FXhKFo_hM,7505
+django_ts_exporter/serializers_exporter.py,sha256=nwhbcffwqCjRnbMy2Z4BWochAPq5xjc17NfqaoJAcqk,10435
+django_ts_exporter/utils.py,sha256=4JWbDd_3XH1ROWThvViC7ZNO6xX9GXbVBc0JMam-U_0,194
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models.py,sha256=xQd2DI2bk08Un1KhETfTQb5dT1IdqBlkZJS_MfBJAL0,948
+tests/serializers.py,sha256=NqbnuloUtydc23t43uL5c8wuIMpiXKVrW4TTZJ4i6fU,343
+tests/test_models_exporter.py,sha256=D3zVYKkROwsT911SD9CWTS95z0TdIkcEeFpQkRAuPsk,1553
+tests/test_serializers_exporter.py,sha256=U5tJ8d1_EAKMMJ1mwM0t_iiJsvaKjTWcWKCvJwmSagY,1758
+django_ts_exporter-0.3.0.dist-info/LICENSE,sha256=MU_VJXdT-SDM3MkMOTRnP3IeoK0zXn6kOHwezsvvoOM,1075
+django_ts_exporter-0.3.0.dist-info/METADATA,sha256=gC8w6k7Fr7xukwKa60rrrkOsRbfQUpYoH5yXOVP_Anc,3735
+django_ts_exporter-0.3.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+django_ts_exporter-0.3.0.dist-info/entry_points.txt,sha256=pjEwVyw-3A8b7-W7deNdkKJid6MI-CFZ08gJLLxm_qc,73
+django_ts_exporter-0.3.0.dist-info/top_level.txt,sha256=2eqE7h4hKfbZls3UJgdVDm6mv1eHXpV2q7Alsp4_KY8,25
+django_ts_exporter-0.3.0.dist-info/RECORD,,
