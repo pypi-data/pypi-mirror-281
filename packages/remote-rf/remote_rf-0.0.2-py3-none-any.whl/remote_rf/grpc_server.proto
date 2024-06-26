@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_package = "com.example.demo";
+option java_outer_classname = "DemoProtos";
+
+package remote_rf;
+
+// The service definition.
+service APITokenService {
+  // Sends an API token and receives IP and port information
+  rpc GetIPPort (APITokenRequest) returns (IPPortResponse);
+}
+
+// The request message containing the API token.
+message APITokenRequest {
+  string api_token = 1;
+}
+
+// The response message containing the IP and port.
+message IPPortResponse {
+  string ip = 1;
+  int32 port = 2;
+}

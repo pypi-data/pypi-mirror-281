@@ -1,0 +1,12 @@
+remote_rf/__init__.py,sha256=244F9Gl-9wEY6SiFEmqQxqwdufswqMKa6fg5qAmmUSM,88
+remote_rf/api_tokens.py,sha256=B9FDkV_AYJ029r1_drYuXOSI9sXlsA6Gm47gPzi0bRQ,1915
+remote_rf/client.py,sha256=sotFj3M-HBX_2LXHt6Hk4JTJ4nA0Qa4_a8b3rbJQ-KM,2293
+remote_rf/grpc_server.proto,sha256=R4RV2FJd3XsgR1vQ3gA3fq6P68tM2LElgZEoIkE8YCI,520
+remote_rf/grpc_server_pb2.py,sha256=bqfekddY8AJUB4SHgY4286N6PraMzrE9Ojy50WYxKjw,1611
+remote_rf/grpc_server_pb2_grpc.py,sha256=yABQO6YzIPq6rRPvRPpJ0nwoxLxAiOf6gzSdKedItuo,3648
+remote_rf/serializer.py,sha256=tnsa6mrjZND8PAqjM8L6324xwsx08SV3xMHhRBtANbQ,1126
+remote_rf/server.py,sha256=4BebxwqzRfRCKxObaLAgMU_3uqEbgU7dBgGq75dRw7Y,4447
+remote_rf-0.0.2.dist-info/METADATA,sha256=hDH1u2ZnJA8ID9SJywHdaa8tUjKX3JFlsK6wweUBAKE,1090
+remote_rf-0.0.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+remote_rf-0.0.2.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+remote_rf-0.0.2.dist-info/RECORD,,
