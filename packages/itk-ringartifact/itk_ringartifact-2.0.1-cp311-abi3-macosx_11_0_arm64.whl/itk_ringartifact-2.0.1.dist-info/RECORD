@@ -1,0 +1,10 @@
+itk/Configuration/RingArtifactConfig.py,sha256=058p6GTP7Zfmg191IFVJvskfCHJz5wjVCeUpe4hU614,1006
+itk/Configuration/RingArtifact_snake_case.py,sha256=CmidRmiSDFVzHFu64gJ8cY9EQzWK06qapDurRm66gZQ,66
+itk/RingArtifactPython.py,sha256=BHkvtgsAymBehmjZJwx19tudK294miEhUcn6_c97X2w,2152
+itk/_RingArtifactPython.abi3.so,sha256=d0hqoHbIGbLBt8cDdhgHFLGjhriGU8fIHand_p-NnnI,1311512
+itk/itkFourierStripeArtifactImageFilterPython.py,sha256=1_T57buwldu5fBrFxNYAyjkBs6wZbJHgNpkSWfLplX8,28808
+itk_ringartifact-2.0.1.dist-info/METADATA,sha256=wffEIAQQMN8LObzCG_SMMQFT6h7aeJZa5M6MEct232Q,15818
+itk_ringartifact-2.0.1.dist-info/WHEEL,sha256=Vyi5d1ZUYlXjWs-s1f2M759lhd9BcAzO0wgL5W0-Wzk,112
+itk_ringartifact-2.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itk_ringartifact-2.0.1.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+itk_ringartifact-2.0.1.dist-info/RECORD,,
