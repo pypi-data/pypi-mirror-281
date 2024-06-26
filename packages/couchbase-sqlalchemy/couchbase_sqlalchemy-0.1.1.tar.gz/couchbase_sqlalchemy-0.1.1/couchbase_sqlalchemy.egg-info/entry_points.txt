@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+couchbase.columnar = src.dialect.couchbase_dialect:CouchbaseDialect
