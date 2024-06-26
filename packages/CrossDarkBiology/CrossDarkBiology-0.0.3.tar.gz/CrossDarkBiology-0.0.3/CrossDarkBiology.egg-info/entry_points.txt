@@ -1,0 +1,2 @@
+[console_scripts]
+CDBio-Video = CrossDarkBiology.Video.yolo:main
