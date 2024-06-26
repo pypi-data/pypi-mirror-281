@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+weaviate_connection_pool/__init__.py
+weaviate_connection_pool/pool.py
+weaviate_connection_pool.egg-info/PKG-INFO
+weaviate_connection_pool.egg-info/SOURCES.txt
+weaviate_connection_pool.egg-info/dependency_links.txt
+weaviate_connection_pool.egg-info/requires.txt
+weaviate_connection_pool.egg-info/top_level.txt

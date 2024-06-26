@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: weaviate-connection-pool
+Version: 0.1.0
+Summary: An efficient connection pool for Weaviate clients.
+Home-page: https://github.com/Sushil2308/weaviate_connection_pool
+Author: Sushil2308
+Author-email: SushilPrasad60649@gmail.com
+License: LICENSE.txt
+Description: Here's the corrected README file for the Weaviate Connection Pool module:
+        
+        # Weaviate Connection Pool
+        
+        This Python module provides a thread-safe singleton connection pool for Weaviate clients. It ensures efficient management of Weaviate client instances for applications requiring multiple, concurrent connections to a Weaviate database. The connection pool dynamically creates new client instances on demand and reuses them to handle multiple requests, improving performance and resource utilization.
+        
+        ## Features
+        
+        - **Singleton Connection Pool**: Ensures a single instance of the connection pool throughout the application.
+        - **Thread-Safe**: Safely handles concurrent access from multiple threads.
+        - **Dynamic Client Management**: Dynamically creates and reuses Weaviate client instances as needed.
+        - **Timeout for Client Acquisition**: Supports timeouts when waiting for an available client, preventing indefinite blocking.
+        - **Automatic Client Release**: Automatically returns clients to the pool for reuse after their task is completed.
+        
+        ## How to Use
+        
+        ### Initialization
+        
+        To use the connection pool, first initialize it with the Weaviate database URL, authentication credentials (if required), the desired pool size, and an optional timeout for waiting for a client.
+        
+        ```python
+        from pool import WeaviateConnectionPool
+        
+        # Initialize the connection pool
+        pool = WeaviateConnectionPool(url="http://localhost:8080", auth_client_secret="your_secret", pool_size=10, waiting_time_out=300)
+        ```
+        
+        ### Getting a Client
+        
+        When you need to interact with the Weaviate database, get a client from the pool:
+        
+        ```python
+        try:
+            client = pool.get_client()
+            # Use the client for database operations
+        finally:
+            pool.release_client(client)
+        ```
+        
+        ### Releasing a Client
+        
+        After finishing the database operations, release the client back to the pool for reuse:
+        
+        ```python
+        pool.release_client(client)
+        ```
+        
+        ### Error Handling
+        
+        - **TimeoutError**: If a client is not available within the specified timeout period, a `TimeoutError` is raised.
+        - **General Exceptions**: For any other issues while acquiring or releasing clients, a general exception is raised with an appropriate error message.
+        
+        ## Best Practices
+        
+        - Always release clients back to the pool to ensure they are available for reuse.
+        - Handle exceptions gracefully, especially `TimeoutError`, to avoid application crashes due to unavailable clients.
+        - Adjust the pool size based on your application's concurrency requirements and resource availability.
+        
+        This connection pool implementation simplifies managing Weaviate connections in multi-threaded applications, ensuring efficient and scalable database access.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

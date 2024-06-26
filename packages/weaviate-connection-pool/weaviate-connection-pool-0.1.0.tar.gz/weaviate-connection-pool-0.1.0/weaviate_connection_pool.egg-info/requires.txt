@@ -1,0 +1,1 @@
+weaviate-client>=2.5.0
