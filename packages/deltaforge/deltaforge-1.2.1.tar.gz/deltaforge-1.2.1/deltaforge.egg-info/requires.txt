@@ -1,0 +1,7 @@
+pyspark
+
+[dev]
+black
+pip-tools
+pytest
+bumpver
