@@ -1,0 +1,15 @@
+summawise/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+summawise/__main__.py,sha256=pDxkQzg7t2Bstm6_5xk4Z3hPSOgUhbwm8pr8nVyMu1I,4949
+summawise/ai.py,sha256=1XaXVpf1X6TbRc3bq9Kv9qAKDSg1dGaboMSMI73YmPI,3761
+summawise/errors.py,sha256=6jDmrmRB4jhkX8YQJMong9I_vLBP8naLoHHIA2Axk8E,237
+summawise/filesystem.py,sha256=fBONAIoUIKyFQ5ARKmAsMJYaTsj3Lou59gcFNuOuFxY,666
+summawise/settings.py,sha256=diGaqRnskEsXo3Z7ijV4A6Mb05o0MgvOr04hCkTg3e4,3394
+summawise/utils.py,sha256=rrchTs6IDjQ9rf1p8o4mc7q8FMKLkVSOkaoUfl_8lDo,3915
+summawise/web.py,sha256=7Xi81lUxcY0TFzdE9K9lB8EiDhQKUD6Ve82zrTkslDY,1848
+summawise/youtube.py,sha256=h8oOUGuj2l6EcyUYXUaudfo6Vbal1WjYyvzPLQoodD4,5407
+summawise-0.1.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+summawise-0.1.1.dist-info/METADATA,sha256=WzWVZTDrxTjuWxAbE1vvkYjRWp5BDbtcU6T4XTSq8yk,3280
+summawise-0.1.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+summawise-0.1.1.dist-info/entry_points.txt,sha256=9Mxdn1SoOhpNsbDAwP9IOG6TcWvqDwP80Ii-iGJBOUg,54
+summawise-0.1.1.dist-info/top_level.txt,sha256=zhb5kdnYIv_J47Xmyf4_z-39IsIEF99PIH7-k_LrLL0,10
+summawise-0.1.1.dist-info/RECORD,,
