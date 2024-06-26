@@ -1,0 +1,9 @@
+pyproject.toml
+setup.cfg
+setup.py
+mjqproject/__init__.py
+mjqproject/test.py
+mjqproject.egg-info/PKG-INFO
+mjqproject.egg-info/SOURCES.txt
+mjqproject.egg-info/dependency_links.txt
+mjqproject.egg-info/top_level.txt
