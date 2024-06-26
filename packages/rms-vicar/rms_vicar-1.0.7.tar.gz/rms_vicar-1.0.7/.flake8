@@ -1,0 +1,13 @@
+[flake8]
+max-line-length: 90
+extend-ignore =
+    # whitespace before ')'
+    E202
+    # whitespace before ':'
+    E203
+    # multiple spaces before operator
+    E221
+    # missing whitespace after ','
+    E231
+    # multiple spaces before keyword
+    E272
