@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "evaluator-blog"
+version = "0.1.0"
+description = ""
+authors = ["Sriniketh J <srinikethcr7@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+nltk = "^3.8.1"
+rouge-score = "^0.1.2"
+pytest = "^8.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://github.com/srini047/evaluator_blog"
+Issues = "https://github.com/srini047/evaluator_blog/issues"
