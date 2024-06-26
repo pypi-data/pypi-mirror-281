@@ -1,0 +1,11 @@
+# Testbed is used to store the information about the test environment.
+# The information can be accessed by self.testbed.get() in the testcases.
+example:
+  key1: value1
+  key2: 
+    key2-1: value2-1
+    key2-2: value2-2
+  key3:
+    - value3-1
+    - value3-2
+    - value3-3
