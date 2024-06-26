@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+myguidlib/__init__.py
+myguidlib/generator.py
+myguidlib.egg-info/PKG-INFO
+myguidlib.egg-info/SOURCES.txt
+myguidlib.egg-info/dependency_links.txt
+myguidlib.egg-info/top_level.txt

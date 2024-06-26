@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: myguidlib
+Version: 0.1
+Summary: A simple hello world library to generate GUIDs
+Home-page: https://github.com/brainvs/myguidlib
+Author: brainvs
+Author-email: brainvs@brainvs.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# myguidlib
+
+A simple hello world library to generate GUIDs.
+
+## Installation
+
+```bash
+pip install myguidlib
+```
+
+## Usage
+
+```python
+import myguidlib
+guid = Generator.generate()
+print(guid)
+```
