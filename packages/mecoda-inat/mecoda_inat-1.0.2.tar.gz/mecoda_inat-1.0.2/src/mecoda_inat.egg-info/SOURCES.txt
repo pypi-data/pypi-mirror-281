@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/mecoda_inat/__init__.py
+src/mecoda_inat/mecoda_inat.py
+src/mecoda_inat/models.py
+src/mecoda_inat/py.typed
+src/mecoda_inat.egg-info/PKG-INFO
+src/mecoda_inat.egg-info/SOURCES.txt
+src/mecoda_inat.egg-info/dependency_links.txt
+src/mecoda_inat.egg-info/requires.txt
+src/mecoda_inat.egg-info/top_level.txt
+src/mecoda_inat/data/taxon_tree.csv
+tests/test_inat.py
