@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling", "python-dotenv", "grpcio", "grpcio-tools", "torch", "torchvision"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+name = "remote_rf"
+version = "0.0.2"
+
+[tool.hatch.build.targets.wheel]
+exclude = [
+    "venv/",
+    "venv/**/*",
+    "*.pyc",
+    "__pycache__/"
+]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "venv/",
+    "venv/**/*",
+    "*.pyc",
+    "__pycache__/"
+]
+
+[project]
+name = "remote_rf"
+version = "0.0.2"
+authors = [
+  { name="Ethan Ge", email="ethoGalaxy@gmail.com" },
+]
+description = "A python API to remotely access signal centric hardware."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
