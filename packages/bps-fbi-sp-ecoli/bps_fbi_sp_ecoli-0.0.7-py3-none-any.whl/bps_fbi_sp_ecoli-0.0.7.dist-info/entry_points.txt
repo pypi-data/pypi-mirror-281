@@ -1,0 +1,9 @@
+[console_scripts]
+core_hello_world = bps_fbi_sp_ecoli.core:cli
+fbi_run_ecolityping = bps_fbi_sp_ecoli.run_ecolityping:cli
+fbi_run_postecolityping = bps_fbi_sp_ecoli.run_postecolityping:cli
+fbi_run_qcecolisummary = bps_fbi_sp_ecoli.run_qcecolisummary:cli
+hello_two_world = bps_fbi_sp_ecoli.hello_world:cli
+
+[nbdev]
+bps_fbi_sp_ecoli = bps_fbi_sp_ecoli._modidx:d
