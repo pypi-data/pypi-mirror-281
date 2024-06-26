@@ -1,0 +1,59 @@
+{
+  "src/lib/components/MdxEditor.tsx": {
+    "displayName": "MdxEditor",
+    "description": "MdxEditor is a markdown editor that allows to preview the markdown content and edit\nas rich text.",
+    "props": {
+      "id": {
+        "description": "The ID used to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string",
+              "raw": "string"
+            }
+          ],
+          "raw": "string | undefined"
+        }
+      },
+      "default_text": {
+        "description": "The initial text of the editor",
+        "required": false,
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string",
+              "raw": "string"
+            }
+          ],
+          "raw": "string | undefined"
+        }
+      },
+      "text": {
+        "description": "The text of the editor (read)",
+        "required": false,
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string",
+              "raw": "string"
+            }
+          ],
+          "raw": "string | undefined"
+        }
+      },
+      "setProps": {
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks.",
+        "required": true,
+        "type": {
+          "name": "func",
+          "raw": "(props: Partial<MdxEditorProps>) => void"
+        }
+      }
+    },
+    "isContext": false
+  }
+}

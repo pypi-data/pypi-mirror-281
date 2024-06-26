@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_mdxeditor/MdxEditor.py
+dash_mdxeditor/__init__.py
+dash_mdxeditor/_imports_.py
+dash_mdxeditor/dash_mdxeditor.min.js
+dash_mdxeditor/dash_mdxeditor.min.js.map
+dash_mdxeditor/metadata.json
+dash_mdxeditor/package-info.json
+dash_mdxeditor.egg-info/PKG-INFO
+dash_mdxeditor.egg-info/SOURCES.txt
+dash_mdxeditor.egg-info/dependency_links.txt
+dash_mdxeditor.egg-info/top_level.txt
+tests/test_usage.py
