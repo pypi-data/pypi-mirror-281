@@ -1,0 +1,17 @@
+setup.py
+DeepMusicshot.egg-info/PKG-INFO
+DeepMusicshot.egg-info/SOURCES.txt
+DeepMusicshot.egg-info/dependency_links.txt
+DeepMusicshot.egg-info/top_level.txt
+deepmusic/__init__.py
+deepmusic/composer.py
+deepmusic/imgconnector.py
+deepmusic/keyboardcell.py
+deepmusic/midiconnector.py
+deepmusic/model.py
+deepmusic/model_old.py
+deepmusic/moduleloader.py
+deepmusic/modulemanager.py
+deepmusic/musicdata.py
+deepmusic/songstruct.py
+deepmusic/tfutils.py
