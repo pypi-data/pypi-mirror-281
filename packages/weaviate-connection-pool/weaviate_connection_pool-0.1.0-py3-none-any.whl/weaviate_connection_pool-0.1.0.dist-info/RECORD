@@ -1,0 +1,7 @@
+weaviate_connection_pool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weaviate_connection_pool/pool.py,sha256=RuLYZJXKfqKO51ZwfgLLoy3o3kGlhL4mhwnHkZ5pcEc,2437
+weaviate_connection_pool-0.1.0.dist-info/LICENSE.txt,sha256=H9fykFFxLfyLwMP9fC-4GbiSfvKeSCKVKqjjqPtk84E,1487
+weaviate_connection_pool-0.1.0.dist-info/METADATA,sha256=7mk7MHdgy5mTfi2K36dTa_pm5ZtcECU2gbow5-shR74,3030
+weaviate_connection_pool-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+weaviate_connection_pool-0.1.0.dist-info/top_level.txt,sha256=8BpYozQuKcp88Bc7KlNVjiTnPn_Iw5Ot0p6Y8D8vgq4,25
+weaviate_connection_pool-0.1.0.dist-info/RECORD,,
