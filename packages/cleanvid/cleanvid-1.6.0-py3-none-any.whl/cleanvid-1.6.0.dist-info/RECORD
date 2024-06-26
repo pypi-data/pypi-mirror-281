@@ -1,0 +1,10 @@
+cleanvid/__init__.py,sha256=7ZSizYSn0kOl9dBf1dJKM7jP1SZf065cOnntn24l2Lo,192
+cleanvid/caselessdictionary.py,sha256=SM3jDYTFvAAVg5mrrs5dJRZQN15MFBEQUvNrWynCiGE,2133
+cleanvid/cleanvid.py,sha256=d_sMvDbHVCdDQfqH9k38SiBTaT4bzTaQcLEseUd7zBs,28450
+cleanvid/swears.txt,sha256=FxrO5FsUZWV6TKkjg-vBxmxtPR-WpMBpD3btsrF_Rfc,7295
+cleanvid-1.6.0.dist-info/LICENSE,sha256=mgGf9q4loZFw_WG3ubAB5ZgmPSwNy25l8LsyJRyz7aA,1510
+cleanvid-1.6.0.dist-info/METADATA,sha256=c76XbzpoH2QGAmZtGrCmsKaneBP5yAde_PFBHJGBXMk,7173
+cleanvid-1.6.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+cleanvid-1.6.0.dist-info/entry_points.txt,sha256=7SF3X6uIwSrbYTYT41oOKWztPxe6dpGil5i9Bqs8ai0,50
+cleanvid-1.6.0.dist-info/top_level.txt,sha256=hwh6lBzaoEHZRCvJLDSsnETwiz44RXx3ffXC5_LswR4,9
+cleanvid-1.6.0.dist-info/RECORD,,
