@@ -1,0 +1,2 @@
+[console_scripts]
+gitpyapi=gitpyapi.__main__:main

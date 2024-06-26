@@ -1,0 +1,10 @@
+gitpyapi-1.0.0.dist-info/METADATA,sha256=y9b2xEIr2uzCt9TVoGzoWy2T0TeBzqO149Itp1HYjps,1174
+gitpyapi-1.0.0.dist-info/WHEEL,sha256=wdF4bzqQIptUqX3NwgVBq_d3m8MJ0H2Xu_k69q7KV6E,108
+gitpyapi-1.0.0.dist-info/entry_points.txt,sha256=Quinc7Qr7diJXoVWLW3iJSlhN61ACug298VHk7M4rIY,50
+gitpyapi-1.0.0.dist-info/license_files/LICENSE,sha256=XpvRcFFICf1t0xaAc5FVNcZoGjqpu1kRspmTX1rfWHI,11325
+gitpyapi.libs/libssl-a98fece2.so.3,sha256=8UoHEQGoEGdURtyuTF7-C_THlMbTv02OFkNKdkwrCEw,750633
+gitpyapi.libs/libcrypto-93613d80.so.3,sha256=cdiV3YIM1oyx8odUh5bm17cQmopXNjSPbXWpf78uErQ,5463233
+gitpyapi/__main__.py,sha256=zhhMbAA3NREjkFPCArycuoEO_P8mwCEtSyqgYXMjJ-w,2461
+gitpyapi/__init__.py,sha256=HmVUZFMCrM0H26K5RgAHDGYh9tPYs_Gio3c9wR9zGeY,5820
+gitpyapi/gitpyapi.cpython-312-x86_64-linux-gnu.so,sha256=_JjpaC3qbncn6sIf7vC-zycEGfVB30YewvkScnmONsc,19455513
+gitpyapi-1.0.0.dist-info/RECORD,,
