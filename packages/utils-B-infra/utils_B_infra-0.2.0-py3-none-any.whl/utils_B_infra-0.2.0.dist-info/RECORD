@@ -1,0 +1,12 @@
+utils_b_infra/__init__.py,sha256=s0O6LK1gV3pxRx4RLCbuCVOhn6aJG24gtKAy02X7Np8,146
+utils_b_infra/ai.py,sha256=ukr8FXotQ6pTCXVtDD4S8Y8jYUCYCTf3ojM87ql6UqI,4845
+utils_b_infra/generic.py,sha256=4eMzeREiM8B4A_UE0HAJ8EUigWTeT_Cm_p7-7zp4p00,11235
+utils_b_infra/logging.py,sha256=TT095mmP5gPk3r0fN3XbOfW5kWUdvz94vLF8x2LE6Iw,3950
+utils_b_infra/pandas.py,sha256=wLpoKOTyzRzqG5JGHhjsqPj0WicyI-eN1G8Opmf0p1U,2832
+utils_b_infra/services.py,sha256=LmAtke5bY747Yd0snpnUVJind5ZDAZwEmJvWxWzWJJs,1849
+utils_b_infra/translation.py,sha256=-mvDqla7AHDlWDTS9Atf60DfR0UBaUimF8T8RvP26_E,6018
+utils_B_infra-0.2.0.dist-info/LICENSE,sha256=SHxS7W5hsdIOUB9od39btruqeKLEfSTsSQ04pjB26nE,1083
+utils_B_infra-0.2.0.dist-info/METADATA,sha256=rCrdIdeef0q-ZHpAxGIDVn1zlAI5OyF1OGEb1JmNlZE,4713
+utils_B_infra-0.2.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+utils_B_infra-0.2.0.dist-info/top_level.txt,sha256=6Nq1Vc1OiyDEqaxxNxp79HnS3H8A3S924fAYFJTjmfY,14
+utils_B_infra-0.2.0.dist-info/RECORD,,
