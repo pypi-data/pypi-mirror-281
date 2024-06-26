@@ -1,0 +1,13 @@
+itk/FastBilateralPython.py,sha256=Iu8XqWRDQtBnpxCsPKv1s2UmINv7EJzgtjyHiKeHbDM,2255
+itk/_FastBilateralPython.pyd,sha256=AfCdDLpesmdWKQqGLTL-D4HabCibbJdo3JS6ukoqa54,1193984
+itk/__init_fastbilateral__.py,sha256=f0zENH-UCA9ajvnAHJFpj2eqkc4McoT86Nhw3xxmuyI,347
+itk/itkFastBilateralImageFilterPython.py,sha256=yYz37Yv3uaG5LZiyFmssel-Et9FAVWQt6qfbpDmSFaE,59058
+itk/Configuration/FastBilateralConfig.py,sha256=BKvBgw054zj_8Ly_ouQJo3PueQ20QkO8NxTDeZ2UyDM,2630
+itk/Configuration/FastBilateral_snake_case.py,sha256=OiL6kTaAoYl4-yeLPwSkjFfnduEu0tCQLv5GXeA81vI,58
+itk_fastbilateral-0.1.0.dist-info/licenses/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+itk_fastbilateral.libs/msvcp140.dll,sha256=w73Hg-He0yrhxvTtZ4Hxa-fjesoGa3YjoH-4bk2rYrI,574952
+itk_fastbilateral.libs/tbb12.dll,sha256=uAYeUFrGU4BfPGbeEDcO5SoBUd0xLQeYCBIUMYGAUwA,313344
+itk_fastbilateral-0.1.0.dist-info/DELVEWHEEL,sha256=0sXLT7LTftimaCVTMIeEWkzPWfNEUnsHj0glpoNIjBQ,281
+itk_fastbilateral-0.1.0.dist-info/METADATA,sha256=AB3-2vlt6HKfKR3j9Udlz5fd67uzdxz4qlmAU-dMEGs,15243
+itk_fastbilateral-0.1.0.dist-info/WHEEL,sha256=-UgCblpinadfg0PAykASFusSBw01wo3_NiYBKVftpF0,105
+itk_fastbilateral-0.1.0.dist-info/RECORD,,
