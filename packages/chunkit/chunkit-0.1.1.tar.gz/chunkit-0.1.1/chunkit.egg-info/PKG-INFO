@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: chunkit
+Version: 0.1.1
+Summary: Convert URLs into LLM-friendly text chunks
+Home-page: https://github.com/hypergrok/chunkit
+Author: hypergrok
+Author-email: 173556723+hypergrok@users.noreply.github.com
+Project-URL: Source Code, https://github.com/hypergrok/chunkit
+Description-Content-Type: text/markdown
+
+Initial readme
