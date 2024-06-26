@@ -1,0 +1,16 @@
+autonoma/__init__.py,sha256=YeaoYRyWEeSGhpbhZJAIpqppgktp90af4ik8cXiEpro,67
+autonoma/main.py,sha256=IfjX2GmY7PsLAZagepmWGgdlhPG7FYS0LFtJrAccnh8,1485
+autonoma/models/__init__.py,sha256=022fYhflCA8lqtHC4BsTDkJ0rTCNchfbGJQ3wHtVCEA,690
+autonoma/models/agent.py,sha256=ywzkshddmJzgJ4CYpWRjWoUDn1dF11plKcB8_K20KQ8,1656
+autonoma/models/code.py,sha256=P6x1ClO9spZOqcwY1LlYvj_c6yKBa8IdPRZUfrM1NCA,449
+autonoma/models/coder.py,sha256=kb9GRfadbrQHEudGHThGgpru2gjw-w6YFXDBJCGdYMA,307
+autonoma/models/excecution.py,sha256=Ve0oKECGz9_rgQu0aQ7HA-3FbMyD265DoFEMxRI_0AU,286
+autonoma/models/project.py,sha256=_KKM_1XNVQRHp4jFGWP9x-A2Ufald7HFMLhGxfpPV98,225
+autonoma/models/request.py,sha256=2262oMJI9Cxv5hC5l1OIO4UYRVT4FFmAlyR2Ya-Ang8,218
+autonoma/models/result.py,sha256=VFOrNrzJv9F1jm1oaJ0s8YjkfPE6YPEElmSzf2CjshA,1353
+autonoma/models/task.py,sha256=8TbPUzwu5Lfn-a5_JrszUbKiDy8n4DpBBTmzt8Dxrxo,908
+autonoma/models/test.py,sha256=m70wbRZeZTo0wkDNrDTu6ZC1SU80bNCQHxIbVGbZNno,303
+autonoma-0.1.0.dist-info/METADATA,sha256=qFDvhQVQ08KdJu4CiYrTNez3KifE6ib_A4_UMyR5Br8,926
+autonoma-0.1.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+autonoma-0.1.0.dist-info/top_level.txt,sha256=j1jIYUaIGJWPnADdlLlq1Oba2_sI0JH_zwC_BFOAamY,9
+autonoma-0.1.0.dist-info/RECORD,,
