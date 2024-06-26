@@ -1,0 +1,5 @@
+pyproject.toml
+qualibrate_config.egg-info/PKG-INFO
+qualibrate_config.egg-info/SOURCES.txt
+qualibrate_config.egg-info/dependency_links.txt
+qualibrate_config.egg-info/top_level.txt
