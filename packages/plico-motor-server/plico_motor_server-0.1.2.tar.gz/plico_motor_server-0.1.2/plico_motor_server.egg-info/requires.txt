@@ -1,0 +1,8 @@
+plico>=0.27
+plico_motor>=0.0.5
+numpy
+psutil
+pyserial
+pipython
+libximc
+pythonnet
