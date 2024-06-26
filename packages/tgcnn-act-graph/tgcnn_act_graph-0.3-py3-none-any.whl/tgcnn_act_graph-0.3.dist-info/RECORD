@@ -1,0 +1,12 @@
+test_graphs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_graphs/test_calculations.py,sha256=EDFp9XMWV9E3s--t0ApCq-pQh8m3NyD8X-Tl9Iu94k8,7219
+tgcnn_act_graph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgcnn_act_graph/calculations.py,sha256=2DAlgTihLw35YcCT_lcSp0RNv3JqMHMghDLvOvEuk1U,2969
+tgcnn_act_graph/figures.py,sha256=moeG8H63KOpn6EBDUCa7zvUb6gWjoPIf36q66h25UbQ,4821
+tgcnn_act_graph/max_act_diff.py,sha256=8nDyApiZZPeMBjrtq7hlC0baQsqhImPpQ9hUMip0RP0,4614
+tgcnn_act_graph/utils.py,sha256=mCj6tLXncbpGhM1fk10XshPU_YRwsba9hsotUfXlcGA,6667
+tgcnn_act_graph-0.3.dist-info/LICENSE.txt,sha256=l2m_OkjP-3HEz9Zp0tAiYTJDdpYDv4jRxNumrODSJx8,1492
+tgcnn_act_graph-0.3.dist-info/METADATA,sha256=03EtaQ55UvC1T6D30RjMQjpAXyG9rF9konIWbsl4dRQ,6725
+tgcnn_act_graph-0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+tgcnn_act_graph-0.3.dist-info/top_level.txt,sha256=WbRvaQR86eh-n5O1VkDqQMkMJB4YexDQy8sPa-KfCQ8,28
+tgcnn_act_graph-0.3.dist-info/RECORD,,
