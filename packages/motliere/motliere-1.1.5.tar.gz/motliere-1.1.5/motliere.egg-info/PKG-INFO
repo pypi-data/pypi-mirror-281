@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: motliere
+Version: 1.1.5
+Summary: A morphological and linguistically motivated segmentation tool for French !
+License: gnu
+License-File: LICENSE
+Requires-Dist: numpy<2.0.0
+Requires-Dist: pandas
+Requires-Dist: spacy
