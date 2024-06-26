@@ -1,0 +1,2 @@
+[gui_scripts]
+plico_motor_gui = plico_motor.gui.plico_motor_gui:main
