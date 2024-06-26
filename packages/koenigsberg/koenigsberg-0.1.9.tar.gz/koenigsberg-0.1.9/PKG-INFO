@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: koenigsberg
+Version: 0.1.9
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# koenigsberg
+
+[![codecov](https://codecov.io/gh/mesejo/koenigsberg/graph/badge.svg?token=9DZDRLUG10)](https://codecov.io/gh/mesejo/koenigsberg)
+![Codecov](https://img.shields.io/codecov/c/github/mesejo/koenigsberg)
+
+
+A really cool library for graph algorithms
+
