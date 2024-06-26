@@ -1,0 +1,2 @@
+[console_scripts]
+linkedin-ai = linkedin_ai.app:main
