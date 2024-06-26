@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: dagent
+Version: 0.0.1
+Summary: AI Agents as DAGs - Directed Acyclic Graphs
+Author-email: Parth Sareen <parth@extensible.dev>
+Requires-Python: >=3.8
+Requires-Dist: litellm>=1.39.5
+Description-Content-Type: text/markdown
+
+# dagent
+
+Describe your project here.
