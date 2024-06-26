@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cqt-jax
+Version: 0.2.0
+Summary: A JAX implementation of Constant-Q Transform
+Home-page: https://github.com/emmanuelinfante/cqt-jax
+Author: emmanuelinfante
+Author-email: emanuel.06.educacion@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: jax >=0.2.21
+Requires-Dist: jaxlib >=0.1.71
+
