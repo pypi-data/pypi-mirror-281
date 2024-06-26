@@ -1,0 +1,15 @@
+komanawa/kendall_stats/__init__.py,sha256=8Oseh_TsrUFW4uEOUEtxIciDRJcnfLu9c7jDkZW-ZmQ,372
+komanawa/kendall_stats/example_data.py,sha256=0H3dh2BalOm8gnSA9lqv7eUQR7f4oSPuwJLnh0EPMic,6840
+komanawa/kendall_stats/mann_kendall.py,sha256=W-uYlwaHDhO9yEgjpeBLqisHqZGY0v0bau3iMSWbs3s,21394
+komanawa/kendall_stats/multi_part_kendall.py,sha256=IPxlC-IOz5dhB7I4_6r1ErXmE1gcvpjiFf7iHmtQ9RU,47109
+komanawa/kendall_stats/time_test_check_step_window_results.txt,sha256=nzv_HxFwYxPPbb9DrDrWk_dbVEazNWCZJu7wdNgFvBc,349
+komanawa/kendall_stats/time_test_results.txt,sha256=cXNKfTUI6jXGriFGTqgNxEeRJhtwfLtUR5v_25zRV8g,859
+komanawa/kendall_stats/time_tests.py,sha256=FN20frkRZefgTsH3ztRoEEbMBBruKyAjp2T-4JcgB_k,7450
+komanawa/kendall_stats/time_tests_check_step_window.py,sha256=OZvVgf0jdiDiEh4oEjd_Dik2fk0uxhJPw2XNIHIpol8,3457
+komanawa/kendall_stats/utils.py,sha256=IC7_dYEwEgBa21gvWQw4g5fj3-L5Fw47AR9r7T1Adtw,1967
+komanawa/kendall_stats/version.py,sha256=PiRDjUrFUHto86y7YVC_BF48K-QtHw7DBphJYg0-dRo,64
+komanawa_kendall_stats-2.0.1.dist-info/LICENSE,sha256=_sscsjIqGPEWgrssBtJBCM8Cnv7Lv0v_q3J3oXEbTbs,1067
+komanawa_kendall_stats-2.0.1.dist-info/METADATA,sha256=2EZiwnpoAzidQk9RWJ0brT9z4hHSHG2QY8QNOB72AY4,2269
+komanawa_kendall_stats-2.0.1.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+komanawa_kendall_stats-2.0.1.dist-info/top_level.txt,sha256=2Ian9yrc1yRp4TqnDnZ9mTDRMVo9NlD1YcydqB7oNe8,9
+komanawa_kendall_stats-2.0.1.dist-info/RECORD,,
