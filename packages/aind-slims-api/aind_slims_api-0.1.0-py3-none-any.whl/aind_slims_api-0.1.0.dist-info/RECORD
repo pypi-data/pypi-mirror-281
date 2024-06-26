@@ -1,0 +1,11 @@
+aind_slims_api/__init__.py,sha256=s6taitFEr7SVLdFOY9u63UxLwQcS2xvwqxvg2J8tF2E,191
+aind_slims_api/configuration.py,sha256=rLs8i_GCRi-9Cg29pSTgmZ1qXP_V9jzt4u6X7XqQs_c,492
+aind_slims_api/core.py,sha256=ClDFaex3a2uQFjx86jLXgliYVZHuNO1jX01ipNYfCk4,9104
+aind_slims_api/mouse.py,sha256=1_X_3vg9eg3f1ugxlZl1V4vva_wmxPF9QWmeYPMXvIY,2264
+aind_slims_api/unit.py,sha256=1Lbc2kVjNhb5h0DHpeaanQ0So5wGl-ZesulwJeql4vo,457
+aind_slims_api/user.py,sha256=wIwO11qZy0aYF87PDmCxsYSid-3qb8F7gszjY71uAqE,1575
+aind_slims_api-0.1.0.dist-info/LICENSE,sha256=U0Y7B3gZJHXpjJVLgTQjM8e_c8w4JJpLgGhIdsoFR1Y,1092
+aind_slims_api-0.1.0.dist-info/METADATA,sha256=jNFiM8oed8-PY_YUC2AsXjC7MUWnsNEQINkki67VMQ4,5440
+aind_slims_api-0.1.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+aind_slims_api-0.1.0.dist-info/top_level.txt,sha256=sH9tnV3qIC_1S0tVe5Wuf-30QGwfMEiURADASYzNAkA,15
+aind_slims_api-0.1.0.dist-info/RECORD,,
