@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: nautobot-uuid-lookup
+Version: 1.0.0
+Summary: Nautobot plugin with short URL for all objects with UUID
+License: Apache-2.0
+Author: Gesellschaft für wissenschaftliche Datenverarbeitung mbH Göttingen
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Nautobot UUID Lookup Plugin
+
+Simple plugin to redirect existing UUIDs to the according object pages. Queries all nautobot `BaseModels`s. Fails if the models have no `get_absolute_url` method.
+
+## Website
+Usage: `https://your-nautobot-instance.com/plugins/uuid/YOUR-UUID-HERE`
+
+## API
+Usage: `https://your-nautobot-instance.com/api/plugins/uuid/YOUR-UUID-HERE`
+
