@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: siat
+Version: 3.2.17
+Summary: Securities Investment Analysis Tools (siat)
+Home-page: https://pypi.org/project/siat/
+Author: Prof. WANG Dehong, International Business School, Beijing Foreign Studies University
+Author-email: wdehong2000@163.com
+License: Copyright (C) WANG Dehong, 2024. For educational purpose only!
+Description-Content-Type: text/markdown
+Requires-Dist: pandas-datareader
+Requires-Dist: yfinance
+Requires-Dist: tqdm
+Requires-Dist: plotly-express
+Requires-Dist: akshare
+Requires-Dist: urllib3
+Requires-Dist: mplfinance
+Requires-Dist: statsmodels
+Requires-Dist: yahoo-earnings-calendar
+Requires-Dist: yahooquery
+Requires-Dist: pypinyin
+Requires-Dist: seaborn
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: baostock
+Requires-Dist: pyproject.toml
+Requires-Dist: pathlib
+Requires-Dist: ruamel-yaml
+Requires-Dist: prettytable
+Requires-Dist: graphviz
+Requires-Dist: luddite
+Requires-Dist: pendulum
+
+*** What is siat?
+siat is a Python plug-in, which stands for security investment analysis toolkit. It is specially designed for teaching and learning purposes on security investment in universities for undergraduate and postgraduate programs.
+
+*** What sort of securities does siat support?
+1. Public company profile:  world-wide
+2. Stock & stock market index: world-wide
+3. Stock valuation: primarily in China (mainland and HK) and the U.S.
+4. Stock option chain: primarily in the U.S.
+5. Bond: primarily in China and the U.S.
+6. Markowitz portfolio: with all the supported stocks and bonds
+7. Fund: primarily in China and the U.S.
+8. Futures: primarily in China and the U.S.
+9. Options: primarily in China and the U.S.
+10. Digital currency:  world-wide (some may be restricted by data sources)
+11. Balance sheet: in China (full function) and world-wide (basic function)
+12. Income statement: in China mainland (full function) and world-wide (basic function)
+13. Cash flow statement: in China mainland (full function) and world-wide (basic function)
+14. Du Pont Identity:  world-wide
+15. Sector trend and valuation: primarily in China
+
+*** What sort of analysis does siat support?
+1. Trend analysis
+2. Panel comparation
+3. Return analysis: rolling returns, holding period returns
+4. Risk analysis: rolling volatility, holding period volatility, LPSD
+5. Technical analysis: more than 15 indicators
+6. Risk-adjusted return: sharpe, sortino, treynor, Jensen alpha
+7. Portfolio optimization: four risk-adjusted returns
+8. CAPM beta trend
+9. Beta adjustments: simple adjustment, Scholes-Williams, Dimson
+10. Beta leverage: Hamada Model
+11. Fama-French three-factor model
+12. Fama-French-Carhart four-factor model
+13. Fama-French five-factor model
+14. Future pricing
+15. Option pricing: European style, American style, with/without dividends
+16. VaR & ES: variance-covariance, historic simulation, Monte Carlo, multiple periods
+17. Liquidity risk: Roll spread, Amihud, Pastor-Stambaugh
+18. ESG: basic function
+
+*** Do I have to download data first before using siat?
+NO!
+siat will search the internet data sources for all the required data during analysis.
+The main data sources siat uses:
+1. Yahoo Finance
+2. Sina Finance
+3. East Money
+4. Stooq (Polish)
+5. FRED
+6. OECD
+7. IMF
+8. Shanghai Stock Exchange
+9. Shenzhen Stock Exchange
+10. Tokyo Stock Exchange
+11. HKEX
+12. Sustainalytics
+Thanks the above websites for their valuable data supply!
+
+*** How is siat version numbered?
+siat version format: X.Y.Z
+X is the major version number. 
+If the major number X changes, it means a primary upgrade, usually there are some big changes in the architecure. However, user's habits will remain for most of the cases.
+
+Y is the revision number. 
+If the revision number Y changes, it usually indicates some new functions have been compiled into the package.
+
+Z is the build number. 
+A build number Z change usually reveals a new compilation over the package for the purpose of debug only.
+
+*** When to upgrade siat?
+If you have been using the existing copy very well, there is no need to follow up the newest version. However, if you do find
+some bugs in using siat, most of the time it is a quick solution to upgrade siat as well as the dependent modules that siat relies on.
+
+*** How to upgrade siat?
+It is strongly recommended to use siat in Jupyter Notebook or Jupyter Lab. In Jupyter, there is an easy way to directly upgrade siat and its relevent modules together in the following command:
+upgrade_siat()
+
+If Jupyter prompts that pip command not found during the upgrade, it usually means that you need tick the checkbox 
+"Add Python to your path" or something like this during Anaconda installation. If you forget to tick the checkbox, you may need to remedy the situation case by case. In some of the situations, the following command may work in Anaconda Prompt, but not for all the cases:
+python -m ensurepip
+
+*** Are there detailed case studies on using siat?
+YES, hundreds of video case studies in the author's channel (most in Chinese, some in English).
+https://space.bilibili.com/284812153
+Welcome to follow the channel!
+
+*** How to report a bug and look for help?
+Write to the author, Prof. WANG Dehong, wdehong2000@163.com
