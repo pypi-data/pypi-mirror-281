@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ampari
+Version: 0.1.5
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: twine>=5.1.0; extra == "dev"
+
+# ampari
