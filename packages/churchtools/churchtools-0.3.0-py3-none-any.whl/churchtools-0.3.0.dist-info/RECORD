@@ -1,0 +1,17 @@
+churchtools/__init__.py,sha256=6vJYbjxeOH7F-6I4OTjZYeHmFPPdIz2kkKJ878kPTOw,8734
+churchtools/calendars.py,sha256=1HNYoAeGISL0XwJmSASBKB0qCuKpj9J_BafKM13HtG4,4888
+churchtools/departments.py,sha256=-uYZ6VzAJf_ahIEu_pjR6zzKO0D3zwWIR3J0nHbgWCw,628
+churchtools/events.py,sha256=NJOFDuM1irSZlaiaISJQSTQNvHvwx2WrGhIYHe-Fsrs,3435
+churchtools/general.py,sha256=MgTD9f6e3T-lQmaC9yKyjquvL0N83FQvZY34uPpjfzE,2495
+churchtools/group_homepages.py,sha256=2P1-3n8d8vpynR42AgHQgAvqb1Of6UE7TyoEHEOhlQU,935
+churchtools/groups.py,sha256=hFDTzkQMm9obalgPXcMYT3G3fF-gzJHUNsS1MCB4E7w,570
+churchtools/persons.py,sha256=ES98G4WVHwqwr4GrpJidKDMnZ0HjNlmkYm22QPDKWhY,11952
+churchtools/services.py,sha256=Qr3l-TKvlbeUOiXIV8EdTjmWquFo71etTPltkMist2w,1026
+churchtools/songs.py,sha256=M-PRvQuqYmMOVIovwVUlcj8S1m2W0qBQWg2NZ5bSirg,2417
+churchtools/status.py,sha256=D5-FSY-67J6XxJgs7kb9TvACygr3xQsRZUMX6eGfO6A,1207
+churchtools/wiki.py,sha256=R1ZQ4DKX-SvBB-xfgzuc6f-_b-k0DVDBJhxiPornZHA,3610
+churchtools-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+churchtools-0.3.0.dist-info/METADATA,sha256=xowOyXB6CwvvcXwXbiAeHInDzzJSA6paoOednaBIOHQ,2485
+churchtools-0.3.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+churchtools-0.3.0.dist-info/top_level.txt,sha256=CcC3QxK7CYaTs89MlZszpVEk93hnsSLsH4jH0cixDKY,12
+churchtools-0.3.0.dist-info/RECORD,,
