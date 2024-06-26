@@ -1,0 +1,2 @@
+[console_scripts]
+optimodel-server = cli:main
