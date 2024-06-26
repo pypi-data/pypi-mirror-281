@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: torch_semiring_einsum
+Version: 1.2.0
+Summary: Extensible PyTorch implementation of einsum that supports multiple semirings
+Home-page: https://bdusell.github.io/semiring-einsum/
+License: MIT
+Author: Brian DuSell
+Author-email: bdusell@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Dist: pynvml (>=11.0.0,<12.0.0)
+Requires-Dist: torch (>=1.1.0,<3)
+Requires-Dist: typing-extensions (>=4.0.0,<5.0.0)
+Project-URL: Repository, https://github.com/bdusell/semiring-einsum
+Description-Content-Type: text/markdown
+
+Semiring Einsum
+===============
+
+This is an extensible PyTorch implementation of
+[einsum](https://pytorch.org/docs/master/generated/torch.einsum.html)
+that supports multiple semirings.
+
+[Read the full documentation here.](https://bdusell.github.io/semiring-einsum/)
+
