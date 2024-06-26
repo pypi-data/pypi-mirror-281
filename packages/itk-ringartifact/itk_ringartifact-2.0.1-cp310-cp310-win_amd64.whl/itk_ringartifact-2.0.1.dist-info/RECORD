@@ -1,0 +1,13 @@
+itk/RingArtifactPython.py,sha256=n_lRDQV98tu975xfiTLuaJECRO3MUKbQ7sJg-NLWPHA,2221
+itk/_RingArtifactPython.pyd,sha256=BRc8QdWvz39tS0nkxBUz5iSFchapsdULdNASUUrOkPw,801280
+itk/__init_ringartifact__.py,sha256=iAN2EPkwehSbvu071bRj0NIdc8goMVWSQR7-3oCdyAk,346
+itk/itkFourierStripeArtifactImageFilterPython.py,sha256=9Kvn2hbG1WD8bMLqYW10zQ83Yxphg2RvCoWiL75CKK8,29609
+itk/Configuration/RingArtifactConfig.py,sha256=dPmxHG6jOZC6P_fEY1efQUhspoJc3-_jEiMIWo5sWZ0,1015
+itk/Configuration/RingArtifact_snake_case.py,sha256=gECLSNGomx87DoUi3m8BgyClxuQR5UGg7u10ysdNMWo,67
+itk_ringartifact-2.0.1.dist-info/licenses/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+itk_ringartifact.libs/msvcp140.dll,sha256=w73Hg-He0yrhxvTtZ4Hxa-fjesoGa3YjoH-4bk2rYrI,574952
+itk_ringartifact.libs/tbb12.dll,sha256=uAYeUFrGU4BfPGbeEDcO5SoBUd0xLQeYCBIUMYGAUwA,313344
+itk_ringartifact-2.0.1.dist-info/DELVEWHEEL,sha256=RLM1632GUZzAsKT5m7iVoyl6I-3WTiqccmiqwOVZfvM,280
+itk_ringartifact-2.0.1.dist-info/METADATA,sha256=tkPSXCSdiXRCTmXZPCswSgKf1_Y5W5V6EinBOc7l-zw,15796
+itk_ringartifact-2.0.1.dist-info/WHEEL,sha256=-UgCblpinadfg0PAykASFusSBw01wo3_NiYBKVftpF0,105
+itk_ringartifact-2.0.1.dist-info/RECORD,,
