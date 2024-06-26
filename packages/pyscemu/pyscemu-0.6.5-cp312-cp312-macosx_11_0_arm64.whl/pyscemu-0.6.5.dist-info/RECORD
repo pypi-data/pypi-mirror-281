@@ -1,0 +1,5 @@
+pyscemu-0.6.5.dist-info/METADATA,sha256=PeSMkxLX03tLy9nEpfko9S2mf_TC9fJzUd_alYVZAKY,10480
+pyscemu-0.6.5.dist-info/WHEEL,sha256=cUEq4b8lDgfuNVcz_eQPCw-aqCgoD2fen9AD0LryJtQ,104
+pyscemu/__init__.py,sha256=jjMhIttPyfTdr1MHka85RPpp3dxlC-NA2fRUcY4P3og,111
+pyscemu/pyscemu.cpython-312-darwin.so,sha256=xspgJZ8sKK7JB3A7eiMs9TaBFApJtCyRNP_SUiIcwP8,4698832
+pyscemu-0.6.5.dist-info/RECORD,,
