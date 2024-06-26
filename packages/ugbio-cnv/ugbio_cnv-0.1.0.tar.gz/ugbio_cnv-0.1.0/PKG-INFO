@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: ugbio_cnv
+Version: 0.1.0
+Requires-Python: >=3.12
+Requires-Dist: ugbio_core
