@@ -1,0 +1,20 @@
+min_x || y - Ax || ^2
+where A is n by p matrix
+
+(1)
+If n≥ p (“under-fitting” or “over-determined" case),
+
+then solution is hat{x} = (A^T A)^-1 A^T y
+
+(2)
+if n < p (“over-fitting” or “under-determined” case),
+there are infinitely many solutions that give *zero* training error.
+
+We pick min‖x‖² norm solution: \hat{x} A^T (A A^T)^-1 y
+
+
+In either case, the solution can be compactly written in therms of the SVD of A
+
+A = USV^T
+
+
