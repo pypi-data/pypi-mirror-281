@@ -1,0 +1,8 @@
+psutil
+requests
+gdal
+numpy
+boto3
+pyproj
+levenshtein
+xmltodict
