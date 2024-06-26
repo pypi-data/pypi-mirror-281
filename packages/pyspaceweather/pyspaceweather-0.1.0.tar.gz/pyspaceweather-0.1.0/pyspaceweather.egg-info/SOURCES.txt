@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+pyspaceweather/__init__.py
+pyspaceweather/pyspaceweather.py
+pyspaceweather.egg-info/PKG-INFO
+pyspaceweather.egg-info/SOURCES.txt
+pyspaceweather.egg-info/dependency_links.txt
+pyspaceweather.egg-info/requires.txt
+pyspaceweather.egg-info/top_level.txt
+tests/test_pyspaceweather.py
