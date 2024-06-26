@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "vkr-build"
+version = "0.1.2"
+description = "Автоматизированное решение вёрстки курсовых/дипломных работ."
+authors = ["dx3mod"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "vkr_build" }]
+include = ["styles/*"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+weasyprint = "^62.3"
+pydantic = "^2.7.4"
+beautifulsoup4 = "^4.12.3"
+pypandoc = "^1.13"
+
+
+[tool.poetry.scripts]
+vkr-build = "vkr_build.console:run"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
