@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gradio_fastapi/__init__.py
+gradio_fastapi/lifespan.py
+gradio_fastapi/tunneling.py
+gradio_fastapi.egg-info/PKG-INFO
+gradio_fastapi.egg-info/SOURCES.txt
+gradio_fastapi.egg-info/dependency_links.txt
+gradio_fastapi.egg-info/requires.txt
+gradio_fastapi.egg-info/top_level.txt
