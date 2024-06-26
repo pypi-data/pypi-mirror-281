@@ -1,0 +1,16 @@
+deepmusic/__init__.py,sha256=PfoG6h1EtLGgQPbib2Ez_75-wvcSFeoLbFOS_lupnS4,64
+deepmusic/composer.py,sha256=cA64_qzyx8mPTuGmnbnU9fJjsj4VkSR4GbrDKYPWAg4,29858
+deepmusic/imgconnector.py,sha256=NCrIyB5bi1kecwP1ddG1I_0XQPApMlMv3KHVxjLHvWU,2149
+deepmusic/keyboardcell.py,sha256=XqDR-Z82uEMDdgAS9ogrA_aAm_YMHmDcBXMYLspZQAs,2972
+deepmusic/midiconnector.py,sha256=kJDzIoGr24-7OHTg4e5G_4nasA908osjjLq7IotECW0,10719
+deepmusic/model.py,sha256=QNASba4P-oqqNMK8wkx4SzDlRcJaebN6tnAW4B2bpg4,15492
+deepmusic/model_old.py,sha256=WCVKI7mUsmfZcp6TUTKfsku5obzVh_2MCAPeCSWcHVE,18528
+deepmusic/moduleloader.py,sha256=qKvRhDcOl_MUWBKRw1P1ssfgAeZz9nrCWsE1YBGDpek,4212
+deepmusic/modulemanager.py,sha256=x1dbtQvLxilL7oGcM1dowq2bZZkwDmz-1mzEU2g3Dns,5360
+deepmusic/musicdata.py,sha256=nCMZbToqC6gzn5hINAqHZOeLL54VXQXHAax6RjX9fvM,16447
+deepmusic/songstruct.py,sha256=p5x56pdUp0Xe3Ez96p8rlV5QKngJIX2CE2Bkqe7kLng,5147
+deepmusic/tfutils.py,sha256=IxsLawhqRjkH8VowsWfcYDEdKMooHBhXy60Jo4NYVdA,2561
+DeepMusicshot-0.0.1.dist-info/METADATA,sha256=ChYhQOhKuLcyzh504owJbiim8jgixM6cRv6SZ-k7Q8Y,491
+DeepMusicshot-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+DeepMusicshot-0.0.1.dist-info/top_level.txt,sha256=8P6lwF9olaqBbx6GwHzYADWzXYouWFLmqK9xOx_l834,10
+DeepMusicshot-0.0.1.dist-info/RECORD,,
