@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+ifea/__init__.py
+ifea.egg-info/PKG-INFO
+ifea.egg-info/SOURCES.txt
+ifea.egg-info/dependency_links.txt
+ifea.egg-info/requires.txt
+ifea.egg-info/top_level.txt
