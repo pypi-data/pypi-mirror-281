@@ -1,0 +1,15 @@
+mknotebooks/__init__.py,sha256=t9KZdp_DIvv91kyAlbqfXkrky_63qicYujvE-nd8xlM,93
+mknotebooks/_version.py,sha256=Iy78CCVJkRaMlGzcnTqkTJtAr6fP-5YeGoqGKC5I2Z8,509
+mknotebooks/extra_args_execute_preprocessor.py,sha256=DKJF-c45T5Lst8yIvooOUc3Q9J_2WFlGRKmH9OwLkT4,206
+mknotebooks/pandas_output_formatter.py,sha256=sGnY-j6VkLSUhExqB3N_t-BUKVuqwl-QEaAzHdNZDK8,1565
+mknotebooks/plugin.py,sha256=2d-jzi4MM7RnZwzBcVdLalxQun0mrn4IRBvQL0XzdXU,15804
+mknotebooks/templates/ansi-colours.css,sha256=xmZGgGrfNm_-BsTEefjJtJA5IUSZMK_7lrefaX5AzCY,2778
+mknotebooks/templates/custom_markdown.tpl,sha256=AX_Ud8cqujg5ks1NzTj7tkXTm5l1TtlQqa6uPQDcPac,7547
+mknotebooks/templates/jupyter-cells.css,sha256=8Gwk_1FYXkYGcAPdW_s_7MdppYxBOcVR63ufBfca_lo,167
+mknotebooks/templates/pandas-dataframe.css,sha256=q7WPaymN6XAADjJX9stENlC4G9ka3A2_NoN6aqW2mcg,769
+mknotebooks_with_links-0.7.1.post0.dev809.dist-info/LICENSE,sha256=CwvjtIDDWUr3GFIL1rFigM_JZyLi6EIhhnhzeV4gQ0M,1069
+mknotebooks_with_links-0.7.1.post0.dev809.dist-info/METADATA,sha256=Ipj-zYP8Ow5Cv6vNxxzyKKwh6OK3UJqxt-GeNeNOcgs,4339
+mknotebooks_with_links-0.7.1.post0.dev809.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mknotebooks_with_links-0.7.1.post0.dev809.dist-info/entry_points.txt,sha256=nj_6exIdPvZgRnrbAXILTtgH4uHhxV-WI2De3IiuiFw,58
+mknotebooks_with_links-0.7.1.post0.dev809.dist-info/top_level.txt,sha256=nPJEeaIhj8tOEvqAhTxmuy3KkHt5h3cyHdfFfuBp2Xc,12
+mknotebooks_with_links-0.7.1.post0.dev809.dist-info/RECORD,,
