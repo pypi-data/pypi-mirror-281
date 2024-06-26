@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/func_call_tracer/__init__.py
+src/func_call_tracer/func_call_tracer.py
+src/func_call_tracer.egg-info/PKG-INFO
+src/func_call_tracer.egg-info/SOURCES.txt
+src/func_call_tracer.egg-info/dependency_links.txt
+src/func_call_tracer.egg-info/top_level.txt

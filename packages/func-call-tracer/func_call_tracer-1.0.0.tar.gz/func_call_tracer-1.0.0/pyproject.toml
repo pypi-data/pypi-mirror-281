@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "func_call_tracer"
+version = "1.0.0"
+authors = [
+  { name="ticoli", email="binhua.lbh@alibaba-inc.com" },
+]
+description = "A function call tracer for Python"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
