@@ -1,0 +1,16 @@
+examples/touch_reward.py,sha256=DfvS2gE4puIyKRtk-oha4NJ5-2nf2_0TfWUdlRVCsqg,29744
+examples/touch_reward_lastrun.py,sha256=-N-FgEHrFWlUpOSVKjleMXCdnJuAa07XcfvKaPHDnRc,29760
+psychopy_zaci/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psychopy_zaci/components/pellet_dispenser/__init__.py,sha256=Bv00Nfrqr9v6LxbCCwdEp1r5peECRlGUCOn4baNS9Vk,7064
+psychopy_zaci/components/pellet_dispenser/classic/reward.png,sha256=vyZ_dk0wfIvy48NUGNVLaORColywK6YFWSszqbEO5KI,23809
+psychopy_zaci/components/pellet_dispenser/classic/reward@2x.png,sha256=xA2x6-mJ4UFYnG5UFlu1qHyzEAeMWOkLp3bFe74AAd4,38863
+psychopy_zaci/components/pellet_dispenser/dark/reward.png,sha256=vyZ_dk0wfIvy48NUGNVLaORColywK6YFWSszqbEO5KI,23809
+psychopy_zaci/components/pellet_dispenser/dark/reward@2x.png,sha256=xA2x6-mJ4UFYnG5UFlu1qHyzEAeMWOkLp3bFe74AAd4,38863
+psychopy_zaci/components/pellet_dispenser/light/reward.png,sha256=vyZ_dk0wfIvy48NUGNVLaORColywK6YFWSszqbEO5KI,23809
+psychopy_zaci/components/pellet_dispenser/light/reward@2x.png,sha256=xA2x6-mJ4UFYnG5UFlu1qHyzEAeMWOkLp3bFe74AAd4,38863
+psychopy_zaci/devices/pellet_dispenser.py,sha256=sMvomikdJGmUfdmgaSIBfbcL7T_AqJz1GvAPRuhNGqc,4457
+psychopy_zaci-0.0.1a2.dist-info/METADATA,sha256=fAhJ-awkrHniWOqx-jRcV73By5PasoYdzhLq_Fclok4,2257
+psychopy_zaci-0.0.1a2.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+psychopy_zaci-0.0.1a2.dist-info/entry_points.txt,sha256=7jcDRAec2rPvwPRWQtvQOhizvOuqgWf0I2E72hDvf4M,127
+psychopy_zaci-0.0.1a2.dist-info/top_level.txt,sha256=C3ufxi_IQfNyt8lmdI2O7fQYxx-VVh74GGXU1INnEQQ,23
+psychopy_zaci-0.0.1a2.dist-info/RECORD,,
