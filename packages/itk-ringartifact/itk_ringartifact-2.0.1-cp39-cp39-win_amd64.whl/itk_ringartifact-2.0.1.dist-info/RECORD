@@ -1,0 +1,14 @@
+itk/RingArtifactPython.py,sha256=n_lRDQV98tu975xfiTLuaJECRO3MUKbQ7sJg-NLWPHA,2221
+itk/_RingArtifactPython.pyd,sha256=VOUj4mS68eVLeg3BQQuCKA3qb_bSE1x57zSo3rBr4Y8,801792
+itk/__init_ringartifact__.py,sha256=R7i0gr61KcC6HTL0x13Y3bLSXo1j6p9PNnjhlgK2gw8,1396
+itk/itkFourierStripeArtifactImageFilterPython.py,sha256=Qb2FMClm2jzFZoic0VtOVfBNa0_MQ_8iDCKKkbmttg8,29609
+itk/Configuration/RingArtifactConfig.py,sha256=dPmxHG6jOZC6P_fEY1efQUhspoJc3-_jEiMIWo5sWZ0,1015
+itk/Configuration/RingArtifact_snake_case.py,sha256=gECLSNGomx87DoUi3m8BgyClxuQR5UGg7u10ysdNMWo,67
+itk_ringartifact-2.0.1.dist-info/licenses/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+itk_ringartifact.libs/.load-order-itk_ringartifact-2.0.1,sha256=KPQ4liKDd3FKH5bk1FSwWY5X1xJ5X_7v2znxVTKFvlk,23
+itk_ringartifact.libs/msvcp140.dll,sha256=w73Hg-He0yrhxvTtZ4Hxa-fjesoGa3YjoH-4bk2rYrI,574952
+itk_ringartifact.libs/tbb12.dll,sha256=uAYeUFrGU4BfPGbeEDcO5SoBUd0xLQeYCBIUMYGAUwA,313344
+itk_ringartifact-2.0.1.dist-info/DELVEWHEEL,sha256=9DWAM4Lw6lGIyvx2vjAjb6vEOpxr3p7fPKDVWFTzMGg,277
+itk_ringartifact-2.0.1.dist-info/METADATA,sha256=tkPSXCSdiXRCTmXZPCswSgKf1_Y5W5V6EinBOc7l-zw,15796
+itk_ringartifact-2.0.1.dist-info/WHEEL,sha256=ZGqof_gNyiU0F9ZTzrw4zFIqyjwzlcLXZFe0-CwerKU,103
+itk_ringartifact-2.0.1.dist-info/RECORD,,
