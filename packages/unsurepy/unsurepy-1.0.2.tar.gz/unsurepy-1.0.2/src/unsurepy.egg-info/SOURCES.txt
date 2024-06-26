@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/unsurepy/__init__.py
+src/unsurepy/core.py
+src/unsurepy.egg-info/PKG-INFO
+src/unsurepy.egg-info/SOURCES.txt
+src/unsurepy.egg-info/dependency_links.txt
+src/unsurepy.egg-info/requires.txt
+src/unsurepy.egg-info/top_level.txt
