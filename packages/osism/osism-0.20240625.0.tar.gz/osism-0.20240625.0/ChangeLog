@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20240625.0
+-------------
+
+* chore(deps): update dependency ansible-core to v2.17.1 (#894)
