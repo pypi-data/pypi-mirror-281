@@ -1,0 +1,11 @@
+nomad-lab>=1.2.2dev578
+matid>=2.0.0.dev2
+
+[dev]
+mypy==1.0.1
+ruff
+pytest
+pytest-timeout
+pytest-cov
+structlog
+lxml_html_clean>=0.1.0
