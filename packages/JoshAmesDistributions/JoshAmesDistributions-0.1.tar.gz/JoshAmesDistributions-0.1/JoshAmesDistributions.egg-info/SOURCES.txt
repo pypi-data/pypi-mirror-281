@@ -1,0 +1,10 @@
+setup.py
+JoshAmesDistributions/Binomialdistribution.py
+JoshAmesDistributions/Gaussiandistribution.py
+JoshAmesDistributions/Generaldistribution.py
+JoshAmesDistributions/__init__.py
+JoshAmesDistributions.egg-info/PKG-INFO
+JoshAmesDistributions.egg-info/SOURCES.txt
+JoshAmesDistributions.egg-info/dependency_links.txt
+JoshAmesDistributions.egg-info/not-zip-safe
+JoshAmesDistributions.egg-info/top_level.txt
