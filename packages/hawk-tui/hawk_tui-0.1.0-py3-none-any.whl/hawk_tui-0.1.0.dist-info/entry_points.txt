@@ -1,0 +1,3 @@
+[console_scripts]
+hawk-tui=hawk_tui.main:hawk
+
