@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "Deep_Dummy_Maths"
+version = "0.0.1"
+description = "A dummy library for mathematical functions created by Deependu Jha."
+authors = ["deependujha <deependujha21@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "deep_dummy_maths", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
