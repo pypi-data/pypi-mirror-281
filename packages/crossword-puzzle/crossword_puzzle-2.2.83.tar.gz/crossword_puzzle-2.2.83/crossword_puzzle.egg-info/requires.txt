@@ -1,0 +1,9 @@
+Babel
+customtkinter
+Flask
+flask_babel
+Pillow
+regex
+platformdirs
+pathvalidate
+CTkToolTip
