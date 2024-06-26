@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pm_python
+Version: 0.0.8
+Summary: Python Wrappings for PortMidi
+Maintainer-email: Aaron Krister Johnson <akjmicro@gmail.com>
+Project-URL: Homepage, http://pypi.org/pm_python/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Sound/Audio :: MIDI
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
