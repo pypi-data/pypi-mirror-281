@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: create-djangoproject-script
+Version: 2.0
+Summary: A script to create Django projects and apps
+Home-page: https://github.com/kamalkant255/create_djangoproject
+Author: kamalkant
+Author-email: kamalkantupadhyay255@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Django <4.0,>=3.2
+Requires-Dist: djangorestframework
+Requires-Dist: djangorestframework-simplejwt
+Requires-Dist: drf-yasg
+Requires-Dist: mysqlclient
+Requires-Dist: python-dotenv
+
+# create_django_project
+
+A script to create Django projects and apps.
+
+## Installation
+
+To create a Django Project and django app we can use the following command 
+
+create_django_project <project_name> <app_name>
+
