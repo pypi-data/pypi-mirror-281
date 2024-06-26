@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/sboannotator/SBOannotator.py
+src/sboannotator/create_dbs.sql
+src/sboannotator/main.py
+src/sboannotator/SBOannotator.egg-info/PKG-INFO
+src/sboannotator/SBOannotator.egg-info/SOURCES.txt
+src/sboannotator/SBOannotator.egg-info/dependency_links.txt
+src/sboannotator/SBOannotator.egg-info/requires.txt
+src/sboannotator/SBOannotator.egg-info/top_level.txt
