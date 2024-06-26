@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Synopsis &#8212; awaitlet 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/nature_override.css?v=d00006d9" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/changelog.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx_paramlinks.css" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=046fa432"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Use with SQLAlchemy" href="sqlalchemy.html" />
+    <link rel="prev" title="Welcome to awaitlet’s documentation!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sqlalchemy.html" title="Use with SQLAlchemy"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to awaitlet’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">awaitlet 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Synopsis</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="synopsis">
+<h1>Synopsis<a class="headerlink" href="#synopsis" title="Link to this heading">¶</a></h1>
+<p>This section will illustrate a very basic conversion of a threaded program
+to use asyncio, while allowing non-async Python defs to coexist between
+the front and backends.</p>
+<p>Consider the following multithreaded program, which sends and receives messages
+from an echo server.  The program is organized into three layers:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">send_receive_implementation</span></code> - this is a low level layer that interacts
+with the Python <code class="docutils literal notranslate"><span class="pre">socket</span></code> library directly</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">send_receive_logic</span></code> - this is logic code that responds to requests to
+send and receive messages, given an implementation function</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">send_receive_api</span></code> - this is the front-facing API that is used by programs.</p></li>
+</ul>
+<p>We present this example below, adding a <code class="docutils literal notranslate"><span class="pre">main()</span></code> function that spins up
+five threads and calls upon <code class="docutils literal notranslate"><span class="pre">send_receive_api()</span></code> independently within each:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">socket</span>
+<span class="kn">import</span> <span class="nn">threading</span>
+
+<span class="n">messages</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">def</span> <span class="nf">send_receive_implementation</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+    <span class="n">sock</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="o">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="o">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
+    <span class="n">sock</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">))</span>
+    <span class="n">sock</span><span class="o">.</span><span class="n">sendall</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;ascii&quot;</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">sock</span><span class="o">.</span><span class="n">recv</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">send_receive_logic</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">implementation</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">implementation</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;message number </span><span class="si">{</span><span class="n">msg</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">send_receive_api</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+    <span class="n">messages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+        <span class="n">send_receive_logic</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="s2">&quot;tcpbin.com&quot;</span><span class="p">,</span> <span class="mi">4242</span><span class="p">,</span> <span class="n">send_receive_implementation</span><span class="p">)</span>
+    <span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">threads</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">threading</span><span class="o">.</span><span class="n">Thread</span><span class="p">(</span><span class="n">target</span><span class="o">=</span><span class="n">send_receive_api</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">msg</span><span class="p">,))</span>
+        <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="s2">&quot;three&quot;</span><span class="p">,</span> <span class="s2">&quot;four&quot;</span><span class="p">,</span> <span class="s2">&quot;five&quot;</span><span class="p">]</span>
+    <span class="p">]</span>
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">threads</span><span class="p">:</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">threads</span><span class="p">:</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">messages</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Got back echo response: </span><span class="si">{</span><span class="n">msg</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="n">main</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The goal we have now is to provide an all-new asynchronous API to this program.
+That is, we want to remove the use of threads, and instead have calling code which
+looks like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">messages</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span>
+        <span class="o">*</span><span class="p">[</span>
+            <span class="n">message_api</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span>
+            <span class="p">[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="s2">&quot;three&quot;</span><span class="p">,</span> <span class="s2">&quot;four&quot;</span><span class="p">,</span> <span class="s2">&quot;five&quot;</span><span class="p">]</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+    <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">messages</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Got back echo response: </span><span class="si">{</span><span class="n">msg</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>To do this, we would need to rewrite all of the above functions to use
+<code class="docutils literal notranslate"><span class="pre">async</span></code> and <code class="docutils literal notranslate"><span class="pre">await</span></code>.   But what if the vast majority of our code were
+within <code class="docutils literal notranslate"><span class="pre">send_receive_logic()</span></code> - that code is only a pass through, receiving
+data to and from an opaque implementation.  Must we convert <strong>all</strong> our code
+everywhere that acts as “pass through” to use <code class="docutils literal notranslate"><span class="pre">async</span></code> <code class="docutils literal notranslate"><span class="pre">await</span></code>?</p>
+<p>With awaitlet, we dont have to.  awaitlet provides a <strong>functional form
+of the Python await call</strong>, which can be invoked from non-async functions,
+within an overall asyncio context.    We can port our program above by:</p>
+<ul class="simple">
+<li><p>Writing a new <code class="docutils literal notranslate"><span class="pre">send_receive_implementation</span></code> function that uses asyncio, rather than sync</p></li>
+<li><p>Writing a new <code class="docutils literal notranslate"><span class="pre">send_receive_api</span></code> that uses asyncio</p></li>
+<li><p>Writing a sync adapter that can be passed along to <code class="docutils literal notranslate"><span class="pre">send_receive_logic</span></code>.
+This adapter will make use of the <a class="reference internal" href="api.html#awaitlet.awaitlet" title="awaitlet.awaitlet"><code class="xref py py-func docutils literal notranslate"><span class="pre">awaitlet()</span></code></a> function to <code class="docutils literal notranslate"><span class="pre">await</span></code>
+an asyncio endpoint.  The adapter itself will be called within the
+<a class="reference internal" href="api.html#awaitlet.async_def" title="awaitlet.async_def"><code class="xref py py-func docutils literal notranslate"><span class="pre">async_def()</span></code></a> function so that it makes use of an implicit asyncio
+context.</p></li>
+</ul>
+<p>This program then looks like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">import</span> <span class="nn">awaitlet</span>
+
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">async_send_receive_implementation</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+    <span class="n">reader</span><span class="p">,</span> <span class="n">writer</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">open_connection</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;ascii&quot;</span><span class="p">))</span>
+    <span class="k">await</span> <span class="n">writer</span><span class="o">.</span><span class="n">drain</span><span class="p">()</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">(</span><span class="k">await</span> <span class="n">reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1024</span><span class="p">))</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span>
+
+
+<span class="k">def</span> <span class="nf">send_receive_logic</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">implementation</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">implementation</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;message number </span><span class="si">{</span><span class="n">msg</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">send_receive_api</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">adapt_async_implementation</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">awaitlet</span><span class="o">.</span><span class="n">awaitlet</span><span class="p">(</span>
+            <span class="n">async_send_receive_implementation</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+        <span class="p">)</span>
+
+    <span class="k">return</span> <span class="k">await</span> <span class="n">awaitlet</span><span class="o">.</span><span class="n">async_def</span><span class="p">(</span>
+        <span class="n">send_receive_logic</span><span class="p">,</span>
+        <span class="n">msg</span><span class="p">,</span>
+        <span class="s2">&quot;tcpbin.com&quot;</span><span class="p">,</span>
+        <span class="mi">4242</span><span class="p">,</span>
+        <span class="n">adapt_async_implementation</span>
+    <span class="p">)</span>
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">messages</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span>
+        <span class="o">*</span><span class="p">[</span>
+            <span class="n">send_receive_api</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="s2">&quot;three&quot;</span><span class="p">,</span> <span class="s2">&quot;four&quot;</span><span class="p">,</span> <span class="s2">&quot;five&quot;</span><span class="p">]</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+    <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">messages</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Got back echo response: </span><span class="si">{</span><span class="n">msg</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Above, the front end and back end are ported to asyncio, but the middle part
+stays the same; that is, the <code class="docutils literal notranslate"><span class="pre">send_receive_logic()</span></code> function <strong>did not change
+at all, no async/await keywords needed</strong>.  That’s the point of awaitlet; <strong>to
+eliminate the async/await keyword tax applied to code that doesnt directly
+invoke non-blocking functions.</strong></p>
+<section id="detailed-breakdown">
+<h2>Detailed Breakdown<a class="headerlink" href="#detailed-breakdown" title="Link to this heading">¶</a></h2>
+<p>The whole approach of awaitlet is overall a little bit of a “dark art” (though
+actually less “dark” than what gevent and eventlet
+have done for decades).  It
+takes a standard and pretty well known part of Python, the <code class="docutils literal notranslate"><span class="pre">asyncio</span></code>
+library, and adds some syntactical helpers that were not intended to be part
+of asyncio itself.   Inspired by libraries like gevent and eventlet, awaitlet
+makes use of greenlet in a similar way as those libraries do, but then makes
+use of asyncio for non-blocking primitives, rather than going through the
+effort of creating its own and often needing to monkeypatch them into the standard
+library the way gevent and eventlet do.</p>
+<p>The <a class="reference internal" href="api.html#awaitlet.async_def" title="awaitlet.async_def"><code class="xref py py-func docutils literal notranslate"><span class="pre">async_def()</span></code></a> function call is an awaitable that when invoked,
+internally starts up a greenlet that can be used to “context switch” to
+other greenlets anywhere within the execution of that greenlet:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">some_function</span><span class="p">():</span>
+    <span class="n">my_awaitable</span> <span class="o">=</span> <span class="n">awaitlet</span><span class="o">.</span><span class="n">async_def</span><span class="p">(</span>
+        <span class="n">send_receive_logic</span><span class="p">,</span>
+        <span class="n">msg</span><span class="p">,</span>
+        <span class="s2">&quot;tcpbin.com&quot;</span><span class="p">,</span>
+        <span class="mi">4242</span><span class="p">,</span>
+        <span class="n">adapt_async_implementation</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="k">await</span> <span class="n">my_awaitable</span>
+</pre></div>
+</div>
+<p>Above, the <code class="docutils literal notranslate"><span class="pre">send_receive_logic()</span></code> function is called within a greenlet that
+itself links to a parent greenlet that’s local to the <a class="reference internal" href="api.html#awaitlet.async_def" title="awaitlet.async_def"><code class="xref py py-func docutils literal notranslate"><span class="pre">async_def()</span></code></a>
+callable (this is the normal way that greenlet works):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">async_def</span><span class="p">(</span>
+    <span class="n">fn</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">_T</span><span class="p">],</span>
+    <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span>
+    <span class="n">assert_await_occurs</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">_T</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Runs a sync function ``fn`` in a new greenlet.&quot;&quot;&quot;</span>
+
+    <span class="c1"># make a greenlet.greenlet with the given function.</span>
+    <span class="c1"># getcurrent() is the parent greenlet that is basically where we</span>
+    <span class="c1"># are right now in the function</span>
+    <span class="n">context</span> <span class="o">=</span> <span class="n">_AsyncIoGreenlet</span><span class="p">(</span><span class="n">fn</span><span class="p">,</span> <span class="n">greenlet</span><span class="o">.</span><span class="n">getcurrent</span><span class="p">())</span>
+
+    <span class="c1"># switch into the new greenlet (start the function)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">switch</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="c1"># ... continued ...</span>
+</pre></div>
+</div>
+<p>When this line of code is first called:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># switch into the new greenlet (start the function)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">switch</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It runs the given function, and blocks until the function is complete.
+However, within the function (which is our <code class="docutils literal notranslate"><span class="pre">send_receive_logic()</span></code> call),
+that function can call upon Python awaitables using <a class="reference internal" href="api.html#awaitlet.awaitlet" title="awaitlet.awaitlet"><code class="xref py py-func docutils literal notranslate"><span class="pre">awaitlet()</span></code></a>.
+<a class="reference internal" href="api.html#awaitlet.awaitlet" title="awaitlet.awaitlet"><code class="xref py py-func docutils literal notranslate"><span class="pre">awaitlet()</span></code></a> looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">awaitlet</span><span class="p">(</span><span class="n">awaitable</span><span class="p">:</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">_T</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Awaits an async function in a sync method.&quot;&quot;&quot;</span>
+
+    <span class="n">current</span> <span class="o">=</span> <span class="n">greenlet</span><span class="o">.</span><span class="n">getcurrent</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">current</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">switch</span><span class="p">(</span><span class="n">awaitable</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>That is, it does nothing but context switch <strong>back to the parent greenlet</strong>,
+which means back outside of the <code class="docutils literal notranslate"><span class="pre">context.switch()</span></code> that got us here.
+The returned value is a real Python awaitable.  So inside
+of the <code class="docutils literal notranslate"><span class="pre">async_def()</span></code> function, we check that the inner function is not
+complete yet, we then assume the result must be an awaitable, and we await it
+on behalf of our hosted function - remember, we’re in a real <code class="docutils literal notranslate"><span class="pre">async</span> <span class="pre">def</span></code>
+at this level:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># switch into the new greenlet (start the function)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">switch</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="c1"># loop for the function not done yet</span>
+<span class="k">while</span> <span class="ow">not</span> <span class="n">context</span><span class="o">.</span><span class="n">dead</span><span class="p">:</span>
+    <span class="c1"># await on the result that we expect is awaitable</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="k">await</span> <span class="n">result</span>
+</pre></div>
+</div>
+<p>With the awaitable completed, we send the result of
+the awaitable <strong>back into the hosted function and context switch back</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># switch into the new greenlet (start the function)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">switch</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="c1"># loop for the function not done yet</span>
+<span class="k">while</span> <span class="ow">not</span> <span class="n">context</span><span class="o">.</span><span class="n">dead</span><span class="p">:</span>
+    <span class="c1"># await on the result that we expect is awaitable</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="k">await</span> <span class="n">result</span>
+
+    <span class="c1"># pass control back into the function, with the return value</span>
+    <span class="c1"># of the awaitable</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">switch</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">value</span></code> passed in becomes the <strong>return value of the awaitlet() call</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">awaitlet</span><span class="p">(</span><span class="n">awaitable</span><span class="p">:</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">_T</span><span class="p">:</span>
+    <span class="c1"># ...</span>
+
+    <span class="k">return</span> <span class="n">current</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">switch</span><span class="p">(</span><span class="n">awaitable</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and we are then back in the hosted function with an awaitable having proceeded
+and its return value passed back from the <a class="reference internal" href="api.html#awaitlet.awaitlet" title="awaitlet.awaitlet"><code class="xref py py-func docutils literal notranslate"><span class="pre">awaitlet()</span></code></a> call.</p>
+<p>The loop continues; each time <code class="docutils literal notranslate"><span class="pre">context.dead</span></code> is False, we know that
+<code class="docutils literal notranslate"><span class="pre">result</span></code> is yet another Python awaitable.   Once <code class="docutils literal notranslate"><span class="pre">context.dead</span></code> is
+True, then we know the function completed; we return the result!</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># switch into it (start the function)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">switch</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="c1"># loop for the function not done yet</span>
+<span class="k">while</span> <span class="ow">not</span> <span class="n">context</span><span class="o">.</span><span class="n">dead</span><span class="p">:</span>
+    <span class="c1"># await on the result that we expect is awaitable</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="k">await</span> <span class="n">result</span>
+
+    <span class="n">result</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">switch</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+<span class="c1"># no more awaits; so this is the result!</span>
+<span class="k">return</span> <span class="n">result</span>
+</pre></div>
+</div>
+<p>Minus error handling and some other robustness details, that’s the whole thing!</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Synopsis</a><ul>
+<li><a class="reference internal" href="#detailed-breakdown">Detailed Breakdown</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="index.html"
+                          title="previous chapter">Welcome to awaitlet’s documentation!</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="sqlalchemy.html"
+                          title="next chapter">Use with SQLAlchemy</a></p>
+  </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sqlalchemy.html" title="Use with SQLAlchemy"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to awaitlet’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">awaitlet 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Synopsis</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024 Mike Bayer.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+  </body>
+</html>

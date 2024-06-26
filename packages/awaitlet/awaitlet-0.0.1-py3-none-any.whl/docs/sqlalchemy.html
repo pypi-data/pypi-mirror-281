@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Use with SQLAlchemy &#8212; awaitlet 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/nature_override.css?v=d00006d9" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/changelog.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx_paramlinks.css" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=046fa432"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API" href="api.html" />
+    <link rel="prev" title="Synopsis" href="synopsis.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="api.html" title="API"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="synopsis.html" title="Synopsis"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">awaitlet 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Use with SQLAlchemy</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="use-with-sqlalchemy">
+<h1>Use with SQLAlchemy<a class="headerlink" href="#use-with-sqlalchemy" title="Link to this heading">¶</a></h1>
+<p>Awaitlet can be combined with code that uses SQLAlchemy in one or both of
+two ways; one is by <strong>using SQLAlchemy’s asyncio API</strong>, and the other is
+<strong>using SQLAlchemy’s sync API with an asyncio driver</strong>.</p>
+<p>For the examples that follow, we’ll make use of the following SQLAlchemy
+ORM model:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">ForeignKey</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">func</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">select</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">DeclarativeBase</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">Mapped</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">mapped_column</span>
+
+
+<span class="k">class</span> <span class="nc">Base</span><span class="p">(</span><span class="n">DeclarativeBase</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+
+<span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span>
+
+    <span class="nb">id</span><span class="p">:</span> <span class="n">Mapped</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">mapped_column</span><span class="p">(</span><span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">data</span><span class="p">:</span> <span class="n">Mapped</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span>
+    <span class="n">create_date</span><span class="p">:</span> <span class="n">Mapped</span><span class="p">[</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">]</span> <span class="o">=</span> <span class="n">mapped_column</span><span class="p">(</span>
+        <span class="n">server_default</span><span class="o">=</span><span class="n">func</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Following the ORM model, we will also have a global async engine / session
+setup, using the <code class="docutils literal notranslate"><span class="pre">asyncpg</span></code> PostgreSQL driver:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sqlalchemy.ext.asyncio</span> <span class="kn">import</span> <span class="n">async_sessionmaker</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.ext.asyncio</span> <span class="kn">import</span> <span class="n">create_async_engine</span>
+
+<span class="n">async_engine</span> <span class="o">=</span> <span class="n">create_async_engine</span><span class="p">(</span>
+    <span class="s2">&quot;postgresql+asyncpg://scott:tiger@localhost/test&quot;</span><span class="p">,</span>
+    <span class="n">echo</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">async_session</span> <span class="o">=</span> <span class="n">async_sessionmaker</span><span class="p">(</span><span class="n">async_engine</span><span class="p">,</span> <span class="n">expire_on_commit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="using-sqlalchemy-s-asyncio-from-non-async-functions-in-asyncio-programs">
+<h2>Using SQLAlchemy’s asyncio from non-async functions in asyncio programs<a class="headerlink" href="#using-sqlalchemy-s-asyncio-from-non-async-functions-in-asyncio-programs" title="Link to this heading">¶</a></h2>
+<p>If we have a program that makes use of SQLAlchemy asyncio, we can call upon
+async defs which use this database logic from functions that are not themselves
+declared as async.  Suppose our program had two async functions that
+use SQLAlchemy’s async API directly:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">setup_tables</span><span class="p">():</span>
+    <span class="k">async</span> <span class="k">with</span> <span class="n">async_engine</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
+        <span class="k">await</span> <span class="n">conn</span><span class="o">.</span><span class="n">run_sync</span><span class="p">(</span><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">drop_all</span><span class="p">)</span>
+        <span class="k">await</span> <span class="n">conn</span><span class="o">.</span><span class="n">run_sync</span><span class="p">(</span><span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">)</span>
+
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">work_with_data</span><span class="p">():</span>
+    <span class="k">async</span> <span class="k">with</span> <span class="n">async_session</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
+        <span class="k">async</span> <span class="k">with</span> <span class="n">session</span><span class="o">.</span><span class="n">begin</span><span class="p">():</span>
+            <span class="n">session</span><span class="o">.</span><span class="n">add_all</span><span class="p">(</span>
+                <span class="p">[</span>
+                    <span class="n">A</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;a1&quot;</span><span class="p">),</span>
+                    <span class="n">A</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;a2&quot;</span><span class="p">),</span>
+                    <span class="n">A</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;a3&quot;</span><span class="p">),</span>
+                <span class="p">]</span>
+            <span class="p">)</span>
+
+        <span class="n">stmt</span> <span class="o">=</span> <span class="n">select</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+        <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">session</span><span class="o">.</span><span class="n">scalars</span><span class="p">(</span><span class="n">stmt</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>(fun fact, the SQLAlchemy <code class="docutils literal notranslate"><span class="pre">conn.run_sync()</span></code> calls in the above example are
+essentially equivalent to using awaitlet’s <a class="reference internal" href="api.html#awaitlet.async_def" title="awaitlet.async_def"><code class="xref py py-func docutils literal notranslate"><span class="pre">async_def()</span></code></a> call)</p>
+<p>If we had intermediary code that was not written to use asyncio, but wanted
+to be able to call these functions directly when the overall program is run
+in an asyncio context, we could achieve that as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">import</span> <span class="nn">awaitlet</span>
+
+<span class="k">def</span> <span class="nf">call_async_db_code</span><span class="p">():</span>
+    <span class="n">awaitlet</span><span class="o">.</span><span class="n">awaitlet</span><span class="p">(</span><span class="n">setup_tables</span><span class="p">())</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">awaitlet</span><span class="o">.</span><span class="n">awaitlet</span><span class="p">(</span><span class="n">work_with_data</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">front_facing_asyncio_facade</span><span class="p">():</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">awaitlet</span><span class="o">.</span><span class="n">async_def</span><span class="p">(</span><span class="n">call_async_db_code</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">front_facing_asyncio_facade</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Above, <code class="docutils literal notranslate"><span class="pre">front_facing_asyncio_facade()</span></code> represents code we’ve written to present
+an asyncio front to our application.   <code class="docutils literal notranslate"><span class="pre">call_async_db_code()</span></code> represents some
+part of the code that is written in traditional blocking style but has some
+areas that want to call into async code.  The <a class="reference internal" href="api.html#awaitlet.async_def" title="awaitlet.async_def"><code class="xref py py-func docutils literal notranslate"><span class="pre">async_def()</span></code></a> function enters
+the blocking function into an implicit async context, allowing the <a class="reference internal" href="api.html#awaitlet.awaitlet" title="awaitlet.awaitlet"><code class="xref py py-func docutils literal notranslate"><span class="pre">awaitlet()</span></code></a>
+function to call out to real awaitables.</p>
+</section>
+<section id="using-sqlalchemy-s-sync-api-in-asyncio-programs">
+<h2>Using SQLAlchemy’s sync API in Asyncio Programs<a class="headerlink" href="#using-sqlalchemy-s-sync-api-in-asyncio-programs" title="Link to this heading">¶</a></h2>
+<p>In this pattern, we present the more compelling case of a large codebase that’s
+written to use SQLAlchemy’s traditional blocking style API.   Given the above
+methods written in blocking style:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sessionmaker</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">setup_tables</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">engine</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
+        <span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">drop_all</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
+        <span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">work_with_data</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">sessionmaker</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">session</span><span class="o">.</span><span class="n">begin</span><span class="p">():</span>
+            <span class="n">session</span><span class="o">.</span><span class="n">add_all</span><span class="p">(</span>
+                <span class="p">[</span>
+                    <span class="n">A</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;a1&quot;</span><span class="p">),</span>
+                    <span class="n">A</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;a2&quot;</span><span class="p">),</span>
+                    <span class="n">A</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;a3&quot;</span><span class="p">),</span>
+                <span class="p">]</span>
+            <span class="p">)</span>
+
+        <span class="n">stmt</span> <span class="o">=</span> <span class="n">select</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+        <span class="n">result</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">scalars</span><span class="p">(</span><span class="n">stmt</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>We’ll note above the code is the same code as used previously, except we see
+there is a traditional blocking style <code class="docutils literal notranslate"><span class="pre">sessionmaker()</span></code> in use.  The goal is
+to run the above code against an asyncio database driver, in this case
+asyncpg.   How can we achieve this?</p>
+<p>Firstly, we continue to use the <code class="docutils literal notranslate"><span class="pre">create_async_engine()</span></code> call to create our
+engine.  In SQLAlchemy, there is a blocking style <code class="docutils literal notranslate"><span class="pre">Engine</span></code> object embedded
+in the <code class="docutils literal notranslate"><span class="pre">AsyncEngine</span></code>, however it links to an asyncio driver and also modifies
+some connection pool behaviors to be async compatible.   The accessibility of this <code class="docutils literal notranslate"><span class="pre">Engine</span></code>
+is part of SQLAlchemy’s public async API.  So here, when we know our program
+is using an asyncio driver, we create the engine as we did previously,
+then link the <code class="docutils literal notranslate"><span class="pre">Engine</span></code> to our <code class="docutils literal notranslate"><span class="pre">sessionmaker()</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sqlalchemy.ext.asyncio</span> <span class="kn">import</span> <span class="n">create_async_engine</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
+
+<span class="n">async_engine</span> <span class="o">=</span> <span class="n">create_async_engine</span><span class="p">(</span>
+    <span class="s2">&quot;postgresql+asyncpg://scott:tiger@localhost/test&quot;</span><span class="p">,</span>
+    <span class="n">echo</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">sessionmaker</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="n">async_engine</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We can then call upon our <code class="docutils literal notranslate"><span class="pre">setup_tables()</span></code> and <code class="docutils literal notranslate"><span class="pre">work_with_data()</span></code> functions
+<strong>only</strong> using <a class="reference internal" href="api.html#awaitlet.async_def" title="awaitlet.async_def"><code class="xref py py-func docutils literal notranslate"><span class="pre">async_def()</span></code></a>; SQLAlchemy itself will make use of its
+internal form of <a class="reference internal" href="api.html#awaitlet.awaitlet" title="awaitlet.awaitlet"><code class="xref py py-func docutils literal notranslate"><span class="pre">awaitlet()</span></code></a> which is compatible with ours:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">import</span> <span class="nn">awaitlet</span>
+
+<span class="k">def</span> <span class="nf">call_async_db_code</span><span class="p">():</span>
+    <span class="n">setup_tables</span><span class="p">()</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">work_with_data</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">front_facing_asyncio_facade</span><span class="p">():</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">awaitlet</span><span class="o">.</span><span class="n">async_def</span><span class="p">(</span><span class="n">call_async_db_code</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">front_facing_asyncio_facade</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Putting the program segments together we create a fully runnable example below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+
+<span class="kn">import</span> <span class="nn">awaitlet</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.ext.asyncio</span> <span class="kn">import</span> <span class="n">create_async_engine</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">ForeignKey</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">func</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">select</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">DeclarativeBase</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">Mapped</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">mapped_column</span>
+
+
+<span class="k">class</span> <span class="nc">Base</span><span class="p">(</span><span class="n">DeclarativeBase</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+
+<span class="k">class</span> <span class="nc">A</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
+    <span class="n">__tablename__</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span>
+
+    <span class="nb">id</span><span class="p">:</span> <span class="n">Mapped</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="n">mapped_column</span><span class="p">(</span><span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">data</span><span class="p">:</span> <span class="n">Mapped</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span>
+    <span class="n">create_date</span><span class="p">:</span> <span class="n">Mapped</span><span class="p">[</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">]</span> <span class="o">=</span> <span class="n">mapped_column</span><span class="p">(</span>
+        <span class="n">server_default</span><span class="o">=</span><span class="n">func</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+    <span class="p">)</span>
+
+
+<span class="n">async_engine</span> <span class="o">=</span> <span class="n">create_async_engine</span><span class="p">(</span>
+    <span class="s2">&quot;postgresql+asyncpg://scott:tiger@localhost/test&quot;</span><span class="p">,</span>
+    <span class="n">echo</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="n">engine</span> <span class="o">=</span> <span class="n">async_engine</span><span class="o">.</span><span class="n">engine</span>
+<span class="n">sessionmaker</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="n">async_engine</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">setup_tables</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">engine</span><span class="o">.</span><span class="n">begin</span><span class="p">()</span> <span class="k">as</span> <span class="n">conn</span><span class="p">:</span>
+        <span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">drop_all</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
+        <span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">work_with_data</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">sessionmaker</span><span class="p">()</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">session</span><span class="o">.</span><span class="n">begin</span><span class="p">():</span>
+            <span class="n">session</span><span class="o">.</span><span class="n">add_all</span><span class="p">(</span>
+                <span class="p">[</span>
+                    <span class="n">A</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;a1&quot;</span><span class="p">),</span>
+                    <span class="n">A</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;a2&quot;</span><span class="p">),</span>
+                    <span class="n">A</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="s2">&quot;a3&quot;</span><span class="p">),</span>
+                <span class="p">]</span>
+            <span class="p">)</span>
+
+        <span class="n">stmt</span> <span class="o">=</span> <span class="n">select</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+        <span class="n">result</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">scalars</span><span class="p">(</span><span class="n">stmt</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">call_async_db_code</span><span class="p">():</span>
+    <span class="n">setup_tables</span><span class="p">()</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">work_with_data</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="k">async</span> <span class="k">def</span> <span class="nf">front_facing_asyncio_facade</span><span class="p">():</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">awaitlet</span><span class="o">.</span><span class="n">async_def</span><span class="p">(</span><span class="n">call_async_db_code</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">front_facing_asyncio_facade</span><span class="p">())</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Use with SQLAlchemy</a><ul>
+<li><a class="reference internal" href="#using-sqlalchemy-s-asyncio-from-non-async-functions-in-asyncio-programs">Using SQLAlchemy’s asyncio from non-async functions in asyncio programs</a></li>
+<li><a class="reference internal" href="#using-sqlalchemy-s-sync-api-in-asyncio-programs">Using SQLAlchemy’s sync API in Asyncio Programs</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="synopsis.html"
+                          title="previous chapter">Synopsis</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="api.html"
+                          title="next chapter">API</a></p>
+  </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="api.html" title="API"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="synopsis.html" title="Synopsis"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">awaitlet 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Use with SQLAlchemy</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024 Mike Bayer.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+  </body>
+</html>
