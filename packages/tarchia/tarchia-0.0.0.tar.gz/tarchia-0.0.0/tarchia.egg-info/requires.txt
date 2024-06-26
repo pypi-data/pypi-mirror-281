@@ -1,0 +1,8 @@
+cityhash
+fastapi
+fastavro
+numpy==1.*
+orjson
+orso
+pyarrow
+pydantic
