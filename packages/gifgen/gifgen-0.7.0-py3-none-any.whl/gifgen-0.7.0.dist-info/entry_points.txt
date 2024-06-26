@@ -1,0 +1,2 @@
+[console_scripts]
+gif-generator = gifgen.converter:convert_images_to_gif
