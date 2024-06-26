@@ -1,0 +1,10 @@
+README.md
+pdf-tools-license.md
+setup.py
+pdftools_toolbox/__init__.py
+pdftools_toolbox/py_ctypes.py
+pdftools_toolbox/streams.py
+pdftools_toolbox/utils.py
+pdftools_toolbox/lib/linux-x64/libPdfTools_Toolbox.so
+pdftools_toolbox/lib/osx-x64/libPdfTools_Toolbox.dylib
+pdftools_toolbox/lib/win-x64/PdfTools_Toolbox.dll
