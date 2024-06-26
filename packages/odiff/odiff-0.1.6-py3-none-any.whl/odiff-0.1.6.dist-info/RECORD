@@ -1,0 +1,13 @@
+odiff/__init__.py,sha256=ognmlT3T-ruTJG_BE_Olki94DjFZtxlNm1vkr_L5I2M,249
+odiff/__main__.py,sha256=87ku5B0CUf6MzAC6Q-AIgZYqygjZOz9p-3Oz6_AYe8E,48
+odiff/cli.py,sha256=UdAUFfRfDyu9Eox2cUkp8m3GI_CgUZX6D7s16dCGAGc,3142
+odiff/discrepancy.py,sha256=v-cdBW2dpF8jiRmux-679HPovsoAJl11nQa5PQQnKtM,3054
+odiff/logger.py,sha256=UT7k6k-9knqzS1WhqeW6O43Pg8jmTQVhEKtJvpT_LBE,681
+odiff/main.py,sha256=0zpXSROXAnxgZ2RO9uDVtGmOL6YsdKAhr6F9WtXwX2o,2582
+odiff/odiff.py,sha256=Cki_lTp2YCJS3FWkQ4U_6-rXXf_UAxOZGbBhKWYEEAk,6156
+odiff/options.py,sha256=SbHRjTYx3Wuu8-QECFghaqHwBNtGkux85CamMQv2fbg,540
+odiff/util.py,sha256=VuG8X_cljw2V5bx7Vma0j7K0peYhF1qeU0Tv-xCY4gY,2393
+odiff-0.1.6.dist-info/METADATA,sha256=kf5A4dZtdcLMoZ9UBzxZDNTRJd6kUtJLBMsTXuzYI1s,5727
+odiff-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+odiff-0.1.6.dist-info/entry_points.txt,sha256=CdG_XHYZFexAY7nj_OfUsScqd7l6q9D9QY0YV9wMSXY,63
+odiff-0.1.6.dist-info/RECORD,,
