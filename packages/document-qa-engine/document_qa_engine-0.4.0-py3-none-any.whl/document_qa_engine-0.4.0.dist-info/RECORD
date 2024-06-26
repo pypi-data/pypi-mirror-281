@@ -1,0 +1,9 @@
+document_qa/document_qa_engine.py,sha256=7zFTWDGA0iQXc8BNaR7ni6WbSxZUMZtjodjHadyXryE,18892
+document_qa/grobid_processors.py,sha256=yCBYGISF0NN-ktiSPUTeWfWhlnLmcS6kzUFfkWzy4DI,34044
+document_qa/langchain.py,sha256=_-KSBkwgYcaNxlcwlzvKtuzW_MyuAH0UgUTfoZusrK8,5292
+document_qa/ner_client_generic.py,sha256=AThvs3DroIGLBMJUKCrgWQkzHzlMFlAyYESlCKtRcnQ,13448
+document_qa_engine-0.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+document_qa_engine-0.4.0.dist-info/METADATA,sha256=ZdGwFtTfNNaN93eF1uo1ao7izo6PTF80qvoahug_glc,20337
+document_qa_engine-0.4.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+document_qa_engine-0.4.0.dist-info/top_level.txt,sha256=KQaRzdvOljyyteu47oQfNVEOpCW-tfGtg_wu0h8rh90,12
+document_qa_engine-0.4.0.dist-info/RECORD,,
