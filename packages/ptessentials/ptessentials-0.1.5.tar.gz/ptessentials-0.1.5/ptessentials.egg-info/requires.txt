@@ -1,0 +1,5 @@
+aanft>=0.1.1
+pyntelope
+waxfetcher
+waxnftdispatcher==0.3.5
+waxtion>=0.1.5
