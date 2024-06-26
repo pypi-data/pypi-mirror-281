@@ -1,0 +1,2 @@
+[console_scripts]
+esy.grid.match = esy.grid.match.cli:main
