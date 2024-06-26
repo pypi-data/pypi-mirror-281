@@ -1,0 +1,3 @@
+[console_scripts]
+fs-parser=financial_statement_parser.cli:main
+
