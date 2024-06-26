@@ -1,0 +1,2 @@
+[console_scripts]
+lyrics-converter = lyrics_converter.cli:main
