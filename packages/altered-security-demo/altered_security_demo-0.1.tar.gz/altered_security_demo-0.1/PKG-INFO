@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: altered_security_demo
+Version: 0.1
+Summary: A demonstration package for altered security
+Home-page: https://example.com
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Altered Security Demo
+
+This is a simple demonstration package for altered security.
+
+## Features
+
+- Show a message box and open the calculator application on Windows.
+
+## Installation
+
+```sh
+pip install altered_security_demo

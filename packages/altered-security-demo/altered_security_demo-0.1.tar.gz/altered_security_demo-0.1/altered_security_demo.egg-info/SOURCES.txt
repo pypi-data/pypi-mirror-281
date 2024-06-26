@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+altered_security_demo.egg-info/PKG-INFO
+altered_security_demo.egg-info/SOURCES.txt
+altered_security_demo.egg-info/dependency_links.txt
+altered_security_demo.egg-info/top_level.txt
+altersec/__init__.py
+altersec/demo.py
+tests/__init__.py
+tests/test_demo.py
