@@ -1,0 +1,15 @@
+anomalib
+numpy
+pandas
+Pillow
+pytorch-lightning
+scikit-learn
+scipy
+scikit-image
+tifffile
+timm
+torch
+torchmetrics
+torchvision
+tqdm
+zarr
