@@ -1,0 +1,8 @@
+sqlmath.libs/libgomp-24e2ab19.so.1.0.0,sha256=7DVDy2-hHzQlj-PVkILkvZdAoYNJ4Jf8Qqe8aSohvyw,253289
+sqlmath-2024.6.25.dist-info/LICENSE,sha256=KhokKrD65FnQuqeH79rJDSG_VdYZxu6rNKSHSAxpbYI,1051
+sqlmath-2024.6.25.dist-info/WHEEL,sha256=g3Q8kHDnExJ71MubYFRMMDGdksVfs362dyj9499fZpc,109
+sqlmath-2024.6.25.dist-info/RECORD,,
+sqlmath-2024.6.25.dist-info/METADATA,sha256=GGS8F3jJ3mx2VfKHe7Z9z_VHa2g9_1cef8KEG3BEoUY,6754
+sqlmath/lib_lightgbm.so,sha256=71874JZWt0hcjsQcl-8JPkTZIpHMEiFLH37ixsioiWY,10987129
+sqlmath/_sqlmath.cpython-312-x86_64-linux-gnu.so,sha256=hTc_rjtxpr7pR-e432mWZ9v1VnH_CKPA4U0OIF2Sp1Y,13112128
+sqlmath/__init__.py,sha256=_g64lpjwBgZhlUjWrN-f9Af5F6QJo5dRVix3FzspzMY,20002
