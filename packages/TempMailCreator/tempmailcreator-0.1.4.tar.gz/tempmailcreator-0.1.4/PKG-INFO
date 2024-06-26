@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: TempMailCreator
+Version: 0.1.4
+Summary: Library for creating and managing temporary email accounts with mail.tm API.
+Home-page: https://github.com/70L0-0j0/Mailer
+Author: 70L0-0j0
+Author-email: 70L0-0j0@lamia.xyz
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Fast-Email
+
+Library for creating and managing temporary email accounts with the mail.tm API.
+
+## Installation
+
+You can install the library using `pip`:
+
+```bash
+pip install TempMailCreator
+```
+
+# Usage
+## Get available domains
+
+```bash
+domains = Lmi.domains()
+print(f"Available domains: {domains}")
+```
+## Register a new account
+
+```bash
+new_account = Lmi.register()
+print(f"Registered account: {new_account}")
+```
+## Get an authentication token
+
+```bash
+token = Lmi.get_token(new_account['email'], new_account['password'])
+print(f"Authentication token: {token}")
+```
+## Get email messages
+
+```bash
+messages = Lmi.get_sms(token)
+print(f"Messages: {messages}")
+```
