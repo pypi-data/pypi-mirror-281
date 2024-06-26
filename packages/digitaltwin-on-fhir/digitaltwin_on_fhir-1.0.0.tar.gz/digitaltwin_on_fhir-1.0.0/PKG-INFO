@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: digitaltwin_on_fhir
+Version: 1.0.0
+Summary: digitaltwin_on_fhir
+Author: LinkunGao
+Author-email: gaolinkun123@gmail.com
+Keywords: digitaltwin,fhir,python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: LICENSE
+Requires-Dist: fhirpy>=1.4.2
+Requires-Dist: pydicom>=2.4.3
+Requires-Dist: pathlib>=1.0.1
+
+A package for fhir adapter in digital twins platform.
