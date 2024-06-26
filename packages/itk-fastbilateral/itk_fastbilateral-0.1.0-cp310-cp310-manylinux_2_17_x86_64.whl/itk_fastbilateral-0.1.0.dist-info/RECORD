@@ -1,0 +1,10 @@
+itk/Configuration/FastBilateralConfig.py,sha256=UDUXeiJGfKf9Nw8gm2_xaUM2_YRoR8gaB8sV1SwfLYs,2612
+itk/Configuration/FastBilateral_snake_case.py,sha256=nFGlJWt8WJQRryAqBOh8tKDQxeE8PNcNWkWevdcVMIQ,57
+itk/FastBilateralPython.py,sha256=TvSpgFxm71oKmu990hjba3qVdp_DTxxHsrIn5lp6SaA,2185
+itk/_FastBilateralPython.so,sha256=AmXOhsa9wx_nVif69jXewONyajAYH_jRTSDSnkU5gT8,2972856
+itk/itkFastBilateralImageFilterPython.py,sha256=vEQilV-UVeUzb9jPdxXuXaDCxHc-651fX_ZUY42oZpA,57402
+itk_fastbilateral-0.1.0.dist-info/METADATA,sha256=nf4ofjti5uisPxsG9eC1XATklT-IDCl4rVhpIVOQnys,15143
+itk_fastbilateral-0.1.0.dist-info/WHEEL,sha256=dLgmmNwyVjM2lw8NbWJPs2SfFZ8GkZvOPOqZ7KH3iGQ,117
+itk_fastbilateral-0.1.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itk_fastbilateral-0.1.0.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+itk_fastbilateral-0.1.0.dist-info/RECORD,,
