@@ -1,0 +1,9 @@
+KratosMetisApplication.libs/libKratosMetisCore-3e2b5c38.so,sha256=7PcFa4Y5hhzTVEINRRHS5hc-VwUZcr0mGvMvlHy0P7E,2686953
+KratosMetisApplication.libs/libmetis-abd0e9f4.so.0,sha256=GjG9XPq3li2TY4UIPDL8DVzyKDMLA9BaV5ecLsEJ138,483105
+KratosMetisApplication-9.5.2.dist-info/METADATA,sha256=s1ni94qnOt3WJYkcy_W-S4bOoAk6vTNsFl7kyz8P9lk,4717
+KratosMetisApplication-9.5.2.dist-info/WHEEL,sha256=CzQQWV-lNyM92gr3iaBk8dvO35YDHRxgzkZ-dxumUIM,152
+KratosMetisApplication-9.5.2.dist-info/top_level.txt,sha256=8Ov--opRCptLbHStjyiZUVpzN1OUU_F7c7fGmsR5cMc,19
+KratosMetisApplication-9.5.2.dist-info/RECORD,,
+KratosMultiphysics/.libs/libKratosMetisCore.so,sha256=cgBeQ0yaOGbp8wX2pAn_YqXDVSSp0G6njGJ45RKSX28,2482809
+KratosMultiphysics/.libs/KratosMetisApplication.cpython-310-x86_64-linux-gnu.so,sha256=A1R7N5FymaYQyKYGtkfdf81--sTqF6k2gvlbtKHui7E,1748609
+KratosMultiphysics/MetisApplication/__init__.py,sha256=U1ehKjg_9Vc-smIdS0ZptsJwm1m5gPLNPPQoVnIV7zI,221
