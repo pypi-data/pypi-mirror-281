@@ -1,0 +1,10 @@
+ambiguous/__init__.py,sha256=JIW4eU3fOu2kE-HqOJfE2nCAufM0CFC5zzuZSjOGJig,1181
+ambiguous/ambiguous.py,sha256=4xfoGejjDeoYK99kLFPB9h2SCqmKPSD8GuQbphHV1O8,3203
+ambiguous/decorator.py,sha256=-bZH2RNSXShpZohPbsFDmftbF3otsRZ6ROH0WCBC0mc,1529
+ambiguous/ops.py,sha256=eX3_ZhYXkHvZ1xFya0xCeC6cQGFT1lruuPPsRjN1z3M,496
+ambiguous/thing_or_things.py,sha256=BCNqYg2mBoLY6Jb02C4Ti6GRZqc3HowmNV_LSjl0_3M,2358
+ambiguous-0.5.0.dist-info/LICENSE.txt,sha256=MQNNHgZ-_vx0-rBqAqjPqzVdBLBmVK4osNlymFLTvW8,1081
+ambiguous-0.5.0.dist-info/METADATA,sha256=ckVH30OxQQFFymLx6XJJUgWXUgXcNrjSt3ABi7UsdDw,2776
+ambiguous-0.5.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+ambiguous-0.5.0.dist-info/top_level.txt,sha256=wT7UN_im2ceYdrkXmJIJQuLipUJb_T2Ml04Tg_6POI8,10
+ambiguous-0.5.0.dist-info/RECORD,,
