@@ -1,0 +1,15 @@
+README.md
+setup.py
+oasis/__init__.py
+oasis/cli.py
+oasis/config.py
+oasis/exceptions.py
+oasis/logger.py
+oasis/main.py
+oasis/oasis.py
+oasis_article.egg-info/PKG-INFO
+oasis_article.egg-info/SOURCES.txt
+oasis_article.egg-info/dependency_links.txt
+oasis_article.egg-info/entry_points.txt
+oasis_article.egg-info/requires.txt
+oasis_article.egg-info/top_level.txt
