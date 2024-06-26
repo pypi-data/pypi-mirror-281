@@ -1,0 +1,10 @@
+README.md
+setup.py
+planilha_cotacao/__init__.py
+planilha_cotacao/leitura_dados.py
+planilha_cotacao/relatorio.py
+planilha_cotacao.egg-info/PKG-INFO
+planilha_cotacao.egg-info/SOURCES.txt
+planilha_cotacao.egg-info/dependency_links.txt
+planilha_cotacao.egg-info/requires.txt
+planilha_cotacao.egg-info/top_level.txt
