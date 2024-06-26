@@ -1,0 +1,13 @@
+jupyterlab_databrix_homepage/__init__.py,sha256=oKk47F6PAyHvPW3OjQqc7SEq_jb2PhnhX3NOQwEc5-o,614
+jupyterlab_databrix_homepage/_version.py,sha256=CXJl0vWHa-zfZJ_mhGVB60E0diyNNF7RIidcWrfQJOA,175
+jupyterlab_databrix_homepage-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_databrix_homepage/package.json,sha256=JmcesToCEX-cBLQw9DbaJmniOOOp57aDOD6fWauNgEs,5935
+jupyterlab_databrix_homepage-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_databrix_homepage/static/509.6b4cae509a0437e55fbf.js,sha256=a0yuUJoEN-VfvwVVslbUCOnN5yWtzFQYbX9rCNjL158,1928
+jupyterlab_databrix_homepage-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_databrix_homepage/static/728.1d0017d03e0c3074c594.js,sha256=HQAX0D4MMHTFlBxwBZ-88EIZPRcjWDNYhb12xPbT4ss,6856
+jupyterlab_databrix_homepage-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_databrix_homepage/static/remoteEntry.adbc2bb47ba53273f0d4.js,sha256=rbwrtHulMnPw1MUlbrzthYqnCfQ4TDs0JkaBzTDg1bM,6687
+jupyterlab_databrix_homepage-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_databrix_homepage/static/style.js,sha256=oYnupl4fRhuGqAS7flSaB4kz_32KckevVVtKorZXUwE,171
+jupyterlab_databrix_homepage-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_databrix_homepage/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+jupyterlab_databrix_homepage-0.1.0.data/data/share/jupyter/labextensions/jupyterlab_databrix_homepage/install.json,sha256=YAHBs-BB0FM_7RjJLc8j4SjNB1rQ6DFxOE1WQRAnjNY,217
+jupyterlab_databrix_homepage-0.1.0.dist-info/METADATA,sha256=rydgaVe2tkLYwdJG7gjlWF6ohapSn5cAEPEa4oyUzTc,6188
+jupyterlab_databrix_homepage-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+jupyterlab_databrix_homepage-0.1.0.dist-info/licenses/LICENSE,sha256=kQg4wJG56De2J2AZyvxmdAonpQFDp5z5ubcm0zpw21k,1518
+jupyterlab_databrix_homepage-0.1.0.dist-info/RECORD,,
