@@ -1,0 +1,11 @@
+camalis/__init__.py,sha256=A2i7y3Xzb8oxcdtFm1aPxx0k5-aUPk25JAlyBTxK7us,113
+camalis/core.py,sha256=6YrSKMQ-CguaGrj-YdfoldATk9wQvbjoz9qmfW7zlqg,1604
+camalis/event.py,sha256=ukCZSuFMwNQ5WRSQO-jHJmkkBl2K6rzTBH9FkH07rms,188
+camalis/exceptions.py,sha256=BsZxBfT7NSD7tcq6ddM-gn-4uRW4HBShmVyMQFMe12w,167
+camalis/main.py,sha256=5ZZBWPNDVSRQ1G4hw1CjgIkghA6UvPyKz_-Mt9EMZ_8,5371
+camalis/state.py,sha256=zcg2ubZpSsdKAcu4ctvDTC5NQKOe3KIK4QAkTPgtHb0,810
+camalis/utils.py,sha256=a4b1MSg_nVBx0gpU-bCKjAOGHezB-RBY2cd17-DFAD4,795
+camalis/variable.py,sha256=8zFJBQFnNx7Kk8jyk1FkaCFNAmNPleBCXhWLp5bsmM8,2459
+camalis-0.0.9.dist-info/METADATA,sha256=OqDW8q70iRxX5_m6r5z1CRn5uFql_q5SFKVIrLsXHbg,643
+camalis-0.0.9.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+camalis-0.0.9.dist-info/RECORD,,
