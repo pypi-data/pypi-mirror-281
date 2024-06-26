@@ -1,0 +1,9 @@
+README.md
+setup.py
+detafs/__init__.py
+detafs/core.py
+detafs.egg-info/PKG-INFO
+detafs.egg-info/SOURCES.txt
+detafs.egg-info/dependency_links.txt
+detafs.egg-info/requires.txt
+detafs.egg-info/top_level.txt
