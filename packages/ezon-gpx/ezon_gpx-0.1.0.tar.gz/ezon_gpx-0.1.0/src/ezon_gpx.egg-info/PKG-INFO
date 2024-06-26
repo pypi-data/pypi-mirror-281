@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: ezon-gpx
+Version: 0.1.0
+Author: Uiolee
+License: MPL-2.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ezon-gpx
+
+converter for Ezon gpx file.
+
+## Feat
+
+convert Ezon gpx files
+
+- add location info to `wpt`.
+- delete empty point.
+- fix timezone to UTC.
+
+## Usage
+
+### Source
+
+#### Python
+
+see [./src/main.py](./src/main.py#L141)
+
+#### CLI
+
+```bash
+./src/cli.py test/test.gpx [path]
+```
+
+```bash
+./src/cli.py --help
+```
+
+## Develop Env
+
+```plain
+Python 3.11.8
+```
