@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0d918feb-c125-49b6-9b87-c12f9459d403" name="Changes" comment="# commit type :fix（问题修复）、feat（功能开发）、style(风格修改)、refactor(重构)、docs（文档）、chore（其他)、test(测试) + 简单描述. 默认fix,根据情况修改&#10;fix: update&#10;&#10;# 详细说明代码的改动，包含代码的实现思路，以及为什么这么做，可能会影响哪些功能。对于代码的审核者，需要从这段描述中能完全理解代码中所有改动的内容&#10;Description: &#10;&#10;# 写一段面向于产品的总结性内容，用于自动生成crp上的changlog，需要注意的事，这段描述必须从产品的角度考虑。&#10;Log: &#10;&#10;# 关联pms上的bug号，提交后，则会自动在pms对应bug信息页面添加备注，关联本次提交。若本次提交为修复bug相关，则请取消注释&#10;#Bug: &#10;&#10;# 修复 github issue &#10;#Issue: &#10;&#10;# 关联pms上的任务号，提交后，则会自动在pms对应任务信息页面添加备注，关联本次提交。若本次提交为任务相关，则请取消注释&#10;#Task:" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2iMX9VyGWKbNo3MJAcMVKvLJJTk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.send2pms.executor": "Run",
+    "Python.task.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/mikigo/github/youqu3-plugins/youqu-pms-driver/report/json",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/report/json" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/youqu_pms_driver" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/youqu_pms_driver/report" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.send2pms">
+    <configuration name="send2pms" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="youqu-pms-driver" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/youqu_pms_driver" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/youqu_pms_driver/send2pms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="task" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="youqu-pms-driver" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/youqu_pms_driver" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/youqu_pms_driver/task.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.send2pms" />
+        <item itemvalue="Python.task" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d918feb-c125-49b6-9b87-c12f9459d403" name="Changes" comment="" />
+      <created>1719301268767</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719301268767</updated>
+      <workItem from="1719301269814" duration="808000" />
+      <workItem from="1719371193656" duration="8246000" />
+    </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1719301469495</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719301469495</updated>
+    </task>
+    <task id="LOCAL-00002" summary="# commit type :fix（问题修复）、feat（功能开发）、style(风格修改)、refactor(重构)、docs（文档）、chore（其他)、test(测试) + 简单描述. 默认fix,根据情况修改&#10;fix: update&#10;&#10;# 详细说明代码的改动，包含代码的实现思路，以及为什么这么做，可能会影响哪些功能。对于代码的审核者，需要从这段描述中能完全理解代码中所有改动的内容&#10;Description: &#10;&#10;# 写一段面向于产品的总结性内容，用于自动生成crp上的changlog，需要注意的事，这段描述必须从产品的角度考虑。&#10;Log: &#10;&#10;# 关联pms上的bug号，提交后，则会自动在pms对应bug信息页面添加备注，关联本次提交。若本次提交为修复bug相关，则请取消注释&#10;#Bug: &#10;&#10;# 修复 github issue &#10;#Issue: &#10;&#10;# 关联pms上的任务号，提交后，则会自动在pms对应任务信息页面添加备注，关联本次提交。若本次提交为任务相关，则请取消注释&#10;#Task:">
+      <option name="closed" value="true" />
+      <created>1719385485252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719385485252</updated>
+    </task>
+    <task id="LOCAL-00003" summary="# commit type :fix（问题修复）、feat（功能开发）、style(风格修改)、refactor(重构)、docs（文档）、chore（其他)、test(测试) + 简单描述. 默认fix,根据情况修改&#10;fix: update&#10;&#10;# 详细说明代码的改动，包含代码的实现思路，以及为什么这么做，可能会影响哪些功能。对于代码的审核者，需要从这段描述中能完全理解代码中所有改动的内容&#10;Description: &#10;&#10;# 写一段面向于产品的总结性内容，用于自动生成crp上的changlog，需要注意的事，这段描述必须从产品的角度考虑。&#10;Log: &#10;&#10;# 关联pms上的bug号，提交后，则会自动在pms对应bug信息页面添加备注，关联本次提交。若本次提交为修复bug相关，则请取消注释&#10;#Bug: &#10;&#10;# 修复 github issue &#10;#Issue: &#10;&#10;# 关联pms上的任务号，提交后，则会自动在pms对应任务信息页面添加备注，关联本次提交。若本次提交为任务相关，则请取消注释&#10;#Task:">
+      <option name="closed" value="true" />
+      <created>1719385658812</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719385658812</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <MESSAGE value="# commit type :fix（问题修复）、feat（功能开发）、style(风格修改)、refactor(重构)、docs（文档）、chore（其他)、test(测试) + 简单描述. 默认fix,根据情况修改&#10;fix: update&#10;&#10;# 详细说明代码的改动，包含代码的实现思路，以及为什么这么做，可能会影响哪些功能。对于代码的审核者，需要从这段描述中能完全理解代码中所有改动的内容&#10;Description: &#10;&#10;# 写一段面向于产品的总结性内容，用于自动生成crp上的changlog，需要注意的事，这段描述必须从产品的角度考虑。&#10;Log: &#10;&#10;# 关联pms上的bug号，提交后，则会自动在pms对应bug信息页面添加备注，关联本次提交。若本次提交为修复bug相关，则请取消注释&#10;#Bug: &#10;&#10;# 修复 github issue &#10;#Issue: &#10;&#10;# 关联pms上的任务号，提交后，则会自动在pms对应任务信息页面添加备注，关联本次提交。若本次提交为任务相关，则请取消注释&#10;#Task:" />
+    <option name="LAST_COMMIT_MESSAGE" value="# commit type :fix（问题修复）、feat（功能开发）、style(风格修改)、refactor(重构)、docs（文档）、chore（其他)、test(测试) + 简单描述. 默认fix,根据情况修改&#10;fix: update&#10;&#10;# 详细说明代码的改动，包含代码的实现思路，以及为什么这么做，可能会影响哪些功能。对于代码的审核者，需要从这段描述中能完全理解代码中所有改动的内容&#10;Description: &#10;&#10;# 写一段面向于产品的总结性内容，用于自动生成crp上的changlog，需要注意的事，这段描述必须从产品的角度考虑。&#10;Log: &#10;&#10;# 关联pms上的bug号，提交后，则会自动在pms对应bug信息页面添加备注，关联本次提交。若本次提交为修复bug相关，则请取消注释&#10;#Bug: &#10;&#10;# 修复 github issue &#10;#Issue: &#10;&#10;# 关联pms上的任务号，提交后，则会自动在pms对应任务信息页面添加备注，关联本次提交。若本次提交为任务相关，则请取消注释&#10;#Task:" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/youqu_pms_driver$task.coverage" NAME="task Coverage Results" MODIFIED="1719383208659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/youqu_pms_driver" />
+    <SUITE FILE_PATH="coverage/youqu_pms_driver$send2pms.coverage" NAME="send2pms Coverage Results" MODIFIED="1719385147950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/youqu_pms_driver" />
+  </component>
+</project>
