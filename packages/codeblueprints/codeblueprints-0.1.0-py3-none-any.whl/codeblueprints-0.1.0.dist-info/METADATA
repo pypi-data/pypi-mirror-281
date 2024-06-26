@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: codeblueprints
+Version: 0.1.0
+Summary: Automates code planning by mapping issues(softwares requirements) to actionable modifications in your codebase, preparing for future code generation.
+Author-email: Liu Yong <13311102957@163.com>
+Maintainer-email: Liu Yong <13311102957@163.com>
+License: Apache Software License 2.0
+Project-URL: bugs, https://github.com/esperyong/codeblueprints/issues
+Project-URL: changelog, https://github.com/esperyong/codeblueprints/blob/master/changelog.md
+Project-URL: homepage, https://github.com/esperyong/codeblueprints
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: typer
+Provides-Extra: dev
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+
+==============
+codeblueprints
+==============
+
+
+.. image:: https://img.shields.io/pypi/v/codeblueprints.svg
+        :target: https://pypi.python.org/pypi/codeblueprints
+
+.. image:: https://img.shields.io/travis/esperyong/codeblueprints.svg
+        :target: https://travis-ci.com/esperyong/codeblueprints
+
+.. image:: https://readthedocs.org/projects/codeblueprints/badge/?version=latest
+        :target: https://codeblueprints.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Automates code planning by mapping issues(softwares requirements) to actionable modifications in your codebase, preparing for future code generation.
+
+
+* Free software: Apache Software License 2.0
+* Documentation: https://codeblueprints.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
