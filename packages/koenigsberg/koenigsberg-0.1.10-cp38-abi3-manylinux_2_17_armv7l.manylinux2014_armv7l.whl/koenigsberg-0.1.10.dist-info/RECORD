@@ -1,0 +1,11 @@
+koenigsberg-0.1.10.dist-info/METADATA,sha256=JnualA8t_4pA0RE49WtBGqYOWqBdK0HapuaaQ3vXPkE,1707
+koenigsberg-0.1.10.dist-info/WHEEL,sha256=gJGhsZxtK4XkxE3KpOqlWfEawlJUlvm0lTKz63_3LYE,127
+koenigsberg-0.1.10.dist-info/license_files/LICENSE,sha256=hLAQvQw_CRKcKeOyoYbw25dA5ijj4EzQFbE1jJ1vxhI,1070
+koenigsberg/main.py,sha256=5dxNu1_NdoUfnMK7vqMdpIsclQl1Py4I8vIA2nl8hO4,1930
+koenigsberg/tests/test_register.py,sha256=cxURyHsMgs56IVlz6JkdmOgXBm8FJvSAKd163zBDthU,601
+koenigsberg/tests/conftest.py,sha256=ZIuW7K3ZeXpZDkNnl2dNFRdEeagfKVLdbFRIWctKN4U,208
+koenigsberg/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koenigsberg/examples/__init__.py,sha256=snkR0l9wHCqxpOdHElN2gotBQ-tuOi2qZkDwd-VqFiw,501
+koenigsberg/__init__.py,sha256=bkEracgWt2XRzwFwHf1yrJHoVcoyn0LsSdFKYtX3OLU,257
+koenigsberg/_internal.abi3.so,sha256=QFQEpe82jghR95gTYprfmm3prI5ZhazQqxa4dhNAZBs,49625456
+koenigsberg-0.1.10.dist-info/RECORD,,
