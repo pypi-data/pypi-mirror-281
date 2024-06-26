@@ -1,0 +1,34 @@
+# pyproject.toml
+[build-system]
+requires = ["cython", "setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pm_python"
+version = "0.1.0"
+maintainers = [
+  {name="Aaron Krister Johnson", email="akjmicro@gmail.com"}
+]
+description = "Python Wrappings for PortMidi"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Cython",
+    "Programming Language :: C",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio :: MIDI",
+    "Topic :: Software Development :: Libraries"
+]
+
+[project.urls]
+Homepage = "http://pypi.org/pm_python/"
