@@ -1,0 +1,75 @@
+# Streamlit Searchbar Component
+
+A custom Streamlit component that provides a searchbar with autosuggestions functionality.
+
+## Installation
+
+You can install the searchbar component using pip:
+
+```bash
+pip install searchbar_component
+```
+
+## Usage
+
+Here's a simple example of how to use the searchbar component in your Streamlit app:
+
+```python
+import streamlit as st
+from searchbar_component import searchbar
+
+st.title("Searchbar Component Demo")
+
+# Define suggestions and placeholder
+suggestions = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
+placeholder = "Type a fruit name"
+
+# Use the searchbar component
+result = searchbar(suggestions=suggestions, placeholder=placeholder, key="demo_searchbar")
+
+# Display the search result
+st.write("You searched for:", result)
+```
+
+## Features
+
+- Autocomplete suggestions as you type
+- Customizable styling to match your Streamlit app's theme
+- Easy integration with existing Streamlit applications
+- Customizable placeholder text
+
+## API Reference
+
+### `searchbar(suggestions=None, placeholder="Type a query", key=None)`
+
+Creates a new instance of the searchbar component.
+
+Parameters:
+- `suggestions` (list of str): A list of suggestions to display.
+- `placeholder` (str): The placeholder text to display in the search bar.
+- `key` (str, optional): An optional key that uniquely identifies this component. If not provided, Streamlit will generate a key.
+
+Returns:
+- str: The selected or typed value in the searchbar.
+
+## Development
+
+To contribute to this project:
+
+1. Clone the repository
+2. Install development dependencies: `pip install -r requirements-dev.txt`
+3. Make your changes
+4. Run tests: `pytest`
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+If you have any questions, feel free to reach out or open an issue on GitHub.
+
+---
+
+Remember to star this repo if you find it useful! ⭐️
