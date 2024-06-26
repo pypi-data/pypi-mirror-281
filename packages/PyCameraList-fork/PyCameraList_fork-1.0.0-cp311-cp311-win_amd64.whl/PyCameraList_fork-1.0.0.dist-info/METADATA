@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: PyCameraList-fork
+Version: 1.0.0
+Summary: List all camera/audio sources for windows users.Add high version support
+Author: Peter Jiang
+Requires-Python: >=3.6
+License-File: LICENSE
+
