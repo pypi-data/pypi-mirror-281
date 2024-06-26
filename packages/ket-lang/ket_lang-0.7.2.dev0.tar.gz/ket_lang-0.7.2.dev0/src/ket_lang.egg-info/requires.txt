@@ -1,0 +1,11 @@
+
+[ibm]
+qiskit>=1.0.0
+qiskit-aer
+qiskit-ibm-runtime
+
+[visualization]
+numpy
+plotly
+pandas
+nbformat
