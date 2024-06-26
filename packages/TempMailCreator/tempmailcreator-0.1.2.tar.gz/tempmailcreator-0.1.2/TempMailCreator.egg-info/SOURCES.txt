@@ -1,0 +1,8 @@
+README.md
+setup.py
+TempMailCreator.egg-info/PKG-INFO
+TempMailCreator.egg-info/SOURCES.txt
+TempMailCreator.egg-info/dependency_links.txt
+TempMailCreator.egg-info/requires.txt
+TempMailCreator.egg-info/top_level.txt
+_r/__init__.py
