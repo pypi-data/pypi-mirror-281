@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ninetails
+Version: 0.0.1
+Summary: Wrapper for creating vectorized gymnasium environments.
+Author-email: Jet <taijunjet@hotmail.com>
+License: MIT License
+Keywords: Reinforcement Learning,game,RL,AI,gymnasium
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: cloudpickle
+Requires-Dist: gymnasium
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
+# TODO
