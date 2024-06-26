@@ -1,0 +1,79 @@
+## Authivate (Python SDK)
+
+This is the official python package for the [Authivate](https://authivate.com) service.
+
+Authivate is an easy-to-use User Authentication and Management service.
+
+### Install
+To Install, using pip
+```sh
+pip install authivate
+```
+
+Using poetry
+```shell
+poetry add authivate
+```
+
+### Example Usage
+
+```python
+from authivate import  Authivate, AuthivateConfig
+from pprint import pprint
+
+
+
+# Initialize AuthivateConfig
+authivate_config = AuthivateConfig(api_key="your-api-key", project_id="project-id")
+
+# Create an instance of Authivate
+authivate_instance = Authivate(config=authivate_config)
+
+# Add user to waitlist
+"""Response
+{'message': 'Yah!, you are now on the waitlist for {project name}. Please confirm your email to seal your spot'}
+"""
+
+authivate_instance.add_user_to_waitlist(authivate_instance)
+
+# Get all users
+pprint(authivate_instance.get_all_users())
+
+"""
+Response
+{'user_records': [
+    {'country_code': 'NG',
+                'country_name': 'Nigeria',
+                'date_created': '2023-12-23T04: 47: 30.776501Z',
+                'fields': {
+                    'email': 'email@mail.com',
+                    'first_name': 'John',
+                    'last_name': 'Doe'
+                    },
+                'is_verified': False,
+                'status_in_project': 'WAITLISTED',
+                'user_unique_id': 'edg0aoyleai.0iael0ya'
+    },
+    {'country_code': 'NG',
+                'country_name': 'Nigeria',
+                'date_created': '2023-12-23T04: 54: 38.697351Z',
+                'fields':  {
+                    'email': 'email2@mail.com',
+                    'first_name': 'Peter',
+                    'last_name': 'Akande'
+                    },
+                'is_verified': False,
+                'status_in_project': 'WAITLISTED',
+                'user_unique_id': 'decwc.oyeyayaiioadeb'
+    }
+]
+}
+"""
+
+```
+### PS
+If you have used authivate before now June 17, 2024, what you think of authivate is definitely different from what it is now.
+it was completely rewritten to support only waitlist collection.
+
+Thanks,
+Peter.
