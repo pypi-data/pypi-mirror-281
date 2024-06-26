@@ -1,0 +1,10 @@
+spark_ai_python
+loguru
+cffi
+gevent
+greenlet
+pycparser
+six
+websockets
+websocket-client
+chardet
