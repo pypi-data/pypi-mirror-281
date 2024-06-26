@@ -1,0 +1,83 @@
+{% set single_left = '{' -%}
+use axum::extract::{Path, Query, State};
+use axum::{Json, Router};
+use axum::http::StatusCode;
+use axum::response::{IntoResponse, Response};
+use axum::routing::{get};
+use sea_orm::{ActiveModelTrait, ColumnTrait, EntityTrait, ModelTrait, QueryFilter};
+use sea_orm::ActiveValue::Set;
+use crate::entities::{{ single_left }}{{ model_name }}, {{ lower_model_name }}};
+use crate::func_name;
+use crate::modules::{{ lower_model_name }}::MODULE_LOGGER;
+use crate::utils::state;
+
+pub fn {{ lower_model_name }}_routes() -> Router<state::AppState> {
+    Router::new()
+        .route("/{{ lower_models_name }}", get(get_{{ lower_models_name }}).post(create_{{ lower_model_name }}))
+        .route("/{{ lower_models_name }}/:{{ lower_model_name }}_id", get(get_{{ lower_model_name }}).put(update_{{ lower_model_name }}).delete(delete_{{ lower_model_name }}))
+}
+
+async fn get_{{ lower_models_name }}(state: State<state::AppState>, Query(filter): Query<{{ lower_model_name }}::{{ model_name }}Filter>) -> Response {
+    MODULE_LOGGER.info(&format!("filter: {filter:?}"), 0, state.clone(), func_name!()).await;
+
+    let conn = state.conn.lock().await;
+    let mut query = {{ model_name }}::find();
+
+    {% for filter_field,filter_field_type in list_filter_fields_type_map.items() -%}
+    {%- if cls.extract_py_type(filter_field_type)=='str' -%}
+        {% set condition = "contains" -%}
+    {% else -%}
+        {% set condition = "eq" -%}
+    {% endif -%}
+    if let Some({{ filter_field }}) = filter.{{ filter_field }} {
+        query = query.filter({{ lower_model_name }}::Column::{{ filter_field|title }}.{{ condition }}({{ filter_field }}));
+    }
+    {% endfor %}
+    let {{ lower_models_name }} = query.all(&*conn).await.unwrap();
+    (StatusCode::OK, Json({{ lower_models_name }})).into_response()
+}
+
+async fn get_{{ lower_model_name }}(state: State<state::AppState>, Path({{ lower_model_name }}_id): Path<i64>) -> Response {
+    MODULE_LOGGER.info(&format!("{{ lower_model_name }}_id: {{ single_left }}{{ lower_model_name }}_id}"), 0, state.clone(), func_name!()).await;
+
+    let conn = state.conn.lock().await;
+    let {{ lower_model_name }}: {{ lower_model_name }}::Model = {{ model_name }}::find_by_id({{ lower_model_name }}_id).one(&*conn).await.unwrap().unwrap();
+    (StatusCode::OK, Json({{ lower_model_name }})).into_response()
+}
+
+async fn create_{{ lower_model_name }}(state: State<state::AppState>, Json(payload): Json<{{ lower_model_name }}::{{ model_name }}Creatable>) -> Response {
+    MODULE_LOGGER.info(&format!("payload: {payload:?}"), 0, state.clone(), func_name!()).await;
+
+    let conn = state.conn.lock().await;
+    let new_{{ lower_model_name }} = {{ lower_model_name }}::ActiveModel {
+    {%- for field,field_type in model_create_fields_type_map.items() %}
+        {{ field }}: Set(payload.{{ field }}.to_owned()),
+    {%- endfor %}
+        ..Default::default()
+    };
+    let {{ lower_model_name }} = new_{{ lower_model_name }}.insert(&*conn).await.unwrap();
+    (StatusCode::CREATED, Json({{ lower_model_name }})).into_response()
+}
+
+async fn update_{{ lower_model_name }}(state: State<state::AppState>, Path({{ lower_model_name }}_id): Path<i64>, Json(payload): Json<{{ lower_model_name }}::{{ model_name }}Editable>) -> impl IntoResponse {
+    MODULE_LOGGER.info(&format!("{{ lower_model_name }}_id: {{ single_left }}{{ lower_model_name }}_id}, payload: {payload:?}"), 0, state.clone(), func_name!()).await;
+
+    let conn = state.conn.lock().await;
+    let raw_{{ lower_model_name }}: {{ lower_model_name }}::Model = {{ model_name }}::find_by_id({{ lower_model_name }}_id).one(&*conn).await.unwrap().unwrap();
+    let mut {{ lower_model_name }}: {{ lower_model_name }}::ActiveModel = raw_{{ lower_model_name }}.into();
+    {%- for field,field_type in model_edit_fields_type_map.items() %}
+    {{ lower_model_name }}.{{ field }} = Set(payload.{{ field }}.to_owned());
+    {%- endfor %}
+    let updated_{{ lower_model_name }}: {{ lower_model_name }}::Model = {{ lower_model_name }}.update(&*conn).await.unwrap();
+    (StatusCode::OK, Json(updated_{{ lower_model_name }})).into_response()
+}
+
+
+async fn delete_{{ lower_model_name }}(state: State<state::AppState>, Path({{ lower_model_name }}_id): Path<i64>) -> impl IntoResponse {
+    MODULE_LOGGER.info(&format!("{{ lower_model_name }}_id: {{ single_left }}{{ lower_model_name }}_id}"), 0, state.clone(), func_name!()).await;
+
+    let conn = state.conn.lock().await;
+    let {{ lower_model_name }}: {{ lower_model_name }}::Model = {{ model_name }}::find_by_id({{ lower_model_name }}_id).one(&*conn).await.unwrap().unwrap();
+    {{ lower_model_name }}.delete(&*conn).await.unwrap();
+    StatusCode::NO_CONTENT.into_response()
+}
