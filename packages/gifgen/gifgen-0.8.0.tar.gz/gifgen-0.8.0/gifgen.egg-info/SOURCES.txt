@@ -1,0 +1,10 @@
+README.md
+setup.py
+gifgen/__init__.py
+gifgen/converter.py
+gifgen.egg-info/PKG-INFO
+gifgen.egg-info/SOURCES.txt
+gifgen.egg-info/dependency_links.txt
+gifgen.egg-info/entry_points.txt
+gifgen.egg-info/requires.txt
+gifgen.egg-info/top_level.txt
