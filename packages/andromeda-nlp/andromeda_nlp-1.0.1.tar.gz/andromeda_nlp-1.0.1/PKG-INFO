@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: andromeda-nlp
+Version: 1.0.1
+Summary: Easy longform text generation.
+Author: mchaney-dev
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: DateTime (>=5.5,<6.0)
+Requires-Dist: happytransformer (>=3.0.0,<4.0.0)
+Requires-Dist: torch (>=2.3.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# andromeda
+
+[![build](https://github.com/mchaney-dev/andromeda/actions/workflows/test_build.yml/badge.svg)](https://github.com/mchaney-dev/andromeda/actions/workflows/test_build.yml) [![release](https://github.com/mchaney-dev/andromeda/actions/workflows/test_release.yml/badge.svg)](https://github.com/mchaney-dev/andromeda/actions/workflows/test_release.yml) [![docs](https://readthedocs.org/projects/andromeda-nlp/badge/?version=latest)](https://andromeda-nlp.readthedocs.io/en/latest/?badge=latest)
+
+Easy longform text generation.
+
+## Known Issues
+- Some modules are not being imported properly when the package is downloaded from PyPi. **PyPi releases have been yanked temporarily.**
+
+## Roadmap
+- [x] Add base features (ability to save/load model, change model configuration, training and eval utilities)
+- [ ] Add utility functions for running the package in a Google Colab instance
+- [ ] Add visualizers for training and evaluation
+- [ ] Add live Google Colab demo to documentation
+
+## Installation
+Install from PyPI:
+```
+pip install andromeda-nlp
+```
+
+## Documentation
+Read the documentation for this project [here.](https://andromeda-nlp.readthedocs.io/en/latest/)
+
+## Goals
+- Serve as an easy-to-understand introduction to text generation, even for those with little to no programming experience
+- The package should be modular and expandable; contributions are always encouraged
+
+## Contributing
+To contribute, [look at open issues](https://github.com/mchaney-dev/andromeda/issues), fork the repository and open a pull request with your changes. Or, if you experience an issue, please open one!
+
