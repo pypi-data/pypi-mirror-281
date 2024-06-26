@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: flumut_gui
+Version: 2.0.0
+Requires-Dist: pyqt5
+Requires-Dist: flumut >=0.5.2
+
