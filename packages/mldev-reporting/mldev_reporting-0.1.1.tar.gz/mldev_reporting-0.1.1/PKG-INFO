@@ -1,0 +1,205 @@
+Metadata-Version: 2.1
+Name: mldev_reporting
+Version: 0.1.1
+Summary: An extantion library for creatind reports for MLDev
+Home-page: https://gitlab.com/mlrep/mldev-reporting
+Author: MLRep Team, Alexandra Maratkanova
+Author-email: dev@mlrep.org, ola.maratkanova@gmail.com
+License: Apache 2.0 license
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1 style="text-align: center;">MLDev Reporting</h1>
+
+Welcome to **MLDev reporting** - library for creating html reports for your experiment. The library provides functionaity for creating reports using Markdown templates and data from your experiment.
+
+Start creating insightful reports today and unlock a clearer understanding of your ML experiments with MLDev reporting.
+
+## User Guide
+### First Step
+
+Install MLDev Reporting using `pip` with comand
+
+```
+pip install mldev_reporting
+```
+
+> Don't forget to add MLDev Reorting to your `.mldev/stages/__init__.py` file
+
+``` py title=".mldev/stages/__init__.py"
+import mldev_reporting
+```
+
+### Second Step
+
+Create an experement using `experiment.yml`
+
+``` yml title="experiment.yml"
+pipeline: !GenericPipeline
+  runs:
+    - !BasicStage
+      name: report
+
+      env:
+        PYTHONPATH: '${env.PYTHONPATH}:./.mldev'
+
+      script:
+        - mldev run -f ./report.yml
+
+```
+### Third Step
+Create a `report.yml` to configire your report
+
+``` yml title="report.yml"
+report: &report !Report
+  name: "index"
+  output_dir: "light_report"
+  template: "./template.md"
+  theme: "light"
+  lang: "ru"
+  report_model:
+
+
+pipeline: !GenericPipeline
+  runs:
+    - *report
+```
+
+`name` is the name of your html file. `output_dir` is a folder where your report will be located. `template` is a link to your tamplate file. `theme` is a theme of your report. It can be `light | dark | cards`. `lang` is the report language. It can be `ru` or `en`. `report_model` is where your report data will go.
+
+### Fourth Step
+
+Create a template for the report. `repo` is an object wrom with you can access your report data
+
+``` md title="template.md"
+# Me cool report
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sem elit, tincidunt {{repo.data.result}} consectetur aliquam eget, ornare eget nunc. Aliquam erat purus, rutrum in erat nec, sodales commodo augue. Nullam ante nibh, accumsan sit amet eleifend nec, porttitor vel tellus. Sed dapibus at sapien vel mattis. Ut commodo quam tortor, quis porta erat convallis quis.
+
+## Subtitle 1
+{{repo.table}}
+
+## Subtitle 2
+{{repo.graphic}}
+```
+### Fifth Step
+
+Specify your report data. You can do it ather by hand or by loading data from file using `!LoadFile`
+
+``` yml title="report.yml"
+loadfile: &load_json_file !LoadFile
+  url: "index.json"
+
+loadfile: &load_cvs_file !LoadFile
+  url: "index.csv"
+```
+
+Now you can add your data to `report_model`
+``` yml title="report.yml"
+report: &report !Report
+  name: "index"
+  output_dir: "light_report"
+  template: "./template.md"
+  theme: "light"
+  lang: "ru"
+  report_model:
+    data: *load_json_file
+```
+
+To create **table** use this comands
+
+``` yml title="report.yml"
+report: &report !Report
+  name: "index"
+  output_dir: "light_report"
+  template: "./template.md"
+  theme: "light"
+  lang: "ru"
+  report_model:
+    data: *load_json_file
+    table: !Table
+      title: "Example Table"
+      data: *load_cvs_file
+```
+To create **graphic** use this comands
+``` yml title="report.yml"
+report: &report !Report
+  name: "index"
+  output_dir: "light_report"
+  template: "./template.md"
+  theme: "light"
+  lang: "ru"
+  report_model:
+    data: *load_json_file
+    graphic: !Graphic
+      datasets:
+        - dataset: *load_cvs_file
+          x: "x_axis"
+          y: "y_axis"
+          name: "Example Graphic"
+          graphic_type: "line"
+```
+
+### Sixth Step
+
+Run the following comand to generate your report
+
+```
+mldev run -f experiment.yml
+```
+
+## Documentation
+### **Report Class**
+| | | | |
+| ----------------- | ----------------------------- | --------------------------------------- | ------------------------- |
+| **Field name** | **Type** | **Values** | **Default Value** |
+| **name** | string | Report file name | Required |
+| **output\_dir** | string | Path to the folder where the report will be stored | Required |
+| **template** | string | Layout file path | Required |
+| **report\_model** | object | Report data | Required |
+| **theme** | string | Topic | light |
+| **lang** | string | Language | en |
+
+### **Table class**
+|                  |                                |                                                                        |                           |
+| ---------------- | ------------------------------ | ---------------------------------------------------------------------- | ------------------------- |
+| **Field name** | **Type** | **Values** | **Default Value** |
+| **title** | string | Table name | Required |
+| **headers** | string / array of strings |Object key if json file is used / Table column headers | Optional |
+| **rows** | string / array of arrays of strings | Object key if json file is used / Table rows | Optional |
+| **data** | link to data from file | Data from a file in json or csv format | Optional |
+| **widths** | string | Column width as a percentage | Optional |
+| **header\_rows** | Integer | Line number to be used as header | Optional |
+
+### **Class Graphic**
+
+| | | | |
+| ------------ | ------- | --------------------- | ------------------------- |
+| **Field name** | **Type** | **Values** | **Default Value** |
+| **datasets** | array | Graph Datasets | Required |
+| **config** | object | Graph Configuration | Empty object |
+
+More detailed information about the datasets can be found on the [library page](https://plotly.com/python/).
+
+### **LoadFile class**
+
+| | | | |
+| ------------ | ------- | --------------------- | ------------------------- |
+| **Field name** | **Type** | **Values** | **Default Value** |
+| **url** | string | File path | Required |
+| **filter\_fields** | string array | A set of keys whose values ​​will be filtered (for json) | Optional |
+| **filter\_columns** | string array | A set of columns whose values ​​will be filtered (for csv) | Optional |
+
+
+## Contributing
+Please check the [CONTRIBUTING.md](https://gitlab.com/mlrep/mldev/-/blob/develop/CONTRIBUTING.md) guide if you'd like to participate in the project, ask a question or give a suggestion.
+
+## License
+The software is licensed under Apache 2.0 license.
