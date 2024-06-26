@@ -1,0 +1,11 @@
+bookmap/__init__.py,sha256=F7-mfnflBvATFGS0eqCx3IyYIeaTldC8ei62Agpc6vQ,1641
+bookmap/bookmap.py,sha256=mrpxUxxSmteBgjSCS1rsoDx-39LJnRvvi57RQfgKE9M,33902
+bookmap/dto.py,sha256=OWaGt5rvkI7eFClEMWgD7be0szDUwenB4wfYXkMUKLs,2124
+bookmap/sortedcontainers/__init__.py,sha256=6AJyP1lCAHa3efGVAtHtCw3YHYcN6QkFkYjp494v3Ec,2229
+bookmap/sortedcontainers/sorteddict.py,sha256=jmt3MSk7mYfBhWiB96IZZgMZVrL1stzgwXJ8V0NQZPs,23468
+bookmap/sortedcontainers/sortedlist.py,sha256=qr6xGE650YZ_mECiFipVI0ZdWwZWjSu3bbWZfl-gx9M,78855
+bookmap/sortedcontainers/sortedset.py,sha256=7UzXDO0SBsdIwfsQcKbZ_j40AhuvHPbBdujW9oyo8Fg,20508
+bookmap-0.1.2.dist-info/METADATA,sha256=uCEu3ivSupffeazNRIYsZ0niwagv_-lvWCwk2eLJQo8,61685
+bookmap-0.1.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+bookmap-0.1.2.dist-info/licenses/LICENSE,sha256=Kf8TtqAx7RggUEZ0cN_pjCMsc6EEZS9JNhUfYNY_vrQ,1083
+bookmap-0.1.2.dist-info/RECORD,,
