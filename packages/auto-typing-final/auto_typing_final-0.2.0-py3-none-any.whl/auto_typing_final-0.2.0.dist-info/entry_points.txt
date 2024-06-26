@@ -1,0 +1,2 @@
+[console_scripts]
+auto-typing-final = auto_typing_final.main:main
