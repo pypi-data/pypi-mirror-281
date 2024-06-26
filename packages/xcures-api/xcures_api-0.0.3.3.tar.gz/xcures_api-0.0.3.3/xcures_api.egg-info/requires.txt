@@ -1,0 +1,6 @@
+pytest
+requests
+yaml_config_day
+pytz
+ipython
+twine
