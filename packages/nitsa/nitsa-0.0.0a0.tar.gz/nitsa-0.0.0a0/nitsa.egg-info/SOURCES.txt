@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+nitsa/__init__.py
+nitsa/cli.py
+nitsa.egg-info/PKG-INFO
+nitsa.egg-info/SOURCES.txt
+nitsa.egg-info/dependency_links.txt
+nitsa.egg-info/entry_points.txt
+nitsa.egg-info/requires.txt
+nitsa.egg-info/top_level.txt
+tests/test_nitsa.py
