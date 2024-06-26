@@ -1,0 +1,11 @@
+pdftools_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdftools_sdk/py_ctypes.py,sha256=tgwOZlLp2D5YXA504gVQ9oGEqz5ImYgor33Ik6FppaI,218502
+pdftools_sdk/streams.py,sha256=yo6MBIrnWrEo8oGTlqrmrWuJPbTzKxJJOQbmwixqc4w,3259
+pdftools_sdk/utils.py,sha256=DLYdVNs_ldHh9mTryN_hJLUe_miC6aTGJ9kWQsA2oHc,1966
+pdftools_sdk/lib/linux-x64/libPdfToolsSdk.so,sha256=pflXjV1vvGNtjDOyOzI04-w_dqrvslLOFiCFvPdPWLs,31860864
+pdftools_sdk/lib/osx-x64/libPdfToolsSdk.dylib,sha256=ZMJ7k9JWULnz-pwo17qpHG8tNOZT757GlyzRYgDmFKs,23493616
+pdftools_sdk/lib/win-x64/PdfToolsSdk.dll,sha256=Uc_C6xIhfkWaaKubilE1g0rI3YIZQ3x7eOTIjTW-xFU,25403904
+pdftools_sdk-1.7.0.dev192.dist-info/METADATA,sha256=35MiWM5UZRl6lCj75i2kZEPRQVE3E_zkk2VtZicbjZo,1608
+pdftools_sdk-1.7.0.dev192.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pdftools_sdk-1.7.0.dev192.dist-info/top_level.txt,sha256=UYcjt8LEq50E3a1zjCTxfn_9tPNohM3WQfGRKbPogaM,13
+pdftools_sdk-1.7.0.dev192.dist-info/RECORD,,
