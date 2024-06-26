@@ -1,0 +1,14 @@
+flarejax/__init__.py,sha256=ByfSpuh0ya-66X4VHoNswbz-jFnUF2vOD5SYmVL1fXE,653
+flarejax/_config.py,sha256=ZzLanHhdu3YmKqNl4Lv6V0qzaG9nC2uPV5xc55erOKs,3664
+flarejax/_frozen.py,sha256=7tUe-FkJja0NaANgDq69mHqXEkTexIowifCN4SpTod8,6286
+flarejax/_modify.py,sha256=U8QlW5kECOxhMU13mg0CAaJUhD1HoHYWVmpe446SzY8,3041
+flarejax/_module.py,sha256=U7q9Q8UDuG-SwyiXQTYjgTXKIq90Zx9rUp2q3eN8Bi8,8164
+flarejax/_mtypes.py,sha256=SaLSpER6envMDAEJQz8OVn25qcx_5zzc4xG-IKqYmaM,3169
+flarejax/_serial.py,sha256=MtIlMGE217TFG-LQiP_ndv1ANQ3Wn5s1N95XVsJiBLs,3736
+flarejax/_trees.py,sha256=rU66yu6KAG8enEhq-s9wLPHG_71jai81cV7MI6-k0gI,1588
+flarejax/_typecheck.py,sha256=TuVQCez7C-g2zsEB5djs9D7mwaLIW7cF8xEJ8WUrHEI,150
+flarejax/_utils.py,sha256=1aycszqaHkK6jJnI6H1YC10YYyIgGEPJ8TuUpPE1nDc,968
+flarejax-0.3.13.dist-info/METADATA,sha256=53SEuD1c602mXKHFdm4uMpbrAkxP3mB4jU4nogitLG4,2828
+flarejax-0.3.13.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+flarejax-0.3.13.dist-info/top_level.txt,sha256=in8KL9oiIhp1ilxwmPPd27j-Q0aVXzIf1BEi8sW6tR4,9
+flarejax-0.3.13.dist-info/RECORD,,
