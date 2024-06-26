@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+json_cleaner_process/__init__.py
+json_cleaner_process/sort_clean_json.py
+json_cleaner_process.egg-info/PKG-INFO
+json_cleaner_process.egg-info/SOURCES.txt
+json_cleaner_process.egg-info/dependency_links.txt
+json_cleaner_process.egg-info/top_level.txt

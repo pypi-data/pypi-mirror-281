@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: json_cleaner_process
+Version: 0.1
+Summary: A combined function to clean, sort, duplicate records removal of json records in a dataset and finally converting them to dictionary.
+Author: Vaishnu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
