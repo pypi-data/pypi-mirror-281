@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to awaitlet’s documentation! &#8212; awaitlet 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/nature_override.css?v=d00006d9" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/changelog.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx_paramlinks.css" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=046fa432"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Synopsis" href="synopsis.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="synopsis.html" title="Synopsis"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">awaitlet 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to awaitlet’s documentation!</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="welcome-to-awaitlet-s-documentation">
+<h1>Welcome to awaitlet’s documentation!<a class="headerlink" href="#welcome-to-awaitlet-s-documentation" title="Link to this heading">¶</a></h1>
+<p>Awaitlet allows non-async defs that invoke awaitables inside of asyncio applications.</p>
+<p>awaitlet allows existing programs written to use threads and blocking APIs to
+be ported to asyncio, by replacing frontend and backend code with asyncio
+compatible approaches, but allowing intermediary code to remain completely
+unchanged, with no addition of <code class="docutils literal notranslate"><span class="pre">async</span></code> or <code class="docutils literal notranslate"><span class="pre">await</span></code> keywords throughout the
+entire codebase needed.  Its primary use is to support code that is
+cross-compatible with asyncio and non-asyncio runtime environments.</p>
+<p>Awaitlet is a direct extract of SQLAlchemy’s own <a class="reference external" href="https://docs.sqlalchemy.org/en/latest/orm/extensions/asyncio.html">asyncio mediation layer</a>, with no
+dependencies on SQLAlchemy (but is also fully cross-compatible with
+SQLAlchemy’s mediation layer).   This code has been in widespread production
+use in thousands of environments for several years, starting in 2020 with
+SQLAlchemy 1.4’s first release.</p>
+<p>awaitlet without any dependency or use of SQLAlchemy includes API patterns for:</p>
+<ul class="simple">
+<li><p>Converting any threaded program (no SQLAlchemy dependency necessary) to use
+asyncio patterns for front facing APIs and backends, without modifying
+intermediary code</p></li>
+</ul>
+<p>For applications that do use SQLAlchemy, awaitlet provides additional
+API patterns for:</p>
+<ul class="simple">
+<li><p>Converting threaded database-enabled programs to use asyncio patterns for
+front facing APIs and backends, where those backends use SQLAlchemy’s asyncio
+API for database access</p></li>
+<li><p>Converting threaded database-enabled programs to use asyncio patterns for
+front facing APIs and backends, without modifying intermediary code that uses
+SQLAlchemy’s synchronous API for database access</p></li>
+</ul>
+<p>The two functions provided are <a class="reference internal" href="api.html#awaitlet.async_def" title="awaitlet.async_def"><code class="xref py py-func docutils literal notranslate"><span class="pre">async_def()</span></code></a> and <a class="reference internal" href="api.html#awaitlet.awaitlet" title="awaitlet.awaitlet"><code class="xref py py-func docutils literal notranslate"><span class="pre">awaitlet()</span></code></a>.  Using
+these, we can create an asyncio program using intermediary defs that do not use the <cite>async</cite>
+or <cite>await</cite> keywords, but instead use functions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span>
+
+<span class="kn">import</span> <span class="nn">awaitlet</span>
+
+<span class="k">def</span> <span class="nf">asyncio_sleep</span><span class="p">():</span>
+    <span class="k">return</span> <span class="n">awaitlet</span><span class="o">.</span><span class="n">awaitlet</span><span class="p">(</span><span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">result</span><span class="o">=</span><span class="s1">&#39;hello&#39;</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">awaitlet</span><span class="o">.</span><span class="n">async_def</span><span class="p">(</span><span class="n">asyncio_sleep</span><span class="p">)))</span>
+</pre></div>
+</div>
+<p>Above, the <code class="docutils literal notranslate"><span class="pre">asyncio_sleep()</span></code> def is run directly in asyncio and calls upon
+the <code class="docutils literal notranslate"><span class="pre">asyncio.sleep()</span></code> async API call, but the function itself does not declare
+itself as <code class="docutils literal notranslate"><span class="pre">async</span></code>; instead, this is applied functionally using the
+<a class="reference internal" href="api.html#awaitlet.async_def" title="awaitlet.async_def"><code class="xref py py-func docutils literal notranslate"><span class="pre">async_def()</span></code></a> function.   Through this approach, a program can be made
+to use asyncio for its front-facing API, talking to asyncio libraries for
+non-blocking IO patterns, while not impacting intermediary code, which remains
+compatible with non-asyncio use as well.</p>
+<p>For a more complete example see <a class="reference internal" href="synopsis.html"><span class="doc">Synopsis</span></a>.</p>
+<section id="how-does-this-work">
+<h2>How does this work?<a class="headerlink" href="#how-does-this-work" title="Link to this heading">¶</a></h2>
+<p>The context shift feature of the Python <code class="docutils literal notranslate"><span class="pre">await</span></code> keyword is made available in a functional
+way using the <a class="reference external" href="https://pypi.org/project/greenlet/">greenlet</a> library.  The source code for
+<a class="reference internal" href="api.html#awaitlet.async_def" title="awaitlet.async_def"><code class="xref py py-func docutils literal notranslate"><span class="pre">async_def()</span></code></a> and <a class="reference internal" href="api.html#awaitlet.awaitlet" title="awaitlet.awaitlet"><code class="xref py py-func docutils literal notranslate"><span class="pre">awaitlet()</span></code></a> are a only a few dozen lines of code, using greenlet
+to adapt <a class="reference internal" href="api.html#awaitlet.awaitlet" title="awaitlet.awaitlet"><code class="xref py py-func docutils literal notranslate"><span class="pre">awaitlet()</span></code></a> function calls to real Python <code class="docutils literal notranslate"><span class="pre">await</span></code> keywords.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="synopsis.html">Synopsis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="synopsis.html#detailed-breakdown">Detailed Breakdown</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sqlalchemy.html">Use with SQLAlchemy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sqlalchemy.html#using-sqlalchemy-s-asyncio-from-non-async-functions-in-asyncio-programs">Using SQLAlchemy’s asyncio from non-async functions in asyncio programs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sqlalchemy.html#using-sqlalchemy-s-sync-api-in-asyncio-programs">Using SQLAlchemy’s sync API in Asyncio Programs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#awaitlet.async_def"><code class="docutils literal notranslate"><span class="pre">async_def()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#awaitlet.awaitlet"><code class="docutils literal notranslate"><span class="pre">awaitlet()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#change-0.0.1">0.0.1</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="#">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Welcome to awaitlet’s documentation!</a><ul>
+<li><a class="reference internal" href="#how-does-this-work">How does this work?</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="synopsis.html"
+                          title="next chapter">Synopsis</a></p>
+  </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="synopsis.html" title="Synopsis"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">awaitlet 0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to awaitlet’s documentation!</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024 Mike Bayer.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+  </body>
+</html>

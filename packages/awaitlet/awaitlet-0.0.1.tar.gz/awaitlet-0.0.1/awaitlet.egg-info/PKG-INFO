@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: awaitlet
+Version: 0.0.1
+Summary: Allow non-async defs that invoke awaitables inside of asyncio applications
+Author-email: Mike Bayer <mike_mp@zzzcomputing.com>
+License: Copyright 2024 Michael Bayer
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of
+        this software and associated documentation files (the "Software"), to deal in
+        the Software without restriction, including without limitation the rights to
+        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+        of the Software, and to permit persons to whom the Software is furnished to do
+        so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/sqlalchemy/awaitlet
+Project-URL: Documentation, https://awaitlet.sqlalchemy.org
+Keywords: asyncio
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: greenlet>=1
+Requires-Dist: typing-extensions>=4.6.0
+
+========
+awaitlet
+========
+
+Allow non-async defs that invoke awaitables inside of asyncio applications.
+
+awaitlet allows existing programs written to use threads and blocking
+APIs to be ported to asyncio, by replacing frontend and backend code with
+asyncio compatible approaches, but allowing intermediary code to remain
+completely unchanged.  Its primary use is to support code that is cross-compatible
+with asyncio and non-asyncio runtime environments.
+
+awaitlet is intentionally fully compatible with SQLAlchemy's asyncio mediation
+layer, and includes API patterns for:
+
+* Converting any threaded program (no SQLAlchemy dependency necessary) to use
+  asyncio patterns for front facing APIs and backends, without modifying
+  intermediary code
+* Converting threaded database-enabled programs to use asyncio patterns for
+  front facing APIs and backends, where those backends use SQLAlchemy's asyncio
+  API for database access
+* Converting threaded database-enabled programs to use asyncio patterns for
+  front facing APIs and backends, without modifying intermediary code that uses
+  SQLAlchemy's synchronous API for database access
+
+Documentation for awaitlet is within this source distribution and availble on
+the web at https://awaitlet.sqlalchemy.org .
+
