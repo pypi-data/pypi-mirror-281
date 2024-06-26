@@ -1,0 +1,16 @@
+
+[dev]
+black
+flake8
+pyproject-flake8
+pytest
+mypy
+tox
+isort
+pytest-cov
+pytest-random-order
+
+[docs]
+sphinx
+sphinx_rtd_theme
+sphinx-autodoc-typehints

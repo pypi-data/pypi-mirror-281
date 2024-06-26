@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyvlq/__init__.py
+src/pyvlq/core.py
+src/pyvlq/py.typed
+src/pyvlq.egg-info/PKG-INFO
+src/pyvlq.egg-info/SOURCES.txt
+src/pyvlq.egg-info/dependency_links.txt
+src/pyvlq.egg-info/requires.txt
+src/pyvlq.egg-info/top_level.txt
+tests/test_core.py
+tests/test_pyvlq.py
