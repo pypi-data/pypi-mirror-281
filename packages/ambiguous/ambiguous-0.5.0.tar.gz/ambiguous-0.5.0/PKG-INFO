@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: ambiguous
+Version: 0.5.0
+Summary: flexibility when you need it
+Author: Daniel Pepper
+License: The MIT License (MIT)
+        
+        Copyright (c) 2018 Daniel Pepper
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+        
+Project-URL: Homepage, https://github.com/dpep/py_ambiguous
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+ambiguous
+======
+flexibility when you need it
+
+
+### Install
+```bash
+pip install ambiguous
+```
+
+
+### Usage
+
+#### decorator: allow decorators to accept arguments
+```python
+from ambiguous import decorator
+
+
+@decorator
+def power(fn, exponent=2):
+  '''take function results and raise to an exponent'''
+  return lambda x: fn(x) ** exponent
+
+
+@power
+def squared(x): return x
+
+squared(2)
+> 4
+
+
+@power(exponent=3)
+def cubed(x): return x
+
+cubed(2)
+> 8
+```
+
+#### thing_or_things: combine gets and multigets
+
+```python
+from ambiguous import thing_or_things
+
+@thing_or_things
+def itself(args):
+  return { x : x for x in args }
+
+itself(1)
+> 1
+itself([1, 2])
+> { 1 : 1, 2 : 2 }
+
+
+# specify which argument
+@thing_or_things('args')
+def prefix(prefix, args):
+  return { x : "%s_%s" % (prefix, x) for x in args }
+
+prefix('abc', [1, 2])
+> { 1 : 'abc_1', 2 : 'abc_2' }
+```
+
+
+#### optional parentheses  (warning: still experimental)
+```python
+import ambiguous
+
+@ambiguous
+def foo():
+  return 'foo'
+
+# the usual
+foo()
+> 'foo'
+
+# ?!?
+foo
+> 'foo'
+foo + 'abc'
+> 'fooabc'
+```
+
+----
+[![installs](https://img.shields.io/pypi/dm/ambiguous.svg?label=installs)](https://pypi.org/project/ambiguous)
