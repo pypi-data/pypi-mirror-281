@@ -1,0 +1,1 @@
+from fixthelink import init, set_api_key, add_tags_to_text

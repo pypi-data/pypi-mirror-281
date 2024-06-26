@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+linkify-text/__init__.py
+linkify-text/fixthelink.py
+linkify_text.egg-info/PKG-INFO
+linkify_text.egg-info/SOURCES.txt
+linkify_text.egg-info/dependency_links.txt
+linkify_text.egg-info/requires.txt
+linkify_text.egg-info/top_level.txt
