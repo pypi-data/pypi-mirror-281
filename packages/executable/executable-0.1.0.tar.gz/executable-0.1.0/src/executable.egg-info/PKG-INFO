@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: executable
+Version: 0.1.0
+Summary: Create windows .exe files that just wrap a Python script.
+Home-page: https://github.com/tusharsadhwani/executable
+Author: Tushar Sadhwani
+Author-email: tushar.sadhwani000@gmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+
+# executable
+
+Create windows .exe files that just wrap a Python script.
+
+## Installation
+
+```bash
+pip install executable
+```
+
+## Usage
+
+```console
+$ cat .\hello.py
+print("Hello!")
+
+$ executable .\hello.py
+Created .\out\hello.exe and .\out\hello-script.py
+
+$ ./out/hello
+Hello!
+
+$ executable .\hello.py --create-cmd
+Created .\out\hello.cmd and .\out\hello-script.py
+
+$ .\out\hello
+Hello!
+```
+
+## Local Development / Testing
+
+- Create and activate a virtual environment
+- Run `pip install -r requirements-dev.txt` to do an editable install
+- Run `pytest` to run tests
+
+## Type Checking
+
+Run `mypy .`
+
+## Create and upload a package to PyPI
+
+Make sure to bump the version in `setup.cfg`.
+
+Then run the following commands:
+
+```bash
+rm -rf build dist
+python setup.py sdist bdist_wheel
+```
+
+Then upload it to PyPI using [twine](https://twine.readthedocs.io/en/latest/#installation):
+
+```bash
+twine upload dist/*
+```

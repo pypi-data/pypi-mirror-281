@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/executable/__init__.py
+src/executable/__main__.py
+src/executable/cli.exe
+src/executable/cli.py
+src/executable/py.typed
+src/executable.egg-info/PKG-INFO
+src/executable.egg-info/SOURCES.txt
+src/executable.egg-info/dependency_links.txt
+src/executable.egg-info/entry_points.txt
+src/executable.egg-info/requires.txt
+src/executable.egg-info/top_level.txt
