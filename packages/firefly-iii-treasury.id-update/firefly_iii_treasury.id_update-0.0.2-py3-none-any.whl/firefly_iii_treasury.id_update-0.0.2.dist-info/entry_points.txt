@@ -1,0 +1,2 @@
+[console_scripts]
+firefly-iii-treasury-update = firefly_iii_treasury_id_update.__main__:execute_cli_main
