@@ -1,0 +1,14 @@
+optimodel/__init__.py,sha256=8RViuvqJvU5sLMP6Id06GAz0dehS9o9EEXaVvaofCoY,111
+optimodel/Consts/__init__.py,sha256=PO4bU_p9mbbOHLEUre6LepN_BK9RFobt1QUF33krulw,156
+optimodel/ListModels/ListModels.py,sha256=8Ed56IMzhYQAsfoKPaeWWIZ5r7BcSZ2qKFkMUPa5XOg,267
+optimodel/ListModels/__init__.py,sha256=GGCEjV8kTp_vUssXkIDFFW18RW4v9sZJb_xA0iVxgcs,35
+optimodel/QueryModel/QueryModel.py,sha256=m7ZfxLjJReTomays5JPlZgAAkmQ0s_4qxBYclbk1VyA,3067
+optimodel/QueryModel/__init__.py,sha256=1Ou5bzrHuEP7iXZXCYpBb-LYUKLRgJ0zGgbFDMDY2F8,65
+optimodel/QueryModel/types.py,sha256=gj5jciK2jHOx98AzNrYZy1A50-RbHEW-yOi2ioOrtXk,124
+optimodel/Utils/__init__.py,sha256=-eISzKvadurvENprtjBb8DufKEmaS2ZJOizRwer8EyQ,35
+optimodel/Utils/HTTPClient/HTTPClient.py,sha256=SakoGFmoDui0GpW_jQvYgO9SHJBvJPYPPnaDqdvt9t4,411
+optimodel/Utils/HTTPClient/__init__.py,sha256=-eISzKvadurvENprtjBb8DufKEmaS2ZJOizRwer8EyQ,35
+optimodel_py-0.2.3.dist-info/METADATA,sha256=cdyiOuOeGyDKrd7Ecc--JRKWpIwiHQLfubJmPTzPoIg,734
+optimodel_py-0.2.3.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+optimodel_py-0.2.3.dist-info/top_level.txt,sha256=UCztz7QNRfe7BK7h1goXfrmhrtn2KHOfpdWtygzWd6s,10
+optimodel_py-0.2.3.dist-info/RECORD,,
