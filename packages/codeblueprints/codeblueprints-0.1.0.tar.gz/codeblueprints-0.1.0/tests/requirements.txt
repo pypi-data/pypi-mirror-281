@@ -1,0 +1,10 @@
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-ordering==0.6
+pytest-mock==3.12.0
+invoke==2.2.0
+xlrd==2.0.1
+Faker==20.1.0
+factory_boy==3.3.0
+freezegun==1.2.2
+model-bakery==1.17.0
