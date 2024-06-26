@@ -1,0 +1,7 @@
+README.md
+setup.py
+dataplex/__init__.py
+dataplex.egg-info/PKG-INFO
+dataplex.egg-info/SOURCES.txt
+dataplex.egg-info/dependency_links.txt
+dataplex.egg-info/top_level.txt
