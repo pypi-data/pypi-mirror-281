@@ -1,0 +1,5 @@
+setup.py
+queshy.egg-info/PKG-INFO
+queshy.egg-info/SOURCES.txt
+queshy.egg-info/dependency_links.txt
+queshy.egg-info/top_level.txt
