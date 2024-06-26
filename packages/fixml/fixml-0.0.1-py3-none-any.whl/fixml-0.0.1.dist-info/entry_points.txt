@@ -1,0 +1,3 @@
+[console_scripts]
+fixml=fixml:cli_main
+
