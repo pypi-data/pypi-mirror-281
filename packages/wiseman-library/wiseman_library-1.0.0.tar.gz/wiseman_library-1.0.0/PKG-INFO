@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: wiseman_library
+Version: 1.0.0
+Summary: wiseman bundles the voice assistant infrastructure into a python library
+Home-page: https://github.com/adem-ocel/wiseman-library
+License: MIT
+Keywords: voice assistant,wiseman,library
+Author: Adem
+Author-email: adem@example.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/adem-ocel/wiseman-library
+Description-Content-Type: text/markdown
+
+# Wiseman Library
+
+Wiseman is a Python library that provides a framework for building voice assistant applications.
+
+## Installation
+
+You can install the Wiseman library using pip, the Python package manager:
+
+```bash
+pip install wiseman_library
+```
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Support
+If you have any questions, issues, or suggestions, please feel free to open an issue on the GitHub repository.
+
