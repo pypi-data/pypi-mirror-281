@@ -1,0 +1,13 @@
+samila/__init__.py,sha256=8BvLjiAeJewuEqKRC3UKOuh_7_2gxAGdmhNiX_SHlCI,248
+samila/__main__.py,sha256=LeoNc_z3_YK3iBdB0ah8iwzr_hgzH1vv87e7krcJm6o,238
+samila/errors.py,sha256=LpHYWQ3kKYyGfLGHADQOPKnc22k6ilynwG2qk_L8BdI,353
+samila/functions.py,sha256=c5eJh-5xW0aAvJrLpeA3uMNAMZDMmsLJD4RvuKb19yM,25615
+samila/genimage.py,sha256=jOsr3sfZF8T9cprHsmceQ9YK3__KQ1DU-UhINfuUZAQ,9024
+samila/params.py,sha256=cPWH0-COSlQRqrG03a_GtHlh4xI1OfHUm0s6gZxTefs,5792
+samila/test.py,sha256=INg0Tr477Xydo8zSuJ4NYLHbwoeqSY4nB0IfCbRcgq8,406
+samila-1.2.dist-info/AUTHORS.md,sha256=OLDEJI5CKF2zWcU55xOh_XqqyGaDDHsc3MKnJYpyWMg,379
+samila-1.2.dist-info/LICENSE,sha256=ye80n5U4INV14L8SHaHmy4TEdpYEC3lF9gh_2QbdUf8,1106
+samila-1.2.dist-info/METADATA,sha256=sfHLG21rQAm7BmRzyEZrDzLpcF9CsRtU2VMH5y0bdbM,22279
+samila-1.2.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+samila-1.2.dist-info/top_level.txt,sha256=-E048nn3JvbQsjvIl64M1LLcZCDVTBvw9oG2UoEOIds,7
+samila-1.2.dist-info/RECORD,,
