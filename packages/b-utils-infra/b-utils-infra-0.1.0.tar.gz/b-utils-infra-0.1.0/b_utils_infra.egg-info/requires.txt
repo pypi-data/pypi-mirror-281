@@ -1,0 +1,11 @@
+SQLAlchemy>=2.0.0
+pandas>=2.0.0
+numpy<2.0.0
+google-cloud-translate==2.0.4
+openai>=1.11.1
+slack-sdk
+tiktoken
+deepl
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
