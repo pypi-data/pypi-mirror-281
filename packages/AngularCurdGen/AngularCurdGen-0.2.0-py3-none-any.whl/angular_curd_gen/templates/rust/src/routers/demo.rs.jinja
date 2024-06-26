@@ -1,0 +1,52 @@
+use axum::extract::{Query, State};
+use axum::{Json, Router};
+use axum::response::{IntoResponse, Response};
+use axum::routing::{get, post};
+use redis::AsyncCommands;
+use axum::http::StatusCode;
+use crate::entities::demo::{RedisKey, RedisKeyValue};
+use crate::func_name;
+use crate::modules::demo::MODULE_LOGGER;
+use crate::utils::state;
+
+pub fn demo_routes() -> Router<state::AppState> {
+    Router::new()
+        .route("/redis", get(get_by_redis).post(set_redis_key))
+        .route("/mongo", post(set_mongo_record))
+}
+
+async fn get_by_redis(state: State<state::AppState>, Query(params): Query<RedisKey>) -> Response {
+    MODULE_LOGGER.info(&format!("params: {params:?}"), 0, state.clone(), func_name!()).await;
+
+    let mut redis = state.redis.lock().await;
+    match redis.get::<_, Option<String>>(&params.key).await {
+        Ok(Some(value)) => (StatusCode::OK, value).into_response(),
+        Ok(None) => (
+            StatusCode::BAD_REQUEST,
+            format!("Key '{}' not found", params.key),
+        ).into_response(),
+        Err(err) => (
+            StatusCode::INTERNAL_SERVER_ERROR,
+            format!("Failed to get key '{}': {}", params.key, err),
+        ).into_response(),
+    }
+}
+
+async fn set_redis_key(state: State<state::AppState>, Json(payload): Json<RedisKeyValue>) -> Response {
+    MODULE_LOGGER.info(&format!("payload: {payload:?}"), 0, state.clone(), func_name!()).await;
+
+    let mut redis = state.redis.lock().await;
+    match redis.set::<_, _, ()>(&payload.key, &payload.value).await {
+        Ok(_) => (StatusCode::CREATED, "Key set").into_response(),
+        Err(err) => (
+            StatusCode::INTERNAL_SERVER_ERROR,
+            format!("Failed to set key '{}':'{}' error:{}", payload.key, payload.value, err),
+        ).into_response(),
+    }
+}
+
+async fn set_mongo_record(state: State<state::AppState>) -> Response {
+    MODULE_LOGGER.info("set a mongo log", 0, state.clone(), func_name!()).await;
+
+    (StatusCode::CREATED, "Record set").into_response()
+}
