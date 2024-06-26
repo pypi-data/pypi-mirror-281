@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: aisum
+Version: 0.1.2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: openai
+
+# AISum
+
+A simple CLI tool to summarize text using OpenAI's API.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install aisum
+```
+
+## Usage
+
+You can use the CLI tool by piping input to it:
+
+```bash
+echo "Your long text here" | aisum
+```
