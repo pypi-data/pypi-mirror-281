@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dataqruiser
+Version: 0.0.1
+Summary: A qruiser to qruise through your data
+Author: QDrive team
+Requires-Python: >=3.7
+License-File: LICENCE
+Requires-Dist: xarray <=0.20.2,>=0.15.0 ; python_version < "3.8"
+
