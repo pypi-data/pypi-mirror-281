@@ -1,0 +1,3 @@
+[console_scripts]
+read = source.accounts.options:read_accounts
+run = main:main
