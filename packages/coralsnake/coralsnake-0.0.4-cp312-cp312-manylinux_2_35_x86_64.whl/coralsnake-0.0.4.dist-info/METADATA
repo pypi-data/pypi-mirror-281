@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: coralsnake
+Version: 0.0.4
+Summary: MAPPING
+License: GPL-3.0
+Author: Chang Ye
+Author-email: yech1990@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: dnaio (>=1.2.1,<2.0.0)
+Requires-Dist: pyfaidx (>=0.8.1.1,<0.9.0.0)
+Requires-Dist: pysam (>=0.22.1,<0.23.0)
+Requires-Dist: rich-click (>=1.8.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Coralsnake
+
+[![Pypi Releases](https://img.shields.io/pypi/v/coralsnake.svg)](https://pypi.python.org/pypi/coralsnake)
+[![Downloads](https://pepy.tech/badge/coralsnake)](https://pepy.tech/project/coralsnake)
+
+<p align="center">
+    <picture>
+        <img alt="coralsnake logo" src="https://coralsnake.yech.science/coralsnake_DNA.png" style="width: 50%">
+    </picture>
+</p>
+
