@@ -1,0 +1,3 @@
+[console_scripts]
+sa = selectaudio.__main__.py:main
+selectaudio = selectaudio.__main__.py:main
