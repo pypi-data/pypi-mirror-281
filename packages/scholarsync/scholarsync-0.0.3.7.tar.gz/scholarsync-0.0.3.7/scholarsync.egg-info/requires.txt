@@ -1,0 +1,13 @@
+biopython
+requests
+beautifulsoup4
+PyPDF2
+numpy
+plotly
+lxml
+spacy>=3.7.5
+beautifulsoup4
+pandas
+scikit-learn
+torch>=2.3.0
+transformers
