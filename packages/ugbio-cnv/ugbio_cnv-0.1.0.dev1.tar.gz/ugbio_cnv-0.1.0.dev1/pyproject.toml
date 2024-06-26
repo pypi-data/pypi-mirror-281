@@ -1,0 +1,29 @@
+[project]
+name = "ugbio_cnv"
+version = "0.1.0.dev1"
+requires-python = ">= 3.12"
+dependencies = [
+    "ugbio_core",
+    "pysam>=0.22.1",
+    "pandas>=2.2.2",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+#[build-system]
+#requires = ["hatchling"]
+#build-backend = "hatchling.build"
+#
+#[tool.hatch.build]
+#include = ["src/ugbio_cnv/*"]
+
+#[tool.rye]
+#name = "ugbio-cnv"  # Use underscore to match the import statement
+#version = "0.1.0"
+#managed = true
+#dev-dependencies = [
+#    "pytest>=8.2.2",
+#]
+
