@@ -1,0 +1,14 @@
+flumut/DataClass.py,sha256=bNka77vtY3aWt-sVKBL4nboqDVzDhBIIJADiUZwAa3w,723
+flumut/DbReader.py,sha256=sMdL2WsQaJp4paF37cjt4eDtknurvNxJPReNGnoR-LU,958
+flumut/OutputFormatter.py,sha256=6xDkg_rHR72wKr-qdGPa0mW4vV38jSECL1Syg8C-Cq0,2587
+flumut/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flumut/flumut.py,sha256=7nbcrDACqwiR5zZEdApB8paHvHaEmKUB8HnLKOAWZmo,14234
+flumutdata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flumutdata/flumut_db.sqlite,sha256=NlWcLf56f_NcMAa5LY67fk6xub759lREZ9QEwXmPcXI,753664
+flumutdata/flumut_output.xlsm,sha256=5E67I_GYm6_e4KThXx_w5uZe4robk-Ciy8QI7TpIb5Y,49687
+flumut-0.5.3.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+flumut-0.5.3.dist-info/METADATA,sha256=U2_fKmyuoKML10ThOx0Ep-fMiEUbOss456o9pA6e1LI,45060
+flumut-0.5.3.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+flumut-0.5.3.dist-info/entry_points.txt,sha256=dpCi4suunEJ2k_JoN_K3bu3Nc4p86smizs4qRTBSs6w,46
+flumut-0.5.3.dist-info/top_level.txt,sha256=rqtHiLz23G-2_jzaHF_1f7p1kGbSQWGUBuPMPw1zwpM,18
+flumut-0.5.3.dist-info/RECORD,,
