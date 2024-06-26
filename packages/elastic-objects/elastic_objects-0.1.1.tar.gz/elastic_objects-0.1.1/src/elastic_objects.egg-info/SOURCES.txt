@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/elastic_objects/__init__.py
+src/elastic_objects/elastic_object.py
+src/elastic_objects.egg-info/PKG-INFO
+src/elastic_objects.egg-info/SOURCES.txt
+src/elastic_objects.egg-info/dependency_links.txt
+src/elastic_objects.egg-info/top_level.txt
+tests/test_elastic_objects.py
