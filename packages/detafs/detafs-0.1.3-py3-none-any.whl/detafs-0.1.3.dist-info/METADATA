@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: detafs
+Version: 0.1.3
+Summary: A PathLike interface for Deta
+Home-page: https://github.com/chantroi/detafs
+Author: New Horizon
+Author-email: tonglanhchua@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: deta >=1.0.0
+
