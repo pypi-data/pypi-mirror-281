@@ -1,0 +1,16 @@
+name: interrupt
+# please leave character section empty, we will decide which character use this later
+character:
+  name:
+  realm:
+type: b
+# make sure the macro id match the file name
+id:
+# you can find icon id on https://wotlk.evowow.com/?icons
+icon:
+description: |
+  cancel casting spell, interrupt enemy casting immediately!
+text: |
+  #showtooltip
+  /stopcasting
+  /cast Counterspell
