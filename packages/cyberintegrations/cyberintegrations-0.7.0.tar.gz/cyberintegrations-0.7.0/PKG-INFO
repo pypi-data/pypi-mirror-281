@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cyberintegrations
+Version: 0.7.0
+Summary: Package provides pollers
+Author: Сyberintegrations
+Author-email: cyberintegrationsdev@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+Requires-Dist: dataclasses
+Requires-Dist: urllib3
