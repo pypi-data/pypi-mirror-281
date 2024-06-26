@@ -1,0 +1,16 @@
+templatemail/__init__.py,sha256=nxHHtXKkfWHqbsX9h52p-g4QBQEN_qeYUNZlrTcnFjY,3375
+templatemail/engines/__init__.py,sha256=2WSSYYmgE8uCwnyu3TA-g0EST5wqBzSFmrT7M3k6x9I,853
+templatemail/engines/mailgun.py,sha256=ePOK066qi0vfzWNNF6f-qZEcq6b3Z1rjJ6Fk5q9vxJ8,1245
+templatemail/engines/smtp.py,sha256=jfzvGWy-PtJxNJOjPFvJOT6EHOdhE8V6NKmLpeQOrFQ,5862
+templatemail/templates/_render_html_body.html,sha256=wEPG9A-3eMtd7u-rjmTlCik92kk30z0Lk9BKhUIGaGg,160
+templatemail/templates/_render_subject.html,sha256=yJH82a5WvhesKTsafllCvKCCjpTqtSqEhd3aEwe7Yxo,160
+templatemail/templates/_render_text_body.html,sha256=ZK8c4NeLpGJLRSbiFpJ93KaHaGbKKTfO-QEHX5N29jE,160
+templatemail/templates/base.html,sha256=5sO09zgGMFfe7j3N4nZZFABoSUE2uTz5n0r_Q_w8HS0,106
+templatemail/templates/mailgun-transactional/action.html,sha256=6g3Y75pHoA2Qe0aLYZKsJSyHIuy8GDCiATbsKIIgbDM,6527
+templatemail/templates/mailgun-transactional/alert.html,sha256=LlIheTfz7cGOJd9YK1XYDjdPXBQjuhoHP-WSgmKtyIQ,6890
+templatemail/templates/mailgun-transactional/billing.html,sha256=ltO-b59G9vHKi53gmyob5Mru-6blhpACPVfnVlYtSME,15955
+templatemail/templates/mailgun-transactional/standard_css.html,sha256=J6nKVUv8h3ZFRfGkFM2Uw6BI-M63W5qWMhu-3ZuApRY,1251
+templatemail-1.1.0.dist-info/LICENSE,sha256=wZ_gE8ppY-MpQNLMAih0j_2KDW3ypA-gbvocqF2oWHA,11340
+templatemail-1.1.0.dist-info/METADATA,sha256=QybXJ9AlZWdhBigF-1PrvqDr-Tt69YqdHt1OirRYpMU,3923
+templatemail-1.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+templatemail-1.1.0.dist-info/RECORD,,
