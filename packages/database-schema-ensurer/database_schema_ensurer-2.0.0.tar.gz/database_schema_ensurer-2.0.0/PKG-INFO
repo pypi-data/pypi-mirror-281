@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: database-schema-ensurer
+Version: 2.0.0
+Summary: 
+Author: megahomyak
+Author-email: g.megahomyak@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# database\_schema\_ensurer
+
+Ensures that the database schema is at a certain version.
+
+## Usage
+
+Put your migrations in a directory. Each migration SQL file name must obey these rules:
+* Start with `{version}_` (e.g. `1_init.sql.up`)
+* Have two versions: `.up.sql` for upgrading (adding the necessary things) and `.down.sql` for downgrading (undoing the upgrade) (must have the specified extensions)
+
+```
+from database_schema_ensurer import migrate, Database
+
+class MyDatabase(Database):
+    ...
+    # Implement all the methods or use a library:
+    # * Postgres: postgres_schema_ensurer
+
+migrate(
+    MyDatabase(...),
+    target_version=OPTIONAL_SPECIFIC_VERSION, # Default: greatest version from the directory
+    migrations_directory=OPTIONAL_SPECIFIC_DIRECTORY, # Default: "migrations"
+)
+```
+
