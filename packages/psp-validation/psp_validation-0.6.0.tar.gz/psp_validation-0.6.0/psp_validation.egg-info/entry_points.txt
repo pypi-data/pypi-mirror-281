@@ -1,0 +1,3 @@
+[console_scripts]
+cv-validation = psp_validation.cv_validation.cli:cli
+psp = psp_validation.cli:cli

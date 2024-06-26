@@ -1,0 +1,12 @@
+*.pyc
+*.swp
+coverage.xml
+*.egg
+*.egg-info
+.coverage
+build
+.tox
+venv
+.idea
+.vscode
+psp_validation/version.py

@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: psp-validation
+Version: 0.6.0
+Summary: PSP analysis tools
+Home-page: https://github.com/BlueBrain/psp-validation/
+Author: BlueBrain NSE
+Author-email: bbp-ou-nse@groupes.epfl.ch
+License: Apache2.0
+Project-URL: Tracker, https://github.com/BlueBrain/psp-validation/issues
+Project-URL: Source, https://github.com/BlueBrain/psp-validation/
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.7
+Description-Content-Type: text/plain
+License-File: LICENSE.txt
+License-File: AUTHORS.txt
+Requires-Dist: attrs>=20.3.0
+Requires-Dist: click>=7.0
+Requires-Dist: efel>=3.0.39
+Requires-Dist: h5py<4,>=3
+Requires-Dist: joblib>=0.16
+Requires-Dist: matplotlib
+Requires-Dist: numpy>=1.10
+Requires-Dist: pandas<2,>=1.3
+Requires-Dist: tqdm>=4.0
+Requires-Dist: bluecellulab>=2.6.15
+Requires-Dist: bluepysnap<4.0.0,>=3.0.0
+Requires-Dist: seaborn<1.0,>=0.11
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-bluebrain-theme; extra == "docs"
+
+PSP analysis tools

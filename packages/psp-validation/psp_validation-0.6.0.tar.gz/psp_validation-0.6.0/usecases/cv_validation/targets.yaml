@@ -1,0 +1,48 @@
+L23_PC:
+  layer: [2, 3]
+  synapse_class: EXC
+  $node_set: S1HL
+
+L4_EXC:
+  layer: 4
+  synapse_class: EXC
+  $node_set: S1HL
+
+L4_SS:
+  mtype: L4_SSC
+  $node_set: S1HL
+
+L4_FS:
+  mtype:
+    $regex: "L4_(SBC|LBC|NBC|CHC)"
+  $node_set: S1HL
+
+L5_TTPC:
+  mtype:
+    $regex: "L5_TPC:(A|B)"
+  $node_set: S1HL
+
+L5A_PC:
+  mtype:
+    $regex: "L5_(UPC|TPC:C)"
+  $node_set: S1HL
+
+L6_PC:
+  layer: 6
+  synapse_class: EXC
+  $node_set: S1HL
+
+L6_CC:
+  mtype:
+    $regex: "L6_(U|I|H)PC"
+  $node_set: S1HL
+
+L4_EXC:
+  layer: 4
+  synapse_class: EXC
+  $node_set: S1HL
+
+L4_FS:
+  mtype:
+    $regex: "L4_(SBC|LBC|NBC|CHC)"
+  $node_set: S1HL
