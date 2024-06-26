@@ -1,0 +1,5 @@
+brewmind
+chicory_cli
+chicory_tools
+services
+utils
