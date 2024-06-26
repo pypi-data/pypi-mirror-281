@@ -1,0 +1,11 @@
+bolinette/api/README.md,sha256=v9QvdvkjMcPe0YMQtsgfRYLCAREzwsTB54IhPu7fmWo,67
+bolinette/api/__init__.py,sha256=Mqlo7j_bjK2EwxiroMp4nVDR45whfZrwyzfZI4BZgnY,187
+bolinette/api/autoroute.py,sha256=1DNuAM30ZtZ1qU8N6XJsYxSyVTCM65S6CCRZcs5dRl8,4735
+bolinette/api/controller.py,sha256=b6t8aN_0XBREj4nHs3ZDWxJDGb35dPH3dKmueErxOL4,538
+bolinette/api/extension.py,sha256=TgGdU11at6oP8IJRtrPyCWrl4cAFLkCo_LggE5gvKsM,335
+bolinette/api/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bolinette/api/pyproject.toml,sha256=CqxnafRAh4EFTsNyrKeS5iXYte5zZMqiq1Fdw6YDY9o,796
+bolinette_api-0.18.0.dist-info/LICENSE.txt,sha256=bIQC3UiOQIqXmMQpd1JIfyqIAA1Vk0mruZeDqjmAtFw,1073
+bolinette_api-0.18.0.dist-info/METADATA,sha256=lQ1v3aR_-ELhyNjIMFlw2yfYb8HbwV9W_icivqxQgm4,1004
+bolinette_api-0.18.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+bolinette_api-0.18.0.dist-info/RECORD,,
