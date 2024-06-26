@@ -1,0 +1,2 @@
+from HandySeg.line_segmentation import line_segmenation
+from HandySeg.word_segmentaiton import WordSegmentation
