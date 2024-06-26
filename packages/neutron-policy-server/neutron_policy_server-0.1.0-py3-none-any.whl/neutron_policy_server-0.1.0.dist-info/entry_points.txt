@@ -1,0 +1,3 @@
+[wsgi_scripts]
+neutron-policy-server-wsgi = neutron_policy_server.wsgi:create_app
+

@@ -1,0 +1,13 @@
+neutron_policy_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neutron_policy_server/wsgi.py,sha256=z3QXIklnIVAt2QMVYK89AAyOPdX8GTO4GsbkhVX5lBU,5354
+neutron_policy_server/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neutron_policy_server/tests/test.py,sha256=I3NvBumbn-GMklVU9DHwDYFCx6SEBhImVmF5Pvv7YHU,258
+neutron_policy_server/tests/test_neutron_address_pair.py,sha256=s1Kh29ytC7T2tv5oQRfZimnbA-1n9GovN5x3nMuqcsw,6274
+neutron_policy_server-0.1.0.data/scripts/neutron-policy-server-wsgi,sha256=KqWepGlzG-0i1jb4JzE-Ifk9JnCNO_Rcr-RFlUzn_pM,1804
+neutron_policy_server-0.1.0.dist-info/AUTHORS,sha256=TLJ9hIi5RS8oCFYOTaKF0FEprLlnf71gTZCxzmxSS3g,68
+neutron_policy_server-0.1.0.dist-info/METADATA,sha256=rG8snvPcgdYDh_25JpWJy6ZP9I5RCaGmXgzz5skzvqE,2560
+neutron_policy_server-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+neutron_policy_server-0.1.0.dist-info/entry_points.txt,sha256=VANSKzsd46QZowjKowB6efqjiHfyvf56fceGDbI5GxM,83
+neutron_policy_server-0.1.0.dist-info/pbr.json,sha256=sAweueVnpY47gPQF-YB_QYDXwa0aAOIn89G8rMYMZU0,47
+neutron_policy_server-0.1.0.dist-info/top_level.txt,sha256=O6M_4JEU1DqF3C0rlYoRbPwbaKWXwLW_6ufsu8VeQmU,22
+neutron_policy_server-0.1.0.dist-info/RECORD,,
