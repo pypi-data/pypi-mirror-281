@@ -1,0 +1,6 @@
+numpy
+torch
+opencv-python
+h5py
+scikit-image
+requests
