@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ugbio_cnv
+Version: 0.1.0.dev1
+Requires-Python: >=3.12
+Requires-Dist: ugbio-core
+Requires-Dist: pysam >=0.22.1
+Requires-Dist: pandas >=2.2.2
+

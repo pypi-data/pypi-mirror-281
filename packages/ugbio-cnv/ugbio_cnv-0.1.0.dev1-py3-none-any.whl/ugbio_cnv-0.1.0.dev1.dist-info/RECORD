@@ -1,0 +1,7 @@
+ugbio_cnv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ugbio_cnv/convert_cnv_results_to_vcf.py,sha256=IM6tJetIQu8G4G7nKOEC__V3qo2OdhTYlbJ4U3ggE1s,6107
+ugbio_cnv/filter_sample_cnvs.py,sha256=XPSG6ajKKzyNjDlI1GqFXVphH4m5dujxHL5Yjg0LQJw,4945
+ugbio_cnv-0.1.0.dev1.dist-info/METADATA,sha256=YlGlAz29hody2pIff1xNrliqJsQ6zI9KXAGjMlfghPE,169
+ugbio_cnv-0.1.0.dev1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+ugbio_cnv-0.1.0.dev1.dist-info/top_level.txt,sha256=N8t5IEapY9leoOW0Xd_a_dlvC2ZkE4zZFoCrjoP4K1U,10
+ugbio_cnv-0.1.0.dev1.dist-info/RECORD,,
