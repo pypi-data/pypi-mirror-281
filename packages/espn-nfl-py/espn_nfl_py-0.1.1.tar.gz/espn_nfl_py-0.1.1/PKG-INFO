@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: espn_nfl_py
+Version: 0.1.1
+Summary: A Python wrapper for the ESPN NFL API
+Home-page: https://github.com/ahumble/espn_nfl_api
+Author: Andrew Humble
+Author-email: andrewhumble@me.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# ESPN NFL API Wrapper
+
+A Python wrapper for the ESPN NFL API.
+
+## Installation
+
+```bash
+pip install espn_nfl_py
