@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: raspaJud
+Version: 0.0.1
+Summary: Package to convert scrap judicial decisions.
+Project-URL: Homepage, https://github.com/bdcdo/raspaJud
+Project-URL: Issues, https://github.com/bdcdo/raspaJud/issues
+Author-email: Bruno Oliveira <bruno.oliveira.pgsp@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: bs4
+Requires-Dist: pandas
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+Description-Content-Type: text/markdown
+
+# raspaJud
+
+This package was made to make it easier to scrape TJSP decisions.
