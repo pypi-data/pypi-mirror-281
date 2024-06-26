@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pitchtrack
+Version: 0.0.1
+Summary: collection of pitch (f0, fundamental frequency) tracking algorithms with unified interface
+Author-email: Alexander Rodionov <tandav@tandav.me>
+Project-URL: source, https://github.com/tandav/pitchtrack
+Project-URL: docs, https://tandav.github.io/pitchtrack/
+Project-URL: issues, https://github.com/tandav/pitchtrack/issues
+Project-URL: release notes, https://github.com/tandav/pitchtrack/releases
+Project-URL: homepage, https://pitchtrack.org
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: bumpver; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+
+# pitchtrack
+collection of pitch (f0, fundamental frequency) tracking algorithms with unified interface
+
+warning: currently this repo is only contains mock API. Actual implementation is here https://github.com/tandav/pitch-detectors (to be merged)
+
+# Installation
+
+```shell
+pip install pitchtrack
+```
+
+# Usage
+
+```python
+import pitchtrack
+pitchtrack.test()
+```

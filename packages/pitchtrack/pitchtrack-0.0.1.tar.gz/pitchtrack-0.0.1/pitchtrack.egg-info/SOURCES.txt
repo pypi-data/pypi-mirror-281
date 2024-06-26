@@ -1,0 +1,8 @@
+README.md
+pitchtrack.py
+pyproject.toml
+pitchtrack.egg-info/PKG-INFO
+pitchtrack.egg-info/SOURCES.txt
+pitchtrack.egg-info/dependency_links.txt
+pitchtrack.egg-info/requires.txt
+pitchtrack.egg-info/top_level.txt

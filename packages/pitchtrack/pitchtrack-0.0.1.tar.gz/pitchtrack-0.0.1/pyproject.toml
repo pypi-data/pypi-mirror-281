@@ -1,0 +1,28 @@
+[project]
+name = "pitchtrack"
+version = "0.0.1"
+authors = [{name = "Alexander Rodionov", email = "tandav@tandav.me"}]
+description = "collection of pitch (f0, fundamental frequency) tracking algorithms with unified interface"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "bumpver",
+    "pre-commit",
+    "pytest",
+]
+
+[project.urls]
+source = "https://github.com/tandav/pitchtrack"
+docs = "https://tandav.github.io/pitchtrack/"
+issues = "https://github.com/tandav/pitchtrack/issues"
+"release notes" = "https://github.com/tandav/pitchtrack/releases"
+homepage = "https://pitchtrack.org"
+
+# ==============================================================================
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
