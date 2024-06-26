@@ -1,0 +1,10 @@
+swifr_pkg/SWIFr.py,sha256=hM-qowdUSgEHhVUE_vDVWZ2AvJTJyZ06ghj-1wn2tpY,13497
+swifr_pkg/SWIFr_train.py,sha256=N8vnCxr7gUFQVLCxkoV4u3utALpFOutNSv5Dud7LlSI,15153
+swifr_pkg/__init__.py,sha256=_3ajmtRIjnSFeXf3BMZAez9-ZGc8bVIZSadQtreCrDE,18
+swifr_pkg/calibration.py,sha256=P6ruzSDkkKYZKeR7o7dCNDeMypUIeEGzu-OhR5aBlbY,7564
+swifr_pkg/requirements.txt,sha256=xIyLGtVmoikshNkkBLxz2JfJayGv8t0-rAzHFmN4WTQ,3359
+swifr-2.2.0.dist-info/LICENSE,sha256=uY-7N9tbI7xc_c0WeTIGpacSCnsB91N05eCIg3bkaRw,35140
+swifr-2.2.0.dist-info/METADATA,sha256=ZvoS6_jQxAhe-gfI1YARyXioENRvb-5orqz5ceY6tmo,12900
+swifr-2.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+swifr-2.2.0.dist-info/entry_points.txt,sha256=WQoX_kVUWai2edsFnj93hDQhgKRo6yhp9rn-iftCumE,129
+swifr-2.2.0.dist-info/RECORD,,
