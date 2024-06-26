@@ -1,0 +1,10 @@
+evaluator_blog/__init__.py,sha256=gvKMW_FoeNsYsYivFYzO8wi9MM2EsDP3wKPCjgia9k0,43
+evaluator_blog/evaluator.py,sha256=P_nPAzRC1Ej8sgdg4F9udSQR8v4BRgtuexCzvgvq_t4,1514
+evaluator_blog/metrics/__init__.py,sha256=CUyw5MqzIv_7ph8DK0ilECXLkM4fHoTrj8ybDObtUWw,99
+evaluator_blog/metrics/bleu.py,sha256=391Ks2uvkIzM3XPymJv2k8rPzQhaWWuG6YW1lnEEt-k,3069
+evaluator_blog/metrics/rouge.py,sha256=jDJjTWoXSUOOfFQEHOtQr6H7WLwBh34JQOZ_buoSlFw,2038
+evaluator_blog/tests/test_rouge.py,sha256=5sn_aR6BTT5y0yKSpjJ4kXHrjKZHUsJY02R6g-AKGe8,239
+evaluator_blog-0.1.0.dist-info/LICENSE,sha256=RWUdavRcZ0s53o-1lRPPAyyF7RUS7lf1I8xblQ-AUGY,1070
+evaluator_blog-0.1.0.dist-info/METADATA,sha256=d6OQcDZGhiWorFheh8qjeTq1V2O4PwjOidBP8_lO5B8,434
+evaluator_blog-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+evaluator_blog-0.1.0.dist-info/RECORD,,
