@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+boviorecovery/__init__.py
+boviorecovery/lala.py
+boviorecovery/player.py
+boviorecovery.egg-info/PKG-INFO
+boviorecovery.egg-info/SOURCES.txt
+boviorecovery.egg-info/dependency_links.txt
+boviorecovery.egg-info/top_level.txt
