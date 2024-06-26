@@ -1,0 +1,13 @@
+pyiapws-0.3.0.dist-info/RECORD,,
+pyiapws-0.3.0.dist-info/WHEEL,sha256=1-V6cA7uCvCt5R8wckHW3pjeSAdNzRH946z-C5jkDNU,113
+pyiapws-0.3.0.dist-info/METADATA,sha256=UgKixAAXVfkKU67T2fDKTS7Q9k9XtKQjYa4gKSbM2Uc,3747
+pyiapws-0.3.0.dist-info/top_level.txt,sha256=ggYw7wHwjJOaZitfcjCdg6gPpTA7Cs-gsR1M5IfF7bA,8
+pyiapws-0.3.0.dist-info/LICENSE,sha256=rPuuWRMCUNHTwM4-8LwcNyw9xUWFQTYN6-Tl0QcqCiI,1064
+pyiapws.libs/libmvec-2-5aeee673.31.so,sha256=3xqUVYeTAtSV7uDsr9GcCJtkHfWPZg9dMuiJBSA8shQ,177769
+pyiapws.libs/libgfortran-01b35462.so.5.0.0,sha256=R_VVEuURDssfCK9V8QOt9wZ_cNqbnDSIdEL2_X9Kj20,2930985
+pyiapws.libs/libquadmath-1843afa6.so.0.0.0,sha256=Dph6LhCn3rMHar6rBKuOTiGA7UyXdhBP8kn67kF834Q,296993
+pyiapws/__init__.py,sha256=fUSKviutkGRtHidmmtGGGM-bSUEm46m95iBKUx3CO4E,118
+pyiapws/libiapws.so,sha256=E-s6A5dswqJs-jaLpj7yaFYBXgD-6eTXvEeYLvy5VXU,59497
+pyiapws/r283.cpython-312-x86_64-linux-gnu.so,sha256=gMDmv1Fk6bXlKnaoMIu33dhtBZwhMCd9dqyyS-tz118,29905
+pyiapws/version.cpython-312-x86_64-linux-gnu.so,sha256=dt6tSTigMMR2bLR_lPD48MOuvebSmvdMXJyv6c1EFIc,29697
+pyiapws/g704.cpython-312-x86_64-linux-gnu.so,sha256=iRrj_pYQJl7--ZXGsbH3wr_3DvCOs684Tfk_7t2Csu8,38465
