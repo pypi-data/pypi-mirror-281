@@ -1,0 +1,9 @@
+lyrics_converter/__about__.py,sha256=SWnOcn5NXv1C5jgGglpX1smcoPbXo-KVU4PmFElTaS8,133
+lyrics_converter/__init__.py,sha256=R1OPnn-ukvURHSB7Ec7zEssufGPnIdcxPLVrgbcz2Po,181
+lyrics_converter/cli.py,sha256=naeTUdRRHG-zTX-ByrTPeTNKhunW4FDeCiXYe55fCpM,1097
+lyrics_converter/converter.py,sha256=RgmugRd8LN0aHccyqVGWE4I3T-8gsL6dMuaxKqAsbu0,3254
+lyrics_converter-0.2.0.dist-info/METADATA,sha256=cX-sLLmZ5vIOvXE0Mzm-4Fd7yrXIj-pFC_a2sKzxKrQ,1640
+lyrics_converter-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+lyrics_converter-0.2.0.dist-info/entry_points.txt,sha256=LymJnoYtYx-5ERcCltV5F-Cj4xACoD0WEv4bTD6-uLE,63
+lyrics_converter-0.2.0.dist-info/licenses/LICENSE.txt,sha256=tpilDSXKpPOrct2xIeYnJdEvYfnUPcS1njXYj-E8vS8,1103
+lyrics_converter-0.2.0.dist-info/RECORD,,
