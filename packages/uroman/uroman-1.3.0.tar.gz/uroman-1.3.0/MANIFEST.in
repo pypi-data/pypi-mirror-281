@@ -1,0 +1,14 @@
+include README.md
+include uroman/bin/uroman.py
+include uroman/data/UnicodeData.txt
+include uroman/data/UnicodeDataOverwrite.txt
+include uroman/data/romanization-table.txt
+include uroman/data/romanization-auto-table.txt
+include uroman/data/UnicodeDataProps.txt
+include uroman/data/UnicodeDataPropsCJK.txt
+include uroman/data/UnicodeDataPropsHangul.txt
+include uroman/data/Chinese_to_Pinyin.txt
+include uroman/data/Scripts.txt
+include uroman/data/NumProps.jsonl
+include uroman/data/ISO-639-3-list.txt
+global-exclude *.pyc
