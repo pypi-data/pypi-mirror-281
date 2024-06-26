@@ -1,0 +1,14 @@
+chemfusekit/__base.py,sha256=PtiFuYSDpzK64vmrF6TwFjikLIUj38VRJn1sQgHMxDY,8029
+chemfusekit/__init__.py,sha256=S_LrAnBWWpYMrg7XNmYpu_lt7NxqHnMPlJDVxu6Hjac,188
+chemfusekit/__utils.py,sha256=oWrgrmvJv-tXuRVpajG3xKv05PUvMxkileJkGhSdt8s,7703
+chemfusekit/df.py,sha256=cYViHHKvAJeRanNxVxREWP451WGNFauieMkq_wYMTRI,10648
+chemfusekit/knn.py,sha256=bxWPATLz20rsGar1oQ80UAK2YEKjGAdFmaq8GCXPIME,3612
+chemfusekit/lda.py,sha256=J-mmLZVIKiQflHqU-mRGiKvLaIzlsRQVEAXbUMDzlEw,6670
+chemfusekit/lr.py,sha256=yPKlPn8UbZ2UBDY1x_jp3Y0q4vL8ALPKGkwpf2-j2-M,5184
+chemfusekit/pca.py,sha256=mvU_tbTnLRbtdIL3ACwEiA5fXPreKsL_lUNDeEZDoSE,12731
+chemfusekit/plsda.py,sha256=j-_gHdWHw6knNCT67EeIdCGxu2tVqQWwno12hntpj8c,6295
+chemfusekit/svm.py,sha256=4HqRRcO_tUsMwGd0pfPyu1dMDacmbI6GYbBnJehW_1c,2496
+chemfusekit-3.0.0b3.dist-info/METADATA,sha256=vc6JrUUA_5Pv1dU0h0jqaU9CpDMALuw4Bckrr0FJSGU,3690
+chemfusekit-3.0.0b3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+chemfusekit-3.0.0b3.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+chemfusekit-3.0.0b3.dist-info/RECORD,,
