@@ -1,0 +1,9 @@
+README.md
+setup.py
+automationutils.egg-info/PKG-INFO
+automationutils.egg-info/SOURCES.txt
+automationutils.egg-info/dependency_links.txt
+automationutils.egg-info/requires.txt
+automationutils.egg-info/top_level.txt
+discord_webhook_decorator/__init__.py
+discord_webhook_decorator/decorator.py
