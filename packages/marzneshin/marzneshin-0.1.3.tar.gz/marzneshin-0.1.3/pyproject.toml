@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "marzneshin"
+author = "Artem"
+author-email = "contact@sm1ky.com"
+home-page = "https://github.com/sm1ky/marzneshin_api"
+description-file = "README.md"
+requires-python = ">=3.10"
+requires = ["httpx", "pydantic"]
+
+[tool.flit.sdist]
+include = ["README.md", "LICENSE"]

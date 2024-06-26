@@ -1,0 +1,7 @@
+build/
+marzneshin.egg-info/
+venv/
+requirements.txt
+test.py
+dist/
+__pycache__/
