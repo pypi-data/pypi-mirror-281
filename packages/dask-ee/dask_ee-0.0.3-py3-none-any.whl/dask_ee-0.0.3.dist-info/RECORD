@@ -1,0 +1,10 @@
+dask_ee/__init__.py,sha256=dF0Gitmr6NHU8mDVnwQp4xqVFzBtrZz6V6B3OmSsUR4,26
+dask_ee/read.py,sha256=gfBhe3Ru41CkL2L34gcVVbPlt_fh9VXQzUtj7hhsuFY,2447
+dask_ee/read_integrationtest.py,sha256=1TlrP4DeC9UxngqxNtVPixQht7aZBb6vfHxWreJ4Os4,2266
+dask_ee/read_test.py,sha256=Z4fmVTAHuONeo0Nvbf7x0PVk06Mg0lstSn3Lqm_V_XI,443
+dask_ee/write.py,sha256=U-P02RsPldBX_LQQaufBFuMbPJRzz6JqrqdEDnpRySk,158
+dask_ee-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dask_ee-0.0.3.dist-info/METADATA,sha256=w_zQiu1lQhRaYGU2ZMA4rTFPhPgwN4GFV8wQGVeuM_Q,5001
+dask_ee-0.0.3.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+dask_ee-0.0.3.dist-info/top_level.txt,sha256=jo-mGu9EeY0YJVrFV6yjmG5j-_h-HXCUo1Ey7RvGgVM,8
+dask_ee-0.0.3.dist-info/RECORD,,
