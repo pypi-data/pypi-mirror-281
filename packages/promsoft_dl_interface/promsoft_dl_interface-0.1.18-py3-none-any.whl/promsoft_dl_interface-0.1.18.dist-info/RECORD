@@ -1,0 +1,6 @@
+dl_interface/__init__.py,sha256=kXwqDEWIVp4XgIG_ZionKAJ2QUDcK55wR3oHgdjv9ag,407
+dl_interface/models.py,sha256=Ovlj6MB_PN7ZgVIKeTUqEL5E88sfPvK1odz7ym54BWk,3422
+dl_interface/request.py,sha256=UFeGTYWOfhXbpLTV-wS5dGMdSr_UpogNPGoIR6SwKj4,3630
+promsoft_dl_interface-0.1.18.dist-info/METADATA,sha256=kVY-WldsJudQWHUOrKu0F2VFUQ9hFqZaLCf56W7ftYk,847
+promsoft_dl_interface-0.1.18.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+promsoft_dl_interface-0.1.18.dist-info/RECORD,,
