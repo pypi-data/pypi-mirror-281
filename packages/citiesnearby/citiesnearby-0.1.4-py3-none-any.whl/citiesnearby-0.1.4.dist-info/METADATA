@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: citiesnearby
+Version: 0.1.4
+Summary: Library to use CitiesNearby API.
+Requires: requests
+
+See the documentation for the API and Library here: https://marz1ks-organization.gitbook.io/citiesnearby-api/
