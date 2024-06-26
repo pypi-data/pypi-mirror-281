@@ -1,0 +1,14 @@
+flask_tenants/__init__.py,sha256=mlZM9G7niwlM4Im2_kfkvSDY9Ptn8YSUY5htqIU4omA,597
+flask_tenants/middleware.py,sha256=SoccwFrktvTnem1OUpHzY0CcSnq1dmcOedtsjgKisf8,3459
+flask_tenants/models.py,sha256=5xpg7QKKpAwm1WZVxcYgs5Ck1RZarkRVFAmqxFhw9Lc,840
+flask_tenants/utils.py,sha256=JCstU2_mxc4tiok9IyX8ILsSBWlWKKU4CWol7ZLaVlc,4930
+test_app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test_app/app.py,sha256=8ATN_MU7BomrfuRC7-3xI7yjsnR_R0vkkGDoa-QtSQo,3834
+test_app/config.py,sha256=q1bx2NHU6jY45NstkX_t94FliCQMc4PI0iXEFFpvZ2c,171
+test_app/models.py,sha256=v36JkglynvaDV8nBCRo-w4OoReNeKuVmQUONT_0wonw,573
+test_app/run.py,sha256=fEetyjaKbvbcbdzg8zMb-DTWBNqkHPDOBI_QVm6udic,85
+test_app/test-web.py,sha256=J-1hh-0HRXuvhpxiKZ7BEPdkAwOEYz0hMuK3zPVBln4,4105
+flask_tenants-0.1.0.dist-info/METADATA,sha256=29K1Uw-yTTQG9ZPJgkAnRRyTqtavjcopn3a0CDMzwPo,13649
+flask_tenants-0.1.0.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+flask_tenants-0.1.0.dist-info/top_level.txt,sha256=8po5CXvbnBYUHg15Hg657UC8MisGklo5Ju2aogudazw,23
+flask_tenants-0.1.0.dist-info/RECORD,,
