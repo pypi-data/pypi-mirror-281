@@ -1,0 +1,17 @@
+mgqpy/__init__.py,sha256=6K5etLhr_ns-CJzFUXfS1ZxPuicgAwoffH08RXobpK0,6469
+mgqpy/operators/all.py,sha256=ljc-Kdr93UMZc_hIIDg63QldAIveYPjedYPoYKuHV3k,723
+mgqpy/operators/and_or_nor.py,sha256=jMLG1cxBOHwToKWxD2eROUY1LjuJ4SrQWscVfWiiXfA,697
+mgqpy/operators/elem_match.py,sha256=HjMi4zurci0jp3j4h6XrrGZv_K028PavCQ2j_uvMhSo,695
+mgqpy/operators/eq_ne_not.py,sha256=iYNl5npMLG0DzctyL1po6mO0hcyDlKQsN98oBTMhvDM,976
+mgqpy/operators/gt.py,sha256=C8SQbcZ2mGld0xAaW9kEAaZXMHI5mzj0dlk2wzO3BHo,1627
+mgqpy/operators/gte.py,sha256=vQfUyAh3chuCA_w-_VTRC-Q8rLbO1FBY0PUjQwZHET4,1800
+mgqpy/operators/in_nin.py,sha256=mEI1VKW88sWhzKfEsq7WyR5IHfYrWXhEtM1laHZFb1o,999
+mgqpy/operators/lt.py,sha256=Xx817omZpIyS2OQ0KWnvR700jKEg9A4q8L3INxLJaKw,1692
+mgqpy/operators/lte.py,sha256=YUxmDQqYSMRbPHpYMP9q-w7mTBK-Ts07r1rhIkelj8g,1800
+mgqpy/operators/mod.py,sha256=ULy9slBK0WtHBLytsGWmJmpYBg0AXZ407Lqdhm4UdV8,1106
+mgqpy/operators/regex.py,sha256=LrtW3g2DNHYVHBX81WyaJwf5EbERGeZzReIfo6Yk278,1129
+mgqpy/operators/size.py,sha256=TinEpCQ5WuVXiYXKMpQjV_3B9S4PTuEiulcvb6qDSf8,781
+mgqpy-0.6.2.dist-info/LICENSE,sha256=pEMbA1CSJ6STVH6OvDwoswM9--WxyerjT44X0-scvCU,1068
+mgqpy-0.6.2.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+mgqpy-0.6.2.dist-info/METADATA,sha256=B-gRg_FVc2aJhBNAiqAMEaf2Z9TK22dF1YS1wOYddZQ,2117
+mgqpy-0.6.2.dist-info/RECORD,,
