@@ -1,0 +1,13 @@
+aisum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aisum/cli.py,sha256=Shf7c6Dq01--Mad2pquOdNSSXrjOhMpXeLVMEovrH-I,296
+aisum/openai_api.py,sha256=z9X03jfgfMTaFBN6pNUtwlnm3rywSkxQiCvdTXrfnzI,496
+aisum/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_cli.py,sha256=RGQNYtkm_7rS-fVSabC43bmhBELkkA0V4VSeLHXKPg8,402
+tests/test_openai_api.py,sha256=IKMic1R9stpGExV7fWJRTXXgjH3Vi5OJ4DItHR9Dg-4,453
+aisum-0.1.1.dist-info/LICENSE,sha256=dUhuoK-TCRQMpuLEAdfme-qPSJI0TlcH9jlNxeg9_EQ,1056
+aisum-0.1.1.dist-info/METADATA,sha256=eNEZQECOYkhf2xzmpodmxnefv82fO6Okdka4cBsEhTA,308
+aisum-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aisum-0.1.1.dist-info/entry_points.txt,sha256=T7Yh4t_2sD7CkWDLAu05EbQWXjkCVAdK4mL9r9bC8nM,41
+aisum-0.1.1.dist-info/top_level.txt,sha256=CFDoNlw8SScKgVrJFo-117cOdOoYZd8AeA6jMzoz0I8,12
+aisum-0.1.1.dist-info/RECORD,,
