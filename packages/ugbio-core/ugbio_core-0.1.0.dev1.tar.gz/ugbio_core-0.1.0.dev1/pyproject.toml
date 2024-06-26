@@ -1,0 +1,23 @@
+[project]
+name = "ugbio_core"
+version = "0.1.0.dev1"
+requires-python = ">= 3.12"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+#[build-system]
+#requires = ["hatchling"]
+#build-backend = "hatchling.build"
+
+#[tool.hatch.build]
+#include = ["core/*"]
+
+#[tool.rye]
+#name = "ugbio_core"  # Use underscore to match the import statement
+#version = "0.1.0"
+#managed = true
+#dev-dependencies = [
+#    "pytest>=8.2.2",
+#]
