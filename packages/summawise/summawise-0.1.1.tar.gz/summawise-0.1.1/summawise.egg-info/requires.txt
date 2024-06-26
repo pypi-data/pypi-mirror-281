@@ -1,0 +1,4 @@
+openai>=1.35.3
+requests>=2.32.3
+validators>=0.28.3
+youtube-transcript-api>=0.6.2
