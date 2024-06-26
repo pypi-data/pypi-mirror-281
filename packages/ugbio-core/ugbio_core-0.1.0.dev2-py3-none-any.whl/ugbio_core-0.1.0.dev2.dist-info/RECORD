@@ -1,0 +1,7 @@
+ugbio_core/__init__.py,sha256=PzJqPehkqYst4D4eayouXHX4yks6Dxexjv8hzAzzmik,115
+ugbio_core/filter_bed.py,sha256=6JpoAuysAbtnc-YlOoUN37wAls0kmA8GE58frDfWwrs,1805
+ugbio_core/logger.py,sha256=Fk6YN1jvLvEVRRld4Vb2iYClwmgbB4IEK2RtNFdfacA,207
+ugbio_core-0.1.0.dev2.dist-info/METADATA,sha256=_uxKCTK-PAhJIOuoslCVQbnRcaaHkzQCIuOZgvyS8QI,350
+ugbio_core-0.1.0.dev2.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+ugbio_core-0.1.0.dev2.dist-info/top_level.txt,sha256=D9jPT8A5Os44LESOk2pFQGdQ4mkJmmU0A4FwSgjXOE8,11
+ugbio_core-0.1.0.dev2.dist-info/RECORD,,
