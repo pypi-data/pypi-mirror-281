@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: stickergithook
+Version: 0.1.0
+Summary: 
+Author: Acelynn Zhang
+Author-email: azyx0987e@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: typer[all] (>=0.12.3,<0.13.0)
+Description-Content-Type: text/markdown
+
+meow
