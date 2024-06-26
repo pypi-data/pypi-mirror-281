@@ -1,0 +1,11 @@
+npi_field/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+npi_field/modelfields.py,sha256=ikj8ymZy9-DzAzDHYfOtSJlcFLyjvbG2X0e3lCEepSE,1063
+npi_field/validators.py,sha256=No69TA53BDz-yfbaK3-0Y6pvmhMxg4-wRBNx7_8WjrU,1028
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_models.py,sha256=OG9E0I_kPT1jI-i1--Got-vD58Nz-oFwk6DYJBuC1-A,351
+tests/test_settings.py,sha256=nZaNVVC2WWDTVqAUmq1MZ8fI5ecAdhirFchev34z63U,243
+tests/tests.py,sha256=N8wdWJnaVg_eiCI6KyXQudp3gCaF8GOknHyk5Md0kK4,1736
+django_npi_field-0.1.2.dist-info/LICENSE,sha256=ZdxjjL7GmPXWJ4A_W80deK16cNMaqH4sd-o10uXXBkc,1067
+django_npi_field-0.1.2.dist-info/METADATA,sha256=88a90Ml9I6gHHkotdLkOvwGmrypva9L7CCLReO8yxew,3029
+django_npi_field-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_npi_field-0.1.2.dist-info/RECORD,,
