@@ -1,0 +1,9 @@
+README.md
+setup.py
+flareec/__init__.py
+flareec.egg-info/PKG-INFO
+flareec.egg-info/SOURCES.txt
+flareec.egg-info/dependency_links.txt
+flareec.egg-info/top_level.txt
+flareec/dotedrunes/__init__.py
+flareec/dotedrunes/flare_encoder.py
