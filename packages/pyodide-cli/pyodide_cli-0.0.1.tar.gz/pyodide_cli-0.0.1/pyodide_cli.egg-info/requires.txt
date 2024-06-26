@@ -1,0 +1,5 @@
+typer
+rich
+
+[test]
+pytest
