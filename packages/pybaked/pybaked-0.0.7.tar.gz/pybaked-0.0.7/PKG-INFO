@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pybaked
+Version: 0.0.7
+Summary: Python package baking utility
+Home-page: https://github.com/kuyugama/pybaked
+License: GPL-3.0-only
+Author: kuyugama
+Author-email: mail.kuyugama@gmail.com
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: asciitree
+Requires-Dist: asciitree (>=0.3.3,<0.4.0) ; extra == "asciitree"
+Project-URL: Repository, https://github.com/kuyugama/pybaked
