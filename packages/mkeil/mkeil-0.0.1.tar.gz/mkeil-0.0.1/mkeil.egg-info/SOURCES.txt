@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+send_email.py
+setup.py
+mkeil.egg-info/PKG-INFO
+mkeil.egg-info/SOURCES.txt
+mkeil.egg-info/dependency_links.txt
+mkeil.egg-info/requires.txt
+mkeil.egg-info/top_level.txt

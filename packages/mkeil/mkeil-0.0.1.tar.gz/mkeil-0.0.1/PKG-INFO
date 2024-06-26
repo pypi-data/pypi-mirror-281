@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mkeil
+Version: 0.0.1
+Summary: a library for send email
+Home-page: 
+Author: Mehran Karimi
+Author-email: axelox9@gmail.com
+License: MIT
+Keywords: email sender
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+Requires-Dist: smtplib
+
+It is a powerful library for sending e-mails in the Python programming language
+This library is written with smtp lib
+You can optimize your code using this lib
+(:
+
+Change Log
+=================
+
+version 0.0.1 (26/06/2024)
+
+------------------------
+
+- First Release
