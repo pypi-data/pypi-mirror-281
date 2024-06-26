@@ -1,0 +1,12 @@
+flarenet/__init__.py,sha256=eZUEVHLl8zauPsctDeby4Voq8_wmRczE08xI2PTp3Q4,1107
+flarenet/_activation.py,sha256=jdrcgIGCrck5nZJU26Q9Q7qNRHC8sJURsd1IhnnutGI,4999
+flarenet/_attention.py,sha256=VXZp8U1gr84VPGRp9F-qx0QPB5dMn_NGDBuKiBqxJaA,78
+flarenet/_combine.py,sha256=6Congl2hGc11rDAo3eTKtEADX2vWSgAs6bZ_JvMhwdI,2456
+flarenet/_conv.py,sha256=_Ql4XJJpgZ6ilTOkE52hDYzGl1noYHCMGYNwuJU8YKI,314
+flarenet/_linear.py,sha256=MDmIEYxfXUSwhpBQiWBsF5yTlejUSdN7CRTBtWuaKfU,4610
+flarenet/_norm.py,sha256=_hjN0Up1Dcqyq8MBDP30gYSFg55VrnyyTYolYXKHRSs,765
+flarenet/_utils.py,sha256=oT3s30g5vPvmeHQVMGwtoJjqD-pDycjh8CBa_W0k_xo,347
+flarenet-0.3.11.dist-info/METADATA,sha256=ms4OhPrz89ZXBlUB5xywFmyKFTYgMR43UyZb5sMEhJ0,362
+flarenet-0.3.11.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+flarenet-0.3.11.dist-info/top_level.txt,sha256=jQgVcxlTcEaIp1CjUoA0BqjV8msacXgzgG_ZxhJr26Q,9
+flarenet-0.3.11.dist-info/RECORD,,
