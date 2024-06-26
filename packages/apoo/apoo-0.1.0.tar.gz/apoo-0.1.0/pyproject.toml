@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "apoo"
+version = "0.1.0"
+description = "Automatic Prompt Optimizer"
+authors = ["Teïlo M <teilomillet@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
