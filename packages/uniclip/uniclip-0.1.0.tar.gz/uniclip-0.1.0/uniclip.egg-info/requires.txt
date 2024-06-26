@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+waitress
+pydantic
+requests
+pyperclip
+pyyaml
