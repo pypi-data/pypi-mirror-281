@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: streamlit-autosuggest
+Version: 0.2.0
+Summary: A Streamlit component for a search bar with autosuggestions
+Home-page: https://github.com/weeks888/streamlit-autosuggest
+Author: Chris Weeks
+License: MIT
+Keywords: streamlit component searchbar autocomplete
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit >=0.63
+
+# Streamlit Autosuggest Component
+
+A custom Streamlit component that provides a searchbar with autosuggestions functionality.
+
+## Installation
+
+You can install the streamlit-autosuggest component using pip:
+
+    pip install streamlit-autosuggest
+
+## Usage
+
+Here's a simple example of how to use the searchbar component in your Streamlit app:
+
+    import streamlit as st
+    from streamlit_autosuggest import searchbar
+
+    st.title("Autosuggest Component Demo")
+
+    # Use the searchbar component
+    result = searchbar(suggestions=['apple', 'banana', 'cherry'], placeholder="Type a fruit name", key="demo_searchbar")
+
+    # Display the search result
+    if result:
+        st.write("You searched for:", result)
+
+## Features
+
+- Autocomplete suggestions as you type
+- Customizable suggestions list
+- Customizable placeholder text
+- Seamless integration with existing Streamlit applications
+
+## API Reference
+
+### searchbar(suggestions=None, placeholder=None, key=None)
+
+Creates a new instance of the searchbar component.
+
+Parameters:
+- suggestions (list of str, optional): A list of suggestions for the searchbar.
+- placeholder (str, optional): A placeholder text for the searchbar.
+- key (str, optional): An optional key that uniquely identifies this component.
+
+Returns:
+- str: The selected or typed value in the searchbar.
+
+## Development
+
+To contribute to this project, please see the GitHub repository.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Developed by Chris Weeks
