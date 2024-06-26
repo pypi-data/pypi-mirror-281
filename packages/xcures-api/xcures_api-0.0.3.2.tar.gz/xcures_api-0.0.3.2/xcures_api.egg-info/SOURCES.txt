@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/test_fail_credentials.py
+xcures_api/__init__.py
+xcures_api/xcures_api.py
+xcures_api.egg-info/PKG-INFO
+xcures_api.egg-info/SOURCES.txt
+xcures_api.egg-info/dependency_links.txt
+xcures_api.egg-info/requires.txt
+xcures_api.egg-info/top_level.txt
