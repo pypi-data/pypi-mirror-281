@@ -1,0 +1,10 @@
+gif_to_video/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+gif_to_video/gif_to_video.py,sha256=HBEgovVcl8zWlMkRZRDrwnFK1koIY1svwq9YxR0b0Dc,8936
+gif_to_video/test/__init__.py,sha256=1oLL20yLB1GL9IbFiZD8OReDqiCpFr-yetIR6x1cNkI,23
+gif_to_video/test/test_gif_to_video.py,sha256=oZJm1qrCcKfx8m4xzGO5L_TVqdyhYTpdiJFhBs1ZXu0,14336
+GifToVideo-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+GifToVideo-0.1.0.dist-info/METADATA,sha256=4RMSPBUbJ7LdkWGCcxvR0KWPbkN71tSOVi5faW55aoU,614
+GifToVideo-0.1.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+GifToVideo-0.1.0.dist-info/entry_points.txt,sha256=ZTrDAxTVd1DcpgizC-kRq4w7omp7muw7UPVeCbQYaIs,64
+GifToVideo-0.1.0.dist-info/top_level.txt,sha256=tLp_wM547Q0nSvjcLjuMyTIz8e-7o_wrkthn95PQLaQ,13
+GifToVideo-0.1.0.dist-info/RECORD,,
