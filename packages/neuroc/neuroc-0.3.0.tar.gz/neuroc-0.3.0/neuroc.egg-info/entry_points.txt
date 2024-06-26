@@ -1,0 +1,2 @@
+[console_scripts]
+neuroc = neuroc.cli:cli
