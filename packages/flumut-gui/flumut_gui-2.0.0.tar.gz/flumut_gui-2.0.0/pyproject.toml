@@ -1,0 +1,13 @@
+[project]
+name = "flumut_gui"
+dynamic = ["version"]
+dependencies = [
+    "pyqt5",
+    "flumut >= 0.5.2"
+]
+
+[project.scripts]
+flumut_gui = "flumut_gui:launch"
+
+[tool.setuptools.dynamic]
+version = {attr = "flumut_gui.__version__"}
