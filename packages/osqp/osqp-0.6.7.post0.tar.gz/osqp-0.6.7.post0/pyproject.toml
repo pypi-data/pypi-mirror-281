@@ -1,0 +1,22 @@
+[build-system]
+requires = [
+    # Building with numpy 2.0 is compatible with numpy 1.x, but it
+    # is only available on Python 3.9+
+    "numpy >= 2.0.0; python_version > '3.8'",
+    "oldest-supported-numpy; python_version <= '3.8'",
+    "scipy >= 0.13.2, !=1.12.0",
+    "setuptools>=40.8.0",
+    "setuptools_scm>=6.2",
+    "wheel",
+    "qdldl"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "src/osqp/_version.py"
+
+[tool.cibuildwheel]
+build = "cp3*"
+skip = "*-win32 *-manylinux_i686 *-musllinux_*"
+test-requires = ["pytest"]
+test-command = "pytest -s {project}/src/osqp/tests -k \"not codegen and not mkl\""
