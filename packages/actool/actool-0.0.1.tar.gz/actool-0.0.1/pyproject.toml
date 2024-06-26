@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "actool"
+version = "0.0.1"
+description = ""
+authors = ["pfy <program_yun@163.com>"]
+readme = "README.md"
+homepage = "https://github.com/NullPointExceptionForEveryone/atool"
+repository = "https://github.com/NullPointExceptionForEveryone/atool"
+license = "MIT"
+packages = [{ include = "atool", from = "src" }]
+keywords = ["atool"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+include = ["pyproject.toml", "src/**/*.py", "tests/**/*.py"]
+
+[tool.poetry.scripts]
+actgetip = "atool.network.get_ip:get_ip"
