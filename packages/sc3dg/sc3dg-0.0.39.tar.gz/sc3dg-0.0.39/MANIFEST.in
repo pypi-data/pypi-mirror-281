@@ -1,0 +1,4 @@
+include requirements.txt
+include README.md
+include sc3dg/model/*.c
+recursive-include sc3dg *.pyx *.pxd
