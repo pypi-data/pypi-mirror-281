@@ -1,0 +1,12 @@
+LICENSE,sha256=WjE3d1rt2UDZduetgtuJuYkKxaZv3es0Jh2YPkhb7j4,1064
+craigslistscraper/__init__.py,sha256=7q5FAKoNwlGs4wiYrdeNbsJsO4N_7VKO_s6ubIFN8IA,223
+craigslistscraper/ad.py,sha256=4rQm0e85Wlu1LLCDurEV58mQ7qcm7FMVnCnKhoQVwZU,3990
+craigslistscraper/data/areas.json,sha256=IGfXH0y0bxwSmMQEsheTs_etIxtgokMX5T-7DqLpfbk,252954
+craigslistscraper/data/categories.json,sha256=V4JTW1qeVuqKJBjJoBkkRNxrKHbuc44aPbzvC5R5Vto,24379
+craigslistscraper/data/us_cities.csv,sha256=3z9s2fzCY2be_tdPQ3kBFwNluP4F32rIw64Nx_ueTjU,3702
+craigslistscraper/search.py,sha256=fUpJRYK2YKKz2OMc577JHB2D5UZdOTJpjxNBX1G_Ec4,2236
+craigslistscraper/utils.py,sha256=xWNAiVWpAlOxVlboYVNMC3hpEL5lNE_Lo--ySPUIMcw,1034
+craigslistscraper-1.1.2.dist-info/LICENSE,sha256=WjE3d1rt2UDZduetgtuJuYkKxaZv3es0Jh2YPkhb7j4,1064
+craigslistscraper-1.1.2.dist-info/METADATA,sha256=h_p4c1DCe4lMm4Wpav3vOT_x9TtB_Bn2uISDhuzERwU,4202
+craigslistscraper-1.1.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+craigslistscraper-1.1.2.dist-info/RECORD,,
