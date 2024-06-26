@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/pedhosp.py
+src/pedhosp.egg-info/PKG-INFO
+src/pedhosp.egg-info/SOURCES.txt
+src/pedhosp.egg-info/dependency_links.txt
+src/pedhosp.egg-info/entry_points.txt
+src/pedhosp.egg-info/top_level.txt
