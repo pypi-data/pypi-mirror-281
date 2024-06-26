@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+esma.egg-info/PKG-INFO
+esma.egg-info/SOURCES.txt
+esma.egg-info/dependency_links.txt
+esma.egg-info/requires.txt
+esma.egg-info/top_level.txt
