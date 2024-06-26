@@ -1,0 +1,12 @@
+pyneuralnet/__init__.py,sha256=M07Veqb0FXmiRBVgjEKdHn5loKFSTdYoGsmMYVtWjKo,23
+pyneuralnet/images/__init__.py,sha256=r9162Ksavrb0yqMzCQW9UM9skYzwD0w2pjkN2qRFcKk,76
+pyneuralnet/images/dataset_loader.py,sha256=81SSOerIqZexubjPPMQxmPbQGd3C9WNQW0PF0DX4NcI,1830
+pyneuralnet/images/train.py,sha256=5AR371qt-cY-SX0ZZVgeKydPf5GilO3uwstGijGZdFQ,10280
+pyneuralnet/images/models/CNN.py,sha256=Mz20zxI8Eoa0QPT6Q4UiUJc-ZEAggr90W4ldjdrJ50g,7764
+pyneuralnet/images/models/GAN.py,sha256=Gop9zEvJb6ylc4pSxzKrGtyraNf4swUrRmHMw_FD7xw,11116
+pyneuralnet/images/models/__init__.py,sha256=ry9WuC3BBV33dmm2JW2SrY2aqP7rbnJ1pTeEXPrb-xk,40
+PyNeuralNet-1.1.16.dist-info/LICENSE,sha256=Lg8NixLXU4sAHY1A2v6O6Ym0ImR3doq7gJrsUAc8zTE,1087
+PyNeuralNet-1.1.16.dist-info/METADATA,sha256=OfFsGz_GD-_Vi44CVewbGTSoIWEjnMnobGPWqiFU3TA,4473
+PyNeuralNet-1.1.16.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+PyNeuralNet-1.1.16.dist-info/top_level.txt,sha256=e9lLxl0JkT7pXR8UbYhQA7b_jlpbVlZykeQp7MJDGI8,12
+PyNeuralNet-1.1.16.dist-info/RECORD,,
