@@ -1,0 +1,10 @@
+vicar/_LABEL_GRAMMAR.py,sha256=zbJEcbAIXEeCJssgI4JNgSL5bFfbb1WGxvs94Ck_gLk,9996
+vicar/__init__.py,sha256=pAMSUlVwXYnKrb5qTXHK_EXz6dIVRbHsqpfSfcguQag,1164
+vicar/_version.py,sha256=B_2jTRPLk-a7dhEz8Rto7VRGwxfpXrqO4mYrudjn7bw,411
+vicar/vicarimage.py,sha256=Ro4zNYx5Muaw_ISXnVkT_ya-rfj89ExETXB1csbzIMY,37953
+vicar/vicarlabel.py,sha256=JpAuolpQA96MYcQmmjc6PTQF_i8VhFz2Pf8NNGHK4Kk,56388
+rms_vicar-1.0.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rms_vicar-1.0.7.dist-info/METADATA,sha256=zglE7VwyCs5D6NmGSp3AkO9d9oOwkUDQGBYfbbBx86M,7801
+rms_vicar-1.0.7.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+rms_vicar-1.0.7.dist-info/top_level.txt,sha256=oymP9BUoT9H_6FvqhYpsVQqqzw0AulOhcpUvW-z5Woo,6
+rms_vicar-1.0.7.dist-info/RECORD,,
