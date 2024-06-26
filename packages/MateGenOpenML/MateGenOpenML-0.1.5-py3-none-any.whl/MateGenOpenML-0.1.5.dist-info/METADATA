@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: MateGenOpenML
+Version: 0.1.5
+Summary: 九天老师机器学习实战公开课智能助教Agent
+Author: Jiutian
+Author-email: 2323365771@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: IPython
+Requires-Dist: openai
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pandas
+Requires-Dist: datetime
+Requires-Dist: pathlib
+
+MateGen Agent
