@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+PyCameraList/__init__.py
+PyCameraList/camera_device.cpp
+PyCameraList/camera_device.hpp
+PyCameraList_fork.egg-info/PKG-INFO
+PyCameraList_fork.egg-info/SOURCES.txt
+PyCameraList_fork.egg-info/dependency_links.txt
+PyCameraList_fork.egg-info/top_level.txt
+tests/test_py_camera_list.py
