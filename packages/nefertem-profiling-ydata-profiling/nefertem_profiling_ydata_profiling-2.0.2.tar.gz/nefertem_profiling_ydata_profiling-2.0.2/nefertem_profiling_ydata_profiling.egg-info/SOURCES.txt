@@ -1,0 +1,11 @@
+pyproject.toml
+nefertem_profiling_ydata_profiling/__init__.py
+nefertem_profiling_ydata_profiling/builder.py
+nefertem_profiling_ydata_profiling/plugin.py
+nefertem_profiling_ydata_profiling/reader.py
+nefertem_profiling_ydata_profiling/utils.py
+nefertem_profiling_ydata_profiling.egg-info/PKG-INFO
+nefertem_profiling_ydata_profiling.egg-info/SOURCES.txt
+nefertem_profiling_ydata_profiling.egg-info/dependency_links.txt
+nefertem_profiling_ydata_profiling.egg-info/requires.txt
+nefertem_profiling_ydata_profiling.egg-info/top_level.txt
