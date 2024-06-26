@@ -1,0 +1,15 @@
+README.md
+setup.py
+AntiMALReverse/__init__.py
+AntiMALReverse/code_flow_analysis.py
+AntiMALReverse/disassembly.py
+AntiMALReverse/model.py
+AntiMALReverse/obfuscation_removal.py
+AntiMALReverse/reverse_engineering.py
+AntiMALReverse/string_resource_extraction.py
+AntiMALReverse.egg-info/PKG-INFO
+AntiMALReverse.egg-info/SOURCES.txt
+AntiMALReverse.egg-info/dependency_links.txt
+AntiMALReverse.egg-info/requires.txt
+AntiMALReverse.egg-info/top_level.txt
+AntiMALReverse/models/obfuscation_model.pth
