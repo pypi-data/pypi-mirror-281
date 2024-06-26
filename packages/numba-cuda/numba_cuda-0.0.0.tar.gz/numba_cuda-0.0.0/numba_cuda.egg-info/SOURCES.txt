@@ -1,0 +1,6 @@
+pyproject.toml
+numba_cuda/__init__.py
+numba_cuda.egg-info/PKG-INFO
+numba_cuda.egg-info/SOURCES.txt
+numba_cuda.egg-info/dependency_links.txt
+numba_cuda.egg-info/top_level.txt

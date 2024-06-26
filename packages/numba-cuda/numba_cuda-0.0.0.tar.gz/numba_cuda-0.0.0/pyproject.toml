@@ -1,0 +1,7 @@
+[project]
+name = "numba-cuda"
+authors = [
+    {name = "Graham Markall", email = "gmarkall@nvidia.com"},
+]
+version = "0.0.0"
+description = "Placeholder"
