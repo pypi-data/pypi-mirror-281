@@ -1,0 +1,14 @@
+click
+loguru
+orjson
+sqlalchemy
+
+[optional]
+python-hn
+praw
+
+[testing]
+pytest
+ruff
+mypy
+lxml

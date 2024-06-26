@@ -1,0 +1,22 @@
+requests
+pytz
+sqlalchemy # db interaction
+
+logzero # todo make optional?
+more-itertools
+backoff # used by some modules, maybe should be module dependency
+
+python-dateutil # for json serializing??
+
+dominate # for html reports
+feedgen  # for rss reports
+
+beautifulsoup4 # pinboard
+PyGithub       # github
+praw           # reddit
+# TODO rely on hnrss maybe? ok for low volume, but won't work for 'initial' search
+python-hn      # hackernews
+
+# twint          # twitter
+# use git version, twint often breaks because of twitter api
+git+https://github.com/twintproject/twint@master#egg=twint
