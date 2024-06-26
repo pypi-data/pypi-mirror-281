@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: pdf_manipulation
+Version: 0.0.2
+Summary: A python package for manipulating PDFs
+Project-URL: Source, https://github.com/kvasu2/PDF-manipulation
+Project-URL: Documentation, https://pdf-manipulation.readthedocs.io/
+Author-email: Karthik Vasu <karthikvasu09@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: opencv-python>=4.10.0.82
+Requires-Dist: pillow>=10.3.0
+Requires-Dist: pypdf2>=3.0.1

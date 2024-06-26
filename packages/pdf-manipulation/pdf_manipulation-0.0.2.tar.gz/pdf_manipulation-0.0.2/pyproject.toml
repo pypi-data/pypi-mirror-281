@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pdf_manipulation"
+version = "0.0.2"
+description = "A python package for manipulating PDFs"
+authors = [
+    { name = "Karthik Vasu", email = "karthikvasu09@gmail.com" },
+]
+keywords = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "PyPDF2 >= 3.0.1",
+    "numpy >= 1.21.0",
+    "opencv-python >= 4.10.0.82",
+    "pillow >= 10.3.0",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+"Source" = "https://github.com/kvasu2/PDF-manipulation"
+"Documentation" = "https://pdf-manipulation.readthedocs.io/"
