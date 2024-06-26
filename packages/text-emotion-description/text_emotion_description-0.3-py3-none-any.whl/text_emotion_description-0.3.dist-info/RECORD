@@ -1,0 +1,10 @@
+text_emotion_detection/__init__.py,sha256=A7RM2fXDL6ifiZUIpcLGDbpvf7xwePuZKF59DcfQR80,139
+text_emotion_detection/main.py,sha256=t7q3xc0I2ttUhdrShwYkK0qQ3RgVAg4p-FmGlx_8V9c,3442
+text_emotion_detection/model.py,sha256=_QFphHZvdqUTDTAZoeGFPoTGAPGy6eMMQ1us_wD7_rs,2268
+text_emotion_detection/preprocessing.py,sha256=xnFdrIGzJuNsB7Kr3LEr8UP0GX189sUudtIf4BhhXmo,1034
+text_emotion_detection/utils.py,sha256=bHqkN8Zt4LgoCmr1PDoi4OL7ec2uRDzzN8h6OHMIvZA,1999
+text_emotion_description-0.3.dist-info/METADATA,sha256=r5jzygi1rE9fzBeBxpnhFKuIe9hQQOYZM2JR2nruDxg,2175
+text_emotion_description-0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+text_emotion_description-0.3.dist-info/entry_points.txt,sha256=zFPT3xdwY7PWKWRjrB7MyBnyGo3GQlGj8lNkmUC8Ex8,80
+text_emotion_description-0.3.dist-info/top_level.txt,sha256=dCQgmw9C_b0A-Z8ilxsAKSZlhbJ0z4KZGPybuJVrviY,23
+text_emotion_description-0.3.dist-info/RECORD,,
