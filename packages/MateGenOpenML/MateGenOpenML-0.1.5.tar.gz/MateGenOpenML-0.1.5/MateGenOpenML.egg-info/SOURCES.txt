@@ -1,0 +1,10 @@
+README.md
+setup.py
+MateGenOpenML/__init__.py
+MateGenOpenML/assistant.py
+MateGenOpenML.egg-info/PKG-INFO
+MateGenOpenML.egg-info/SOURCES.txt
+MateGenOpenML.egg-info/dependency_links.txt
+MateGenOpenML.egg-info/entry_points.txt
+MateGenOpenML.egg-info/requires.txt
+MateGenOpenML.egg-info/top_level.txt

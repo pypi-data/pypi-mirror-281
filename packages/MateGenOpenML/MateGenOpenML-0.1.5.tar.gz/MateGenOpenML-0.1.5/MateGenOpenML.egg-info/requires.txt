@@ -1,0 +1,7 @@
+IPython
+openai
+matplotlib
+seaborn
+pandas
+datetime
+pathlib
