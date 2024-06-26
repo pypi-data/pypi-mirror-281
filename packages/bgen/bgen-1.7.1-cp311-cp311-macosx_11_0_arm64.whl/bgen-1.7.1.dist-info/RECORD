@@ -1,0 +1,9 @@
+bgen/reader.cpython-311-darwin.so,sha256=1LZH8H7DQWpDiGm1tepEKUaRc-Zb6R2zJbQgt1rmnnE,1058944
+bgen/index.py,sha256=djXqwSVpo8fDFgiABSO2xfbPecC9xu5WudGTVkuvZco,3789
+bgen/__init__.py,sha256=YOTi27jSf2JtXYxFaZaX-O3_DN6bbgikoEZNMrQ-5zY,170
+bgen/writer.cpython-311-darwin.so,sha256=N2LEvudwUk3TQjwmjPswY1ihTu3cF0UxN5u2kh1ZeRk,960320
+bgen-1.7.1.dist-info/RECORD,,
+bgen-1.7.1.dist-info/WHEEL,sha256=jh4stDNIzZXMFG2LjqRn2DAaUl8lOyGPIBUPSynzaME,109
+bgen-1.7.1.dist-info/top_level.txt,sha256=EoVKryxjZc0vkwDWjnOK0IP3dN4fg8YiKIkBcWB9pqw,5
+bgen-1.7.1.dist-info/LICENSE.txt,sha256=8xqsNFTZC7SFBJM4k6bQw8tPn0zUKQJpZwdY6zSFBW0,1053
+bgen-1.7.1.dist-info/METADATA,sha256=KvGivSK16teNH3iBA3jYsvtNKqGiBhNikDJDs-R3zcE,6827
