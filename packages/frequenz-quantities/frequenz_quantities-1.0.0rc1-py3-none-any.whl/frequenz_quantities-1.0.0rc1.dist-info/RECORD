@@ -1,0 +1,16 @@
+frequenz/quantities/__init__.py,sha256=5n1gJsT6S0yBhKmaW21Dnww57IeYvjC7qJqS_Tyzl74,3727
+frequenz/quantities/_current.py,sha256=9y4v9AeZfr4cCkzFLbSzhzh7ZPXje7i5-V6nf0qdIgs,3573
+frequenz/quantities/_energy.py,sha256=jfp2ZMb2bJV3etAZwNP7r3eWw0zcp1IQOI0hpTxVDFI,5274
+frequenz/quantities/_frequency.py,sha256=Y_ljIdd-gBFbyBIFHhPeVeD2JQrPTwOeoHI79B7B-ys,2933
+frequenz/quantities/_percentage.py,sha256=vdf7eBbr5EEHKj-0aPVLL6TSjE6OnFcHGN22knFTrlI,1775
+frequenz/quantities/_power.py,sha256=KtT5hED-BzlGqFgKDZktE8UkudLV5khfBZ80zu0b2Vo,7074
+frequenz/quantities/_quantity.py,sha256=IX8cxMtcGeRIlETyyv2j5sI08hxH1DbKzeiV1I_vpdA,17203
+frequenz/quantities/_temperature.py,sha256=PlQnavtvBe395ZmsgHTedh520pOAd9-jSRHkqfjv8-k,868
+frequenz/quantities/_voltage.py,sha256=WuYLfC3FsWdWrHMfqxFYTAJmP1CdIFpPVeeGHlOV-eo,4057
+frequenz/quantities/conftest.py,sha256=kxmvkzTdvGfh7SiDINIFX0FG9PU0EoKROl9YY75zN8w,409
+frequenz/quantities/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frequenz_quantities-1.0.0rc1.dist-info/LICENSE,sha256=zt0sW1KvE_KWE2ILOabrQYlfOoP0zUZXC3xCLrzGpIA,1089
+frequenz_quantities-1.0.0rc1.dist-info/METADATA,sha256=Hbl1e0QQoSn76Fy836y7jDGUFZI1u6BlbtII7l4YUOA,4955
+frequenz_quantities-1.0.0rc1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+frequenz_quantities-1.0.0rc1.dist-info/top_level.txt,sha256=x08GRcWytsyKXa2Ayme9e5pg3L5Kcq6lw_BaQmToMO4,9
+frequenz_quantities-1.0.0rc1.dist-info/RECORD,,
