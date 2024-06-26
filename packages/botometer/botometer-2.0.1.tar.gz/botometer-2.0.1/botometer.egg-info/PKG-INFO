@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: botometer
+Version: 2.0.1
+Summary: Check Twitter accounts for bot behavior
+Home-page: https://github.com/osome-iu/botometer-python
+Author: Kai-Cheng Yang
+Author-email: yang3kc@gmail.com
+License: MIT
+License-File: LICENSE.txt
