@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pyvlq
+Version: 0.1.0
+Summary: A Python library for pure Python encoding and decoding of integers using Variable-length quantity.
+Keywords: VLQ,Variable-length quantity,VINT,integer,encoding,decoding
+Author: osoken
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: Japanese
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: pyproject-flake8 ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: tox ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: pytest-random-order ; extra == "dev"
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx_rtd_theme ; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints ; extra == "docs"
+Project-URL: Source, https://github.com/osoken/pyvlq
+Provides-Extra: dev
+Provides-Extra: docs
+
+# pyvlq
+pyvlq is a Python library for encoding and decoding `Variable-Length Quantity <https://en.wikipedia.org/wiki/Variable-length_quantity>`_.
+
+The library is available on PyPI and can be installed using pip:
+
+```bash
+pip install pyvlq
+```
+
+## Usage
+```python
+from io import BytesIO
+import pyvlq
+
+# Encode
+encoded = pyvlq.encode(300)
+print(encoded) # b'\x82\x02'
+
+# Decode
+decoded = pyvlq.decode(encoded)
+print(decoded) # 300
+
+# Decode from readable bytes
+buffer = BytesIO(b'\x82\x02\xff\xff')
+decoded = pyvlq.decode_stream(buffer)
+print(decoded) # 300 (0xff\xff is ignored)
+print(buffer.read(2)) # b'\xff\xff' (0xff\xff is left in the buffer)
+```
+
