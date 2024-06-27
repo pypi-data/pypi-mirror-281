@@ -1,0 +1,13 @@
+netcord/__init__.py,sha256=nIPJviCNE2S20WHvAphYqnt3zPQ5HbTn2BkIjVEXFz4,66
+netcord/exceptions.py,sha256=5Os3TioSkWRaJydnzrU1CKLmbP70nBOnrC76oAs2Lr4,1095
+netcord/http.py,sha256=w-S-c1ck2qElg5AmsVHd8Iph-nswOqJRaCG0udYZRYU,1565
+netcord/logger.py,sha256=MGYqBwMsTyGWqFL5bcU_bx3tuxg6vHF6FMauphGc0Ik,271
+netcord/models.py,sha256=NsPX6TmTJSQ_rdlHdA6BcGtti09uvJqIuNrtzIlpCNg,2007
+netcord/netcord.py,sha256=jt7bJkOsRtlwOYADxjObNEIdjg048D2PT42EmphaVXw,5927
+netcord/singletons.py,sha256=neJw27m9b8FusBcrS74jbDfwD4wCDYScSLujDbW__GU,264
+netcord/utils.py,sha256=yqHipDW7ONCqVhMxguV4kSKX0BWfze6ujFQq1lSKlW8,468
+netcord-1.2.2.dist-info/LICENSE,sha256=34MvEJ0RdABcWqUaf2i-5AiNRyeJGn5HF8bmVrvIp34,1063
+netcord-1.2.2.dist-info/METADATA,sha256=QmPGGPwvUMoK6itX9K82RMAH_r4twBmgmcPbO45Vl-M,2064
+netcord-1.2.2.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+netcord-1.2.2.dist-info/top_level.txt,sha256=P_XGphWC7EUkoKmcIvZqtq9B3XcrVWE-6cmywZZglQg,8
+netcord-1.2.2.dist-info/RECORD,,
