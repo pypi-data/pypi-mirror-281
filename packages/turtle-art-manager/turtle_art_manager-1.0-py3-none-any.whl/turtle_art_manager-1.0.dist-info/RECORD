@@ -1,0 +1,9 @@
+turtle_art_manager/__init__.py,sha256=N2iE20NZo0F4FJULLPVaRTj-gE7f9tGJlI_P9E7NU0Q,132
+turtle_art_manager/circle.py,sha256=sO7LvTbApk5lqNq8KjfgA3adW7f47ecSuNVoiOLBMGI,1484
+turtle_art_manager/rectangle.py,sha256=baUVJiKaIiKtXEME7cCYjb6-j6MYvxD9Mqgowynrzcw,1208
+turtle_art_manager/turtle_art.py,sha256=ncptQHS9h7duDokJC3csmq7ekgiDK6iRrcwPQQOqJ0U,2766
+turtle_art_manager/turtle_draw.py,sha256=uJx0oRhnB1BfqiRdOQJ16RHPH0a3CI5FEqXzUA5DmZc,1225
+turtle_art_manager-1.0.dist-info/METADATA,sha256=exubb2WHx3o2toD-643WfUevXmm_PfN8XvOU2Cinwtk,1968
+turtle_art_manager-1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+turtle_art_manager-1.0.dist-info/top_level.txt,sha256=k9r9KqJ907hnKHCHe5kljasWIGQsOVcu7KHx82m0vEM,19
+turtle_art_manager-1.0.dist-info/RECORD,,
