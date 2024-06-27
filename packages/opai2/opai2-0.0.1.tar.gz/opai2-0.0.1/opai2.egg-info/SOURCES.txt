@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+opai2.egg-info/PKG-INFO
+opai2.egg-info/SOURCES.txt
+opai2.egg-info/dependency_links.txt
+opai2.egg-info/top_level.txt
