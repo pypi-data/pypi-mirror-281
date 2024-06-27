@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.py
+capicom/__init__.py
+capicom/decrypt.py
+capicom.egg-info/PKG-INFO
+capicom.egg-info/SOURCES.txt
+capicom.egg-info/dependency_links.txt
+capicom.egg-info/requires.txt
+capicom.egg-info/top_level.txt

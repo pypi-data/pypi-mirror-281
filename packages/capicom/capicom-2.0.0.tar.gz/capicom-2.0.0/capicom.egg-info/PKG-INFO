@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: capicom
+Version: 2.0.0
+Summary: Python library to work with CAPICOM
+Home-page: https://github.com/RentDynamics/capicom
+Author: Rent Dynamics
+Author-email: dev-accounts@rentdynamics.com
+License-File: LICENSE.md
