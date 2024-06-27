@@ -1,0 +1,12 @@
+filamentlib/BiotSavart.py,sha256=nROeZ6faciIw7HeuZQhoVXCWmXMM3gpnq1MyehsCWLg,643
+filamentlib/ClosedDerivatives.py,sha256=Lh3CgoeOrrwdlHDIiSUblMhwz2SCyvUoakBv4ffholY,974
+filamentlib/EvolveKappaBinormal.py,sha256=ZZjX6qBnWqV6wkjWCX9Jyd77Cuw9JMg8Aet8co5zFwk,1363
+filamentlib/EvolveRegularBiotSavart.py,sha256=jXYKHlwL0C8VZNcRu8RbuBTGjwuVNuB6M9sFc1CiKKY,1194
+filamentlib/KappaBinormal.py,sha256=gteMlqax-v1gVqDOY3jWdnsMj7r90nw4LSeuRjNury4,852
+filamentlib/RegularBiotSavart.py,sha256=vnfwbbbIPUIG_Pa15HT5Tlo8iTD8NOupbbyMzvJVMZI,670
+filamentlib/__init__.py,sha256=U0OH4HaI4agjh0HeKlL0sKOWXtAW2VrkWsvomocMAeE,518
+filamentlib-0.1.1.dist-info/LICENSE,sha256=MEs81qTdKZ6dDTlCIatNT6ZrN8V9-IT3tuxJOmKMxrk,1071
+filamentlib-0.1.1.dist-info/METADATA,sha256=hGtmNMCyR73ZTUrkhcZaFIqAZJUYKhc30o1is6JA3W0,421
+filamentlib-0.1.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+filamentlib-0.1.1.dist-info/top_level.txt,sha256=mEZ6yNG005pMcKpXSiUPUVMzbHn4ArrEpoSYV10z5n4,12
+filamentlib-0.1.1.dist-info/RECORD,,

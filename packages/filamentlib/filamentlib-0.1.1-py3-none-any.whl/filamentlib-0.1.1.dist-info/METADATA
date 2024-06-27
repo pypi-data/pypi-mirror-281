@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: filamentlib
+Version: 0.1.1
+Summary: Simulate the evolution of any given vortex filament over time
+Author: Daniel Krawciw
+Author-email: dkrawciw@mines.edu
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.26
+Requires-Dist: scipy >=1.13.0
+
+# Vortex Filament Simulation
+
+Creating a Vortex Filament Simulation using Python
