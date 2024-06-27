@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: getSecrets
+Version: 1.1
+Summary: A library read secrets from hasicopr vault
+Author-email: Xavier Mayeur <xavier@mayeur.be>
+Project-URL: Homepage, https://github.com/xmayeur/getSecrets
+Project-URL: Bug Tracker, https://github.com/xmayeur/getSecrets/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: request
+
+# getSecrets package
+
+
+getSecrets is a simple package that reads a secret from a Hashicorp vault
+
+usage:
+
+```
+from get_secrets import get_secret
+
+data = get_secret(<id>)
+```
+
+Vault parameters are stored in a config file ~/.config/.vault/.vault.yml
+```
+vault:
+  token: "<access token>"
+  vault_addr: "https://vault:8200"
+  certs: "<path>/bundle.pem"
+```

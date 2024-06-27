@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/get_secrets.py
+src/getSecrets.egg-info/PKG-INFO
+src/getSecrets.egg-info/SOURCES.txt
+src/getSecrets.egg-info/dependency_links.txt
+src/getSecrets.egg-info/requires.txt
+src/getSecrets.egg-info/top_level.txt
