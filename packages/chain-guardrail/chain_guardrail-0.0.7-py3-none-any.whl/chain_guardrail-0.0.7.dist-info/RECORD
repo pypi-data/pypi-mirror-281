@@ -1,0 +1,9 @@
+chain_guardrail/main.py,sha256=SgxEC8bcbrOjTwHzcTbC17IoHPZLGlkWUPgdlEKePUM,704
+chain_guardrail/pii/presidio_pii.py,sha256=B_Spn5YIDGWlFUUzquWeGFgysw7Ka11AAGTpQWph54k,1472
+chain_guardrail/profanity/bad_words_list.py,sha256=w4QQaKg6awo7ENKQo__t38XUb5r7YtHQ9wh-2hlg_9c,32441
+chain_guardrail/profanity/fixed_pattern.py,sha256=Lhz0qRs1QVtv5EPo7pABxKG39dU1etc65tOulWjU_wE,767
+chain_guardrail-0.0.7.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+chain_guardrail-0.0.7.dist-info/METADATA,sha256=hTwwonG_gF6hTC3G4v1XFUsnHsQeMs_Zh8lO3YjLU24,705
+chain_guardrail-0.0.7.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+chain_guardrail-0.0.7.dist-info/top_level.txt,sha256=Aalk7WZqVYJJLmmtuO19UYjaUnOkDHN7b2ERWmThJhI,16
+chain_guardrail-0.0.7.dist-info/RECORD,,
