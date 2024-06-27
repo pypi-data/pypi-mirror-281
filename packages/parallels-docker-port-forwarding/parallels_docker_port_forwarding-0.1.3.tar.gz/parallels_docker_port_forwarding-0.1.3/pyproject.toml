@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "parallels-docker-port-forwarding"
+version = "0.1.3"
+description = "A Docker container port forwarding service for Parallels"
+authors = ["imtpot <muse-buzz.0@icloud.com>"]
+repository = "https://github.com/imtpot/parallels-docker-port-forwarding"
+homepage = "https://github.com/imtpot/parallels-docker-port-forwarding"
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+docker = "^7.1.0"
+
+[tool.poetry.scripts]
+parallels-docker-port-forwarding = "parallels_docker_port_forwarding.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
