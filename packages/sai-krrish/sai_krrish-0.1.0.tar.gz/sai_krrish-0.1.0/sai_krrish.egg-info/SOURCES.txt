@@ -1,0 +1,8 @@
+setup.py
+sai_krrish/__init__.py
+sai_krrish/greet.py
+sai_krrish.egg-info/PKG-INFO
+sai_krrish.egg-info/SOURCES.txt
+sai_krrish.egg-info/dependency_links.txt
+sai_krrish.egg-info/top_level.txt
+tests/test_greeter.py
