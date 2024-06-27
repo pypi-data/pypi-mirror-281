@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pydsacc
+Version: 0.0.1
+Summary: example
+Author-email: selfsff <example@gmail.com>
+Project-URL: Homepage, https://github.com/freekopik/test/
+Project-URL: Issues, https://github.com/freekopik/test/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Данная библиотека упростит управление аккаунтами Дискорд с помощью токена аккаунта!
