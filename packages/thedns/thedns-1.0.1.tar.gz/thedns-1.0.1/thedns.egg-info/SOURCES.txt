@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+thedns.egg-info/PKG-INFO
+thedns.egg-info/SOURCES.txt
+thedns.egg-info/dependency_links.txt
+thedns.egg-info/requires.txt
+thedns.egg-info/top_level.txt
+thedns_sdk_python/__init__.py
