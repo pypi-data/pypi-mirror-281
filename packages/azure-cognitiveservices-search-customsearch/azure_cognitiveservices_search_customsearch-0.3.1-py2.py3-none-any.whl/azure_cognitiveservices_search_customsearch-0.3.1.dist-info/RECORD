@@ -1,0 +1,16 @@
+azure/cognitiveservices/search/customsearch/__init__.py,sha256=wFgT4yoFPXvYZaipsjJmP9oz_XMDVpSN_ZfNrEIlXBU,710
+azure/cognitiveservices/search/customsearch/_configuration.py,sha256=GDbkPKWkx8o7aftLEEgUZnPJllASeYkVBsmqPDxXOcs,1766
+azure/cognitiveservices/search/customsearch/_custom_search_client.py,sha256=z5Hotd4yvJx8hzvrw2XLaOMtenAn28KMbwsNP_q-zEA,2087
+azure/cognitiveservices/search/customsearch/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azure/cognitiveservices/search/customsearch/version.py,sha256=dUjJ7zeHwFGYgi7oUEINY8GGilvcFXx1DkDh5RnapHE,493
+azure/cognitiveservices/search/customsearch/models/__init__.py,sha256=Ls09qY_obkjBCnwjrErGX6E3MpUURX9r4nXJaBQ4zMI,2202
+azure/cognitiveservices/search/customsearch/models/_custom_search_client_enums.py,sha256=19nToIX0R7nttCJCMXzbzUYmfZ88of7SarH02PdQ3kE,1461
+azure/cognitiveservices/search/customsearch/models/_models.py,sha256=w6ZfsQIHjJGJ0nOHmIa0ZJYOc-hvOkGXpHan-Lxohlk,29100
+azure/cognitiveservices/search/customsearch/models/_models_py3.py,sha256=FBlAzktUeQZ1xq-SxzLasqslUJ7wmQZZLvMIePL-xN4,29187
+azure/cognitiveservices/search/customsearch/operations/__init__.py,sha256=e_zaF1VubvF5m4QY7cFNoqRsXly_r70aondzdy0iC7c,587
+azure/cognitiveservices/search/customsearch/operations/_custom_instance_operations.py,sha256=oJw3HmFoIHwyzhwAV5oQfFfXNMZA2ShcLrQlX54M1gc,20442
+azure_cognitiveservices_search_customsearch-0.3.1.dist-info/LICENSE,sha256=fHekSorNm0H9wgmGSoAWs9QwtdDgkwmBjVt0RDNt90Q,1074
+azure_cognitiveservices_search_customsearch-0.3.1.dist-info/METADATA,sha256=FdhMES4qkR4k3ilsb90rtH8os12yb7Zeoc-yclc3Wlk,4695
+azure_cognitiveservices_search_customsearch-0.3.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+azure_cognitiveservices_search_customsearch-0.3.1.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
+azure_cognitiveservices_search_customsearch-0.3.1.dist-info/RECORD,,
