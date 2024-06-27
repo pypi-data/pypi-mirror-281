@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mymorsecode
+Version: 0.5.0
+Summary: A library to learn and use morsecode
+Home-page: https://github.com/tct123/morsecode
+License: MIT
+Author: tct123
+Author-email: 42028373+tct123@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: simpleaudio (>=1.0.4,<2.0.0)
+Project-URL: Repository, https://github.com/tct123/morsecode
+Description-Content-Type: text/markdown
+
+# Morsecode
+## Requirements
+Debian (etc.):
+```sh
+sudo apt-get install python3-pyaudio
+```
+## Install
+```sh
+pip install mymorsecode
+```
