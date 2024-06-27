@@ -1,0 +1,2 @@
+[console_scripts]
+terminalbot = terminalbot.bot:main
