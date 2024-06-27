@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+assets/benchmark.png
+fast_gem/__init__.py
+fast_gem/gem.py
+fast_gem.egg-info/PKG-INFO
+fast_gem.egg-info/SOURCES.txt
+fast_gem.egg-info/dependency_links.txt
+fast_gem.egg-info/not-zip-safe
+fast_gem.egg-info/top_level.txt
+fast_gem/functional/__init__.py
+fast_gem/functional/gem.py
+fast_gem/functional/gem_torch.py
+fast_gem/functional/gem_triton.py
+fast_gem/functional/triton_utils.py
