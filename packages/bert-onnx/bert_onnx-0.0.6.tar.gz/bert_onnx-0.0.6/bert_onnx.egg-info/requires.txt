@@ -1,0 +1,4 @@
+modelscope
+onnx
+onnxruntime-gpu
+transformers
