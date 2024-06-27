@@ -1,0 +1,15 @@
+synthdid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synthdid/get_data.py,sha256=RChjTFzBUQkzGdCyfEK7bGOPNiMAk7Yj58bEhJgTg6A,1701
+synthdid/placebo_simulations.py,sha256=jze583--DVPXpVTT_nD76L8Logdu4H4NHVLJz7lcQxY,3520
+synthdid/plots.py,sha256=SKM1quv38xQ75nO_sJKPZViCQs35Edg6vCpBf_F7Ono,6364
+synthdid/sdid.py,sha256=oMxHtX7z9iLiRyK8MKHWbnv_QVQwi571gIwDf6EeT_c,9681
+synthdid/solver.py,sha256=9kqxrrxfIy_Z4qYprdx_-7RsxiBSHWLDQc3MTruOJMc,5439
+synthdid/summary.py,sha256=99swUYKErbY_Gg295YN8lcpgs3kSrZWbqfdPl49gOHo,410
+synthdid/synthdid.py,sha256=_4xptCVJ5yfNefWOm1Pkvsgpmp6Whd-gr7gi0XYautU,792
+synthdid/utils.py,sha256=NUVbhiMSyWss2gsazyExKS0_AC9y6jVILbljpGjWFe0,3610
+synthdid/vcov.py,sha256=XkMUbZ_qLcU5BB-e0klDL3ZFjxrWFiCkisaHwXZE2y4,5043
+synthdid-0.10.0.dist-info/LICENSE,sha256=LQD5egDhgBLzenzr4851usPZTdnzgci-IJhkUAZS1wI,1128
+synthdid-0.10.0.dist-info/METADATA,sha256=hLBOCKeWHVp58uiYA6tGYKkJmL3ir-ydGB_UoDbiiUc,8939
+synthdid-0.10.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+synthdid-0.10.0.dist-info/top_level.txt,sha256=SOojzOd4P6PhZqHTEfRaIfGaxGljWYk2LEvR3YYSRrk,9
+synthdid-0.10.0.dist-info/RECORD,,
