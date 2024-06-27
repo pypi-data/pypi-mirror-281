@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+waxtion/__init__.py
+waxtion/waxtion.py
+waxtion.egg-info/PKG-INFO
+waxtion.egg-info/SOURCES.txt
+waxtion.egg-info/dependency_links.txt
+waxtion.egg-info/requires.txt
+waxtion.egg-info/top_level.txt
