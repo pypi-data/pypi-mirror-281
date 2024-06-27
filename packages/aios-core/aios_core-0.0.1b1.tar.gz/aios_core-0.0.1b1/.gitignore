@@ -1,0 +1,11 @@
+logs/
+.idea/
+.DS_Store
+.ipynb_checkpoints
+__pycache__
+src/storage/*.json
+/venv/
+.idea
+context_restoration/
+.pytest_cache
+.env
