@@ -1,0 +1,3 @@
+[console_scripts]
+promptscript = promptscript.__main__:main
+
