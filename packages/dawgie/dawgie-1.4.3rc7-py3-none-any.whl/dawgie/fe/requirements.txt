@@ -1,0 +1,15 @@
+GitPython
+bokeh
+boto3
+cryptography
+dawgie-pydot3
+matplotlib
+progressbar2
+psycopg-binary
+psycopg
+pyOpenSSL
+pyparsing
+python-gnupg
+requests
+transitions
+twisted
