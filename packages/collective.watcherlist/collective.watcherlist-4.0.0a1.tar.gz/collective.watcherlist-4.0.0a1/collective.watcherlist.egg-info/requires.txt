@@ -1,0 +1,7 @@
+Products.CMFPlone
+plone.api
+setuptools
+zope.formlib
+
+[test]
+plone.app.testing
