@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: calculate-lib
+Version: 0.1
+Summary: A simple library for basic arithmetic operations
+Home-page: https://github.com/yourusername/calculate-lib
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# calculate-lib
+
+A simple library to perform basic arithmetic operations: addition, subtraction, multiplication, and division.
+
+## Installation
+
+pip install calculate-lib
+
+
+## Usage
+
+```python
+from calculate_lib import add, subtract, multiply, divide
+
+print(add(3, 5))          # 8
+print(subtract(10, 5))    # 5
+print(multiply(4, 5))     # 20
+print(divide(10, 2))      # 5.0
+
+
+### 6. Táº¡o file setup.py
+File nÃ y sáº½ chá»©a thÃ´ng tin Ä‘á»ƒ Ä‘Ã³ng gÃ³i vÃ  phÃ¡t hÃ nh thÆ° viá»‡n:
+
+```python
+# setup.py
