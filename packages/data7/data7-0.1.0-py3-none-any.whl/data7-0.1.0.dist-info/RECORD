@@ -1,0 +1,11 @@
+data7/.secrets.yaml.dist,sha256=Wz-yHCwF2IihAszIBpssOWQUDINy4uKJaaFOoIqVIAs,592
+data7/__init__.py,sha256=i1qp_VHTdroFZmlToqwDkvpIEWOu9Dnxyg8ogbRB_GY,25
+data7/__main__.py,sha256=roTG-9CMxgstuwcA_txRp_Gdqkz_5UMVaJQAmxFvFSQ,185
+data7/app.py,sha256=-mJ3jhrUuB83I7OX3lmQJXHR1RbX1mJvn8crOhjFOU0,6410
+data7/config.py,sha256=Q9cXWOno1nzB53dh3HYfPCxns-ai3JH1MjVyXkJ12_4,249
+data7/data7.yaml.dist,sha256=75EA_6jbmTC9YwJgIcymhgbOKJgnNyAn0HFwRCoiqg8,814
+data7/settings.yaml.dist,sha256=DqOvPOUjysCuLzlBsIGh-Q-ns9qY7PEvkob_pPda2b8,797
+data7-0.1.0.dist-info/LICENSE,sha256=CDpE_6Anb68vEEwJOCp_KD7jOvJn90EDDRRso4QftLo,1103
+data7-0.1.0.dist-info/METADATA,sha256=p2DmWvjzhVd-1qmoCNz2oWqqeohRKa3CXNINg3L6zSA,2800
+data7-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+data7-0.1.0.dist-info/RECORD,,
