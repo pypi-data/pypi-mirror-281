@@ -1,0 +1,16 @@
+lib64/libTracyClient.a,sha256=gZLDmH0VCljj292vQUJxPe5_3vSxtvPpK54fQARYmeI,523306
+lib64/libPhysicsBasedAnimationToolkit.a,sha256=qGdvDV8BX-5JSZMP7kB24sOxrsd-_hH4W4p-jCWVcWM,144466
+lib64/cmake/PhysicsBasedAnimationToolkit/PhysicsBasedAnimationToolkitConfig.cmake,sha256=OKQEB6IfYseVAXlXlp76MvurkVaWZ-ixJEa_WvK9JRQ,751
+lib64/cmake/PhysicsBasedAnimationToolkit/PhysicsBasedAnimationToolkit_Targets-release.cmake,sha256=Y3rLSaC4d_0oollxAJtPfTgsHmfQKThfdKbR0lxVeco,1111
+lib64/cmake/PhysicsBasedAnimationToolkit/PhysicsBasedAnimationToolkit_Targets.cmake,sha256=I9dEF5Zv4xTw7Dutx5wDJRq8fTE1dffjKYMMYHZ7bAE,8558
+pbatoolkit-0.0.3.dist-info/METADATA,sha256=GX8cvcoeNjx0Wfx36KyF26J3Xfn3-uDeUh4h13FNt1g,5640
+pbatoolkit-0.0.3.dist-info/WHEEL,sha256=Tv_DSstKEcve4VX8aAB-esCK4IuP2LCjG0QCcGqPzWk,156
+pbatoolkit-0.0.3.dist-info/RECORD,,
+pbatoolkit-0.0.3.dist-info/licenses/LICENSE,sha256=yb_3VziSIZPmf6cm-iJVNYcNKqEFn5FFLEEXNihK1WY,1338
+pbatoolkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pbatoolkit/_pbat.cpython-312-x86_64-linux-gnu.so,sha256=BtX7qDKqrmQejEEXRPNh-Y68wa4IXipGF1wqK8_0JZs,57153768
+pbatoolkit/fem.py,sha256=RL464v9HSzs1iZzVP3wJBpir8kFitbo225WiDoDlYg4,9393
+pbatoolkit/geometry.py,sha256=bcdG5EonmLgiSTt2rRPD-fH9MM1sludk5OvGfkWf7kU,1298
+pbatoolkit/profiling.py,sha256=LIyEE7ikIXr80rHJu5qiCfOSfvH8E6_iBV6Mb4UqDd8,775
+pbatoolkit/math/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pbatoolkit/math/linalg/__init__.py,sha256=S2_MpYLBHgm3lccWtVo7VfVfRJTvj6MpC0AQLVrSO5Y,985
