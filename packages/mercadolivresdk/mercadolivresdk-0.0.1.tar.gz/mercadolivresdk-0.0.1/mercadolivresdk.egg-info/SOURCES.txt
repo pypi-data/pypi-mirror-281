@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mercadolivresdk/__init__.py
+mercadolivresdk.egg-info/PKG-INFO
+mercadolivresdk.egg-info/SOURCES.txt
+mercadolivresdk.egg-info/dependency_links.txt
+mercadolivresdk.egg-info/requires.txt
+mercadolivresdk.egg-info/top_level.txt
