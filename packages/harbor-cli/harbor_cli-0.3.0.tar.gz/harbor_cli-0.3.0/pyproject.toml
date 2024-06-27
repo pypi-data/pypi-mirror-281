@@ -1,0 +1,164 @@
+[build-system]
+requires = ["hatchling", "hatch-fancy-pypi-readme"]
+build-backend = "hatchling.build"
+
+[project]
+name = "harbor-cli"
+description = 'Command-line interface for Harbor.'
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [{ name = "pederhan", email = "pederhan@uio.no" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: System Administrators",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Topic :: Internet",
+  "Topic :: System :: Systems Administration",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+dependencies = [
+  "typer==0.9.0",
+  "harborapi>=0.25.2",
+  "pydantic>=2.7.4",
+  "trogon>=0.5.0",
+  "platformdirs>=2.5.4",
+  "tomli>=2.0.1",
+  "tomli-w>=1.0.0",
+  "rich>=12.6.0",
+  "click-repl==0.2.0",
+  "fuzzywuzzy>=0.18.0",
+  "python-Levenshtein>=0.20.9",
+  "keyring>=24.2.0",
+  "httpx[socks]>=0.26.0",
+  "strenum>=0.4.15",
+]
+dynamic = ["version", "readme"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.2.0",
+  "pytest-cov>=4.0.0",
+  "pytest-mock>=3.10.0",
+  "pytest-timeout>=2.1.0",
+  "hypothesis>=6.62.1",
+  "ruff>=0.2.0",
+  "freezegun>=1.2.2",
+]
+
+[project.urls]
+Source = "https://github.com/unioslo/harbor-cli"
+Documentation = "https://unioslo.github.io/harbor-cli/"
+Changelog = "https://github.com/unioslo/harbor-cli/blob/main/CHANGELOG.md"
+Issues = "https://github.com/unioslo/harbor-cli/issues"
+
+[project.scripts]
+harbor = "harbor_cli.main:main"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.metadata.hooks.fancy-pypi-readme]
+content-type = "text/markdown"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "README.md"
+end-before = "\n<!-- Cut before here -->"
+
+[[tool.hatch.metadata.hooks.fancy-pypi-readme.fragments]]
+path = "CHANGELOG.md"
+pattern = "<!-- changelog follows -->\n\n(.*)"
+
+[tool.hatch.version]
+path = "harbor_cli/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = ["harbor_cli[dev]"]
+[tool.hatch.envs.default.scripts]
+test = "pytest {args}"
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=harbor_cli --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+# Version bumping
+bump = "python scripts/bump_version.py {args}"
+bump-dry = "python scripts/bump_version.py --dry-run {args}"
+
+[tool.hatch.envs.docs]
+dependencies = [
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocstrings[python]",
+  "mkdocs-macros-plugin",
+  "mkdocs-literate-nav",
+  "mkdocs-simple-hooks",
+  "sanitize-filename",
+  "jinja2",
+  "pyyaml",
+]
+[tool.hatch.envs.docs.scripts]
+build = "mkdocs build --clean --strict"
+serve = "mkdocs serve --dev-addr localhost:8001"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["38", "39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = ["harbor_cli/__about__.py"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+  "pass",
+]
+
+
+[tool.pyright]
+pythonVersion = "3.8"
+venvPath = "."
+venv = ".venv"
+ignore = ["tests", "scripts", "docs/scripts"]
+typeCheckingMode = "strict"
+
+[tool.ruff]
+src = ["harbor_cli"]
+extend-exclude = ["harbor_cli/__init__.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]
+select = [
+  "E", # pycodestyle
+  "F", # pyflakes
+]
+ignore = [
+  "E501", # line too long (we let ruff formatter handle this)
+  "F541", # f-string is missing placeholders
+]
+
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402", "F401", "F403"]
+"harbor_cli/state.py" = ["E402"]
+"scripts/**" = ["D"]
+
+
+[tool.ruff.lint.isort]
+# Force one line per import to simplify diffing and merging
+force-single-line = true
+# Add annotations import to every file
+required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
