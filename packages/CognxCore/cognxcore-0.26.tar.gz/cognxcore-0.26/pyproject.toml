@@ -1,0 +1,29 @@
+[project]
+name = "CognxCore"
+version = "0.26"
+authors = [
+  { name="Conradium", email="leiconrad5@gmail.com" },
+]
+description = "A small gemini-python package for Cognito or Cogni."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "google.generativeai"
+]
+license = { file = "LICENSE" }
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+
+
+[project.urls]
+Homepage = "https://github.com/Conradium/CogniCore"
+Issues = "https://github.com/Conradium/CogniCore/issues"
