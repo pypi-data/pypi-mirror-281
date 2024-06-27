@@ -1,0 +1,10 @@
+certifi==2024.6.2
+charset-normalizer==3.3.2
+idna==3.7
+ops-py-azure-key-vault-report==6.0.0
+ops-py-message-handler==1.0.4
+pip==24.1
+requests==2.32.3
+setuptools==70.1.1
+urllib3==2.2.2
+wheel==0.43.0
