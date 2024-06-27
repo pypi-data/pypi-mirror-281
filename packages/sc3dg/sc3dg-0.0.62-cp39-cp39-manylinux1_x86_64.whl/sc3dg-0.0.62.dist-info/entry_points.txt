@@ -1,0 +1,8 @@
+[console_scripts]
+bismark = sc3dg.bismark.bismark_wrapper:main
+bowtie2 = sc3dg.bowtie2.wrapper:main
+bwa = sc3dg.bwa_wrapper:main
+minimap2 = sc3dg.minimap2.minimap2_wrapper:main
+pairtools = sc3dg.pairtools.cli:cli
+stark = sc3dg.cli:cli
+
