@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pytadacs/__init__.py
+pytadacs.egg-info/PKG-INFO
+pytadacs.egg-info/SOURCES.txt
+pytadacs.egg-info/dependency_links.txt
+pytadacs.egg-info/requires.txt
+pytadacs.egg-info/top_level.txt
