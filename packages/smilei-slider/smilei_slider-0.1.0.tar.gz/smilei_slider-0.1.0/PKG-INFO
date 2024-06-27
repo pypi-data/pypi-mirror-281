@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: smilei_slider
+Version: 0.1.0
+Summary: A package for showing sliders for smilei
+Home-page: https://github.com/yourusername/mypackage
+Author: Ziming Huang
+Author-email: zh2422@ic.ac.uk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ipywidgets
+Requires-Dist: ipython
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+nothing much bro.
+Version 0.0
+
+There's only one function for fixing happi's slider problem
+
+Ziming Huang 24-JUNE-2024
