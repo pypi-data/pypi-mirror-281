@@ -1,0 +1,12 @@
+guv_calcs/__init__.py,sha256=39A5okZDpxfIVZRW9YcH0X0_ZRcv4As_5gxGXH7t70Y,284
+guv_calcs/_helpers.py,sha256=giHsCedXemuS6znVQTvQ6rBlRL8gmoBzffqBRYfgsgM,866
+guv_calcs/calc_zone.py,sha256=Q_uV4Lf1MjLJQUMhls3q3dPPfsYcf4JZbjxJ3gAfaL4,15393
+guv_calcs/lamp.py,sha256=oCpSiHNyBu7_9EYV9CcyBuPt4UXJyxUcd37BfXdq834,21379
+guv_calcs/room.py,sha256=dICUW26M4_BnMDapICgtqm43ddW7XRc498JVMWJFApQ,19038
+guv_calcs/trigonometry.py,sha256=j7MdB7me_tKw0LzMi297JjXJZqGTj6wEmGzW1QCdO54,1686
+guv_calcs-0.0.13.dist-info/LICENSE,sha256=fJJEumUhhnqbg3NB0TyYYwEWhvYF84t9Kvrii2JaaQw,1074
+guv_calcs-0.0.13.dist-info/METADATA,sha256=xCE2NwSxbu3x99l-AFXyduuVd8FN3_qsXJTpVsNxmsc,1294
+guv_calcs-0.0.13.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+guv_calcs-0.0.13.dist-info/top_level.txt,sha256=d9f73C7BJAt6WOyjBTUg-KTRvDWzmU_Fm8zQRcdj35w,10
+guv_calcs-0.0.13.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+guv_calcs-0.0.13.dist-info/RECORD,,
