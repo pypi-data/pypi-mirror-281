@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: f2llm
+Version: 0.0.1
+Summary: Folder to text for LLMs
+Author: Mate Dravucz
+Project-URL: Homepage, https://github.com/mattdravucz/f2llm
+Project-URL: Issues, https://github.com/mattdravucz/f2llm/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# f2llm
+folder to text for LLMs
