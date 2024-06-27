@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICESNCE.txt
+MANIFEST.in
+README.txt
+__init__.py
+important.txt
+setup.py
+LukaLomaia2024.egg-info/PKG-INFO
+LukaLomaia2024.egg-info/SOURCES.txt
+LukaLomaia2024.egg-info/dependency_links.txt
+LukaLomaia2024.egg-info/top_level.txt
