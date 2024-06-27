@@ -1,0 +1,12 @@
+qsharp-jupyterlab/__init__.py,sha256=Y8Oz1-FteADlHAyk_io1xERrYUGDgSKnkQD-rB0UpIE,137
+qsharp-jupyterlab/_version.py,sha256=Ps9svzSildM7r2eJ7w4OB780JKV5sxsKl1QeZfbtVJ0,176
+setup.py,sha256=ygjRqahpDQgwn3EK4o9ODFmiW-UjuJ8gqxKcB5-SDMY,33
+qsharp_jupyterlab-1.6.2.dev0.data/data/share/jupyter/labextensions/qsharp-jupyterlab/package.json,sha256=6uK0F6TlBWOn1UdERadlPgQgcO6nvjmFUasdxrej6Do,1464
+qsharp_jupyterlab-1.6.2.dev0.data/data/share/jupyter/labextensions/qsharp-jupyterlab/static/362.5a056d3b35600fe8f268.js,sha256=WgVtOzVgD-jyaHsqErhmy551fGoMbuACLhf4laujnk0,4362
+qsharp_jupyterlab-1.6.2.dev0.data/data/share/jupyter/labextensions/qsharp-jupyterlab/static/remoteEntry.0849b6ea28fe354bc4da.js,sha256=CEm26ij-NUvE2tFx2k1plzY7htUHp_T7P24ZUf0-rFY,6292
+qsharp_jupyterlab-1.6.2.dev0.data/data/share/jupyter/labextensions/qsharp-jupyterlab/static/style.js,sha256=-CQt0ZTPaCTvrRiLcznxflAbfvIKlOVzjOos-muaXQ8,118
+qsharp_jupyterlab-1.6.2.dev0.data/data/share/jupyter/labextensions/qsharp-jupyterlab/static/third-party-licenses.json,sha256=XFJ7K-RsjbmcZ7plOTH9ztLIePgc7gYB3fLZMgCD8Lw,1302
+qsharp_jupyterlab-1.6.2.dev0.data/data/share/jupyter/labextensions/qsharp-jupyterlab/install.json,sha256=-9VH99CUJ1tP9D6ykoRRe_R3qf2eEu-rSl0gJb9Rs4s,195
+qsharp_jupyterlab-1.6.2.dev0.dist-info/METADATA,sha256=NZHNuvReCDePvgnbY8G2cNF5Q94d53YWglqFzANK8qM,1872
+qsharp_jupyterlab-1.6.2.dev0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+qsharp_jupyterlab-1.6.2.dev0.dist-info/RECORD,,
