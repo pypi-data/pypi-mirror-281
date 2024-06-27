@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: callder
+Version: 0.1.1
+Summary: rolling
+Author-email: Taeyong Jeon <gnradio3@gmail.com>
+License: MIT
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: pandas >=2.2.2
+Requires-Dist: build >=1.2.1
+Requires-Dist: twine >=5.0.0
+
+# callder
