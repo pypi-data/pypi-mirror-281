@@ -1,0 +1,17 @@
+LICENSE
+NOTICE
+README.md
+setup.py
+./urartu/__init__.py
+./urartu/commands/__init__.py
+./urartu/commands/command.py
+./urartu/commands/launch.py
+./urartu/commands/register.py
+./urartu/config/__init__.py
+urartu.egg-info/PKG-INFO
+urartu.egg-info/SOURCES.txt
+urartu.egg-info/dependency_links.txt
+urartu.egg-info/entry_points.txt
+urartu.egg-info/not-zip-safe
+urartu.egg-info/requires.txt
+urartu.egg-info/top_level.txt
