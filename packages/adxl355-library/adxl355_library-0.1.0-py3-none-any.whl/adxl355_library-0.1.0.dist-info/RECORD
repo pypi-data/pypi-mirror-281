@@ -1,0 +1,9 @@
+adxl355/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adxl355/adxl355_definitions.py,sha256=iP4FbKt0wvI_WlG2SLcIdWcRQhEKobw6BTBTkTXzetg,4179
+adxl355/adxl355_spi.py,sha256=jK_7iSbCUDeRkGXEhN5pnbPVQJ4p3-pxCf3x_YHdxTc,7234
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_adxl355.py,sha256=stpeBnBuETbjFJxfF-IH-FV7DXa8F08RHkWeak_ty6c,2283
+adxl355_library-0.1.0.dist-info/METADATA,sha256=Crue_PBJl-iHJU06QH-QxePha1LyxIeTVycmq-SR0e4,3198
+adxl355_library-0.1.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+adxl355_library-0.1.0.dist-info/top_level.txt,sha256=JECCMJWFDolJNliRhf3PKKWvnY7Rl54nxzu53oH5OyY,14
+adxl355_library-0.1.0.dist-info/RECORD,,
