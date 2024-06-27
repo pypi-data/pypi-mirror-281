@@ -1,0 +1,9 @@
+fairmaterials/__init__.py,sha256=2k_ZeqU7FvqZMFqGm-EYRiV98uxUxmiy5wXygvIobPU,13
+fairmaterials/__main__.py,sha256=FMqWkXu-jtXMbyRkVYptv6dV9qffS3Xub-PiwkfGgm4,5471
+fairmaterials/fair_sheet_parser.py,sha256=3MJ5k9riaFFC7xQCg7fPWBckiWPgqZ3Pc6HOL3_aghE,28904
+fairmaterials/rdflib_graph_merger.py,sha256=YtabPMTi_kTig7INyXL42bparSfXIFDHIejl-LD-plE,3735
+fairmaterials/rdflib_graph_saver.py,sha256=I9t55CYi3IBgW4Uk-RvcfM4wQtKPyeGvuHOtBmjOFcM,4386
+fairmaterials-0.4.2.1.dist-info/LICENSE.txt,sha256=NMQxTJv71Sg47w5NMI0HWy6Sd23ff3A30_Z2QqTrH5I,1264
+fairmaterials-0.4.2.1.dist-info/METADATA,sha256=qYZ21gIb1WFe0BKHnBwcCL3jyqtmnrj9Y-kt5Vu73-s,11922
+fairmaterials-0.4.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fairmaterials-0.4.2.1.dist-info/RECORD,,
