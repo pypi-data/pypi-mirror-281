@@ -1,0 +1,10 @@
+setup.py
+distributions_atul/Binomialdistribution.py
+distributions_atul/Gaussiandistribution.py
+distributions_atul/Generaldistribution.py
+distributions_atul/__init__.py
+distributions_atul.egg-info/PKG-INFO
+distributions_atul.egg-info/SOURCES.txt
+distributions_atul.egg-info/dependency_links.txt
+distributions_atul.egg-info/not-zip-safe
+distributions_atul.egg-info/top_level.txt
