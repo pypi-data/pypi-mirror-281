@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: quiz_project
+Version: 0.0.0.1
+Summary: Quiz creator and displayer
+Author: Mariana Aguerrevere
+Author-email: aamariana1907@gmail.com
+Keywords: python,quiz,creator,display,game
+Description-Content-Type: text/markdown
+
+Advanced coding skills project: A game of a quiz that allows you to create it and save it, and play your own and other saved quizzes
