@@ -1,0 +1,11 @@
+estacionalidad/__init__.py,sha256=FZaH_RAuLLx_g8i4dxHMJDo91L9pgoEO3fvve1nVtZE,59
+estacionalidad/fonts/Helvetica-Neue-LT-Std-77-Bold-Condensed_22542.ttf,sha256=H8KiI2B1Gp6bdwSE7_Otx4isY1XCBMdZ38o66y1GIsQ,30148
+estacionalidad/Plot/__init__.py,sha256=2xV9ltjW4eTNCQs_m3xlWtycgniL5AuGyiyaSTnB5A8,5283
+estacionalidad/Plot/abstract_clases.py,sha256=a5qOo2XOLKqK8QcM8jJhRgC5ylPy8_7X931qOpPwMZQ,674
+estacionalidad/Plot/config.py,sha256=nI_iarincV01mE5Eu_kEbmYdiwee__g6yOFF2wIBEpc,445
+estacionalidad/Plot/table.py,sha256=8a3GqBSV_Y-S8gnyQhm6guOigkYQFIa2YU-EHEb8TNY,2810
+estacionalidad/Wrangling/__init__.py,sha256=NhxHjKS9-OknW9RDrzlClcmeWIt190zqAjKXCuDCq4U,1232
+estacionalidad/Wrangling/read_series_indices_indec.py,sha256=vuztIGci6YnN0ct8dDPBUWWJlFzEOkkUWNqsi3IM6Jw,763
+estacionalidad-0.1.7.dist-info/METADATA,sha256=tw6ErLK7n6xBJXd5ZIEEjjAYVRS464rCBbcIXvMOq7Q,914
+estacionalidad-0.1.7.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+estacionalidad-0.1.7.dist-info/RECORD,,
