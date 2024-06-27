@@ -1,0 +1,14 @@
+ossdirectory/__init__.py,sha256=-iSvzK-b5GZpfdr5P8aZB5Jrh5f88Xe0WtepnbqaJaI,56
+ossdirectory/clone.py,sha256=mT0tU1FdAHiFkPQVBbn1rN3u8oLE1_FfgQ_2Cyhrr40,530
+ossdirectory/fetch.py,sha256=2DjLPlT4JcgAmvZy225xBFJvUSSfg8EL81Gqxm3M5JM,2015
+ossdirectory/schema.py,sha256=ViHPRlpePkVRxB6zQMsf2HR_TK50VkpkjxWjGrlhpAE,1737
+ossdirectory/resources/__init__.py,sha256=rcldNDxmqJLEGZVDUH7EFJHrXl4LpErREBg0Y9kr5zM,413
+ossdirectory/resources/schema/blockchain-address.json,sha256=JjaPrBEvS_VeZr8tR7Sg1pP2lHJe8eHYNX7ac86OiKA,1580
+ossdirectory/resources/schema/collection.json,sha256=TXJsZNvMV3lA09mRSVMs6rIbeLotIgVKpjEd-ixXRmI,617
+ossdirectory/resources/schema/project.json,sha256=eaiDDJ9BYXgyHSBweOS8LYu6FO54mJ-WXh3_az26Foo,968
+ossdirectory/resources/schema/social-profile.json,sha256=-WvdEBgkNGUM_eO7avwCfGMPh7JUx-a7T5KyyDHhvQA,646
+ossdirectory/resources/schema/url.json,sha256=hgtIlDePCJTAHXyhgd4QBz5O5PBvUaVh96ryyUKp-Wg,207
+oss_directory-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+oss_directory-0.1.0.dist-info/METADATA,sha256=HAfoYGdCfaDiKl_jhcPBlVmTGQPZZoQYRVJpQEv0ocI,8520
+oss_directory-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+oss_directory-0.1.0.dist-info/RECORD,,
