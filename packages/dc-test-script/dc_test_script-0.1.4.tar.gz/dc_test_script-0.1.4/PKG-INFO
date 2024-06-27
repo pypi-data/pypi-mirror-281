@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: dc_test-script
+Version: 0.1.4
+Summary: Add your description here
+Author-email: DCrawley94 <danikacrawley.dev@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# test-script
+
+Describe your project here.
