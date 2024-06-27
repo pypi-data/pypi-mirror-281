@@ -1,0 +1,16 @@
+__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+papers_dl.py,sha256=apA8lEfrlSUVsQg329LstC4SrKBxLVflzkWuPhJubR0,5567
+version.py,sha256=1SFj-qMOaeO0fOKQaFmYhAKiRwwNda5uWKpYtIcken8,23
+fetch/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fetch/fetch_utils.py,sha256=PNYcHXzKpB7HRuP91v__JyBjza915rUqxLigWtRWy2Y,2763
+parse/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+parse/parse.py,sha256=EVLD1k0X7b8SvAyhEiV-CfcVbpHz-RP-lnHlTRDy1U4,4075
+providers/__init__.py,sha256=IAIgcxpyKlZNPSuWzPy_8j1gi_P-yS21H2AxF3N4qfU,126
+providers/scidb.py,sha256=Skq-VW0xiEGVK3ijYV_w_nOuolDqDp1ZLvp-TgNDpSY,1828
+providers/scihub.py,sha256=rCjwD6kU95VQhVFZkEVP93dH3wS9p9038zHrxLNymLk,8383
+papers_dl-0.0.12.dist-info/LICENSE,sha256=YIBNfGgk3v3n85eIGBpTMYIsb0zwCsi3Ng4KbWaJWNQ,1070
+papers_dl-0.0.12.dist-info/METADATA,sha256=oxHmv-0nlXEGblylH1zqmLIbsKIn3Qihqtq8iBXDsqQ,1717
+papers_dl-0.0.12.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+papers_dl-0.0.12.dist-info/entry_points.txt,sha256=gEpygZ-R0aSY4mV7-Ti3FTXXMuf4juVTeQZVJCf96WQ,45
+papers_dl-0.0.12.dist-info/top_level.txt,sha256=IMPnWdLLimlFnnUR6NKLqKAgon38jvtzyYaNxC8XFFQ,49
+papers_dl-0.0.12.dist-info/RECORD,,
