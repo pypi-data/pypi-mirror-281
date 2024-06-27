@@ -1,0 +1,11 @@
+airflow_unicore_integration/__init__.py,sha256=bh8G7mutfVy8umYxhoMZLBLufNxZCp44RxekRw2y4cw,395
+airflow_unicore_integration/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_unicore_integration/hooks/unicore_hooks.py,sha256=3sXaVYNhd6w-DdWS0VmtM0e037lUcRvUOuNRWz_bCYk,1768
+airflow_unicore_integration/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_unicore_integration/operators/unicore_operators.py,sha256=1o9hhEJTcrSYuQ4AexWLXodylZwNerP9zpqgakJ7ZIk,16445
+airflow_unicore_integration-0.0.5.dist-info/LICENSE,sha256=FgrHcXlmWUhvWaEmE1-OJIR_mJIwlSBBlvPy2PLh83I,1525
+airflow_unicore_integration-0.0.5.dist-info/METADATA,sha256=kvCgHJkbdYSZxAzIwNmRLwksFKt6x4Io6UNrdj7E0Bo,10242
+airflow_unicore_integration-0.0.5.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+airflow_unicore_integration-0.0.5.dist-info/entry_points.txt,sha256=bmk1b2a4vYfZ2P4fbcPVSOLEThgKHSHftgjR82XiG6A,88
+airflow_unicore_integration-0.0.5.dist-info/top_level.txt,sha256=j45X-uIuOk3oL78iwlpHakMWtUkg__B7zUlJLwmZx6w,28
+airflow_unicore_integration-0.0.5.dist-info/RECORD,,
