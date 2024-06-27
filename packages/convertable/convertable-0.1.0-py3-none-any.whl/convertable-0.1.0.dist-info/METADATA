@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: convertable
+Version: 0.1.0
+Summary: CLI tools for converting between different formats such as JSON, YAML, and TOML
+Home-page: https://github.com/mathewmoon/convertable
+Author: Mathew Moon
+Author-email: me@mathewmoon.net
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: PyYAML (>=6.0.1,<7.0.0)
+Requires-Dist: boto3 (>=1.34.56,<2.0.0)
+Requires-Dist: pygments (>=2.17.0,<3.0.0)
+Project-URL: Repository, https://github.com/mathewmoon/convertable
+Description-Content-Type: text/markdown
+
+
+# A set of CLI tools for converting between different data formats
+
+## CLI Tools
+
+
+### yamltojson
+```
+usage: yamltojson.py [-h] [-f FILE] [-p PATH] [-i INDENT] [--no-color] [-r]
+
+options:
+  -h, --help            show this help message and exit
+  -f FILE, --file FILE  File path to open.
+  -p PATH, --path PATH  Return a specific path, in dotted notation.
+  -i INDENT, --indent INDENT
+                        Number of spaces for indentation of JSON.
+  --no-color            Don't print color to terminal
+  -r, --reverse         Operate in reverse, converting JSON to YAML.
+```
+
