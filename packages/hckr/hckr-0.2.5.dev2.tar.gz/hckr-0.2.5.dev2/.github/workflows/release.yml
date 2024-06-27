@@ -1,0 +1,46 @@
+name: Create Github Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    name: "Creating  Release"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip 
+          pip install hatch
+
+      - name: Build package
+        run: make package
+
+      - name: Debug Ref
+        run: |
+        echo "GitHub ref: ${{ github.ref }}"
+
+      - name: Set Prerelease Variable
+        id: set-prerelease
+        run: |
+          if [[ "${GITHUB_REF}" == *"dev"* ]]; then
+            echo "::set-output name=prerelease::true"
+          else
+            echo "::set-output name=prerelease::false"
+          fi
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: ${{ steps.set-prerelease.outputs.prerelease }}
+          files: |
+            LICENSE.txt
+            dist/**
