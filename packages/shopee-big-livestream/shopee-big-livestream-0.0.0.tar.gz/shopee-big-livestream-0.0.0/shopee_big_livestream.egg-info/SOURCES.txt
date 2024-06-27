@@ -1,0 +1,6 @@
+README.md
+setup.py
+shopee_big_livestream.egg-info/PKG-INFO
+shopee_big_livestream.egg-info/SOURCES.txt
+shopee_big_livestream.egg-info/dependency_links.txt
+shopee_big_livestream.egg-info/top_level.txt
