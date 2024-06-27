@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+filamentlib/filamentlib.egg-info/PKG-INFO
+filamentlib/filamentlib.egg-info/SOURCES.txt
+filamentlib/filamentlib.egg-info/dependency_links.txt
+filamentlib/filamentlib.egg-info/requires.txt
+filamentlib/filamentlib.egg-info/top_level.txt
