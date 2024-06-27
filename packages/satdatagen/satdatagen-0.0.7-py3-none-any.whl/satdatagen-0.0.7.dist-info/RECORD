@@ -1,0 +1,11 @@
+satdatagen/GroundLocation.py,sha256=VpdVP3KgWOWa6t78mzb6jUiQSjQvvZmuqh7-F1SQgLI,2888
+satdatagen/Satellite.py,sha256=AhrMdnQ9kkK3-2BJQCDyRqS13OOBcfcPrM_WtZHUAv0,3306
+satdatagen/TimeRange.py,sha256=I2J4QBU62ZLlwN3gEif1Pay-ag23O0ZYoA76vDcoIrc,2707
+satdatagen/__init__.py,sha256=L7ETTcjpbxTVYBscND3gs8QzDDCRH9oi-SRdTAuj5dA,24230
+satdatagen/helpers.py,sha256=jluTc-xkwBecTXFtNhEjW01dWwDW7Z5vFOdXi6DCG_M,22431
+satdatagen/object_sizes.json,sha256=pRFRGRP2Kb2WGvfa3nwpdRF7ZzvWqDUPWlNEZtfeiDY,15522898
+satdatagen/sizes.py,sha256=-qCLVLacGnDo8Nc6VGRIFWmtPC4p8TBchHYRThiFTCE,15522841
+satdatagen-0.0.7.dist-info/METADATA,sha256=MzdAbspkem3SfjD7DJpCnqMNJAXdjL7kqRbuhdnSOdI,1426
+satdatagen-0.0.7.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+satdatagen-0.0.7.dist-info/licenses/LICENSE,sha256=IP0es981vGzyH2gXyzGmsKC8TLioVPJO7_8WxODM6QE,1065
+satdatagen-0.0.7.dist-info/RECORD,,
