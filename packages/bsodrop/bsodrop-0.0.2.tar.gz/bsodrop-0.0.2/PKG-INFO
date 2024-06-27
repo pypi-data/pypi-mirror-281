@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: bsodrop
+Version: 0.0.2
+Summary: A simple python repository for calling bsod inside your code.
+Home-page: https://github.com/ohmiu/bsod
+Author: xinyc
+Author-email: csecinside@proton.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+A simple python repository for calling bsod inside your code.
+
+## Usage:
+
+Installing:
+
+`pip install -U bsodrop`
+
+```python
+import bsodrop as bsod
+
+bsod.start()  # Start BSOD
+```
+
+Build `bst.dll`:
+
+```shell
+g++ -shared -o "bst.dll" "-Wl,--out-implib,libbst.a" "pbsod.cpp" "-lntdll"
+```

@@ -1,0 +1,8 @@
+README.md
+setup.py
+bsodrop/__init__.py
+bsodrop/bst.dll
+bsodrop.egg-info/PKG-INFO
+bsodrop.egg-info/SOURCES.txt
+bsodrop.egg-info/dependency_links.txt
+bsodrop.egg-info/top_level.txt
