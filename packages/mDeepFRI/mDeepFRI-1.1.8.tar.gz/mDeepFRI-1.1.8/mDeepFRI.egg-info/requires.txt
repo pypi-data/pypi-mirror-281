@@ -1,0 +1,11 @@
+click~=8.0
+numpy~=1.21
+biotite
+pysam>=0.18
+pyopal~=0.5
+foldcomp
+tqdm
+onnxruntime-gpu
+
+[dev]
+pre-commit
