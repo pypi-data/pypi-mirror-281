@@ -1,0 +1,6 @@
+colorama
+ffmpeg-python
+future
+numpy
+pillow
+pillow_heif
