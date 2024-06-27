@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: python-chibisafe
+Version: 0.1
+Summary: Um facilitador para usar a API Chibisafe
+Home-page: https://github.com/isd-iin-els/python_chibisafe
+Author: Andre Felipe Oliveira de Azevedo Dantas
+Author-email: andre.dantas@isd.org.br
+Keywords: caddywrapper chibisafe api wrapper
