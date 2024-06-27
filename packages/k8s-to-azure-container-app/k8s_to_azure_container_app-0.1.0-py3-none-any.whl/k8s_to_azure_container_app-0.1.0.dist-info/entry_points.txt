@@ -1,0 +1,2 @@
+[console_scripts]
+K8sToAca = src.main:main
