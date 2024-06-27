@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: humblebundle.py
+Version: 0.1.0
+Summary: HumbleBundle.com unofficial web interaction.
+Author: ghostapps
+Keywords: python,humblebundle,games,webapi
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests
+
+A package that allows you to interact with HumbleBundle.com to pull retrieve data such as bundles, humble choice, etc.
