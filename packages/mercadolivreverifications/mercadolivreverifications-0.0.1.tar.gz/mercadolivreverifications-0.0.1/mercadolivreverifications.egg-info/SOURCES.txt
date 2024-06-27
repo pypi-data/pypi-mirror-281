@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+mercadolivreverifications/__init__.py
+mercadolivreverifications/product_manager.py
+mercadolivreverifications/product_model.py
+mercadolivreverifications/products_verifications.py
+mercadolivreverifications.egg-info/PKG-INFO
+mercadolivreverifications.egg-info/SOURCES.txt
+mercadolivreverifications.egg-info/dependency_links.txt
+mercadolivreverifications.egg-info/requires.txt
+mercadolivreverifications.egg-info/top_level.txt
