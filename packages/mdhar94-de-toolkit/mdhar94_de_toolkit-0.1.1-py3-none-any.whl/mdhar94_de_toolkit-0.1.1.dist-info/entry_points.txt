@@ -1,0 +1,3 @@
+[console_scripts]
+deng=mdhar94_de_toolkit.main:cli
+
