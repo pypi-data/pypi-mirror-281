@@ -1,0 +1,8 @@
+README.md
+setup.py
+HashGenerator/__init__.py
+HashGenerator/hasher.py
+HashGenerator.egg-info/PKG-INFO
+HashGenerator.egg-info/SOURCES.txt
+HashGenerator.egg-info/dependency_links.txt
+HashGenerator.egg-info/top_level.txt
