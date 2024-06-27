@@ -1,0 +1,10 @@
+obogo/__init__.py,sha256=YpTBtjSgYMwSrKN6AXvuKEEa7Nly0S6KeArLgAcVOQs,49
+obogo/io_obo.py,sha256=d7o5krl-GsUmS_vFQ_s6i6HpbUPvgo_4aYtRGHNNuW0,3563
+obogo/obo_reader.py,sha256=Awlr1G_8fWzWtYhO2v1kL7J1MXXjRcxhsShCcfDj998,412
+obogo/statistics.py,sha256=istzaZvLSGKHe6UTExss8-p9H9wjSQ3xbrVSRn_MOhw,3222
+obogo/tree.py,sha256=S-r4tXW74t6oSCbkI8CHiBX1WFZIdsB8b1LZ23CGHAo,12702
+obogo/type_checkers.py,sha256=mMAHZRqaZIGJTdJNa53pjbcPegNB94EVoQ3aloB7O1I,807
+obogo-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+obogo-0.3.0.dist-info/METADATA,sha256=tVJkp5jLz_A9WOt9vej_8Jx_Izzmt6XKEEw6CNSN9fM,5934
+obogo-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+obogo-0.3.0.dist-info/RECORD,,
