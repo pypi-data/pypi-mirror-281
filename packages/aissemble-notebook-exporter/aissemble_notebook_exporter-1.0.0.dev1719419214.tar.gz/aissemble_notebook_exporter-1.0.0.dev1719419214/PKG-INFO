@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: aissemble-notebook-exporter
+Version: 1.0.0.dev1719419214
+Summary: A python module that provides a CLI for exporting notebooks to be used in a downstream aiSSEMBLE pipeline
+Author: Aaron Gary
+Author-email: agary@cpointe-inc.com
+Requires-Python: ==3.11.4
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: astor (==0.8.1)
+Requires-Dist: marimo (==0.6.13)
+Description-Content-Type: text/markdown
+
+
