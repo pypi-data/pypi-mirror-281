@@ -1,0 +1,2 @@
+class NimbusTSAPIException(Exception):
+    pass
