@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+ikhyun.egg-info/PKG-INFO
+ikhyun.egg-info/SOURCES.txt
+ikhyun.egg-info/dependency_links.txt
+ikhyun.egg-info/requires.txt
+ikhyun.egg-info/top_level.txt
+ikhyun/data/__init__.py
+ikhyun/normalization/__init__.py
+ikhyun/normalization/normalizer.py
+ikhyun/normalization/filter/__init__.py
+ikhyun/normalization/filter/ko_filter.py
+test/test.py
