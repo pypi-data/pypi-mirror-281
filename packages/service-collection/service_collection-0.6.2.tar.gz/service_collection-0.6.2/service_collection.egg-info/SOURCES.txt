@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+service_collection/__init__.py
+service_collection/collections.py
+service_collection.egg-info/PKG-INFO
+service_collection.egg-info/SOURCES.txt
+service_collection.egg-info/dependency_links.txt
+service_collection.egg-info/top_level.txt
