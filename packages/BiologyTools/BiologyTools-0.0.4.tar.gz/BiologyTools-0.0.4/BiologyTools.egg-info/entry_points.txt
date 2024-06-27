@@ -1,0 +1,2 @@
+[console_scripts]
+Biology-Video = Biology.Video.yolo:main
