@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fletura
+Version: 1.0.0
+Summary: A material UI built with flet library
+Author-email: Benit Mulindwa <mulindwabenit@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/Benitmulindwa/fletura
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flet
+
+# fletura
+A material UI built with flet library
