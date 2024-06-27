@@ -1,0 +1,14 @@
+pyflinks/__init__.py,sha256=qaM9KNhDqz9QO2K2hxJxt-lKiK7Ei-QyhPzC_5qkADE,781
+pyflinks/baseapi.py,sha256=nEyaGdCLnTEzbjw6-eXojoLASo9uunzMDfH9Jq8ku0E,716
+pyflinks/client.py,sha256=owUxurSE6rJ0qBLxTE52-MEF611KouvN346bw-td0xs,5158
+pyflinks/exceptions.py,sha256=KZ51Ng6U5G0b_ZS3-tBJDwz-nKWpCblez4NqL0EPQ-M,894
+pyflinks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyflinks/entities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyflinks/entities/attributes.py,sha256=RT8Rw9_ME1QobRSaLdxVOrm9nU0zqv8Tsa7fyCCEqJc,2496
+pyflinks/entities/banking_services.py,sha256=rRKdqK7R_Q12NyQnk9AqWMW72VgKIhuLk-TTRysIap0,10936
+pyflinks/entities/categorization.py,sha256=CoqMsBgBTmN84YD4epDritmilLW6bnWRRRQWEtnGDjI,991
+pyflinks-0.1.1.dist-info/LICENSE,sha256=3PKBVfjvTsNml1-HJGVV9XPo38BaNxajCdZubvQ93mc,1070
+pyflinks-0.1.1.dist-info/METADATA,sha256=K6cLB9KWZcVrUCVFhJX5mPxnawpPu-7xyoZm_jw5G2A,2691
+pyflinks-0.1.1.dist-info/WHEEL,sha256=iYlv5fX357PQyRT2o6tw1bN-YcKFFHKqB_LwHO5wP-g,110
+pyflinks-0.1.1.dist-info/top_level.txt,sha256=0eJ7NlFN7fincYD7Vml9kJpmD9tIdk17sGzPt2EJBbs,9
+pyflinks-0.1.1.dist-info/RECORD,,
