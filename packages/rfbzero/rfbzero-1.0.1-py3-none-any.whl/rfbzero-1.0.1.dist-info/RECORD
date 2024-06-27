@@ -1,0 +1,11 @@
+rfbzero/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rfbzero/crossover.py,sha256=DvimD-aF9OA4a_GqjL83t42OIrIvpRrThye0RfnhWTY,4313
+rfbzero/degradation.py,sha256=r_dkWFzUXTMqx_FBYmss36bLIphBXUteOZJAI4B8ZvY,14009
+rfbzero/experiment.py,sha256=sak5ycC_Lbp8jLxC5w3xS5CmX0fbZbiIo1uU6FLXhlQ,42252
+rfbzero/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rfbzero/redox_flow_cell.py,sha256=F16uMNHaywpMoNWCxrZICgQH61JRgb8nzZrFCvOQRxE,18887
+rfbzero-1.0.1.dist-info/METADATA,sha256=MHdJEZ0TMG7TWy-HePQujV3U63qP_px5yVn-re0MR98,5732
+rfbzero-1.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+rfbzero-1.0.1.dist-info/licenses/AUTHORS,sha256=8RCm0sS7s3UQGPrFPv2ZZUjRNJd5t_Az-oRH1l2wemk,331
+rfbzero-1.0.1.dist-info/licenses/LICENSE,sha256=lU_x4xbCesdwtJSrshEpTeywN-gC6R8rys2dAgnm7sk,1077
+rfbzero-1.0.1.dist-info/RECORD,,
