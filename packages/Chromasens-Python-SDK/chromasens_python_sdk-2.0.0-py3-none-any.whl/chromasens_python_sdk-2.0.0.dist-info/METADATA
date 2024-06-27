@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: Chromasens_Python_SDK
+Version: 2.0.0
+Summary: A package that provides python wrappers for Chromasens hardware + software
+Project-URL: Documentation, https://docs.chromasens.de/docs/python-api-introduction
+Project-URL: Changelog, https://docs.chromasens.de/docs/python-api-changelog
+Project-URL: Homepage, https://chromasens.de/en
+Project-URL: Issues, https://chromasens.de/en/support/support
+Author-email: Daniel Duerhammer <support@chromasens.de>
+License-File: LICENSE.txt
+Keywords: GenIcam,allPIXA,camera,evo,linescan,neo
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: numpy>=1.20.1
+Requires-Dist: opencv-python>=4.5.2.52
+Description-Content-Type: text/markdown
+
+# Chromasens Python SDK
+
+## Content
+This package contains 
+- Python wrapper for CS-SDK (Chromasens SDK for GenICam devices)
+- Python class to communicate with Chromasens XLC4 controller (illumination controller)
+
+## Manual
+[Chromasens online manual](https://docs.chromasens.de/)
+
+## Requirements 
+Chromasens CS-SDK >= 2.7 (to use GenICam class)
+
+[Chromasens](https://chromasens.de/en/)
