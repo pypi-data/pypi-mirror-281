@@ -1,0 +1,2 @@
+[console_scripts]
+text_augmenter = text_augmenter.augment:main
