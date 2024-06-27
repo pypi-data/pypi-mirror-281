@@ -1,0 +1,5 @@
+shiny
+opencv-python
+numpy
+line_profiler
+Pillow
