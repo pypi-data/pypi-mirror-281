@@ -1,0 +1,14 @@
+spydcmtk/ParaViewGlance.html,sha256=jucZHtcMRAXOncmLG1suECWR_oYHDvKK1V_0_HtioPQ,3728964
+spydcmtk/__init__.py,sha256=VE8JBU-EiVMoqSD7dr_Fpc4tW9fJnAa4wYwalxGq3-s,169
+spydcmtk/dcmTK.py,sha256=Uml3lY_31tXaN4XIXesLpuTmN0GEbF-DSbkm4ihkw6c,51187
+spydcmtk/dcmTools.py,sha256=5TNPVKzAqsVk-M86kI6V4KrV1lhi4v-pp0UcPTL5mOo,20279
+spydcmtk/dcmVTKTK.py,sha256=OKlA_ONbdpj1Oqu9lBW2LQFJRTCqVL5up78dHSvmVq8,27604
+spydcmtk/spydcm.py,sha256=W0LAExrOnfrf4gM7Sv5yJGA3c8d3Obem-E2Krg5pwf8,23888
+spydcmtk/spydcm_config.py,sha256=5bEC-wdzVhFe_aXFAJnM1H9pnuyczA1OaDq6OUWnoy4,3009
+spydcmtk/spydcmtk.conf,sha256=nXf2xVnYhKJUX3ZLSQVqkW14-TmpyEQSj2s_WBpYKjs,1786
+spydcmtk-1.1.7.dist-info/LICENSE,sha256=0cKUXDP0pPtaUkvBz8HllAiy3bHj2JQyteK_GZb6cuo,1076
+spydcmtk-1.1.7.dist-info/METADATA,sha256=wfk8T2hllBrZFfgcHxOpuu56vURuEtHp3L7dOg7je_0,3512
+spydcmtk-1.1.7.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+spydcmtk-1.1.7.dist-info/entry_points.txt,sha256=-hL40hqRgygWOu-MrewdXC3O5JjqGwBKvUkwrnRXU2Y,50
+spydcmtk-1.1.7.dist-info/top_level.txt,sha256=MYK6PXDJlRuJ7JDgaSO5yXRX3yOmZ6bsxy9PEyw92g8,9
+spydcmtk-1.1.7.dist-info/RECORD,,
