@@ -1,0 +1,9 @@
+network_com/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+network_com/client.py,sha256=SbYCwjcJ_UCkqxkS0ME9rThdjJnmLIIDDkVZe_hkRyw,1297
+network_com/server.py,sha256=a0uexKT-FnK5QwKZ_n_y9N8j3h9eDZrFORO4RQpZnvk,1887
+network_com-1.2.3.dist-info/LICENSE,sha256=L6Lsqk0rFGI1Nd4Ig9fw7vyL1FgUnSwXaynFirdyDMo,1062
+network_com-1.2.3.dist-info/METADATA,sha256=yjS6vC7MSjl7uBNBJDuNTJ27xoU6pMAmf_UfJkvH31s,3436
+network_com-1.2.3.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+network_com-1.2.3.dist-info/entry_points.txt,sha256=_FhPJAhTOozaJ1Cca6mUuQm7l-w5_VcC8sTlE3doPK8,103
+network_com-1.2.3.dist-info/top_level.txt,sha256=G5kwJ4yDxecs-E9t2ynFldTBmbKEmUOesIU-txohT-w,12
+network_com-1.2.3.dist-info/RECORD,,
