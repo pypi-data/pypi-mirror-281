@@ -1,0 +1,15 @@
+cellarr/CellArrDataset.py,sha256=zvVtVB0odL0bh_nXTmdBguJ4DVuHWneNK5Z_VZj05iA,15019
+cellarr/CellArrDatasetSlice.py,sha256=u4Ww1l558K0Znw0SpzC4qiKVYu05Shyrc3zu5FY547g,1310
+cellarr/__init__.py,sha256=pf97r5skLA0iTzavZBmFY4xH5vYCKwKmuKkaDg6rq4I,784
+cellarr/build_cellarrdataset.py,sha256=xCEEwuuB5I_ycbclB29V0QjbEzknLISBVIqiyMK12CY,18263
+cellarr/build_options.py,sha256=Z94-kAXZ7P8RoEcneZIXmsOx0yMRcizzPynrXApidFo,4615
+cellarr/buildutils_tiledb_array.py,sha256=4eptp6URXqUMp2jnwM7yRaHjlkLRRCTpu1kwiZSg1x0,5302
+cellarr/buildutils_tiledb_frame.py,sha256=u3_26dZlo6HzAgGHCQN850B-AMjlPfB88yCAKalBSY8,3192
+cellarr/dataloader.py,sha256=roko5jXF3RnG2nggfSXHBpTpGbdcRYeTMR13gGIzWuQ,455
+cellarr/queryutils_tiledb_frame.py,sha256=ShiwqwfStSGeFJ-4Lkh1jPxRAZ7AwxcAZX1qnhl97tQ,3978
+cellarr/utils_anndata.py,sha256=qnybBkTMmACfG-qwasmvEYQU19uKzSGS5-vaOlHwg-I,7050
+cellarr-0.1.1.dist-info/LICENSE.txt,sha256=kXGI4eKM3dFP79vCaYersRg8MA4GYpZ9oEiGwdIGGA8,1084
+cellarr-0.1.1.dist-info/METADATA,sha256=7cjjuo1Bqfe3T_X_LPhD0TXSpt_uIR69N-rsJUjeLhE,5306
+cellarr-0.1.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+cellarr-0.1.1.dist-info/top_level.txt,sha256=vPB9dw4REE68L6y0ca-sS_gUMsPG-YOSJDzZ6ZJrrFY,8
+cellarr-0.1.1.dist-info/RECORD,,
