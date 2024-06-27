@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: akrule
+Version: 0.1.4
+Summary: Highly efficient and precise machine learning models.
+Home-page: https://github.com/Hasan-Basri-Akcay/akrule
+Author: Hasan Basri Akcay
+Author-email: hasan.basri.akcay@gmail.com
+Keywords: python,machine learning,data science,exploratory data analysis,real-time,beginner
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+Akrule facilitates rapid and precise predictions, near real-time training and testing, comprehensive feature comprehension, feature debugging, and leakage detection
