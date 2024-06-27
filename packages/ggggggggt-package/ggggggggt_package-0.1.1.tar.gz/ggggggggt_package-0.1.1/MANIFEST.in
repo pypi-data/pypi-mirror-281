@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include gemnify_sdk/contracts/abis *.json
+recursive-include gemnify_sdk/contracts/addresses *.json
