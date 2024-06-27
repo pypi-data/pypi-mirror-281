@@ -1,0 +1,7 @@
+LICENCE.txt
+README.txt
+setup.py
+Ekmail.egg-info/PKG-INFO
+Ekmail.egg-info/SOURCES.txt
+Ekmail.egg-info/dependency_links.txt
+Ekmail.egg-info/top_level.txt
