@@ -1,0 +1,2 @@
+[console_scripts]
+test-script = dc_test_script:main
