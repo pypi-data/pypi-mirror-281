@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: luca_fallboehmer_masterthesis
+Version: 0.0.2
+Summary: Data generation and sensitivity analysis framework for the sterile neutrino search using neural networks
+Author: Luca Fallboehmer
+Author-email: luca.fallboehmer@tum.de
+Requires-Python: >=3.9
+License-File: LICENSE
