@@ -1,0 +1,11 @@
+requence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requence/consumer.py,sha256=SqdaIsodL8Je1dwEkA23sYN9p5bOBWS9D_wqtBMSzmI,6249
+requence/context.py,sha256=FWnXNsfSiJucL6IZLmtiTYuwn4-eMZou_Y-Toh_yrvs,4216
+requence/exceptions.py,sha256=AFWNc4IkPJJsrrLAz7q4tgwSxlCcfhF7f0PxAA660WY,178
+requence/typing.py,sha256=ug0Pf0qeMPnHZPQBJbJAZGwjmhMY04hy7NAlYT_KABk,162
+requence/utils.py,sha256=Kl5xXyw8leBASP9WBga8EGX5Njn5dL0xGq9NndgMr-Y,548
+requence/version.py,sha256=WFGfK52jkXxvsTIdivxvMQZRFv8MByqgdyzCwgW5Tyo,3107
+requence-0.1.2.dist-info/METADATA,sha256=BqIqoHponsVD6JIlEtMnGLNrHiupE8mZJNvrLG6ydxc,5107
+requence-0.1.2.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+requence-0.1.2.dist-info/top_level.txt,sha256=xEvYBV4v5B7fNziG0gGYBHdHJuKGxWQD8xoaexCG96M,9
+requence-0.1.2.dist-info/RECORD,,
