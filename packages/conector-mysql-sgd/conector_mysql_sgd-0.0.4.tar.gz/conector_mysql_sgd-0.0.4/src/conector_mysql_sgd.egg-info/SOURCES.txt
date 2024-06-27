@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/conector_mysql_sgd/__init__.py
+src/conector_mysql_sgd/conector.py
+src/conector_mysql_sgd.egg-info/PKG-INFO
+src/conector_mysql_sgd.egg-info/SOURCES.txt
+src/conector_mysql_sgd.egg-info/dependency_links.txt
+src/conector_mysql_sgd.egg-info/requires.txt
+src/conector_mysql_sgd.egg-info/top_level.txt
