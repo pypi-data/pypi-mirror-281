@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: airflow-unicore-integration
+Version: 0.0.4
+Summary: Running Unicore Jobs from airflow DAGs.
+Author-email: Christian Böttcher <c.boettcher@fz-juelich.de>
+Project-URL: Homepage, https://gitlab.jsc.fz-juelich.de/boettcher1/airflow_unicore_integration
+Project-URL: Issues, https://gitlab.jsc.fz-juelich.de/boettcher1/airflow_unicore_integration/-/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Apache Airflow :: Provider
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyunicore >=1.0.0
+Requires-Dist: apache-airflow ==2.8.4
+
