@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: nrdrch-ezdl
+Version: 1.0.7
+Summary: yt-dlp wrapper for ultimate simplicity
+Home-page: https://github.com/nrdrch/nrdrch-ezdl
+Author: Lukas H
+Author-email: nrdrch@proton.com
+Project-URL: Bug Tracker, https://github.com/nrdrch/nrdrch-ezdl/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: rich >=13.7.1
+Requires-Dist: toml >=0.10.2
+Requires-Dist: yt-dlp >=2024.5.27
+
+# ez-dl
+just another yt-dlp wrappper for even more simplicity
+
+## Features
+
+- Download audio and video from different websites
+- Customizable download settings
+- Configurable paths for audio and video vaults
+- Supports downloading playlists
+
+## Installation
+
+You can install ezdl using pip:
+
+```pwsh
+pip install nrdrch-ezdl
