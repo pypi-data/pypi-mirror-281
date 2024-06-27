@@ -1,0 +1,2 @@
+[console_scripts]
+seele_runserver = seele_app.entrypoint:main
