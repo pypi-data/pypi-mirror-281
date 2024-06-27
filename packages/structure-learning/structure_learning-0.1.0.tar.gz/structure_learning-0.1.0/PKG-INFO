@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: structure-learning
+Version: 0.1.0
+Summary: Generate data from causal graphical models.
+Home-page: https://github.com/anazaret/causaldataset
+License: MIT
+Author: Achille Nazaret
+Author-email: achille.nazaret@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+Requires-Dist: black (>=24.0.0,<25.0.0) ; extra == "test" or extra == "dev"
+Requires-Dist: bump2version (>=1.0.1,<2.0.0) ; extra == "dev"
+Requires-Dist: flake8 (>=3.9.2,<4.0.0) ; extra == "test"
+Requires-Dist: flake8-docstrings (>=1.6.0,<2.0.0) ; extra == "test"
+Requires-Dist: isort (>=5.8.0,<6.0.0) ; extra == "test"
+Requires-Dist: jinja2 (==3.0.3) ; extra == "doc"
+Requires-Dist: mkdocs (>=1.1.2,<2.0.0) ; extra == "doc"
+Requires-Dist: mkdocs-autorefs (>=0.2.1,<0.3.0) ; extra == "doc"
+Requires-Dist: mkdocs-include-markdown-plugin (>=1.0.0,<2.0.0) ; extra == "doc"
+Requires-Dist: mkdocs-material (>=6.1.7,<7.0.0) ; extra == "doc"
+Requires-Dist: mkdocs-material-extensions (>=1.0.1,<2.0.0)
+Requires-Dist: mkdocstrings (>=0.15.2,<0.16.0) ; extra == "doc"
+Requires-Dist: mypy (>=0.900,<0.901) ; extra == "test"
+Requires-Dist: networkx (>=3.2.1,<4.0.0)
+Requires-Dist: numpy (>=1.21.2,<2.0.0)
+Requires-Dist: pre-commit (>=2.12.0,<3.0.0) ; extra == "dev"
+Requires-Dist: pytest (>=6.2.4,<7.0.0) ; extra == "test"
+Requires-Dist: pytest-cov (>=2.12.0,<3.0.0) ; extra == "test"
+Requires-Dist: scipy (>=1.12.0,<2.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0) ; extra == "dev"
+Requires-Dist: tox (>=3.20.1,<4.0.0) ; extra == "dev"
+Requires-Dist: twine (>=3.3.0,<4.0.0) ; extra == "dev"
+Requires-Dist: virtualenv (>=20.2.2,<21.0.0) ; extra == "dev"
+Description-Content-Type: text/markdown
+
+# causaldataset
+
+
+[![pypi](https://img.shields.io/pypi/v/causaldataset.svg)](https://pypi.org/project/causaldataset/)
+[![python](https://img.shields.io/pypi/pyversions/causaldataset.svg)](https://pypi.org/project/causaldataset/)
+[![Build Status](https://github.com/ANazaret/causaldataset/actions/workflows/dev.yml/badge.svg)](https://github.com/ANazaret/causaldataset/actions/workflows/dev.yml)
+[![codecov](https://codecov.io/gh/ANazaret/causaldataset/branch/main/graphs/badge.svg)](https://codecov.io/github/ANazaret/causaldataset)
+
+
+
+Generate simulated data from causal graphical models.
+
+
+* Documentation: <https://ANazaret.github.io/causaldataset>
+* GitHub: <https://github.com/ANazaret/causaldataset>
+* PyPI: <https://pypi.org/project/causaldataset/>
+* Free software: MIT
+
+
+## Features
+
+* TODO
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [waynerv/cookiecutter-pypackage](https://github.com/waynerv/cookiecutter-pypackage) project template.
+
