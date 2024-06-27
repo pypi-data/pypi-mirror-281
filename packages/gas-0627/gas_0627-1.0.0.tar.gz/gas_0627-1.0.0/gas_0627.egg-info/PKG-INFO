@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: gas_0627
+Version: 1.0.0
+Summary: Switch Git user globally from command line
+Home-page: https://github.com/adoctors666/gas_0627.git
+Author: adoctors666
+Author-email: adoctors@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gas_0627
+
+Switch Git user globally from command line
+
+## Installation
+
+```
+pip install git-account-switcher
+```
+
+## Usage
+
+```
+from git_account_switcher.switcher import switch_git_user
+
+switch_git_user('New Username', 'new.email@example.com')
+
+```
