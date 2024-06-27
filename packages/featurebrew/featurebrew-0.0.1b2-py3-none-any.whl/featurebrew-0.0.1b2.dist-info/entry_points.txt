@@ -1,0 +1,2 @@
+[console_scripts]
+featurebrew = chicory_cli.clidriver:main
