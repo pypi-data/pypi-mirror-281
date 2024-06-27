@@ -1,0 +1,14 @@
+pulumi_prismasdwan/__init__.py,sha256=pBPE1ULWBgXf-Fue3-9uvcmXdgGgcZgdsyvwO-KJVo0,896
+pulumi_prismasdwan/_utilities.py,sha256=b6gJn0IIeM1t6Q7EVjqw3yhuGyP-uENQhtL5yp7aHR8,9248
+pulumi_prismasdwan/get_site.py,sha256=OO9ykT3sIjqGxNwaGlS7XDJvp-EqcKBBi5BqW1EF3F8,3473
+pulumi_prismasdwan/provider.py,sha256=mF09K5WkVxMEZ0hVz5u9xTTtq59gqDvOrNi1PsC1qCA,16386
+pulumi_prismasdwan/pulumi-plugin.json,sha256=3tNZX44omZ1gWbCRdkVv_dURQBBtf4T3CpfUSzWO_F4,70
+pulumi_prismasdwan/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulumi_prismasdwan/site.py,sha256=LqN_YFk5gyldM4ILe5EXEkyZHlxI2DQrIULiVUNQTZs,12085
+pulumi_prismasdwan/config/__init__.py,sha256=cfY0smRZD3fDVc93ZIAxEl_IM2pynmXB52n3Ahzi030,285
+pulumi_prismasdwan/config/__init__.pyi,sha256=I9eeAfXLev8tgrstacsqxlJGf5ceYeZppYQdxCXosis,1816
+pulumi_prismasdwan/config/vars.py,sha256=rxIK_8Za8ueLcldlDYOkEjEv_5TwHjD9lEhVleZCwpU,2845
+pulumi_prismasdwan-0.1.1.dist-info/METADATA,sha256=s2s5Nk4N7lI4gmpnaH7Bmo-UncaD55iM3NkWK6QYyvo,2185
+pulumi_prismasdwan-0.1.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+pulumi_prismasdwan-0.1.1.dist-info/top_level.txt,sha256=xZA62l8xmjWvihpsP1_gkE3DGn6-pTBxmZImjH63NvI,19
+pulumi_prismasdwan-0.1.1.dist-info/RECORD,,
