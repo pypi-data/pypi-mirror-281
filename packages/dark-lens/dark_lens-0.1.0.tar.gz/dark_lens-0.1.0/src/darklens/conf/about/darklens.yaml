@@ -1,0 +1,6 @@
+_open_link_: False
+name: "DarkLens"
+authors: "Dark Lens Team <entelecheia@hotmail.com>"
+description: "AI-driven dark tourism guide and content creator for Jeju Island, offering personalized historical insights and immersive experiences."
+homepage: "https://jeju-ai.github.io/dark-lens"
+license: "Apache-2.0"
