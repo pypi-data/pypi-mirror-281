@@ -1,0 +1,14 @@
+PYTHON_PACKAGE/__init__.py,sha256=qn99xYFfnSebD-m-NAmQWEc89i1pt4UJSlwKPIn9yBI,62
+PYTHON_PACKAGE/__main__.py,sha256=m-CY7aJ2RXc-qxrdQ2CNoPM3PUGQsWyS365vw6g49c4,2177
+PYTHON_PACKAGE/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PYTHON_PACKAGE/test/test_doctest.py,sha256=hGYyvTo02LrGoGmIMvMpfFtng4v6kwTcwsaW3MO1TE0,297
+PYTHON_PACKAGE/test/test_example.py,sha256=zoKaJLOmB9t77pfDZUyLNkszzRtR1V7xEnvmDBwBbU4,360
+PYTHON_PACKAGE/test/test_notebook.py,sha256=xTh0XSwSKm5ajlu9EcQje4peKSK5gTliWVDBVdaAAKg,541
+PYTHON_PACKAGE/test/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PYTHON_PACKAGE/test/data/data.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wingechr_PYTHON_PACKAGE-0.0.3.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+wingechr_PYTHON_PACKAGE-0.0.3.dist-info/METADATA,sha256=PazLftgU2C2ZWj72b2UN3ctDGmlc1PZRxZCzzmW4utw,1666
+wingechr_PYTHON_PACKAGE-0.0.3.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+wingechr_PYTHON_PACKAGE-0.0.3.dist-info/entry_points.txt,sha256=1ekheOJz1d9spryR7__32sawT2gw5J5oeXrCnzT4ZzA,53
+wingechr_PYTHON_PACKAGE-0.0.3.dist-info/top_level.txt,sha256=Mj_22qj7kFm3luWaUSUZrfN-_bAZZQBk25o7lBDjxLQ,15
+wingechr_PYTHON_PACKAGE-0.0.3.dist-info/RECORD,,
