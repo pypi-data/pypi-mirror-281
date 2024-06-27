@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: AdvancedCodingSkills
+Version: 0.1.0
+Summary: In response to the dynamic demands of student life, we present our Multi-Purpose Program—a flexible application carefully designed to meet the unique needs of students and beyond. Beyond its usefulness for students, this application extends its functionality to anyone seeking efficient task management, expense tracking, and a touch of entertainment a game(sudoku).For Saving Method we have used JSON and the whole project is coded using inheritance.
+Home-page: https://github.com/PersianArmin/AdvancedCodingSkills
+Author: Armin Karimi
+Author-email: Akarimi@stud.macromedia.de
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+In response to the dynamic demands of student life, we present our Multi-Purpose Program—a flexible application carefully designed to meet the unique needs of students and beyond. Beyond its usefulness for students, this application extends its functionality to anyone seeking efficient task management, expense tracking, and a touch of entertainment a game(sudoku).For Saving Method we have used JSON and the whole project is coded using inheritance.

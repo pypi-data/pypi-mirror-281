@@ -1,0 +1,6 @@
+README.md
+setup.py
+AdvancedCodingSkills.egg-info/PKG-INFO
+AdvancedCodingSkills.egg-info/SOURCES.txt
+AdvancedCodingSkills.egg-info/dependency_links.txt
+AdvancedCodingSkills.egg-info/top_level.txt
