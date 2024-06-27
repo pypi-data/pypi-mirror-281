@@ -1,0 +1,157 @@
+Tags,VR,Name,Status,Action
+"(0002,0100)",UI,Private Information Creator UID,,Hashid
+"(0002,0102)",OB,Private Information,,Hashid
+"(0004,1130)",CS,File-set ID,,Hashid
+"(0004,1141)",CS,File-set Descriptor File ID,,Hashid
+"(0004,1432)",UI,Private Record UID,,Hashid
+"(0004,1500)",CS,Referenced File ID,,Hashid
+"(0008,0012)",DA,Instance Creation Date,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0008,0014)",UI,Instance Creator UID,,Hashid
+"(0008,0020)",DA,Study Date,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0008,0021)",DA,Series Date,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0008,0022)",DA,Acquisition Date,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0008,0023)",DA,Content Date,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0008,0024)",DA,Overlay Date,Retired,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0008,0025)",DA,Curve Date,Retired,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0008,002A)",DT,Acquisition DateTime,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0008,0050)",SH,Accession Number,,Hashid
+"(0008,0058)",UI,Failed SOP Instance UID List,,Hashid
+"(0008,0080)",LO,Institution Name,,Remove
+"(0008,0081)",ST,Institution Address,,Remove
+"(0008,0082)",SQ,Institution Code Sequence,,Remove
+"(0008,0090)",PN,Referring Physician's Name,,Remove
+"(0008,0092)",ST,Referring Physician's Address,,Remove
+"(0008,0094)",SH,Referring Physician's Telephone Numbers,,Remove
+"(0008,009C)",PN,Consulting Physician's Name,,Remove
+"(0008,010D)",UI,Context Group Extension Creator UID,,Hashid
+"(0008,0201)",SH,Timezone Offset From UTC,,Remove
+"(0008,1010)",SH,Station Name,,Remove
+"(0008,1040)",LO,Institutional Department Name,,Remove
+"(0008,1048)",PN,Physician(s) of Record,,Remove
+"(0008,1050)",PN,Performing Physician's Name,,Remove
+"(0008,1060)",PN,Name of Physician(s) Reading Study,,Remove
+"(0008,1070)",PN,Operators' Name,,Remove
+"(0008,1195)",UI,Transaction UID,,Hashid
+"(0008,3010)",UI,Irradiation Event UID,,Hashid
+"(0010,0010)",PN,Patient's Name,,ObfuscateConsistent
+"(0010,0020)",LO,Patient ID,,Hashid
+"(0010,0021)",LO,Issuer of Patient ID,,Remove
+"(0010,0030)",DA,Patient's Birth Date,,Generalized to year
+"(0010,0033)",LO,Patient's Birth Date in Alternative Calendar,,Generalized to year
+"(0010,0034)",LO,Patient's Death Date in Alternative Calendar,,Generalized to year
+"(0010,1000)",LO,Other Patient IDs,,Hashid
+"(0010,1001)",PN,Other Patient Names,,Obfuscate
+"(0010,1002)",SQ,Other Patient IDs Sequence,,Hashid
+"(0010,1005)",PN,Patient's Birth Name,,ObfuscateConsistent
+"(0010,1010)",AS,Patient's Age,,"Cap90 (If a subject is over 90 years of age, then the age must be listed as 90+. )"
+"(0010,1040)",LO,Patient's Address,,Remove
+"(0010,1050)",LO,Insurance Plan Identification,Retired,Remove
+"(0010,1060)",PN,Patient's Mother's Birth Name,,Obfuscate
+"(0010,1080)",LO,Military Rank,,Remove
+"(0010,1081)",LO,Branch of Service,,Remove
+"(0010,1090)",LO,Medical Record Locator,,Remove
+"(0010,2150)",LO,Country of Residence,,Remove
+"(0010,2152)",LO,Region of Residence,,Remove
+"(0010,2154)",SH,Patient's Telephone Numbers,,Remove
+"(0010,2155)",LT,Patient's Telecom Information,,Remove
+"(0010,21D0)",DA,Last Menstrual Date,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0010,21F0)",LO,Patient's Religious Preference,,Remove
+"(0010,2297)",PN,Responsible Person,,Obfuscate
+"(0010,2299)",LO,Responsible Organization,,Remove
+"(0012,0010)",LO,Clinical Trial Sponsor Name,,Hashid
+"(0012,0020)",LO,Clinical Trial Protocol ID,,Hashid
+"(0012,0030)",LO,Clinical Trial Site ID,,Hashid
+"(0012,0031)",LO,Clinical Trial Site Name,,Obfuscate
+"(0012,0040)",LO,Clinical Trial Subject ID,,Hashid
+"(0012,0042)",LO,Clinical Trial Subject Reading ID,,Hashid
+"(0012,0050)",LO,Clinical Trial Time Point ID,,Hashid
+"(0012,0060)",LO,Clinical Trial Coordinating Center Name,,Remove
+"(0012,0062)",CS,Patient Identity Removed,,YES
+"(0012,0071)",LO,Clinical Trial Series ID,,Hashid
+"(0012,0081)",LO,Clinical Trial Protocol Ethics Committee Name,,Remove
+"(0012,0082)",LO,Clinical Trial Protocol Ethics Committee Approval Number,,Remove
+"(0014,0104)",PN,Secondary Reviewer Name,,Obfuscate
+"(0014,2006)",PN,Evaluator Name,,Obfuscate
+"(0018,0015)",CS,Body Part Examined,,BODYPART
+"(0018,1012)",DA,Date of Secondary Capture,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0018,1200)",DA,Date of Last Calibration,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0018,700C)",DA,Date of Last Detector Calibration,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0020,000D)",UI,Study Instance UID,,Hashid
+"(0020,000E)",UI,Series Instance UID,,Hashid
+"(0020,0010)",SH,Study ID,,Hashid
+"(0020,0052)",UI,Frame of Reference UID,,Hashid
+"(0020,0200)",UI,Synchronization Frame of Reference UID,,Hashid
+"(0020,3401)",CS,Modifying Device ID,Retired,Remove
+"(0020,3404)",LO,Modifying Device Manufacturer,Retired,Remove
+"(0020,3406)",LO,Modified Image Description,Retired,Remove
+"(0020,9161)",UI,Concatenation UID,,Hashid
+"(0020,9164)",UI,Dimension Organization UID,,Hashid
+"(0028,0303)",CS,Longitudinal Temporal Information Modified,,MODIFIED
+"(0028,4000)",LT,Image Presentation Comments,Retired,Remove
+"(0032,0012)",LO,Study ID Issuer,Retired,Remove
+"(0032,1000)",DA,Scheduled Study Start Date,Retired,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0032,1032)",PN,Requesting Physician,,Obfuscate
+"(0032,1033)",LO,Requesting Service,,Remove
+"(0032,1040)",DA,Study Arrival Date,Retired,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0032,1050)",DA,Study Completion Date,Retired,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0038,0010)",LO,Admission ID,,Remove
+"(0038,0011)",LO,Issuer of Admission ID,Retired,Remove
+"(0038,001E)",LO,Scheduled Patient Institution Residence,Retired,Remove
+"(0038,0020)",DA,Admitting Date,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(0038,0060)",LO,Service Episode ID,,Remove
+"(0038,0061)",LO,Issuer of Service Episode ID,Retired,Remove
+"(0038,0300)",LO,Current Patient Location,,Remove
+"(0040,0006)",PN,Scheduled Performing Physician's Name,,Obfuscate
+"(0040,0243)",SH,Performed Location,,Remove
+"(0040,1001)",SH,Requested Procedure ID,,Remove
+"(0040,1004)",LO,Patient Transport Arrangements,,Remove
+"(0040,1005)",LO,Requested Procedure Location,,Remove
+"(0040,1010)",PN,Names of Intended Recipients of Results,,Obfuscate
+"(0040,1102)",ST,Person's Address,,Remove
+"(0040,1103)",LO,Person's Telephone Numbers,,Remove
+"(0040,2008)",PN,Order Entered By,,Obfuscate
+"(0040,2010)",SH,Order Callback Phone Number,,Remove
+"(0040,4035)",SQ,Actual Human Performers Sequence,,Remove
+"(0040,4037)",PN,Human Performer's Name,,Obfuscate
+"(0040,A027)",LO,Verifying Organization,,Remove
+"(0040,A073)",SQ,Verifying Observer Sequence,,Remove
+"(0040,A075)",PN,Verifying Observer Name,,Obfuscate
+"(0040,A078)",SQ,Author Observer Sequence,,Remove
+"(0040,A07A)",SQ,Participant Sequence,,Remove
+"(0040,A123)",PN,Person Name,,ObfuscateConsistent
+"(0040,A124)",UI,UID,,Hashid
+"(0040,A354)",LO,Telephone Number (Trial),Retired,Remove
+"(0040,DB0C)",UI,Template Extension Organization UID,Retired,Hashid
+"(0040,DB0D)",UI,Template Extension Creator UID,Retired,Hashid
+"(0070,0001)",SQ,Graphic Annotation Sequence,,Remove
+"(0070,0084)",PN,Content Creator's Name,,Obfuscate
+"(0070,031A)",UI,Fiducial UID,,Hashid
+"(0088,0200)",SQ,Icon Image Sequence,,Remove
+"(0088,0904)",LO,Topic Title,Retired,Remove
+"(0088,0906)",ST,Topic Subject,Retired,Remove
+"(0088,0910)",LO,Topic Author,Retired,Remove
+"(0088,0912)",LO,Topic Keywords,Retired,Remove
+"(0400,0100)",UI,Digital Signature UID,,Remove
+"(0400,0404)",OB,MAC,,Remove
+"(0400,0550)",SQ,Modified Attributes Sequence,,Remove
+"(0400,0561)",SQ,Original Attributes Sequence,,Remove
+"(2030,0020)",LO,Text String,,Remove
+"(3006,0008)",DA,Structure Set Date,,ShiftDateByRandomNbOfDays(onevalue/patient id)
+"(3006,0024)",UI,Referenced Frame of Reference UID,,Hashid
+"(3006,00A6)",PN,ROI Interpreter,,Obfuscate
+"(3006,00C2)",UI,Related Frame of Reference UID,Retired,Hashid
+"(300A,0013)",UI,Dose Reference UID,,Hashid
+"(300E,0008)",PN,Reviewer Name,,Obfuscate
+"(4000,0010)",LT,Arbitrary,Retired,Remove
+"(4000,4000)",LT,Text Comments,Retired,Remove
+"(4008,0042)",LO,Results ID Issuer,Retired,Remove
+"(4008,0102)",PN,Interpretation Recorder,Retired,Remove
+"(4008,010A)",PN,Interpretation Transcriber,Retired,Remove
+"(4008,010C)",PN,Interpretation Author,Retired,Remove
+"(4008,0111)",SQ,Interpretation Approver Sequence,Retired,Remove
+"(4008,0114)",PN,Physician Approving Interpretation,Retired,Remove
+"(4008,0119)",PN,Distribution Name,Retired,Remove
+"(4008,011A)",LO,Distribution Address,Retired,Remove
+"(4008,0202)",LO,Interpretation ID Issuer,Retired,Remove
+"(FFFC,FFFC)",OB,Data Set Trailing Padding,,Remove
+"(0040,1001)",SH,Requested Procedure ID,,Remove
