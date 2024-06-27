@@ -1,0 +1,3 @@
+[console_scripts]
+pommekit=pommekit.__main__:__entrypoint__
+

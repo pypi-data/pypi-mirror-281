@@ -1,0 +1,263 @@
+#  Copyright (C) 2024  Cypheriel
+import os
+from collections.abc import Generator
+from getpass import getuser
+from logging import getLogger
+from pathlib import Path
+from typing import Annotated
+
+import typer
+
+from .._util.aio import run_async
+from ..albert.activation import request_push_certificate
+from ..anisette.v3 import AnisetteV3Provider
+from ..device import APNsCredentialsComponent, Device, DeviceInfoComponent, MachineDataComponent, OperatingSystem
+from . import CLIOptions
+from .util.device_utils import fetch_device
+from .util.rich_console import console
+from .util.selection import get_selected_device, set_selected_device
+
+__ALIAS__ = "ds"
+
+
+def list_devices(ctx: typer.Context, incomplete: str) -> Generator[str]:
+    path = Path(ctx.params.get("path", os.environ.get("POMMEKIT_DEVICE_PATH", CLIOptions.device_path)))
+
+    for device_path in path.iterdir():
+        if (
+            device_path.is_dir()
+            and (device_path / "device_info.json").is_file()
+            and device_path.name.startswith(incomplete)
+        ):
+            yield device_path.name
+
+
+SERIAL_HELP = "The serial number of the device."
+SerialArgument = Annotated[
+    str,
+    typer.Argument(help="The serial number of the device.", show_default=False, autocompletion=list_devices),
+]
+
+app = typer.Typer()
+logger = getLogger(__name__)
+
+
+@app.command(name="list", help="List installed devices.")
+@app.command(name="ls", hidden=True)
+def list_() -> None:
+    if not CLIOptions.device_path.is_dir():
+        typer.echo("No devices found.", err=True)
+        raise typer.Exit(1)
+
+    found = False
+    for device_path in CLIOptions.device_path.iterdir():
+        dev = fetch_device(device_path.parent, device_path.name)
+
+        if dev is None:
+            continue
+
+        provisioned = " ([green]Provisioned[/])" if dev.machine_data.requires_provisioning is False else ""
+        selected = " ([blue]Selected[/])" if CLIOptions.selected_device == dev.machine_data.serial_number else ""
+        console.print(f"{dev.device_info.name} - {dev.machine_data.serial_number}{provisioned}{selected}")
+        found = True
+
+    if not found:
+        typer.echo("No devices found.", err=True)
+
+
+@app.command(help="Get information about a device.")
+@app.command(name="if", hidden=True)
+def info(
+    serial_number: SerialArgument = CLIOptions.selected_device,
+) -> None:
+    if serial_number is None:
+        typer.echo("No device selected. Specify a device using `--serial-number` or the `device sel` command", err=True)
+        raise typer.Exit(1)
+
+    dev = fetch_device(CLIOptions.device_path, serial_number)
+    typer.echo(
+        f"Device: {dev.device_info.name}\n"
+        f"Serial Number: {dev.machine_data.serial_number}\n"
+        f"UID: {dev.machine_data.identifier}\n"
+        f"Model Version: {dev.device_info.model}\n"
+        f"Product Version: {dev.device_info.operating_system_version}\n"
+        f"Build Version: {dev.device_info.operating_system_build}\n"
+        f"Device Class: {dev.device_info.operating_system}\n",
+    )
+
+
+@app.command(help="Create a new device.")
+@app.command(name="create", hidden=True)
+@app.command(name="new", hidden=True)
+@run_async
+async def add(
+    device_name: Annotated[
+        str,
+        typer.Option(
+            prompt=True,
+            help="The name of the device.",
+        ),
+    ] = f"{getuser()}'s PC",
+    serial_number: Annotated[
+        str,
+        typer.Option(
+            prompt=True,
+            help=SERIAL_HELP,
+            autocompletion=list_devices,
+        ),
+    ] = "WindowSerial",
+    operating_system: Annotated[
+        OperatingSystem,
+        typer.Option(
+            prompt=True,
+            help="The operating system of the device.",
+        ),
+    ] = OperatingSystem.WINDOWS,
+    os_version: Annotated[
+        str,
+        typer.Option(
+            prompt="OS version",
+            help="The version of the operating system.",
+        ),
+    ] = "10.6.4",
+    os_build: Annotated[
+        str,
+        typer.Option(
+            prompt="OS build",
+            help="The build of the operating system.",
+        ),
+    ] = "10.6.4",
+    hardware_version: Annotated[
+        str,
+        typer.Option(
+            prompt=True,
+            help="The hardware version of the device.",
+        ),
+    ] = "windows1,1",
+    *,
+    skip_provisioning: Annotated[
+        bool,
+        typer.Option(
+            "--skip-provisioning",
+            "-s",
+            help="Skip Anisette provisioning.",
+        ),
+    ] = False,
+) -> None:
+    if fetch_device(CLIOptions.device_path, serial_number) is not None:
+        typer.confirm("Device already exists... Overwrite?", abort=True)
+
+    dev = Device(
+        DeviceInfoComponent(
+            name=device_name,
+            operating_system=operating_system,
+            operating_system_version=os_version,
+            operating_system_build=os_build,
+            model=hardware_version,
+        ),
+        MachineDataComponent(
+            serial_number=serial_number,
+        ),
+        APNsCredentialsComponent(),
+    )
+
+    dev.write(CLIOptions.device_path / serial_number)
+
+    if not dev.machine_data.requires_provisioning or skip_provisioning:
+        typer.echo("Skipping Anisette provisioning.")
+        return
+
+    typer.echo("Starting Anisette provisioning...")
+    if dev.machine_data.requires_provisioning:
+        anisette_provider = AnisetteV3Provider(dev.machine_data)
+        await anisette_provider.provision()
+
+    typer.echo("Fetching push certificate from Albert...")
+    if dev.apns_credentials.requires_provisioning:
+        push_key, push_cert = await request_push_certificate(dev.device_info, dev.machine_data)
+        dev.apns_credentials.push_key = push_key
+        dev.apns_credentials.push_cert = push_cert
+
+    dev.write(CLIOptions.device_path / serial_number)
+
+
+@app.command(help="Remove a device.")
+@app.command(name="rm", hidden=True)
+@app.command(name="delete", hidden=True)
+@run_async
+async def remove() -> None: ...
+
+
+@app.command(help="Provision a device through Anisette.")
+@app.command(name="prov", hidden=True)
+@run_async
+async def provision(
+    serial_number: SerialArgument,
+    *,
+    force: Annotated[
+        bool,
+        typer.Option(
+            "--force",
+            "-f",
+            help="Force a re-provision of the device.",
+        ),
+    ] = False,
+) -> None:
+    dev = fetch_device(CLIOptions.device_path, serial_number)
+
+    if force is True:
+        logger.warning(
+            "Re-provisioning the Anisette data and/or push credentials may cause issues with authenticated users!",
+        )
+
+    required_provisioning = False
+    if dev.machine_data.requires_provisioning or force:
+        required_provisioning = True
+
+        anisette_provider = AnisetteV3Provider(dev.machine_data)
+        await anisette_provider.provision()
+
+    if dev.apns_credentials.requires_provisioning or force:
+        required_provisioning = True
+
+        push_key, push_cert = await request_push_certificate(dev.device_info, dev.machine_data)
+        dev.apns_credentials.push_key = push_key
+        dev.apns_credentials.push_certificate = push_cert
+
+    if not required_provisioning:
+        logger.error("Device is already provisioned. Use --force to re-provision.")
+        raise typer.Abort
+
+    dev.write(CLIOptions.device_path / serial_number)
+
+
+@app.command(help="Select this device for use with other PommeKit commands.")
+@app.command(name="sel", hidden=True)
+def select(serial_number: SerialArgument = None) -> None:
+    if serial_number is None:
+        if CLIOptions.selected_device is None:
+            raise typer.Exit
+
+        typer.echo(CLIOptions.selected_device)
+        raise typer.Exit
+
+    set_selected_device(CLIOptions.device_path, serial_number)
+
+
+@app.callback(no_args_is_help=True, hidden=False)
+def device(
+    path: Annotated[
+        Path,
+        typer.Option(
+            "--path",
+            "-p",
+            envvar="POMMEKIT_DEVICE_PATH",
+            help="The path to save/load device data to.",
+        ),
+    ] = CLIOptions.device_path,
+) -> None:
+    CLIOptions.device_path = path
+    CLIOptions.selected_device = get_selected_device(path)
+
+    logger.debug(f"Current device path: '{CLIOptions.device_path}'")
+    logger.debug(f"Current selected device: '{CLIOptions.selected_device}'")
