@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib>=3.9.0
+pyproj
+pillow
+
+[tests]
+pytest
