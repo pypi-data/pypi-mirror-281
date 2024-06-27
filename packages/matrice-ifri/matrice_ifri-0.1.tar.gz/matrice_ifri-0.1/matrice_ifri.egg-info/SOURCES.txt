@@ -1,0 +1,8 @@
+README.md
+setup.py
+matrice_ifri/__init__.py
+matrice_ifri/matrice.py
+matrice_ifri.egg-info/PKG-INFO
+matrice_ifri.egg-info/SOURCES.txt
+matrice_ifri.egg-info/dependency_links.txt
+matrice_ifri.egg-info/top_level.txt
