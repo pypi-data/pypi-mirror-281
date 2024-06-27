@@ -1,0 +1,14 @@
+[project]
+name = "libtw2-huffman"
+
+[project.urls]
+repository = "https://github.com/heinrich5991/libtw2"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0", "uniffi-bindgen>=0.27.0,<0.28.0"]
+build-backend = "maturin"
+
+[tool]
+
+[tool.maturin]
+manifest-path = "uniffi/huffman/Cargo.toml"

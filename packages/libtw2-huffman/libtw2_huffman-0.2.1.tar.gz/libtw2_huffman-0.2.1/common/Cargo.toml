@@ -1,0 +1,20 @@
+[package]
+name = "libtw2-common"
+version = "0.0.1"
+authors = ["heinrich5991 <heinrich5991@gmail.com>"]
+license = "MIT/Apache-2.0"
+edition = "2021"
+
+[dependencies]
+arrayvec = "0.5.2"
+file_offset = { version = "0.1.0", optional = true }
+serde = { version = "1.0.23", optional = true }
+zerocopy = "0.7.32"
+
+[dev-dependencies]
+bencher = "0.1.5"
+quickcheck = "0.4.1"
+
+[[bench]]
+name = "cast"
+harness = false
