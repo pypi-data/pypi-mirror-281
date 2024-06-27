@@ -1,0 +1,82 @@
+Metadata-Version: 2.3
+Name: mbench
+Version: 0.0.2
+Summary: Simple Benchmarking Library.
+Project-URL: Documentation, https://github.com/mbodiai/mbench#readme
+Project-URL: Issues, https://github.com/mbodiai/mbench/issues
+Project-URL: Source, https://github.com/mbodiai/mbench
+Author-email: Sebastian Peralta <sebastian@mbodi.ai>
+License-Expression: Apache-2.0
+License-File: LICENSE
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: memory-profiler>=0.61.0
+Requires-Dist: pandas==2.2.2
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: pynvml==11.5.0
+Requires-Dist: rich>=13.7.0
+Provides-Extra: all
+Requires-Dist: pandas==2.2.2; extra == 'all'
+Requires-Dist: pynvml==11.5.0; extra == 'all'
+Description-Content-Type: text/markdown
+
+# mbodied-data
+
+[![PyPI - Version](https://img.shields.io/pypi/v/mbodied-data.svg)](https://pypi.org/project/mbodied-data)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mbodied-data.svg)](https://pypi.org/project/mbodied-data)
+
+-----
+
+## Table of Contents
+
+- [mbodied-data](#mbodied-data)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+
+## Installation
+
+```console
+pip install mbench
+```
+
+## Usage
+
+```python
+from mbench import profileme
+profileme()
+
+def some_function():
+    print("Hello")
+
+```
+
+```console
+Hello
+Function: some_function
+  Duration: 0.000706 seconds
+  CPU time: 0.000668 seconds
+  Memory usage: 2.80 MB
+  GPU usage: 0.00 MB
+  I/O usage: 0.00 MB
+  Avg Duration: 0.000527 seconds
+  Avg CPU time: 0.000521 seconds
+  Avg Memory usage: 0.35 MB
+  Avg GPU usage: 0.00 MB
+  Avg I/O usage: 0.00 MB
+  Total calls: 8
+-----------------------------
+Profiling data saved to profiling_data.csv
+```
+
+## License
+
+`mbench` is distributed under the terms of the [MIT License](LICENSE).
