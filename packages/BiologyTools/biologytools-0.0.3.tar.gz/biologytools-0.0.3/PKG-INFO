@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: BiologyTools
+Version: 0.0.3
+Summary: CrossDark's biology tool
+Home-page: https://github.com/CrossDark/CrossDarkBiology
+Author: CrossDark
+Author-email: liuhanbo333@icloud.com
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: moviepy
+Requires-Dist: av
+Requires-Dist: ultralytics
+Requires-Dist: pymysql
+
+# BiologyTools
+提供一些生物信息学工具
