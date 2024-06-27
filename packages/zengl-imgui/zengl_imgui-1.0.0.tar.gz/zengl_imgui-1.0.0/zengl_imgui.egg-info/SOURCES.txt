@@ -1,0 +1,7 @@
+setup.py
+zengl_imgui.py
+zengl_imgui.egg-info/PKG-INFO
+zengl_imgui.egg-info/SOURCES.txt
+zengl_imgui.egg-info/dependency_links.txt
+zengl_imgui.egg-info/requires.txt
+zengl_imgui.egg-info/top_level.txt
