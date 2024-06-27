@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: chaps-lzf
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Pierre Dellenbach
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pybind11 (>=2.10.1)
+
+UNKNOWN
+
