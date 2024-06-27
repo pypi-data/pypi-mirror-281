@@ -1,0 +1,11 @@
+pytulpa/__init__.py,sha256=-gF9DtyhAtuyr9ya3pd2L0giOHNSECPdQmCwQJ0fRGU,211
+pytulpa/activations.py,sha256=OWUvlRUyP2Ew_N5G_irMDDfxusKKcVJ4JTmcRHsq2kk,427
+pytulpa/core.py,sha256=xm1BUHYSx_gATl0ZoGbx8WsBqScSqYhCJPbES1CFFaE,1591
+pytulpa/layers.py,sha256=PvqcXe8H334M_VGi_VLt3TGF0i5UNOuNd-kidff3AxA,2558
+pytulpa/models.py,sha256=TxlHXS-pIwOniKmcCWpMNGdZoibFCxFKo4GXut_gmGU,924
+pytulpa/optimizers.py,sha256=rYAy0QBT-4JHE2JyWvCJVZexqnIqEODpOMAR8Z8mkFo,1430
+pytulpa-0.1.0.dist-info/LICENSE,sha256=VDrdzab0yug1pS-u4Zi1FJsvqsyAgk8HWkcJ5sIa238,1070
+pytulpa-0.1.0.dist-info/METADATA,sha256=aUPLejNR7A0lSTNjazIKEyEr7PYAKTAsqX75kvfBnYI,1803
+pytulpa-0.1.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+pytulpa-0.1.0.dist-info/top_level.txt,sha256=Ee1c9BUDKFiX4WHvSFH69fQrFbK6-6Qk0GywNy6ZdVs,8
+pytulpa-0.1.0.dist-info/RECORD,,
