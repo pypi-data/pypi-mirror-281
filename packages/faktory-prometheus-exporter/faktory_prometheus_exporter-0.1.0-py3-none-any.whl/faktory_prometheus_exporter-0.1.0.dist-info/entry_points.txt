@@ -1,0 +1,2 @@
+[console_scripts]
+faktory-prometheus-exporter = faktory_prometheus_exporter:main
