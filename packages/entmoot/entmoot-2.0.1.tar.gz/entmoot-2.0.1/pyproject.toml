@@ -1,0 +1,5 @@
+[tool.pytest.ini_options]
+markers = [
+    "pipeline_test: marks tests as test which can be run in the pipeline (deselect with '-m \"not pipeline_test\"')",
+    "consistent: marks tests that check consistency of results, i.e. may vary for different machines (deselect with '-m \"not consistent\"')"
+]
