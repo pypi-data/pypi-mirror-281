@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pywormholescan"
+version = "0.1.0"
+description = "PyWormholescan serves as a Python wrapper for interacting with the Wormholescan API."
+authors = ["0xBitzz <successdaudu@gmail.com>"]
+license = "Apache-2.0 license"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = ">=2.0.0,<3.0.0"
+aiohttp = "^3.9.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.2"
+twine = "^5.0.0"
+pytest-mock = "^3.12.0"
+responses = "^0.25.0"
+
+[[tool.poetry.source]]
+name = "testpypi"
+url = "https://test.pypi.org/simple"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
