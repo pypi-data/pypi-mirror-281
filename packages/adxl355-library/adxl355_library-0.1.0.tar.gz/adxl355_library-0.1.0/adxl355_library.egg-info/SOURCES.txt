@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+adxl355/__init__.py
+adxl355/adxl355_definitions.py
+adxl355/adxl355_spi.py
+adxl355_library.egg-info/PKG-INFO
+adxl355_library.egg-info/SOURCES.txt
+adxl355_library.egg-info/dependency_links.txt
+adxl355_library.egg-info/not-zip-safe
+adxl355_library.egg-info/requires.txt
+adxl355_library.egg-info/top_level.txt
+tests/__init__.py
+tests/test_adxl355.py
