@@ -1,0 +1,10 @@
+scrapypuppeteer/__init__.py,sha256=p4l757g74CLA0GRyQdezA4ZGV3jUWR2w1GbVr8Q4SnU,62
+scrapypuppeteer/actions.py,sha256=uZ5024odXodLDhuzbNd3bXM4Oq7p_WU65-M-DB7BfqI,9663
+scrapypuppeteer/middleware.py,sha256=NzQjfUwnwAfY5H4ai6sioJHS7X03GPW71V6AH9HLGz4,16354
+scrapypuppeteer/request.py,sha256=HMiSwBT7r4RhtArMRAqKro6iAD58E8AsUrEnwYj1BvA,3402
+scrapypuppeteer/response.py,sha256=7Fp2cgk-zOMXSGXL1U5CuTZip75n1Nt90m45FBoqwhA,5271
+scrapy_puppeteer_client-0.2.0.dist-info/LICENSE,sha256=MWwU-Nmp1FK-KLaBveLYDSYwbdnSdlGLIL5uKNbgkQM,1569
+scrapy_puppeteer_client-0.2.0.dist-info/METADATA,sha256=MiZfqBSGBSBvXpIMAQ6yqwbZ8wQWPsTj8QY7ce3JjKI,6623
+scrapy_puppeteer_client-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+scrapy_puppeteer_client-0.2.0.dist-info/top_level.txt,sha256=-Dvt_IjWA2CUOcu07JVUvEtWXJheZ7X0eUfiy8fQqGU,16
+scrapy_puppeteer_client-0.2.0.dist-info/RECORD,,
