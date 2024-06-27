@@ -1,0 +1,15 @@
+MANIFEST.in
+setup.py
+funkmodel/__init__.py
+funkmodel/father_model.py
+funkmodel/funkmodel.py
+funkmodel/precision_model.py
+funkmodel/simple_math.py
+funkmodel/string_model.py
+funkmodel/time_model.py
+funkmodel/wallet_model.py
+funkmodel.egg-info/PKG-INFO
+funkmodel.egg-info/SOURCES.txt
+funkmodel.egg-info/dependency_links.txt
+funkmodel.egg-info/requires.txt
+funkmodel.egg-info/top_level.txt
