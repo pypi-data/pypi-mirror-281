@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "wiring"
+requires-python = ">=3.8"
+version = "0.0.2"
+dynamic = ["dependencies"]
+readme = { file = "./README.md", content-type = "text/markdown" }
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
+
+[tool.hatch.build]
+packages = ["wiring"]
+
+[project.optional-dependencies]
+discord = ["discord.py"]
+telegram = ["python-telegram-bot"]
