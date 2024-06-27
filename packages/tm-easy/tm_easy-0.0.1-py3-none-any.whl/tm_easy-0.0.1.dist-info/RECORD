@@ -1,0 +1,9 @@
+src/__init__.py,sha256=BjIKFM8lC1mfM2SjUw5kG-jEalRAQ7Ola0FE7dluRpI,1309
+src/teachable_machine.py,sha256=0t5VNHth-kp5GdpdFZz3jyjyTK9oe-8wAcGeAsiP6Wc,3933
+tm-easy/__init__.py,sha256=uDdlG9DJzlUNF_gu1aVW5AGNbQdRSWm8G3LkInOMDb0,49
+tm-easy/tm_easy.py,sha256=Mp9gRFmGFdh_XrZ5IRcP3FggDA8eVZz5zHTuZuoeEdI,3659
+tm_easy-0.0.1.dist-info/LICENSE,sha256=ndH0Av7HpAI-hqCnDJHQ1hk3P8ogj3gWG9jHQsKD2bk,1071
+tm_easy-0.0.1.dist-info/METADATA,sha256=w5avWZycDvEE98-A88MGFUlh7Awj5sUmev_NwQKooRo,530
+tm_easy-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+tm_easy-0.0.1.dist-info/top_level.txt,sha256=rHTdr_UoIDAle4Drh58YGpmzRYqsx53NV5l_CMKxWjs,12
+tm_easy-0.0.1.dist-info/RECORD,,
