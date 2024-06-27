@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: wingechr-PYTHON_PACKAGE
+Version: 0.0.3
+Summary: DESCRIPTION
+Home-page: https://github.com/wingechr/PROJECT_TEMPLATE
+Author: Christian Winger
+Author-email: c@wingechr.de
+License: CC0-1.0
+Project-URL: Bug Tracker, https://github.com/wingechr/PROJECT_TEMPLATE
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: coloredlogs
+
+# README
+
+[![docs](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://wingechr.github.io/PROJECT_TEMPLATE/)
+[![python](https://img.shields.io/pypi/pyversions/wingechr-PYTHON-PACKAGE?logo=python&logoColor=white)](https://pypi.org/project/wingechr-PYTHON-PACKAGE)
+[![pypi](https://img.shields.io/pypi/v/wingechr-PYTHON-PACKAGE.svg)](https://pypi.org/project/wingechr-PYTHON-PACKAGE)
+[![license](https://img.shields.io/github/license/wingechr/PROJECT_TEMPLATE)](https://github.com/wingechr/PROJECT_TEMPLATE/blob/main/LICENSE)
+[![test](https://github.com/wingechr/PROJECT_TEMPLATE/actions/workflows/test.yml/badge.svg)](https://github.com/wingechr/PROJECT_TEMPLATE/actions/workflows/test.yml)
+[![snyk](https://snyk.io/test/github/wingechr/PROJECT_TEMPLATE/badge.svg)](https://snyk.io/test/github/wingechr/PROJECT_TEMPLATE)
