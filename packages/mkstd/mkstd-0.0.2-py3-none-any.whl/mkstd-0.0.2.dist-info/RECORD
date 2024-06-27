@@ -1,0 +1,14 @@
+mkstd/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+mkstd/data_model.py,sha256=9H6i6KMxL9acbaq4ODsAWw2vLpQ0CV6kfOxNGrSy9F0,749
+mkstd/make_schemas.py,sha256=OW6uzqHEJEIs9nHkH5AstdpyM0hEpxxUrfJ5x-XBsl0,2062
+mkstd/olds.py,sha256=xtE8rEOukwgGSpAheu1ZgdXihnJMBGVz8xOvP7tpL7g,1520
+mkstd/pydantic.py,sha256=egUuJzukFQqg9Mw3P3Yjq82GczxmImkZYjq4wQrKA8U,699
+mkstd/xsd.py,sha256=_T1M4DDBgJtco6c8SFK4JRmkwpGiTWYhpU46uPJsDkE,3653
+mkstd/standards/__init__.py,sha256=RQu2i1oP-RKm8Wwy3rGtZbM0oDtWsG1_G4uElcl-Xqs,29
+mkstd/standards/standard.py,sha256=M7JTAG68aOkUuDa1t8i-tGIlKINI_6hwTIU1ObKpmok,821
+mkstd/standards/xml.py,sha256=SlP4kx6IatibuO_F7paiNrzJD-NB4k5c36Otq0BROlw,4100
+mkstd-0.0.2.dist-info/LICENSE,sha256=jFtM8zAUdzTE4LlncKSpiLT2xC1Z-4UUeAJvx21S6Xo,1502
+mkstd-0.0.2.dist-info/METADATA,sha256=_Nab88RSSYVImt4qZVPWBmM0dztW-TYtX5YtDbo-YCQ,2611
+mkstd-0.0.2.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+mkstd-0.0.2.dist-info/top_level.txt,sha256=4zD4KTi4EalgW2zPT1aYM_Hx_T1CNuerdIKpGjhpyJo,6
+mkstd-0.0.2.dist-info/RECORD,,
