@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tor_file_parsers"
+version = "0.1.0"
+authors = [
+  { name = "Ran Tao", email = "rt822@georgetown.edu" },
+]
+description = "Parsers for various files in Tor"
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = [
+  "Programming Language :: Python :: 3"
+]
+
+[project.urls]
+Homepage = "https://github.com/higher-order/tor_file_parsers"
+Issues = "https://github.com/higher-order/tor_file_parsers/issues"

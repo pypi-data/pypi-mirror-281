@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/tor_file_parsers/__init__.py
+src/tor_file_parsers/line2kv.py
+src/tor_file_parsers/parse_real_v3bw.py
+src/tor_file_parsers/parse_tornettools_v3bw.py
+src/tor_file_parsers/v3bw.py
+src/tor_file_parsers.egg-info/PKG-INFO
+src/tor_file_parsers.egg-info/SOURCES.txt
+src/tor_file_parsers.egg-info/dependency_links.txt
+src/tor_file_parsers.egg-info/top_level.txt
