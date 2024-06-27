@@ -1,0 +1,11 @@
+odoo/addons/generate_pos_orders_ddaa/README.md,sha256=Yfd1peUr54-WDke7FSR5MexXrPuaOIFPQPDiPCmHQuk,330
+odoo/addons/generate_pos_orders_ddaa/__init__.py,sha256=Ax4qLxdb9ATk05MF7cSQ0BdpYCpGVYFy9n4U4zODf9o,46
+odoo/addons/generate_pos_orders_ddaa/__manifest__.py,sha256=srfKvIgDb0TZF288-ORRdqkYULLMOHII88_H3wviKSw,1044
+odoo/addons/generate_pos_orders_ddaa/models/__init__.py,sha256=D8SvP9QQDe2qErFiRXcFkYlO5jrYB3ZNSp5FXuGa84c,64
+odoo/addons/generate_pos_orders_ddaa/models/generate_pos_orders_ddaa.py,sha256=vTB9qE27sbPotN3Cl9gMWyk1ksAcNbaIMFH_wQhpr9w,1120
+odoo/addons/generate_pos_orders_ddaa/static/description/icon.png,sha256=dAkbiGKv1-GD2aOshPCNb9vVOOxJKCKAR549dnQKqBA,2595
+odoo/addons/generate_pos_orders_ddaa/views/generate_pos_orders_ddaa_view.xml,sha256=SnzgNOIt-s9PXpkMlfWw4ORaRqxTSyK_ECX00o2ZQ6E,1125
+odoo13_addon_generate_pos_orders_ddaa-13.0.0.0.1.dist-info/METADATA,sha256=zZCOHnJ09bnOfgjXMYE7cvWMhrl2CWuS3pesFZSrOjM,556
+odoo13_addon_generate_pos_orders_ddaa-13.0.0.0.1.dist-info/WHEEL,sha256=8Rd4enx1PCuyDWP4SABqO5Fv8rpaknqp3VzjoFFLa6c,83
+odoo13_addon_generate_pos_orders_ddaa-13.0.0.0.1.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo13_addon_generate_pos_orders_ddaa-13.0.0.0.1.dist-info/RECORD,,

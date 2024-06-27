@@ -1,0 +1,27 @@
+<odoo>
+    <record id="generate_pos_orders_ddaa_view_form" model="ir.ui.view">
+      <field name="name">generate.pos.orders.ddaa.wizard.form</field>
+      <field name="model">generate.pos.orders.ddaa.wizard</field>
+      <field name="arch" type="xml">
+        <form string="Generar DDAA para pedidos realizados desde POS">
+          <footer>
+            <button name="generate_pos_orders_ddaa" string="Aceptar" type="object" class="btn-primary"/>
+          </footer>
+       </form>
+      </field>
+    </record>
+    <record id="action_pos_orders_ddaa" model="ir.actions.act_window">
+        <field name="name">Generar DDAA para pedidos realizados desde POS</field>
+        <field name="res_model">generate.pos.orders.ddaa.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="generate_pos_orders_ddaa_view_form"/>
+        <field name="target">new</field>
+    </record>
+    <menuitem
+        id="main_menu_generate_pos_orders_ddaa"
+        name="Generar DDAA para pedidos POS"
+        sequence="1"
+        action="action_pos_orders_ddaa"
+        groups="base.group_user"
+    />
+</odoo>
