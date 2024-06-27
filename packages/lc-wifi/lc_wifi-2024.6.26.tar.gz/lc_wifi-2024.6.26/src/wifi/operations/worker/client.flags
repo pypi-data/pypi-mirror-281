@@ -1,0 +1,19 @@
+# Project flags
+
+# 10: debug, 20: info, 30: warning
+--log_level=10
+
+--http_token_secret=yoursecret
+#--http_bulk_data_url=http://127.0.0.1:8078
+--redis_url=redis://127.0.0.1:6379
+--axredis_url=redis://127.0.0.1:56379?password=yourpassword
+--axusp_api_endpoint=http://192.168.29.104:57879
+--default_usp_bulk_interval=900
+#--axusp_api_endpoint=http://testbed.axiros.hr:10296
+--kafka_url=kafka://192.168.29.105:9092?c.sasl.username=axtract&c.sasl.password=somepassword
+--kafka_url=kafka://192.168.29.105:9092?c.sasl.username=axtract&c.sasl.password=somepassword
+--log_thread_local_names
+--elastic_url=elastic://elastic:elasticpw@127.0.0.1:9200?number_of_shards=1
+--elastic_index_prefix=
+#--log_dev_coljson_style=github-dark
+--log_dev_coljson_style=solarized-dark
