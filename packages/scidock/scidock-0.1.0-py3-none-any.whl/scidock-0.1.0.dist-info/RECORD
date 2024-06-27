@@ -1,0 +1,16 @@
+scidock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scidock/config/__init__.py,sha256=TxWlR1tG0RmJh0mscjePWNuoM6cwA8s-BWvLcN33jj4,875
+scidock/config/logging.yaml,sha256=bWx9c3VNnI8qesRY3dSJ2f_Y7wUD_8naUMvTtuLmA7Y,815
+scidock/scidock.py,sha256=AofxophmF_MYnCwbuHXPGEDU7VS8d0KkCHedcnyW59g,11942
+scidock/search_engines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scidock/search_engines/arxiv_engine.py,sha256=YGHuT-Wqqo3WtNgnbGS-eeeGjwHyf_0l6KxVTDgUF4o,2397
+scidock/search_engines/crossref_engine.py,sha256=gOaqEUKM1AFHQNbJ3Rb2XnZGDYrciUFQ1iljyo8md3Y,3861
+scidock/search_engines/metadata.py,sha256=pxN6nNDcWVnox_H7C75oDfVdB9LIQ4nObd6tRfPUMRY,125
+scidock/search_engines/query_parser.py,sha256=eOhnbZMmR73fr7pym6JFmwI2oyWw_NmSza_fXFlGkDw,2462
+scidock/search_engines/scihub_engine.py,sha256=FE72era_nP5kNuFgheoxb3ARzInY1arXMWEVBWaMQ_U,3045
+scidock/ui.py,sha256=GtFOKFHyzoRwqm9vOi_mzJcmPFiHc81d3mV441Q2JZI,2895
+scidock/utils.py,sha256=9yaXB--gdsT3Ersd0C2CgFbhnOkemiUKkyIXn6swdEw,3592
+scidock-0.1.0.dist-info/entry_points.txt,sha256=Era-L2HBzRJUo8r87QUl2fTbP_lPJsTizRSgoRVWgkk,48
+scidock-0.1.0.dist-info/METADATA,sha256=rfWzAh9vW9qjUJlenN2-GQcF6N0gI_grc5_orR7HTys,3374
+scidock-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+scidock-0.1.0.dist-info/RECORD,,
