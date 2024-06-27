@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+version.txt
+src/FluMutDB.egg-info/PKG-INFO
+src/FluMutDB.egg-info/SOURCES.txt
+src/FluMutDB.egg-info/dependency_links.txt
+src/FluMutDB.egg-info/requires.txt
+src/FluMutDB.egg-info/top_level.txt
+src/flumut_db_data/flumut_db.sqlite
