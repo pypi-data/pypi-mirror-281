@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: castellum-pseudonyms
+Version: 0.0.2
+Summary: algorithms to generate, validate, and normalize pseudonyms
+Author-email: Max-Planck-Gesellschaft <castellum@mpib-berlin.mpg.de>
+License: AGPL-3.0-or-later
+Project-URL: Homepage, https://git.mpib-berlin.mpg.de/castellum/castellum_pseudonyms
+License-File: LICENSE
+
