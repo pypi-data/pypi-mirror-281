@@ -1,0 +1,2 @@
+[llm]
+azure_api_embed = llm_azure_api_embed

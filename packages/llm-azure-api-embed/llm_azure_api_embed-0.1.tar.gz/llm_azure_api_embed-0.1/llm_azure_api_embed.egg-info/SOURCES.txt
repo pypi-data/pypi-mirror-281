@@ -1,0 +1,10 @@
+LICENSE
+README.md
+llm_azure_api_embed.py
+pyproject.toml
+llm_azure_api_embed.egg-info/PKG-INFO
+llm_azure_api_embed.egg-info/SOURCES.txt
+llm_azure_api_embed.egg-info/dependency_links.txt
+llm_azure_api_embed.egg-info/entry_points.txt
+llm_azure_api_embed.egg-info/requires.txt
+llm_azure_api_embed.egg-info/top_level.txt
