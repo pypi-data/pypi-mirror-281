@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: gpxtable
+Version: 1.0.0
+Summary: Generate tables of interesting GPX route and waypoint information
+Author-email: Paul Traina <pleasantone@users.noreply.github.com>
+Project-URL: Homepage, https://github.com/pleasantone/gpxtable
+Project-URL: Bug Tracker, https://github.com/pleasantone/gpxtable/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: astral
+Requires-Dist: gpxpy
+Requires-Dist: markdown2
+Requires-Dist: python-dateutil
+Requires-Dist: flask
+
+gpxtable
+========
+
+GPX table translate - extract info from a GPX file to produce markdown
+data for ride descriptions
+
+Main documentation available at <http://gpxtable.readthedocs.io/>.
+
+.. image:: https://readthedocs.org/projects/gpxtable/badge/?version=latest
+   :target: https://gpxtable.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status

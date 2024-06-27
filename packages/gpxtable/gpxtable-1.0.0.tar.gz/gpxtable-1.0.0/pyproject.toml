@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpxtable"
+description = "Generate tables of interesting GPX route and waypoint information"
+authors = [
+  { name="Paul Traina", email="pleasantone@users.noreply.github.com" },
+]
+
+dynamic = ["version"]
+readme = "README.rst"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "astral",
+    "gpxpy",
+    "markdown2",
+    "python-dateutil",
+    "flask"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pleasantone/gpxtable"
+"Bug Tracker" = "https://github.com/pleasantone/gpxtable/issues"
+
+[project.scripts]
+gpxtable = "gpxtable.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "gpxtable.__version__"}
