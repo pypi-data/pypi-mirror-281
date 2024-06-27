@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/subtitler_util/__init__.py
+src/subtitler_util/lang.tsv
+src/subtitler_util/subtitler.py
+src/subtitler_util.egg-info/PKG-INFO
+src/subtitler_util.egg-info/SOURCES.txt
+src/subtitler_util.egg-info/dependency_links.txt
+src/subtitler_util.egg-info/entry_points.txt
+src/subtitler_util.egg-info/requires.txt
+src/subtitler_util.egg-info/top_level.txt
