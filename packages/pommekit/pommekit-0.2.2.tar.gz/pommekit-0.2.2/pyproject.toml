@@ -1,0 +1,122 @@
+[tool.poetry]
+name = "pommekit"
+version = "0.2.2"
+description = "Experimental Python package for various Apple APIs and services."
+authors = [
+    "Mikel <61402923+Cypheriel@users.noreply.github.com>",
+]
+readme = "README.md"
+license = "AGPL-3.0-or-later"
+repository = "https://github.com/Cypheriel/PommeKit"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Cypheriel/PommeKit/issues"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cryptography = "^42.0.7"
+httpx = "^0.27.0"
+websockets = "^12.0"
+typer = "^0.12.3"
+appdirs = "^1.4.4"
+rich = "^13.7.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+pytest-asyncio = "^0.23.6"
+ruff = "^0.4.4"
+pre-commit = "^3.7.1"
+
+[tool.poetry.scripts]
+pommekit = "pommekit.__main__:__entrypoint__"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "F",  # "pyflakes"
+    "E", "W",  # "pycodestyle"
+    "C",  # "mccabe"
+    "I",  # "isort"
+    "N",  # "pep8-naming"
+    "D",  # "pydocstyle"
+    "U",  # "pyupgrade"
+    "YTT",  # "flake8-2020"
+    "ANN",  # "flake8-annotations"
+    "ASYNC",  # "flake8-async"
+    "S",  # "flake8-bandit"
+    "BLE",  # "flake8-blind-except"
+    "FBT",  # "flake8-boolean-trap"
+    "B",  # "flake8-bugbear"
+    "A",  # "flake8-builtins"
+    "COM",  # "flake8-commas"
+    "CPY",  # "flake8-copyright"
+    "C4",  # "flake8-comprehensions"
+    "DTZ",  # "flake8-datetimez"
+    "T10",  # "flake8-debugger"
+    "EM",  # "flake8-errmsg
+    "FA",  # "flake8-future-annotations"
+    "ISC",  # "flake8-implicit-str-concat"
+    "ICN",  # "flake8-import-conventions"
+    "LOG",  # "flake8-logging"
+    "G",  # "flake8-logging-format"
+    "INP",  # "flake8-no-pep420"
+    "PIE",  # "flake8-pie"
+    "T20",  # "flake8-print"
+    "PYI",  # "flake8-pyi"
+    "PT",  # "flake8-pytest-style"
+    "Q",  # "flake8-quotes"
+    "RSE",  # "flake8-raise"
+    "RET",  # "flake8-return"
+    "SLF",  # "flake8-self"
+    "SLOT",  # "flake8-slot"
+    "SIM",  # "flake8-simplify"
+    "TID",  # "flake8-tidy-imports"
+    "TCH",  # "flake8-type-checking"
+    "ARG",  # "flake8-arguments"
+    "PTH",  # "flake8-use-pathlib"
+    "TD",  # "flake8-todos"
+    "FIX",  # "flake8-fixme"
+    "ERA",  # "flake8-eradicate"
+    "PGH",  # "pygrep-hooks"
+    "PL",  # "pylint"
+    "TRY",  # "tryceratops"
+    "FLY",  # "flynt"
+    "PERF",  # "perflint"
+    "FURB",  # "refurb"
+    "RUF",  # "ruff"
+]
+ignore = [
+    "PLR0913",
+    "D212",
+    "TID252",
+    "G",
+    "FA102",
+    "D203",
+]
+preview = true
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/*" = [
+    "S101",
+    "PLR2004",
+    "PLC0415",
+    "D",
+    "INP001",
+    "ANN201",
+    "PLR0915",
+    "PLR0914",
+]
+"pommekit/_cli/**/*" = [
+    "PLR0917",
+]
+"pommekit/__main__.py" = [
+    "PLR0917",
+]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
