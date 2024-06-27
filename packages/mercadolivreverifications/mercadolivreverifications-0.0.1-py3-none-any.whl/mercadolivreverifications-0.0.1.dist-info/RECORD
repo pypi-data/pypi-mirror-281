@@ -1,0 +1,12 @@
+mercadolivresdk/__init__.py,sha256=Z4f9iTbr-8qJaLQiUGjL7TReD9j1hvVYSiYCtejS97Y,260
+mercadolivresdk/product_manager.py,sha256=radStAFk-K6Z0I4mdzx8ywyudSUt3HjU0Xc20lITumM,4146
+mercadolivresdk/product_model.py,sha256=COIT50-IGAvZICFxHqj7DXN-RId7_7e1tnkntoyi3_I,6437
+mercadolivreverifications/__init__.py,sha256=LpeobvCRRDrADHvlA89_LBMU70Pn3FMYFsWMfCowVo0,361
+mercadolivreverifications/product_manager.py,sha256=radStAFk-K6Z0I4mdzx8ywyudSUt3HjU0Xc20lITumM,4146
+mercadolivreverifications/product_model.py,sha256=COIT50-IGAvZICFxHqj7DXN-RId7_7e1tnkntoyi3_I,6437
+mercadolivreverifications/products_verifications.py,sha256=VKzvQpen35ANRMJjYBv3kS3iAog_1NA644e7PZFeXPg,2380
+mercadolivreverifications-0.0.1.dist-info/LICENSE,sha256=e0ZxOkGhdTQETkgTdYxGWmUDZS48jYBQdp880knWv6U,1167
+mercadolivreverifications-0.0.1.dist-info/METADATA,sha256=dCMrwrHBnRiDv3lE4hEgBQanbtNZF59v-C0GqNgAnxA,2923
+mercadolivreverifications-0.0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+mercadolivreverifications-0.0.1.dist-info/top_level.txt,sha256=WndbZ1ADsKhARzEsAZvIeZkagigKyAFfhzQmRda1rLM,26
+mercadolivreverifications-0.0.1.dist-info/RECORD,,
