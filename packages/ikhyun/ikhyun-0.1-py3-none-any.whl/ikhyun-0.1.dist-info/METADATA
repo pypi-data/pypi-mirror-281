@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ikhyun
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Ikhyun Cho
+Author-email: ikhyun_cho@tmax.co.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: transformers
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: overrides
+Requires-Dist: numpy
+Requires-Dist: dataclasses ; python_version < "3.7"
+
+IU(Ikhyun's Utils)
+- 내는요~ 오빠가~ 좋은거어러러럴~
+
+
