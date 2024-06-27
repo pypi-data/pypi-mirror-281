@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: wiring
+Version: 0.0.2
+Requires-Python: >=3.8
+Requires-Dist: flake8==7.1.0
+Requires-Dist: mccabe==0.7.0
+Requires-Dist: pycodestyle==2.12.0
+Requires-Dist: pyflakes==3.2.0
+Provides-Extra: discord
+Requires-Dist: discord-py; extra == 'discord'
+Provides-Extra: telegram
+Requires-Dist: python-telegram-bot; extra == 'telegram'
+Description-Content-Type: text/markdown
+
+![logo with a label 'one bot codebase - multiple platforms'](https://github.com/crucials/wiring/assets/83793845/4b987f42-1718-4a83-83b1-dc5556da28af)
+
+```sh
+pip install wiring
+```
