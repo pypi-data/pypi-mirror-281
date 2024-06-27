@@ -1,0 +1,2 @@
+[console_scripts]
+yangdoc = yangdoc.__main__:main
