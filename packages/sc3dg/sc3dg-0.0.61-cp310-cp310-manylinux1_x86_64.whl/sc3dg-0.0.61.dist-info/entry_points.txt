@@ -1,0 +1,4 @@
+[console_scripts]
+bowtie2 = sc3dg.bowtie2.wrapper:main
+pairtools = sc3dg.pairtools.cli:cli
+stark = sc3dg.cli:cli
