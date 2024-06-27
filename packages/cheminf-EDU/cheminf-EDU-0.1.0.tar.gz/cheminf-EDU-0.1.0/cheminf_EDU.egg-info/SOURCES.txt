@@ -1,0 +1,5 @@
+setup.py
+cheminf_EDU.egg-info/PKG-INFO
+cheminf_EDU.egg-info/SOURCES.txt
+cheminf_EDU.egg-info/dependency_links.txt
+cheminf_EDU.egg-info/top_level.txt
