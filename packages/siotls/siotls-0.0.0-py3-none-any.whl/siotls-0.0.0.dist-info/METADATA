@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: siotls
+Version: 0.0.0
+Summary: Sans-IO Python implementation of the TLS 1.3 (RFC 8446) protocol stack
+Author-email: Julien Castiaux <julien.castiaux@gmail.com>
+
