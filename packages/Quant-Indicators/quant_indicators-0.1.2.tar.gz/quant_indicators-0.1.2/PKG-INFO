@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: Quant_Indicators
+Version: 0.1.2
+Summary: A simple indicator library for stock tickers
+Author: NgocAn
+Author-email: anlam9614@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# quant_indicators
+
+Python package for financial technical indicators.
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install quant_indicators
+```
+
+## Usage
+
+from quant_indicators import ema
+
+data = [10, 12, 15, 14, 13, 16, 18]
+period = 3
+
+ema_value = ema.calculate_ema(data, period)
+print(f"EMA: {ema_value}")
+
