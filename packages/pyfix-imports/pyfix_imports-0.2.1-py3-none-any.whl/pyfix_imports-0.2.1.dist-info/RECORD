@@ -1,0 +1,15 @@
+pyfix_imports-0.2.1.dist-info/METADATA,sha256=rgQFYlus46fLcJfp_95eSNylqfBEte5bCqw74M-NEkI,3002
+pyfix_imports-0.2.1.dist-info/WHEEL,sha256=SOP-4bEE0jbVaCHQGVvF08uWxk5rcSsfEybvoQVHlD8,90
+pyfix_imports-0.2.1.dist-info/entry_points.txt,sha256=JL-MmhuyFpwexwQwNaXDOEnHMtmX6X_EzkndSaW8xH8,69
+pyfix_imports-0.2.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyfix_imports/.jaq.json,sha256=kjDsPW1O-6zKGFoIwUsj1p6Z4EeLVgBmcBbyNJVJfG8,45
+pyfix_imports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfix_imports/__main__.py,sha256=nK4ekGvlkkkzGvLwzmPxWF8ilvajaWkDU3udVO4s2YM,84
+pyfix_imports/commandline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfix_imports/commandline/cli.py,sha256=UUVsyfjuxRgbDEzwJalnSfsGJXN-xPw7NuGDaPjpU1U,1163
+pyfix_imports/config.py,sha256=9wFoNnpwxoLQjyc-6eWkyNYfwBntqXjwU4E6wqFX73c,1071
+pyfix_imports/file.py,sha256=tEE79q5wI0Mu2d8Q9_HGA2slTwwyU7g7x8Zrfc284i8,413
+pyfix_imports/package.py,sha256=U6Twl5LSyc9RiFUV_a2aFRxMilIjceS6UlZ7zl0Mf54,1540
+pyfix_imports/predefined.py,sha256=BHbmXFcg1j5zE2MTkS5g8rjWIcN8-MZyBTbRruZMhLA,1365
+pyfix_imports/pyflake.py,sha256=kvxO0_3ySplgakYnBmHxC9RHriDcZ3ndSEsqTjfY7Bo,1635
+pyfix_imports-0.2.1.dist-info/RECORD,,
