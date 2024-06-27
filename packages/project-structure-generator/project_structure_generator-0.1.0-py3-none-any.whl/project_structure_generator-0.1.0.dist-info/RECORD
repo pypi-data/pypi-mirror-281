@@ -1,0 +1,8 @@
+backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+project_structure_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+project_structure_generator/generator.py,sha256=2enJawyHjcryW4FaD_tNZB2giXvcSBDG_2NCbVy52tw,1287
+project_structure_generator-0.1.0.dist-info/METADATA,sha256=64pv9oL3Fn2koNY3cbs6eXn3tbInJdJ3vstpKbORSCI,985
+project_structure_generator-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+project_structure_generator-0.1.0.dist-info/entry_points.txt,sha256=TzRYnSloQVQFU5mKslFFgu_D1vmsesYc-APz3ktfNqQ,80
+project_structure_generator-0.1.0.dist-info/top_level.txt,sha256=7yuVFhE46SN8UelOKSGdAIzAKqJtr2yaHgsAeslQIYM,36
+project_structure_generator-0.1.0.dist-info/RECORD,,
