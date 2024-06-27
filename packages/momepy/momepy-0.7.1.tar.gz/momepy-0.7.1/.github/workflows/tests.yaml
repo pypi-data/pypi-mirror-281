@@ -1,0 +1,65 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches:
+      - "*"
+  schedule:
+    - cron: "0 0 * * 1,4"
+
+jobs:
+  Test:
+    name: ${{ matrix.os }}, ${{ matrix.environment-file }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        environment-file:
+          - ci/envs/310-oldest.yaml
+          - ci/envs/310-latest.yaml
+          - ci/envs/311-latest.yaml
+          - ci/envs/312-latest.yaml
+          - ci/envs/312-dev.yaml
+        include:
+          - environment-file: ci/envs/312-latest.yaml
+            os: macos-latest
+          - environment-file: ci/envs/312-latest.yaml
+            os: windows-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: setup micromamba
+        uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-file: ${{ matrix.environment-file }}
+
+      - name: Install momepy
+        run: pip install .
+
+      - name: Test momepy
+        run: |
+          pytest -v --color yes --cov momepy --cov-append --cov-report term-missing --cov-report xml .
+
+      - name: Test user guide
+        if: contains(matrix.environment-file, '312-latest.yaml') && contains(matrix.os, 'ubuntu')
+        run: |
+          ci/envs/test_user_guide.sh
+
+      - uses: codecov/codecov-action@v3
+
+      - name: Generate and publish the report
+        if: |
+          failure()
+          && steps.status.outcome == 'failure'
+          && github.event_name == 'schedule'
+          && github.repository_owner == 'pysal'
+        uses: xarray-contrib/issue-from-pytest-log@v1
+        with:
+          log-path: pytest-log.jsonl
