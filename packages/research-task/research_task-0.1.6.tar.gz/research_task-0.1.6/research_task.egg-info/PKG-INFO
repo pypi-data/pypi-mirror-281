@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: research-task
+Version: 0.1.6
+Summary: LLM Research tool
+Home-page: https://github.com/DanHUMassMed/llm_analyst.git
+Author: Dan Higgins
+Author-email: daniel.higgins@yahoo.com
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyMuPDF
+Requires-Dist: SQLAlchemy
+Requires-Dist: aiofiles
+Requires-Dist: arxiv
+Requires-Dist: beautifulsoup4
+Requires-Dist: colorama
+Requires-Dist: duckduckgo_search
+Requires-Dist: fastapi
+Requires-Dist: htmldocx
+Requires-Dist: jinja2
+Requires-Dist: langchain
+Requires-Dist: langchain-google-genai
+Requires-Dist: langchain-groq
+Requires-Dist: langchain-huggingface
+Requires-Dist: langchain-openai
+Requires-Dist: langchain_community
+Requires-Dist: langchain-chroma
+Requires-Dist: lxml[html_clean]
+Requires-Dist: markdown
+Requires-Dist: md2pdf
+Requires-Dist: mistune
+Requires-Dist: newspaper3k
+Requires-Dist: openai
+Requires-Dist: playwright
+Requires-Dist: pydantic
+Requires-Dist: pytest
+Requires-Dist: pytest-asyncio
+Requires-Dist: python-docx
+Requires-Dist: python-dotenv
+Requires-Dist: python-multipart
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: tavily-python
+Requires-Dist: unstructured
+Requires-Dist: uvicorn
+Requires-Dist: websockets
+Requires-Dist: pyvirtualdisplay
+Requires-Dist: selenium
+Requires-Dist: ipykernel
+Requires-Dist: chromadb
+
+# LLM Analyst
+LLM Analyst leverages the power of LLMs to create research reports based on a Local Data Store of Reference Articles
+
+## This code is a rewrite of `gpt-researcher`.
+
+* If you are looking for a code base that is being actively developed
+* Has a strong community following
+* And provides an excellent foundation for Internet Research 
+* __I recommend the original code base__
+* https://github.com/assafelovic/gpt-researcher
+
