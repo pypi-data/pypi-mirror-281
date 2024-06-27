@@ -1,0 +1,12 @@
+http_tunnel/__init__.py,sha256=sGz80cD-jq35NoxRDa2GO-07kARchKBjiVkIqEoM5K8,96
+http_tunnel/cli.py,sha256=B1nmgQG3OMhmrjLFahC_2ohKTZeQ5z3jCTD9zaqy3pQ,5028
+http_tunnel/client.py,sha256=QOUKWFjtQiI7VwpamGbu-khEG5xsrjUSJIxsUOdtET8,11925
+http_tunnel/common.py,sha256=YgAU4j__DsVVHa082W-mCp2jMuQLN73dKNiUzEOe9lw,1052
+http_tunnel/crypto.py,sha256=A-f3a6GVXGUKDomeyZz5yLWGNIfIwctgvx5DlTXmFw8,2942
+http_tunnel/server.py,sha256=t8nwJyQ8VVriIrodVGkcG72gu4wb5ZXimjmw43jGNVE,13643
+http_tunnel-0.2.0.dist-info/LICENSE,sha256=Y-uZClJR8iy9xqn9ZQ2QF4m4fhUBPoR8FZm7fOwZPU4,11343
+http_tunnel-0.2.0.dist-info/METADATA,sha256=4f3Q0y8v0cIOhzdJ-elOB37gqL_WPN1nOg_xVIioP9U,2520
+http_tunnel-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+http_tunnel-0.2.0.dist-info/entry_points.txt,sha256=EpsxkJ2M52z-bcYSa6MjWmc2WLO1VlZa1_EUgbEihWs,53
+http_tunnel-0.2.0.dist-info/top_level.txt,sha256=5Md5HXgHWzW5LlSwRTeve71bIFw2e9OcZHaPVABhrbY,12
+http_tunnel-0.2.0.dist-info/RECORD,,
