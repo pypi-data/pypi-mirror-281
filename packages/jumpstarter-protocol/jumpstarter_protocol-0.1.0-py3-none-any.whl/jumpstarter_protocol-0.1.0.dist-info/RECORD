@@ -1,0 +1,7 @@
+jumpstarter_protocol/jumpstarter/v1/jumpstarter_pb2.py,sha256=NljFDI-2_JFGaVL5k7S1zDwsW6m3OwH75pgZTP7GKGQ,8574
+jumpstarter_protocol/jumpstarter/v1/jumpstarter_pb2_grpc.py,sha256=G1n3GKcSduRp2vbM7iCGS2IGUK69PRYPmLlYJ-eulLY,19283
+jumpstarter_protocol/jumpstarter/v1/router_pb2.py,sha256=hoWte6-_ooYd-2hMdTXHLtfs9GpAi2F7HiptQw59Nss,2341
+jumpstarter_protocol/jumpstarter/v1/router_pb2_grpc.py,sha256=qbeNg3MXU61OXXu6kI721xTrWw1pj5SKldaOvVEXeVk,3190
+jumpstarter_protocol-0.1.0.dist-info/METADATA,sha256=Q6DWJTSGhGpvvlHU7O974hgw_JWKNJyL43qmZ1eiJWw,496
+jumpstarter_protocol-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+jumpstarter_protocol-0.1.0.dist-info/RECORD,,
