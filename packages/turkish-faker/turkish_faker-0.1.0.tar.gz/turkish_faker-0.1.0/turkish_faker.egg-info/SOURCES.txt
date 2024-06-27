@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mebularts/__init__.py
+mebularts/fake_data.py
+turkish_faker.egg-info/PKG-INFO
+turkish_faker.egg-info/SOURCES.txt
+turkish_faker.egg-info/dependency_links.txt
+turkish_faker.egg-info/top_level.txt
