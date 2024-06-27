@@ -1,0 +1,43 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "paramview"
+version = "0.5.0"
+description = "GUI for viewing the contents of a ParamDB database."
+authors = ["Alex Hadley <contact@alexhadley.net>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+repository = "https://github.com/PainterQubits/paramview"
+include = ["paramview/static/**/*"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^3.0.3"
+flask-socketio = "^5.3.6"
+eventlet = "^0.36.1"
+watchdog = "^4.0.1"
+paramdb = "^0.15.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10.1"
+flake8 = "^7.1.0"
+pylint = "^3.2.4"
+black = "^24.4.2"
+pytest = "^8.2.2"
+playwright = "^1.44.0"
+pytest-playwright = "^0.5.0"
+freezegun = "^1.5.1"
+sqlalchemy = "^2.0.31"
+astropy = "^6.0.1"
+
+[tool.poetry.scripts]
+paramview = "paramview._cli:main"
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib", "--tracing=retain-on-failure"]
+base_url = "http://127.0.0.1:5051"
