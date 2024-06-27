@@ -1,0 +1,3 @@
+[console_scripts]
+darklens=darklens.__cli__:main
+
