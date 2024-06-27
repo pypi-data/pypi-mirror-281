@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/ds_user/__init__.py
+src/ds_user/main.py
+src/ds_user.egg-info/PKG-INFO
+src/ds_user.egg-info/SOURCES.txt
+src/ds_user.egg-info/dependency_links.txt
+src/ds_user.egg-info/top_level.txt
