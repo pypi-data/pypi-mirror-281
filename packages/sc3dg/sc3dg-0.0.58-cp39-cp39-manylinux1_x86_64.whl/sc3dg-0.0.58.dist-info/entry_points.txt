@@ -1,0 +1,4 @@
+[console_scripts]
+pairtools = sc3dg.pairtools.cli:cli
+stark = sc3dg.cli:cli
+
