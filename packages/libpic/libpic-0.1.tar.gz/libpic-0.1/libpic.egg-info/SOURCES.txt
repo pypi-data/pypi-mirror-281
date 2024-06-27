@@ -1,0 +1,5 @@
+setup.py
+libpic.egg-info/PKG-INFO
+libpic.egg-info/SOURCES.txt
+libpic.egg-info/dependency_links.txt
+libpic.egg-info/top_level.txt
