@@ -1,0 +1,1 @@
+from .fuse import Fusion, MeanFusion, MeanSingleFusion, MidFusion, MidSingleFusion
