@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spatialmht"
+version = "2.1.0"
+authors = [
+  { name="Martin Goelz", email="mgoelz@spg.tu-darmstadt.de" },
+]
+description = "Code for Spatial Multiple Hypothesis Testing via Local False Discovery Rates with the Spectral Method of Moments"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mgoelz95/lfdr-sMoM"
+"Bug Tracker" = "https://github.com/mgoelz95/lfdr-sMoM/issues"
