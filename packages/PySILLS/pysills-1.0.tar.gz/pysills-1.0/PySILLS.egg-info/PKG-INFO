@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: PySILLS
+Version: 1.0
+Summary: PySILLS is a Python-based, open source data reduction tool for the major, minor and trace element analysis of minerals as well as of fluid and melt inclusions.
+Home-page: https://github.com/MABeeskow/PySILLS
+Author: Maximilian Alexander Beeskow
+Author-email: pysills.analysis@gmail.com
+License: LGPL-3.0
+Keywords: LA-ICP-MS,data reduction,minerals,fluid inclusions,melt inclusions,sills,pysills,chemical composition,compositional analysis,major elements,minor elements,trace elements
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: sympy
