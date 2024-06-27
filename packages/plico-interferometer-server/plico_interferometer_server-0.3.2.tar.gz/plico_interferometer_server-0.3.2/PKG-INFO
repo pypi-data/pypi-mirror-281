@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: plico-interferometer-server
+Version: 0.3.2
+Summary: interferometer controller with PLICO
+Home-page: https://github.com/ArcetriAdaptiveOptics/plico_interferometer
+Author: Lorenzo Busoni, Alfio Puglisi
+Author-email: lorenzo.busoni@inaf.it
+License: MIT
+Keywords: plico,interferometer,laboratory,instrumentation control
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+License-File: LICENSE
+Requires-Dist: plico>=0.20
+Requires-Dist: plico_interferometer>=0.0.3
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: h5py
+Requires-Dist: mock
+
+Server for interferometer control under the plico environment. This library allows it to interface with PhaseCam and Wyko interferometers that have the 4Sight SW provided by 4Dtechnology.
