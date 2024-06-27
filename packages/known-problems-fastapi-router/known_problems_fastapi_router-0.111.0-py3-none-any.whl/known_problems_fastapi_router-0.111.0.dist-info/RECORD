@@ -1,0 +1,9 @@
+known_problems_fastapi_router/__init__.py,sha256=S4RKSJCriOjE0xxFTPo0NzZ-3OcVmWjqROUQS785Xkk,236
+known_problems_fastapi_router/exception_handlers.py,sha256=pirppI9PC0Ah6OJbWXlnbXBvcqPoeLmxxbP8_jGU4B4,1063
+known_problems_fastapi_router/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+known_problems_fastapi_router/routing.py,sha256=Wvrc8ySzJTfecBw7NPDxCQSI194zxeG-q47Zei699MI,145095
+known_problems_fastapi_router/types.py,sha256=uuKCnBHhpLyFQ9HGE5QAc7O1HukeFECbGeLVFevVqmg,1264
+known_problems_fastapi_router-0.111.0.dist-info/LICENSE.txt,sha256=3wfrlHgn_iQhLQzylo5MVS2Qq3uxJcnOKDsvpDKwtIQ,1077
+known_problems_fastapi_router-0.111.0.dist-info/METADATA,sha256=CxG35gq8BjNO_tWFRP1Q7AkBgxwmxHOn_cOgM3q8jWM,1610
+known_problems_fastapi_router-0.111.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+known_problems_fastapi_router-0.111.0.dist-info/RECORD,,
