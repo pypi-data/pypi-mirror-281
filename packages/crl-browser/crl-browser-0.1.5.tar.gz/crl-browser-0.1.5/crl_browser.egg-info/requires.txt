@@ -1,0 +1,4 @@
+requests
+psycopg2
+PyQt6
+crl-client
