@@ -1,0 +1,11 @@
+ubuntu_package_download/__init__.py,sha256=QESjXDIkLiTgUvezUI3sdXRF1-jebjPhVuIIjE_zrHQ,147
+ubuntu_package_download/cli.py,sha256=yg6_uOzH-DgvCJ6ikx_6qnaJfkVmSMfhg3u48LseG9Q,2032
+ubuntu_package_download/lib.py,sha256=5_LNNPdQBAmV4xWDZ5cSPmk-RU01b9ATU4iLdFbgvqw,13809
+ubuntu_package_download/libstdc++6_12.3.0-1ubuntu1~22.04_amd64.deb,sha256=g4cwWOaSk2oJZJ7eL45wuH3eHz9UiNtT2oCBuBx5pdk,698604
+ubuntu_package_download-0.0.4.dist-info/AUTHORS.rst,sha256=q7LYFWocRRwSZTUUJfqMrBFbBo2cgzyhF9JXlD-oH5s,162
+ubuntu_package_download-0.0.4.dist-info/LICENSE,sha256=NxfyhEBBFeXWYd6DV5U1mPYGxQFO6im6L3aF782AbvI,1565
+ubuntu_package_download-0.0.4.dist-info/METADATA,sha256=1dg45hFirQoyFyM4yIS3_OyHf1MVzNsLxADrnQO57n8,2653
+ubuntu_package_download-0.0.4.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+ubuntu_package_download-0.0.4.dist-info/entry_points.txt,sha256=7Q1ikm80SV-DARyD-5Wqg7DwstF_jNUey_SATpg5JBs,76
+ubuntu_package_download-0.0.4.dist-info/top_level.txt,sha256=WirVqS857KjngSLkbLXQjF2cylwEW_DQ50M2PLlbvrc,24
+ubuntu_package_download-0.0.4.dist-info/RECORD,,
