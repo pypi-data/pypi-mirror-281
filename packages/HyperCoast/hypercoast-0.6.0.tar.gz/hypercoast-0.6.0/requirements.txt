@@ -1,0 +1,12 @@
+dask
+geopandas
+h5netcdf
+hvplot
+leafmap
+localtileserver
+netcdf4
+numpy
+rioxarray
+s3fs
+scipy
+xarray
