@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ks_currency_converter/__init__.py
+ks_currency_convertor.egg-info/PKG-INFO
+ks_currency_convertor.egg-info/SOURCES.txt
+ks_currency_convertor.egg-info/dependency_links.txt
+ks_currency_convertor.egg-info/top_level.txt
