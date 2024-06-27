@@ -1,0 +1,44 @@
+# PyTulpa
+
+PyTulpa is a powerful and flexible neural network library that provides tools for building and training various types of neural networks, including Liquid Neural Networks (LNNs).
+
+## Features
+
+- Easy-to-use API for creating and training neural networks
+- Support for Liquid Neural Networks (LNNs)
+- Various optimization algorithms (SGD, Adam)
+- Multiple activation functions (tanh, ReLU, sigmoid)
+- Loss functions (MSE, Cross-Entropy)
+
+## Installation
+
+You can install PyTulpa using pip: pip install pytulpa
+
+## Usage
+
+```python
+import numpy as np
+from pytulpa import PyTulpa, LNN, Adam, mse
+
+# Create a random dataset
+X = np.random.randn(100, 10)
+y = np.random.randn(100, 1)
+
+# Create a Liquid Neural Network
+model = LNN(input_size=10, hidden_size=20, output_size=1)
+
+# Create an optimizer
+optimizer = Adam(learning_rate=0.01)
+
+# Create a PyTulpa instance
+pt = PyTulpa()
+
+# Compile the model
+pt.compile(model=model, optimizer=optimizer, loss_fn=mse)
+
+# Train the model
+history = pt.train(X, y, epochs=100, batch_size=32)
+
+# Make predictions
+predictions = pt.predict(X)
+```
