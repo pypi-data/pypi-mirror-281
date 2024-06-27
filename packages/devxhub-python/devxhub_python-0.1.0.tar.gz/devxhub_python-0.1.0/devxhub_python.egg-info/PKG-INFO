@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: devxhub-python
+Version: 0.1.0
+Summary: A custom CLI for generating Django projects with Cookiecutter templates
+Home-page: https://github.com/git-jamil/devxhub_python
+Author: Jamil Rayhan
+Author-email: jamil.rayhan.bsmrstu@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# devxhub_python
+
+A custom CLI for generating Django projects with Cookiecutter templates.
+
+## Installation
+
+```sh
+pip install devxhub_python
+```
+
+## Usage
+
+```sh
+devxhub_python https://github.com/devxhub/django-boilerplate
+```
