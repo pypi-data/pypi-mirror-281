@@ -1,0 +1,11 @@
+httpx
+aiosqlite
+packaging
+
+[dev]
+simple-repository[test]
+
+[test]
+pytest
+pytest_asyncio
+pytest_httpx
