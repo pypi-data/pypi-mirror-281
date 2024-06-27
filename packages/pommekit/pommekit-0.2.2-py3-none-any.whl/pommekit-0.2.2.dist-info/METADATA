@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: pommekit
+Version: 0.2.2
+Summary: Experimental Python package for various Apple APIs and services.
+Home-page: https://github.com/Cypheriel/PommeKit
+License: AGPL-3.0-or-later
+Author: Mikel
+Author-email: 61402923+Cypheriel@users.noreply.github.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: cryptography (>=42.0.7,<43.0.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: rich (>=13.7.1,<14.0.0)
+Requires-Dist: typer (>=0.12.3,<0.13.0)
+Requires-Dist: websockets (>=12.0,<13.0)
+Project-URL: Bug Tracker, https://github.com/Cypheriel/PommeKit/issues
+Project-URL: Repository, https://github.com/Cypheriel/PommeKit
+Description-Content-Type: text/markdown
+
+# PommeKit
+Experimental Python package for various Apple APIs and services.
+
+## Table of Contents
+<!-- TOC -->
+* [PommeKit](#pommekit)
+  * [Table of Contents](#table-of-contents)
+  * [Current Supported Services](#current-supported-services)
+  * [Copyright Notice](#copyright-notice)
+<!-- TOC -->
+
+## Current Supported Services
+| Service/API Name                       | Features/Supported Functions                                                                                                 |
+|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| Albert                                 | <ul><li>Generate certificate signing request (CSR)</li><li>Provision APNs credentials (push key/push certificate)</li></ul>  |
+| Apple Push Notification service (APNs) | <ul><li>Sending/receiving commands</li><li>Hosting a custom APNs courier</li><li>High-level event-based client API</li></ul> |
+| Apple Identity Service (IDS)           | <ul><li>User authentication</li><li>Device registration</li><li>Handle querying</li></ul>                                    |
+| GrandSlam Authentication (GSA)         | <ul><li>Authentication via GSA</li><li>Limited RFC 5054-compatible SRP implementation</li></ul>                              |
+| Anisette                               | <ul><li>Anisette v3 provisioning via external provider</li></ul>                                                             |
+
+
+
+## Copyright Notice
+```
+PommeKit — Python library with various tools for interacting with Apple services and APIs
+Copyright (C) 2024  Cypheriel
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
