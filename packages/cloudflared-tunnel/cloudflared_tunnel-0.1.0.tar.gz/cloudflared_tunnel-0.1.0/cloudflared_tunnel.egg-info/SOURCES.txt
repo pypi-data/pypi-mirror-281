@@ -1,0 +1,9 @@
+LICENSE
+README.md
+cloudflared_tunnel.py
+setup.py
+cloudflared_tunnel.egg-info/PKG-INFO
+cloudflared_tunnel.egg-info/SOURCES.txt
+cloudflared_tunnel.egg-info/dependency_links.txt
+cloudflared_tunnel.egg-info/requires.txt
+cloudflared_tunnel.egg-info/top_level.txt

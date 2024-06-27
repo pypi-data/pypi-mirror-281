@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: cloudflared-tunnel
+Version: 0.1.0
+Summary: Start a TryCloudflare Tunnel with a context manager.
+Home-page: https://github.com/UWUplus/soldni/python-cloudflare-tunnel
+Author: Ralf Rademacher and Luca Soldaini
+Keywords: cloudflare tunnel python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Cloudflared Context Manager
+
+Simple context manager to create a Cloudflared tunnel for a localhost port of choice.
+
+Minimal example on how to use this package with Gradio:
+
+```python
+import gradio as gr
+import cloudflared_tunnel
+
+with gr.Blocks() as demo:
+    with gr.Column():
+        with gr.Row():
+            input_text = gr.Textbox(lines=10, label="Input")
+            output_text = gr.Textbox(lines=10, label="Output")
+        submit_button = gr.Button(value="Echo")
+    submit_button.click(lambda x: x, inputs=input_text, outputs=output_text)
+
+if __name__ == "__main__":
+    with cloudflared_tunnel.run() as port:
+        demo.launch(show_api=False, server_port=port)
+```
+
+## Acknowledgements
+
+This project is derived from [flask-cloudflared](https://github.com/UWUplus/flask-cloudflared), which in turn is based on [flask-ngrok](https://github.com/gstaff/flask-ngrok).
