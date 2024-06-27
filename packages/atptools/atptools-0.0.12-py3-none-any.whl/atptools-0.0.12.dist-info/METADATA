@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: atptools
+Version: 0.0.12
+Summary: Dataset manipulation tool.
+Author-email: Andraz Polak <andrazpolak@gmail.com>
+Project-URL: homepage, https://github.com/atp-things/pkgpy-atp-dataset
+Project-URL: repository, https://github.com/atp-things/pkgpy-atp-dataset
+Keywords: dataset,measurement
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: toml
+Requires-Dist: types-toml
+Requires-Dist: types-pyyaml
+Requires-Dist: aiofiles
+
+# pkgpy-atp-tools
+
+Simple tools for data manipulation.
+
+## URLs
+
+- [GitHub](https://github.com/atp-things/pkgpy-atp-dataset)
+- [PyPI](https://pypi.org/project/atpdataset/)
+
+## Installation
+
+### From PyPI
+
+```bash
+pip install atptools
+```
