@@ -1,0 +1,5 @@
+setup.py
+inephany.egg-info/PKG-INFO
+inephany.egg-info/SOURCES.txt
+inephany.egg-info/dependency_links.txt
+inephany.egg-info/top_level.txt
