@@ -1,0 +1,5 @@
+django-appconf
+
+[test]
+coveralls
+testfixtures
