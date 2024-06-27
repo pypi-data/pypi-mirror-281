@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: djako-plugin-ya-metrics
+Version: 0.0.3a0
+Summary: Плагин для Djako, который предоставляет интеграцию с API Яндекс метрики и визуализирует счётчики через Chart.js
+Home-page: https://github.com/RedHelium?tab=repositories
+Author: Brilev Denis
+Author-email: brilevdv@digitaleden.ru
+Project-URL: Documentation, https://github.com/RedHelium?tab=repositories
+Keywords: Djako,Django,CMS,Web,Charts,Yandex Metrics,Admin Widgets
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 5.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Djako Plugin Yandex Metrics
+
+
+РџР»Р°РіРёРЅ РґР»СЏ Djako, РєРѕС‚РѕСЂС‹Р№ РїСЂРµРґРѕСЃС‚Р°РІР»СЏРµС‚ 
+РёРЅС‚РµРіСЂР°С†РёСЋ СЃ API РЇРЅРґРµРєСЃ РјРµС‚СЂРёРєРё Рё РІРёР·СѓР°Р»РёР·РёСЂСѓРµС‚ СЃС‡С‘С‚С‡РёРєРё С‡РµСЂРµР· Chart.js
+
+## Р‘С‹СЃС‚СЂС‹Р№ СЃС‚Р°СЂС‚
+-----------
+
+1. Р”РѕР±Р°РІСЊС‚Рµ "djako_plugin_ya_metrics" РІ INSTALLED_APPS::
+
+    INSTALLED_APPS = [
+        ...,
+        "djako_plugin_ya_metrics",
+    ]
+
+2. Р”РѕР±Р°РІСЊС‚Рµ РјР°СЂС€СЂСѓС‚С‹ РїР»Р°РіРёРЅР° РІ urls.py РїСЂРѕРµРєС‚Р°::
+
+    path("", include("djako_plugin_ya_metrics.urls")),
+
+3. Р—Р°РїСѓСЃС‚РёС‚Рµ ``python manage.py migrate`` РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РјРѕРґРµР»РµР№.
+
+4. РџРµСЂРµР№РґРёС‚Рµ РІ РїР°РЅРµР»СЊ Р°РґРјРёРЅР°, Р·Р°С‚РµРј РґРѕР±Р°РІСЊС‚Рµ СЃРЅР°С‡Р°Р»Р° СЃС‡С‘С‚С‡РёРє, СЃС‚РёР»СЊ РґРёР°РіСЂР°РјРј, Р° Р·Р°С‚РµРј СЃР°РјРё РґРёР°РіСЂР°РјРјС‹.
