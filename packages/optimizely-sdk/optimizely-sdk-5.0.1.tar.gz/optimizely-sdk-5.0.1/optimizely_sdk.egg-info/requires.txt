@@ -1,0 +1,16 @@
+jsonschema>=3.2.0
+pyrsistent>=0.16.0
+requests>=2.21
+idna>=2.10
+
+[test]
+idna>=2.10
+jsonschema>=3.2.0
+python-coveralls
+flake8>=4.0.1
+pytest>=6.2.0
+pytest-cov
+requests>=2.21
+funcsigs>=0.4
+pyrsistent>=0.16.0
+coverage
