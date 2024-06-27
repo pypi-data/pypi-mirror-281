@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: bert-onnx
+Version: 0.0.1
+Home-page: https://github.com/pengzhendong/bert-onnx
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
