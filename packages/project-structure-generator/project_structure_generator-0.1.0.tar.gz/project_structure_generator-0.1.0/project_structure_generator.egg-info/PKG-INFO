@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: project-structure-generator
+Version: 0.1.0
+Summary: A package to generate a predefined project structure
+Author: Vaishali Khandwala
+Author-email: Vaishali@softvan.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Project Structure Generator
+
+`project_structure_generator` is a Python package that automatically creates a predefined directory structure for a backend project. This tool helps you quickly set up the necessary folders and `__init__.py` files for a Python project.
+
+## Features
+
+- Creates a `backend` directory with the following subdirectories:
+  - `api/controller`
+  - `client`
+  - `custom_enum`
+  - `dao`
+  - `db`
+  - `dto`
+  - `routes`
+  - `service`
+  - `utils`
+  - `vo`
+
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install project_structure_generator
