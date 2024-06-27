@@ -1,0 +1,3 @@
+---
+database:
+  mongodbUri: 'url de conexion a base de datos Mongo DB'
