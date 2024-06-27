@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: odoo13-addon-generate_pos_orders_ddaa
+Version: 13.0.0.0.1
+Requires-Python: >=3.5
+Requires-Dist: odoo13-addon-gestion_editorial
+Requires-Dist: odoo>=13.0a,<13.1dev
+Summary: =?utf-8?q?M=C3=B3dulo_para_generar_DDAA_para_antiguos_pedidos_realizados_desde_POS=2E?=
+Home-page: https://framagit.org/devcontrol
+License: OPL-1
+Author: Colectivo DEVCONTROL
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 13.0
+
+Módulo para generar DDAA para antiguos pedidos realizados desde POS.
