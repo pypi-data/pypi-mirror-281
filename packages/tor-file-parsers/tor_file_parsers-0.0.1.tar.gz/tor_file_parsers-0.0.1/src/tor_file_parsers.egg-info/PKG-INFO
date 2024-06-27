@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tor_file_parsers
+Version: 0.0.1
+Summary: Parsers for various files in Tor
+Author-email: Ran Tao <rt822@georgetown.edu>
+Project-URL: Homepage, https://github.com/higher-order/tor_file_parsers
+Project-URL: Issues, https://github.com/higher-order/tor_file_parsers/issues
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Tor File Parsers
+This repository contains parsers for the various files in Tor.
+
+See example.py for usage examples.
