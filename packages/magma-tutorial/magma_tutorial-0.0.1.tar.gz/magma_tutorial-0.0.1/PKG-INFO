@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: magma_tutorial
+Version: 0.0.1
+Summary: A small example package
+Project-URL: Homepage, https://github.com/gstvortiz/magma_tutorial
+Project-URL: Issues, https://github.com/gstvortiz/magma_tutorial/issues
+Author-email: Example Author <gstvortiz@hotmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+A small example package
