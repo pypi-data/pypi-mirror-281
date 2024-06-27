@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: biscuit-cookies
+Version: 1.0
+Summary: The package is designed to work with cookies for the Chrome browser. The package allows you to delete, insert, receive and decrypt cookies.
+Home-page: https://github.com/GooseG4G/biscuit
+Author: GooseG4G
+Author-email: danilnegusev@inbox.ru
+Requires-Dist: pywin32
+Requires-Dist: pycryptodome
+Requires-Dist: pywin32
