@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+file_monitoring/__init__.py
+file_monitoring/monitor.py
+file_monitoring.egg-info/PKG-INFO
+file_monitoring.egg-info/SOURCES.txt
+file_monitoring.egg-info/dependency_links.txt
+file_monitoring.egg-info/entry_points.txt
+file_monitoring.egg-info/requires.txt
+file_monitoring.egg-info/top_level.txt
+tests/__init__.py
+tests/test_monitor.py

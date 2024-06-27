@@ -1,0 +1,2 @@
+[console_scripts]
+file_monitoring = file_monitoring.monitor:run_monitor
