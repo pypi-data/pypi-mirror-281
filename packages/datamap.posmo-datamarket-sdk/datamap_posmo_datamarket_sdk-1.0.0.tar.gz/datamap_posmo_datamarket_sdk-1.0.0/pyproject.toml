@@ -1,0 +1,33 @@
+[build-system]
+requires = ['hatchling']
+build-backend = 'hatchling.build'
+
+[tool.hatch.build.targets.wheel]
+packages = ['src/datamap']
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  'DEVELOPMENT.md',
+]
+
+[project]
+name = 'datamap.posmo_datamarket_sdk'
+version = '1.0.0'
+authors = [
+  { name='Datamap', email='contact@datamap.io' },
+]
+description = 'SDK for interacting with Posmo DataMarket API'
+readme = 'README.md'
+requires-python = '>=3.8'
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+]
+dependencies = [
+    'requests >= 2.20.0',
+]
+
+[project.urls]
+Homepage = 'https://github.com/datamapio/datamarket-sdk'
+Issues = 'https://github.com/datamapio/datamarket-sdk/issues'
