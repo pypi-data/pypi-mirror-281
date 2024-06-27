@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ plot.page_title }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body, div.pyg2-plot-container {
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="{{ plot.plot_id }}" class="pyg2-plot-container"></div>
+<script>
+    // load javascript
+    new Promise(function (resolve, reject) {
+        const script = document.createElement("script");
+        script.onload = resolve;
+        script.onerror = reject;
+        script.src = "https://unpkg.com/@antv/g2@5";
+        document.head.appendChild(script);
+    }).then(() => {
+        const chart_{{ plot.plot_id }} = new G2.Chart(
+            {container: '{{ plot.plot_id }}'}
+        )
+        {% if plot.plot_api_type == "spec" %}
+            chart_{{ plot.plot_id }}.options({{ plot.js_options }})
+        {% elif plot.plot_api_type == "api" %}
+            {% for item in plot.render_data %}
+                chart_{{ plot.plot_id }}.{{ item | join(".") }}
+            {% endfor %}
+        {% endif %}
+        chart_{{ plot.plot_id }}.render()
+    });
+</script>
+</body>
+</html>

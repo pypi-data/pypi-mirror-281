@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: g2
+Version: 2024.6.27
+Summary: Python3 binding for `@AntV/G2` Plotting Library .
+Author-email: "Max, Lin" <jason.m.lin@outlook.com>
+License: Apache 2.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: simplejson
+Requires-Dist: jinja2
+
+# pyG2
+
+Python3 binding for `@AntV/G2` Plotting Library .
+
+## Reference
+
+1. [@AntV/G2官方文档](https://g2.antv.antgroup.com/)
+2. [@AntV/G2官方代码仓库](https://github.com/antvis/g2)
+3. [PyG2Plot官方仓库](https://github.com/hustcc/PyG2Plot)
+
+## Attention
+
+1. 暂时不支持自定义js函数，因此参数中包含lambda函数的参数都暂时无法使用, 例如各种callback
+2. 参数里面如果传输component也暂时不支持，例如custom palette中的type. 主要影响各种custom组件
+
+## TODO
+
+- [x] dataclass自动转换
+- [x] kwargs自动处理
+- [x] xxx_ 参数名自动转 xxx
+- [x] Tuple类型转转json时自动转List
+- [x] G2模块依赖关系分析
