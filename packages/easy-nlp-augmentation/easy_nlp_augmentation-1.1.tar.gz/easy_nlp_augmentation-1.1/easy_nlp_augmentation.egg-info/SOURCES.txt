@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+easy_nlp_augmentation.egg-info/PKG-INFO
+easy_nlp_augmentation.egg-info/SOURCES.txt
+easy_nlp_augmentation.egg-info/dependency_links.txt
+easy_nlp_augmentation.egg-info/entry_points.txt
+easy_nlp_augmentation.egg-info/requires.txt
+easy_nlp_augmentation.egg-info/top_level.txt
+easy_text_augmenter/__init__.py
+easy_text_augmenter/augment.py
