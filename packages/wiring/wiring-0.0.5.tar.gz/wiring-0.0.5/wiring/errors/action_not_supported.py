@@ -1,0 +1,2 @@
+class ActionNotSupported(Exception):
+    pass
