@@ -1,0 +1,12 @@
+metisai/__init__.py,sha256=Xa79lWLkpDzh5dPrgTCdJLG3FiNRAKIODQyXFkGHNQg,105
+metisai/metisbot.py,sha256=gloHS7SCcidYJEyxqXnVCYZ0bqDUPd-0mo1rH9aY0xQ,5786
+metisai/metistypes.py,sha256=cd_g8Kh14HMW2n_X-QdyE2awUHq0fAoSaNYnWiktUEk,2602
+metisai/metisuser.py,sha256=WEhBkqF6oJPDW__nnp_A8R-wc33ycFn0JIQvkGG4dsE,961
+metisai/async_metis/__init__.py,sha256=TEjAdzl3_fzoXSz8mWi_ehUX0QAgItZXRjvzsyAmF7I,67
+metisai/async_metis/asyncmetis.py,sha256=BEMGmN_xtnHQl8_ARULOrDWhFSEECxwcrgevRYmli3k,6494
+metisai/async_metis/asyncmetisuser.py,sha256=eGF0NezGs9q5sj4mm7u8ry5sgsoHmwRBtk-3kNStiNM,1684
+metisai-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+metisai-0.2.0.dist-info/METADATA,sha256=cOn6t2xTBlhagw-Ir8uldz65ra0eHZZ4O9TxDkdcUEU,3456
+metisai-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+metisai-0.2.0.dist-info/top_level.txt,sha256=OsfK4I3zIliEN16uHZEG2fa7VHQw2mIGgMQH2_CtDZY,8
+metisai-0.2.0.dist-info/RECORD,,
