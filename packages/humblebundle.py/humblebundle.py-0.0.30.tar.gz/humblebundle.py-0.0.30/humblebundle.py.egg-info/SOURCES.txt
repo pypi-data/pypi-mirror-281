@@ -1,0 +1,5 @@
+humblebundle.py.egg-info/PKG-INFO
+humblebundle.py.egg-info/SOURCES.txt
+humblebundle.py.egg-info/dependency_links.txt
+humblebundle.py.egg-info/requires.txt
+humblebundle.py.egg-info/top_level.txt
