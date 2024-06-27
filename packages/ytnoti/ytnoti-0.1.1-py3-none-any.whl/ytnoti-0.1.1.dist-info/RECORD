@@ -1,0 +1,10 @@
+ytnoti/__init__.py,sha256=tfgLp3kYqIewTidHDJR6T1F_WdNp3h6RPEVVV3Mb1YE,20448
+ytnoti/enums.py,sha256=zLD8zZYBYGYgsLvP6bolbUJqbz1L-MjhgD6-lemj-_I,330
+ytnoti/types.py,sha256=PnWCQV-B70KO-kVEYeaTecnpHjYbZKpMgY3UsV1Odoo,325
+ytnoti/models/__init__.py,sha256=0zBJc6eAp6NlifQ-5xMe1SxEOh5VwvGi0rnaJBj1fVk,500
+ytnoti/models/notification.py,sha256=W4IQx-cJI9Mz69v2yVIY4gJ5Pe-NxrustQwooA4nLl4,1856
+ytnoti-0.1.1.dist-info/LICENSE.md,sha256=y6PRCaDI3hjy9w-gEDwJRwHbv25_XJzWyxIAb1_ubiw,1065
+ytnoti-0.1.1.dist-info/METADATA,sha256=6nxJcfv35KjaidTyXrjJwBxlrA3Ed4-PBWTlGV_oaVY,2973
+ytnoti-0.1.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ytnoti-0.1.1.dist-info/top_level.txt,sha256=S_cZOQDzak9VGTZm-KOXCw8fNIGAxbR-L6tyy0HXhZY,7
+ytnoti-0.1.1.dist-info/RECORD,,
