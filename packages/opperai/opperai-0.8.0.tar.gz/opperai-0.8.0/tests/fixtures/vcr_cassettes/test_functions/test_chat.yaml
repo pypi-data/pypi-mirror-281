@@ -1,0 +1,136 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/by_path/test/sdk/test_chat
+  response:
+    body:
+      string: '{"errors":[{"type":"HTTPException","message":"Function not found","detail":"Function
+        not found"}]}'
+    headers:
+      content-length:
+      - '98'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:06 GMT
+      server:
+      - uvicorn
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: '{"uuid": null, "path": "test/sdk/test_chat", "description": "Translate
+      to French", "input_schema": null, "out_schema": null, "instructions": "Translate
+      to French", "model": null, "index_ids": [], "use_semantic_search": null, "few_shot":
+      null, "few_shot_count": null, "cache_configuration": null}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '295'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/functions
+  response:
+    body:
+      string: '{"id":179,"uuid":"695c22c1-8177-4139-85cb-b31991b2e970","dataset_uuid":"1c537f70-0005-4425-9674-e4d62431094d","description":"Translate
+        to French","few_shot_count":2,"few_shot":false,"index_ids":[],"input_schema":null,"instructions":"Translate
+        to French","language_model_id":null,"model":"azure/gpt4-eu","out_schema":null,"path":"test/sdk/test_chat","project":{"uuid":"95a24c52-c137-42c6-be98-f751625712dc","name":"tt"},"revision":1,"use_semantic_search":false}'
+    headers:
+      content-length:
+      - '460'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:06 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/695c22c1-8177-4139-85cb-b31991b2e970
+  response:
+    body:
+      string: '{"id":179,"uuid":"695c22c1-8177-4139-85cb-b31991b2e970","dataset_uuid":"1c537f70-0005-4425-9674-e4d62431094d","description":"Translate
+        to French","few_shot_count":2,"few_shot":false,"index_ids":[],"input_schema":null,"instructions":"Translate
+        to French","language_model_id":null,"model":"azure/gpt4-eu","out_schema":null,"path":"test/sdk/test_chat","project":{"uuid":"95a24c52-c137-42c6-be98-f751625712dc","name":"tt"},"revision":1,"use_semantic_search":false}'
+    headers:
+      content-length:
+      - '460'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:06 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"parent_span_uuid": null, "messages": [{"role": "user", "content": "hello"}]}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '78'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/chat/test/sdk/test_chat
+  response:
+    body:
+      string: '{"span_id":"ed0d3c0c-ba73-47c6-920b-4e2c30578f1a","message":"Bonjour","json_payload":null,"context":null,"cached":false}'
+    headers:
+      content-length:
+      - '120'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:06 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/functions/695c22c1-8177-4139-85cb-b31991b2e970
+  response:
+    body:
+      string: ''
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:07 GMT
+      server:
+      - uvicorn
+    status:
+      code: 204
+      message: No Content
+version: 1

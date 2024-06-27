@@ -1,0 +1,79 @@
+interactions:
+- request:
+    body: '{"name": "test_delete_index"}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '29'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/indexes
+  response:
+    body:
+      string: '{"id":73,"uuid":"ad1708af-9837-4175-a04f-768e54ed87b1","name":"test_delete_index","project":{"uuid":"95a24c52-c137-42c6-be98-f751625712dc","name":"tt"},"files":[],"created_at":"2024-06-27T08:32:15.865917Z"}'
+    headers:
+      content-length:
+      - '206'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:15 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/indexes/ad1708af-9837-4175-a04f-768e54ed87b1
+  response:
+    body:
+      string: 'true'
+    headers:
+      content-length:
+      - '4'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:15 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/indexes/ad1708af-9837-4175-a04f-768e54ed87b1
+  response:
+    body:
+      string: '{"errors":[{"type":"HTTPException","message":"Index not found","detail":"Index
+        not found"}]}'
+    headers:
+      content-length:
+      - '92'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:15 GMT
+      server:
+      - uvicorn
+    status:
+      code: 404
+      message: Not Found
+version: 1

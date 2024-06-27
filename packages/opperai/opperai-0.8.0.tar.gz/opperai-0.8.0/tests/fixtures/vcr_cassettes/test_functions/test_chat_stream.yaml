@@ -1,0 +1,145 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/by_path/test/sdk/test_sync_chat_stream
+  response:
+    body:
+      string: '{"errors":[{"type":"HTTPException","message":"Function not found","detail":"Function
+        not found"}]}'
+    headers:
+      content-length:
+      - '98'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:07 GMT
+      server:
+      - uvicorn
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: '{"uuid": null, "path": "test/sdk/test_sync_chat_stream", "description":
+      "Translate to French", "input_schema": null, "out_schema": null, "instructions":
+      "Translate to French", "model": null, "index_ids": [], "use_semantic_search":
+      null, "few_shot": null, "few_shot_count": null, "cache_configuration": null}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '307'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/functions
+  response:
+    body:
+      string: '{"id":180,"uuid":"aeb827aa-905f-4121-8e69-27cc74d05ca7","dataset_uuid":"b5e61f08-6bab-4fb1-b441-5ef2fd01a1d7","description":"Translate
+        to French","few_shot_count":2,"few_shot":false,"index_ids":[],"input_schema":null,"instructions":"Translate
+        to French","language_model_id":null,"model":"azure/gpt4-eu","out_schema":null,"path":"test/sdk/test_sync_chat_stream","project":{"uuid":"95a24c52-c137-42c6-be98-f751625712dc","name":"tt"},"revision":1,"use_semantic_search":false}'
+    headers:
+      content-length:
+      - '472'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:07 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/aeb827aa-905f-4121-8e69-27cc74d05ca7
+  response:
+    body:
+      string: '{"id":180,"uuid":"aeb827aa-905f-4121-8e69-27cc74d05ca7","dataset_uuid":"b5e61f08-6bab-4fb1-b441-5ef2fd01a1d7","description":"Translate
+        to French","few_shot_count":2,"few_shot":false,"index_ids":[],"input_schema":null,"instructions":"Translate
+        to French","language_model_id":null,"model":"azure/gpt4-eu","out_schema":null,"path":"test/sdk/test_sync_chat_stream","project":{"uuid":"95a24c52-c137-42c6-be98-f751625712dc","name":"tt"},"revision":1,"use_semantic_search":false}'
+    headers:
+      content-length:
+      - '472'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:07 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"parent_span_uuid": null, "messages": [{"role": "user", "content": "hello"}]}'
+    headers:
+      accept:
+      - text/event-stream
+      cache-control:
+      - no-store
+      connection:
+      - keep-alive
+      content-length:
+      - '78'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/chat/test/sdk/test_sync_chat_stream?stream=True
+  response:
+    body:
+      string: "data: {\"span_id\": \"9e853f69-ace7-4ce7-a3a9-1e94d13755e1\"}\r\n\r\ndata:
+        {\"delta\": \"bon\"}\r\n\r\ndata: {\"delta\": \"jour\"}\r\n\r\n"
+    headers:
+      cache-control:
+      - no-cache
+      connection:
+      - keep-alive
+      content-type:
+      - text/event-stream; charset=utf-8
+      date:
+      - Thu, 27 Jun 2024 08:32:07 GMT
+      server:
+      - uvicorn
+      transfer-encoding:
+      - chunked
+      x-accel-buffering:
+      - 'no'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/functions/aeb827aa-905f-4121-8e69-27cc74d05ca7
+  response:
+    body:
+      string: ''
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:32:08 GMT
+      server:
+      - uvicorn
+    status:
+      code: 204
+      message: No Content
+version: 1

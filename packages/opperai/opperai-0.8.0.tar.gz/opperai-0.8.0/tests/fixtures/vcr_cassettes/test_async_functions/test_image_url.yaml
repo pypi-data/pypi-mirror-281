@@ -1,0 +1,143 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/by_path/test/sdk/test_image
+  response:
+    body:
+      string: '{"errors":[{"type":"HTTPException","message":"Function not found","detail":"Function
+        not found"}]}'
+    headers:
+      content-length:
+      - '98'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:30:58 GMT
+      server:
+      - uvicorn
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: '{"uuid": null, "path": "test/sdk/test_image", "description": null, "input_schema":
+      null, "out_schema": null, "instructions": "describe the image", "model": "openai/gpt4-turbo",
+      "index_ids": [], "use_semantic_search": null, "few_shot": null, "few_shot_count":
+      null, "cache_configuration": null}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '293'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/functions
+  response:
+    body:
+      string: '{"id":160,"uuid":"38751aee-c520-4aec-9557-d360201eef9b","dataset_uuid":"b654a58e-d908-47bd-8880-1c758b32ce0d","description":null,"few_shot_count":2,"few_shot":false,"index_ids":[],"input_schema":null,"instructions":"describe
+        the image","language_model_id":null,"model":"openai/gpt4-turbo","out_schema":null,"path":"test/sdk/test_image","project":{"uuid":"95a24c52-c137-42c6-be98-f751625712dc","name":"tt"},"revision":1,"use_semantic_search":false}'
+    headers:
+      content-length:
+      - '447'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:30:58 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: GET
+    uri: http://localhost:8000/v1/functions/38751aee-c520-4aec-9557-d360201eef9b
+  response:
+    body:
+      string: '{"id":160,"uuid":"38751aee-c520-4aec-9557-d360201eef9b","dataset_uuid":"b654a58e-d908-47bd-8880-1c758b32ce0d","description":null,"few_shot_count":2,"few_shot":false,"index_ids":[],"input_schema":null,"instructions":"describe
+        the image","language_model_id":null,"model":"openai/gpt4-turbo","out_schema":null,"path":"test/sdk/test_image","project":{"uuid":"95a24c52-c137-42c6-be98-f751625712dc","name":"tt"},"revision":1,"use_semantic_search":false}'
+    headers:
+      content-length:
+      - '447'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:30:58 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"parent_span_uuid": null, "messages": [{"role": "user", "content": [{"type":
+      "image_url", "image_url": {"url": "https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/e1/d3/e1d3fee9-9aaa-4599-ba67-1c71a6d0ed03/1200px-seymouria_fossil.jpg"}}]}]}'
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+      content-length:
+      - '251'
+      content-type:
+      - application/json
+    method: POST
+    uri: http://localhost:8000/v1/chat/test/sdk/test_image
+  response:
+    body:
+      string: '{"span_id":"e4128c45-54a2-4d52-96e3-c5900e2a6978","message":"The image
+        shows a fossilized skeleton of a small animal, possibly a prehistoric reptile,
+        embedded in a large, flat rock. The fossil is well-preserved and detailed,
+        showcasing the entire structure of the animal, including its spine, ribcage,
+        limbs, and skull. The rock itself appears to be sedimentary, typical of those
+        which preserve such fossils. The display is illuminated under directed lighting,
+        enhancing its details and textures. This is a characteristic setup for exhibiting
+        fossils in a museum or educational setting for scientific study and public
+        viewing.","json_payload":null,"context":null,"cached":false}'
+    headers:
+      content-length:
+      - '678'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:30:58 GMT
+      server:
+      - uvicorn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      connection:
+      - keep-alive
+    method: DELETE
+    uri: http://localhost:8000/v1/functions/38751aee-c520-4aec-9557-d360201eef9b
+  response:
+    body:
+      string: ''
+    headers:
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jun 2024 08:31:06 GMT
+      server:
+      - uvicorn
+    status:
+      code: 204
+      message: No Content
+version: 1
