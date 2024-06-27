@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: xba2l
+Version: 0.3.53
+Summary: A simple and fast A2L file parser.
+Home-page: https://xiangbei-tech.com/
+Author: Sun Bo
+Author-email: sunboemail@sina.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pympler >=1.0.1
+Requires-Dist: chardet >=5.2.0
+
+
+# 项目描述
+
+xba2l是一个 A2L 文件解析工具包, 提供了兼容 [ASAM MCD-2 MC 1.7.1](https://www.asam.net/standards/detail/mcd-2-mc/) 版本的语法分析 
+
+
+## 特色
+
+1. 快速的语法解析
+2. 完全用python语言编写, 适用于 python3.10 以上版本
+3. 自动编码编码
+
+## 安装
+
+```
+pip install xba2l
+
+```
+
+## 快速开始
+
+xba2l 安装完成后，新建文件 `quick_start.py`, 复制下面的代码并保存
+
+``` python
+import dataclasses
+import json
+import os
+import sys
+
+
+from xba2l import a2l_util
+from xba2l.etc import tool
+
+a2l_filename = input("Please input a2l filename:")
+if not os.path.isfile(a2l_filename):
+   print("file not exists")
+else:
+   err, asap2, module = a2l_util.parse_a2l(a2l_filename)
+   if err is not None:
+      print(err)
+   else:
+      # dump asap2 to console
+      json.dump(
+            dataclasses.asdict(
+                asap2,
+                dict_factory=lambda pairs: {
+                    pair[0]: pair[1] for pair in pairs if pair[1] is not None and pair[0] != "elements" and not pair[0].endswith("_dict")
+                },
+            ),
+            sys.stdout,
+            indent=4,
+            cls=tool.JsonEncoder,
+        )         
+
+```
+
+在命令行终端运行 `python3 quick_start.py`，并输入文件名称，然后您将看到解析后的a2l各类节点信息输出到终端上
+
+## 性能
+
+运行下面的性能测试命令, 用你的a2l文件名称或者包含a2l文件的目录名称替代 **{a2l filename}**
+
+``` shell
+python3 -m xba2l.performance "{a2l filename}"   
+```
+
+这是我的工作电脑运行结果
+
+**CPU: Intel(R) i9-13900HX** 包含 Measurement
+
+| 文件大小[MB]	    | Axis	 | Charecteristic	 | Blob	 | Measurement	 | 用时[s]      | 
+|-----------------|--------|-----------------|--------|--------------|--------------|
+| 4.0	            | 312	   | 2920	         | 0	   | 3151	      | 0.4          | 
+| 5.7	            | 887	   | 3491	         | 0	   | 6426	      | 0.5          |           
+| 8.1	            | 16	   | 16436	         | 0	   | 8919	      | 0.8          | 
+| 17.6	         | 78	   | 26167	         | 0	   | 18165	      | 1.4          | 
+| 21.1	         | 3569	| 25909	         | 0	   | 19902	      | 1.7          | 
+| 25.0	         | 129	   | 41857	         | 0	   | 37313	      | 2.7          | 
+| 31.2	         | 129	   | 46976	         | 0	   | 41605	      | 2.5          | 
+| 34.3	         | 156	   | 50322	         | 0	   | 46661	      | 2.7          | 
+
+**CPU: Intel(R) i9-13900HX** 跳过 Measurement
+
+| 文件大小[MB]	    | Axis	 | Charecteristic	 | Blob	 | Measurement	 | 用时[s]      |
+|-----------------|--------|-----------------|--------|--------------|--------------|
+| 4.0	            | 312	   | 2920	         | 0	   | 0	         | 0.3          | 
+| 5.7	            | 887	   | 3491	         | 0	   | 0	         | 0.4          | 
+| 8.1	            | 16	   | 16436	         | 0	   | 0	         | 0.7          | 
+| 17.6	         | 78	   | 26167	         | 0	   | 0	         | 1.2          | 
+| 21.1	         | 3569	| 25909	         | 0	   | 0	         | 1.5          | 
+| 25.0	         | 129	   | 41857	         | 0   	| 0	         | 1.9          | 
+| 31.2	         | 129	   | 46976	         | 0	   | 0	         | 2.1          | 
+| 34.3	         | 156	   | 50322	         | 0	   | 0         	| 2.2          | 
+
+
+## 使用说明
+
+- a2l_base.py
+
+   ``` python   
+   class Options:
+      calculate_memory_size: bool   # 是否计算解析后的数据占用内存大小，默认为 *False*
+      ignore_measurements: bool     # 是否忽略 Measurement, 默认 *True*
+      read_instance: bool           # 是否处理实例类变量 Instance, , 默认 *True*
+   ```
+
+- a2l_util.py
+
+   parse_a2l 函数：运行a2l文件解析，返回的数据类型请参考 a2l_lib.py 里的各种类定义
+   ``` python
+   def parse_a2l(
+      fn_or_content: str | bytes, 
+      encoding: str | None = None, 
+      options: Options | None = None,
+   ) -> tuple[Exception | None, Asap2 | None, Module | None]:
+   ```
+   1. 输入参数
+      fn_or_content：**A2l** 文件名称，或者是以及读取的 **A2l** 文件内容
+   2. 返回参数:
+      运行成功的话，返回的第一个参数为 **None**, 后面两个是 **Asap2** 和 **Module** 类对象；如果运行失败, 返回的第一个参数是一个 **Exception** 对象，用于描述失败原因
+
+- a2l_lib.py
+
+   这个文件里定义了多个和  [ASAM MCD-2 MC 1.7.1](https://www.asam.net/standards/detail/mcd-2-mc/) 标准里各个元素名称对应的类，用于描述解析结果；比如 **Asap2** 就是 **A2L** 解析后的根节点类
+
+   ``` python   
+   class Asap2:
+      asap2_version: Asap2Version  # 版本信息
+      project: Project             # Project节点
+      ...
+
+   ```
