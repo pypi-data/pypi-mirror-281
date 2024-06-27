@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: ascii-image-art
+Version: 0.0.4
+Summary: Python library to convert images into accii chararters text file and ascii characters images with color
+Author: Mohammad Asad
+License: MIT
+Keywords: python,ascii,image text,image to text,image to ascii,color ascii image
