@@ -1,0 +1,1 @@
+A package to quickly list my aws s3 bucket

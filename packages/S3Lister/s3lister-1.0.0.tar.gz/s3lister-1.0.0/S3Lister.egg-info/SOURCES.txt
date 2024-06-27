@@ -1,0 +1,7 @@
+README.md
+setup.py
+S3Lister/__init__.py
+S3Lister.egg-info/PKG-INFO
+S3Lister.egg-info/SOURCES.txt
+S3Lister.egg-info/dependency_links.txt
+S3Lister.egg-info/top_level.txt
