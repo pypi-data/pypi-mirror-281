@@ -1,0 +1,17 @@
+[project]
+name = "f2llm"
+version = "0.0.1"
+authors = [
+  { name="Mate Dravucz" }
+]
+description = "Folder to text for LLMs"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.urls]
+Homepage = "https://github.com/mattdravucz/f2llm"
+Issues = "https://github.com/mattdravucz/f2llm/issues"

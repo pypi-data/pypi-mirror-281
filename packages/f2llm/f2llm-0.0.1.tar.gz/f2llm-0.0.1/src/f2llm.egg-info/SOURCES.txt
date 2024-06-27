@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/f2llm/__init__.py
+src/f2llm/parser.py
+src/f2llm.egg-info/PKG-INFO
+src/f2llm.egg-info/SOURCES.txt
+src/f2llm.egg-info/dependency_links.txt
+src/f2llm.egg-info/top_level.txt
