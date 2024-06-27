@@ -1,0 +1,5 @@
+django-crum
+celery
+jsonfield
+Django
+django-ipware
