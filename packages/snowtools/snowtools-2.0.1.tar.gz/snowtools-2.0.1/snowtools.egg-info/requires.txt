@@ -1,0 +1,13 @@
+matplotlib
+netCDF4
+numpy
+scipy
+python-dateutil
+pyproj
+shapely
+psycopg2
+pyshp
+pandas
+xarray
+cartopy
+bronx

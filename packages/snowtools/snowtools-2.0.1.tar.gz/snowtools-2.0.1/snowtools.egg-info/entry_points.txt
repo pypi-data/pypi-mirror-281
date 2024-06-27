@@ -1,0 +1,4 @@
+[console_scripts]
+procompare = snowtools.plots.stratiprofile.procompare:main
+proplotter = snowtools.plots.stratiprofile.proplotter:main
+s2m = snowtools.tasks.s2m_command:main
