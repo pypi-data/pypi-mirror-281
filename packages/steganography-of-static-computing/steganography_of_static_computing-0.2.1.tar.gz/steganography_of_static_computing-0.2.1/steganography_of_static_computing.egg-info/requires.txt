@@ -1,0 +1,3 @@
+shiny
+opencv-python
+numpy
