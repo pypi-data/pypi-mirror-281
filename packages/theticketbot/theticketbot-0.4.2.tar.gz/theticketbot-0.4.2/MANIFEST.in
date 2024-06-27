@@ -1,0 +1,3 @@
+recursive-include src *.md *.po *.pot
+include src/theticketbot/migrations/*.sql
+include src/theticketbot/config_default.toml
