@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ColumnSplitFill
+Version: 0.1
+Summary: A Python library for splitting DataFrame columns and forward filling data.
+Author: Ashish Jaimon George
+Author-email: ashishjaimon@gmail.com
+Requires-Dist: pandas
+
