@@ -1,0 +1,11 @@
+README.md
+setup.py
+PYTHON_PACKAGE/__init__.py
+PYTHON_PACKAGE/__main__.py
+PYTHON_PACKAGE/test/data/data.txt
+wingechr_PYTHON_PACKAGE.egg-info/PKG-INFO
+wingechr_PYTHON_PACKAGE.egg-info/SOURCES.txt
+wingechr_PYTHON_PACKAGE.egg-info/dependency_links.txt
+wingechr_PYTHON_PACKAGE.egg-info/entry_points.txt
+wingechr_PYTHON_PACKAGE.egg-info/requires.txt
+wingechr_PYTHON_PACKAGE.egg-info/top_level.txt
