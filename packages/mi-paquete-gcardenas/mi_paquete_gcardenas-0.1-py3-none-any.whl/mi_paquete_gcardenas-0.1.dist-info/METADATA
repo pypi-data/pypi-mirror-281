@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mi_paquete_gcardenas
+Version: 0.1
+Summary: Una breve descripción de tu paquete
+Home-page: https://github.com/tu_usuario/mi_paquete
+Author: Tu Nombre
+Author-email: tu_email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Mi Paquete
+
+Este es un paquete de ejemplo para saludar.
+
+## InstalaciÃ³n
+
+```bash
+pip install mi_paquete
