@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: common-logging
+Version: 0.0.0
+Summary: python logging handler to fix the problem of your program having multiple instances and logging to the same file
+Home-page: https://github.com/utility-libraries/configlib-py
+Author: PlayerG9
+License: MIT
+Project-URL: Organisation Github, https://github.com/utility-libraries
+Project-URL: Homepage, https://github.com/utility-libraries/common-logging-py/
+Project-URL: Documentation, https://utility-libraries.github.io/common-logging-py/
+Project-URL: Bug Tracker, https://github.com/utility-libraries/common-logging-py/issues
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: all
+
+# common-logging
+python logging handler to fix the problem of your program having multiple instances and logging to the same file
+
+> package name reservation
+
+planned is something along the lines of
+
+```python
+import logging
+from commonlogging import CommonLoggingHandler
+
+APPLICATION_PORT=12345
+
+logging.basicConfig(
+    handlers=[
+        CommonLoggingHandler(port=12345, handler=logging.FileHandler("file.log"))
+    ]
+)
+```
