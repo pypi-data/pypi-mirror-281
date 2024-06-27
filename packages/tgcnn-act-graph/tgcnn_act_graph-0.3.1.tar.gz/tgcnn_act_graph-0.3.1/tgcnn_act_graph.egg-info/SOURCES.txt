@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+test_graphs/__init__.py
+test_graphs/test_calculations.py
+tgcnn_act_graph/__init__.py
+tgcnn_act_graph/calculations.py
+tgcnn_act_graph/figures.py
+tgcnn_act_graph/max_act_diff.py
+tgcnn_act_graph/utils.py
+tgcnn_act_graph.egg-info/PKG-INFO
+tgcnn_act_graph.egg-info/SOURCES.txt
+tgcnn_act_graph.egg-info/dependency_links.txt
+tgcnn_act_graph.egg-info/requires.txt
+tgcnn_act_graph.egg-info/top_level.txt
