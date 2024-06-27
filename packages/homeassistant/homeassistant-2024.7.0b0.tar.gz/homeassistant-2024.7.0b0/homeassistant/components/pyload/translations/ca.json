@@ -1,0 +1,14 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "port": "Port",
+                    "ssl": "Utilitza un certificat SSL",
+                    "username": "Nom d'usuari",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            }
+        }
+    }
+}

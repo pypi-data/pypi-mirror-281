@@ -1,0 +1,107 @@
+{
+    "config": {
+        "error": {
+            "invalid_access_token": "Ogiltig \u00e5tkomstnyckel"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "access_token": "\u00c5tkomstnyckel"
+                }
+            }
+        }
+    },
+    "entity": {
+        "lock": {
+            "vehicle_state_locked": {
+                "name": "L\u00e5s"
+            }
+        },
+        "media_player": {
+            "media": {
+                "name": "Mediaspelare"
+            }
+        },
+        "select": {
+            "climate_state_seat_heater_left": {
+                "name": "S\u00e4tesv\u00e4rme v\u00e4nster fram",
+                "state": {
+                    "high": "H\u00f6g",
+                    "low": "L\u00e5g",
+                    "medium": "Medium",
+                    "off": "Av"
+                }
+            },
+            "climate_state_seat_heater_rear_center": {
+                "state": {
+                    "off": "Av"
+                }
+            },
+            "climate_state_seat_heater_rear_left": {
+                "state": {
+                    "off": "Av"
+                }
+            },
+            "climate_state_seat_heater_rear_right": {
+                "state": {
+                    "off": "Av"
+                }
+            },
+            "climate_state_seat_heater_right": {
+                "state": {
+                    "high": "H\u00f6g",
+                    "low": "L\u00e5g",
+                    "medium": "Medium",
+                    "off": "Av"
+                }
+            },
+            "climate_state_seat_heater_third_row_left": {
+                "name": "S\u00e4tesv\u00e4rme tredje raden v\u00e4nster",
+                "state": {
+                    "high": "H\u00f6g",
+                    "low": "L\u00e5g",
+                    "medium": "Medium",
+                    "off": "Av"
+                }
+            },
+            "climate_state_seat_heater_third_row_right": {
+                "name": "S\u00e4tesv\u00e4rme tredje raden h\u00f6ger",
+                "state": {
+                    "high": "H\u00f6g",
+                    "low": "L\u00e5g",
+                    "medium": "Medium",
+                    "off": "Av"
+                }
+            },
+            "climate_state_steering_wheel_heat_level": {
+                "name": "Rattv\u00e4rme",
+                "state": {
+                    "high": "H\u00f6g",
+                    "low": "L\u00e5g",
+                    "off": "Av"
+                }
+            },
+            "components_customer_preferred_export_rule": {
+                "name": "Till\u00e5t export",
+                "state": {
+                    "battery_ok": "Batteri",
+                    "never": "Aldrig",
+                    "pv_only": "Endast solenergi"
+                }
+            },
+            "default_real_mode": {
+                "name": "Driftl\u00e4ge",
+                "state": {
+                    "autonomous": "Autonom",
+                    "backup": "S\u00e4kerhetskopia",
+                    "self_consumption": "Egen f\u00f6rbrukning"
+                }
+            }
+        },
+        "update": {
+            "vehicle_state_software_update_status": {
+                "name": "Uppdatera"
+            }
+        }
+    }
+}
