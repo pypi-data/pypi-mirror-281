@@ -1,0 +1,2 @@
+cheminf_EDU
+tests
