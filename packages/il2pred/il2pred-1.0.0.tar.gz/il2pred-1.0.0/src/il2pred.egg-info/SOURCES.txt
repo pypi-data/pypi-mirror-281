@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+src/il2pred.egg-info/PKG-INFO
+src/il2pred.egg-info/SOURCES.txt
+src/il2pred.egg-info/dependency_links.txt
+src/il2pred.egg-info/entry_points.txt
+src/il2pred.egg-info/requires.txt
+src/il2pred.egg-info/top_level.txt
+src/il2pred/Data/MERCI_motif_locator.pl
+src/il2pred/Data/dpc_len_model.pkl
+src/il2pred/Data/neg_motif.txt
+src/il2pred/Data/pos_motif.txt
+src/il2pred/Data/scaler.pkl
+src/il2pred/python_script/__init__.py
+src/il2pred/python_script/il2pred.py
