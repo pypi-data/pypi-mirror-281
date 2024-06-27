@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: ds_user
+Version: 0.0.5
+Summary: This library will make it easier to manage Discord accounts with an account token!
+Author-email: selfsff <example@gmail.com>
+Project-URL: Homepage, https://www.google.com
+Project-URL: Issues, https://www.google.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This library will make it easier to manage Discord accounts with an account token!
+
+# Examples:
+
+### Send Message
+
+```python
+from ds_user import client
+
+client = client.Account(token="Your_ds_account_token")
+
+client.send_message(channel_id=Channel_id, text="Hi")
+```
+
+### Delete Message
+
+```python
+from ds_user import client
+
+client = client.Account(token="Your_ds_account_token")
+
+client.delete_message(channel_id=Channel_id, message_id=Message_id)
+```
+
+### List Guilds
+
+```python
+from ds_user import client
+
+client = client.Account(token="Your_ds_account_token")
+
+guilds = client.list_guilds()
+
+print(guilds)
+```
+
+### Get Channel Messages
+
+```python
+from ds_user import client
+
+client = client.Account(token="Your_ds_account_token")
+
+messages = client.get_channel_messages(channel_id=Channel_id)
+
+print(messages)
+```
+
+### Delete Guild
+
+```python
+from ds_user import client
+
+client = client.Account(token="Your_ds_account_token")
+
+client.delete_guild(guild_id=Guild_id)
+```
