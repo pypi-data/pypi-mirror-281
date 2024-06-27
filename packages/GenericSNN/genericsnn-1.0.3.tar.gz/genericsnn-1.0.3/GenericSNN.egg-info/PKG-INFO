@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: GenericSNN
+Version: 1.0.3
+Summary: Python package that implements generic functionalities for Spiking Neural Network creation, fit and prediction.
+Author: Eesy-Innovation GmbH
+License: Proprietary
+Requires-Python: >=3.8
+License-File: LICENSE.rst
+Requires-Dist: tensorflow==2.9
+Requires-Dist: nengo==3.2
+Requires-Dist: nengo_dl==3.5
+Requires-Dist: nengo_extras==0.5.0
+Requires-Dist: numpy==1.24.2
+Requires-Dist: opencv-python==4.7.0.68
+Requires-Dist: matplotlib==3.6.3

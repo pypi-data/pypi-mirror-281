@@ -1,0 +1,14 @@
+LICENSE.rst
+README.md
+setup.cfg
+setup.py
+GenericSNN/SNN.py
+GenericSNN/SNN_nengo.py
+GenericSNN/SNN_template.py
+GenericSNN/SNN_visualization.py
+GenericSNN/__init__.py
+GenericSNN.egg-info/PKG-INFO
+GenericSNN.egg-info/SOURCES.txt
+GenericSNN.egg-info/dependency_links.txt
+GenericSNN.egg-info/requires.txt
+GenericSNN.egg-info/top_level.txt
