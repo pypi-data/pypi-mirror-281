@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: rsa-so
+Version: 0.1.0
+Summary: 
+Author: markcheney
+Author-email: markcheney@163.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# description
+```azure
+python不支持rsa是私钥加密，golang编译成so文件，让python调用: 
+python does not support rsa as a private key encryption, 
+golang is compiled into a so file for python to call
+```
+# build
+```
+go build -ldflags "-s -w" -buildmode=c-shared -o ./rsa_so/bin/rsa_darwin_arm.so ./go/main.go
+```
