@@ -1,0 +1,2 @@
+[console_scripts]
+YWP.install_packages = YWP:install_system_packages
