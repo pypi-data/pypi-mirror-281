@@ -1,0 +1,7 @@
+pymainprocess-0.1.1.dist-info/METADATA,sha256=PSm5y6loXUyIEvAJy0fOxLFg22DSEvFtbdynYG8qvaM,1908
+pymainprocess-0.1.1.dist-info/WHEEL,sha256=7A182M07anRy8xaBjS7o5d7Lnctr7KyZh0Iyqo1kv1k,127
+pymainprocess/child.py,sha256=OFHmnc_wUSkwgMjaHnTkvXJIzrG4xIcX0ZCruovjDEk,1076
+pymainprocess/plugin.py,sha256=0PzTSW6mNM88R6q2BgjckEG5fXUcPl6YP016ucpTUnk,1404
+pymainprocess/__init__.py,sha256=jhrQJt6xxDucbqgu3tIGH57OQBB0obQ-ND3cm6la5po,9828
+pymainprocess/pymainprocess.cpython-311-s390x-linux-gnu.so,sha256=rD90HThMCG2VIE_Q7TYZoQytAfTfjE5I_5PvdC_9doE,990472
+pymainprocess-0.1.1.dist-info/RECORD,,
