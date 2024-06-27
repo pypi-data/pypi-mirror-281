@@ -1,0 +1,3 @@
+[console_scripts]
+treeverse=treeverse.cli:app
+
