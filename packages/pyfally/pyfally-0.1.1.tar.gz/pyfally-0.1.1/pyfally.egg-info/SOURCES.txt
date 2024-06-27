@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyfally/__init__.py
+pyfally/api.py
+pyfally.egg-info/PKG-INFO
+pyfally.egg-info/SOURCES.txt
+pyfally.egg-info/dependency_links.txt
+pyfally.egg-info/requires.txt
+pyfally.egg-info/top_level.txt
