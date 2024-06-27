@@ -1,0 +1,5 @@
+robotframework-seleniumlibrary>=6.1.1
+pycryptodome>=3.19.0
+pymongo>=4.5.0
+robotframework-pabot>=2.16.0
+ratelimit>=2.2.1
