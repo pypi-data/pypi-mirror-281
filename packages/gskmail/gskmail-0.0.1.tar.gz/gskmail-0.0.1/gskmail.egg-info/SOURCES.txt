@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+send_email.py
+setup.py
+gskmail.egg-info/PKG-INFO
+gskmail.egg-info/SOURCES.txt
+gskmail.egg-info/dependency_links.txt
+gskmail.egg-info/top_level.txt
