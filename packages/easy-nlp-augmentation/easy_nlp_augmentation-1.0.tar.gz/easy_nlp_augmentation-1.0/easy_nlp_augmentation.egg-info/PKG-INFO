@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: easy-nlp-augmentation
+Version: 1.0
+Summary: A package for augmenting text data using NLP techniques
+Home-page: https://github.com/Shizu-ka/easy-nlp-augmentation
+Author: Shizuka
+Author-email: shizuka0@proton.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Text Augmenter
+
+Text Augmenter is a Python package for augmenting text data directly on your pandas dataframe using various NLP techniques. 
+There are only 3 techniques now : 
+- augment_random_word
+- augment_random_character
+- augment_word_bert
+
+### augment_random_word
+
+
+## Installation
+
+```bash
+pip install text_augmenter
