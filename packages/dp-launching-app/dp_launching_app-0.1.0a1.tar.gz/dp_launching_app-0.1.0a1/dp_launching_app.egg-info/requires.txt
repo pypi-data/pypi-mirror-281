@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+wcmatch
+colorama
+pydantic>=1.10.5
+pydantic-cli-pydantic-v2-compatible==4.4.0-alpha.1
+kubernetes>=28.1.0
+
+[dev]
+pytest
