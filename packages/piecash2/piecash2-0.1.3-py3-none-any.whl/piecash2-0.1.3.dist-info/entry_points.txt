@@ -1,0 +1,2 @@
+[console_scripts]
+piecash2 = piecash2.__main__:main
