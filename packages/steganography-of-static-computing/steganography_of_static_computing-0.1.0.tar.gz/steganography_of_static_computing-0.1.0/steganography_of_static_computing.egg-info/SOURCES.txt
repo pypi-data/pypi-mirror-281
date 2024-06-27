@@ -1,0 +1,14 @@
+README.md
+setup.py
+steganography_of_static_computing.egg-info/PKG-INFO
+steganography_of_static_computing.egg-info/SOURCES.txt
+steganography_of_static_computing.egg-info/dependency_links.txt
+steganography_of_static_computing.egg-info/requires.txt
+steganography_of_static_computing.egg-info/top_level.txt
+text_watermark/__init__.py
+text_watermark/attack.py
+text_watermark/extract.py
+text_watermark/functions.py
+text_watermark/pool.py
+text_watermark/recover.py
+text_watermark/version.py
