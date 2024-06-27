@@ -1,0 +1,20 @@
+coqpit
+fsspec
+numpy
+psutil
+soundfile
+tensorboard
+torch>=2.0
+
+[dev]
+coverage
+pre-commit
+pytest
+ruff==0.4.10
+
+[dev:python_version < "3.11"]
+tomli
+
+[test]
+accelerate
+torchvision
