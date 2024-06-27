@@ -1,0 +1,3 @@
+[console_scripts]
+parallels-docker-port-forwarding=parallels_docker_port_forwarding.main:main
+
