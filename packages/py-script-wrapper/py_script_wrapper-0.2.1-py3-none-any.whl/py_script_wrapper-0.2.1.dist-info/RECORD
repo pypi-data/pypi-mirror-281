@@ -1,0 +1,11 @@
+swrapper/__init__.py,sha256=ySwFwhy7KqyuwZgaJC3_GFuRC1quKv0ixClgxtSBGZU,168
+swrapper/__main__.py,sha256=Jh_nKQ7xDEf97K74hbthY_5t1w_Nt8Rq94F3SdzG_ss,448
+swrapper/exceptions.py,sha256=YfqGH5k45_2s08ATV2ZXGi9ZQpeJNdnpLqZ4fPDJwIM,44
+swrapper/wargs.py,sha256=mIdHq26xIK7MKV9LUs6hCP3qCv6TbLfn0ef77bZdPMo,550
+swrapper/wconfig.py,sha256=fkzbQpu5_Heuf6O-Hk_EqVBZtoD7TNE9BGvqGiTWsV4,1817
+swrapper/wlog.py,sha256=zoR5uRwDNsc4ArZ_FxaMWGyrnujbzHt8_TdvBQ4A5mo,3174
+py_script_wrapper-0.2.1.dist-info/LICENSE,sha256=k7Vcq9odlVa4DU5lircA7-Y2dzn5pnbFVsYTZZQx_lw,11342
+py_script_wrapper-0.2.1.dist-info/METADATA,sha256=31Vlu7-gqdbUjCM-IJRks-RBjc5KSkKGrmo9l3d6zCo,15266
+py_script_wrapper-0.2.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+py_script_wrapper-0.2.1.dist-info/top_level.txt,sha256=1RZs_ZXgVX67v45npfLMoz2Z2LHgY7BNzJ3JUiDg9zc,9
+py_script_wrapper-0.2.1.dist-info/RECORD,,
