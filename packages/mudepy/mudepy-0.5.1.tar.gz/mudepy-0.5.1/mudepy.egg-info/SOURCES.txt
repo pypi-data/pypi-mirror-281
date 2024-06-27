@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+nude.py
+setup.py
+skin_classifier.c
+skin_classifier.pyx
+mudepy.egg-info/PKG-INFO
+mudepy.egg-info/SOURCES.txt
+mudepy.egg-info/dependency_links.txt
+mudepy.egg-info/entry_points.txt
+mudepy.egg-info/not-zip-safe
+mudepy.egg-info/requires.txt
+mudepy.egg-info/top_level.txt
