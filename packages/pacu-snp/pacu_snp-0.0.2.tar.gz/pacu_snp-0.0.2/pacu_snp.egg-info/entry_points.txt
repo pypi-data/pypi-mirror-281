@@ -1,0 +1,2 @@
+[console_scripts]
+PACU = pacu.run_pacu:main
