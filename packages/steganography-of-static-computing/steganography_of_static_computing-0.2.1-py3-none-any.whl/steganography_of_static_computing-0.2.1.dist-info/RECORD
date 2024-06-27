@@ -1,0 +1,12 @@
+text_watermark/__init__.py,sha256=29lCEkUevRYpaYuynGRF0jfAyM8K2rBbkVcAcTfHgKw,56
+text_watermark/attack.py,sha256=fGjaxYgEzFbd2wGzVd8-HYGtYQsk8GzjV-tiumrUsVI,8886
+text_watermark/extract.py,sha256=URwiARL45uIILcHZV3qynpAcidZ6L-TA17k4p1ZUmnc,4769
+text_watermark/functions.py,sha256=p3Y9QNf4e5VaD7Cb5b_jndGsJkgraBBF6JlMxUxSLm4,12258
+text_watermark/pool.py,sha256=PeusuER1U6kpWMlbm4skutyUD81bWl724yvrMxC5SjE,1115
+text_watermark/recover.py,sha256=or3YRDGQTzD9i_8mYvbniL3Y9UkWHWUxFTpBMxQwm9I,3794
+text_watermark/shinywork.py,sha256=tdOH8nlwsmYevb4G1_TM3JMN6_l-l5BBBpzRa0RxiH0,3049
+text_watermark/version.py,sha256=eZTDsfebH_-8QiqiKLNiZnD2-MCSa3yNSasIFC-ZKYU,314
+steganography_of_static_computing-0.2.1.dist-info/METADATA,sha256=o0rH6Z5BvkrZTXDKqi9jUkNcxPJSeJBpR6I0WBEXFUk,628
+steganography_of_static_computing-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+steganography_of_static_computing-0.2.1.dist-info/top_level.txt,sha256=s1MR8SpHOy35bRHh09R4Vgc66wAwBDlcHvijLm4exCk,15
+steganography_of_static_computing-0.2.1.dist-info/RECORD,,
