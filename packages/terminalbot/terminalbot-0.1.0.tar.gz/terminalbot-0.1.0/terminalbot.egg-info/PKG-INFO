@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: terminalbot
+Version: 0.1.0
+Summary: A package to interact with a Telegram group by sending and receiving messages
+Home-page: https://mrfidal.in
+Author: Fidal
+Author-email: mrfidal@proton.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TerminalBot
+
+TerminalBot is a Python package for interacting with a Telegram group using a bot.

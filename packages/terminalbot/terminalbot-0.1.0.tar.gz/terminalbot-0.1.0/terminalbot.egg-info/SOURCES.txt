@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+terminalbot/__init__.py
+terminalbot/bot.py
+terminalbot.egg-info/PKG-INFO
+terminalbot.egg-info/SOURCES.txt
+terminalbot.egg-info/dependency_links.txt
+terminalbot.egg-info/entry_points.txt
+terminalbot.egg-info/requires.txt
+terminalbot.egg-info/top_level.txt
