@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+filamentlib/BiotSavart.py
+filamentlib/ClosedDerivatives.py
+filamentlib/EvolveKappaBinormal.py
+filamentlib/EvolveRegularBiotSavart.py
+filamentlib/KappaBinormal.py
+filamentlib/RegularBiotSavart.py
+filamentlib/__init__.py
+filamentlib.egg-info/PKG-INFO
+filamentlib.egg-info/SOURCES.txt
+filamentlib.egg-info/dependency_links.txt
+filamentlib.egg-info/requires.txt
+filamentlib.egg-info/top_level.txt
