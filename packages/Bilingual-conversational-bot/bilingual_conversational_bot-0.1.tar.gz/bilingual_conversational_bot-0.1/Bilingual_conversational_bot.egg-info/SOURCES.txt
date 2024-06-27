@@ -1,0 +1,10 @@
+README.md
+setup.py
+Bilingual_conversational_bot.egg-info/PKG-INFO
+Bilingual_conversational_bot.egg-info/SOURCES.txt
+Bilingual_conversational_bot.egg-info/dependency_links.txt
+Bilingual_conversational_bot.egg-info/entry_points.txt
+Bilingual_conversational_bot.egg-info/requires.txt
+Bilingual_conversational_bot.egg-info/top_level.txt
+bilingual_bot/__init__.py
+bilingual_bot/main.py

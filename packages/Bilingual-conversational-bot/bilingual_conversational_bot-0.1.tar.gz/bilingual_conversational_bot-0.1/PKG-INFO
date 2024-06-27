@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: Bilingual-conversational-bot
+Version: 0.1
+Summary: A Real-Time Live Bilingual Conversation bot for English to Spanish and Spanish to English using Streamlit
+Author: Palash Dandge
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit
+Requires-Dist: googletrans==4.0.0-rc1
+Requires-Dist: SpeechRecognition
+Requires-Dist: gtts
+Requires-Dist: pydub
+Requires-Dist: pyaudio
+
+# Bilingual Conversation Bot
+
+This Streamlit application allows for bilingual conversation using speech recognition and translation.
+
+## Installation
+
+pip install -r requirements.txt
+
+
+
+## Configuration
+Microphone: Ensure your microphone settings are configured correctly.
+Speaker: Set your speaker output according to the local machine and Microsoft Teams settings.
