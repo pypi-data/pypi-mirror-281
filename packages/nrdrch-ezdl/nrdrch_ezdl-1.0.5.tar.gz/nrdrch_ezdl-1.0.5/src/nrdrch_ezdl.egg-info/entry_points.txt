@@ -1,0 +1,2 @@
+[console_scripts]
+ezdl = ez_dl.__main__:main
