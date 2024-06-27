@@ -1,0 +1,10 @@
+Chromasens_Python_SDK/__init__.py,sha256=t3CI29VufMx95DZH7CtttOWQYvudYtCWrKpSJg0pcO0,123
+Chromasens_Python_SDK/_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Chromasens_Python_SDK/_files/base.py,sha256=OBEzdXTmxNhA_RwBHVxumP6m2PPDKcFq-f6uLcABwXg,12006
+Chromasens_Python_SDK/_files/genicam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Chromasens_Python_SDK/_files/genicam/genicam.py,sha256=2aEeY8GV748H_aonHlbFhgPjgOLttc69zspX9HRgKbc,92323
+Chromasens_Python_SDK/_files/genicam/genicam_ds.py,sha256=qhyCUqr_sJFnHqYmJml4BySgfckf_fiBHK2oiR3Ceg4,31030
+chromasens_python_sdk-2.0.1.dist-info/METADATA,sha256=vwGK6KZhpvPmEp8Isytwm6FrlLf4N_-DEUlglr9rhpY,1226
+chromasens_python_sdk-2.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+chromasens_python_sdk-2.0.1.dist-info/licenses/LICENSE.txt,sha256=LoV48WtuomVBIWbotLHaBF_MEfKNsD1mSQhBASSi8B4,35801
+chromasens_python_sdk-2.0.1.dist-info/RECORD,,
