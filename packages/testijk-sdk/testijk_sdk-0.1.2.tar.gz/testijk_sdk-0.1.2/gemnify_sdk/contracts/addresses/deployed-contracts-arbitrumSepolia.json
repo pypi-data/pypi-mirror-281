@@ -1,0 +1,131 @@
+{
+  "usdt": {
+    "address": "0xeF0339A533E68f920444a3BB576669871Ce54c29"
+  },
+  "PriceFeedUsdt": {
+    "address": "0x4097Bf415b167e96f4a79330a5a30C2EDDb2bA40"
+  },
+  "usde": {
+    "address": "0x3c3ac50dc87d549609a238E287666C82E4bCBA6F"
+  },
+  "PriceFeedUsde": {
+    "address": "0xe8D3F31a44489aB9a7119FDc2FA48917bE603d00"
+  },
+  "dai": {
+    "address": "0x254b40Ce47F7DA1867e594613D08a23E198d7FE7"
+  },
+  "PriceFeedDai": {
+    "address": "0x4EcF19f3Fdb404838223E84c23A08771aade349b"
+  },
+  "usdc": {
+    "address": "0x2f2F7Aa330Ef17019A9cB086da0970470fFe5a8c"
+  },
+  "PriceFeedUsdc": {
+    "address": "0x5b5A273FD637cd9980c5482efa4a2e8AbF886168"
+  },
+  "fdusd": {
+    "address": "0xc8E2ace39233FA977c7F388f31b4f232DAc647A2"
+  },
+  "PriceFeedFdusd": {
+    "address": "0x806b0295647200D4117de9D34e9FAB61cEe146fD"
+  },
+  "VaultPriceFeedProxy": {
+    "address": "0x45a63e69dcBd12AE3C73CC8C0314F8D8724d4EE1"
+  },
+  "VaultPriceFeedImpl": {
+    "address": "0x688975385d485162C9e6BB63a2962dC7F51B1123"
+  },
+  "FastPriceFeedProxy": {
+    "address": "0x5e31d8DDb8D884DF61F8484D93C4D4b57AA4B940"
+  },
+  "FastPriceFeedImpl": {
+    "address": "0x74f61E5669D0540abB2dc8E90A98D5755015661d"
+  },
+  "PositionUtils": {
+    "address": "0x78C869238C4A6599B7a66f0F31Eea6B2fa1B18C3"
+  },
+  "ConfigureLogic": {
+    "address": "0x4866385461161B17d3E72661ebC7c659923174e2"
+  },
+  "GenericLogic": {
+    "address": "0x4ff94E9f8d479c0a5397850C9dF3BED25BDBCD88"
+  },
+  "PositionLogic": {
+    "address": "0xad90cef06A234f01B17AF66D994d12c2BcF5fF15"
+  },
+  "SupplyLogic": {
+    "address": "0xafE4Eea5D98710123C2B25E2a6Fd74E84542534c"
+  },
+  "SwapLogic": {
+    "address": "0x2a05fe65bE55Ba3afAE05cd0a077168aAE19A81A"
+  },
+  "VaultProxy": {
+    "address": "0x58ef05684cd99Da865b84A32cBF57a3f49905CFb"
+  },
+  "VaultImpl": {
+    "address": "0x50277E7623cBFa2444D07Be27394930845081aeE"
+  },
+  "USDG": {
+    "address": "0x514f076C9f1f7a488b81c8A0a7387f6D38298D41"
+  },
+  "ULP": {
+    "address": "0xD4eBCe33E382FF8f9aB85184064924A8519e2e0d"
+  },
+  "RouterProxy": {
+    "address": "0x1106E663797fe709851c52eDF3B107e684e5b133"
+  },
+  "RouterImpl": {
+    "address": "0x806b99464a3787F20b950fA56A296C36bDc1c18e"
+  },
+  "OrderBookProxy": {
+    "address": "0x1718C9E2EE4Ac042e03A92783B3cAA7B0D927464"
+  },
+  "OrderBookImpl": {
+    "address": "0x1753F5E7473D074E51f1cD61A3eA7a2a887fC909"
+  },
+  "PositionRouterProxy": {
+    "address": "0x1a5988A9d7aD5262c9f60DdE4866896cb38fe70a"
+  },
+  "PositionRouterImpl": {
+    "address": "0x5e24137841cA6a17C90A111ab78a001288136239"
+  },
+  "PositionManagerProxy": {
+    "address": "0x809f4383F51B5F91aAcdCD611CD8CDaa4A98095c"
+  },
+  "PositionManagerImpl": {
+    "address": "0x3Be86EDC1cb3d30cFf3A5C130c9E41dc53526976"
+  },
+  "UlpManagerProxy": {
+    "address": "0x9cE3d7C182171EE694a2026b8A532eeaAA30ec90"
+  },
+  "UlpManagerImpl": {
+    "address": "0x8Ff028e91D592944D7F0ebB88CF625CB1F7ED39A"
+  },
+  "RewardTrackerProxy": {
+    "address": "0xA79C603ef7bd688b8018cf515f82Cb1810735975"
+  },
+  "RewardTrackerImpl": {
+    "address": "0xb0fA667431067b8D2018d93af59DFcB003e2722c"
+  },
+  "RewardDistributorProxy": {
+    "address": "0xCB057785fF78eA7f7Acf022038E0147e99D7b55a"
+  },
+  "RewardDistributorImpl": {
+    "address": "0x4B742878fcB248aE6e5d53EcB5C1B982779aD518"
+  },
+  "RewardRouterProxy": {
+    "address": "0x14315c49a84ED68ec557BfDA3A3205c42D4fF91b"
+  },
+  "RewardRouterImpl": {
+    "address": "0xE37cA54d3bfd45d56a58685113CdB96bEB3a5820"
+  },
+  "ReaderProxy": {
+    "address": "0xbEBB883c93B45144598c193cCac69069FF3C6c06"
+  },
+  "ReaderImpl": {
+    "address": "0xCDb8D98a49C8B76F79cc1581308c8a4A89e3Fe78"
+  },
+  "FundingFeeLogic": {
+    "address": "0xC52B783AA965fcbbddf080fD3ee350cc80b466b5"
+  }
+}
