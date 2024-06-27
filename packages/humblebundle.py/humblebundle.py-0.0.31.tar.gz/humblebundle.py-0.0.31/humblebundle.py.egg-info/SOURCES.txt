@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+humblebundle/__init__.py
+humblebundle/__main__.py
+humblebundle/api.py
+humblebundle/build_objects.py
+humblebundle.py.egg-info/PKG-INFO
+humblebundle.py.egg-info/SOURCES.txt
+humblebundle.py.egg-info/dependency_links.txt
+humblebundle.py.egg-info/requires.txt
+humblebundle.py.egg-info/top_level.txt
