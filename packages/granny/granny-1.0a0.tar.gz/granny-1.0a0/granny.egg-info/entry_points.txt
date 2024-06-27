@@ -1,0 +1,3 @@
+[console_scripts]
+granny = Granny.GrannyBase:run
+
