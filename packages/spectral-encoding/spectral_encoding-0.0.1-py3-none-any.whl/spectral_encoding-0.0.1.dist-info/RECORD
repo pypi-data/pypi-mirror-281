@@ -1,0 +1,9 @@
+spectral_encoding/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spectral_encoding/data/sensors.csv,sha256=RUGtac67Rn8EvYa9By_OlFwIdU3MxS7IX36R3jf5gbc,125458
+spectral_encoding/datamodel.py,sha256=sIlhRxm7OoO6fMrz3TC790dCjRak1dX-eM39t96Pyb0,275
+spectral_encoding/main.py,sha256=W0PM04cxsBG92So_oEEBrNMXC7PCjMrmxD85Ywx1wU4,7046
+spectral_encoding/utils.py,sha256=jgCUuDYxCRal72ps6uXFffUUGZfKIZ-x4EQ33uHzEwU,4622
+spectral_encoding-0.0.1.dist-info/LICENSE,sha256=YdB4BQMkMzWuKvXRIpQR4g91IQ_pwA5PSH2lNM97zFI,1070
+spectral_encoding-0.0.1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+spectral_encoding-0.0.1.dist-info/METADATA,sha256=FCbO1NR5WFpaIVUn0wmX4BZaCpnQ04tfjVHjsQSmBK0,3395
+spectral_encoding-0.0.1.dist-info/RECORD,,
