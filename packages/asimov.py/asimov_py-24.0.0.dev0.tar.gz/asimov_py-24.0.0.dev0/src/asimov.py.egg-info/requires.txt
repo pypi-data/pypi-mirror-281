@@ -1,0 +1,4 @@
+know.py>=0.0.2
+
+[test]
+pytest
