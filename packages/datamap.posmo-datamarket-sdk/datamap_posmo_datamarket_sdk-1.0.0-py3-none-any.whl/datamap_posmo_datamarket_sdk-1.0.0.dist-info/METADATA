@@ -1,0 +1,57 @@
+Metadata-Version: 2.3
+Name: datamap.posmo_datamarket_sdk
+Version: 1.0.0
+Summary: SDK for interacting with Posmo DataMarket API
+Project-URL: Homepage, https://github.com/datamapio/datamarket-sdk
+Project-URL: Issues, https://github.com/datamapio/datamarket-sdk/issues
+Author-email: Datamap <contact@datamap.io>
+License-File: LICENCE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: requests>=2.20.0
+Description-Content-Type: text/markdown
+
+# Posmo DataMarket SDK
+
+This is a Python SDK for interacting with the Posmo DataMarket API.
+
+## Usage
+
+Install with pip:
+```
+pip install datamap.posmo_datamarket_sdk
+```
+
+Import Posmo DataMarket client:
+```python
+from datamap.posmo_datamarket_sdk import PosmoDataMarket
+```
+
+Initialize client:
+```python
+datamarket = PosmoDataMarket(project_code='project', username='username', password='password')
+```
+
+Optionally you can provide username and password in environment variables:
+- Username: `POSMO_USERNAME`
+- Password: `POSMO_PASSWORD`
+
+### Client methods
+
+#### query(*query*)
+
+Executes provided SQL query and returns result.
+
+```python
+result = datamarket.query('SELECT * FROM moving;')
+```
+
+#### schema()
+
+Opens database schema documentation in default browser.
+
+```python
+datamarket.schema()
+```
