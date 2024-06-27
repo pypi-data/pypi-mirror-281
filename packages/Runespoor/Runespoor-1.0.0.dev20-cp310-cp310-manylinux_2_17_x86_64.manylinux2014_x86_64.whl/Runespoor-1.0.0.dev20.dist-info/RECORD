@@ -1,0 +1,16 @@
+Runespoor-1.0.0.dev20.dist-info/LICENSE,sha256=kFWpeNoYjfwrGE2Z7zY6s0WBYIdnN06uhTci0y5pzeo,1071
+Runespoor-1.0.0.dev20.dist-info/WHEEL,sha256=Dqx8jxXh1TxTWQQ073YWDkHOSMYFpBL59CLfyLoOIHM,151
+Runespoor-1.0.0.dev20.dist-info/top_level.txt,sha256=3MxCZZz_VimNf5gk3ym8WfGyfr951wT6JawdQDEU82A,10
+Runespoor-1.0.0.dev20.dist-info/RECORD,,
+Runespoor-1.0.0.dev20.dist-info/METADATA,sha256=xRLGeRIHlx1L4QK18S12JWAcW4XBI_E4T2zbVo1MAw4,7991
+Runespoor/default_fragment.glsl,sha256=Ws8fAvaiEBMm-yrhklGn3Emj4vEhHgKVrcUdQFDmEnE,298
+Runespoor/core.pyx,sha256=UIOHenccgxlCverJ50uIRJoXV6tX1PzXaM4m9Pw1N5c,30169
+Runespoor/default_vertex_2D.glsl,sha256=eSQA8DhiW9ChD3QKMnP0QV0aAXazwvReRaZNT_ce1Rk,229
+Runespoor/core.cpython-310-x86_64-linux-gnu.so,sha256=ZpzwTbiaZDn_5J6v6kCnaD53QFi8EQYsEDPwUVoJX4M,27263297
+Runespoor/core.pyi,sha256=4n9M1HOxRvrIa-Z-6NiKSD8X5A32S81Z0ysd-RMKJrU,18446
+Runespoor/MissingTexture.jpg,sha256=Ri9aQEUutusG1Bagwnc2f7MEl8w31kzDhHjOAfzH67M,42958
+Runespoor/default_fragment_2D.glsl,sha256=cesSj84KuzRIZnzXQn2zoI4zEEv5aRj0cJgBnTOKUdQ,170
+Runespoor/default_vertex.glsl,sha256=PHu80jNBA0xV4npgecW4qMkszpSPPIHPsPU1yDWsZxI,282
+Runespoor/core.pxd,sha256=p2MjQjNS1UUy7HJpcKWg1ojOnZ2iIhSz52Wm_INKNVU,19250
+Runespoor/__init__.py,sha256=p5BqNq2BBYESC2Vh5oduO3Vc1aAUyibr6cheVQfms-8,51
+Runespoor.libs/libSDL2-2-00949601.0.so.0.3000.4,sha256=vTFOX3yeNX2P06TXn33o1mHFleXmwB3RNxGOLcm3JJ0,2191297
