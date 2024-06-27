@@ -1,0 +1,7 @@
+click<9
+prometheus-client<1
+pyfaktory<1
+
+[dev]
+pre-commit<4
+ruff<1

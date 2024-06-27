@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: faktory-prometheus-exporter
+Version: 0.1.0
+Summary: Faktory metrics exporter for Prometheus, written in Python
+Author-email: Matthieu Rigal <matthieu.rigal@a2ei.org>
+License: MIT License
+        
+        Copyright (c) 2024 Prospect by A2EI
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://github.com/prospect-server/faktory-prometheus-exporter
+Keywords: faktory,prometheus,metrics
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click<9
+Requires-Dist: prometheus-client<1
+Requires-Dist: pyfaktory<1
+Provides-Extra: dev
+Requires-Dist: pre-commit<4; extra == "dev"
+Requires-Dist: ruff<1; extra == "dev"
+
+# faktory-prometheus-exporter
+
+> A Faktory Exporter written in Python for Prometheus.
+
+---
+
+## In a nutshell
+
+The *faktory_exporter* is a simple server that scrapes a configured 
+[Faktory](https://github.com/contribsys/faktory)
+instance for stats by issuing the "INFO" command and exports them via string message
+for [Prometheus](https://prometheus.io/docs/introduction/overview/) consumption.
+
+## Usage
+
+The URL used to scrape info from faktory is by default `tcp://:@localhost:7419`, but
+can be overwritten by using the `--faktory_url` arg or by specifying a `FAKTORY_URL`
+environment variable.
+
+### Install with pip
+
+Fastest way is simply running (preferably in a python env):
+```
+pip install faktory-prometheus-exporter
+faktory-prometheus-exporter [--faktory_url='tcp://:[password]@localhost:7419']
+```
+
+### Develop using uv or pip-compile
+
+The requirements format are the ones defined by `pip-compile`, from 
+[pip-tools](https://github.com/jazzband/pip-tools).
+You may also equally use `uv pip compile` from [uv](https://github.com/astral-sh/uv).
+
+```
+uv pip compile requirements.in -o requirements.txt
+uv pip compile requirements-dev.in -o requirements-dev.txt
+```
+
+Then you can either install locally to use the CLI or to run the python function:
+
+```
+uv pip install -e .
+faktory-prometheus-exporter [--faktory_url='tcp://:[password]@localhost:7419']
+python faktory_prometheus_exporter.py
+```
+
+### Build and use as docker container
+
+You may use the Dockerfile and run something like the following. Make sure that the
+exporter is in the same network than faktory, i.e. with `docker-compose`.
+
+```
+docker build -t faktory-prometheus-exporter:latest .
+docker run -d [--rm] faktory-prometheus-exporter:latest [--faktory_url='tcp://:[password]@localhost:7419']
+```
+
+### Inspiration / prior work
+
+Inspired by [this Faktory Exporter](https://github.com/lukasmalkmus/faktory_exporter/)
+written in go, but only partially maintained and not working out of the box when we
+needed it, so we built our own one.
