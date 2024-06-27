@@ -1,0 +1,27 @@
+# Project Description
+This package is created to control the **Hamamatsu C11204-01** power supply module for MPPC.
+The reference command manual (Doc.No.K29-B61218) was utilized to develop the code, which describes the command specifications (uses the UART communication protocol).
+
+For more information, please consult the following Git repository.
+[Repository](https://gitlab.ahuekna.org.ar/labo_6y7/2024/galan_moreno/software.git) 
+
+## Important
+The port connection object must be defined. For example:
+```
+import hamamatsu_c11204_01 as hm
+ser = hm.open_port(port_name) #port_name is the name of the port where the connection is made.
+```
+
+<br>
+
+# Descripción del proyecto
+Esta libreria está creada para controlar el módulo de fuente de alimentación **C11204-01** para MPPC de la empresa **Hamamatsu Photonics K.K.**
+Se utilizó el manual de comandos de referencia (Doc.No.K29-B61218) para desarrollar el código (utiliza el protocolo de comunicación UART).
+
+## Importante 
+Se debe definir el objeto de la conexión del puerto para utilizar las funciones del paquete. Por ejemplo:
+```
+import hamamatsu_c11204_01 as hm
+ser = hm.open_port(port_name) #port_name es el nobre del puerto donde se realiza la conexión.
+```
+<br>
