@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: hot_restart
+Version: 0.1
+Summary: Restart debugging your program in the function that failed.
+Author-email: "K.R. Zentner" <krzentner@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Home, https://github.com/krzentner/hot-restart
