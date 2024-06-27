@@ -1,0 +1,11 @@
+tgback/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgback/app.py,sha256=1keh206a-jGEDY4GohheYBnH65bJ6TE1O8suRMe_57s,25924
+tgback/tools.py,sha256=jbwvyVAqsHGmKnJEIZNSqffHRRhzBgC4fcNfbzI3C5U,8179
+tgback/version.py,sha256=eZ6RAGSBp4qof-W5tRY7m9metDjRRv0lt2n63panZN0,18
+tgback/data/help.txt,sha256=aGWfUwxgUc29W3ZM1vO_4qJ6cQamUUyO4H_wXvNOk94,2963
+tgback-5.2.1.dist-info/LICENSE,sha256=FdH0JthvZbwG-1ibxIHTMCX-2qefgaFeAkESeEHu2zQ,1089
+tgback-5.2.1.dist-info/METADATA,sha256=kSaQvRcVuEZO45kWgeKPwFyTUTYnuWT8B1A-_HVT2zE,6012
+tgback-5.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tgback-5.2.1.dist-info/entry_points.txt,sha256=Ez1mPSLKSESE5PSJLi_4JlGlgSVkIsjokp5rTxym6d8,44
+tgback-5.2.1.dist-info/top_level.txt,sha256=VkMn15tFQR7cnQWYnVf9re8BoqoLKBN9NVyQEj8GLcs,7
+tgback-5.2.1.dist-info/RECORD,,
