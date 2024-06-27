@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cpu-heater
+Version: 0.0.1
+Summary: A Python parallel computing library
+Author-email: SunBK201 <sunbk201gm@gmail.com>
+Project-URL: Homepage, https://github.com/SunBK201/cpu-heater
+Project-URL: Issues, https://github.com/SunBK201/cpu-heater/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CPU-Heater
+A Python parallel computing library
