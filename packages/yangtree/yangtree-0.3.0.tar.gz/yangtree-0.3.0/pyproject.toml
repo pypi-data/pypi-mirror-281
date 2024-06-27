@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools", "wheel", "pip-tools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yangtree"
+version = "0.3.0"
+description = "A project for generating YANG tree views."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name="Joachim Wiberg" }]
+keywords = ["YANG", "tree", "libyang", "HTML", "jstree"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+requires-python = ">= 3.8"
+dependencies = [
+    "cffi==1.16.0",
+    "libyang==2.7.1",
+    "pycparser==2.22"
+]
+
+[project.urls]
+homepage = "https://github.com/troglobit/yangtree"
+repository = "https://github.com/troglobit/yangtree"
+
+[project.scripts]
+yangtree = "yangtree.__main__:main"
+
+[tool.setuptools]
+packages = ["yangtree"]

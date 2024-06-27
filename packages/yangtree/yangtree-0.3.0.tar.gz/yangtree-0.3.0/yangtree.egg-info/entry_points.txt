@@ -1,0 +1,2 @@
+[console_scripts]
+yangtree = yangtree.__main__:main
