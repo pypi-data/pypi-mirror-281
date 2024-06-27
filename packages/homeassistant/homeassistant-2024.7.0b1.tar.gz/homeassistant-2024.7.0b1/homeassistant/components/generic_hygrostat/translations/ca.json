@@ -1,0 +1,30 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "device_class": "Classe de dispositiu",
+                    "name": "Nom",
+                    "target_sensor": "Sensor d'humitat"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "device_class": "Classe de dispositiu"
+                }
+            }
+        }
+    },
+    "selector": {
+        "device_class": {
+            "options": {
+                "dehumidifier": "Deshumidificador",
+                "humidifier": "Humidificador"
+            }
+        }
+    }
+}
