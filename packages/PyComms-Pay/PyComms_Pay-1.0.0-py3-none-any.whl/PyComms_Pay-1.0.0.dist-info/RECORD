@@ -1,0 +1,11 @@
+email_package/__init__.py,sha256=_hbBnhNzJxt5_qmb_R5yeDckak08yv894iaN-HhEn8E,24
+email_package/fetching.py,sha256=U0lYhMFLpV2br1baMXJTZ9IpvDgMJZRFC6GFLo9L3ZI,1221
+email_package/gmail.py,sha256=4KzPgIQKd-GX9yNRN63te8goItP6FxnSTeAjfDS9vFE,2400
+email_package/send.py,sha256=Q4vUWY5RcXnAnzZMADtu4Lky9YzmhXK_TA9lkjRNVW8,567
+email_package/trash.py,sha256=pZM0c2tslb0vef7C1XJVPTvQKJPDee2hAPsUaq1Nd3I,333
+payment_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+payment_package/momo.py,sha256=p4smtefUmv3eLruFJYY6LHPgXm_fdvqUBcFDAsQ8v0M,3568
+PyComms_Pay-1.0.0.dist-info/METADATA,sha256=HxexARoKQ0UVSELTkvYU5LpwwLLG0FwZYLVny0S3Ptg,678
+PyComms_Pay-1.0.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+PyComms_Pay-1.0.0.dist-info/top_level.txt,sha256=ThADLC4jdesvcdBYX6Tb1GwOPHBP72YvTfIc5a2Bq6Y,30
+PyComms_Pay-1.0.0.dist-info/RECORD,,
