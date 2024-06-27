@@ -1,0 +1,8 @@
+LICENSE
+README.md
+castellum_pseudonyms.py
+pyproject.toml
+castellum_pseudonyms.egg-info/PKG-INFO
+castellum_pseudonyms.egg-info/SOURCES.txt
+castellum_pseudonyms.egg-info/dependency_links.txt
+castellum_pseudonyms.egg-info/top_level.txt

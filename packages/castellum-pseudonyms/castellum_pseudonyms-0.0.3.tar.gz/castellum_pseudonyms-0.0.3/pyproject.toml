@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "castellum-pseudonyms"
+version = "0.0.3"
+readme = "README.md"
+license = {text = "AGPL-3.0-or-later"}
+description = "algorithms to generate, validate, and normalize pseudonyms"
+authors = [
+    {name = "Max-Planck-Gesellschaft", email = "castellum@mpib-berlin.mpg.de"},
+]
+
+[project.urls]
+Homepage = "https://git.mpib-berlin.mpg.de/castellum/castellum_pseudonyms"
+
+[tool.setuptools]
+py-modules = ["castellum_pseudonyms"]
