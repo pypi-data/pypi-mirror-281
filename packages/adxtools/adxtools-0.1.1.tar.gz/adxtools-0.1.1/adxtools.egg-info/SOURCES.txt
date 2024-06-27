@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+adxtools/__init__.py
+adxtools/__main__.py
+adxtools/adx_conversion.py
+adxtools/ahx_conversion.py
+adxtools/aix_conversion.py
+adxtools.egg-info/PKG-INFO
+adxtools.egg-info/SOURCES.txt
+adxtools.egg-info/dependency_links.txt
+adxtools.egg-info/top_level.txt
