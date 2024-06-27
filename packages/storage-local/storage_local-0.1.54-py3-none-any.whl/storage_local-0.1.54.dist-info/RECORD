@@ -1,0 +1,10 @@
+storage_local/aws_s3_storage_local/AWSStorage.py,sha256=D9q2hj6HIK1Jp1-99VZQZBtyqBD4xdtelpc_gnpxl60,4622
+storage_local/aws_s3_storage_local/Storage.py,sha256=Coadw72W48oCfAlDyKq_Y5GRvbbALXW8ss1NvaE_fCQ,8947
+storage_local/aws_s3_storage_local/StorageConstants.py,sha256=C2dkmA9xCQ9TLE8p1ovYmV7C4iwthRLONYRvvr8fDrQ,1765
+storage_local/aws_s3_storage_local/StorageDB.py,sha256=SsWIWQNaM0M5EUp56fp7y2GjQOTZ0BjT4KYCxrKctpk,1360
+storage_local/aws_s3_storage_local/StorageInterface.py,sha256=bZBegLtv-RMMBv37j4QLY-Xc1JsWLH5cDYY4--EVQb8,802
+storage_local/aws_s3_storage_local/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+storage_local-0.1.54.dist-info/METADATA,sha256=l1DWFilbXLLQMx4gIpcChHDI2GPHkD5aJDxIzks4Z5g,719
+storage_local-0.1.54.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+storage_local-0.1.54.dist-info/top_level.txt,sha256=sEGEyPv_nOM8eTXD2jUMxpGYBHwcqagQyGt2ae9jQFk,35
+storage_local-0.1.54.dist-info/RECORD,,
