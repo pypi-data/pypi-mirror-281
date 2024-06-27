@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "mdhar94-de-toolkit"
+version = "0.1.1"
+description = ""
+authors = ["Mischa Dhar <mischadhar94@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mdhar94_de_toolkit"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.1.7"
+
+[[tool.poetry.source]]
+name = "fury"
+url = "https://pypi.fury.io/mdhar94/"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+deng = 'mdhar94_de_toolkit.main:cli'
