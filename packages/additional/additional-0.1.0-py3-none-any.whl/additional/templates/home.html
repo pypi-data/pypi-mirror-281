@@ -1,0 +1,30 @@
+{% extends '_base.html' %}
+{% load socialaccount %}
+{% load account %}
+{% block content %}
+{% get_providers as socialaccount_providers %}
+{% providers_media_js %}
+<div class="container" style="text-align: center; padding-top: 10%;">
+  <h1>Login</h1>
+  <br /><br />
+
+  {% if user.is_authenticated %}
+    <h3 class="btn btn-primary">Welcome {{ user.username }} !!!</h3>
+    <br /><br />
+    <a href="{% url 'account_logout' %}" class="btn btn-danger">Logout</a>
+  {% else %}
+    <!-- GitHub button starts here -->
+    <a href="{% provider_login_url 'github' %}" class="btn btn-secondary">
+      <i class="fa fa-github fa-fw"></i>
+      <span>Login with GitHub</span>
+    </a>
+    <a href="{% provider_login_url 'google' %}"class="btn btn-secondary">
+    <i class="fa fa-google" aria-hidden="true"></i>   
+     <span>Sign in with Google</span>
+    </a>
+    <input type="hidden" name="next" value="{{ next }}" />
+    <!-- GitHub button ends here -->
+  {% endif %}
+</div>
+
+{% endblock content %}
