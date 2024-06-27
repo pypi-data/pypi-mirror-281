@@ -1,0 +1,15 @@
+unii/__init__.py,sha256=ulFiOTVAqVGadejb8besRn3F464fdN6X_CTC5OtjIz8,480
+unii/__main__.py,sha256=JBY3SgADOykpC5yVfZWl6rcIE9sefPPQ7wDrd8OBI-s,1454
+unii/_version.py,sha256=dgllcnsTaXojUQDwYB7cYtfzWYO6OkV7Iv-aAfdq1lg,414
+unii/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unii/sia_code.py,sha256=1KmEbA1CI8B54MShP16CZ8gKA_g0cc2VXu5OT-UxIKQ,5946
+unii/task_helper.py,sha256=6OBcvvzR4A4OB8JZ_PP-OIjZkMSU2RwW8X6W_HGDedc,884
+unii/unii.py,sha256=y_TXIfsAc7t_NMHeBEMMrDIDyA3m4fvHD3OGVgnJnlM,22651
+unii/unii_command.py,sha256=cMoOYDIvfGnnjvdBhh6qklDAFw_sTGs1DV3vmMp0GvE,2862
+unii/unii_command_data.py,sha256=ysSXMOWARpQZ52BIQ64o_VH-HkJmIztwFy0JS2vkpKw,28071
+unii/unii_connection.py,sha256=4wXyx_CfrPodeC6bJ5LHQzFleFRqgr3AmLVUHW9MgQY,10596
+unii/unii_message.py,sha256=fKkbKU3oF2tKyDPqxCKDShLmPcoOmqpgqjG-dZN_Qvk,13688
+unii-1.0.0b11.dist-info/METADATA,sha256=3hsFQQUBa16CBHRCkDSkMUFR6RS6OSd7fqg9d8MSd1M,2956
+unii-1.0.0b11.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+unii-1.0.0b11.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+unii-1.0.0b11.dist-info/RECORD,,
