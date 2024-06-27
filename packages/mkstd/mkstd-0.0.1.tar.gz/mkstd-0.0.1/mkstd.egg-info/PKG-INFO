@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mkstd
+Version: 0.0.1
+Summary: Make standards compatible with HDF5/JSON/XML/YAML.
+Author-email: Dilan Pathirana <dilan.pathirana@uni-bonn.de>
+Project-URL: Homepage, https://github.com/dilpath/mkstd
+Keywords: standard,hdf5,json,xml,yaml
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: hdfdict
+Requires-Dist: pydantic-yaml
+Requires-Dist: pydantic-xml[lxml]
+Requires-Dist: pydantic-xmlmodel
+Requires-Dist: xmlschema
+Requires-Dist: h5json
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+
+# mkstd
+
+A package to make standards.

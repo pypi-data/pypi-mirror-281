@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+mkstd/__init__.py
+mkstd/data_model.py
+mkstd/make_schemas.py
+mkstd/xsd.py
+mkstd.egg-info/PKG-INFO
+mkstd.egg-info/SOURCES.txt
+mkstd.egg-info/dependency_links.txt
+mkstd.egg-info/requires.txt
+mkstd.egg-info/top_level.txt

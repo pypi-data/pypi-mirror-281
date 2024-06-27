@@ -1,0 +1,12 @@
+pydantic
+hdfdict
+pydantic-yaml
+pydantic-xml[lxml]
+pydantic-xmlmodel
+xmlschema
+h5json
+
+[dev]
+black
+isort
+pytest
