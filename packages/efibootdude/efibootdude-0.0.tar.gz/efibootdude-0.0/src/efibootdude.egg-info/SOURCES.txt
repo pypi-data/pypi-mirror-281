@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/efibootdude/PowerWindow.py
+src/efibootdude/__init__.py
+src/efibootdude/main.py
+src/efibootdude.egg-info/PKG-INFO
+src/efibootdude.egg-info/SOURCES.txt
+src/efibootdude.egg-info/dependency_links.txt
+src/efibootdude.egg-info/entry_points.txt
+src/efibootdude.egg-info/requires.txt
+src/efibootdude.egg-info/top_level.txt
