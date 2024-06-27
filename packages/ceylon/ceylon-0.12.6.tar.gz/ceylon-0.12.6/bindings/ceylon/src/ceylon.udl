@@ -1,0 +1,62 @@
+namespace ceylon {
+  string version();
+};
+
+dictionary AgentDefinition{
+    string? id="";
+    string name;
+    string position;
+    sequence<string> responsibilities;
+    sequence<string> instructions;
+    boolean is_leader;
+};
+
+interface AgentCore{
+    constructor(AgentDefinition definition, MessageHandler on_message, Processor processor);
+
+    [Async]
+    AgentDefinition definition();
+    string workspace_id();
+
+    [Async]
+    void broadcast(bytes message);
+};
+
+enum MessageType{
+    "Message",
+    "Event",
+};
+
+dictionary Message{
+    bytes data;
+    string message;
+    u64 time;
+    string originator;
+    string originator_id;
+    MessageType type;
+};
+
+[Trait,WithForeign]
+interface MessageHandler {
+    [Async]
+    void on_message(string agent_id,Message message);
+};
+
+[Trait,WithForeign]
+interface Processor {
+    [Async]
+    void run(bytes inputs);
+};
+
+dictionary WorkspaceConfig{
+    string name;
+    string host = "/ip4/0.0.0.0/tcp/";
+    u16 port = 8888;
+};
+
+interface Workspace{
+    constructor(sequence<AgentCore> agents,WorkspaceConfig config);
+
+    [Async]
+    void run(bytes inputs);
+};
