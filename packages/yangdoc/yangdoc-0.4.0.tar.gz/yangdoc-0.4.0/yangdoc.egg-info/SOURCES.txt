@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+yangdoc/__init__.py
+yangdoc/__main__.py
+yangdoc/html.py
+yangdoc.egg-info/PKG-INFO
+yangdoc.egg-info/SOURCES.txt
+yangdoc.egg-info/dependency_links.txt
+yangdoc.egg-info/entry_points.txt
+yangdoc.egg-info/requires.txt
+yangdoc.egg-info/top_level.txt
