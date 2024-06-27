@@ -1,0 +1,7 @@
+LICENCE
+README.md
+setup.py
+hip_python.egg-info/PKG-INFO
+hip_python.egg-info/SOURCES.txt
+hip_python.egg-info/dependency_links.txt
+hip_python.egg-info/top_level.txt
