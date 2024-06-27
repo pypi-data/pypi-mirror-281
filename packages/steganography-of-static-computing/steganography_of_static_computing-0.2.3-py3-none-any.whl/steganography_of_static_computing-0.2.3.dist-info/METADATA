@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: steganography-of-static-computing
+Version: 0.2.3
+Summary: project
+Home-page: https://github.com/ECUsam/Steganography
+Author: ECUsam
+Author-email: wangyanzhao2003@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: shiny
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: line-profiler
+Requires-Dist: Pillow
+
+homework project of static computing
+
+use example
+```python
+import text_watermark
+
+text_watermark.start()
+```
+
+
