@@ -1,0 +1,11 @@
+casepy/__init__.py,sha256=PJMUeJ2LciZgbhPfZQxqaEDYvsrwTm_GFLkj8qS0RAY,307
+casepy/combination_generator.py,sha256=II6gKAiKTilFHO9SkSxX3xbAI6wBps78_8XYqJuYmVE,3418
+casepy/instant_method.py,sha256=63CPgct5hjdDPFgaBUNF4rwYom15_w9HxDTp3q5kKpA,5777
+casepy/permutation_generator.py,sha256=ViHhDp-Gp1FWkL8kbdGbd8AWdlp16700Rq3sHycgvHk,6303
+casepy/simple_methods.py,sha256=0FahZYHqy1nXII6hk5Sa2ywYmTOpvXfEBHX2i9tnEpU,2497
+casepy/utils.py,sha256=0Bq8lbx4Pxi1RIE-WCsNHPA3Bg3Jog2eIZkp33oc6WQ,585
+casepy-0.2.0.dist-info/LICENSE,sha256=T66QMVEDrBVLP_LKdOmNBFoQGh65zTUOmOeeDI3iBtk,1068
+casepy-0.2.0.dist-info/METADATA,sha256=LPysiEFwN2UPOa-WyFaRN3KxMsLDGfooe-0Wrq5T778,2181
+casepy-0.2.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+casepy-0.2.0.dist-info/top_level.txt,sha256=eurRNJjz7vbUHXrOS61dmg3FP3_Z7Mq1WKH7mdR4Tt8,7
+casepy-0.2.0.dist-info/RECORD,,
