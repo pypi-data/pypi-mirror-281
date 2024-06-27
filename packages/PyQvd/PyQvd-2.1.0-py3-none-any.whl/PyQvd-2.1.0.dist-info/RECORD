@@ -1,0 +1,10 @@
+pyqvd/__init__.py,sha256=EULV_CKh2SB5V9TuaWjFLsQN8hC50Ouh5I2-B6yFfOM,315
+pyqvd/qvd.py,sha256=BsxGoYw4zFsnfM5Bm_CIm4P0k0i_b7ntnZrXqoYunN0,89333
+pyqvd/io/__init__.py,sha256=SeXCIrLidfscQ3B_4V0uRHVtHOR4fTQyvT3NiqDaVz0,342
+pyqvd/io/reader.py,sha256=s_51Q5RVi0V0h921RN0tOrdHTwNbBWupJ1k8NKTF0-Q,12233
+pyqvd/io/writer.py,sha256=ryMctru9tl84arWhQ6MxqwDogm9Yzmk3fJ9nCshFt9A,21991
+PyQvd-2.1.0.dist-info/LICENSE.md,sha256=eQGFy1amHKJQJZSjwmSiyFwF7T5wIjbQ7gB8cNzjros,1096
+PyQvd-2.1.0.dist-info/METADATA,sha256=BT1sKB7Fi6Hv4HTZ_beArmlAQ9KiOogoSRt4EJ5WaU0,5060
+PyQvd-2.1.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+PyQvd-2.1.0.dist-info/top_level.txt,sha256=0PBWU_GVWG2zK_NdVnwh-g60irXJYS0choyremylIuA,6
+PyQvd-2.1.0.dist-info/RECORD,,
