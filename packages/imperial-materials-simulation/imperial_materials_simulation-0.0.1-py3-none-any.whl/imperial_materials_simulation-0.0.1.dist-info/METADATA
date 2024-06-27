@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: imperial-materials-simulation
+Version: 0.0.1
+Summary: Molecular simulation tool made for the undergraduate materials science and engineering theory and simulation module at Imperial College London
+Home-page: https://github.com/AyhamSaffar/imperial_materials_simulation
+Author: Ayham Al-Saffar
+Requires-Python: ~=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: ipykernel
+Requires-Dist: ipympl
+Requires-Dist: ipywidgets
+Requires-Dist: matplotlib
+Requires-Dist: numba >=0.60.0
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: py3dmol
+Requires-Dist: scipy
+
+This is a test to make sure this comes up
