@@ -1,0 +1,2 @@
+[console_scripts]
+bilingual-bot = bilingual_bot.main:main
