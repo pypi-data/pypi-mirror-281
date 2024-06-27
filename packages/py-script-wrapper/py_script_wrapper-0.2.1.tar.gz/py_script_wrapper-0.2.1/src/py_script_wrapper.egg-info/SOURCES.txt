@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/py_script_wrapper.egg-info/PKG-INFO
+src/py_script_wrapper.egg-info/SOURCES.txt
+src/py_script_wrapper.egg-info/dependency_links.txt
+src/py_script_wrapper.egg-info/requires.txt
+src/py_script_wrapper.egg-info/top_level.txt
+src/swrapper/__init__.py
+src/swrapper/__main__.py
+src/swrapper/exceptions.py
+src/swrapper/wargs.py
+src/swrapper/wconfig.py
+src/swrapper/wlog.py
