@@ -1,0 +1,34 @@
+# Build System Configuration
+## Cài đặt và biên dịch thư viện, liệt kê các thư viện cần cài đặt
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+# Metadata Information
+[project]
+name = "dung_pt"
+version = "1.0"
+description = "thu vien dung_pt"
+authors = [
+    { name = "VuDung", email = "vuhuudung@gmail.com" },
+    ]
+license = { file = "LICENSE.md" }
+requires-python = ">=3.7"
+readme = { file = "README.md", content-type = "text/markdown" }
+urls = { Homepage = "https://github.com" }
+
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+# liệt kê các gói phụ thuộc
+dependencies = [
+    "requests",
+    "pandas",
+    "openpyxl",
+    "numpy"
+]

@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: dung_pt
+Version: 1.0
+Summary: thu vien dung_pt
+Author: VuDung
+Author-email: VuDung <vuhuudung@gmail.com>
+Project-URL: Homepage, https://github.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: numpy
+
+# dung_pt
+ gói thư viện dung_pt
+
+
+# I. 🎤 Giới thiệu
+
+# II. ⏱️ Cập nhật đáng chú ý
+
+# III. 📔 Tài liệu hướng dẫn
+
+# IV. 🙋‍♂️ Thông tin liên hệ
+
+# V. 🔑 Giấy phép sử dụng (License)
+
+
