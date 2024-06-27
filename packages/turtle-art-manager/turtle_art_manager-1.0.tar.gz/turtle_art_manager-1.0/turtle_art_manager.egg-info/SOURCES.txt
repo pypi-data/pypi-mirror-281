@@ -1,0 +1,11 @@
+README.md
+setup.py
+turtle_art_manager/__init__.py
+turtle_art_manager/circle.py
+turtle_art_manager/rectangle.py
+turtle_art_manager/turtle_art.py
+turtle_art_manager/turtle_draw.py
+turtle_art_manager.egg-info/PKG-INFO
+turtle_art_manager.egg-info/SOURCES.txt
+turtle_art_manager.egg-info/dependency_links.txt
+turtle_art_manager.egg-info/top_level.txt
