@@ -1,0 +1,7 @@
+README.md
+setup.py
+casualimpact.egg-info/PKG-INFO
+casualimpact.egg-info/SOURCES.txt
+casualimpact.egg-info/dependency_links.txt
+casualimpact.egg-info/not-zip-safe
+casualimpact.egg-info/top_level.txt
