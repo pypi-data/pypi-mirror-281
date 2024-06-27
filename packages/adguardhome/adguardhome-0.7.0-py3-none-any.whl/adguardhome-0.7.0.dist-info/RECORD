@@ -1,0 +1,14 @@
+adguardhome/__init__.py,sha256=WCkFyExlzmnnEfnjYZ6QItaM8vnKxJreFsgzHp-pSTY,243
+adguardhome/adguardhome.py,sha256=31lg20QopTX5cyhjKVKrhCnw7wU7jITSiZUwbKool1Y,8500
+adguardhome/exceptions.py,sha256=Yfl5uOraPTLGdK2KI4E_ndfV7Yh1BrdeGzDKFqT-qgA,213
+adguardhome/filtering.py,sha256=OIAghTV65kTJVtaIQUHq0MZJOioxtUVq-vinJDblKA4,8603
+adguardhome/parental.py,sha256=uQT7GDKr0JD9qgusOZYg4nfjyvVxPl6HhhXUv-6-m4Q,1597
+adguardhome/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adguardhome/querylog.py,sha256=04pF9MhkjHiqXcLkabgJ7Wz5_hK1GFo_MIVA9lAb81s,2689
+adguardhome/safebrowsing.py,sha256=3e5xqqAt0j9E3jRLXSZwrXVRiP5ZKdbsSLUuKWfhmmo,1629
+adguardhome/safesearch.py,sha256=mB9T-OWnsHNsiQR_ryJD-tpAodhdACIXdp2FFZjRHbI,1624
+adguardhome/stats.py,sha256=C1j1SBMKxV3MQ-wa5kuPjCcCj3VePqMSIRNt2fuxqIA,3722
+adguardhome-0.7.0.dist-info/LICENSE.md,sha256=fa1L8jO7fi-a-WyOPolwAkH0bvJcYXUaUwqx2WZUFhI,1077
+adguardhome-0.7.0.dist-info/METADATA,sha256=vHdqczaoAhPnLFyecTIREN7FrulHC8JfJKbEWTvaTVE,7640
+adguardhome-0.7.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+adguardhome-0.7.0.dist-info/RECORD,,
