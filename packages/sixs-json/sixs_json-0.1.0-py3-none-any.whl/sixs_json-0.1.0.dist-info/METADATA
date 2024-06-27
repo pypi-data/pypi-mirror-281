@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sixs_json
+Version: 0.1.0
+Summary: A JSON version of the 6S atmospheric radiative transfer model and a python wrapper
+Author-email: Raphael Mabit <raphael.mabit@gmail.com>
+License: GPL
+Description-Content-Type: text/markdown
+
+# sixs_json
+The 6S code but with JSON output for easier parsing.
