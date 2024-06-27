@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ianpdf/__init__.py
+ianpdf/pdf2image.py
+ianpdf/pdf2text.py
+ianpdf.egg-info/PKG-INFO
+ianpdf.egg-info/SOURCES.txt
+ianpdf.egg-info/dependency_links.txt
+ianpdf.egg-info/top_level.txt
