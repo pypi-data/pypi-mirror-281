@@ -1,0 +1,12 @@
+funkmodel/__init__.py,sha256=MdnWE_v-DWB_w9cv_muXT9Xvb0JN5X3t1kGMZuSFvDk,223
+funkmodel/father_model.py,sha256=_4BZjrF0a1B9wkph4blAWOr0qx3YRrCtcxZd6RAsHbw,791
+funkmodel/funkmodel.py,sha256=A4cXZ0w_Et_49rPsfCidTsY72Rxvm-O8RyryDo6eIs8,1098
+funkmodel/precision_model.py,sha256=nYSuKwTUIaKqHfnVmDPrc6-GCKCMWJ1UEsIRhYmX-B8,4089
+funkmodel/simple_math.py,sha256=WaeA4FanO-ghub8ucmRItc4qHtBKU2aqIpGVf909Gz0,3089
+funkmodel/string_model.py,sha256=VqljADo_ymfFdXq1AQRbRv3RK0bt-WQwIQMlPz-rDSc,448
+funkmodel/time_model.py,sha256=Lm_Nf5j-r0iC60mY0IQaGAjLFNJpkJsoYxYqC2AGbL0,2045
+funkmodel/wallet_model.py,sha256=liV3MVr45MMimP1zwiKCtGlwIRGejrerrFGqVqvPKb4,739
+funkmodel-0.1.0.dist-info/METADATA,sha256=shzL8VETcRSqOlRzWxbVa9M5ksaZnpXxviyIFuN_0-E,278
+funkmodel-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+funkmodel-0.1.0.dist-info/top_level.txt,sha256=bftl6zLTy9EfDQqbtWh-IYE-ybxsL3OsabLpjm6NVmk,10
+funkmodel-0.1.0.dist-info/RECORD,,
