@@ -1,0 +1,9 @@
+FLOPS_modern_interface/__init__.py,sha256=Ez0MiAu5hHVvr8T8aKxcC7FJFqCk5XgnEbdTTf4Nkqc,108
+FLOPS_modern_interface/apirunner.py,sha256=6tQNWLpfD_2sEBVhxEPoW-y2_HzQ6Kb7w1ETfg5B304,1230
+FLOPS_modern_interface/input.py,sha256=InbrgRRast3-MR7LOD15PfGCforuuhlCSSPtOaerW5c,216791
+FLOPS_modern_interface/output.py,sha256=CONM98ECX7aB_6mQEOHCBflVN09DWVZJ8OUZT8dp448,57268
+FLOPS_modern_interface/runner.py,sha256=2XVH4aFIuJiZQu3M_dygX55WaXcpVX5eEG3rGkMRCzs,1982
+flops_modern_interface-0.0.1.dist-info/METADATA,sha256=QO_Q8qP9Ehclt7B6Fb3XYdmYAyobUfpZSWkyUtwcuzo,1690
+flops_modern_interface-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+flops_modern_interface-0.0.1.dist-info/licenses/LICENSE,sha256=gIQk-L6b_eI-FKZflXQ90Om9oViy9bSTFKI39fBQnBY,1069
+flops_modern_interface-0.0.1.dist-info/RECORD,,
