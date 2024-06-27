@@ -1,0 +1,17 @@
+wiring/__init__.py,sha256=k6C5c4MoLyo3htHkf5Q5jwbItGK_Eq3nosX7iz6JR6w,478
+wiring/_to_multi_platform_converter.py,sha256=1AkqYeUuzDXyN2oLSvsJJPslhOYGxZxUWb8z8GZBsEE,799
+wiring/bot_base.py,sha256=awStQan4M5ouJN7ZYTeg5VdU6UlcVlVIiOA1pRx_Hac,4391
+wiring/logging_options.py,sha256=dY7mHxeSdtZPtg3kLvvw5NBDJGuszw9y8d9GczUtJOU,231
+wiring/multi_platform_bot.py,sha256=KQhamAZL7mV-5zJJfQFfunhEiLrs3r8h6wks_vsqpN4,2915
+wiring/multi_platform_resources.py,sha256=aXm2o6HDjUDvrYahhLU0PKAu0NN4ikBsVGtSQKb3WB0,1149
+wiring/errors/action_not_supported.py,sha256=POti3hyMTF8Bf9cz8NQCAE3UQUncousxKU7HqJ_sFMw,46
+wiring/errors/bot_api_error.py,sha256=Z8StAlWW53aLfMLMtn2bJNwEMeD3Cp1Hrfpo1hgciZc,966
+wiring/errors/not_messageable_chat.py,sha256=pSH6R58mxjoriuKC37BHf6fS7608zXHHiYVusQN0OkI,371
+wiring/platforms/discord/__init__.py,sha256=IqynL0eliilCzTrE51kJNr5seiKPmqBezgWNpsV0VNI,4325
+wiring/platforms/discord/_entities_converter.py,sha256=Ye8mrbUb9RCkT01q27HFlxj-2AF33WqbTnfESA4GB2s,1824
+wiring/platforms/discord/channels.py,sha256=5or0SUnAgy8IYb-eH_o2GylhIHmIERhCqm5I5upV-3w,430
+wiring/platforms/telegram/__init__.py,sha256=ls6V6REJJjg8x53moXPmHkEvBLqmQpq2V3t6HGzydUY,5112
+wiring/platforms/telegram/_entities_converter.py,sha256=UjGulhIvNMLMHPwPwMjsWYsZQjcP4r_J2UudWzbfSIY,1837
+wiring-0.0.1.dist-info/METADATA,sha256=aosZNZBkFz2SzTYhI0ZMc2VUqRpz3ImJ7KfGPoBM9Jc,348
+wiring-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+wiring-0.0.1.dist-info/RECORD,,
