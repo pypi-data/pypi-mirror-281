@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "power-bi-api-admin"
+version = "0.1.4"
+description = "Power BI API Admin to extract data of use metricts!"
+authors = ["stone_people_analytics <systems-techpeople@stone.com.br>"]
+maintainers = [
+    "diogo56 <diogo.amorim2001@gmail.com>",
+    "guilherme_lsilva <manager.guilherme.silva@gmail.com>",
+    "root-who <joaopaulo_gonzaga@outlook.com>",
+]
+readme = "README.md"
+packages = [{include = "power_bi_api"}]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aiohttp = "^3.9.5"
+python-decouple = "^3.8"
+adal = "^1.2.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
