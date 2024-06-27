@@ -1,0 +1,13 @@
+il2pred/Data/MERCI_motif_locator.pl,sha256=9_jzBGrLbiAA6nGGLPO03g3X3QSVX05K4G9StYza_Aw,12749
+il2pred/Data/dpc_len_model.pkl,sha256=cElxdv-hpcmlKYR-il_U8SB5KOrEYXVq600oFKPqv8A,76259502
+il2pred/Data/neg_motif.txt,sha256=6lRR2Uu4lQZ-omB872Ng8IzCbS1hb_gndPhNlu_20_o,79375
+il2pred/Data/pos_motif.txt,sha256=pQ14XOZSZiuzocO3tSbXuYr0G2o6Tzb6PmuNbqZySV0,74433
+il2pred/Data/scaler.pkl,sha256=YgjtS4FNOn1vy__CIsy0rHl2Tp6mrpCPVjaOjUTK6oA,14192
+il2pred/python_script/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+il2pred/python_script/il2pred.py,sha256=IM-Vauk-N3n5bnRDyUDexSeG622aOOT0D4c1dgDOi_4,17385
+il2pred-1.0.0.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+il2pred-1.0.0.dist-info/METADATA,sha256=2yf6Byas6-VSXmWQkl8wmzlrHYNe753Oq93wBKd3rKM,4323
+il2pred-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+il2pred-1.0.0.dist-info/entry_points.txt,sha256=pTobiqM7YON9Bi1eiv5vfK0U35tS_B8Dik-6dDT4rkM,64
+il2pred-1.0.0.dist-info/top_level.txt,sha256=LsCIHAbB7tujej4TStYjOaUEjW-ubnMA0mwTFFTBduw,8
+il2pred-1.0.0.dist-info/RECORD,,
