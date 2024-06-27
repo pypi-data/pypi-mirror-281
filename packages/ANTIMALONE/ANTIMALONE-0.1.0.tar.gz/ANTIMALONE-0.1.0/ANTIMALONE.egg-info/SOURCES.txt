@@ -1,0 +1,22 @@
+README.md
+setup.py
+ANTIMALONE.egg-info/PKG-INFO
+ANTIMALONE.egg-info/SOURCES.txt
+ANTIMALONE.egg-info/dependency_links.txt
+ANTIMALONE.egg-info/requires.txt
+ANTIMALONE.egg-info/top_level.txt
+antimalone/__init__.py
+antimalone/adaptive_analysis.py
+antimalone/anomaly_detection.py
+antimalone/context_hashing.py
+antimalone/entropy.py
+antimalone/fuzzy_hashing.py
+antimalone/indexing.py
+antimalone/obfuscation_detection.py
+tests/test_adaptive_analysis.py
+tests/test_anomaly_detection.py python.py
+tests/test_context_hashing.py
+tests/test_entropy.py
+tests/test_fuzzy_hashing.py
+tests/test_indexing.py
+tests/test_obfuscation_detection.py
