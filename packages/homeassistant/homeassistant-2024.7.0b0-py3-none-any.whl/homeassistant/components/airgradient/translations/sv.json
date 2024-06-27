@@ -1,0 +1,44 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Enheten \u00e4r redan konfigurerad"
+        },
+        "error": {
+            "cannot_connect": "Det gick inte att ansluta.",
+            "unknown": "Ov\u00e4ntat fel"
+        },
+        "flow_title": "{model}",
+        "step": {
+            "discovery_confirm": {
+                "description": "Vill du konfigurera {model}?"
+            },
+            "user": {
+                "data": {
+                    "host": "V\u00e4rd"
+                },
+                "data_description": {
+                    "host": "V\u00e4rdnamn eller IP-adress f\u00f6r Airgradient-enheten."
+                }
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "display_temperature_unit": {
+                "state": {
+                    "f": "Fahrenheit"
+                }
+            }
+        },
+        "sensor": {
+            "co2_automatic_baseline_calibration_days": {
+                "name": "Automatisk baslinjekalibrering av koldioxid"
+            },
+            "display_temperature_unit": {
+                "state": {
+                    "f": "Fahrenheit"
+                }
+            }
+        }
+    }
+}

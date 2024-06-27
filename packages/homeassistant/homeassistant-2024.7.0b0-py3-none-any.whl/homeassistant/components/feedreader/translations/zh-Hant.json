@@ -1,0 +1,20 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "\u670d\u52d9\u5df2\u7d93\u8a2d\u5b9a\u5b8c\u6210",
+            "reconfigure_successful": "\u91cd\u65b0\u8a2d\u5b9a\u6210\u529f"
+        },
+        "step": {
+            "reconfigure_confirm": {
+                "data": {
+                    "url": "\u7db2\u5740"
+                }
+            },
+            "user": {
+                "data": {
+                    "url": "\u7db2\u5740"
+                }
+            }
+        }
+    }
+}
