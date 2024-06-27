@@ -1,0 +1,3 @@
+[console_scripts]
+tafrigh=src.cli:main
+
