@@ -1,0 +1,2 @@
+composio_core==0.3.15
+griptape>=0.24.2
