@@ -1,0 +1,50 @@
+Metadata-Version: 2.3
+Name: gpxprofpy
+Version: 0.0.4
+Summary: Package with tool to plot a GPX elevation profile
+Project-URL: Homepage, https://github.com/timothee-faget/GPXProfilePlotter
+Project-URL: Issues, https://github.com/timothee-faget/GPXProfilePlotter/issues
+Author-email: Timothee FAGET <timotheefaget@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: gpxpy>=1.6.0
+Requires-Dist: matplotlib>=3.9.0
+Requires-Dist: numpy>=2.0.0
+Description-Content-Type: text/markdown
+
+# GPXProfilePloter
+
+Tool for plotting a GPX elevation profile
+
+Import plot_gpx_profile function to use
+
+# Changelog
+
+## v0.0.4
+
+Fix:
+
+- Versioning issues
+
+## v0.0.3
+
+Fix:
+
+- Projects URL in toml configuration file
+
+## v0.0.2
+
+Initial version
+
+# Features to come (in random order)
+
+- Colors choice
+- Miles / km option
+- Change files names
+
+# Known bugs
+
+- When plotting without remarquable points, y limit is badly configured
