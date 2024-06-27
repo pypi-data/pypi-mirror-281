@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "rulefit-vvsu"
+version = "0.2.1"
+description = ""
+authors = ["roman"]
+readme = "README.md"
+packages = [
+    { include = "imodels", from = "src" },
+    { include = "rulefit_vvsu", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+scikit-learn = ">=1.4.0"
+pandas = ">=2.2.0"
+mlxtend = "^0.23.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
