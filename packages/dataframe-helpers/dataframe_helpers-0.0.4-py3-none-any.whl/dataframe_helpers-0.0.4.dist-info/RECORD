@@ -1,0 +1,11 @@
+dataframe_helpers/__init__.py,sha256=DPOjRJc4EtJr9oRszS1rjh6TbBiyLwLwAl3wJfteibU,354
+dataframe_helpers/calculate_efficiency.py,sha256=YlihzwrJzJ1IqK14FHGFcIVij202-vU47NPqGXnreA0,714
+dataframe_helpers/dataframe_helpers.py,sha256=lvPb46-TTYi89cxA1EkFe3rjXcCmAOHRKtBQZlZk-Gg,729
+dataframe_helpers/group_apply.py,sha256=eHFHoRu48EB-SSiX4mQ17k94CsI9zZ1lRqK8pILcx3c,374
+dataframe_helpers/markdownMaker.py,sha256=jW7KX7RV3vMAAPUMCamM5UXgmCJL239gJ6NVf9O0iCQ,1491
+dataframe_helpers/merge.py,sha256=wSSnaVrF9H-if54CWTe50tkCcV26ua8h68LSwNiGN_U,445
+dataframe_helpers-0.0.4.dist-info/LICENCE,sha256=f3VMlaKGFCtIOWsz6NydW0afLkg7DLBwFyKagtL40HQ,1071
+dataframe_helpers-0.0.4.dist-info/METADATA,sha256=pTfdMSeBp6QaG-Dx8FMv7xZ7xnXrK9ZKA_4NhNjN3bQ,588
+dataframe_helpers-0.0.4.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+dataframe_helpers-0.0.4.dist-info/top_level.txt,sha256=z909s6LD3GfiQMXd2zDGFUJ4jSq1QqR0uTiIdGmTVkQ,18
+dataframe_helpers-0.0.4.dist-info/RECORD,,
