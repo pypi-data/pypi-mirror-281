@@ -1,0 +1,2 @@
+[console_scripts]
+mark-processor = src.main:main
