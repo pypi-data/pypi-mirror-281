@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "gearlang"
+version = "0.0.12"
+# dynamic = ["version"]
+description = "Gear is a multi-target lalnguage and compiler with inline compilation instructions."
+keywords=['Compiler', 'Transpiler', 'Optimization']
+authors = ["Pacôme RUI-ETRILLARD <contact@neylz.dev>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/GearLang/gear"
+
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+pattern  = "^(?P<base>\\d+\\.\\d+\\.\\d+)(-?((?P<stage>[a-zA-Z]+)\\.?(?P<revision>\\d+)?))?"
+format-jinja = """
+    {%- if distance == 0 -%}
+        {{- base -}}
+    {%- else -%}
+        {{- base }}.dev{{ distance }}+g{{commit}}
+    {%- endif -%}
+"""
+
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+poetry-dynamic-versioning = "^1.2.0"
+antlr4-tools = "0.2.1"
+
+
+[tool.poetry.scripts]
+gear = "gearlang.main:cli"
+
+
+[build-system]
+requires = [
+    "poetry-core>=1.0.0",
+    "poetry-dynamic-versioning>=1.0.0,<2.0.0"
+]
+build-backend = "poetry_dynamic_versioning.backend"
