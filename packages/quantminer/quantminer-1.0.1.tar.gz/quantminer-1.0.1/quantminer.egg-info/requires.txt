@@ -1,0 +1,12 @@
+dtaidistance
+kneed
+matplotlib
+numpy
+pandas
+PyWavelets
+quantstats
+scikit-learn
+sktime
+tslearn
+sphinx
+sphinx_rtd_theme

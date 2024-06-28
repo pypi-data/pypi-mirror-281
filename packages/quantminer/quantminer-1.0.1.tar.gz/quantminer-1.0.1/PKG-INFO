@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: quantminer
+Version: 1.0.1
+Summary: Data/Pattern Mining Algorithms for Financial Data
+Author: Jerry Inyang
+Author-email: jerprog0@gmail.com
+Description-Content-Type: text/x-rst
+Requires-Dist: dtaidistance
+Requires-Dist: kneed
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: PyWavelets
+Requires-Dist: quantstats
+Requires-Dist: scikit-learn
+Requires-Dist: sktime
+Requires-Dist: tslearn
+Requires-Dist: sphinx
+Requires-Dist: sphinx_rtd_theme
+
+quantminer
+==========
+
+Data/Pattern Mining Algorithms for Financial Data
+-------------------------------------------------
+
+This package provides various data and pattern mining algorithms tailored for financial data analysis.
+
+Installation
+------------
+
+You can install the package using pip:
+
+.. code-block:: bash
+
+    pip install quantminer
+
+Usage
+-----
+
+Here is a simple example of how to use the package:
+
+.. code-block:: python
+
+    from quantminer import some_module
+
+    result = some_module.some_function()
+    print(result)
+
+Documentation
+-------------
+
