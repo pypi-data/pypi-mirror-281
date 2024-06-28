@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "unyprot"
+version = "0.1.0"
+description = ""
+authors = ["glaunay <guillaume.launay@ens-lyon.fr>"]
+readme = "README.md"
+
+[[tool.poetry.source]]
+name = 'pypi-public'
+url = "https://pypi.org/simple/"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyproteins = ">=2.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
