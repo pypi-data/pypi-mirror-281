@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/iposi/__init__.py
+src/iposi/mail.py
+src/iposi/settings.py
+src/iposi.egg-info/PKG-INFO
+src/iposi.egg-info/SOURCES.txt
+src/iposi.egg-info/dependency_links.txt
+src/iposi.egg-info/requires.txt
+src/iposi.egg-info/top_level.txt
+tests/test_configuration.py
+tests/test_mail.py

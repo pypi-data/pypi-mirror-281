@@ -1,0 +1,142 @@
+# iposi
+
+"iposi" is the word for "post" or "post office" in isiXhosa, one of South Africa's twelve official languages. It reflects what this package is for: making sending simple emails with Python a bit simpler.
+
+## Installation
+
+```console
+pip install iposi
+```
+
+## Configuration
+
+You need to provide a few environment variables, so that iposi knows how to communicate with your SMTP server.
+
+| Environment variable | Required? | Description                                                 | Example          |
+|----------------------|-----------|-------------------------------------------------------------|------------------|
+| `IPOSI_HOST`         | Yes       | Hostname of the SMTP server.                                | smtp.example.com |
+| `IPOSI_PASSWORD`     | No        | Password for the SMTP server.                               | not_secret       |
+| `IPOSI_PORT`         | No        | Port on which the SMTP server is listening.                 | 587              |
+| `IPOSI_USERNAME`     | No        | Username for the SMTP server.                               | john.doe         |
+| `IPOSI_USE_TLS`      | No        | Whether to use the Transport Layer Security (TLS) protocol. | 1                |
+
+`IPOSI_USERNAME` and `IPOSI_PASSWORD` must only be set if the SMTP server supports authentication. If you set either of the two, you must set the other as well.
+
+`IPOSI_USE_TLS` should be set to 1 if the SMTP server supports TLS, and to 0 otherwise. It is optional; the default value is 1.
+
+If `IPOSI_PORT` is not set, it is assumed that the SMTP server is listening on port 587.
+
+## Usage
+
+Once you have configured all the environment variables, sending emails is as simple as
+calling `mail`.
+
+```python
+from iposi import mail
+
+mail(
+    sender="John Doe <john@example.org>",
+    recipients=["Anna Glencore <anna@example.org>", "logging@example.org"],
+    subject="Daily Observations",
+    plain="Here is the breakdown of the daily observations...",
+    html="<p>Here is the breakdown of the daily observations...</p>",
+)
+```
+
+The sender must be the address for the email's From field. The recipients must either be
+a string with a single address or a list of addresses. Only one of plain text or HTML content needs to be supplied.
+
+The mail function sends the email to each recipient individually, i.e. the To field
+of the email only contains the recipient's address, irrespective of whether there is more than one recipient.
+
+If the email is rejected by the server for a recipient, the function still tries sending it to the remaining recipients. However, after all recipients have been handled it raises a `MailError`. This error contains a dictionary `recipient_errors`, whose keys are the failing recipient addresses and whose values are `RecipientError` instances containing the SMTP code for the failure, the error message and (if available) the exception causing the failure.
+
+The following example shows how you could handle errors when sending an email.
+
+```python
+from iposi import mail, MailError
+
+recipients = ["Anna Glencore <anna@example.org>", "logging@example.org", "invalid"]
+try:
+    mail(
+        sender="John Doe <john@example.org>",
+        recipients=recipients,
+        subject="Daily Observations",
+        plain="Here is the breakdown of the daily observations...",
+        html="<p>Here is the breakdown of the daily observations...</p>",
+    )
+except MailError as e:
+    print("The email could not be sent to the following recipient(s):")
+    for recipient, error in e.recipient_failures.items():
+        print()
+        print(f"{recipient}:")
+        print(f"    SMTP code: {error.smtp_code if error.smtp_code else 'n/a'}")
+        print(f"    Message:   {error.message}")
+```
+
+## Development and deployment
+
+[PDM](https://pdm-project.org/en/latest/) is used as the package manager for this project. There are several [ways to install PDM](https://pdm-project.org/en/latest/#installation); one is to use [pipx](https://pipx.pypa.io/stable/).
+
+```bash
+pipx install pdm
+```
+
+Also, [nox](https://nox.thea.codes/en/stable/index.html) is used as a test runner. It can be installed with pipx.
+```bash
+pipx install nox
+```
+
+### Managing dependencies
+
+ Use PDM's `add` command for adding dependencies. For example:
+
+```bash
+pdm add numpy
+```
+
+To add an optional dependency, use `-G/--group <name>` option. For example, if you want to add `pyjwt` to the optional group `jwt`:
+
+```bash
+pdm add -G pyjwt
+```
+
+Optional groups are listed in the `project.optional-dependencies` section of `pyproject.toml`.
+
+In case the dependency is required for development purposes only, you should use the `-dG <name>` option. For example, the following will add pytest to the development only group `test`:
+
+```bash
+pdm add -dG test pytest
+```
+
+Development only dependency groups are listed in the `tool.pdm.dev-dependencies` section of `pyproject.toml`. They `re not included in the published package.
+
+### Linting and testing
+
+There are some PDM scripts you can use during development, in addition to PDM's own commands.
+
+Script | Description
+--- | ---
+`lint` | Lint the code. This includes running the precommit and mypy scripts.
+`test` | Run the tests.
+`precommit` | Run pre-commit on all files.
+`testcov` | Run the tests (with coverage).
+`typecheck` | Run mypy.
+
+You should run `pdm lint` and `pdm test` frequently, ideally before every commit. Before pushing to GitHub, you should run `nox` (with no arguments); this will run the lint and test PDM scripts, using multiple Python versions for the test one.
+
+### Deployment
+
+There is a GitHub workflow (`publish.xml`) for deploying the package to a package repository (such as PyPI). This workflow assumes that the GitHub repository is a trusted publisher. Refer to the PyPI documentation on how to [create a PyPI project with a trusted publisher](https://docs.pypi.org/trusted-publishers/creating-a-project-through-oidc/).
+
+The workflow is triggered whenever a release is created for the GitHub repository. The tag for the release must be the package's version number preceded by a "v". For example, if the package version is `"1.4.2"`, the tag must be `"v1.4.2"`. The tag must be for the current commit in the main branch.
+
+## Acknowledgements
+
+The mocking in the unit tests draws heavily on an [article in Engineering for Data Science](https://engineeringfordatascience.com/posts/mock_smtp_email_using_pytest/).
+
+## Release history
+
+### v0.1.0 (26 June 2024)
+
+Initial release
