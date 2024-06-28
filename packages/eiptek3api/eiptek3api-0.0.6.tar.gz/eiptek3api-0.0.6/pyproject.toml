@@ -1,0 +1,31 @@
+[project]
+name = "eiptek3api"
+version = "0.0.6"
+authors = [
+  { name="Xavier Mitault", email="xavier.mitault@epitech.eu" },
+]
+dependencies = ["requests", "python-dateutil"]
+description = "Small python package for https://eip-tek3.epitest.eu api"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://gitea.saverio976.ovh/Saverio976/eiptek3-api"
+Issues = "https://gitea.saverio976.ovh/Saverio976/eiptek3-api/issues"
+
+[project.scripts]
+eiptek3api = "eiptek3api.__main__:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+packages = [
+  "eiptek3api"
+]
