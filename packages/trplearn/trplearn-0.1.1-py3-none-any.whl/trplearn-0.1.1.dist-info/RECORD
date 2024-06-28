@@ -1,0 +1,9 @@
+docs/source/conf.py,sha256=6UZ0419adgd_CtSX8Vm6_utHBQjYko65XOzYeSRFVB4,1359
+trplearn/__init__.py,sha256=2O35N4YH90spy89q1fUdR2OdMkpz14Mecxbc_9A90kI,48
+trplearn/regression.py,sha256=DywgoQRZ1P9PfsVtX1XEyI2eRE9lRAJHH8JvAwvr3S0,7519
+trplearn/trpalg.py,sha256=pqSZWgnZz1-bE9nFZkI8Nnnao58iX3FQ7efWp3Uq9Io,16762
+trplearn-0.1.1.dist-info/LICENSE,sha256=I6W1UQszhEzo3xHszGtp68HD52R2HhLdzV7iBcBkhr0,1084
+trplearn-0.1.1.dist-info/METADATA,sha256=rvkn4kGNDuePF-G6QuDSa49Kxre_OtiUMQv8j1c7CWk,2206
+trplearn-0.1.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+trplearn-0.1.1.dist-info/top_level.txt,sha256=ZesYsaW9UGmvPQu3sIGbHCJb5lvpxSL9Y7Opm-rlBhc,14
+trplearn-0.1.1.dist-info/RECORD,,
