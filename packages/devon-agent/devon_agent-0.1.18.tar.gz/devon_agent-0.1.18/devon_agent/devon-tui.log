@@ -1,0 +1,156 @@
+INFO:     127.0.0.1:52998 - "GET /session/cli/events HTTP/1.1" 404 Not Found
+
+Entering session
+{'local': LocalEnvironment(path='/Users/mihirchintawar/agent/devon_agent'), 'user': UserEnvironment(user_func=<function create_session.<locals>.<lambda> at 0x10762a200>)}
+Setting up env
+Setting up tool
+Setting up tool
+in editor
+{}
+{}
+<devon_agent.utils.DotDict object at 0x10763f3a0>
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up env
+Setting up tool
+INFO:     127.0.0.1:52999 - "POST /session?session=cli&path=%2FUsers%2Fmihirchintawar%2Fagent%2Fdevon_agent HTTP/1.1" 200 OK
+(False, 'disabled')
+INFO:     127.0.0.1:53000 - "POST /session/cli/start HTTP/1.1" 200 OK
+
+(False, 'disabled')
+(False, 'disabled')
+<devon_agent.utils.DotDict object at 0x10763f3a0>
+200
+{}
+INFO:     127.0.0.1:53000 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53000 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53000 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53000 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53000 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53000 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53000 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53000 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+
+
+
+
+
+****************
+
+
+NAME: Devon                        
+
+THOUGHT: 
+To start, I should ask the user what they would like me to do. This will provide direction and allow me to assist them effectively.
+
+
+ACTION: 
+ask_user "What would you like me to help with today?"
+
+
+OBSERVATION: 
+
+SCRATCHPAD: 
+Current objective: Ask user for instructions on what to do
+
+
+
+****************
+
+
+
+
+
+(False, 'disabled')
+(False, 'disabled')
+(False, 'disabled')
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53023 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53071 - "GET /session/cli/events HTTP/1.1" 404 Not Found
+
+Entering session
+{'local': LocalEnvironment(path='/Users/mihirchintawar/agent/devon_agent'), 'user': UserEnvironment(user_func=<function create_session.<locals>.<lambda> at 0x10793e200>)}
+Setting up env
+Setting up tool
+Setting up tool
+in editor
+{}
+{}
+<devon_agent.utils.DotDict object at 0x1078b18d0>
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up tool
+Setting up env
+Setting up tool
+INFO:     127.0.0.1:53072 - "POST /session?session=cli&path=%2FUsers%2Fmihirchintawar%2Fagent%2Fdevon_agent HTTP/1.1" 200 OK
+(False, 'disabled')
+INFO:     127.0.0.1:53073 - "POST /session/cli/start HTTP/1.1" 200 OK
+
+(False, 'disabled')
+(False, 'disabled')
+<devon_agent.utils.DotDict object at 0x1078b18d0>
+200
+{}
+INFO:     127.0.0.1:53073 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53073 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53073 - "GET /session/cli/events HTTP/1.1" 200 OK
+
+INFO:     127.0.0.1:53073 - "GET /session/cli/events HTTP/1.1" 200 OK
+
