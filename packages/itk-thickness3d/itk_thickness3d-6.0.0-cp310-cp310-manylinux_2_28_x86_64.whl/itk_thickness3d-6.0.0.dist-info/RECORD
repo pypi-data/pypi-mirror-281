@@ -1,0 +1,11 @@
+itk_thickness3d-6.0.0.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itk_thickness3d-6.0.0.dist-info/WHEEL,sha256=XiUKr37hm4SP5au8NOWfxK3o4da5MAbMqde58xovu5s,117
+itk_thickness3d-6.0.0.dist-info/RECORD,,
+itk_thickness3d-6.0.0.dist-info/METADATA,sha256=4cUxgCJtYXmBlglK4244cYmKW0eoJ1i-kPiJ0QYEE-A,18895
+itk_thickness3d-6.0.0.dist-info/licenses/LICENSE,sha256=qsc7MUj20dcRHbyjIJn2jSbGRMaBOuHk8F9leaomY_4,11360
+itk_thickness3d.libs/libtbb-3c88584c.so.12.9,sha256=ri35CP1D8lkH-PM8kpIJQtVejKg_td98V4cDy9AOcms,4138601
+itk/itkThickness3DPython.py,sha256=RGCKYb-tAlCtnp4guRZNIlX581PYSlSzakrw29Obhws,47299
+itk/_Thickness3DPython.so,sha256=l0ECyT6C_gpb9NbfqxwLPAQTsEjvptOj3U1VJz8OwoQ,3401393
+itk/Thickness3DPython.py,sha256=IhpDfasxy-Y0Mtck6lFaJpj4ierKIrapbEXlva0t3uM,2241
+itk/Configuration/Thickness3DConfig.py,sha256=Y_V4hrX7W-g7z-eghDcXoN2DvKdrzUAc35cTY8WiEdE,2771
+itk/Configuration/Thickness3D_snake_case.py,sha256=QbcfGJTKChde94-bAyJlN5TkxY-5xULHpUQxV5NR-Vs,97
