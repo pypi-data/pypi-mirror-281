@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+src/CV3.egg-info/PKG-INFO
+src/CV3.egg-info/SOURCES.txt
+src/CV3.egg-info/dependency_links.txt
+src/CV3.egg-info/entry_points.txt
+src/CV3.egg-info/requires.txt
+src/CV3.egg-info/top_level.txt
+tests/test_data_loading.py
+tests/test_data_preprocessing.py
+tests/test_instance_segmentation.py
+tests/test_landmarks_detection.py
+tests/test_mask_prediction.py
+tests/test_model_creation.py
+tests/test_model_training.py
+tests/test_root_length_measurement.py
