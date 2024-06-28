@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: simpleLLMP
+Version: 0.1.0
+Summary: A simple library for interacting with OpenAI models.
+Home-page: https://github.com/ykim336/simpleML
+Author: Yvon Kim
+Author-email: kmyn7up@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: pytesseract
+Requires-Dist: pdf2image
+Requires-Dist: pillow
+Requires-Dist: PyPDF2
+
+# simpleML
+
+A simple library for interacting with OpenAI models.
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install simpleML
