@@ -1,0 +1,73 @@
+name: Automatic versioning and Publish to PyPi
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'       # Semantic versioning (e.g., v1.0.0, v2.3.4)
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout code
+      if: github.event.pull_request.merged == true
+      uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.pull_request.merge_commit_sha }}   # Needed for automatic pre-releases
+        fetch-depth: '0'
+    
+    - name: Checkout code
+      if: github.event.pull_request.merged != true
+      uses: actions/checkout@v3
+
+    # In the case of closing PRs, automatically bump current version (default: patch)
+    # Any commit message that includes #major, #minor, #patch, or #none will trigger the respective version bump. 
+    # If no #major, #minor or #patch tag is contained in the merge commit message, it will bump whichever DEFAULT_BUMP is set to
+    - name: Bump version and push tag in case of closing PR
+      if: github.event.pull_request.merged == true
+      id: bump_version
+      uses: anothrNick/github-tag-action@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        WITH_V: true                 # Tag with v character           
+        DEFAULT_BUMP: patch          # Which type of bump to use when none explicitly provided in commit msg
+        PRERELEASE: true             # Define if workflow runs in prerelease mode
+        PRERELEASE_SUFFIX: beta      # Suffix for your prerelease versions. Note this will only be used if a prerelease branch.
+
+    - name: Check bump versioning output
+      if: github.event.pull_request.merged == true
+      run: |
+        echo "Old Tag: ${{ steps.bump_version.outputs.old_tag }}"
+        echo "New Tag: ${{ steps.bump_version.outputs.new_tag }}"
+        echo "Tag: ${{ steps.bump_version.outputs.tag }}"
+        echo "Part: ${{ steps.bump_version.outputs.part }}"
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install setuptools wheel twine
+
+    - name: Build Distribution
+      run: |
+        python setup.py sdist bdist_wheel 
+
+    - name: Publish lib to PyPI
+      if: startsWith(github.ref, 'refs/tags/v')
+      run: |
+        twine upload dist/*
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.remla_a2 }}
