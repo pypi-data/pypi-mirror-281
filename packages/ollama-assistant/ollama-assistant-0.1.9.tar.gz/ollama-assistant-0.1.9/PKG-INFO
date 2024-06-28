@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: ollama-assistant
+Version: 0.1.9
+Summary: A Python client library for implementing open ai like assistant feature with the Ollama services.
+Author: Glen
+Author-email: glenprojects666@gmail.com
