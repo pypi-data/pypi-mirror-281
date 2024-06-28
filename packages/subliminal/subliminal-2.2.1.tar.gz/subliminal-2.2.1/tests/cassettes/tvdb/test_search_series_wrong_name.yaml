@@ -1,0 +1,100 @@
+interactions:
+- request:
+    body: '{"apikey": "5EC930FB90DA1ADA", "username": null, "password": null}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Accept-Language:
+      - en
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '66'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Subliminal/2.1
+    method: POST
+    uri: https://api.thetvdb.com/login
+  response:
+    body:
+      string: '{"token":"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTY5OTMyMTAsImlkIjoic3VibGltaW5hbCIsIm9yaWdfaWF0IjoxNzE2Mzg4NDEwfQ.lb_8mIl4INbWn7usAK-gdS6AKk7OvUba29NpsvniDPwJb_dcqQQM94q63xSTzTiQlFUj_577aytUfSjxgy41CUQHzhLOkODY3xfdhU6Koi9VBjI9So_eOjmvUASX9Y-AjOUgasJ54SNnOZqQdXnDqpmBBlgeSviiXP0V579Qc1eoQQNZZ4CjJra4alQVULoSFrJEGTBlDGYJtIPD7Mb-qEppUaCk0f0ZSWxQxo_58fqcWL-dJk-iufUcp_5uvKiRwok0jsh3ciR27y2DIVnOjXYUUfTdJGwSI_NhafHGW-aEuObu6B-NeQwtHLKDnrtPhpaTW9z9r7_L56Z30u0i0w"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '470'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 May 2024 14:33:30 GMT
+      Vary:
+      - Accept-Language
+      Via:
+      - 1.1 e78b88048cb2f0beb893089a9fa30352.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - Nsd6s26_a0sb2zhqrn4YrrugC2NmgOpj0HEnEsynIWBqmKFusfHxew==
+      X-Amz-Cf-Pop:
+      - LIS50-P1
+      X-Cache:
+      - Miss from cloudfront
+      X-Powered-By:
+      - Thundar!
+      X-Thetvdb-Api-Version:
+      - 3.0.0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Accept-Language:
+      - en
+      Authorization:
+      - Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTY5OTMyMTAsImlkIjoic3VibGltaW5hbCIsIm9yaWdfaWF0IjoxNzE2Mzg4NDEwfQ.lb_8mIl4INbWn7usAK-gdS6AKk7OvUba29NpsvniDPwJb_dcqQQM94q63xSTzTiQlFUj_577aytUfSjxgy41CUQHzhLOkODY3xfdhU6Koi9VBjI9So_eOjmvUASX9Y-AjOUgasJ54SNnOZqQdXnDqpmBBlgeSviiXP0V579Qc1eoQQNZZ4CjJra4alQVULoSFrJEGTBlDGYJtIPD7Mb-qEppUaCk0f0ZSWxQxo_58fqcWL-dJk-iufUcp_5uvKiRwok0jsh3ciR27y2DIVnOjXYUUfTdJGwSI_NhafHGW-aEuObu6B-NeQwtHLKDnrtPhpaTW9z9r7_L56Z30u0i0w
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Subliminal/2.1
+    method: GET
+    uri: https://api.thetvdb.com/search/series?name=The+Bing+Bag+Theory
+  response:
+    body:
+      string: '{"Error":"Resource not found"}'
+    headers:
+      Cache-Control:
+      - private, max-age=86400
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '30'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 May 2024 14:33:31 GMT
+      Vary:
+      - Accept-Language
+      Via:
+      - 1.1 a8c46277c4df8eb178aecf68b391d6de.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 4nW5Ri_zHdUwl60Dy6f_yoEB-H3qGbjTOsRfWohWOqLUpc9N_cV90A==
+      X-Amz-Cf-Pop:
+      - LIS50-P1
+      X-Cache:
+      - Error from cloudfront
+      X-Powered-By:
+      - Thundar!
+      X-Thetvdb-Api-Version:
+      - 3.0.0
+    status:
+      code: 404
+      message: Not Found
+version: 1

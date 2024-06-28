@@ -1,0 +1,458 @@
+interactions:
+- request:
+    body: '<?xml version=''1.0''?>
+
+      <methodCall>
+
+      <methodName>LogIn</methodName>
+
+      <params>
+
+      <param>
+
+      <value><string></string></value>
+
+      </param>
+
+      <param>
+
+      <value><string></string></value>
+
+      </param>
+
+      <param>
+
+      <value><string>eng</string></value>
+
+      </param>
+
+      <param>
+
+      <value><string>VLSub 0.11.1</string></value>
+
+      </param>
+
+      </params>
+
+      </methodCall>
+
+      '
+    headers:
+      Accept-Encoding:
+      - gzip
+      Content-Length:
+      - '314'
+      Content-Type:
+      - text/xml
+      User-Agent:
+      - Python-xmlrpc/3.11
+    method: POST
+    uri: https://api.opensubtitles.org/xml-rpc
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA42QOQ/CMAyF/0rVHRJQOQYThIAFJJCYYAyNgYrGqXIg+PccShHXwGT7+fmT/GB4
+        1mVyQusKQ4O01eRpgpQbVdB+kAa/a/TToQCN/mDUCl1lyKGASlqpXawCTrIMN9V5G3J/d+stWgEk
+        NQpvjkjAHv2L8cYXnZXqz7rLSTae9jaj9YUsLYqx7zYWGbDoARZvWE19ozsvfXC/8W3Ok+X8bxLm
+        htQnSpmwLVHwJm+1gcXpm8Tq15+bmAyrk2IfEV4B7lVTInkBAAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Origin,X-Requested-With,Content-Type,Accept,DNT,Keep-Alive,User-Agent,If-Modified-Since,Cache-Control
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '0'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8497a3366e73bf97-WAW
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '209'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Mon, 22 Jan 2024 12:00:36 GMT
+      Download-Quota:
+      - '999999999'
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hxjc8K26xG4g%2FDR9pS3r6TGaTccMTqEasFtQXcNe8QMC529QeemHtrJ8AG9IKjybKBaWd99r0OEKJYctIwFzq454GtMYa3HpexXrR81OPbxAWYw3VCBJyiDNSGD7fOcyPNKufGZqrWU%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=5Rd8J6OD4CE7YAXynrnNiCt6-N4; expires=Mon, 22-Jan-2024 18:00:36 GMT;
+        Max-Age=21600; path=/; domain=.opensubtitles.org; HttpOnly
+      Vary:
+      - Accept-Encoding
+      X-Cache-Backend:
+      - web3
+      X-Compressed-Content-Length:
+      - '209'
+      X-Content-Encoding:
+      - gzip
+      X-HTTP-Version:
+      - '1.0'
+      X-RateLimit-Remaining:
+      - '39'
+      X-Uncompressed-Content-Length:
+      - '377'
+      X-Var-Cache:
+      - MISS
+      X-Via:
+      - fw2
+      alt-svc:
+      - h3=":443"; ma=86400
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0''?>
+
+      <methodCall>
+
+      <methodName>SearchSubtitles</methodName>
+
+      <params>
+
+      <param>
+
+      <value><string>5Rd8J6OD4CE7YAXynrnNiCt6-N4</string></value>
+
+      </param>
+
+      <param>
+
+      <value><array><data>
+
+      <value><struct>
+
+      <member>
+
+      <name>tag</name>
+
+      <value><string>enders.game.2013.720p.bluray.x264-sparks.mkv</string></value>
+
+      </member>
+
+      <member>
+
+      <name>sublanguageid</name>
+
+      <value><string>ger</string></value>
+
+      </member>
+
+      </struct></value>
+
+      <value><struct>
+
+      <member>
+
+      <name>query</name>
+
+      <value><string>Enders Game</string></value>
+
+      </member>
+
+      <member>
+
+      <name>sublanguageid</name>
+
+      <value><string>ger</string></value>
+
+      </member>
+
+      </struct></value>
+
+      </data></array></value>
+
+      </param>
+
+      </params>
+
+      </methodCall>
+
+      '
+    headers:
+      Accept-Encoding:
+      - gzip
+      Content-Length:
+      - '675'
+      Content-Type:
+      - text/xml
+      User-Agent:
+      - Python-xmlrpc/3.11
+    method: POST
+    uri: https://api.opensubtitles.org/xml-rpc
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA+2bXXObOBSG/4onN3sFSELiw+O6k9hJNtvmo3a60+6dAOEwxeBFkDSd/fErsN3t
+        ppYtxbTj7HLlGPCrI+mcI50nYvD68zzt3bOCJ3n26gia4KjHsjCPkmz26qgqY8M7ej0czFl5l0cT
+        xhd5xtlwsKAFnfPV53BwT9NKXOVlUYVl/fQ8YMVwkNE5G/KSlhUfWM2Xb54UDQwRAL3rNwNr9XVg
+        rW5ba4V/KUW0pE90aFHQx+GgvrPdiktahncsOnncbEhcpWnJPpeqplyMp1Vwmd8n7CxJ2WZNoCrW
+        6PxK+V0bOiePJZsmX1qx6TaZs8vpnkrNUJVJmW4ZKugTDIlr+56qqtCs5a7E35slWRYJp56JOwYE
+        HliYvFCeXSF+HJYVTUdjib0aSvLJ8BCBSENJ7iIBDB3qx54bxmEIsctcHEBMgI1DgD3ENBp5S3l5
+        K5tz2Cd2n+j0/nZ6XuTVQhL+ykoXWZxPWMooZ3I9S0XlLC/mtHz+76/LO1Y88+dfI2HzcBDiQg8p
+        e8R7zooLmYMSxyaQaM17NqvojMkUZ3Wv1WNTPspDvUCcVvM2ovC4EgtYMcrnc5Y9c/ZrlSga01Iy
+        fQhAbADbAE4Pun3b6SNXw8ATGu2ZaIXIhJbiQcloAVNHSoz773nJJAu3ztCP84cszWnER5KRH7oA
+        KAs2C9MqFciz/2mT/c1zccscU27OipxzZk4XCUvNcyacMzPHb83lynCSVhP6aH5GDjZOP7x7n0yT
+        21Mte85uJBkT2abvOupLZaMmGXIHiu2SptTFPAokcq4NIdYb9h3j/QvvnTdPaEqeSlx2Z0Q2Ch8Z
+        3ZyP64C0tYypR2tbCDmm8lTWOZCJjW/B9g3rOs1fJeEn+eBn7OFTkkVcZ1kuaMZTWubPXcqm147t
+        bzYnUvaA9Zoj79oyVDU6tsrwkrSlkwB/FX4lnryYL2jSzixOaPZps4yoWHhZt6FoHSsSxqciBebZ
+        vh1tpE4XCc+jVmqGN8ITN+vMl7lNfQL2Xvabvl1cjk9uaCFb9rV84nRVGW9Wen97ZugUMGJPkq8D
+        Mdl/JptdF0tmmehtya+zVFLraikW+fx27Zx7ib2rWPF4U+MCVoql+Xu172v2P+ufbKvuejON5YZX
+        QbrKN4mkM9v3uNbaSIWOjmhNG560kmRl7bz1h3LhJK/5WAydOHaREzp25DnMxwhT4APi+ixErs7e
+        f71De5vIEtRdWS5437Ki1MwXLOOrOoabeTGzWGZFKwWLF6FBF4l1X8QG9EMAQiIuJpFBJpH3m3M9
+        xqNT9+Pxh8esyK6SUekYV9iKRSVv/cMAzNkXVeP/SBY/yPiY4BgEgbvTeCFnaVZu6zKQb7dZmPzw
+        8LDZ5q8X1m3vtLMJGYMbDRJRX6Mbd76q6iv7puNQpKcnGlEuopLV22SwLAJWFxSir6N9L5n2YWxr
+        VB87ad+39V697d9Q2U1vjidvpoeIAaEHtTamUt/BLoTED2LbIRH2AifAns8gAyKTuQgFOjhiNwa0
+        dbY6WzFguxRwuJxoHc1ttGrpQjpqP5IQeg52Hb8NQqjjcR0bbIUNQmAg0EOoD7w+PCg22CYa1FHa
+        jQYhcpXdXQ0N9pTXinYQoBhbbWzXEcCOAGoQQJX01BG/QyJ+u2esQ3yHiPhGNxAR9JcIBsPziG90
+        tK+jfT+F9qEAQEZDDxGHQRvHAYh93/ZQHIcYAP85m67WaR91QIg1aN+SARwI7XMxCEJHjfbpVWHt
+        0r5l2y+a9okd8XJb38G+/wfsg8RxidbGWRn2yQ53uEh2sOMQCSB2bNwKAQyhF7IYMz+KPOTDCEau
+        7/leGKMgDIHdLgFs8SCg8r9O1BCg9imel0UBiQuhr+wwHQU8KAq4PCEoIgi5fdJRQCUKSFw9jNPK
+        +UD5EtKdDezIYEcGOzL4zMWmI4P/QTLYHf7rcODPw4HEQRS70AEkjkIbE+BCP8aeh5gTAUbUTxL/
+        QBwYMBASqnP4r6YEB4IDMQVBsBuzrQ//aZRjrR/+E22/dBwImg2+Og60li/8WqvXf3fEPgvz5u2I
+        zY1DzaZXrzxb61egrSfvRv8NkYtRhFI9AAA=
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Origin,X-Requested-With,Content-Type,Accept,DNT,Keep-Alive,User-Agent,If-Modified-Since,Cache-Control
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '0'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8497a3370f32bf97-WAW
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1565'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Mon, 22 Jan 2024 12:00:37 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0Fc4Gt2Qlr8rNKLNVBTdyuElzwwT3v05ErPTUKH11jG%2Fb9k8LWE51xy9UcA28gMPpNBCJMBCvw9lP4%2B21csXu50XohAeLH9ZTRt6Onct%2BoG73jNKnv29W2RbV2%2FGnTZRVrxLzka3Zts%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=5Rd8J6OD4CE7YAXynrnNiCt6-N4; expires=Mon, 22-Jan-2024 18:00:36 GMT;
+        Max-Age=21600; path=/; domain=.opensubtitles.org; HttpOnly
+      Vary:
+      - Accept-Encoding
+      X-Cache-Backend:
+      - web3
+      X-Compressed-Content-Length:
+      - '1565'
+      X-Content-Encoding:
+      - gzip
+      X-RateLimit-Remaining:
+      - '38'
+      X-Uncompressed-Content-Length:
+      - '15698'
+      X-Var-Cache:
+      - MISS
+      X-Via:
+      - fw2
+      alt-svc:
+      - h3=":443"; ma=86400
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0''?>
+
+      <methodCall>
+
+      <methodName>LogOut</methodName>
+
+      <params>
+
+      <param>
+
+      <value><string>5Rd8J6OD4CE7YAXynrnNiCt6-N4</string></value>
+
+      </param>
+
+      </params>
+
+      </methodCall>
+
+      '
+    headers:
+      Accept-Encoding:
+      - gzip
+      Content-Length:
+      - '177'
+      Content-Type:
+      - text/xml
+      User-Agent:
+      - Python-xmlrpc/3.11
+    method: POST
+    uri: https://api.opensubtitles.org/xml-rpc
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA2WPQQ7CMAwEv1LlTh164uC6D+CAxA/SxkClJkFxUvF8CkoRlJO13tXYi93DTdXM
+        UcbgW7WvtarYD8GO/tqqnC67g+oIHadbsGeWe/DChHcTjZMyCWcz5WUrKeYhvdKu50jojWOSZFIW
+        hLf4Si4HqNG6Oh0RikQoNqyEXxIPwdstyobcT0y61rpBKOqfBOtzH6f8DmsX2JR8AvnwajMbAQAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Origin,X-Requested-With,Content-Type,Accept,DNT,Keep-Alive,User-Agent,If-Modified-Since,Cache-Control
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '0'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8497a33889c2bf97-WAW
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '171'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Mon, 22 Jan 2024 12:00:37 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9%2BQsgM6EiFjXYSlfHyuPUcxsvaQvHGdiHfBbjZ9rTvKtganWiscHeT3YWnGeOeXjPGyvZLlYB%2FF6PpftcxPAKEAj9q%2BFr%2FM309KRdqZM2IbnpZll5MfsaifwA01mo173fVT1eNNRots%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Set-Cookie:
+      - PHPSESSID=5Rd8J6OD4CE7YAXynrnNiCt6-N4; expires=Mon, 22-Jan-2024 18:00:37 GMT;
+        Max-Age=21600; path=/; domain=.opensubtitles.org; HttpOnly
+      Vary:
+      - Accept-Encoding
+      X-Cache-Backend:
+      - web3
+      X-Compressed-Content-Length:
+      - '171'
+      X-Content-Encoding:
+      - gzip
+      X-RateLimit-Remaining:
+      - '37'
+      X-Uncompressed-Content-Length:
+      - '283'
+      X-Var-Cache:
+      - MISS
+      X-Via:
+      - fw2
+      alt-svc:
+      - h3=":443"; ma=86400
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0''?>
+
+      <methodCall>
+
+      <methodName>close</methodName>
+
+      <params>
+
+      </params>
+
+      </methodCall>
+
+      '
+    headers:
+      Accept-Encoding:
+      - gzip
+      Content-Length:
+      - '99'
+      Content-Type:
+      - text/xml
+      User-Agent:
+      - Python-xmlrpc/3.11
+    method: POST
+    uri: https://api.opensubtitles.org/xml-rpc
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA2WPSw7CMAxErxJlTx0kFiC56QnYcIO0caFS41T5VByfUqUIysoaz+jZg83TjWKm
+        EAfPtTxWSgriztuB77XMqT+cZaPRUXp4e6M4eY6kcTLBuFimxtmMednGFHKX3mnXUtDIxpGOyaQc
+        EVbxlVwO6JO6iOuKFuyT6H1mi1BMhBKGjffLpc6z3YOtz+1IWlVKHRGK+ifB9urHKU1gawa7yi/3
+        ES06KQEAAA==
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Origin,X-Requested-With,Content-Type,Accept,DNT,Keep-Alive,User-Agent,If-Modified-Since,Cache-Control
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '0'
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 8497a338fa95bf97-WAW
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '178'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Date:
+      - Mon, 22 Jan 2024 12:00:37 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=C9VSOX2ia49IvyOAm8sr5GkifPfc9qHbqtNs4c14d85CQV8lpVNgARJFCKf%2BBeH3vAfbZJBuYR4aZYP7MuXx7VHgHYm91TsTvuIJn04sEylWddi1S7wUsFrOfRxmqLH7vsKMSFQcaqk%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      X-Cache-Backend:
+      - web2
+      X-Compressed-Content-Length:
+      - '178'
+      X-Content-Encoding:
+      - gzip
+      X-RateLimit-Remaining:
+      - '36'
+      X-Uncompressed-Content-Length:
+      - '297'
+      X-Var-Cache:
+      - MISS
+      X-Via:
+      - fw2
+      alt-svc:
+      - h3=":443"; ma=86400
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,61 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Subliminal/2.1
+    method: GET
+    uri: https://www.omdbapi.com/?r=json&v=1&apikey=44d5b275&t=Man+of+Steel&plot=short
+  response:
+    body:
+      string: '{"Title":"Man of Steel","Year":"2013","Rated":"PG-13","Released":"14
+        Jun 2013","Runtime":"143 min","Genre":"Action, Adventure, Sci-Fi","Director":"Zack
+        Snyder","Writer":"David S. Goyer, Christopher Nolan, Jerry Siegel","Actors":"Henry
+        Cavill, Amy Adams, Michael Shannon","Plot":"An alien child is evacuated from
+        his dying world and sent to Earth to live among humans. His peace is threatened
+        when other survivors of his home planet invade Earth.","Language":"English","Country":"United
+        States, United Kingdom","Awards":"Nominated for 1 BAFTA Award7 wins & 46 nominations
+        total","Poster":"https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg","Ratings":[{"Source":"Internet
+        Movie Database","Value":"7.1/10"},{"Source":"Rotten Tomatoes","Value":"56%"},{"Source":"Metacritic","Value":"55/100"}],"Metascore":"55","imdbRating":"7.1","imdbVotes":"809,805","imdbID":"tt0770828","Type":"movie","DVD":"08
+        Dec 2015","BoxOffice":"$291,045,518","Production":"N/A","Website":"N/A","Response":"True"}'
+    headers:
+      CF-Cache-Status:
+      - MISS
+      CF-RAY:
+      - 887d96734af0216d-CDG
+      Cache-Control:
+      - public, max-age=86400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 22 May 2024 14:45:03 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-origin:
+      - '*'
+      expires:
+      - Wed, 22 May 2024 15:45:03 GMT
+      last-modified:
+      - Wed, 22 May 2024 14:45:03 GMT
+      vary:
+      - '*, Accept-Encoding'
+      x-aspnet-version:
+      - 4.0.30319
+      x-powered-by:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1
