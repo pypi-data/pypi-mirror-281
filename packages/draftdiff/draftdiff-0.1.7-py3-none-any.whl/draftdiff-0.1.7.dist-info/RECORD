@@ -1,0 +1,14 @@
+draftdiff/aggregation.py,sha256=ODpgcRdPvoBMfqtasW--5Hdzj6RddoY6cfNF1xnyagY,8108
+draftdiff/constants.py,sha256=D2ppjIumeSUvSh6gBg_YAFn6bzPY0lqA-P3dlEvqWr4,3067
+draftdiff/dotabuff.py,sha256=Nc4E0kZv7LIui-X_BJtUnCC3x54Swp-bJhahEIYHF2g,11667
+draftdiff/io.py,sha256=8miWWC8fRU2kpb3cl8w3BuG4V2TXtqjs2mQU4hF5vEc,7814
+draftdiff/main.py,sha256=YbcMug51QmlQaLCRCg77ha_mjuCrSLqIxMZ4Iv0NcQQ,3037
+draftdiff/sheets.py,sha256=_Mq3OM4e8rVQDzB3WEu4HbdPWwxLyyKHsVWmEuYkVS4,1145
+draftdiff/stratz.py,sha256=hKSk9T4EFa7YqL5SR5AeNi16xjw_3M2JzPtTvr5gD6I,5198
+draftdiff/util.py,sha256=2aiTQ0fchBLl_QkAcer5KNbO6d34G81JgWCtSi9V1nY,159
+draftdiff/writetos3.py,sha256=pSxshM38ivY_5oUH-EvzTp6IpmtDou7YMEFlLDr_C-s,1243
+draftdiff/writetosheets.py,sha256=tz4aW-j0v9b_O3_ALg8OH8hnWnbcCrqnzOzqHmBgO50,3168
+draftdiff-0.1.7.dist-info/LICENSE,sha256=VRw3bFx51ccBnm4j_NW4R4oHHhcnmetlY0Fbgpui1eA,1065
+draftdiff-0.1.7.dist-info/METADATA,sha256=O0EL3ExqHjJW8-u9clrcZ4hkMWXYTnwCidI7Hhd_LUg,3078
+draftdiff-0.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+draftdiff-0.1.7.dist-info/RECORD,,
