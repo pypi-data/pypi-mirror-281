@@ -1,0 +1,15 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+bags/__init__.py
+bags/bags.py
+bags/formats.py
+bags.egg-info/PKG-INFO
+bags.egg-info/SOURCES.txt
+bags.egg-info/dependency_links.txt
+bags.egg-info/requires.txt
+bags.egg-info/top_level.txt
+tests/test_bags.py
