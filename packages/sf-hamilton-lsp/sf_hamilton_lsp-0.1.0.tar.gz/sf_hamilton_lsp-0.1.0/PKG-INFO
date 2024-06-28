@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: sf-hamilton-lsp
+Version: 0.1.0
+Summary: Hamilton Language Server powering IDE features.
+Author-email: Thierry Jean <thierry@dagworks.io>
+Project-URL: Homepage, https://github.com/dagworks-inc/hamilton/
+Project-URL: Bug Reports, https://github.com/dagworks-inc/hamilton/issues
+Project-URL: Source, https://github.com/dagworks-inc/hamilton/tree/main/dev_tools/language_server
+Project-URL: Documenation, https://hamilton.dagworks.io/
+Keywords: hamilton,dagworks,vscode,extension,data science,pipelines
+Classifier: Topic :: Text Editors :: Integrated Development Environments (IDE)
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pygls>=1.3.1
+Requires-Dist: sf-hamilton[visualization]>=1.56
+Provides-Extra: test
+Requires-Dist: pre-commit; extra == "test"
+Requires-Dist: pytest; extra == "test"
+
+# Hamilton Language Server (`hamilton_lsp`)
+
+This is an implementation of the [Language Server Protocol](https://microsoft.github.io/language-server-protocol/) to provide a rich IDE experience when creating Hamilton dataflows.
+
+It currently powers the Hamilton VSCode extension and could be integrated into other IDEs.
