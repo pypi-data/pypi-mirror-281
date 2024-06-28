@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: smartsettings
+Version: 0.1.0
+Summary: Smart Settings
+Author-email: Quan Lin <jacklinquan@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Quan Lin
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/jacklinquan/smartsettings
+Keywords: json,settings
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jsonpickle
+Requires-Dist: cryptomsg
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# Smart Settings
+
+[![PyPI version][pypi_img]][pypi_link]
+[![Downloads][downloads_img]][downloads_link]
+
+  [pypi_img]: https://badge.fury.io/py/smartsettings.svg
+  [pypi_link]: https://badge.fury.io/py/smartsettings
+  [downloads_img]: https://pepy.tech/badge/smartsettings
+  [downloads_link]: https://pepy.tech/project/smartsettings
+
+Easy to use, flexible and versitile settings.
+It can be serialized to json format, and even encrypted.
+The `updatable` feature makes it suitable for value bindings.
+
+## Installation
+
+`pip install smartsettings`
+
+## Usage
+
+```python
+>>> import smartsettings as ss
+>>> settings = ss.SmartSettings(name="Settings", value=100)
+>>> settings
+{'name': 'Settings', 'value': 100}
+>>> settings_string = ss.to_string(settings)
+>>> settings_string
+'{"py/object": "smartsettings.smartsettings.SmartSettings", "name": "Settings", "value": 100}'
+>>> loaded_settings = ss.from_string(settings_string)
+>>> loaded_settings
+{'name': 'Settings', 'value': 100}
+>>> loaded_settings == settings
+True
+```
