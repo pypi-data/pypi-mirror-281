@@ -1,0 +1,56 @@
+{
+ "additionalProperties": false,
+ "definitions": {
+  "InputWhitelistRuleCidr": {
+   "additionalProperties": false,
+   "properties": {
+    "Cidr": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  }
+ },
+ "primaryIdentifier": [
+  "/properties/Id"
+ ],
+ "properties": {
+  "Arn": {
+   "type": "string"
+  },
+  "Id": {
+   "type": "string"
+  },
+  "Tags": {
+   "items": {
+    "additionalProperties": false,
+    "properties": {
+     "Key": {
+      "type": "string"
+     },
+     "Value": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "Value",
+     "Key"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "WhitelistRules": {
+   "items": {
+    "$ref": "#/definitions/InputWhitelistRuleCidr"
+   },
+   "type": "array",
+   "uniqueItems": false
+  }
+ },
+ "readOnlyProperties": [
+  "/properties/Id",
+  "/properties/Arn"
+ ],
+ "typeName": "AWS::MediaLive::InputSecurityGroup"
+}
