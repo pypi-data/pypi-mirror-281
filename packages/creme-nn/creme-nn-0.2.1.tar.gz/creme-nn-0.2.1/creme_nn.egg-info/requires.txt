@@ -1,0 +1,11 @@
+kipoiseq
+numpy
+pandas
+protobuf==3.20
+pyfaidx
+pyranges
+tensorflow-hub
+
+[dev]
+black
+flake8
