@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+web_installation_instruction.egg-info/PKG-INFO
+web_installation_instruction.egg-info/SOURCES.txt
+web_installation_instruction.egg-info/dependency_links.txt
+web_installation_instruction.egg-info/entry_points.txt
+web_installation_instruction.egg-info/requires.txt
+web_installation_instruction.egg-info/top_level.txt
