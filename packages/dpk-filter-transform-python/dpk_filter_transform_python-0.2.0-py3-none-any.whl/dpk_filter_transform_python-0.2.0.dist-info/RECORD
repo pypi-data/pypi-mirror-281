@@ -1,0 +1,9 @@
+filter_local.py,sha256=p6yuEnaxUgceU8IzExb34sQNXMv56o3VSYAfBMmrigI,2189
+filter_local_python.py,sha256=yqmNyyRqBVjOVsWMTO1EqJpD05_r5y3Db58K742y-oc,2345
+filter_test_support.py,sha256=zV1ZzP0fIAVXgV-bKfGBCTO3nLs45U8NOS-7e0hWGdY,5684
+filter_transform.py,sha256=-hc4l95zt4A-zfjJXG1-tOF8NCDCJf5UdVCPkOEXB4A,8357
+filter_transform_python.py,sha256=7xeCdI5gdri0JKT_jxg1BPBAnSRqMt3AoZ0fmuHZ8WY,1326
+dpk_filter_transform_python-0.2.0.dist-info/METADATA,sha256=i64cT-rPTBlhd6alVib69zRHobVNNGZaSe6HU6mwGgs,24987
+dpk_filter_transform_python-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+dpk_filter_transform_python-0.2.0.dist-info/top_level.txt,sha256=35ROzty3ZIEoYewCVge7sqePB9hmeDa2--pqfJ0ePJU,94
+dpk_filter_transform_python-0.2.0.dist-info/RECORD,,
