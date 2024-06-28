@@ -1,0 +1,19 @@
+apiVersion: 1
+datasources:
+- name: Thanos
+  type: prometheus
+  url: http://thanos-query:9091
+  isDefault: true
+  access: proxy
+  editable: true
+- name: GRAYLOG
+  type: elasticsearch
+  url: http://opensearch:9200
+  isDefault: false
+  access: proxy
+  uid: graylog_uid
+  editable: true
+  jsonData:
+    index: '*'
+    interval: Hourly
+    timeField: 'timestamp'
