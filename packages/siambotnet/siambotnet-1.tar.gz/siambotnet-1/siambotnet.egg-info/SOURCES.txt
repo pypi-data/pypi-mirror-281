@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+siambotnet.egg-info/PKG-INFO
+siambotnet.egg-info/SOURCES.txt
+siambotnet.egg-info/dependency_links.txt
+siambotnet.egg-info/entry_points.txt
+siambotnet.egg-info/requires.txt
+siambotnet.egg-info/top_level.txt
