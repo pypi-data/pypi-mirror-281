@@ -1,0 +1,16 @@
+fadids/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fadids/api.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fadids/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fadids/models/container.py,sha256=vn89W45DAjTdy3FbzDvpqXTHqrq3gm9semIWceJC9jk,1834
+fadids/models/multivariate.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fadids/models/univariate.py,sha256=8IMaMGXz2b74rxIp05L_nZ4_U36ZSf5G91cpeLFbHdU,3466
+fadids/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fadids/utils/simulator.py,sha256=BB5ZWEsAMrNbsJDd4CF0UjFBveeiu9dB1wmkjNJz468,1386
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_mean_deviation.py,sha256=8opP0ANVb7j3qVEFCKEVaqP6ItlK3ly6txPNSaXHcLo,1565
+test/test_multivariate_models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_simulator.py,sha256=MWqj359jjCZa2mbNf_FtedB9YLVbHn43XXt-DeGH-Xs,2110
+fadids-0.2.dist-info/METADATA,sha256=6VeFqp1QU_2wLe4w0NWI5yNtXqTfTwuA3ojIBr2PDhI,492
+fadids-0.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+fadids-0.2.dist-info/top_level.txt,sha256=KuWMqw3C3J3nqFk3PBRMc0noinQIrZ5tPvsTOWjLj0Y,12
+fadids-0.2.dist-info/RECORD,,
