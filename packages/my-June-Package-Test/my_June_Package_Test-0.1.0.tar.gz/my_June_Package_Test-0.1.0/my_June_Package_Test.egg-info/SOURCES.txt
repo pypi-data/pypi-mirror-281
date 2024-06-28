@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+my_June_Package_Test/__init__.py
+my_June_Package_Test/module1.py
+my_June_Package_Test.egg-info/PKG-INFO
+my_June_Package_Test.egg-info/SOURCES.txt
+my_June_Package_Test.egg-info/dependency_links.txt
+my_June_Package_Test.egg-info/top_level.txt
+tests/__init__.py
+tests/test_module1.py
