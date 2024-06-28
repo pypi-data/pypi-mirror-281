@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: autoscheduler
+Version: 0.1
+Summary: A library for quantum circuit composition
+Home-page: https://github.com/Qcraft-UEx/QCRAFT-AutoSchedulQ
+Author: Jorge Casco Seco
+Author-email: jorgecs@unex.es
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: amazon-braket-sdk <2.0.0,>=1.80.0
+Requires-Dist: antlr4-python3-runtime ==4.9.2
+Requires-Dist: qiskit-aer <1.0.0,>=0.14.2
+Requires-Dist: qiskit-ibm-runtime <1.0.0,>=0.23.0
+Requires-Dist: qiskit <2.0.0,>=1.1.0
+Requires-Dist: requests <3.0.0,>=2.32.0
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+UNKNOWN
+
+
