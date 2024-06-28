@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: easy-letters
+Version: 0.1.2
+Summary: A Python package for generating draft application letters using generative AI
+Author: Hassan Abedi
+Author-email: hassan.abedi.t@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastparquet (>=2024.2.0,<2025.0.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: openai (>=1.16.1,<2.0.0)
+Requires-Dist: pandas (>=2.2.1,<3.0.0)
+Requires-Dist: poetry-dynamic-versioning (>=1.4.0,<2.0.0)
+Requires-Dist: pylint (>=3.0.3,<4.0.0)
+Requires-Dist: pytest (>=8.0.1,<9.0.0)
+Requires-Dist: pytest-cov (>=5.0.0,<6.0.0)
+Requires-Dist: qdrant-client (>=1.8.2,<2.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Requires-Dist: tiktoken (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+# Easy Letters
+
+[![PyPI version](https://badge.fury.io/py/easy-letters.svg)](https://badge.fury.io/py/easy-letters)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Downloads](https://pepy.tech/badge/easy-letters)](https://pepy.tech/project/easy-letters)
+[![Tests](https://github.com/habedi/easy-letters/actions/workflows/tests.yml/badge.svg)](https://github.com/habedi/easy-letters/actions/workflows/tests.yml)
+[![Made with Love](https://img.shields.io/badge/Made%20with-Love-red.svg)](https://github.com/habedi/easy-letters)
+
+Easy Letters is a Python package to help job seekers writing application letters. It uses a simple retrieval
+augmented generation (RAG) pipeline to generate the letters. The user can then edit the draft letter to suit their
+needs.
+
+## Installation
+
+You can install Easy Letters using pip:
+
+```bash
+pip install easy-letters
+```
+
+## Getting Started
+
+### API Key Setup
+
+At the moment, Easy Letters retrieves the API keys from the environment variables.
+You need to set the following environment variables:
+
+- `OPENAI_API_KEY`: Your OpenAI API key (required)
+
+### Sample Notebooks
+
+You can find Jupyter notebooks with example code in the [`notebook`](notebooks) directory.
+The notebooks demonstrate how to use Easy Letters to generate application letter drafts.
+
+## TODO
+
+- [ ] Add support for Anthropic models and API
+- [ ] Add support for locally served models via Ollama
+
