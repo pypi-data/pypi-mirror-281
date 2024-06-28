@@ -1,0 +1,10 @@
+gprofiler-official>=1.0.0
+httplib2>=0.21.0
+mygene
+numpy<=1.26.4,>=1.20.0
+pandas<=2.2.2,>=1.2.0
+psutil
+ratelimit>=2.2.1
+requests>=2.26.0
+seaborn
+upsetplot
