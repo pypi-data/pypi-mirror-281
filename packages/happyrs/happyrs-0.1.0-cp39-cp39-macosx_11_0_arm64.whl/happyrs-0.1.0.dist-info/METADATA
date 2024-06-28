@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: happyrs
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: numpy ==1.26
+Requires-Dist: scipy >=1.13.1
+Requires-Dist: polars >=0.20
+Requires-Dist: pytest ; extra == 'tests'
+Provides-Extra: tests
+Requires-Python: >=3.9
