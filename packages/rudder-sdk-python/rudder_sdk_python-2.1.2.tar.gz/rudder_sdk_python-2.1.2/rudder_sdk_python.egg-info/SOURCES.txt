@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+rudder_sdk_python.egg-info/PKG-INFO
+rudder_sdk_python.egg-info/SOURCES.txt
+rudder_sdk_python.egg-info/dependency_links.txt
+rudder_sdk_python.egg-info/not-zip-safe
+rudder_sdk_python.egg-info/requires.txt
+rudder_sdk_python.egg-info/top_level.txt
