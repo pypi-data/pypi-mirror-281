@@ -1,0 +1,7 @@
+code2parquet_local_ray.py,sha256=uznW0DPane2CyA9F8bpCFtEyC7G_2VECiRfjU-0AkF8,2424
+code2parquet_s3_ray.py,sha256=-Kprcn4TdP4ujzTn-ZzruqnLsoyx9YKanK6iM5Evnxg,2406
+code2parquet_transform_ray.py,sha256=0zN5hgcirMehT642ZWLHZzW78DsA6nMi_mu_iuBMSK8,5009
+dpk_code2parquet_transform_ray-0.2.0.dist-info/METADATA,sha256=HLepDCbQFr5KwiVtPJuht-mS13Hn5bUvR9oapvk6Leg,2437
+dpk_code2parquet_transform_ray-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+dpk_code2parquet_transform_ray-0.2.0.dist-info/top_level.txt,sha256=5QsWqa2WR2sClHMfthOiXMbWysO04oqYCerx93TBJPw,70
+dpk_code2parquet_transform_ray-0.2.0.dist-info/RECORD,,
