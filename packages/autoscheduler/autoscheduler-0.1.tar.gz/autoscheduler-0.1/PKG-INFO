@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: autoscheduler
+Version: 0.1
+Summary: A library for quantum circuit composition
+Home-page: https://github.com/Qcraft-UEx/QCRAFT-AutoSchedulQ
+Author: Jorge Casco Seco
+Author-email: jorgecs@unex.es
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: dev
