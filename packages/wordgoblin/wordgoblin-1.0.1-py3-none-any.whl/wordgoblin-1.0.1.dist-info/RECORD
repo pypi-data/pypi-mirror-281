@@ -1,0 +1,7 @@
+wordgoblin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wordgoblin/main.py,sha256=tNh1LQP4-KKmTB0UKksdwMpzdB0shuawCwJWJJhM_20,4738
+wordgoblin/data/en_dict.json,sha256=Myt5N0Q286-YpxISHwED0lzUPrGBOqVhbjAe6PCZ8sE,6825598
+wordgoblin-1.0.1.dist-info/METADATA,sha256=pgpxDeP9Gbs3XVt7BX3HBo3A7Kp6Ddvb1zDykf-WvCM,42740
+wordgoblin-1.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+wordgoblin-1.0.1.dist-info/licenses/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+wordgoblin-1.0.1.dist-info/RECORD,,
