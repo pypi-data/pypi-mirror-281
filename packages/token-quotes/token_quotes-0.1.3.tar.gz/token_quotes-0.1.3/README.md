@@ -1,0 +1,112 @@
+# Token Quotes
+Token Quotes is a Python package for fetching and processing cryptocurrency token balances and quotes for a list of wallet addresses that you provide. It interacts with the Covalent API to retrieve token data, process it, and save it in a structured format.
+
+## Features
+- Fetch token balances for specified wallet addresses across different blockchains
+- Process and structure token balance data
+- Save processed data in csv format
+- Command-line interface for easy data retrieval and processing
+
+## Installation
+### Using pip
+```bash
+pip install token-quotes
+```
+
+### Using poetry
+```bash
+poetry add token-quotes
+```
+
+### Docker
+```bash
+docker build -t token-quotes .
+```
+
+## Usage
+### As a Python package
+```python
+import os
+from report_builder import fetch_token_balances, save_to_jsonlines, extract_data, save_to_csv
+
+COVALENT_API_KEY = os.getenv("COVALENT_API_KEY", default="")
+
+wallets = [{"address": "0x123", "chain_id": "eth-mainnet"}]
+raw_token_balances = fetch_token_balances(wallets, COVALENT_API_KEY, "usd")
+save_to_jsonlines(raw_token_balances, "/tmp/raw_token_balances.jsonl")
+data = extract_data("/tmp/raw_token_balances.jsonl")
+save_to_csv(data, "output_file.csv")
+```
+
+### Command-line interface
+Using json formatted string
+```bash
+token-quotes '{"wallets": [{"address": "0x123", "chain_id": "eth-mainnet"}]}' -o output.csv --currency usd --api-key $COVALENT_API_KEY
+```
+
+Using YAML input
+```bash
+token-quotes input.yml -o output.csv --currency usd --api-key $COVALENT_API_KEY
+```
+
+Example input YAML (also accepts csv and json)
+```yaml
+wallets:
+  - address: "0x04692B7Df6128b5704750D21416c5fb90Df3fFfd"
+    chain_id: "eth-mainnet"
+    nickname: "DEFAULT"
+    provider: "metamask"
+```
+
+### Using Docker
+```bash
+docker run -v /path/to/your/local/directory:/app/data token-quotes:latest input.yml -o output.csv --currency usd --api-key $COVALENT_API_KEY
+```
+This command mounts your local directory to the /app/data directory in the container. Adjust the paths as necessary.
+
+Example
+```bash
+docker run -v $HOME/Dropbox:/app/data token-quotes:latest input.yml -o output.csv --currency usd --api-key $COVALENT_API_KEY
+```
+
+```bash
+docker run zaxier/token-quotes:v0.1.1-alpha
+```
+
+To run the help message
+```bash
+docker run token-quotes:latest --help
+```
+
+## Development
+To set up the development environment:
+
+Clone the repository:
+```bash
+git clone https://github.com/zaxier/token-quotes.git
+cd token-quotes
+```
+
+Install dependencies:
+```bash
+poetry install
+```
+
+Run tests:
+```bash
+poetry run pytest
+```
+
+## Configuration
+Set your Covalent API key as an environment variable:
+```sh
+export COVALENT_API_KEY=your_api_key_here
+```
+
+## Logging
+Logs are saved in the /app/logs directory. When running the Docker container, mount this directory to persist logs:
+```sh
+docker run -v /path/to/your/logs:/app/logs ...
+```
+
+## References
