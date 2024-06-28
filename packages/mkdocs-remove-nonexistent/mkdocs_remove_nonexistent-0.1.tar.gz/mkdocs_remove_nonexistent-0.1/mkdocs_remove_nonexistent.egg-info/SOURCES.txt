@@ -1,0 +1,7 @@
+setup.py
+mkdocs_remove_nonexistent.egg-info/PKG-INFO
+mkdocs_remove_nonexistent.egg-info/SOURCES.txt
+mkdocs_remove_nonexistent.egg-info/dependency_links.txt
+mkdocs_remove_nonexistent.egg-info/entry_points.txt
+mkdocs_remove_nonexistent.egg-info/top_level.txt
+src/__init__.py
