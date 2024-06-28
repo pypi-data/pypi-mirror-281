@@ -1,0 +1,6 @@
+django_polars/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_polars/io.py,sha256=JfuylVU2nNsK_RKa-TSnPdHb6T-aOg-kjCPNDRZ-d0g,387
+django_polars-0.2.0.dist-info/METADATA,sha256=IzI5eEMC9UU_JmtGDQb7U8uLAwPxDh1zxGTwgnWKtyI,3523
+django_polars-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+django_polars-0.2.0.dist-info/licenses/LICENSE,sha256=WQOQV8AVqako4g7lHRb85xyjFHzq6UXADsSp_yKtUro,1084
+django_polars-0.2.0.dist-info/RECORD,,
