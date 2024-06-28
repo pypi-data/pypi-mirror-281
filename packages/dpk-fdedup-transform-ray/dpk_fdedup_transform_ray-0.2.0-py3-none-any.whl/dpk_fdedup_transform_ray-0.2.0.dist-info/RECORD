@@ -1,0 +1,10 @@
+cluster_estimator.py,sha256=MDKJz1xA3ohPbB2SC21hrnRCNvbHXxpXV2s-NlD81aM,3549
+compute_shingles.py,sha256=QihYtcwrOfXLcaStYBLiE1zc0XxsbgOBXBTtDJqCCdQ,2015
+fdedup_local_ray.py,sha256=mi1JSH4x-iF3qHqxtNPG0KjE-OVKR1ihN9OkQLF46n4,2639
+fdedup_s3_ray.py,sha256=EWjz69JRPuZcT20_IzDJtEwKGSDROWJUpxsqeKOcFXw,2645
+fdedup_support.py,sha256=TXeGkFNnZxMq3GwpC2z5EyftP8g9TrNsScVVjFfUF4w,23843
+fdedup_transform_ray.py,sha256=bezA9HsPC5gkkgY9X7p_jPBX_JuT9KCE6f-hYhqqVEo,35661
+dpk_fdedup_transform_ray-0.2.0.dist-info/METADATA,sha256=b8YmA1ZmjGpV-SAMAxvns_48dqQj6doYQuXmOcUZGok,9115
+dpk_fdedup_transform_ray-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+dpk_fdedup_transform_ray-0.2.0.dist-info/top_level.txt,sha256=xH4fyBVdIBWui_rzym_NDHU3TrNbtLwJN_CDQMIRnb4,102
+dpk_fdedup_transform_ray-0.2.0.dist-info/RECORD,,
