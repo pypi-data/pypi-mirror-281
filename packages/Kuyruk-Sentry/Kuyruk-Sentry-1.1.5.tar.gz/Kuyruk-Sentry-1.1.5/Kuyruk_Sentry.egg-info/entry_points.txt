@@ -1,0 +1,2 @@
+[kuyruk.config]
+sentry = kuyruk_sentry:CONFIG
