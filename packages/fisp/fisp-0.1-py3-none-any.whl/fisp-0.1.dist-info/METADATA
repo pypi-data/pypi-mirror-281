@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fisp
+Version: 0.1
+Summary: FISP: a 1D Fast Ion Spectrum Propagator for cold targets. To be published.
+Author: Howel Larreur
+Author-email: hwlr33@gmail.com
+Keywords: simulation,spectrum,ion,cold target,1D
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tqdm
+
