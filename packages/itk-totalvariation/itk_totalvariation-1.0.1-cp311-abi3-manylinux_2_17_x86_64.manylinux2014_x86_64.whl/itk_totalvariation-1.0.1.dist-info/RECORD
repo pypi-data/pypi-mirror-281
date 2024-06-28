@@ -1,0 +1,12 @@
+itk_totalvariation.libs/libgomp-a34b3233.so.1.0.0,sha256=On6uznIxkRvi-7Gz58tMtcLg-E4MK7c3OUcrWh_uyME,168193
+itk_totalvariation.libs/libtbb-f489fd38.so.12.9,sha256=rr4QUZmgSmQqsfQRMgDSgd5mRWXtIWUMJxn5phGhtK4,4315273
+itk/TotalVariationPython.py,sha256=M6FFctQZ-UOocAtZNmFqTFoz4xnNfw8qmF4kp33hK5s,2186
+itk/_TotalVariationPython.abi3.so,sha256=pBYjzD7X09JQT2YPN73lrXJUcSSMEVGCDlwQf2yz47g,2599585
+itk/itkProxTVImageFilterPython.py,sha256=KzjWh5a05AHYMu8LUbbyQL7Aes2xWVKOSa5b_H7wNiM,26386
+itk/Configuration/TotalVariation_snake_case.py,sha256=czILYn5XQ-2vs_Wd_4ubWNCqVsZvn0ijOdXDbxBEuko,50
+itk/Configuration/TotalVariationConfig.py,sha256=QIxIn2rK_fagTmDQsOF8boTV0OjsGU_F6lQujHnDO-c,926
+itk_totalvariation-1.0.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itk_totalvariation-1.0.1.dist-info/WHEEL,sha256=MmeduSnxoSvnSGwC2cskpZzjjn74xUXm2eaEPLDv8Os,153
+itk_totalvariation-1.0.1.dist-info/RECORD,,
+itk_totalvariation-1.0.1.dist-info/METADATA,sha256=6SZUGsFJ2lKTEf5K_MxHeeBolgU5B-2F3ZKuwDhg67Y,16408
+itk_totalvariation-1.0.1.dist-info/licenses/LICENSE,sha256=qsc7MUj20dcRHbyjIJn2jSbGRMaBOuHk8F9leaomY_4,11360
