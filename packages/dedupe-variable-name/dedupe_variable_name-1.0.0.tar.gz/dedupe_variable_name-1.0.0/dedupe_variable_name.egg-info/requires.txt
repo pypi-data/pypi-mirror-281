@@ -1,0 +1,2 @@
+probablepeople>=0.5
+parseratorvariable>=1.0.0
