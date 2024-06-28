@@ -1,0 +1,5 @@
+anise-0.4.0.dist-info/METADATA,sha256=TtnrOSCua8EHRruzxxVhTVwPEaLZ6P0ir9KOZNfsqa0,6807
+anise-0.4.0.dist-info/WHEEL,sha256=bcSWngHhdUZoysWc4vXQSx4QaCFnDhY37tYr2tU4hk0,136
+anise/__init__.py,sha256=fxCM8U0C0Arf9lTTNySPgdYsVN94D95GuBje4ASb8J8,103
+anise/anise.pypy310-pp73-arm-linux-gnu.so,sha256=_1q9qqlbqIHUx6q5vDB6IicrFRRX8VIixyzN-nVVV9c,13427616
+anise-0.4.0.dist-info/RECORD,,
