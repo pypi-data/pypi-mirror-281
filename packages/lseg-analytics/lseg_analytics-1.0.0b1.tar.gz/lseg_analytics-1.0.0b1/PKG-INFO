@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lseg-analytics
+Version: 1.0.0b1
+Summary: PoC of LSEG Analytics as a Service client
+Author-email: analyticssdk <analyticssdk@lseg.com>
+Maintainer-email: analyticssdk <analyticssdk@lseg.com>
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: corehttp
+Requires-Dist: azure-core
+Requires-Dist: msrest
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: plum-dispatch
+Requires-Dist: isodate<1.0.0,>=0.6.1
