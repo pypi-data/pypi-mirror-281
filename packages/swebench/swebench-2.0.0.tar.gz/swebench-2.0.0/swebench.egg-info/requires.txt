@@ -1,0 +1,10 @@
+datasets
+docker
+pre-commit
+requests
+tqdm
+ghapi
+GitPython
+python-dotenv
+requests
+bs4
