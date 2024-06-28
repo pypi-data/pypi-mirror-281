@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: searchbar_component
+Version: 0.2.3
+Summary: A Streamlit component for a search bar with autosuggestions
+Home-page: https://github.com/weeks888/searchbar_component
+Author: chris weeks
+License: MIT
+Keywords: streamlit component searchbar autocomplete
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit >=0.63
+
+# Streamlit Searchbar Component
+
+A customizable searchbar component for Streamlit with autosuggestions and advanced features.
+
+## Features
+
+- Autocomplete suggestions as you type
+- Customizable styling
+- Clear button to reset the input
+- Plus button for additional actions on suggestions
+- Keyboard navigation support
+- Ability to return selected suggestion or perform a search
+- Customizable icons and colors
+- Compact suggestion layout with support for multi-line content
+- Option to keep suggestions open when the plus button is clicked
+
+## Installation
+
+You can install the searchbar component using pip:
+
+```bash
+pip install searchbar-component
+```
+
+## Usage
+
+Here's a basic example of how to use the searchbar component:
+
+```python
+import streamlit as st
+from searchbar_component import searchbar
+
+def search_function(query):
+    # Implement your search logic here
+    return [{"label": f"Result for {query}", "value": query}]
+
+st.title("Search Example")
+
+result = searchbar(
+    key="my_searchbar",
+    placeholder="Enter your search",
+    suggestions=search_function(""),
+    keep_open_on_plus=True,  # Keep suggestions open when plus button is clicked
+    style_overrides={
+        "clear": {"fill": "#ff0000"},
+        "plus": {"fill": "#00ff00"},
+    }
+)
+
+if result:
+    if result.get("interaction") == "search":
+        query = result["value"]
+        # Update suggestions based on the search query
+    elif result.get("interaction") == "select":
+        selected = result["value"]
+        st.write(f"You selected: {selected['label']}")
+    elif result.get("interaction") == "submit":
+        query = result["value"]
+        st.write(f"You submitted: {query}")
+    elif result.get("interaction") == "plus_click":
+        clicked_suggestion = result["value"]
+        st.write(f"You clicked the plus button for: {clicked_suggestion['label']}")
+        # Suggestions will remain open here if keep_open_on_plus is True
+    elif result.get("interaction") == "reset":
+        st.write("Search has been reset")
+```
+
+## API Reference
+
+### searchbar(placeholder, key, suggestions, return_selection_only, show_clear_button, show_plus_button, keep_open_on_plus, style_overrides)
+
+- `placeholder` (str, optional): Placeholder text for the search input. Default is "Search...".
+- `key` (str, optional): Unique key for the component instance.
+- `suggestions` (list, optional): List of suggestion objects with 'label' and 'value' keys.
+- `return_selection_only` (bool, optional): If True, selecting a suggestion returns it directly without triggering a search. Default is True.
+- `show_clear_button` (bool, optional): If True, shows a clear button to reset the input. Default is True.
+- `show_plus_button` (bool, optional): If True, shows a plus button next to highlighted suggestions. Default is True.
+- `keep_open_on_plus` (bool, optional): If True, keeps the suggestions open when the plus button is clicked. Default is False.
+- `style_overrides` (dict, optional): Custom styles for the component. See the Customization section for details.
+
+Returns a dictionary with 'interaction' (search, select, submit, plus_click, or reset) and 'value' keys.
+
+## Customization
+
+You can customize the appearance of the searchbar using the `style_overrides` parameter:
+
+```python
+style_overrides = {
+    "clear": {
+        "width": 20,
+        "height": 20,
+        "fill": "#ff0000"
+    },
+    "plus": {
+        "width": 18,
+        "height": 18,
+        "fill": "#00ff00"
+    },
+    "input": {
+        "backgroundColor": "#f0f0f0",
+        "color": "#333"
+    },
+    "suggestion": {
+        "backgroundColor": "#fff",
+        "color": "#333",
+        "hoverBackgroundColor": "#e0e0e0",
+        "hoverColor": "#000"
+    }
+}
+```
+
+## Additional Notes
+
+- Suggestions are displayed in a compact layout, with reduced vertical padding for a sleeker appearance.
+- Long suggestions will wrap to multiple lines without breaking words, ensuring readability.
+- The plus button is positioned on the right side of each suggestion and only appears for the highlighted suggestion.
+- By default, selecting a suggestion or clicking the plus button will automatically close the suggestion list.
+- If `keep_open_on_plus` is set to True, the suggestion list will remain open when the plus button is clicked, allowing for multiple selections or actions without closing the list.
+
+## Development Setup
+
+If you want to modify or rebuild the frontend component, you'll need Node.js. This project was developed using Node.js version 16.20.2. To check your Node.js version, run:
+
+```bash
+node -v
+```
+
+If you don't have Node.js installed or need to update it, visit [nodejs.org](https://nodejs.org/) to download and install the appropriate version.
+
+After ensuring you have the correct Node.js version:
+
+1. Navigate to the `frontend` directory of the project.
+2. Install the required npm packages:
+   ```bash
+   npm install
+   ```
+3. To build the frontend component after making changes:
+   ```bash
+   npm run build
+   ```
+
+Note: The pre-built component is included in the PyPI package, so end-users don't need Node.js to use the searchbar in their Streamlit apps.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
