@@ -1,0 +1,3 @@
+selenium
+phonenumbers
+asyncio

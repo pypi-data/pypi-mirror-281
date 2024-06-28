@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: crazyshit
+Version: 0.0.1
+Summary: CrazyShit is a Python library designed for automating tasks for a WhatsApp bot using Selenium. It enables handling of updates and sending messages efficiently.
+Author: virus
+Project-URL: Homepage, https://github.com/dev-virous/CrazyShit
+Project-URL: Issues, https://github.com/dev-virous/CrazyShit/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: selenium
+Requires-Dist: phonenumbers
+Requires-Dist: asyncio
+
+# CrazyShit
+
+CrazyShit is a Python library for handling automation tasks for a WhatsApp bot using Selenium.
+
+## Example Usage
+
+```python
+from crazyshit import Client, filters
+import asyncio
+
+client = Client(
+    "test",
+    number="+2011111",
+)
+
+@client.on_message(filters.regex(r"^/start$"))
+async def start_(bot, msg):
+    await bot.send_message(
+        to=msg.chat.title,
+        text="how are you?"
+    )
+
+async def run():
+    await client.start()
+    print("[!] Running")
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(run())
+loop.run_forever()
+```
+
+## Features
+- automation tasks for a WhatsApp bot using Selenium.
+- Get updates and send messages.
+
+## Requirements
+- Python 3.8 or higher.
