@@ -1,0 +1,406 @@
+Metadata-Version: 2.1
+Name: llm-comparator
+Version: 0.1
+Summary: LLM Comparator: An interactive visualization tool for side-by-side LLM evaluation
+Author: Google, LLC
+License: 
+                                         Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+Project-URL: Homepage, https://github.com/PAIR-code/llm-comparator
+Project-URL: Repository, https://github.com/PAIR-code/llm-comparator
+Project-URL: Bug Tracker, https://github.com/PAIR-code/llm-comparator/issues
+Project-URL: Demo, https://pair-code.github.io/llm-comparator/
+Keywords: model evaluation,large language models,artifical intelligence,machine learning
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: absl-py
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: vertexai
+
+# LLM Comparator: Python Library
+
+The LLM Comparator Python Library provides a simple API for configuring and
+running **comparative evaluations** of models, and generating the JSON files
+required to analyze these models side-by-side in the
+[LLM Comparator app][llm-comparator-app].
+
+## Installation
+
+```sh
+# [OPTIONAL] We recommend using a Python virtual environemnt.
+python3 -m venv ~/.venv/llm_comparator
+source ~/.venv/llm_comparator/bin/activate
+```
+
+You can install this library from the PyPI registry. This workflow is
+recommended for most usage.
+
+```sh
+pip install llm_comparator
+```
+
+Or by cloning the repo from GitHub and installing from source. This workflow is
+recommended for contributors fixing bugs or adding new features to the library.
+
+```sh
+git clone https://github.com/PAIR-code/llm-comparator.git
+cd llm-comparator/python
+pip install -e .
+```
+
+## Core Concepts
+
+The primary entrypoint to the LLM Comparator Python Library is the
+`llm_comparator.comparison` module. This module provides a `run()` function that
+coordinates the three phases of comparative evaluation: judging, bulletizing,
+and clustering. The library provides modules for each of these phases, as well
+as wrappers for interacting with LLMs.
+
+### Model Helpers
+
+The `llm_comparator.model_helper` module is used to initialize API wrappers to
+interface with LLMs. Broadly, we support two kinds of models: generation models,
+which should be text-to-text language models, and embedding models.
+
+We provide concrete two concrete implementations of wrappers that interact with
+the [Google Vertex AI API][vertex-api]:
+
+*   `VertexGenerationModelHelper` supports any
+    [generative language model][model-garden-gen] available in the Model Garden.
+    By default we use `gemini-pro`, but alternatives can be configured with the
+    `model_name=` constructor parameter.
+*   `VertexEmbeddingModelHelper` supports any
+    [text embedding model][model-garden-emb] available in the Model Garden.
+    By default we use `textembedding-gecko@003`, but alternatives can be
+    configured with the `model_name=` constructor parameter.
+
+Additional wrapper classes can be implemented by subclassing
+`GenerationModelHelper` and `EmbeddingModelHelper` as necessary. We welcome
+contributions of these classes to the library via
+[Pull Requests][llm-comparator-prs].
+
+### Judges
+
+The "judge" is the model responsible for actually doing the comparison between
+the two model responses.
+
+This functionality is encapsulated in the `LLMJudgeRunner` from the
+`llm_comparator.llm_judge_runner` module. It requires a generator model that
+conforms to the `GenerationModelHelper` protocol in order to call an LLM to
+generate their judgements of which of the two model responses is better for
+every prompt.
+
+We provide a default judge prompt in
+`llm_comparator.llm_judge_runner.DEFAULT_LLM_JUDGE_PROMPT_TEMPLATE`, and you can
+use the `llm_judge_prompt_template=` parameter to provide a custom prompt that
+may better suit your needs at initialization time. Prompts should require the
+judge to phrase its responses in a simple XML format that includes the `verdict`
+and an `explanation`, to enable downstream processing by the buletizer and
+clusterer. Note that if you do provide a custom prompt, you can use the
+`rating_to_score_map=` parameter to ensure judgement `verdict`s can be mapped to
+numeric values.
+
+```xml
+<result>
+  <explanation>YOUR EXPLANATION GOES HERE.</explanation>
+  <verdict>A is slightly better</verdict>
+</result>
+```
+The same judge is run multiple times during each comparative analysis to get a
+diversity of ratings. This can be configured via the `num_repeats=` key of the
+optional `judge_opts=` dictionary passed to `llm_comparator.comparison.run()`.
+By default, we call the judge 6 times.
+
+### Bulletizers
+
+A "bulletizer" condenses the results provided by the judge into a set of bullets
+to make them easier to understand and consume in the UI.
+
+This functionality is encapsulated in the `RationaleBulletGenerator` from the
+`llm_comparator.rationale_bullet_generator` module. It requires a generator
+model that conforms to the `GenerationModelHelper` protocol in order to call an
+LLM to generate the bulleted summaries.
+
+The primary configuration is the `win_rate_threshold=` parameter, which can be
+configured per-comparative evaluation run via the `bulletizer_opts=` dictionary
+passed to `llm_comparator.comparison.run()`. By default, the threshold is set to
+`0.25` based on the default scoring range of [-1.5, 1.5].
+
+### Clusterers
+
+A "clusterer" takes the bullets, embeds them, groups them into clusters based on
+embedding similarity, and generates a label for those clusters.
+
+This functionality is encapsulated in the `RationaleClusterGenerator` from the
+`llm_comparator.rationale_cluster_generator` module. It requires a generator
+model that conforms to the `GenerationModelHelper` protocol and an embedder that
+conforms to the `EmbeddingModelHelper` protocol in order to call LLMs to
+generate the clustered summary of rationale bullets.
+
+The primary configuration is the `num_clusters=` parameter, which can be
+configured per-comparative evaluation run via the `clusterer_opts=` dictionary
+passed to `llm_comparator.comparison.run()`. By default, a clusterer creates 8
+clusters from the bullets.
+
+## Basic Usage
+
+We have prepared a Python notebook that you can
+[open in Google Colab][llm-comparator-colab] to follow along interactively. It
+uses Google's Vertex AI APIs to call models, and requires you to
+[authenticate][vertex-auth] in order to follow along.
+
+The following pseudo-script is the minimal distillation of the notebook linked
+above, without any AI platform-specific guidance.
+
+```python
+from llm_comparator import comparison
+from llm_comparator import model_helper
+from llm_comparator import llm_judge_runner
+from llm_comparator import rationale_bullet_generator
+from llm_comparator import rationale_cluster_generator
+
+inputs = [
+  # Provide your inputs here.
+  # They must conform to llm_comparator.types.LLMJudgeInput
+]
+
+# Initialize the models-calling classes.
+generator = # Initialize a model_helper.GenerationModelHelper() subclass
+embedder = # Initialize a model_helper.EmbeddingModelHelper() subclass
+
+# Initialize the instances that run work on the models.
+judge = llm_judge_runner.LLMJudgeRunner(generator)
+bulletizer = rationale_bullet_generator.RationaleBulletGenerator(generator)
+clusterer = rationale_cluster_generator.RationaleClusterGenerator(
+    generator, embedder
+)
+
+# Configure and run the comparative evaluation.
+comparison_result = comparison.run(inputs, judge, bulletizer, clusterer)
+
+# Write the results to a JSON file that can be loaded in
+# https://pair-code.github.io/llm-comparator
+file_path = "path/to/file.json"
+comparison.write(comparison_result, file_path)
+```
+
+<!-- LINKS -->
+[llm-comparator-app]: https://pair-code.github.io/llm-comparator
+[llm-comparator-colab]: https://colab.research.google.com/github/PAIR-code/llm-comparator/blob/main/python/notebooks/basic_demo.ipynb
+[llm-comparator-prs]: https://github.com/PAIR-code/llm-comparator/pulls
+[model-garden-emb]: https://console.cloud.google.com/vertex-ai/model-garden?pageState=(%22galleryStateKey%22:(%22f%22:(%22g%22:%5B%22supportedTasks%22,%22inputTypes%22%5D,%22o%22:%5B%22EMBEDDING%22,%22LANGUAGE%22%5D),%22s%22:%22%22))
+[model-garden-gen]: https://console.cloud.google.com/vertex-ai/model-garden?pageState=(%22galleryStateKey%22:(%22f%22:(%22g%22:%5B%22supportedTasks%22,%22inputTypes%22%5D,%22o%22:%5B%22GENERATION%22,%22LANGUAGE%22%5D),%22s%22:%22%22))
+[vertex-api]: https://cloud.google.com/vertex-ai/docs/reference
+[vertex-auth]: https://cloud.google.com/vertex-ai/docs/authentication
