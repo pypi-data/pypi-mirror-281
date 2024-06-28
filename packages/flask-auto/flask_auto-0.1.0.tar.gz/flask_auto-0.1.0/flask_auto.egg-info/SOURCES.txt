@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+flask_auto/__init__.py
+flask_auto/create_flask_app.py
+flask_auto.egg-info/PKG-INFO
+flask_auto.egg-info/SOURCES.txt
+flask_auto.egg-info/dependency_links.txt
+flask_auto.egg-info/entry_points.txt
+flask_auto.egg-info/requires.txt
+flask_auto.egg-info/top_level.txt

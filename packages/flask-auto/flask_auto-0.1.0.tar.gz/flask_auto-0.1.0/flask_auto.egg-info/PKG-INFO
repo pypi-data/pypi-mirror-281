@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: flask_auto
+Version: 0.1.0
+Summary: A simple Flask project generator
+Home-page: https://github.com/ZeusPod/flask_auto
+Author: Jose Luis Morales
+Author-email: josseluism@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: Flask-SQLAlchemy
+Requires-Dist: python-dotenv
+Requires-Dist: psycopg2-binary
+Requires-Dist: requests
+
+# Flask Auto
+
+Flask Auto es una librerÃ­a para generar proyectos Flask automÃ¡ticamente con una estructura bÃ¡sica de carpetas y archivos, incluyendo soporte para Docker y configuraciÃ³n de base de datos.
+
+## InstalaciÃ³n
+
+Para instalar Flask Auto, usa pip:
+
+```sh
+pip install flask_auto
