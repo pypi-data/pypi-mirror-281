@@ -1,0 +1,7 @@
+README.md
+setup.py
+minimodel.egg-info/PKG-INFO
+minimodel.egg-info/SOURCES.txt
+minimodel.egg-info/dependency_links.txt
+minimodel.egg-info/requires.txt
+minimodel.egg-info/top_level.txt
