@@ -1,0 +1,9 @@
+asr_app/app.py,sha256=MaNhy2HM89JqmGPrHIyhapvr6BcDOoW9Dp-mvOWwAcc,4479
+asr_app/io.py,sha256=-_bS5IF26cZSMSv1JAMjk0GoOK3gdaj5g0FHd_Hhzjk,800
+asr_app/progress.py,sha256=_wt6eOV04qOM_i6bS50enbq5sTmIeNmrHyF_Oo4sfzc,2168
+asr_app/settings.py,sha256=aj_rEJ-aAgsU68YuzH9zSJb41BqJ1Zk_DkdUkHUuVvU,646
+asr_app/texts.py,sha256=G6Bpmi9EKEr6vo9vHqEa8VbMeROa1pKIOns0kDp7IMo,655
+asr_app-0.1.0.dist-info/METADATA,sha256=exYSzSD4Q2IPGQGo80koRs8PoaxiWr-oWh1TZsstgWA,638
+asr_app-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+asr_app-0.1.0.dist-info/entry_points.txt,sha256=SHG6lwYwwivsPReGa9xLiTdIJCPrYDlTboToxm8gqLA,48
+asr_app-0.1.0.dist-info/RECORD,,
