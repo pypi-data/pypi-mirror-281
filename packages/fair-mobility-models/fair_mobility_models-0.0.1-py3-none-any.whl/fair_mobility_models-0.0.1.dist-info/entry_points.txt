@@ -1,0 +1,3 @@
+[console_scripts]
+grav-model = fair_mobility_models.gravity:grav_Model
+rad-model = fair_mobility_models.radiation:rad_Model
