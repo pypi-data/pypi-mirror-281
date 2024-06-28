@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: parseratorvariable
+Version: 1.0.0
+Summary: Structured variable type for dedupe
+Home-page: https://github.com/datamade/parseratorvariables
+License: The MIT License: http://www.opensource.org/licenses/mit-license.php
+Description-Content-Type: text/markdown
+Requires-Dist: dedupe>=3.0.0
+Requires-Dist: numpy
+Requires-Dist: probableparsing
+
+# parseratorvariable
+Base class for dedupe variables for parsed fields
+
+Part of the [Dedupe.io](https://dedupe.io/) cloud service and open source toolset for de-duplicating and finding fuzzy matches in your data.
