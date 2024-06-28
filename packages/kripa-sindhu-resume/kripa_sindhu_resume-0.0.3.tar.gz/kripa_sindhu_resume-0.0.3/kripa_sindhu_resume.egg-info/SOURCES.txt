@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+kripa_sindhu_resume/__init__.py
+kripa_sindhu_resume.egg-info/PKG-INFO
+kripa_sindhu_resume.egg-info/SOURCES.txt
+kripa_sindhu_resume.egg-info/dependency_links.txt
+kripa_sindhu_resume.egg-info/top_level.txt
