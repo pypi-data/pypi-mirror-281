@@ -1,0 +1,8 @@
+etlup/__about__.py,sha256=pPgeqJpPD6bcFP-ih3AKkJKhvCCfE9GRUlOyelL_ds4,138
+etlup/__init__.py,sha256=so5OCEpZscdj6F4uvzAvFbNE9zPnIL-2Xl4AMa4n-vY,116
+etlup/data_models.py,sha256=BdCaToFTHDu6FrZQRFTIQXCE9rTZGpCUPvQDLPUQ25o,19837
+etlup/upload.py,sha256=iEs06tus6aHQgCn__Gom6HD37UwjvITZIVw3EQ67Ck0,2747
+etlup-1.0.4.dist-info/METADATA,sha256=xAsF5dAdqscIIboppA3K9voEPfwEwufwKRwAuSgXZ2Q,1482
+etlup-1.0.4.dist-info/WHEEL,sha256=zEMcRr9Kr03x1ozGwg5v9NQBKn3kndp6LSoSlVg-jhU,87
+etlup-1.0.4.dist-info/licenses/LICENSE.txt,sha256=tKu5W97BGka1mu9iPoclvqVRV_lWuDGsins2xEXkggY,1108
+etlup-1.0.4.dist-info/RECORD,,
