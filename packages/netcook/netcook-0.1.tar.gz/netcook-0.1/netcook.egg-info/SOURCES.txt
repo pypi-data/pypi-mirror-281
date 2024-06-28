@@ -1,0 +1,7 @@
+setup.py
+netcook/__init__.py
+netcook/urls.py
+netcook.egg-info/PKG-INFO
+netcook.egg-info/SOURCES.txt
+netcook.egg-info/dependency_links.txt
+netcook.egg-info/top_level.txt
