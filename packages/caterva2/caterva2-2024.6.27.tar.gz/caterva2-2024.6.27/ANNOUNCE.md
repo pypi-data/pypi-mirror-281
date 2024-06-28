@@ -1,0 +1,49 @@
+Announcing Caterva2 2024.06.27
+==============================
+
+Caterva2 is a high-performance storage and communication system for
+on-demand access to Blosc2 data repositories.
+
+This release includes improved navigation and display of dataset information
+in the web client, support for displaying MarkDown files, support for
+authentication, and a new @scratch area (pseudo-root) when logged in.
+The @scratch support allows creating new datasets, uploading and deleting files.
+Also, a new Prompt box allows creating lazy expressions in the server that
+evaluate on-demand.
+
+For more info, you can have a look at the release notes in:
+
+https://github.com/ironArray/Caterva2/releases
+
+More info and examples are available in the README:
+
+https://github.com/ironArray/Caterva2#readme
+
+## What is it?
+
+Caterva2 is a distributed system written in Python meant for sharing Blosc2
+datasets among different hosts by using a publish–subscribe messaging pattern
+(see https://en.wikipedia.org/wiki/Publish–subscribe_pattern).  Here,
+publishers categorize datasets into root groups that are announced to the
+broker and propagated to subscribers.
+
+Subscribers can access datasets of publishers on demand on behalf of clients,
+and cache them locally. This could be particularly useful for accessing remote
+datasets and sharing them within a local network, thereby optimizing
+communication and storage resources within work groups.
+
+Caterva2 is distributed using the AGPL license, see
+https://github.com/ironArray/Caterva2/blob/main/LICENSE.txt
+for details.
+
+## Follow us
+
+You can follow us on Mastodon: https://mastodon.social/@ironArray,
+LinkedIn: https://www.linkedin.com/company/77649425/admin/feed/posts/
+or on Twitter: https://twitter.com/ironArray
+
+You can contact us at: https://ironarray.io
+
+
+-- The ironArray Team
+   Make compression better
