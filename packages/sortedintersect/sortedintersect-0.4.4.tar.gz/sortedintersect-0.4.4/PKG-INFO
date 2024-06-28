@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sortedintersect
+Version: 0.4.4
+Summary: Interval intersection for sorted query and target intervals
+Author: Kez Cleal
+Author-email: Kez Cleal <clealk@cardiff.ac.uk>
+License-File: LICENSE.md
