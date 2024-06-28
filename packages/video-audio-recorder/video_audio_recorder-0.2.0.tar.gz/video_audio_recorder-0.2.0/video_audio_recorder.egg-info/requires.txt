@@ -1,0 +1,4 @@
+numpy
+pyaudio
+opencv-python
+ffmpeg-python
