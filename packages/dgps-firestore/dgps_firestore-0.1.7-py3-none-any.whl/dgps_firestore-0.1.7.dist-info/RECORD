@@ -1,0 +1,8 @@
+dgps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dgps/firestore/FirestoreAdministrator.py,sha256=_l1kn4mr4XHzlPlmWkmhXmRUCdwYoJG4lxvpCrXB6xE,19466
+dgps/firestore/__init__.py,sha256=_NKNr6WyIUvhUMDGZpMoykocl45vDYI5ndkpX7zweTE,162
+dgps/utils/__init__.py,sha256=6u2rKpGjk7gJcPIniy0J16WDvhcbiJDuYkYrEI-eKNE,12741
+dgps_firestore-0.1.7.dist-info/METADATA,sha256=lsQTbws9zUAuaE8E3FVx2QZWulHYmISpLu4PyfRdif8,303
+dgps_firestore-0.1.7.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+dgps_firestore-0.1.7.dist-info/top_level.txt,sha256=1DCo5wUXCY83oeArnih7oBt0cKVROct25yDua67y13g,5
+dgps_firestore-0.1.7.dist-info/RECORD,,
