@@ -1,0 +1,15 @@
+piwigo/__init__.py,sha256=J5QSrUKYke5JDxhyuLLID60_h6eNMTj5d1I2LuFeopY,170
+piwigo/ws.py,sha256=BbQWI_c_JNveS0JxreemsSrmmDjmGs5KDV9g94hwigI,4409
+piwigo/__pycache__/WsErrorException.cpython-312.pyc,sha256=VVW7LgLXNAjO20mr6Mssmh0WePsIqXvyOC6KIqvF3TU,162
+piwigo/__pycache__/WsNotExistException.cpython-312.pyc,sha256=hNiWzScfML1dZTA6EHuRNwOJLgXpQuM-dRlgn57FkIg,165
+piwigo/__pycache__/WsPiwigoException.cpython-312.pyc,sha256=CaAVqKhx172SOSJg00s48VqyS-DfFnMi8VVln3Plcro,163
+piwigo/__pycache__/__init__.cpython-312.pyc,sha256=CB7xweYRm13vxo7K0vNun_KmIcQyusYWha1Gxb2srFQ,549
+piwigo/__pycache__/exceptions.cpython-312.pyc,sha256=HQxuoSzU3yXZvCjWj014n3MQ9YIBEJ1wbGfdJ5QV-0I,2057
+piwigo/__pycache__/piwigo.cpython-312.pyc,sha256=ZVw7xS8IS03chCklrXyeXeekobeNWm7Cb42aYJjDlVQ,1461
+piwigo/__pycache__/ws.cpython-312.pyc,sha256=ll-Q70s-uK9hIWnTRW-uzzxYzC5K4xXbZlS0Gt42qbc,5019
+piwigo2-2.0.1.dist-info/AUTHORS.txt,sha256=8XFpUi_seeB5UDLi9C5fou2E3KaZe0pfjbAmOeuFzUI,78
+piwigo2-2.0.1.dist-info/LICENSE,sha256=H9x61581Wf4Rov33IpyrKrw1GUSmMbhbzNGpe-sEcbc,18004
+piwigo2-2.0.1.dist-info/METADATA,sha256=m-ZeRsDxDnjZu-fZEzXQA6N65vAFrTuuLxgrR-uko3w,1916
+piwigo2-2.0.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+piwigo2-2.0.1.dist-info/top_level.txt,sha256=SBE4gv98BsF-ot-xC0lh0a7SotL5gciPaJu29aer8DY,7
+piwigo2-2.0.1.dist-info/RECORD,,
