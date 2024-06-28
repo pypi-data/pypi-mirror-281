@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: carberra
+Version: 0.1.0
+Summary: Breif description
+Home-page: https://carberra.xyz
+Author: Ethan Henderson
+Author-email: carberra.buisness@gmail.com
+License: The Unlicense
+Project-URL: Documentation, https://carberra.xyz/docs
+Project-URL: Source, https://github.com/carberra/pypi-tutorial
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Requires-Python: >= 3.10,
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas >=2.0
+Provides-Extra: excel
+Requires-Dist: openpyxl ; extra == 'excel'
+
+# Canberra
+
+This is a test package to learn from a video tutorial
+
+Never gonna let you down!
