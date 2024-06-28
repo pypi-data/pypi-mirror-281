@@ -1,0 +1,4 @@
+celery>=5.3.0
+Django>=4.2
+django-celery-beat>=2.5.0
+kombu>=5.3.0
