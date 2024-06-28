@@ -1,0 +1,13 @@
+draftdiff/aggregation.py,sha256=VWjZSudctT6Ii-42aIvRedSwEDvo0rgnzUqUx7QM8wI,8029
+draftdiff/constants.py,sha256=wBjKWivkUssw9ZH3M8RunNu6nZsOwkDa1jPom4A6csY,3067
+draftdiff/dotabuff.py,sha256=dUl252T8ReTMDYRsDzvyyz3fKKkfDHEyM97iqrN9Qjo,11862
+draftdiff/io.py,sha256=ra9UMpXNeh440txuFCy1C-MttHEeameASq6WNY8OqeQ,6528
+draftdiff/sheets.py,sha256=_Mq3OM4e8rVQDzB3WEu4HbdPWwxLyyKHsVWmEuYkVS4,1145
+draftdiff/stratz.py,sha256=KSwjl9esf0i_MVKpK-KBBjzoxCPyUb9LLTawp3jvL0Q,5198
+draftdiff/util.py,sha256=2aiTQ0fchBLl_QkAcer5KNbO6d34G81JgWCtSi9V1nY,159
+draftdiff/writetos3.py,sha256=pSxshM38ivY_5oUH-EvzTp6IpmtDou7YMEFlLDr_C-s,1243
+draftdiff/writetosheets.py,sha256=tz4aW-j0v9b_O3_ALg8OH8hnWnbcCrqnzOzqHmBgO50,3168
+draftdiff-0.1.6.dist-info/LICENSE,sha256=VRw3bFx51ccBnm4j_NW4R4oHHhcnmetlY0Fbgpui1eA,1065
+draftdiff-0.1.6.dist-info/METADATA,sha256=SuiL_Ig3hrNVneI_yiZSaa4OYg_BVaIStrAsiOvuj2o,3078
+draftdiff-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+draftdiff-0.1.6.dist-info/RECORD,,
