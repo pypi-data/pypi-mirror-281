@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+iSORT/SOGlocate.py
+iSORT/SpaRNA.py
+iSORT/__init__.py
+iSORT/iSORT.py
+iSORT/network.py
+iSORT/preprocess.py
+iSORTpy.egg-info/PKG-INFO
+iSORTpy.egg-info/SOURCES.txt
+iSORTpy.egg-info/dependency_links.txt
+iSORTpy.egg-info/top_level.txt
