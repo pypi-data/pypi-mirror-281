@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: youtube_category_library
+Version: 0.1.0
+Summary: A library for NLP and emotional analysis to find YouTube categories for SEO keyword generation.
+Home-page: https://github.com/yourusername/youtube_category_library
+Author: Avinash Ricky
+Author-email: ricky48avinash@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# YouTube Category Library
+
+This library helps with NLP and emotional analysis to find YouTube categories for SEO keyword generation.
+
+## Installation
+
