@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: web3-collections
+Version: 0.0.1
+Summary: Alternatives to some of the web3's classes
+Home-page: https://github.com/MiKoronjoo/web3-collections
+Author: MiKO
+Author-email: mikoronjoo@gmail.com
+Project-URL: Bug Tracker, https://github.com/MiKoronjoo/web3-collections/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: <4.0.0,>=3.7.2
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: web3 <7.0.0,>=6.0.0
+
+## Web3.py collections
+
+This module providing alternatives to some of the web3's classes
+
+### Installation
+
+Install the package using the following command:
+
+```shell
+pip install -U web3-collections
+```
