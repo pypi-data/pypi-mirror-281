@@ -1,0 +1,9 @@
+cmem_plugin_reason/__init__.py,sha256=t8H97wu7qPufFrPXVM-WtNW7X4Lxztl2K2GSEQopXMM,28
+cmem_plugin_reason/bin/robot.jar,sha256=PREvR6XC6C_ZbCvEDlgqhtHmrST2dkjvED7F8hmFul4,93636279
+cmem_plugin_reason/obofoundry.png,sha256=Avosn3DezlxMIR5Y_WaPu8KQCpRMMg2G06TYK0S7MWw,10037
+cmem_plugin_reason/plugin_reason.py,sha256=ak1eMm_9ifmMOFyOVVDcKv3BGGB6xQLi_ZmYU20NPpQ,15209
+cmem_plugin_reason/plugin_validate.py,sha256=YAaytLWT88b1amd7ckh7y996976lRmd086HlXmm7yVM,11114
+cmem_plugin_reason-1.0.0a1.dist-info/LICENSE,sha256=5t6lcWcFU3TBO5wwq9PYNbgzfVfFUuL-80v5BTGuuMQ,11334
+cmem_plugin_reason-1.0.0a1.dist-info/METADATA,sha256=ILpcjAm8sUa3RIAgJPCzYFqOFkCeKZ_qesF6oTBW-BA,1296
+cmem_plugin_reason-1.0.0a1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cmem_plugin_reason-1.0.0a1.dist-info/RECORD,,
