@@ -1,0 +1,7 @@
+setup.py
+shiutils/__init__.py
+shiutils/hello.py
+shiutils.egg-info/PKG-INFO
+shiutils.egg-info/SOURCES.txt
+shiutils.egg-info/dependency_links.txt
+shiutils.egg-info/top_level.txt
