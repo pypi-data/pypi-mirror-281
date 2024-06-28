@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: iSORTpy
+Version: 1.0.1
+Summary: Transfer learning of multicellular organization via single-cell and spatial transcriptomics
+Home-page: https://github.com/xiaojierzi/iSORT
+Author: Yecheng Tan
+Author-email: yctan21@m.fudan.edu.cn
+License: GNU General Public License v3.0
+Requires-Python: >=3.8
+License-File: LICENSE
+
