@@ -1,0 +1,8 @@
+aviatormath/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aviatormath/coef_generation.py,sha256=RZ-Cj8Z3bCHoa6IHHv6_P4h3KibvhYyf8jKxYg2YomE,1028
+aviatormath/cutting_methods.py,sha256=27_hbMgzzvWj2dGFNzOnlibEDPH52-DZCWxGZZ4eQh4,97
+aviatormath/data/cdf.csv,sha256=F5EBkIG0bEvdTTOxqN4HPRw96K1VAQHEE9_neIKEHG8,143398
+aviator_math-0.1.0.dist-info/METADATA,sha256=TZYGMfSjUF7oJ8AGzRnni1mtbXCQfQNEa6Th-BWD2pk,190
+aviator_math-0.1.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+aviator_math-0.1.0.dist-info/top_level.txt,sha256=RTiU47fdqh5EPLZS7HmoheRZVEZPIcFmyZXp-wgiKZI,12
+aviator_math-0.1.0.dist-info/RECORD,,

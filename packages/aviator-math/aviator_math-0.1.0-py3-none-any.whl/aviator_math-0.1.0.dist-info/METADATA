@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: aviator-math
+Version: 0.1.0
+Summary: Library used for math part of aviator project
+Author: Gleb Grinchik <gleb.grinchik@celadon.ae>
+Requires-Dist: pandas
+
