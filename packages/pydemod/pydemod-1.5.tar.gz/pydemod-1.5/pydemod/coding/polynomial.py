@@ -1,0 +1,117 @@
+#!/usr/bin/python
+
+# This file is part of Pydemod
+# Copyright Christophe Jacquet (F8FTK), 2011, 2014
+# Licence: GNU GPL v3
+# See: https://github.com/ChristopheJacquet/Pydemod
+
+import numpy as np
+
+class Code:
+    def __init__(self, poly, word_size, offset_words) -> None:
+        self.word_size = word_size
+        self.poly = np.array(poly, dtype=int)
+        self.offset_words = offset_words
+
+        # calculate the P matrix by polynomial division
+        # each row is: e(i)*x^10 mod rds_poly
+        # where e(i) is the i-th base vector in the canonical orthogonal base
+        self.check_size = self.poly.size - 1
+        self.matP = np.empty([0, self.check_size], dtype=int)
+        for i in range(word_size):
+            (q, r) = np.polydiv(np.identity(self.word_size+self.check_size, dtype=int)[i], self.poly)
+            # r may be "left-trimmed" => add missing zeros
+            if self.check_size - r.size > 0:
+                r = np.append(np.zeros(self.check_size - r.size, dtype=int), r)
+
+            rr = np.mod(np.array([r], dtype=int), 2)
+            self.matP = np.append(self.matP, rr, axis=0)
+
+        self.matG = np.append(np.identity(self.word_size, dtype=int), self.matP, axis=1)
+        self.matH = np.append(self.matP, np.identity(self.check_size, dtype=int), axis=0)
+
+        self.syndromes = {}
+        for ow_name, ow in offset_words.items():
+            # actually it's useless to call syndrome here, because of the way
+            # our H is constructed. Do the block-wise matrix multiplication
+            # to be convinced of this.
+            self.syndromes[ow_name] = self.syndrome(np.append(np.zeros(self.word_size, dtype=int), np.array(ow, dtype=int)))
+
+
+    def syndrome(self, v) -> np.ndarray:
+        return np.mod(np.dot(v, self.matH), 2)
+
+
+    def bitstream_to_wordstream(self, bitstream) -> list:
+        bits = np.array(bitstream, dtype=int)
+        wordStream = []
+        i = self.word_size+self.check_size
+        while i <= bits.size:
+            candidate = bits[i-self.word_size-self.check_size:i]
+            for sname, synd in self.syndromes.items():
+                if (synd == self.syndrome(candidate)).all():
+                    wordStream.append((sname, candidate[0:self.word_size]))
+                    i = i + self.word_size + self.check_size - 1
+            i = i + 1
+        return wordStream
+
+
+    def wordstream_to_bitstream(self, wordstream) -> np.ndarray:
+        def to_bin(x) -> list[int]:
+            """
+            to_bin - Returns a binary list with 1s and 0s
+
+            Example:
+                >>> to_bin(0b1000000000000000)
+                [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                >>> to_bin(0b100000000000000)
+                [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+            :param x: Number to convert
+            :return: List of ints
+            """
+            res: list = []
+            for _ in range(self.word_size):
+                res.insert(0, x % 2)
+                x >>= 1
+            return res
+
+        # Construct the matrix of binary words for the given wordstream, one word per
+        # row, one bit per column.
+        words = np.array(list(map(lambda ofswrd: to_bin(ofswrd[1]), wordstream)))
+
+        # Construct the matrix of offset words (as many offset words as data words),
+        # using the same convention.
+        offsets = np.array(list(map(lambda ofswrd: np.array(self.offset_words[ofswrd[0]]), wordstream)))
+
+        # We get the bitstream by matrix-multiplying (in Z/2Z) the matrix of words
+        # (one word per row) with G. This gives out the matrix of the words+checksums,
+        # one word+checksum per row.
+        bitstream: np.ndarray = np.dot(np.array(words), self.matG) % 2
+
+        # Now we need to add the offset words to the checksums, i.e. to the columns
+        # self.word_size to self.word_size+self.check_size-1.
+        bitstream[:,self.word_size:] ^= offsets
+
+        return bitstream.flatten()
+
+
+    def __repr__(self) -> str:
+        return f"<Code {self.poly=} {self.word_size=} {self.matP=} {self.matG=} {self.matH=} {self.syndromes=}>"
+
+    def __str__(self) -> str:
+        return repr(self)
+
+
+amss_code = Code(
+    [1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1],
+      36, {1: [0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1], 2:[1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1]}
+      )
+rds_code = Code(
+    [1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1],
+      16, {'A': [0, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+            'B': [0, 1, 1, 0, 0, 1, 1, 0, 0, 0],
+              'C': [0, 1, 0, 1, 1, 0, 1, 0, 0, 0],
+                "C'": [1, 1, 0, 1, 0, 1, 0, 0, 0, 0],
+                  'D': [0, 1, 1, 0, 1, 1, 0, 1, 0, 0]
+                  })
