@@ -1,0 +1,10 @@
+nanolsap/__init__.py,sha256=d7q-Z87JEZQ0zKZ6B4_SkkdFKqPwYF6TMIMCupR34jU,326
+nanolsap/_lsap.pyd,sha256=HZQRA14lQnQ6e0jcdE1aAqUNxP_VFG-3KewodkA2JJc,92160
+nanolsap/_lsap.pyi,sha256=G2vK9QG-zggNzWk-Lv73ZA4MW2SuyIgaD1IxIZ3BF2s,315
+nanolsap/_version.py,sha256=G-trurg7Q9rc01f0nv8X-GMT5ZvXG2z4OEq3GzamI68,427
+nanolsap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nanolsap-0.1.4.dist-info/LICENSE,sha256=eobA04hHuG7ire78ZbrTHZ1fZAByLaU5LibU6f0tmgc,1522
+nanolsap-0.1.4.dist-info/METADATA,sha256=-gQ3LyhNYQc-61GAmt5W71050qKMb9Eg6c-j_9utB44,3721
+nanolsap-0.1.4.dist-info/WHEEL,sha256=FFmiI-dLThePDD0k1Bnnh98Ndxu4MmzVxkvMsYz3byw,99
+nanolsap-0.1.4.dist-info/top_level.txt,sha256=ww4bNRQKje7HYvcV29w7CJEHdcTSuxaceNEB6Dl4QBE,9
+nanolsap-0.1.4.dist-info/RECORD,,
