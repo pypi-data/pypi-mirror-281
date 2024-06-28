@@ -1,0 +1,17 @@
+fermioniq/__init__.py,sha256=eLSalHzmjz78hRH4f5UqpFF9zcw2hil59ocmpnWM1_g,606
+fermioniq/api.py,sha256=33eFv6JGvJzxDItzAIzt1YPq-ReQ5jW9zGLuKmU9eLA,11580
+fermioniq/client.py,sha256=jmbWQrMWCHWqUr_GkJzBEb9bAdMHOqMY2oZBoElCgPE,29900
+fermioniq/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fermioniq/config/defaults.py,sha256=RBAlND_WuDRQpoaT0ZV66XsnQvVV2ftKec15WGJuM3A,2316
+fermioniq/custom_logging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fermioniq/custom_logging/jobs_table_functions.py,sha256=FbdcOWpdzCNwRbYGMjtHi3a846PmTV5hSuMPmpLSsGE,927
+fermioniq/custom_logging/printing.py,sha256=PqRF5HnhoHx5uTfbbwglmS2KEcx39egDFUDTcFjtlko,13592
+fermioniq/emulator_job.py,sha256=2D7cGDM68TgnzgH54A5SLJCpul8-uIg0geNnVgZVfgI,17599
+fermioniq/emulator_message.py,sha256=7WTg0HymFJsn9c8DxIuh0Sz8sFq7LRw4jFpxrvfQgWE,1382
+fermioniq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fermioniq/version.py,sha256=CfxjCyC2iA9sqbVbGHcy6AOiBc2pORcKqRXQbmlcmzY,18
+fermioniq/websocket_handler.py,sha256=QnbkfvPaqwYZ-7N1VCOhDjsaDHyar8hXl0dBjLI2Dio,4288
+fermioniq-1.3.0.dist-info/LICENSE,sha256=vwLPObTE1HY8AxFLV-o_Et3hM2n4XM1sxXVGS1tx25E,1098
+fermioniq-1.3.0.dist-info/METADATA,sha256=1bHKQWmVbH7xqsB49qIHpKtzv28HTSY6qy6EJE3PHRk,1998
+fermioniq-1.3.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+fermioniq-1.3.0.dist-info/RECORD,,
