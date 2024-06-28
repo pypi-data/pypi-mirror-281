@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/menv.egg-info/PKG-INFO
+src/menv.egg-info/SOURCES.txt
+src/menv.egg-info/dependency_links.txt
+src/menv.egg-info/entry_points.txt
+src/menv.egg-info/requires.txt
+src/menv.egg-info/top_level.txt
