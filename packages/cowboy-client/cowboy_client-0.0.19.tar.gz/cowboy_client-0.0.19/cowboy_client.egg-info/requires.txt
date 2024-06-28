@@ -1,0 +1,7 @@
+click
+pyyaml
+pydantic==2.7.4
+gitpython==3.0.6
+requests
+platformdirs
+pytz
