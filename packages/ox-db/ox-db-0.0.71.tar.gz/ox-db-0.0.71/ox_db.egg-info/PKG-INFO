@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ox-db
+Version: 0.0.71
+Summary: A simple database and vector database
+Home-page: https://github.com/ox-ai/ox-db.git
+Author: Lokeshwaran M
+Author-email: lokeshwaran.m23072003@gmail.com
+License: MIT
+Keywords: ox-db ox-ai
+License-File: LICENSE
