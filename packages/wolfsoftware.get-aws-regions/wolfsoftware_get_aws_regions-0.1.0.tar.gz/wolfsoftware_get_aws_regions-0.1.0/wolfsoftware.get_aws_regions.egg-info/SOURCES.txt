@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+tests/test_get_aws_regions.py
+wolfsoftware.get_aws_regions.egg-info/PKG-INFO
+wolfsoftware.get_aws_regions.egg-info/SOURCES.txt
+wolfsoftware.get_aws_regions.egg-info/dependency_links.txt
+wolfsoftware.get_aws_regions.egg-info/requires.txt
+wolfsoftware.get_aws_regions.egg-info/top_level.txt
+wolfsoftware/get_aws_regions/__init__.py
+wolfsoftware/get_aws_regions/exceptions.py
+wolfsoftware/get_aws_regions/functions.py
