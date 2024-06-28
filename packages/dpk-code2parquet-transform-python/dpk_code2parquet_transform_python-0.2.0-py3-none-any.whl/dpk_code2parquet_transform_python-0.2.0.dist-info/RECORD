@@ -1,0 +1,9 @@
+code2parquet_local.py,sha256=86QI_Qssegl7l0Dnw63uAJ51M0aAi044QV4dBAZZRO0,2147
+code2parquet_local_python.py,sha256=YIWQ8GhWJMyEKbZrb4hwCtxdG9pVgpiOXixFgy6qnSQ,2347
+code2parquet_s3_python.py,sha256=3lV3rWxY_iCceCuKUoguztDsNp--nOU2E21Jad3dje0,2330
+code2parquet_transform.py,sha256=pTtokY8yZ78WGBO0Tra3Z-WRq6ajsQmZRjAYZm78_ms,10403
+code2parquet_transform_python.py,sha256=dnaECaTrQtqsJjDHfXTD4AjTTzEFL0rSyPD_kqCpAQA,1539
+dpk_code2parquet_transform_python-0.2.0.dist-info/METADATA,sha256=UlVYoWqPpSBSKh4FvKYpAoB0OIz4judahDMCQFMRoVM,5499
+dpk_code2parquet_transform_python-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+dpk_code2parquet_transform_python-0.2.0.dist-info/top_level.txt,sha256=Q1z-XK5jUM259tTmwb_TjXv-RfCsKOdU8PawaY_IZjM,121
+dpk_code2parquet_transform_python-0.2.0.dist-info/RECORD,,
