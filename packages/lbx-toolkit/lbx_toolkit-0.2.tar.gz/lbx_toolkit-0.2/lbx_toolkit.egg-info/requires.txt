@@ -1,0 +1,14 @@
+locale
+time
+threading
+logging
+pathlib
+psycopg2
+pandas
+numpy
+http.server
+urllib.parse
+msal
+requests
+selenium
+webdriver-manager

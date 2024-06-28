@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: lbx_toolkit
+Version: 0.2
+Summary: Biblioteca de ferramentas LBX S/A
+Author: Cristiano P. Ferrari
+Author-email: boxferrari@gmail.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: locale
+Requires-Dist: time
+Requires-Dist: threading
+Requires-Dist: logging
+Requires-Dist: pathlib
+Requires-Dist: psycopg2
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: http.server
+Requires-Dist: urllib.parse
+Requires-Dist: msal
+Requires-Dist: requests
+Requires-Dist: selenium
+Requires-Dist: webdriver-manager
+
+# Biblioteca de ferramentas LBX S/A
+
+Esta biblioteca possui ferramentas comuns desenvolvidas originalmente para uso nos scripts da empresa LBX S/A
+
+## Classe e funÃ§Ãµes
+
+**Auth_MS365**:             Utiliza o seriÃ§o Microsoft(c) 365 para autenticar o usuÃ¡rio e previnir o uso nÃ£o autorizado do script.
+    _- valida_grupo():_     Autentica o usuÃ¡rio e checa se ele pertence a um grupo de seguranÃ§a especÃ­fico, abortando o script caso negativo
+    _- disclaimer():_       Aviso sobre a necessidade de autenticaÃ§Ã£o e parametros de execuÃ§Ã£o/acesso
+**PostgreSQL**:             Acessa e interage com o banco de dados PostgreSQL
+    _- db():_               Inicia sessÃ£o com o banco
+    _- csv_df():_           Le arquivo CSV e gera Dataframe do Pandas a partir dele
+    _- db_insert_df():_     Insere informaÃ§Ãµes de um Dataframe (Pandas) em uma tabela do banco com estrutura equivalente
+    _- db_select():_        Retorna um cursor Ã  partir e uma query
+**API**:                    Interage com APIs RESTfull, especialmente providas para o ERP Sienge
+    _- auth_base():_        Autentica (HTTPBasicAuth) sessÃ£o na API
+    _- endpoint_json():_    Envia um payload em formato json para um Endpoint da API autenticada
+    _- close():_            Encerra a sessÃ£o autenticada
+
+## InstalaÃ§Ã£o e uso:
+
+### InstalaÃ§Ã£o
+
+```
+pip install lbx_toolkit
+```
+
+### Uso
+```
+from lbx_toolkit import Auth_MS365, PostgreSQL, API ## liste a(s) classe(s) que deseja importar
+```
+
+Classe **Auth_M365**
+
+NecessÃ¡rio obter as credencias de seu contrato Microsoft(c) 365, em especÃ­fico client_id, client_secret e tenant_id
+Sugerimos nÃ£o armazenar informaÃ§Ãµes sensÃ­veis. Considere usar o pacote ```dotenv``` para isso
+
+```
+client_id = 'SEU_CLIENT_ID'
+client_secret = 'SEU_CLIENT_SECRET'
+tenant_id = 'SEU_TENANT_ID'
+
+auth = Auth_M365(client_id, client_secret, tenant_id, timeout=60, log_file='auth_office365_lbx.log')  ## timeout e log_file sÃ£o opcionais e se omitidos, os valores aqui atribuÃ­dos serÃ£o adotados como padrÃ£o
+auth.valida_grupo('Nome do Grupo de DistribuiÃ§Ã£o') ## se usuÃ¡rio nÃ£o pertencer a grupo informado, a execuÃ§Ã£o do script Ã© abortada.
+```
