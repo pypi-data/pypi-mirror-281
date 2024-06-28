@@ -1,0 +1,2 @@
+[console_scripts]
+arifETS = arifETS.expense_management:main
