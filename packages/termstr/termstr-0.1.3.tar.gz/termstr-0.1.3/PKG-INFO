@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: termstr
+Version: 0.1.3
+Project-URL: Issues, https://github.com/Lingxuan-Ye/termstr/issues
+Project-URL: Source, https://github.com/Lingxuan-Ye/termstr
+Author-email: Lingxuan Ye <love@lingxuan.io>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# termstr
+
+This project originated from a submodule of [lifegame-tui](https://github.com/Lingxuan-Ye/lifegame/tree/main/python), primarily used for coloring, styling, and aligning console characters.
+
+[![PyPI - Version](https://img.shields.io/pypi/v/termstr.svg)](https://pypi.org/project/termstr)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/termstr.svg)](https://pypi.org/project/termstr)
+
+-----
+
+**Table of Contents**
+
+- [termstr](#termstr)
+  - [Installation](#installation)
+  - [License](#license)
+
+## Installation
+
+```console
+pip install termstr
+```
+
+## License
+
+`termstr` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
