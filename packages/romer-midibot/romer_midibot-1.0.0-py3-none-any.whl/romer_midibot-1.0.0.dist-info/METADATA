@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: romer-midibot
+Version: 1.0.0
+Summary: A Python API for the MIDIbot
+Author: Omar Habib
+Author-email: omar1farouk@gmail.com
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: pyserial
+
