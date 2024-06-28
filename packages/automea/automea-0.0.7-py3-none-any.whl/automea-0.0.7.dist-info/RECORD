@@ -1,0 +1,13 @@
+__init__.py,sha256=B6eNgUun7WOC8c_FbuI35B00zY6Uuzwz96iGceJR7hc,30
+__main__.py,sha256=mG1C72Tkv5ts1dTGybo8aGc_AfNbSTynSaPJUlfgx5w,96643
+util.py,sha256=4fTPlET07aIVuoUfC1mYqcw2UfV2zOX_5m4OjS0S-rg,13333
+automea/__init__.py,sha256=B6eNgUun7WOC8c_FbuI35B00zY6Uuzwz96iGceJR7hc,30
+automea/__main__.py,sha256=TvvTMxbKWne_SjDYyfwHxYU5rR5FriUCa6oXssj9bz8,95701
+automea/util.py,sha256=4fTPlET07aIVuoUfC1mYqcw2UfV2zOX_5m4OjS0S-rg,13333
+automea/training/models.py,sha256=5BC1pzDguHxNkL3erRNxRM9fagABmuAa3GfdVvUt7dI,5451
+automea-0.0.7.dist-info/AUTHORS.md,sha256=1snfu436xwqAbEB5_QmA3w9bGjBop0pj557eRp14ZHs,64
+automea-0.0.7.dist-info/LICENSE,sha256=7bmUoudJYZuC7eVSUnA4VRHzKQdw3AgEwNXgYCzDtZg,1075
+automea-0.0.7.dist-info/METADATA,sha256=U4178lTE8yZClVS3U7tnr-AhYru72io2YsNnwzMbMys,2146
+automea-0.0.7.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+automea-0.0.7.dist-info/top_level.txt,sha256=HZwGD9gk9-BzYXH9d6s_A-zjARjmGa8FnQdgzyTDaGY,31
+automea-0.0.7.dist-info/RECORD,,
