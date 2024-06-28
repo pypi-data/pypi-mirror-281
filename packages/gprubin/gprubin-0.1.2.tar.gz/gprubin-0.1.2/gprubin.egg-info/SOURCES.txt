@@ -1,0 +1,11 @@
+LICENCE
+README.rst
+setup.py
+gprubin/__init__.py
+gprubin/_version.py
+gprubin/gp_interpolation.py
+gprubin.egg-info/PKG-INFO
+gprubin.egg-info/SOURCES.txt
+gprubin.egg-info/dependency_links.txt
+gprubin.egg-info/requires.txt
+gprubin.egg-info/top_level.txt

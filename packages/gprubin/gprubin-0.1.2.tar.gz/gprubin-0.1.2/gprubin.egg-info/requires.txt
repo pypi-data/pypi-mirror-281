@@ -1,0 +1,4 @@
+numpy
+scipy
+treegp>=1.2.0
+jax
