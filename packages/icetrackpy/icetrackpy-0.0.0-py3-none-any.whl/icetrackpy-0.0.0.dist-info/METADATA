@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: icetrackpy
+Version: 0.0.0
+Summary: particule tracking module for elmer ice output files and post treatment
+Home-page: https://gricad-gitlab.univ-grenoble-alpes.fr/mecaiceige/internship/stage_matin_2024/
+Author: Martin THIRIET
+Author-email: martin.thiriet1@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://gricad-gitlab.univ-grenoble-alpes.fr/mecaiceige/internship/stage_matin_2024/
+Project-URL: Bug Reports, https://gricad-gitlab.univ-grenoble-alpes.fr/mecaiceige/internship/stage_matin_2024/
+Project-URL: Source Code, https://gricad-gitlab.univ-grenoble-alpes.fr/mecaiceige/internship/stage_matin_2024/
+Keywords: ice_modeling,elmer_ice,particule_tracking
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+
+icetrackpy takes elmer ice output glaciers simulations and allows to do many opperations on the different fields
+
+
+
