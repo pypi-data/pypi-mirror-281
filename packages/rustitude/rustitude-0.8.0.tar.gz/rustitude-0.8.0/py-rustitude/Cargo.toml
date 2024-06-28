@@ -1,0 +1,19 @@
+[package]
+name = "py-rustitude"
+version = { workspace = true }
+edition = "2021"
+description = "A library to create and operate models for particle physics amplitude analyses"
+readme = { workspace = true }
+license-file = { workspace = true }
+
+[lib]
+name = "rustitude"
+crate-type = ["cdylib"]
+
+[dependencies]
+rayon = { workspace = true }
+rustitude = { workspace = true, default-features = true }
+rustitude-core = { workspace = true }
+rustitude-gluex = { workspace = true }
+nalgebra = { workspace = true }
+pyo3 = { workspace = true }
