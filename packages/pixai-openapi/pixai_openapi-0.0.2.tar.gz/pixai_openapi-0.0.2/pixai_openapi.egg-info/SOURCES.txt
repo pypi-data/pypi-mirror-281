@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pixai_openapi/__init__.py
+pixai_openapi.egg-info/PKG-INFO
+pixai_openapi.egg-info/SOURCES.txt
+pixai_openapi.egg-info/dependency_links.txt
+pixai_openapi.egg-info/requires.txt
+pixai_openapi.egg-info/top_level.txt
