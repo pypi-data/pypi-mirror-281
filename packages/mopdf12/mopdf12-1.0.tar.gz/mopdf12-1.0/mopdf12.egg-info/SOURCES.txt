@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+mopdf12/__init__.py
+mopdf12/pdf2image.py
+mopdf12/pdf2text.py
+mopdf12.egg-info/PKG-INFO
+mopdf12.egg-info/SOURCES.txt
+mopdf12.egg-info/dependency_links.txt
+mopdf12.egg-info/top_level.txt
