@@ -1,0 +1,2 @@
+[console_scripts]
+chromayograph = main:main
