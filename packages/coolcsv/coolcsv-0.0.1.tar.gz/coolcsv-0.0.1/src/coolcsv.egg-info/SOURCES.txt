@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/coolcsv/__init__.py
+src/coolcsv/mydb.py
+src/coolcsv.egg-info/PKG-INFO
+src/coolcsv.egg-info/SOURCES.txt
+src/coolcsv.egg-info/dependency_links.txt
+src/coolcsv.egg-info/top_level.txt

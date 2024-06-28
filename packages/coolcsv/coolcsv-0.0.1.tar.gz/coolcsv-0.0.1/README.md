@@ -1,0 +1,45 @@
+"""
+project is provides a fast way to make simple insecure database for any 
+startups 
+
+only uses csv inbuilt module , so no external dependacies
+
+code usage ->
+
+'''
+from mydb import *
+
+# Create a CSVDatabase object for a file named 'inventory.csv'
+inventory_db = mydb('inventory.csv')
+
+# Sample data (assuming the CSV file has headers like 'name', 'price', 'quantity')
+new_item = ['Laptop', 599.99, 3]
+
+# Insert the new item
+inventory_db.insert(new_item)
+print("Item inserted successfully!")
+
+# Update the price of the first item (assuming the data is loaded)
+inventory_db.update(0, ['Headphones', 79.95, 10])  # Assuming the first row is headphones
+print("Item price updated!")
+
+# Delete the third item (assuming the data is loaded)
+inventory_db.delete(2)
+print("Item deleted!")
+
+# Find items with 'price' greater than 100
+expensive_items = inventory_db.find(search_term=None, column_index=1)  # Search price column
+print("Expensive items:")
+for item in expensive_items:
+    print(item)
+
+# Get the second row (assuming the data is loaded)
+second_item = inventory_db.get_row(1)
+if second_item:
+    print("Second item:", second_item)
+else:
+    print("Invalid row index.")
+
+''' 
+
+"""
