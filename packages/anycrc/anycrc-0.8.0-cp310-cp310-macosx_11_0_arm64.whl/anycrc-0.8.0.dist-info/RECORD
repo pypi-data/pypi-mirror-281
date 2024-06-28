@@ -1,0 +1,11 @@
+anycrc-0.8.0.dist-info/RECORD,,
+anycrc-0.8.0.dist-info/LICENSE,sha256=3K76btJE16RVEFRSVhIoA4CbgTLVe9KtwgwEOl4FHw4,1096
+anycrc-0.8.0.dist-info/WHEEL,sha256=-h9omGws5mNk1JNCPjJw-Elug71_E6JM9ylV1yx54W8,109
+anycrc-0.8.0.dist-info/top_level.txt,sha256=HbCFlOeYEx638RXhl-PI4tQtdbHhwyL9ObHhSuPNyaA,7
+anycrc-0.8.0.dist-info/METADATA,sha256=lcpMPJXZPFVP_U8pSgYF20EUpiJOCNb_5egRnCqpMRo,2519
+anycrc/models.py,sha256=_FUqfiXqO4jGG6wQ9BaMf31syu_aITWeS5egm2dPuiU,18741
+anycrc/__init__.py,sha256=6WUxWuBxHrqqbAXrKSveKIr9ZMlihLyjTONUmYSHIBw,21
+anycrc/anycrc.cpython-310-darwin.so,sha256=2JjBwR4Idp3Kdd8h6hg2PMyQhPz9xpvpNQVR4rEwj3g,161184
+anycrc/anycrc.pyx,sha256=KbMYNldWLw8n307DBChx3agmovusMHSVGb2agSkzzsM,5808
+anycrc/__main__.py,sha256=bux_dc_g2jJg_e7-tVzYl9UsCQSAUpWLAQx0dKDsL_4,538
+anycrc/.dylibs/libgomp.1.dylib,sha256=IUsbWG3H4eJ09-ilcwyJwE3NESsNVMF3KvW17OL3w8c,422144
