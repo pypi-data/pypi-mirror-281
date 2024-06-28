@@ -1,0 +1,2 @@
+[console_scripts]
+fspdf = fspdf.fspdf:main
