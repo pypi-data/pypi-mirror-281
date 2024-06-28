@@ -1,0 +1,10 @@
+torch
+transformers
+scikit-learn
+tqdm
+nltk
+datasketch
+peft
+trl
+accelerate
+py-cpuinfodeepspeed
