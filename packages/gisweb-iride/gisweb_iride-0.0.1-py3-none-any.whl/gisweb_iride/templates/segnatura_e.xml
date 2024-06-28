@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProtoIn
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Data tal:content="view/dataProtocollo">Data protocollo</Data>
+<Classifica tal:content="view/classifica">classifica</Classifica>
+<LivelloRiservatezza tal:content="view/livelloRiservatezza">xxx</LivelloRiservatezza>
+<TipoDocumento tal:content="view/tipoDocumento">tipo</TipoDocumento>
+<Oggetto tal:content="view/Oggetto">Oggetto</Oggetto>
+<Origine>A</Origine>
+<MezzoInvio tal:content="view/Modalita">7</MezzoInvio>
+<MittentiDestinatari>
+    <MittenteDestinatario>
+        <CodiceFiscale tal:content="mittente/CodiceFiscale">CF</CodiceFiscale>
+        <CognomeNome tal:content="mittente/Denominazione">ROSSI</CognomeNome>
+        <Nome tal:content="mittente/Nome">MARIO</Nome>
+        <Cognome tal:content="mittente/Cognome">MARIO</Cognome>
+        <TipoPersona>FI</TipoPersona>
+        <Recapiti>
+        <Recapito>
+        <TipoRecapito>EMAIL</TipoRecapito>
+        <ValoreRecapito tal:content="mittente/IndirizzoTelematico">email</ValoreRecapito>
+        </Recapito>
+        </Recapiti>
+    </MittenteDestinatario>
+</MittentiDestinatari>
+<AggiornaAnagrafiche tal:content="view/aggiornaAnagrafiche">N</AggiornaAnagrafiche>
+<InCaricoA tal:content="view/incaricoA">EDI</InCaricoA>
+<Utente></Utente>
+<NumeroAllegati tal:content="python:len(view.attachmentInfo)">1</NumeroAllegati>
+<Allegati >
+  <Allegato tal:repeat="allegato view/attachmentInfo">
+    <TipoFile tal:content="python:allegato.get('ext')">pdf</TipoFile>
+    <Image tal:content="python:allegato.get('content')"></Image>
+    <Commento></Commento>
+    <NomeAllegato tal:content="python:allegato.get('name')"></NomeAllegato>
+  </Allegato>
+</Allegati>
+</ProtoIn>
