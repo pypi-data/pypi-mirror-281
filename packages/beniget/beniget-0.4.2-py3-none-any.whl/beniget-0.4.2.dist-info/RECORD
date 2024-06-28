@@ -1,0 +1,11 @@
+beniget/__init__.py,sha256=fA6Nf8J2CpqgFMY7C4e34gL6AIbX7aOEuWCgwx2opJg,145
+beniget/__main__.py,sha256=hkSkXHe_hNFUQpVWdjlLjAJLFnCuRqVIbrPn6z3RbSY,1961
+beniget/beniget.py,sha256=77gju9r1MuBmrcpHYo3z4ONE45febC7KSCcJ4k5ff8I,55045
+beniget/beniget_std.py,sha256=jZyDTHhcIJ1p-VVomR87TDq4O7aCZjFDh2UvRArsT5M,50825
+beniget/ordered_set.py,sha256=chHg-qTOUrCr8OuDZ09-f-YQSG7jxwxFMtvKMvWsf5M,2947
+beniget/version.py,sha256=zrcTwxP3SA3F1Js78afrfeaZeJr8w2hLtFtEZoUqUmg,22
+beniget-0.4.2.dist-info/LICENSE,sha256=ZK0-ME6dLYcxwmrD5lIzWmAW44vi9x_jA1C-UcbVALA,1490
+beniget-0.4.2.dist-info/METADATA,sha256=d88pMBnsj2NlXOnxIq5PmZd2hb7ifLuXdaZ51ucVOjU,867
+beniget-0.4.2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+beniget-0.4.2.dist-info/top_level.txt,sha256=Nc5RjIUvyZL-tCg4-lfXPy9DP0GbcSO8n82o5Z50tWQ,8
+beniget-0.4.2.dist-info/RECORD,,
