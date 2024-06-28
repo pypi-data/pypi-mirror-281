@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+simplepackageEx/__init__.py
+simplepackageEx/arithmetic.py
+simplepackageEx.egg-info/PKG-INFO
+simplepackageEx.egg-info/SOURCES.txt
+simplepackageEx.egg-info/dependency_links.txt
+simplepackageEx.egg-info/top_level.txt
