@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/icetrackpy.egg-info/PKG-INFO
+src/icetrackpy.egg-info/SOURCES.txt
+src/icetrackpy.egg-info/dependency_links.txt
+src/icetrackpy.egg-info/requires.txt
+src/icetrackpy.egg-info/top_level.txt
