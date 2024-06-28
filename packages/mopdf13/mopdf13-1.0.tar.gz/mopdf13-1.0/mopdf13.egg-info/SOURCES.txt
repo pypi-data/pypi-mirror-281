@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+mopdf13.egg-info/PKG-INFO
+mopdf13.egg-info/SOURCES.txt
+mopdf13.egg-info/dependency_links.txt
+mopdf13.egg-info/top_level.txt
