@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+pulumi_lambda_builders/__init__.py
+pulumi_lambda_builders/_utilities.py
+pulumi_lambda_builders/build_go.py
+pulumi_lambda_builders/provider.py
+pulumi_lambda_builders/pulumi-plugin.json
+pulumi_lambda_builders/py.typed
+pulumi_lambda_builders.egg-info/PKG-INFO
+pulumi_lambda_builders.egg-info/SOURCES.txt
+pulumi_lambda_builders.egg-info/dependency_links.txt
+pulumi_lambda_builders.egg-info/requires.txt
+pulumi_lambda_builders.egg-info/top_level.txt
