@@ -1,0 +1,10 @@
+README.md
+setup.py
+deeptune/__init__.py
+deeptune/client.py
+deeptune/environment.py
+deeptune.egg-info/PKG-INFO
+deeptune.egg-info/SOURCES.txt
+deeptune.egg-info/dependency_links.txt
+deeptune.egg-info/requires.txt
+deeptune.egg-info/top_level.txt
