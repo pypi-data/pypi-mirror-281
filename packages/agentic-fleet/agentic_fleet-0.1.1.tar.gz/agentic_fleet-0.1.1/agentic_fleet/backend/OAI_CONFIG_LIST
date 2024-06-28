@@ -1,0 +1,22 @@
+    [
+        {
+            "model": "gpt-4o",
+            "api_key": "sk-proj-pdpnhWHYjw6LBWtOPa6WT3BlbkFJADp5PjA28tpQNQizOfsw",
+            "tags": [
+                "gpt-4o",
+                "gpt-4",
+                "tool"
+            ],
+            "response_format": {"type": "text"}
+        },
+        {
+            "model": "gpt-4o",
+            "api_key": "sk-proj-pdpnhWHYjw6LBWtOPa6WT3BlbkFJADp5PjA28tpQNQizOfsw",
+            "tags": [
+                "gpt-4o",
+                "gpt-4",
+                "tool"
+            ],
+            "response_format": {"type": "json_object"}
+        }
+    ]

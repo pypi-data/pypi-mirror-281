@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "agentic-fleet"
+version = "0.1.1"
+description = "A detailed description of your package"  # Replace with actual description
+authors = ["Qredence <zachary@qredence.ai>"]
+readme = "README.md"
+license = "Apache 2.0"  # Specify your license type if applicable
+repository = "https://github.com/username/repo"  # Repository URL if available
+homepage = "https://yourprojecthomepage.com"  # Project homepage if available
+
+[tool.poetry.dependencies]
+python = "^3.11"
+matplotlib = "^3.4.2"  # Replace with desired version
+pandas = "^1.3.3"  # Replace with desired version
+seaborn = "^0.11.1"  # Replace with desired version
+ipython = "^7.27.0"  # Replace with desired version
+pyautogen = "^0.2.31"
+llama-index = "^0.10.50"
+notebook = "^7.2.1"
+langflow = "0.2.7"  # As specified by your needs
+litellm = "0.1.385"  # As specified by your needs
+
+# Specify exact versions to resolve conflicts
+weaviate-client = ">=3.21.0, <4.0.0"
+wikipedia = ">=1.4.0, <2.0.0"
+chromadb = ">=0.3.21, <0.4.0"
+fastapi = ">=0.98.0, <0.99.0"
+huggingface-hub = ">=0.15.0, <0.16.0"
+lxml = ">=4.9.2, <5.0.0"
+openai = ">=0.27.8, <0.28.0"
+pypdf = ">=3.11.0, <4.0.0"
+uvicorn = ">=0.22.0, <0.23.0"
+websockets = ">=10.3, <11.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Documentation" = "https://docs.qredence.ai"  # Documentation URL if available
+"Changelog" = "https://docs.qredence.ai"  # Changelog URL if available
+
+
+
