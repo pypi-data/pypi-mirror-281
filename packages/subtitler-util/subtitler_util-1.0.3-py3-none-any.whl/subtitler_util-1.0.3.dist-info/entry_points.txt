@@ -1,0 +1,2 @@
+[console_scripts]
+subtitler = subtitler_util.subtitler:main
