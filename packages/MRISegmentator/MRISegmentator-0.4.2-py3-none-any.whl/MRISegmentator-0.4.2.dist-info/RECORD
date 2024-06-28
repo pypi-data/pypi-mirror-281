@@ -1,0 +1,9 @@
+mrisegmentator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mrisegmentator/cmdline.py,sha256=G5xi7-aluUPSGL7FRGbInKPl-Z5LfJj67LHz4QxPYeg,1547
+mrisegmentator/download_weights.py,sha256=wejP-XlUx85gqqzJDwdT-_DLJ8x1j7o_faqtP993YMo,2867
+mrisegmentator/inference.py,sha256=cO9rqgAVeru6EwUjW_LCzcCepQeZ_kYLilkouwdOnfw,3543
+MRISegmentator-0.4.2.dist-info/METADATA,sha256=zxeSIYwd81GNjYi1kxRStmbHjZU1JsospVx3Tsgdh5g,7021
+MRISegmentator-0.4.2.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+MRISegmentator-0.4.2.dist-info/entry_points.txt,sha256=WCLnegMrltYU5VZbfL4hOz5cKokjOh4jETKJ_JfmI4U,140
+MRISegmentator-0.4.2.dist-info/top_level.txt,sha256=um2GT_6x3DxjmzpHggoX-Ekj1OopsVDt9CU0hAqoAQc,15
+MRISegmentator-0.4.2.dist-info/RECORD,,
