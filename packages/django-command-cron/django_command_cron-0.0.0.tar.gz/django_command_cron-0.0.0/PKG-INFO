@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: django-command-cron
+Version: 0.0.0
+Summary: Django command cron
+Keywords: django
+Classifier: Framework :: Django
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: Django
+Requires-Dist: setuptools
+
+### Installation
+```bash
+$ pip install django-command-cron
+```
+
+#### `settings.py`
+```python
+INSTALLED_APPS+=['django_command_cron']
+
+# command_cron_worker.py settings
+COMMAND_CRON_WORKER_SLEEP_INTERVAL=0.1
+COMMAND_CRON_WORKER_RESTART_INTERVAL=3600
+```
+#### `migrate`
+```bash
+$ python manage.py migrate
+```
+
+### Features
++   admin interface
+
+### Management commands
+name|description
+-|-|-
+`command_cron`|call pending commands once
+`command_cron_worker`|worker
+
+### Examples
+```bash
+$ python manage.py command_cron # single run
+$ python manage.py command_cron_worker # worker (endless loop)
+```
+
+worker
+```bash
+$ python manage.py command_cron_worker
+```
+
