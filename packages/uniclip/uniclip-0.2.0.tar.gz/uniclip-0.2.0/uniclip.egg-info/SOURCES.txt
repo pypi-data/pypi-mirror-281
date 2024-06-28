@@ -1,0 +1,13 @@
+README.md
+setup.py
+uniclip/__init__.py
+uniclip/client.py
+uniclip/installer.py
+uniclip/main.py
+uniclip/server.py
+uniclip.egg-info/PKG-INFO
+uniclip.egg-info/SOURCES.txt
+uniclip.egg-info/dependency_links.txt
+uniclip.egg-info/entry_points.txt
+uniclip.egg-info/requires.txt
+uniclip.egg-info/top_level.txt
