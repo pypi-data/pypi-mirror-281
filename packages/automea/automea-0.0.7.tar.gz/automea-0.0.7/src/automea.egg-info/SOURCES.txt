@@ -1,0 +1,15 @@
+AUTHORS.md
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/__main__.py
+src/util.py
+src/automea/__init__.py
+src/automea/__main__.py
+src/automea/util.py
+src/automea.egg-info/PKG-INFO
+src/automea.egg-info/SOURCES.txt
+src/automea.egg-info/dependency_links.txt
+src/automea.egg-info/top_level.txt
+src/automea/training/models.py
