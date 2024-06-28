@@ -1,0 +1,10 @@
+token_quotes/__init__.py,sha256=B1NSHv7HeACcdeZRhv__aJZ5oPf7w9STFP05uHSJOCM,176
+token_quotes/cli.py,sha256=ccl0Fht01cFVdAUg7G4FnbhmbHMg1x9rbwZ3xik4EEA,1555
+token_quotes/environment.py,sha256=jStzAYhbh6tr8BEOJfX9PEpVtdk2X2qw-LskELnt9cs,355
+token_quotes/logging_config.py,sha256=UlGvLVcls5_NhtDugmHz-N2TQWF6TVLd-QtWXEkNI7A,700
+token_quotes/report_builder.py,sha256=OT3csaVgq34dFfxz9Do8zqRBi8qRbyrbFNtPU74w-aI,8185
+token_quotes-0.2.1.dist-info/LICENSE.txt,sha256=yb8d0RSZFzR1Hi2dz-wK9e4UNBcXdFvtQBwR7rkSYvE,1069
+token_quotes-0.2.1.dist-info/METADATA,sha256=1yOlvsLTrT_kRrY_EkM7Wds-0MsmrhgM09UuLzIRT8s,3869
+token_quotes-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+token_quotes-0.2.1.dist-info/entry_points.txt,sha256=c9H0qMmB7UYAUqKfgcKprucPSeR5V9OXN-d619wH6qo,54
+token_quotes-0.2.1.dist-info/RECORD,,
