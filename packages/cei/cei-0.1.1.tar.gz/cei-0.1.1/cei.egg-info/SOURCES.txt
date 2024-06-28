@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+cei/__init__.py
+cei/expression_index.py
+cei.egg-info/PKG-INFO
+cei.egg-info/SOURCES.txt
+cei.egg-info/dependency_links.txt
+cei.egg-info/requires.txt
+cei.egg-info/top_level.txt
+cei/datasets/ATCC_25922.csv

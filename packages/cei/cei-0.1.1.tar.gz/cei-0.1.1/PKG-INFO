@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cei
+Version: 0.1.1
+Summary: Codon Expression Index
+Home-page: https://github.com/conzaytsev/CodonExpressionIndex
+Author: Konstantin Zaytsev
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3.9
+License-File: LICENSE
+Requires-Dist: scipy
+
+Python module for analysis of codon influence on protein expression.
