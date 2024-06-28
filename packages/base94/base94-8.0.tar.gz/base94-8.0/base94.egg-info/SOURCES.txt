@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+base94/__init__.py
+base94/base94.py
+base94.egg-info/PKG-INFO
+base94.egg-info/SOURCES.txt
+base94.egg-info/dependency_links.txt
+base94.egg-info/top_level.txt
