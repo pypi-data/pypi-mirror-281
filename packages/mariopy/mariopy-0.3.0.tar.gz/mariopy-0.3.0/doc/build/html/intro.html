@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html class="no-js" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>MARIO &mdash; MARIO 0.1 documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="_static/dist/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+            <link rel="index" title="Index" href="genindex.html" />
+            <link rel="search" title="Search" href="search.html" />
+            <link rel="top" title="MARIO 0.1 documentation" href="#" />
+            <link rel="next" title="Contributors" href="contributors.html" />
+            <link rel="prev" title="MARIO" href="index.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="index.html"
+                        title="Wagtail"
+                        class="logo navbar-brand"
+                    >
+                        <img src="_static/img/wagtail-logo-new.svg" width="45" height="59" alt="Wagtail"
+                            class="logo-img"
+                        />
+                        MARIO Documentation
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MARIO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#quickstart">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#citation">Citation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#read-more">Read more</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminology.html">Terminology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Changing mario settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="examples/tutorial_data_template/tutorial_data_template.html">Creating an Empty Database, from tabular information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/tutorial_add_extensions/tutorial_add_extensions.html">Adding satellite accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/tutorial_shock_analysis/tutorial_shock_analysis.html">Shcok Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/tutorial_transformation_isard_to_chenery/tutorial_transformation_isard_to_chenery.html">Transforming a SUT table from Isard to Chenery-Moses model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/tutorial_transformation_sut_to_iot/tutorial_transformation_sut_to_iot.html">Transforming a SUT into an IOT table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/tutorial_figaro_parser/tutorial_figaro_parser.html">Figaro Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/tutorial_parse_eora/tutorial_parse_eora.html">Parsing EORA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/tutorial_parse_exiobase_hybrid/tutorial_parse_exiobase_hybrid.html">Parsing Exiobase v3.3.18 (supply-use hybrid-units)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/tutorial_parse_exiobase_monetary/tutorial_parse_exiobase_monetary.html">Parsing Exiobase v3.8.2 (Monetary units)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/tutorial_parse_custom_database/tutorial_parse_custom_database.html">Parsing custom database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_refernces.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.is_balanced.html">mario.CoreModel.is_balanced</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.is_multi_region.html">mario.CoreModel.is_multi_region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.is_hybrid.html">mario.CoreModel.is_hybrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.sets.html">mario.CoreModel.sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.scenarios.html">mario.CoreModel.scenarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.table_type.html">mario.CoreModel.table_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.get_index.html">mario.CoreModel.get_index</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.is_chenerymoses.html">mario.CoreModel.is_chenerymoses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.is_isard.html">mario.CoreModel.is_isard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.aggregate.html">mario.Database.aggregate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.add_sectors.html">mario.Database.add_sectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.to_single_region.html">mario.Database.to_single_region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.to_iot.html">mario.Database.to_iot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.add_extensions.html">mario.Database.add_extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.update_scenarios.html">mario.Database.update_scenarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.reset_to_flows.html">mario.Database.reset_to_flows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.reset_to_coefficients.html">mario.Database.reset_to_coefficients</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.clone_scenario.html">mario.Database.clone_scenario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.copy.html">mario.Database.copy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.backup.html">mario.Database.backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.to_chenery_moses.html">mario.Database.to_chenery_moses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.shock_calc.html">mario.Database.shock_calc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.set_palette.html">mario.set_palette</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.plot_gdp.html">mario.Database.plot_gdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.plot_bubble.html">mario.Database.plot_bubble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.plot_linkages.html">mario.Database.plot_linkages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.plot_matrix.html">mario.Database.plot_matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.get_aggregation_excel.html">mario.Database.get_aggregation_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.get_extensions_excel.html">mario.Database.get_extensions_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.get_add_sectors_excel.html">mario.Database.get_add_sectors_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.get_shock_excel.html">mario.Database.get_shock_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.to_excel.html">mario.Database.to_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.to_txt.html">mario.Database.to_txt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.to_pymrio.html">mario.Database.to_pymrio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.parse_exiobase_3.html">mario.parse_exiobase_3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.parse_exiobase_sut.html">mario.parse_exiobase_sut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.parse_eurostat_sut.html">mario.parse_eurostat_sut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.parse_eora.html">mario.parse_eora</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.parse_from_pymrio.html">mario.parse_from_pymrio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.hybrid_sut_exiobase.html">mario.hybrid_sut_exiobase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.parse_exiobase.html">mario.parse_exiobase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.parse_from_excel.html">mario.parse_from_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.parse_from_txt.html">mario.parse_from_txt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.calc_all.html">mario.CoreModel.calc_all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.GDP.html">mario.CoreModel.GDP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.Database.calc_linkages.html">mario.Database.calc_linkages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_X.html">mario.calc_X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_X_from_w.html">mario.calc_X_from_w</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_X_from_z.html">mario.calc_X_from_z</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_Z.html">mario.calc_z</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_E.html">mario.calc_e</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_V.html">mario.calc_v</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_M.html">mario.calc_m</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_F.html">mario.calc_f</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_w.html">mario.calc_w</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_g.html">mario.calc_g</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_b.html">mario.calc_b</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_p.html">mario.calc_p</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.calc_y.html">mario.calc_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.save_meta.html">mario.CoreModel.save_meta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.meta_history.html">mario.CoreModel.meta_history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.add_note.html">mario.CoreModel.add_note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.load_test.html">mario.load_test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.directory.html">mario.CoreModel.directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.CoreModel.search.html">mario.CoreModel.search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.slicer.html">mario.slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.set_log_verbosity.html">mario.set_log_verbosity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.upload_settings.html">mario.upload_settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.download_settings.html">mario.download_settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api_document/mario.reset_settings.html">mario.reset_settings</a></li>
+</ul>
+</li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="index.html">Docs</a></li>
+        <li class="breadcrumb-item active" aria-current="page">MARIO</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+    <a class="btn btn-sm btn-light text-decoration-none" href="https://github.com/wagtail/sphinx_wagtail_theme/blob/main/docs/intro.rst" rel="nofollow">
+        <span class="btn-icon"><span class="fab fa-github"></span></span>
+        <span class="btn-text">Edit on GitHub</span>
+    </a>
+    <a class="btn btn-sm btn-light text-decoration-none" href="_sources/intro.rst.txt" rel="nofollow">
+        <span class="btn-icon"><span class="fas fa-code"></span></span>
+        <span class="btn-text">View source</span>
+    </a>
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <a class="reference internal image-reference" href="https://avatars.githubusercontent.com/u/121170888?s=400&amp;u=4cec21e036afea744bef6886998fa302fca02ce0&amp;v=4"><img alt="https://avatars.githubusercontent.com/u/121170888?s=400&amp;u=4cec21e036afea744bef6886998fa302fca02ce0&amp;v=4" class="align-right" src="https://avatars.githubusercontent.com/u/121170888?s=400&amp;u=4cec21e036afea744bef6886998fa302fca02ce0&amp;v=4" style="width: 100px;" /></a>
+<a class="reference external image-reference" href="https://github.com/psf/black"><img alt="https://img.shields.io/badge/code%20style-black-000000.svg" src="https://img.shields.io/badge/code%20style-black-000000.svg" /></a>
+<a class="reference external image-reference" href="https://mario-suite.readthedocs.io/en/latest/index.html"><img alt="Documentation Status" src="https://readthedocs.org/projects/mario-suite/badge/?version=latest" /></a>
+<a class="reference external image-reference" href="https://badge.fury.io/py/mariopy"><img alt="https://badge.fury.io/py/mariopy.svg" src="https://badge.fury.io/py/mariopy.svg" /></a>
+<a class="reference external image-reference" href="https://zenodo.org/badge/latestdoi/421900437"><img alt="https://zenodo.org/badge/421900437.svg" src="https://zenodo.org/badge/421900437.svg" /></a>
+<div class="section" id="mario">
+<h1>MARIO<a class="headerlink" href="#mario" title="Permalink to this headline">¶</a></h1>
+<p>Multifunctional Analysis of Regions through Input-Output.  (<a class="reference external" href="https://mario-suite.readthedocs.io/en/latest/intro.html">Documents</a>)</p>
+<div class="section" id="what-is-it">
+<h2>What is it<a class="headerlink" href="#what-is-it" title="Permalink to this headline">¶</a></h2>
+<p><strong>MARIO</strong> is a python package for handling input-output tables and models inspired by <a class="reference external" href="https://github.com/IndEcol/pymrio">Pymrio</a> .
+MARIO aims to provide a <em>simple</em> &amp; <em>intuitive</em> API for common IO tasks without
+needing in-depth programming knowledge. MARIO supporst automatic parsing of different
+structured tables such EXIOBASE, EORA, EUROSTAT, and FIGARO in different formats namely:</p>
+<ul class="simple">
+<li><p>Single region</p></li>
+<li><p>Multi region</p></li>
+<li><p>Hybrid tables</p></li>
+<li><p>Monetary tables</p></li>
+<li><p>Input-Output tables</p></li>
+<li><p>Supply-Use tables</p></li>
+</ul>
+<p>When databases are not structured, MARIO supports parsing data from xlsx, csv, txt files
+or pandas.DataFrames.</p>
+<p>More than parsing data, MARIO includes some basic functionalities:</p>
+<ul class="simple">
+<li><p>Aggregation of databases</p></li>
+<li><p>SUT to IOT transformation</p></li>
+<li><dl class="simple">
+<dt>Modifying database in terms of adding:</dt><dd><ul>
+<li><p>New sectors, activities or commodities to the database</p></li>
+<li><p>Adding new extensions to the satellite account</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Scneario and shock analysis</p></li>
+<li><p>Backward and forward linkages analysis</p></li>
+<li><p>Extracting single region database from multi region databases</p></li>
+<li><p>Balance test</p></li>
+<li><p>Productivity test</p></li>
+<li><p>Exporting the databases into different formats for scenarios analyzed</p></li>
+<li><p>Interactive visualization routines</p></li>
+</ul>
+</div>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>MARIO has been tested on macOS and Windows.</p>
+<p>To run MARIO, a couple of things are needed:</p>
+<ol class="arabic simple">
+<li><p>Being in love with Input-Output :-)</p></li>
+<li><p>The Python programming language</p></li>
+<li><p>A number of Python adds-on packages</p></li>
+<li><p>MARIO software itself</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>The easiest way to make MARIO software working is to use the free
+conda package manager which can install the current and future MARIO
+depencies in an easy and user friendly way.</p>
+<p>To get conda, <a class="reference external" href="https://www.anaconda.com/products/individual">download and install “Anaconda Distribution”</a>
+. Between differnet options for running python codes, we strongly suggest, <a class="reference external" href="https://www.spyder-ide.org/">Spyder</a>,
+which is  a free and open source scientific environment written in Python, for Python, and designed by and for scientists,
+engineers and data analysts.</p>
+<p>You can install mario using pip or from source code. It is suggested to create a new environment by running the following command in the anaconda prompt</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">mario</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.10</span>
+</pre></div>
+</div>
+<p>If you create a new environment for mario, to use it, you need to activate the mario environment each time by writing
+the following line in <em>Anaconda Prompt</em></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">mario</span>
+</pre></div>
+</div>
+<p>Now you can use pip to install mario on your environment as follow:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">mariopy</span>
+</pre></div>
+</div>
+<p>You can also install from the source code!</p>
+</div>
+<div class="section" id="quickstart">
+<h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<p>A simple test for Input-Output Table (IOT) and Supply-Use Table (SUT) is included in mario.</p>
+<p>To use the IOT test, call</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mario</span>
+<span class="n">test_iot</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">load_test</span><span class="p">(</span><span class="s1">&#39;IOT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and to use the SUT test, call</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">test_sut</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">load_test</span><span class="p">(</span><span class="s1">&#39;SUT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To see the configurations of the data, you can print them:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">test_iot</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test_sut</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To see specific sets of the tables like regions or value added,
+get_index function can be used:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">test_iot</span><span class="o">.</span><span class="n">get_index</span><span class="p">(</span><span class="s1">&#39;Region&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test_sut</span><span class="o">.</span><span class="n">get_index</span><span class="p">(</span><span class="s1">&#39;Factor of production&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>To visualize some data, various plot functions can be used:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">test_iot</span><span class="o">.</span><span class="n">plot_matrix</span><span class="p">(</span><span class="o">....</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Specific modifications on the database can be done, such as
+SUT to IOT transformation:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">reformed_iot</span> <span class="o">=</span> <span class="n">test</span><span class="o">.</span><span class="n">to_iot</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;B&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The changes can be tracked by metadata. The history can be checked by calling:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">reformed_iot</span><span class="o">.</span><span class="n">meta_history</span>
+</pre></div>
+</div>
+<p>The new database can be saved into excel,txt or csv file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">reformed_iot</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;a folder//database.xlsx&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="citation">
+<h1>Citation<a class="headerlink" href="#citation" title="Permalink to this headline">¶</a></h1>
+<p>In case you use mario, you should use our peer reviewed publication (<a class="reference external" href="https://openresearchsoftware.metajnl.com/articles/10.5334/jors.473">Tahavori, Golinucci, Rinaldi, et al.</a>) for citiation!</p>
+</div>
+<div class="section" id="read-more">
+<span id="rst-pckgs"></span><h1>Read more<a class="headerlink" href="#read-more" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="testing-mario">
+<h2>Testing MARIO<a class="headerlink" href="#testing-mario" title="Permalink to this headline">¶</a></h2>
+<p>The current version of Mario has achieved a test coverage of 49%. This coverage includes a comprehensive 100% assessment of the fundamental mathematical engine.
+Additional tests are currently in active development to enhance the package’s reliability.
+Mario utilizes <a class="reference external" href="https://docs.pytest.org/en/7.4.x/">pytest</a>  as its primary tool for conducting unit tests. For a more detailed analysis of the test coverage pertaining to mario’s unit tests,
+you can execute the following command:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pytest</span> <span class="o">--</span><span class="n">cov</span><span class="o">=</span><span class="n">mario</span> <span class="n">tests</span><span class="o">/</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>This project is under active development.</p></li>
+<li><p>More examples will be uploaded through time to the gallery.</p></li>
+<li><p>More parsers will be added to the next version.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="publications">
+<h2>Publications<a class="headerlink" href="#publications" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Assessing environmental and market implications of steel decarbonisation strategies: a hybrid input-output model for the European Union (<a class="reference external" href="https://doi.org/10.1088/1748-9326/ad5bf1">Rinaldi et al, Environmental Research Letters, 2024</a> )</p></li>
+<li><p>Assessing critical materials demand in global energy transition scenarios based on the Dynamic Extraction and Recycling Input-Output framework (DYNERIO) (<a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S092134492300037X?via%3Dihub">Rinaldi et al, Resources Conservation adn Recycling, 2023</a> )</p></li>
+<li><p>Three different directions in which the European Union could replace Russian natural gas (<a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0360544224000252?via%3Dihub">Nikas et al, Energy, 2024</a> )</p></li>
+<li><p>Investigating the economic and environmental impacts of a technological shift towards hydrogen-based solutions for steel manufacture in high-renewable electricity mix scenarios for Italy (<a class="reference external" href="https://iopscience.iop.org/article/10.1088/1755-1315/1106/1/012008">Marco Conte et al, IOP Conf. Ser.: Earth Environ. Sci., 2022</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="support-materials">
+<h2>Support Materials<a class="headerlink" href="#support-materials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.open.edu/openlearncreate/course/view.php?id=11723">Input-Output analysis and modelling with MARIO Open University Course</a></p></li>
+</ul>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://www.gnu.org/licenses/gpl-3.0.en.html"><img alt="https://www.gnu.org/graphics/gplv3-or-later.png" src="https://www.gnu.org/graphics/gplv3-or-later.png" /></a>
+<p>This work is licensed under a <a class="reference external" href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GENERAL PUBLIC LICENSE</a></p>
+</div>
+<div class="section" id="supporting-institutions">
+<h2>Supporting Institutions<a class="headerlink" href="#supporting-institutions" title="Permalink to this headline">¶</a></h2>
+<a class="reference external image-reference" href="https://www.enextgen.it/"><img alt="https://github.com/it-is-me-mario/MARIO/blob/pre-releasev0.3.0/doc/source/_static/images/enextgen.png?raw=true" class="align-left" src="https://github.com/it-is-me-mario/MARIO/blob/pre-releasev0.3.0/doc/source/_static/images/enextgen.png?raw=true" style="width: 120px;" /></a>
+<a class="reference external image-reference" href="https://polimi.it/"><img alt="https://raw.githubusercontent.com/it-is-me-mario/MARIO/7cc701e2e0f23d2cdc0f01c05d6c6e33b30b682e/doc/source/_static/images/polimi.svg" class="align-left" src="https://raw.githubusercontent.com/it-is-me-mario/MARIO/7cc701e2e0f23d2cdc0f01c05d6c6e33b30b682e/doc/source/_static/images/polimi.svg" width="200" /></a>
+</div>
+</div>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="index.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>MARIO
+    </a>
+    <a class="float-right" href="contributors.html" title="Next">
+        Contributors <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">MARIO</a><ul>
+<li><a class="reference internal" href="#what-is-it">What is it</a></li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#quickstart">Quickstart</a></li>
+<li><a class="reference internal" href="#citation">Citation</a></li>
+<li><a class="reference internal" href="#read-more">Read more</a><ul>
+<li><a class="reference internal" href="#testing-mario">Testing MARIO</a></li>
+<li><a class="reference internal" href="#publications">Publications</a></li>
+<li><a class="reference internal" href="#support-materials">Support Materials</a></li>
+<li><a class="reference internal" href="#license">License</a></li>
+<li><a class="reference internal" href="#supporting-institutions">Supporting Institutions</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+                <nav aria-label="Footer">
+                    <ul class="nav justify-content-center mb-2">
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/features/">Features</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/about-wagtail/"> About Wagtail</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/services/"> Services</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/blog/"> Blog</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/packages/"> Packages</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/developers/"> Developers</a></li>
+                        
+                    </ul>
+                </nav>
+            
+            <div class="text-center">
+                <p style="display: none">
+                    <a class="text-light" href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
+                        Wagtail Sphinx Theme 6.3.0
+                    </a>
+                </p>
+            </div>
+            <div class="text-center">
+                    &copy; Copyright 2021, MARIO Authors: Mohammad Amin Tahavori, Lorenzo Rinaldi, Nicolo Golinucci
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script type="text/javascript" src="_static/dist/theme.js"></script>
+        <script type="text/javascript" src="_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="_static/searchtools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>

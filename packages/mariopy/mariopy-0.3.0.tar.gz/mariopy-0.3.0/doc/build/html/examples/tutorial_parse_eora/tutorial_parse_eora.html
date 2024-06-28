@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html class="no-js" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Parsing EORA &mdash; MARIO 0.1 documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/dist/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+            <link rel="index" title="Index" href="../../genindex.html" />
+            <link rel="search" title="Search" href="../../search.html" />
+            <link rel="top" title="MARIO 0.1 documentation" href="#" />
+            <link rel="up" title="Examples" href="../../examples.html" />
+            <link rel="next" title="Parsing Exiobase v3.3.18 (supply-use hybrid-units)" href="../tutorial_parse_exiobase_hybrid/tutorial_parse_exiobase_hybrid.html" />
+            <link rel="prev" title="Figaro Parser" href="../tutorial_figaro_parser/tutorial_figaro_parser.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../../_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="../../index.html"
+                        title="Wagtail"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../../_static/img/wagtail-logo-new.svg" width="45" height="59" alt="Wagtail"
+                            class="logo-img"
+                        />
+                        MARIO Documentation
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">MARIO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#quickstart">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#citation">Citation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#read-more">Read more</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../terminology.html">Terminology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../settings.html">Changing mario settings</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../examples.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_data_template/tutorial_data_template.html">Creating an Empty Database, from tabular information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_add_extensions/tutorial_add_extensions.html">Adding satellite accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_shock_analysis/tutorial_shock_analysis.html">Shcok Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_transformation_isard_to_chenery/tutorial_transformation_isard_to_chenery.html">Transforming a SUT table from Isard to Chenery-Moses model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_transformation_sut_to_iot/tutorial_transformation_sut_to_iot.html">Transforming a SUT into an IOT table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_figaro_parser/tutorial_figaro_parser.html">Figaro Parser</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Parsing EORA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_exiobase_hybrid/tutorial_parse_exiobase_hybrid.html">Parsing Exiobase v3.3.18 (supply-use hybrid-units)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_exiobase_monetary/tutorial_parse_exiobase_monetary.html">Parsing Exiobase v3.8.2 (Monetary units)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_custom_database/tutorial_parse_custom_database.html">Parsing custom database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_refernces.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.is_balanced.html">mario.CoreModel.is_balanced</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.is_multi_region.html">mario.CoreModel.is_multi_region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.is_hybrid.html">mario.CoreModel.is_hybrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.sets.html">mario.CoreModel.sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.scenarios.html">mario.CoreModel.scenarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.table_type.html">mario.CoreModel.table_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.get_index.html">mario.CoreModel.get_index</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.is_chenerymoses.html">mario.CoreModel.is_chenerymoses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.is_isard.html">mario.CoreModel.is_isard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.aggregate.html">mario.Database.aggregate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.add_sectors.html">mario.Database.add_sectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_single_region.html">mario.Database.to_single_region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_iot.html">mario.Database.to_iot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.add_extensions.html">mario.Database.add_extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.update_scenarios.html">mario.Database.update_scenarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.reset_to_flows.html">mario.Database.reset_to_flows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.reset_to_coefficients.html">mario.Database.reset_to_coefficients</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.clone_scenario.html">mario.Database.clone_scenario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.copy.html">mario.Database.copy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.backup.html">mario.Database.backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_chenery_moses.html">mario.Database.to_chenery_moses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.shock_calc.html">mario.Database.shock_calc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.set_palette.html">mario.set_palette</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.plot_gdp.html">mario.Database.plot_gdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.plot_bubble.html">mario.Database.plot_bubble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.plot_linkages.html">mario.Database.plot_linkages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.plot_matrix.html">mario.Database.plot_matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.get_aggregation_excel.html">mario.Database.get_aggregation_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.get_extensions_excel.html">mario.Database.get_extensions_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.get_add_sectors_excel.html">mario.Database.get_add_sectors_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.get_shock_excel.html">mario.Database.get_shock_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_excel.html">mario.Database.to_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_txt.html">mario.Database.to_txt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_pymrio.html">mario.Database.to_pymrio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_exiobase_3.html">mario.parse_exiobase_3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_exiobase_sut.html">mario.parse_exiobase_sut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_eurostat_sut.html">mario.parse_eurostat_sut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_eora.html">mario.parse_eora</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_from_pymrio.html">mario.parse_from_pymrio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.hybrid_sut_exiobase.html">mario.hybrid_sut_exiobase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_exiobase.html">mario.parse_exiobase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_from_excel.html">mario.parse_from_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_from_txt.html">mario.parse_from_txt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.calc_all.html">mario.CoreModel.calc_all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.GDP.html">mario.CoreModel.GDP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.calc_linkages.html">mario.Database.calc_linkages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_X.html">mario.calc_X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_X_from_w.html">mario.calc_X_from_w</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_X_from_z.html">mario.calc_X_from_z</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_Z.html">mario.calc_z</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_E.html">mario.calc_e</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_V.html">mario.calc_v</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_M.html">mario.calc_m</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_F.html">mario.calc_f</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_w.html">mario.calc_w</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_g.html">mario.calc_g</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_b.html">mario.calc_b</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_p.html">mario.calc_p</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_y.html">mario.calc_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.save_meta.html">mario.CoreModel.save_meta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.meta_history.html">mario.CoreModel.meta_history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.add_note.html">mario.CoreModel.add_note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.load_test.html">mario.load_test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.directory.html">mario.CoreModel.directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.search.html">mario.CoreModel.search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.slicer.html">mario.slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.set_log_verbosity.html">mario.set_log_verbosity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.upload_settings.html">mario.upload_settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.download_settings.html">mario.download_settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.reset_settings.html">mario.reset_settings</a></li>
+</ul>
+</li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../../index.html">Docs</a></li>
+            <li class="breadcrumb-item"><a href="../../examples.html">Examples</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Parsing EORA</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+    <a class="btn btn-sm btn-light text-decoration-none" href="https://github.com/wagtail/sphinx_wagtail_theme/blob/main/docs/examples/tutorial_parse_eora/tutorial_parse_eora.rst" rel="nofollow">
+        <span class="btn-icon"><span class="fab fa-github"></span></span>
+        <span class="btn-text">Edit on GitHub</span>
+    </a>
+    <a class="btn btn-sm btn-light text-decoration-none" href="../../_sources/examples/tutorial_parse_eora/tutorial_parse_eora.rst.txt" rel="nofollow">
+        <span class="btn-icon"><span class="fas fa-code"></span></span>
+        <span class="btn-text">View source</span>
+    </a>
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <div class="section" id="parsing-eora">
+<h1>Parsing EORA<a class="headerlink" href="#parsing-eora" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial shows how to parse the EORA database, showing an example
+for both EORA26 multi-regional table and for a single-region table</p>
+<div class="section" id="downloading-the-database">
+<h2>Downloading the database<a class="headerlink" href="#downloading-the-database" title="Permalink to this headline">¶</a></h2>
+<p>The database is available at the following website:
+<a class="reference external" href="https://worldmrio.com/">https://worldmrio.com/</a>. An account is necessary to download the data.
+You can manually download the repository. In this example we are going
+to show how the EORA26 database (<a class="reference external" href="https://worldmrio.com/eora26/">https://worldmrio.com/eora26/</a>) and a
+single-region table (<a class="reference external" href="https://worldmrio.com/countrywise/">https://worldmrio.com/countrywise/</a>). The example is
+based on tables for 2016 but it works the same for any other year.</p>
+<div class="section" id="eora26">
+<h3>EORA26<a class="headerlink" href="#eora26" title="Permalink to this headline">¶</a></h3>
+<p>Let’s start with EORA26, which is a multi-regional database. The
+targeted table file for this example is the one named
+“Eora26_2016_bp.zip”, in basic prices. It is necessary to download the
+file (but not to unzip it) and store it in any directory (‘EORA_folder’
+in this example). For EORA26, an additional attribute (‘indices’) is
+necessary, through which the path to “indices.zip” file need to be
+passed. The indices can be downloaded from the same link as EORA26 (link
+to the file:
+<a class="reference external" href="https://worldmrio.com/ComputationsM/Phase199/Loop082/simplified/indices.zip">https://worldmrio.com/ComputationsM/Phase199/Loop082/simplified/indices.zip</a>)</p>
+</div>
+<div class="section" id="single-region-eora">
+<h3>Single-Region EORA<a class="headerlink" href="#single-region-eora" title="Permalink to this headline">¶</a></h3>
+<p>As an example of single-region table, we downloaded the 2016 table for
+Italy in purchaser’s prices (download link:
+<a class="reference external" href="https://worldmrio.com/ComputationsM/Phase199/Loop082/XLSResults/byCountry/ITA/byYear/2016/IO_ITA_2016_PurchasersPrice.txt">https://worldmrio.com/ComputationsM/Phase199/Loop082/XLSResults/byCountry/ITA/byYear/2016/IO_ITA_2016_PurchasersPrice.txt</a>).</p>
+</div>
+</div>
+<div class="section" id="parsing-the-downloaded-eora26-database">
+<h2>Parsing the downloaded EORA26 database<a class="headerlink" href="#parsing-the-downloaded-eora26-database" title="Permalink to this headline">¶</a></h2>
+<p>Once the EORA26 database files are stored in a given path, it is
+possible to parse it into a mario.Database object. The ‘parse_eora’
+method is suitable to parse both EORA26 and single-region versions. For
+EORA26, the ‘multi_region’ attribute must be set to True, the ‘year’
+attribute must refer to the reference year of the table, and the
+‘indeces’ must be equal to the path where ‘indices.zip’ has been stored.</p>
+<p>Make sure the data is downloaded with corresponding names/path given to
+the function!</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mario</span>  <span class="c1"># Import MARIO</span>
+
+<span class="n">table_path</span> <span class="o">=</span> <span class="s1">&#39;Eora26_2016_bp.zip&#39;</span>  <span class="c1"># Define the desired path to the folder where Exiobase should be downloaded</span>
+<span class="n">indices_path</span> <span class="o">=</span> <span class="s1">&#39;indices.zip&#39;</span>
+
+<span class="n">eora26</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">parse_eora</span><span class="p">(</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">table_path</span><span class="p">,</span>
+    <span class="n">multi_region</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="s1">&#39;IOT&#39;</span><span class="p">,</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="mi">2016</span><span class="p">,</span>
+    <span class="n">indeces</span> <span class="o">=</span> <span class="n">indices_path</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
+
+<span class="ne">KeyError</span>                                  <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">6</span>
+      <span class="mi">3</span> <span class="n">table_path</span> <span class="o">=</span> <span class="s1">&#39;Eora26_2016_bp.zip&#39;</span>  <span class="c1"># Define the desired path to the folder where Exiobase should be downloaded</span>
+      <span class="mi">4</span> <span class="n">indices_path</span> <span class="o">=</span> <span class="s1">&#39;indices.zip&#39;</span>
+<span class="o">----&gt;</span> <span class="mi">6</span> <span class="n">eora26</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">parse_eora</span><span class="p">(</span>
+      <span class="mi">7</span>     <span class="n">path</span> <span class="o">=</span> <span class="n">table_path</span><span class="p">,</span>
+      <span class="mi">8</span>     <span class="n">multi_region</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+      <span class="mi">9</span>     <span class="n">table</span> <span class="o">=</span> <span class="s1">&#39;IOT&#39;</span><span class="p">,</span>
+     <span class="mi">10</span>     <span class="n">year</span> <span class="o">=</span> <span class="mi">2016</span><span class="p">,</span>
+     <span class="mi">11</span>     <span class="n">indeces</span> <span class="o">=</span> <span class="n">indices_path</span>
+     <span class="mi">12</span> <span class="p">)</span>
+
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">Documents</span><span class="o">/</span><span class="n">GitHub</span><span class="o">/</span><span class="n">MARIO</span><span class="o">/</span><span class="n">mario</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">parsersclass</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">341</span><span class="p">,</span> <span class="ow">in</span> <span class="n">parse_eora</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">multi_region</span><span class="p">,</span> <span class="n">table</span><span class="p">,</span> <span class="n">indeces</span><span class="p">,</span> <span class="n">name_convention</span><span class="p">,</span> <span class="n">aggregate_trade</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">calc_all</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="mi">336</span>     <span class="k">if</span> <span class="n">table</span> <span class="o">==</span> <span class="s2">&quot;SUT&quot;</span><span class="p">:</span>
+    <span class="mi">337</span>         <span class="k">raise</span> <span class="bp">NotImplemented</span><span class="p">(</span>
+    <span class="mi">338</span>             <span class="s2">&quot;No handling of multiregional SUT from EORA is implemented yet&quot;</span>
+    <span class="mi">339</span>         <span class="p">)</span>
+<span class="o">--&gt;</span> <span class="mi">341</span>     <span class="n">matrices</span><span class="p">,</span> <span class="n">indeces</span><span class="p">,</span> <span class="n">units</span> <span class="o">=</span> <span class="n">eora_multi_region</span><span class="p">(</span>
+    <span class="mi">342</span>         <span class="n">data_path</span><span class="o">=</span><span class="n">path</span><span class="p">,</span> <span class="n">index_path</span><span class="o">=</span><span class="n">indeces</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">,</span> <span class="n">price</span><span class="o">=</span><span class="s2">&quot;bp&quot;</span>
+    <span class="mi">343</span>     <span class="p">)</span>
+    <span class="mi">345</span>     <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;notes&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="mi">346</span>         <span class="s2">&quot;ROW deleted from database due to inconsistency.&quot;</span><span class="p">,</span>
+    <span class="mi">347</span>         <span class="s2">&quot;Intermediate imports from ROW added to VA matrix&quot;</span><span class="p">,</span>
+    <span class="mi">348</span>         <span class="s2">&quot;Intermediate exports to ROW added to Y matrix&quot;</span><span class="p">,</span>
+    <span class="mi">349</span>     <span class="p">]</span>
+    <span class="mi">351</span> <span class="k">else</span><span class="p">:</span>
+
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">Documents</span><span class="o">/</span><span class="n">GitHub</span><span class="o">/</span><span class="n">MARIO</span><span class="o">/</span><span class="n">mario</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">tableparser</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">838</span><span class="p">,</span> <span class="ow">in</span> <span class="n">eora_multi_region</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span> <span class="n">index_path</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">price</span><span class="p">)</span>
+    <span class="mi">835</span>     <span class="k">for</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">parser_ids</span><span class="p">[</span><span class="n">main_key</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="mi">836</span>         <span class="n">values</span><span class="p">[</span><span class="s2">&quot;file_name&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;file_name&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">,</span> <span class="n">price</span><span class="o">=</span><span class="n">price</span><span class="p">)</span>
+<span class="o">--&gt;</span> <span class="mi">838</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">all_file_reader</span><span class="p">(</span>
+    <span class="mi">839</span>     <span class="n">index_path</span><span class="p">,</span> <span class="nb">dict</span><span class="p">(</span><span class="n">labels</span><span class="o">=</span><span class="n">parser_ids</span><span class="p">[</span><span class="s2">&quot;labels&quot;</span><span class="p">]),</span> <span class="n">sub_folder</span><span class="o">=</span><span class="kc">False</span>
+    <span class="mi">840</span> <span class="p">)</span>
+    <span class="mi">842</span> <span class="c1"># reading the files</span>
+    <span class="mi">843</span> <span class="n">read</span> <span class="o">=</span> <span class="n">all_file_reader</span><span class="p">(</span>
+    <span class="mi">844</span>     <span class="n">data_path</span><span class="p">,</span> <span class="nb">dict</span><span class="p">(</span><span class="n">matrices</span><span class="o">=</span><span class="n">parser_ids</span><span class="p">[</span><span class="s2">&quot;matrices&quot;</span><span class="p">]),</span> <span class="n">sub_folder</span><span class="o">=</span><span class="kc">False</span>
+    <span class="mi">845</span> <span class="p">)</span>
+
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">Documents</span><span class="o">/</span><span class="n">GitHub</span><span class="o">/</span><span class="n">MARIO</span><span class="o">/</span><span class="n">mario</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">utilities</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">196</span><span class="p">,</span> <span class="ow">in</span> <span class="n">all_file_reader</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">guide</span><span class="p">,</span> <span class="n">sub_folder</span><span class="p">,</span> <span class="n">sep</span><span class="p">,</span> <span class="n">exceptions</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
+    <span class="mi">190</span>             <span class="k">for</span> <span class="n">inner_key</span><span class="p">,</span> <span class="n">inner_value</span> <span class="ow">in</span> <span class="n">value</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="mi">191</span>                 <span class="n">path</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="mi">192</span>                     <span class="sa">r</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">/</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">new_path</span><span class="p">,</span> <span class="n">inner_value</span><span class="p">[</span><span class="s2">&quot;file_name&quot;</span><span class="p">])</span>
+    <span class="mi">193</span>                     <span class="k">if</span> <span class="n">new_path</span>
+    <span class="mi">194</span>                     <span class="k">else</span> <span class="sa">r</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">inner_value</span><span class="p">[</span><span class="s2">&quot;file_name&quot;</span><span class="p">])</span>
+    <span class="mi">195</span>                 <span class="p">)</span>
+<span class="o">--&gt;</span> <span class="mi">196</span>                 <span class="k">with</span> <span class="n">folder</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="mi">197</span>                     <span class="n">readers</span><span class="p">(</span><span class="n">inner_value</span><span class="p">[</span><span class="s2">&quot;file_name&quot;</span><span class="p">],</span> <span class="n">file</span><span class="p">)</span>
+    <span class="mi">199</span> <span class="k">else</span><span class="p">:</span>
+
+
+<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">mario_dev</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.11</span><span class="o">/</span><span class="n">zipfile</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">1563</span><span class="p">,</span> <span class="ow">in</span> <span class="n">ZipFile</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">mode</span><span class="p">,</span> <span class="n">pwd</span><span class="p">,</span> <span class="n">force_zip64</span><span class="p">)</span>
+   <span class="mi">1560</span>     <span class="n">zinfo</span><span class="o">.</span><span class="n">_compresslevel</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">compresslevel</span>
+   <span class="mi">1561</span> <span class="k">else</span><span class="p">:</span>
+   <span class="mi">1562</span>     <span class="c1"># Get info object for name</span>
+<span class="o">-&gt;</span> <span class="mi">1563</span>     <span class="n">zinfo</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getinfo</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+   <span class="mi">1565</span> <span class="k">if</span> <span class="n">mode</span> <span class="o">==</span> <span class="s1">&#39;w&#39;</span><span class="p">:</span>
+   <span class="mi">1566</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_open_to_write</span><span class="p">(</span><span class="n">zinfo</span><span class="p">,</span> <span class="n">force_zip64</span><span class="o">=</span><span class="n">force_zip64</span><span class="p">)</span>
+
+
+<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">mario_dev</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.11</span><span class="o">/</span><span class="n">zipfile</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">1492</span><span class="p">,</span> <span class="ow">in</span> <span class="n">ZipFile</span><span class="o">.</span><span class="n">getinfo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+   <span class="mi">1490</span> <span class="n">info</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">NameToInfo</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+   <span class="mi">1491</span> <span class="k">if</span> <span class="n">info</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+<span class="o">-&gt;</span> <span class="mi">1492</span>     <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span>
+   <span class="mi">1493</span>         <span class="s1">&#39;There is no item named </span><span class="si">%r</span><span class="s1"> in the archive&#39;</span> <span class="o">%</span> <span class="n">name</span><span class="p">)</span>
+   <span class="mi">1495</span> <span class="k">return</span> <span class="n">info</span>
+
+
+<span class="ne">KeyError</span><span class="p">:</span> <span class="s2">&quot;There is no item named &#39;labels_T.txt&#39; in the archive&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="parsing-the-downloaded-single-region-eora-database">
+<h2>Parsing the downloaded single-region EORA database<a class="headerlink" href="#parsing-the-downloaded-single-region-eora-database" title="Permalink to this headline">¶</a></h2>
+<p>As for EORA26, the ‘parse_eora’ method can be adopted also for single
+region tables, setting ‘multi_region’ as False. In this case, ‘indeces’
+should not be defined.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">table_path</span> <span class="o">=</span> <span class="s1">&#39;IO_ITA_2016_PurchasersPrice.txt&#39;</span>  <span class="c1"># Define the desired path to the folder where Exiobase should be downloaded</span>
+
+<span class="n">eora_IT</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">parse_eora</span><span class="p">(</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">table_path</span><span class="p">,</span>
+    <span class="n">multi_region</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="s1">&#39;IOT&#39;</span><span class="p">,</span>
+    <span class="n">year</span> <span class="o">=</span> <span class="mi">2016</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">mohammadamintahavori</span><span class="o">/</span><span class="n">Documents</span><span class="o">/</span><span class="n">GitHub</span><span class="o">/</span><span class="n">MARIO</span><span class="o">/</span><span class="n">mario</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">tableparser</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">688</span><span class="p">:</span> <span class="n">DtypeWarning</span><span class="p">:</span>
+
+<span class="n">Columns</span> <span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="n">have</span> <span class="n">mixed</span> <span class="n">types</span><span class="o">.</span> <span class="n">Specify</span> <span class="n">dtype</span> <span class="n">option</span> <span class="n">on</span> <span class="kn">import</span> <span class="nn">or</span> <span class="nb">set</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="o">.</span>
+
+<span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">mohammadamintahavori</span><span class="o">/</span><span class="n">Documents</span><span class="o">/</span><span class="n">GitHub</span><span class="o">/</span><span class="n">MARIO</span><span class="o">/</span><span class="n">mario</span><span class="o">/</span><span class="n">tools</span><span class="o">/</span><span class="n">tableparser</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">700</span><span class="p">:</span> <span class="n">PerformanceWarning</span><span class="p">:</span>
+
+<span class="n">dropping</span> <span class="n">on</span> <span class="n">a</span> <span class="n">non</span><span class="o">-</span><span class="n">lexsorted</span> <span class="n">multi</span><span class="o">-</span><span class="n">index</span> <span class="n">without</span> <span class="n">a</span> <span class="n">level</span> <span class="n">parameter</span> <span class="n">may</span> <span class="n">impact</span> <span class="n">performance</span><span class="o">.</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">eora_IT</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">IOT</span>
+<span class="n">scenarios</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;baseline&#39;</span><span class="p">]</span>
+<span class="n">Factor</span> <span class="n">of</span> <span class="n">production</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">Satellite</span> <span class="n">account</span> <span class="o">=</span> <span class="mi">2692</span>
+<span class="n">Consumption</span> <span class="n">category</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">Region</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">Sector</span> <span class="o">=</span> <span class="mi">61</span>
+</pre></div>
+</div>
+<p><code class="xref download docutils literal notranslate"><span class="pre">Link</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">file</span></code>.</p>
+</div>
+</div>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="../tutorial_figaro_parser/tutorial_figaro_parser.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Figaro Parser
+    </a>
+    <a class="float-right" href="../tutorial_parse_exiobase_hybrid/tutorial_parse_exiobase_hybrid.html" title="Next">
+        Parsing Exiobase v3.3.18 (supply-use hybrid-units) <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Parsing EORA</a><ul>
+<li><a class="reference internal" href="#downloading-the-database">Downloading the database</a><ul>
+<li><a class="reference internal" href="#eora26">EORA26</a></li>
+<li><a class="reference internal" href="#single-region-eora">Single-Region EORA</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#parsing-the-downloaded-eora26-database">Parsing the downloaded EORA26 database</a></li>
+<li><a class="reference internal" href="#parsing-the-downloaded-single-region-eora-database">Parsing the downloaded single-region EORA database</a></li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+                <nav aria-label="Footer">
+                    <ul class="nav justify-content-center mb-2">
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/features/">Features</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/about-wagtail/"> About Wagtail</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/services/"> Services</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/blog/"> Blog</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/packages/"> Packages</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/developers/"> Developers</a></li>
+                        
+                    </ul>
+                </nav>
+            
+            <div class="text-center">
+                <p style="display: none">
+                    <a class="text-light" href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
+                        Wagtail Sphinx Theme 6.3.0
+                    </a>
+                </p>
+            </div>
+            <div class="text-center">
+                    &copy; Copyright 2021, MARIO Authors: Mohammad Amin Tahavori, Lorenzo Rinaldi, Nicolo Golinucci
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script type="text/javascript" src="../../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>

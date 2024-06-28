@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html class="no-js" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Adding satellite accounts &mdash; MARIO 0.1 documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/dist/fontawesome.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/dist/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+            <link rel="index" title="Index" href="../../genindex.html" />
+            <link rel="search" title="Search" href="../../search.html" />
+            <link rel="top" title="MARIO 0.1 documentation" href="#" />
+            <link rel="up" title="Examples" href="../../examples.html" />
+            <link rel="next" title="Shcok Analysis" href="../tutorial_shock_analysis/tutorial_shock_analysis.html" />
+            <link rel="prev" title="Creating an Empty Database, from tabular information" href="../tutorial_data_template/tutorial_data_template.html" />
+    </head>
+<body>
+    <script type="text/javascript" src="../../_static/dist/blocking.js"></script>
+    <header class="container-fluid bg-primary">
+        <a class="btn btn-sm btn-light skip-to-content-link" href="#main">Skip to content</a>
+        <div class="container-fluid">
+            <div class="navbar navbar-expand-lg navbar-dark font-weight-bold">
+                    <a href="../../index.html"
+                        title="Wagtail"
+                        class="logo navbar-brand"
+                    >
+                        <img src="../../_static/img/wagtail-logo-new.svg" width="45" height="59" alt="Wagtail"
+                            class="logo-img"
+                        />
+                        MARIO Documentation
+                    </a>
+                
+                
+                <button class="navbar-toggler btn btn-primary d-lg-none" type="button" data-toggle="collapse" data-target="#collapseSidebar" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="sr-only">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-lg-3 sidebar-container">
+                <div id="collapseSidebar" class="collapse sticky-top d-lg-block pt-5 pr-lg-4">
+<div id="searchbox" class="searchbox mb-6 px-1" role="search">
+    <form id="search-form" action="../../search.html" autocomplete="off" method="get" role="search">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text border-right-0 bg-white py-3 pl-3 pr-2"><span class="fas fa-search"></span></div>
+            </div>
+            <input class="form-control py-3 pr-3 pl-1 h-100 border-left-0" type="search" name="q" placeholder="Search documentation" aria-label="Search documentation" id="searchinput" />
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
+</div><div class="site-toc">
+    <nav class="toc mt-3" aria-label="Main menu">
+        <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">MARIO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#quickstart">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#citation">Citation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#read-more">Read more</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../terminology.html">Terminology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../settings.html">Changing mario settings</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../examples.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_data_template/tutorial_data_template.html">Creating an Empty Database, from tabular information</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Adding satellite accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_shock_analysis/tutorial_shock_analysis.html">Shcok Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_transformation_isard_to_chenery/tutorial_transformation_isard_to_chenery.html">Transforming a SUT table from Isard to Chenery-Moses model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_transformation_sut_to_iot/tutorial_transformation_sut_to_iot.html">Transforming a SUT into an IOT table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_figaro_parser/tutorial_figaro_parser.html">Figaro Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_eora/tutorial_parse_eora.html">Parsing EORA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_exiobase_hybrid/tutorial_parse_exiobase_hybrid.html">Parsing Exiobase v3.3.18 (supply-use hybrid-units)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_exiobase_monetary/tutorial_parse_exiobase_monetary.html">Parsing Exiobase v3.8.2 (Monetary units)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_custom_database/tutorial_parse_custom_database.html">Parsing custom database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_refernces.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.is_balanced.html">mario.CoreModel.is_balanced</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.is_multi_region.html">mario.CoreModel.is_multi_region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.is_hybrid.html">mario.CoreModel.is_hybrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.sets.html">mario.CoreModel.sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.scenarios.html">mario.CoreModel.scenarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.table_type.html">mario.CoreModel.table_type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.get_index.html">mario.CoreModel.get_index</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.is_chenerymoses.html">mario.CoreModel.is_chenerymoses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.is_isard.html">mario.CoreModel.is_isard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.aggregate.html">mario.Database.aggregate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.add_sectors.html">mario.Database.add_sectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_single_region.html">mario.Database.to_single_region</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_iot.html">mario.Database.to_iot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.add_extensions.html">mario.Database.add_extensions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.update_scenarios.html">mario.Database.update_scenarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.reset_to_flows.html">mario.Database.reset_to_flows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.reset_to_coefficients.html">mario.Database.reset_to_coefficients</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.clone_scenario.html">mario.Database.clone_scenario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.copy.html">mario.Database.copy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.backup.html">mario.Database.backup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_chenery_moses.html">mario.Database.to_chenery_moses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.shock_calc.html">mario.Database.shock_calc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.set_palette.html">mario.set_palette</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.plot_gdp.html">mario.Database.plot_gdp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.plot_bubble.html">mario.Database.plot_bubble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.plot_linkages.html">mario.Database.plot_linkages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.plot_matrix.html">mario.Database.plot_matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.get_aggregation_excel.html">mario.Database.get_aggregation_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.get_extensions_excel.html">mario.Database.get_extensions_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.get_add_sectors_excel.html">mario.Database.get_add_sectors_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.get_shock_excel.html">mario.Database.get_shock_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_excel.html">mario.Database.to_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_txt.html">mario.Database.to_txt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.to_pymrio.html">mario.Database.to_pymrio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_exiobase_3.html">mario.parse_exiobase_3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_exiobase_sut.html">mario.parse_exiobase_sut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_eurostat_sut.html">mario.parse_eurostat_sut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_eora.html">mario.parse_eora</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_from_pymrio.html">mario.parse_from_pymrio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.hybrid_sut_exiobase.html">mario.hybrid_sut_exiobase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_exiobase.html">mario.parse_exiobase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_from_excel.html">mario.parse_from_excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.parse_from_txt.html">mario.parse_from_txt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.calc_all.html">mario.CoreModel.calc_all</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.GDP.html">mario.CoreModel.GDP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.Database.calc_linkages.html">mario.Database.calc_linkages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_X.html">mario.calc_X</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_X_from_w.html">mario.calc_X_from_w</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_X_from_z.html">mario.calc_X_from_z</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_Z.html">mario.calc_z</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_E.html">mario.calc_e</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_V.html">mario.calc_v</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_M.html">mario.calc_m</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_F.html">mario.calc_f</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_w.html">mario.calc_w</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_g.html">mario.calc_g</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_b.html">mario.calc_b</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_p.html">mario.calc_p</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.calc_y.html">mario.calc_y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.save_meta.html">mario.CoreModel.save_meta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.meta_history.html">mario.CoreModel.meta_history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.add_note.html">mario.CoreModel.add_note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.load_test.html">mario.load_test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.directory.html">mario.CoreModel.directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.CoreModel.search.html">mario.CoreModel.search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.slicer.html">mario.slicer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.set_log_verbosity.html">mario.set_log_verbosity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.upload_settings.html">mario.upload_settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.download_settings.html">mario.download_settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../api_document/mario.reset_settings.html">mario.reset_settings</a></li>
+</ul>
+</li>
+</ul>
+
+    </nav>
+    <template data-toggle-item-template>
+        <button class="btn btn-sm btn-link toctree-expand" type="button">
+            <span class="sr-only">Toggle menu contents</span>
+        </button>
+    </template>
+</div>
+                    <div class="d-lg-none border-bottom">
+                        
+                    </div>
+                </div>
+            </aside>
+            <div class="col-12 col-lg-9 pt-5">
+                <header class="row align-items-baseline">
+                    <div class="col">
+                        <nav aria-label="breadcrumb">
+    <ol class="breadcrumb m-0 p-0 bg-transparent">
+        <li class="breadcrumb-item"><a href="../../index.html">Docs</a></li>
+            <li class="breadcrumb-item"><a href="../../examples.html">Examples</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Adding satellite accounts</li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="col-sm-12 col-lg-auto mt-3 mt-lg-3">
+                        <noscript>
+                            <p>JavaScript is required to toggle light/dark mode..</p>
+                        </noscript>
+                        <button id="wagtail-theme" class="btn btn-sm btn-light text-decoration-none" type="button">
+                            <span class="dark-only"><i class="fas fa-sun"></i> Light mode</span>
+                            <span class="light-only"><i class="fas fa-moon"></i> Dark mode</span>
+                        </button>
+    <a class="btn btn-sm btn-light text-decoration-none" href="https://github.com/wagtail/sphinx_wagtail_theme/blob/main/docs/examples/tutorial_add_extensions/tutorial_add_extensions.rst" rel="nofollow">
+        <span class="btn-icon"><span class="fab fa-github"></span></span>
+        <span class="btn-text">Edit on GitHub</span>
+    </a>
+    <a class="btn btn-sm btn-light text-decoration-none" href="../../_sources/examples/tutorial_add_extensions/tutorial_add_extensions.rst.txt" rel="nofollow">
+        <span class="btn-icon"><span class="fas fa-code"></span></span>
+        <span class="btn-text">View source</span>
+    </a>
+                        
+                    </div>
+                </header>
+                <div class="row" >
+                    <div class="col-12">
+                        <hr class="w-100 my-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-9 order-last order-lg-first rst-content">
+                        <main role="main" id="main">
+    <div class="section" id="adding-satellite-accounts">
+<h1>Adding satellite accounts<a class="headerlink" href="#adding-satellite-accounts" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial shows how to possibly add satellite accounts to any
+mario.Database object</p>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Input-output tables are not necessarily enriched with satellite accounts
+(i.e. environmentally-extended). However, in the field of industrial
+ecology and life-cycle assessment (LCA), it is paramount each industrial
+activity is characterized also in terms of its interactions with the
+external environment. Satellite accounts may cover also
+non-environmental information, such as employment (e.g. employed people
+by each activity)</p>
+<p>Having the possibility to extend IOTs and SUTs to additional accounts
+may be helpful for many analysts and modellers.</p>
+</div>
+<div class="section" id="adding-extensions-on-a-custom-iot">
+<h2>Adding extensions on a custom IOT<a class="headerlink" href="#adding-extensions-on-a-custom-iot" title="Permalink to this headline">¶</a></h2>
+<p>Starting from the test IOT matrix of mario, we can see the table has
+four satellite accounts</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mario</span>  <span class="c1"># Import MARIO</span>
+
+<span class="n">test_IOT</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">load_test</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="s1">&#39;IOT&#39;</span><span class="p">)</span>
+<span class="n">test_IOT</span><span class="o">.</span><span class="n">get_index</span><span class="p">(</span><span class="s1">&#39;Satellite account&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Employment&#39;</span><span class="p">,</span> <span class="s1">&#39;CO2&#39;</span><span class="p">,</span> <span class="s1">&#39;Water Consumption Blue&#39;</span><span class="p">,</span> <span class="s1">&#39;Energy&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="preparing-data-in-excel">
+<h3>Preparing data in Excel<a class="headerlink" href="#preparing-data-in-excel" title="Permalink to this headline">¶</a></h3>
+<p>Let’s assume we desire to extend the table to account for “CH4”
+emissions. First, we need to prepare the data in the proper format in
+Excel. MARIO provides an Excel template by calling the
+‘get_extensions_excel’ method</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;add_extensions/new_E_accounts.xlsx&#39;</span>
+<span class="n">test_IOT</span><span class="o">.</span><span class="n">get_extensions_excel</span><span class="p">(</span><span class="n">matrix</span><span class="o">=</span><span class="s1">&#39;E&#39;</span><span class="p">,</span><span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The data is then filled with the desired information, in this case
+regarding CH4 emissions. These data needs to be collected separately by
+the analyst.</p>
+<div class="figure align-default" id="id1">
+<img alt="Alt text" src="../../_images/new_E.jpg" />
+<p class="caption"><span class="caption-text">Alt text</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>This data can be parsed using pandas ‘read_excel’ method. In this case
+the data are stored in the file targeted by the given path and in the
+sheet named “E flows”.</p>
+<p>It is also important to provide the unit of measure of the new accounts,
+that must be provided as reported also in the next Figure.</p>
+<div class="figure align-default" id="id2">
+<img alt="Alt text" src="../../_images/units.jpg" />
+<p class="caption"><span class="caption-text">Alt text</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>The units can be parsed using pandas, by adding a ‘units’ sheet to the
+Excel file provided by MARIO or in any other .</p>
+<p>We save the filled file as new_E_accounts_filled.xlsx, to be parsed.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;add_extensions/new_E_accounts_filled.xlsx&#39;</span>
+<span class="n">units</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;units&#39;</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">header</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">units</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>CH4</th>
+      <td>kg</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="section" id="adding-the-new-satellite-accounts">
+<h2>Adding the new satellite accounts<a class="headerlink" href="#adding-the-new-satellite-accounts" title="Permalink to this headline">¶</a></h2>
+<p>Once both data and units are parsed, just call the “add_extensions”
+method of the mario.Database class and provide the required information</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_IOT</span><span class="o">.</span><span class="n">add_extensions</span><span class="p">(</span>
+    <span class="n">io</span><span class="o">=</span><span class="n">path</span><span class="p">,</span>
+    <span class="n">units</span><span class="o">=</span><span class="n">units</span><span class="p">,</span>
+    <span class="n">matrix</span><span class="o">=</span><span class="s1">&#39;E&#39;</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Using</span> <span class="n">add</span> <span class="n">extensions</span> <span class="n">will</span> <span class="n">rewrite</span> <span class="n">the</span> <span class="n">new</span> <span class="n">results</span> <span class="n">on</span> <span class="n">the</span> <span class="n">baseline</span> <span class="ow">and</span> <span class="n">delete</span> <span class="n">other</span> <span class="n">scenarios</span>
+<span class="n">baseline</span> <span class="n">deleted</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">database</span>
+<span class="n">Database</span><span class="p">:</span> <span class="n">to</span> <span class="n">calculate</span> <span class="n">z</span> <span class="n">following</span> <span class="n">matrices</span> <span class="n">are</span> <span class="n">need</span><span class="o">.</span>
+<span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">Trying</span> <span class="n">to</span> <span class="n">calculate</span> <span class="n">dependencies</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-extensions-to-exiobase-monetary-suts-from-corresponding-iots">
+<h2>Adding extensions to Exiobase monetary SUTs from corresponding IOTs<a class="headerlink" href="#adding-extensions-to-exiobase-monetary-suts-from-corresponding-iots" title="Permalink to this headline">¶</a></h2>
+<p>Another relevant application of the ‘add_extensions’ method is related
+to adding extensions to the Monetary SUT version of Exiobase, which are
+not environmentally-extended when downloaded from Zenodo. However, they
+have the same granularity as their corresponding activity-by-activity
+IOT in terms of regions and sectors (activities in case of the SUT).</p>
+<p>By downloading both SUT and IOT tables, it is possible to get the
+satellite accounts from the latter to the former.</p>
+<div class="section" id="parse-both-exiobase-tables">
+<h3>Parse both Exiobase tables<a class="headerlink" href="#parse-both-exiobase-tables" title="Permalink to this headline">¶</a></h3>
+<p>First, start by parsing both tables (referred to 2019 in this example):
+refer to the EXIOBASE parser tutorial for further information.</p>
+<p>You can download the IOT database, using data download functionalities
+of embedded in mario through pymrio!</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mario</span>
+<span class="c1"># Download the exiobase IOT 2019 ixi</span>
+<span class="n">info</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">download_exiobase3</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="n">years</span><span class="o">=</span><span class="p">[</span><span class="mi">2019</span><span class="p">],</span><span class="n">system</span><span class="o">=</span><span class="s2">&quot;ixi&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For SUT table, you can use the following link to download the data:</p>
+<p><a class="reference external" href="https://zenodo.org/records/5589597/files/MRSUT_2019.zip?download=1">https://zenodo.org/records/5589597/files/MRSUT_2019.zip?download=1</a></p>
+<p>After making sure that both databases are downloaded into the right
+directory (where the jupyter file is in this example) you can parse
+them! Make sure the name of the zip files correspond to the name you
+path to the functions!</p>
+<p>The parsing can take a little bit of time. Why not having a cup of
+coffee ☕️ meanwhile?</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sut_path</span> <span class="o">=</span> <span class="s1">&#39;MRSUT_2019.zip&#39;</span>
+<span class="n">iot_path</span> <span class="o">=</span> <span class="s1">&#39;IOT_2019_ixi.zip&#39;</span>
+
+<span class="n">sut</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">parse_exiobase</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="s1">&#39;SUT&#39;</span><span class="p">,</span><span class="n">unit</span><span class="o">=</span><span class="s1">&#39;Monetary&#39;</span><span class="p">,</span><span class="n">path</span><span class="o">=</span><span class="n">sut_path</span><span class="p">)</span>
+<span class="n">iot</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">parse_exiobase</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="s1">&#39;IOT&#39;</span><span class="p">,</span><span class="n">unit</span><span class="o">=</span><span class="s1">&#39;Monetary&#39;</span><span class="p">,</span><span class="n">path</span><span class="o">=</span><span class="n">iot_path</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The next step would be to append to create a new E matrix for the SUT
+starting from the E matrix of the IOT. Consider that the indices would
+be different since the IOT would have a “Sector” level instead of
+“Activity” and “Commodity” level as for the SUT.</p>
+<p>The new E of the SUT will be initialized as an empty dataframe, filled
+with zeros, having the same indices as the IOT’s E and the same columns
+as the SUT’s E.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">E_iot</span> <span class="o">=</span> <span class="n">iot</span><span class="o">.</span><span class="n">E</span>
+<span class="n">E_sut</span> <span class="o">=</span> <span class="n">sut</span><span class="o">.</span><span class="n">E</span>
+
+<span class="n">new_E_sut</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">E_iot</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">E_sut</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It is then necessary to fill the values of the IOT’s E into the new
+SUT’s E. Before this, it is safer to change the second level of the
+columns index level of the IOT’s E into ‘Activity’</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_column_levels</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">MultiIndex</span><span class="o">.</span><span class="n">from_arrays</span><span class="p">([</span>
+    <span class="n">E_iot</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_level_values</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
+    <span class="p">[</span><span class="s1">&#39;Activity&#39;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">E_iot</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])],</span>
+    <span class="n">E_iot</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_level_values</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="p">])</span>
+
+<span class="n">E_iot</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">new_column_levels</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E_iot</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th colspan="10" halign="left">AT</th>
+      <th>...</th>
+      <th colspan="10" halign="left">WM</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="10" halign="left">Activity</th>
+      <th>...</th>
+      <th colspan="10" halign="left">Activity</th>
+    </tr>
+    <tr>
+      <th>Item</th>
+      <th>Cultivation of paddy rice</th>
+      <th>Cultivation of wheat</th>
+      <th>Cultivation of cereal grains nec</th>
+      <th>Cultivation of vegetables, fruit, nuts</th>
+      <th>Cultivation of oil seeds</th>
+      <th>Cultivation of sugar cane, sugar beet</th>
+      <th>Cultivation of plant-based fibers</th>
+      <th>Cultivation of crops nec</th>
+      <th>Cattle farming</th>
+      <th>Pigs farming</th>
+      <th>...</th>
+      <th>Landfill of waste: Paper</th>
+      <th>Landfill of waste: Plastic</th>
+      <th>Landfill of waste: Inert/metal/hazardous</th>
+      <th>Landfill of waste: Textiles</th>
+      <th>Landfill of waste: Wood</th>
+      <th>Activities of membership organisation n.e.c. (91)</th>
+      <th>Recreational, cultural and sporting activities (92)</th>
+      <th>Other service activities (93)</th>
+      <th>Private households with employed persons (95)</th>
+      <th>Extra-territorial organizations and bodies</th>
+    </tr>
+    <tr>
+      <th>Item</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Employment: Low-skilled male</th>
+      <td>0</td>
+      <td>0.589228</td>
+      <td>1.040728</td>
+      <td>2.936768</td>
+      <td>0.289647</td>
+      <td>0.100779</td>
+      <td>0.000053</td>
+      <td>0.002349</td>
+      <td>1.588950</td>
+      <td>0.994343</td>
+      <td>...</td>
+      <td>0.601158</td>
+      <td>0.470374</td>
+      <td>0.573169</td>
+      <td>0.156180</td>
+      <td>0.202879</td>
+      <td>34.596186</td>
+      <td>53.603927</td>
+      <td>32.629743</td>
+      <td>19.382153</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Employment: Low-skilled female</th>
+      <td>0</td>
+      <td>0.240583</td>
+      <td>0.418940</td>
+      <td>1.197483</td>
+      <td>0.118117</td>
+      <td>0.051957</td>
+      <td>0.000024</td>
+      <td>0.000759</td>
+      <td>0.670423</td>
+      <td>0.299459</td>
+      <td>...</td>
+      <td>0.119126</td>
+      <td>0.077220</td>
+      <td>0.120501</td>
+      <td>0.028135</td>
+      <td>0.039264</td>
+      <td>16.085559</td>
+      <td>34.624512</td>
+      <td>15.470407</td>
+      <td>45.404207</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Employment: Medium-skilled male</th>
+      <td>0</td>
+      <td>4.355248</td>
+      <td>7.763003</td>
+      <td>19.881789</td>
+      <td>2.295349</td>
+      <td>1.294805</td>
+      <td>0.000491</td>
+      <td>0.017054</td>
+      <td>9.374909</td>
+      <td>10.435789</td>
+      <td>...</td>
+      <td>4.089100</td>
+      <td>2.797096</td>
+      <td>4.398569</td>
+      <td>0.950844</td>
+      <td>1.686963</td>
+      <td>54.749574</td>
+      <td>92.874739</td>
+      <td>52.702647</td>
+      <td>7.836223</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Employment: Medium-skilled female</th>
+      <td>0</td>
+      <td>2.804715</td>
+      <td>4.859994</td>
+      <td>12.436802</td>
+      <td>1.615807</td>
+      <td>1.003723</td>
+      <td>0.000381</td>
+      <td>0.018525</td>
+      <td>7.046417</td>
+      <td>8.089746</td>
+      <td>...</td>
+      <td>0.414687</td>
+      <td>0.291480</td>
+      <td>0.399070</td>
+      <td>0.101681</td>
+      <td>0.125548</td>
+      <td>14.237659</td>
+      <td>42.169384</td>
+      <td>13.871582</td>
+      <td>26.543811</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Employment: High-skilled male</th>
+      <td>0</td>
+      <td>0.117780</td>
+      <td>0.184809</td>
+      <td>0.489626</td>
+      <td>0.074375</td>
+      <td>0.047735</td>
+      <td>0.000018</td>
+      <td>0.000798</td>
+      <td>0.428852</td>
+      <td>0.384730</td>
+      <td>...</td>
+      <td>1.920168</td>
+      <td>1.556992</td>
+      <td>2.068996</td>
+      <td>0.450360</td>
+      <td>0.727900</td>
+      <td>50.078726</td>
+      <td>85.161717</td>
+      <td>43.500225</td>
+      <td>1.175433</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 7987 columns</p>
+</div><p>At this point, it is enough to update the new SUT’s E with values of the
+IOT’s E</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_E_sut</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead tr th {
+        text-align: left;
+    }
+
+    .dataframe thead tr:last-of-type th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th colspan="10" halign="left">AT</th>
+      <th>...</th>
+      <th colspan="10" halign="left">WM</th>
+    </tr>
+    <tr>
+      <th>Level</th>
+      <th colspan="10" halign="left">Commodity</th>
+      <th>...</th>
+      <th colspan="10" halign="left">Activity</th>
+    </tr>
+    <tr>
+      <th>Item</th>
+      <th>Paddy rice</th>
+      <th>Wheat</th>
+      <th>Cereal grains nec</th>
+      <th>Vegetables, fruit, nuts</th>
+      <th>Oil seeds</th>
+      <th>Sugar cane, sugar beet</th>
+      <th>Plant-based fibers</th>
+      <th>Crops nec</th>
+      <th>Cattle</th>
+      <th>Pigs</th>
+      <th>...</th>
+      <th>Landfill of waste: Paper</th>
+      <th>Landfill of waste: Plastic</th>
+      <th>Landfill of waste: Inert/metal/hazardous</th>
+      <th>Landfill of waste: Textiles</th>
+      <th>Landfill of waste: Wood</th>
+      <th>Activities of membership organisation n.e.c. (91)</th>
+      <th>Recreational, cultural and sporting activities (92)</th>
+      <th>Other service activities (93)</th>
+      <th>Private households with employed persons (95)</th>
+      <th>Extra-territorial organizations and bodies</th>
+    </tr>
+    <tr>
+      <th>Item</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Employment: Low-skilled male</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Employment: Low-skilled female</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Employment: Medium-skilled male</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Employment: Medium-skilled female</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Employment: High-skilled male</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 17787 columns</p>
+</div><div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_E_sut</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">E_iot</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Regarding the units, they will be taken from the IOT as well</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_units_sut</span> <span class="o">=</span> <span class="n">iot</span><span class="o">.</span><span class="n">units</span><span class="p">[</span><span class="s1">&#39;Satellite account&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">new_units_sut</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Taxes less subsidies on products purchased: Total</th>
+      <td>M.EUR</td>
+    </tr>
+    <tr>
+      <th>Other net taxes on production</th>
+      <td>M.EUR</td>
+    </tr>
+    <tr>
+      <th>Compensation of employees; wages, salaries, &amp; employers' social contributions: Low-skilled</th>
+      <td>M.EUR</td>
+    </tr>
+    <tr>
+      <th>Compensation of employees; wages, salaries, &amp; employers' social contributions: Medium-skilled</th>
+      <td>M.EUR</td>
+    </tr>
+    <tr>
+      <th>Compensation of employees; wages, salaries, &amp; employers' social contributions: High-skilled</th>
+      <td>M.EUR</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>Energy Carrier Net TMAR</th>
+      <td>TJ</td>
+    </tr>
+    <tr>
+      <th>Energy Carrier Net TOTH</th>
+      <td>TJ</td>
+    </tr>
+    <tr>
+      <th>Energy Carrier Net TRAI</th>
+      <td>TJ</td>
+    </tr>
+    <tr>
+      <th>Energy Carrier Net TROA</th>
+      <td>TJ</td>
+    </tr>
+    <tr>
+      <th>Energy Carrier Net LOSS</th>
+      <td>TJ</td>
+    </tr>
+  </tbody>
+</table>
+<p>1113 rows × 1 columns</p>
+</div><p>To conclude, just call the ‘add_extensions’ method as shown for the
+simplified case! you just use the function and mario will take care of
+recaulcuation of the new matrices!</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sut</span><span class="o">.</span><span class="n">add_extensions</span><span class="p">(</span>
+    <span class="n">io</span><span class="o">=</span><span class="n">new_E_sut</span><span class="p">,</span>
+    <span class="n">units</span><span class="o">=</span><span class="n">new_units_sut</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">new_E_sut</span><span class="o">.</span><span class="n">index</span><span class="p">],</span> <span class="c1"># We should only pass the items that are in the new_E_sut</span>
+    <span class="n">matrix</span><span class="o">=</span><span class="s1">&#39;E&#39;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">WARNING</span><span class="p">:</span><span class="n">mario</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">AttrData</span><span class="p">:</span><span class="n">Using</span> <span class="n">add</span> <span class="n">extensions</span> <span class="n">will</span> <span class="n">rewrite</span> <span class="n">the</span> <span class="n">new</span> <span class="n">results</span> <span class="n">on</span> <span class="n">the</span> <span class="n">baseline</span> <span class="ow">and</span> <span class="n">delete</span> <span class="n">other</span> <span class="n">scenarios</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">mario</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">AttrData</span><span class="p">:</span><span class="n">baseline</span> <span class="n">deleted</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">database</span>
+<span class="n">WARNING</span><span class="p">:</span><span class="n">mario</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">CoreIO</span><span class="p">:</span><span class="n">Database</span><span class="p">:</span> <span class="n">to</span> <span class="n">calculate</span> <span class="n">z</span> <span class="n">following</span> <span class="n">matrices</span> <span class="n">are</span> <span class="n">need</span><span class="o">.</span>
+<span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">Trying</span> <span class="n">to</span> <span class="n">calculate</span> <span class="n">dependencies</span><span class="o">.</span>
+</pre></div>
+</div>
+<p><code class="xref download docutils literal notranslate"><span class="pre">Link</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">file</span></code>.</p>
+</div>
+</div>
+</div>
+
+</main>
+                        <nav aria-label="Page navigation" class="py-4 my-5 clearfix font-weight-bold border-top">
+    <a class="float-left" href="../tutorial_data_template/tutorial_data_template.html" title="Previous">
+        <span aria-hidden="true">←&nbsp;</span>Creating an Empty Database, from tabular information
+    </a>
+    <a class="float-right" href="../tutorial_shock_analysis/tutorial_shock_analysis.html" title="Next">
+        Shcok Analysis <span aria-hidden="true">&nbsp;→</span>
+    </a>
+</nav>
+                    </div>
+                    
+                    <nav class="col-12 col-lg-3 pb-4">
+                        <div class="sticky-top toc page-toc" aria-labelledby="page-toc-heading">
+                            <p class="font-weight-bold" id="page-toc-heading">Page contents</p>
+                            <ul>
+<li><a class="reference internal" href="#">Adding satellite accounts</a><ul>
+<li><a class="reference internal" href="#background">Background</a></li>
+<li><a class="reference internal" href="#adding-extensions-on-a-custom-iot">Adding extensions on a custom IOT</a><ul>
+<li><a class="reference internal" href="#preparing-data-in-excel">Preparing data in Excel</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#adding-the-new-satellite-accounts">Adding the new satellite accounts</a></li>
+<li><a class="reference internal" href="#adding-extensions-to-exiobase-monetary-suts-from-corresponding-iots">Adding extensions to Exiobase monetary SUTs from corresponding IOTs</a><ul>
+<li><a class="reference internal" href="#parse-both-exiobase-tables">Parse both Exiobase tables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                        </div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid bg-primary text-light">
+        <div class="container">
+            <div class="row">
+        <div class="col p-4">
+            
+                <nav aria-label="Footer">
+                    <ul class="nav justify-content-center mb-2">
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/features/">Features</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/about-wagtail/"> About Wagtail</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/services/"> Services</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/blog/"> Blog</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/packages/"> Packages</a></li>
+                        
+                            
+                            
+                            <li class="nav-item"><a class="nav-link text-light"  href="https://wagtail.org/developers/"> Developers</a></li>
+                        
+                    </ul>
+                </nav>
+            
+            <div class="text-center">
+                <p style="display: none">
+                    <a class="text-light" href="https://github.com/wagtail/sphinx_wagtail_theme" rel="nofollow" target="_blank">
+                        Wagtail Sphinx Theme 6.3.0
+                    </a>
+                </p>
+            </div>
+            <div class="text-center">
+                    &copy; Copyright 2021, MARIO Authors: Mohammad Amin Tahavori, Lorenzo Rinaldi, Nicolo Golinucci
+            </div>
+        </div>
+    </div>
+        </div>
+    </footer>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script type="text/javascript" src="../../_static/dist/theme.js"></script>
+        <script type="text/javascript" src="../../_static/dist/vendor.js"></script>
+        <script type="text/javascript" src="../../_static/searchtools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() { Search.loadIndex("../../searchindex.js"); });
+        </script>
+        <script type="text/javascript" id="searchindexloader"></script>
+    </body>
+</html>
