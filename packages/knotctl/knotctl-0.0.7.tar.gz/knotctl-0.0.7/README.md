@@ -1,0 +1,144 @@
+# knotctl
+
+This is a commandline tool for knotapi: https://gitlab.nic.cz/knot/knot-dns-rest
+
+## Build and install
+
+To install using pip, run the following command in a virtual envrionment.
+
+```
+python -m pip install "knotctl @ git+https://code.smolnet.org/micke/knotctl
+```
+
+To build and install as a deb-package
+
+```
+sudo apt install python3-stdeb
+git clone https://code.smolnet.org/micke/knotctl
+cd knotctl
+python3 setup.py --command-packages=stdeb.command bdist_deb
+sudo dpkg -i deb_dist/knotctl_*_all.deb
+```
+A prebuilt deb-package is also available from the release page: https://code.smolnet.org/micke/knotctl/releases/
+
+## Shell completion
+
+For bash: add this to .bashrc
+
+```
+source <(knotctl completion)
+```
+
+For fish, run:
+
+```
+knotctl completion --shell fish > ~/.config/fish/completions/knotctl.fish
+```
+
+For tcsh: add this to .cshrc
+
+```
+complete "knotctl" 'p@*@`python-argcomplete-tcsh "knotctl"`@' ;
+```
+
+For zsh: add this to .zshrc
+
+```
+autoload -U bashcompinit
+bashcompinit
+source <(knotctl completion)
+```
+## Usage
+
+```
+usage: knotctl [-h] [--json | --no-json]
+               {add,completion,config,delete,list,update} ...
+
+positional arguments:
+  {add,completion,config,delete,list,update}
+
+options:
+  -h, --help            show this help message and exit
+  --json, --no-json
+```
+
+### ADD
+
+```
+usage: knotctl add [-h] -d DATA -n NAME -r RTYPE [-t TTL] -z ZONE
+
+options:
+  -h, --help            show this help message and exit
+  -d DATA, --data DATA
+  -n NAME, --name NAME
+  -r RTYPE, --rtype RTYPE
+  -t TTL, --ttl TTL
+  -z ZONE, --zone ZONE
+```
+
+### COMPLETION
+
+```
+usage: knotctl completion [-h] [-s SHELL]
+
+options:
+  -h, --help            show this help message and exit
+  -s SHELL, --shell SHELL
+```
+
+### CONFIG
+
+```
+usage: knotctl config [-h] [-c CONTEXT] [-b BASEURL] [-p PASSWORD] [-u USERNAME]
+
+options:
+  -h, --help            show this help message and exit
+  -c CONTEXT, --context CONTEXT
+  -b BASEURL, --baseurl BASEURL
+  -p PASSWORD, --password PASSWORD
+  -u USERNAME, --username USERNAME
+```
+
+### DELETE
+
+```
+usage: knotctl delete [-h] [-d DATA] [-n NAME] [-r RTYPE] -z ZONE
+
+options:
+  -h, --help            show this help message and exit
+  -d DATA, --data DATA
+  -n NAME, --name NAME
+  -r RTYPE, --rtype RTYPE
+  -z ZONE, --zone ZONE
+```
+
+### LIST
+
+```
+usage: knotctl list [-h] [-d DATA] [-n NAME] [-r RTYPE] [-z ZONE]
+
+options:
+  -h, --help            show this help message and exit
+  -d DATA, --data DATA
+  -n NAME, --name NAME
+  -r RTYPE, --rtype RTYPE
+  -z ZONE, --zone ZONE
+```
+
+### UPDATE
+
+```
+usage: knotctl update [-h] -a [ARGUMENT ...] -d DATA -n NAME -r RTYPE [-t TTL]
+                      -z ZONE
+
+options:
+  -h, --help            show this help message and exit
+  -a [ARGUMENT ...], --argument [ARGUMENT ...]
+                        Specify key - value pairs to be updated:
+                        name=dns1.example.com.
+  -d DATA, --data DATA
+  -n NAME, --name NAME
+  -r RTYPE, --rtype RTYPE
+  -t TTL, --ttl TTL
+  -z ZONE, --zone ZONE
+```
