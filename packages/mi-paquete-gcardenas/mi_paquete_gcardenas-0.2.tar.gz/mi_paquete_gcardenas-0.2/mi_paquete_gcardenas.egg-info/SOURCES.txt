@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+mi_paquete/__init__.py
+mi_paquete/mi_modulo.py
+mi_paquete_gcardenas.egg-info/PKG-INFO
+mi_paquete_gcardenas.egg-info/SOURCES.txt
+mi_paquete_gcardenas.egg-info/dependency_links.txt
+mi_paquete_gcardenas.egg-info/top_level.txt

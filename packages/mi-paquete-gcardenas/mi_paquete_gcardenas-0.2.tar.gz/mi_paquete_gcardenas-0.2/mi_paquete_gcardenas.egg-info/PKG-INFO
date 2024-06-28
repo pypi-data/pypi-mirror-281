@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mi-paquete-gcardenas
+Version: 0.2
+Summary: Una breve descripción de tu paquete
+Home-page: https://github.com/tu_usuario/mi_paquete
+Author: Tu Nombre
+Author-email: tu_email@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
