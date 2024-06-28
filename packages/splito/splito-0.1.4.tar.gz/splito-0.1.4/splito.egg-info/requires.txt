@@ -1,0 +1,12 @@
+tqdm
+loguru
+pydantic
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+jenkspy
+datamol>=0.12.5
+rdkit
