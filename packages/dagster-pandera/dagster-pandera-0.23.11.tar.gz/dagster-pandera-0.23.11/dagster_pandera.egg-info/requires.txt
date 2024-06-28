@@ -1,0 +1,7 @@
+dagster==1.7.11
+pandas
+pandera<0.20.0,>=0.14.2
+numpy<2
+
+[test]
+pytest
