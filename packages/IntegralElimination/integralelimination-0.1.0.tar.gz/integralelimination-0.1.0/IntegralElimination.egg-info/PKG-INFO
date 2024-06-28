@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: IntegralElimination
+Version: 0.1.0
+Summary: Algortihm for performing integral elimination for nonlinear integral equations
+Home-page: https://codeberg.org/louis-roussel/IntegralElimination
+Author: Louis ROUSSEL
+Author-email: louis.roussel@univ-lille.fr
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ordered-set>=4.1.0
+Requires-Dist: sympy>=1.11.1
+Requires-Dist: typing>=3.7.4.3
+Requires-Dist: numpy
+
+# IntegralElimination
+
