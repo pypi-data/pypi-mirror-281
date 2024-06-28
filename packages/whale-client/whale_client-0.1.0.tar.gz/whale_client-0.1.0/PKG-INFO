@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: whale-client
+Version: 0.1.0
+Summary: The open source library that allows users to create applications on the Whale platform.
+Home-page: https://github.com/jinyang628/whale-client
+Author: jinyang628
+Author-email: chenjinyang4192@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pydantic (>=2.7.4,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Documentation, https://jinyang628.github.io/whale-client/
+Project-URL: Repository, https://github.com/jinyang628/whale-client
+Description-Content-Type: text/markdown
+
+# Whale
+
