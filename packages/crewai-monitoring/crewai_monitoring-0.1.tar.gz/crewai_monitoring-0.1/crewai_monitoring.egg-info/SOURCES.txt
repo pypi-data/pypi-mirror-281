@@ -1,0 +1,7 @@
+README.md
+setup.py
+crewai_monitoring.egg-info/PKG-INFO
+crewai_monitoring.egg-info/SOURCES.txt
+crewai_monitoring.egg-info/dependency_links.txt
+crewai_monitoring.egg-info/requires.txt
+crewai_monitoring.egg-info/top_level.txt

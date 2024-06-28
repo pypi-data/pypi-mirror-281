@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: crewai_monitoring
+Version: 0.1
+Summary: A library for monitoring CrewAI agents, including token usage, cost calculation, logging, carbon emissions, and more.
+Home-page: https://github.com/aianytime/crewai_monitoring
+Author: AI Anytime
+Author-email: contact@aianytime.net
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: crewAI
+Requires-Dist: tiktoken
+Requires-Dist: numpy
