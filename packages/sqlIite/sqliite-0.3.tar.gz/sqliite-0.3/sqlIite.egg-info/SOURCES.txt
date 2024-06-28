@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+sqlIite/Binomialdistribution.py
+sqlIite/Gaussiandistribution.py
+sqlIite/Generaldistribution.py
+sqlIite/__init__.py
+sqlIite.egg-info/PKG-INFO
+sqlIite.egg-info/SOURCES.txt
+sqlIite.egg-info/dependency_links.txt
+sqlIite.egg-info/not-zip-safe
+sqlIite.egg-info/top_level.txt
