@@ -1,0 +1,16 @@
+morphdb_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morphdb_utils/annotations.py,sha256=mTiWnwQLJimCLTXtT8MRtbX2DIUqrJiXIvzNj121txE,4645
+morphdb_utils/api.py,sha256=95RLfRYO8i7zehAsyHTV_Zk9Se9F9KoGiSLAhjKvrnM,24617
+morphdb_utils/logging.py,sha256=w4Z6hgYld3YkKHGikb224Lpxj79KME8GCY_NVWsf4Ug,429
+morphdb_utils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morphdb_utils/type.py,sha256=oZbZgHp_2GD7Uj0Y7gC2Ysz10UpDb2d4Lrcd5msISBA,1898
+morphdb_utils/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morphdb_utils/utils/config.py,sha256=a5sdw_KGIL030vIW2qTgapKC932e7XrUWSIkFD43WJo,3743
+morphdb_utils/utils/env.py,sha256=5J3ymKa0cKYxcWvmIzEteZpzvMhMXLafPHNqOl6jpgk,595
+morphdb_utils/utils/helper.py,sha256=eL2ljjF6xItmyj0d9W294WJNknGSNkuruEZ_Nc61Hu8,363
+morphdb_utils/utils/request.py,sha256=EHDmzY2X59Y5PurAZkLnABJcIBC7caVKlIQCZObOgYc,156
+morphdb_utils/utils/response.py,sha256=U4k9u5GjI6ZIBHkCLb1t0nt-3w4piebLIJ9T1IRRKN8,5629
+morphdb_utils/utils/sql.py,sha256=vIpTE1FoSk8XGrcHCDct_LqFJ-XIQS9FQWiuEuEtFR8,5041
+morphdb_utils-0.2.28.dist-info/METADATA,sha256=jPgJjxIz827igY_AYO17oPJfoxUg2JkGM9L1D-_N14k,1560
+morphdb_utils-0.2.28.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+morphdb_utils-0.2.28.dist-info/RECORD,,
