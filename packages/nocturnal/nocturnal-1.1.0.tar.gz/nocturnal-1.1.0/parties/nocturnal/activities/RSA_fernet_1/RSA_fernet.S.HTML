@@ -1,0 +1,88 @@
+
+
+
+<pre>
+
+	<h1>RSA fernet 1</h1>
+	
+	<h2>quest</h2>
+	
+		maybe, this:
+			create:
+				1. RSA keys
+				2. fernet key
+				3. fernet + RSA_public -> fernet.RSA
+			
+			encrypt strand:
+				necessities:
+					fernet
+					
+				leaps:
+					fernet + strand -> strand.fernet
+				
+			decrypt strand:
+				necessities:
+					fernet.RSA
+					RSA_private
+				
+				leaps:
+					RSA_private + fernet.RSA -> fernet
+				
+					strand.fernet + RSA_private -> 
+				
+			encrypts the fernet key with RSA
+			encrypts the data with fernet
+
+			
+	<h2>fernet</h2>
+		
+		fernet 
+			[encrypt]
+				fernet instance:
+					from cryptography.fernet import Fernet
+					Fernet.generate_key ()
+					
+				fernet hexadecimal string: 
+					binascii.hexlify (fernet_key).decode ()
+
+				fernet hexadecimal binary string:
+					fernet_1_key_binary = fernet_1_key.encode ()
+
+				fernet RSA binary string:
+					fernet_1_key_RSA = rsa.encrypt (
+						fernet_1_key_binary, 
+						RSA_public_key_instance
+					)
+					
+				fernet RSA hexadecimal string:
+					fernet_1_key_RSA_hexadecimal_string = fernet_1_key_RSA.hex ()
+					
+					
+					
+					
+			[decrypt]
+				fernet RSA binary string:
+					fernet_1_key_RSA_binary_string = bytes.fromhex (
+						fernet_1_key_RSA_hexadecimal_string
+					)
+					
+				fernet hexadecimal binary string:
+					fernet_1_key_RSA_binary_string = rsa.decrypt (
+						fernet_1_key_binary, 
+						RSA_private_key_instance
+					)
+				
+				fernet 
+					
+				
+				
+				
+				
+				
+				
+				
+
+
+
+
+</pre>
