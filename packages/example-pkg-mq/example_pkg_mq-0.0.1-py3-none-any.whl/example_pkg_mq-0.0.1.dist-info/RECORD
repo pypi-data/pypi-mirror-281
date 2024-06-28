@@ -1,0 +1,7 @@
+example_pk/__init__.py,sha256=5cNKULiEptP8SgL55FMxUB4x7rNrOig0MtA-n2D6pRY,17
+example_pk/app.py,sha256=_GHRoVWdc5tSb4hg_WHI1bT-cX8UESuLVm0GkD8vJZ8,34
+example_pkg_mq-0.0.1.dist-info/LICENSE,sha256=RcflPnoM6QAKCygr44WWjnuOyZA6sCUJkl9lj-tZRg8,1080
+example_pkg_mq-0.0.1.dist-info/METADATA,sha256=_7ySpgwnpKZhljEuXkDjjyB7M_8Nq1J1-o-jUeGdxwE,429
+example_pkg_mq-0.0.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+example_pkg_mq-0.0.1.dist-info/top_level.txt,sha256=McvSlyBt7cDJTzebEv4S6CulmUvIv3PhCQzCa03vstk,11
+example_pkg_mq-0.0.1.dist-info/RECORD,,
