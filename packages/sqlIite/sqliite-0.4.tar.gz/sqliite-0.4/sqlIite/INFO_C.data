@@ -1,0 +1,211 @@
+from tkinter import *
+from tkinter import ttk
+import pyodbc as py
+import qrcode as qr
+
+from datetime import date
+
+from PIL import ImageTk, Image
+
+server = "REVISION-PC"
+user_db = "user"
+pass_db = "user"
+db = "data_db"
+
+connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER='+ server + ';UID=' + user_db + ';PWD='+ pass_db + ';DATABASE='+ db +';'
+
+current_user_id = 0
+current_user_role = 0
+
+padding = {'padx': 10, 'pady': 8}
+
+def view_table(user_id, user_role):
+
+    window_table = Tk()
+    window_table.title("Таблица")
+    window_table.geometry('800x600')
+
+    tree = ttk.Treeview(window_table)
+    tree["columns"] = ("request_id", "request_client_id", "request_date", "request_device", "request_failure", "request_description", "request_status")
+
+    tree.heading("request_id", text="ID Заявки")
+    tree.column("request_id", minwidth=0, width=100, stretch=NO)
+    tree.heading("request_client_id", text="ID Пользователя")
+    tree.column("request_client_id", minwidth=0, width=100, stretch=NO)
+    tree.heading("request_date", text="Дата")
+    tree.column("request_date", minwidth=0, width=100, stretch=NO)
+    tree.heading("request_device", text="Устройство")
+    tree.column("request_device", minwidth=0, width=100, stretch=NO)
+    tree.heading("request_failure", text="Проблема")
+    tree.column("request_failure", minwidth=0, width=100, stretch=NO)
+    tree.heading("request_description", text="Описание")
+    tree.column("request_description", minwidth=0, width=200, stretch=NO)
+    tree.heading("request_status", text="Статус")
+    tree.column("request_status", minwidth=0, width=100, stretch=NO)
+
+    connection = py.connect(connection_string)
+    db_cursor = connection.cursor()
+
+    db_cursor.execute("SELECT * FROM request_table")
+    rows = db_cursor.fetchall()
+
+    for row in rows:
+        if user_role != 0:
+            tree.insert("", "end", values=list(row))
+        else:
+            if row[1] == user_id :
+                tree.insert("", "end", values=list(row))
+
+    tree.pack(expand=True)
+
+def task_user_window(window, user_id):
+    window_task = Tk()
+    window_task.title("Добавить заявку")
+    window_task.geometry('450x330')
+
+    device_label = Label(window_task, text='Название оборудования', **padding)
+    device_label.pack()
+
+    device_entry = Entry(window_task)
+    device_entry.pack()
+
+    failure_label = Label(window_task, text='Тип неисправности', **padding)
+    failure_label.pack()
+
+    failure_entry = Entry(window_task)
+    failure_entry.pack()
+
+    description_label = Label(window_task, text='Описание проблемы', **padding)
+    description_label.pack()
+
+    description_entry = Entry(window_task)
+    description_entry.pack()
+
+    #status_combo = ttk.Combobox(window_task, state = "readonly", values = ('В ожидании', 'В работе', 'Выполнено'))
+    #status_combo.pack()
+    #status_combo.get()
+    
+    btn_save = Button(window_task, text='Отправить заявку', command=lambda: send_data(device_entry.get(), failure_entry.get(), description_entry.get(), user_id, 0))
+    btn_save.pack()
+
+    btn_close = Button(window_task, text='Закрыть', command=lambda: close_window(window_task))
+    btn_close.pack()
+  
+def feedback_window():
+    window_feedback = Tk()
+    window_feedback.title("Оставить отзыв")
+    window_feedback.geometry('334x334')
+
+    img = qr.make('http://google.com/')
+
+    photo = ImageTk.PhotoImage(img)
+
+    image_label = Label(window_feedback, image=photo)
+
+    image_label.image = photo
+    image_label.place(relx=1.0, rely=0.0, anchor="ne")
+
+    image_label.pack()
+
+def close_window(window_task):
+    window_task.destroy()
+
+def send_data(request_device, request_failure, request_description, request_client_id, request_status):
+    
+    connection = py.connect(connection_string)
+
+    db_cursor = connection.cursor()
+    db_cursor.execute("SELECT COUNT(*) FROM request_table;")
+
+    db_cursor.execute("INSERT INTO request_table (request_id, request_date, request_device, request_failure, request_description, request_client_id, request_status) VALUES (?,?,?,?,?,?,?)", (db_cursor.fetchone()[0], date.today(), request_device, request_failure, request_description, request_client_id, request_status))
+    connection.commit()
+    connection.close()
+
+def open_user(window, user_id):
+    window_user = Tk()
+    window_user.title("Окно пользователя")
+    window_user.geometry('450x230')
+
+    btn_request = Button(window_user, text='Написать заявку', command=lambda:task_user_window(window_user, user_id), **padding)
+    btn_request.pack()
+
+    btn_requests = Button(window_user, text='Мои заявки', command=lambda:view_table(current_user_id, current_user_role), **padding)
+    btn_requests.pack()
+
+    btn_qr = Button(window_user, text='Оставить отзыв', command=feedback_window, **padding)
+    btn_qr.pack()
+
+    window.destroy()
+
+def open_worker(window):
+    window_worker = Tk()
+    window_worker.title("Окно сотрудника")
+    window_worker.geometry('450x230')
+
+    btn_requests = Button(window_worker, text='Все заявки', command=lambda:view_table(current_user_id, current_user_role), **padding)
+    btn_requests.pack()
+
+    window.destroy()
+
+def open_manager(window):
+    window_manager = Tk()
+    window_manager.title("Окно менеждер")
+    window_manager.geometry('450x230')
+
+    btn_requests = Button(window_worker, text='Все заявки', command=lambda:view_table(current_user_id, current_user_role), **padding)
+    btn_requests.pack()
+
+    window.destroy()
+
+def auth(window, username_entry, password_entry):
+    connection_string = 'DRIVER={ODBC Driver 17 for SQL Server};SERVER='+ server + ';UID=' + user_db + ';PWD='+ pass_db + ';DATABASE='+ db +';'
+    connection = py.connect(connection_string, autocommit=True)
+    db_cursor = connection.cursor()
+
+    username = username_entry.get()
+    password = password_entry.get()
+    db_cursor.execute("SELECT * FROM [users_table] WHERE user_name=? AND user_pass=?", (username, password))
+    user = db_cursor.fetchone()
+
+    if user:
+
+        current_user_id = user[0]
+        current_user_role = user[3]
+
+        if current_user_role == 0:
+            open_user(window, current_user_id)
+        elif current_user_role == 1:
+            open_worker(window)
+        elif current_user_role == 2:
+            open_manager(window)
+    else:
+        connection.close()
+
+def auth_window():
+
+    window = Tk()
+    window.title('Авторизация')
+    window.geometry('450x230')
+    window.resizable(False, False)
+
+    main_label = Label(window, text='Авторизация', justify=CENTER)
+    main_label.pack()
+
+    username_label = Label(window, text='Логин', **padding)
+    username_label.pack()
+
+    username_entry = Entry(window)
+    username_entry.pack()
+
+    password_label = Label(window, text='Пароль', **padding)
+    password_label.pack()
+
+    password_entry = Entry(window)
+    password_entry.pack()
+
+    send_btn = Button(window, text='Войти', command = lambda:auth(window, username_entry, password_entry), **padding)
+    send_btn.pack()
+    window.mainloop()
+
+auth_window()
+

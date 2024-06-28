@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+sqlIite/Generaldistribution.py
+sqlIite/INFO_C.data
+sqlIite/INFO_D.data
+sqlIite/INFO_D1.data
+sqlIite/INFO_D2.data
+sqlIite/INFO_D3.data
+sqlIite/__init__.py
+sqlIite.egg-info/PKG-INFO
+sqlIite.egg-info/SOURCES.txt
+sqlIite.egg-info/dependency_links.txt
+sqlIite.egg-info/not-zip-safe
+sqlIite.egg-info/top_level.txt
