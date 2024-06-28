@@ -1,0 +1,10 @@
+SynapseTrie/__init__.py,sha256=BJAYYbCpABTkHx7uoKFeIfTBziDhMrIOInTEWN8n4Pk,26
+SynapseTrie/trie.py,sha256=5i34B-4m2mYfpDuuRD-jhhy3xNUIJk-St5C2uTOdrOE,17605
+SynapseTrie/utilities.py,sha256=1IFQHqILKo6T6IFYgwDMHfdJ7UYvJxFyRTu6INeoRzs,864
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_trie.py,sha256=vVDTJY85s72AhUO1ZwfcnmUl0POoUbYUL78ksrwL0e8,9512
+SynapseTrie-0.3.dist-info/LICENSE,sha256=QVLAkQSE2iOHJmB0-3VbnA5MeIs62GJGrAKZEWFeKCY,1065
+SynapseTrie-0.3.dist-info/METADATA,sha256=Lrfb1L0a7gA-v6tvivfHZNzuLE0ncRibhh5ocHdGVFE,1165
+SynapseTrie-0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+SynapseTrie-0.3.dist-info/top_level.txt,sha256=5ogNmV1eM4sN9XFJjj8fmy0RxE1SqR4s5DzxOymDv40,18
+SynapseTrie-0.3.dist-info/RECORD,,
