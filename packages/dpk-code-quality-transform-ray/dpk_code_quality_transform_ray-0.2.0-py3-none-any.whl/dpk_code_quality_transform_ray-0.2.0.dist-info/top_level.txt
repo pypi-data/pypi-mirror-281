@@ -1,0 +1,3 @@
+code_quality_local_ray
+code_quality_s3_ray
+code_quality_transform_ray
