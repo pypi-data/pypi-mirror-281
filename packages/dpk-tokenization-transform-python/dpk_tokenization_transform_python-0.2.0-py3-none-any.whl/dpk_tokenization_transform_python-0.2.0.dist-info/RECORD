@@ -1,0 +1,10 @@
+tokenization_local_long_doc_python.py,sha256=kt6F1wRvWkp449npFpLhb3FJNZBjNU6qNAfeQROsv-I,2148
+tokenization_local_python.py,sha256=aSZBreQT4pbTLAPvNzToVJMZXKxez5oL_wgLyvLFWMk,1680
+tokenization_s3_long_doc_python.py,sha256=n7iaMVZ6CjOvVXlLuGOvpvXiRcDKg8xbzfRbK0cMMAU,2149
+tokenization_transform.py,sha256=IumWKbLFoOqCDKlK5FPplXnq7Bhx5322Yt62vbB-lRk,10798
+tokenization_transform_python.py,sha256=J7E79ZAHIBwuLt65WHuVgQdIug8DGchX0fBQwwrKVrI,1158
+tokenization_utils.py,sha256=uJuozmA3hIGQHIFol3w_hT6Dw5J3dMu71or9bK0Pk6c,5475
+dpk_tokenization_transform_python-0.2.0.dist-info/METADATA,sha256=p5t76lIdLaGL-x3zWXqpcsFOtLaArh7VQW-JMMzKovU,5988
+dpk_tokenization_transform_python-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+dpk_tokenization_transform_python-0.2.0.dist-info/top_level.txt,sha256=YTGzCyWlqpr4b51GpU4mCM4o0cb_gK101hv7yJcZsyY,165
+dpk_tokenization_transform_python-0.2.0.dist-info/RECORD,,
