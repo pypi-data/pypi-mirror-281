@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+get_hc_secrets.egg-info/PKG-INFO
+get_hc_secrets.egg-info/SOURCES.txt
+get_hc_secrets.egg-info/dependency_links.txt
+get_hc_secrets.egg-info/requires.txt
+get_hc_secrets.egg-info/top_level.txt
