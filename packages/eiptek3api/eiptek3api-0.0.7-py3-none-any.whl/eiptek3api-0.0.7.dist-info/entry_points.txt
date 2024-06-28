@@ -1,0 +1,2 @@
+[console_scripts]
+eiptek3api = eiptek3api.__main__:main
