@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: pytokamap
+Version: 2024.0.0
+Summary: A python library for mapping between Fusion data formats
+Maintainer-email: Samuel Jackson <samuel.jackson@ukaea.uk>
+Project-URL: Repository, https://github.com/samueljackson92/pytokamap.git
+Project-URL: Bug Tracker, https://github.com/samueljackson92/pytokamap/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: netCDF4
+Requires-Dist: Jinja2
+Requires-Dist: pytest
+Requires-Dist: xarray
+Requires-Dist: zarr
+Requires-Dist: dask
+Requires-Dist: mkdocs
+Requires-Dist: mkdocs-material
+
+# pytokamap
+
+### Quickstart
+
+The example below maps signals from a UDA shot to a Zarr or NetCDF file.
+
+```python
+import pytokamap
+mapper = pytokamap.load_mapping("uda.jinja", "globals.json")
+mapper.to_zarr(30420, "30420.zarr")
+mapper.to_netcdf(30420, "30420.nc")
+```
+
+With the following example template mapping file called `uda.jinja`:
+
+```jinja
+{
+    {% macro comma(loop) %}
+        {% if not loop.last %},{% endif %}
+    {% endmacro %}
+
+    "amc/plasma_current": {
+        "MAP_TYPE": "PLUGIN",
+        "PLUGIN": "UDA",
+        "ARGS": {"signal": "ip", "format": "IDA"},
+        "SCALE": 1000
+    },
+    {% for index in range(1, TCAM.N+1) %}
+    "_xsx/tcam_{{index}}": {
+        "MAP_TYPE": "PLUGIN",
+        "PLUGIN": "UDA",
+        "ARGS": {"signal": "XSX/TCAM/{{ index }}", "format": "IDA"}
+    },
+    {% endfor %}
+    "xsx/tcam": {
+        "MAP_TYPE": "CUSTOM",
+        "CUSTOM_TYPE": "COMBINE",
+        "ARGS": [
+            {% for index in range(1, TCAM.N+1) %}
+                "_xsx/tcam_{{index}}"{{ comma(loop) }}
+            {% endfor %}
+        ]
+    }
+}
+```
+
+And the following `globals.json` file:
+
+```json
+{
+    "TCAM": {
+        "N": 3
+    }
+}
+```
