@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: codeblueprints
+Version: 0.1.0a2
+Summary: Automates code planning by mapping issues(softwares requirements) to actionable modifications in your codebase, preparing for future code generation.
+Home-page: https://github.com/esperyong/codeblueprints
+License: Apache-2.0
+Author: Liu Yong
+Author-email: 13311102957@163.com
+Maintainer: Liu Yong
+Maintainer-email: 13311102957@163.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: diskcache
+Requires-Dist: grep_ast
+Requires-Dist: litellm (==1.40.21)
+Requires-Dist: networkx (<3.3)
+Requires-Dist: numpy (==2.0.0)
+Requires-Dist: pygments
+Requires-Dist: scipy (==1.14.0)
+Requires-Dist: tqdm (==4.66.4)
+Requires-Dist: tree-sitter (==0.21.3)
+Requires-Dist: tree-sitter-languages (==1.10.2)
+Requires-Dist: typing-extensions (==4.12.2)
+Project-URL: Documentation, https://github.com/esperyong/codeblueprints/blob/master/changelog.md
+Project-URL: Repository, https://github.com/esperyong/codeblueprints
+Description-Content-Type: text/x-rst
+
+==============
+codeblueprints
+==============
+
+Automates code planning by mapping issues(softwares requirements) to actionable modifications in your codebase, preparing for future code generation.
+
+* Free software: Apache Software License 2.0
+
+
+Features
+--------
+
+* TODO
+
+Setup Dev
+---------
+Install dependency:
+$ poetry lock
+$ poetry install --no-root
+$ poetry install --no-root --with dev
+
+Publish to pypi:
+$ rm -rf dist
+$ poetry build
+$ twine check dist/*
+$ twine upload dist/*
+
+需要用这个命令来确保requirement发生改变
+$ poetry export --with dev -f requirements.txt --without-hashes --output requirements-dev.txt
+
