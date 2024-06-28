@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/PyCrypTools.egg-info/PKG-INFO
+src/PyCrypTools.egg-info/SOURCES.txt
+src/PyCrypTools.egg-info/dependency_links.txt
+src/PyCrypTools.egg-info/requires.txt
+src/PyCrypTools.egg-info/top_level.txt
+src/pycryptools/__init__.py
+src/pycryptools/pycryptools.py
+src/pycryptools/bin/sigcheck64.exe
+src/pycryptools/bin/signtool.exe
