@@ -1,0 +1,13 @@
+_exemplo_uso/__init__.py,sha256=gs5Z8us77lWaguOQJxfIsdbNQQ0V63vo9FDVW7ODcrY,45
+_exemplo_uso/exemplo_uso.py,sha256=0BKKTcHr5m4xBW6v6_jOQ_u99srtSPg1OpcWdJhaHcM,372
+pix_qrcode/__init__.py,sha256=Ss6u8dFuT4s1y-T_TtVpI13kMpY5gDL9j7_nC_llmuI,182
+pix_qrcode/generate_pix_qrcode.py,sha256=FdQLOtS9O5DKHPIpa0WYNCvoZ1fgijdi_P5t5j16ZWU,3061
+pix_qrcode/generator.py,sha256=TLIkMysuq12dQgpoXT5XcJhBAjOoJ47ZR9TgeGTGXC4,1303
+pix_qrcode/gui.py,sha256=iAeXkJ9RRmwULNGFJnMY3oD2_PFDx2-3ciPhWAuPQvM,2245
+pix_qrcode/utils.py,sha256=2VSaW06NY3kxEhu9i-2d7zaw9VVhVqHaH0UTl0ksKqw,276
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_generator.py,sha256=nFYaPbncvTnhavYTXkcGFU6G-TjS6P9NWmFUlG99vyA,555
+pixqrcode_generator-0.1.dist-info/METADATA,sha256=zZwCwhk6isfxVqtGQX0o_ArcEJXIVE5_XzkKuaCGDZM,467
+pixqrcode_generator-0.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+pixqrcode_generator-0.1.dist-info/top_level.txt,sha256=egEVJJ9jXLfYfcNoPlNTIwNZaBzpoLRkOxqDM8WxilM,30
+pixqrcode_generator-0.1.dist-info/RECORD,,
