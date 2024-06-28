@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+nestml_server.egg-info/PKG-INFO
+nestml_server.egg-info/SOURCES.txt
+nestml_server.egg-info/dependency_links.txt
+nestml_server.egg-info/requires.txt
+nestml_server.egg-info/top_level.txt
+scripts/nestml-server
+src/__init__.py
+src/main.py
