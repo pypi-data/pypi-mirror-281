@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: trader_tweets
+Version: 0.1.0
+Summary: A module for processing and analyzing trader tweets.
+Home-page: https://github.com/yourgithub/trader_tweets
+Author: Will H-S
+Author-email: whardwicksmith@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: openai~=0.18.1
+Requires-Dist: requests~=2.27.1
+Requires-Dist: setuptools~=62.3.2
+Requires-Dist: google-cloud==0.34.0
+Requires-Dist: google-cloud-logging==3.9.0
+Requires-Dist: google-cloud-secret-manager==2.11.1
+Requires-Dist: google-cloud-firestore==2.6.0
+Requires-Dist: google-api-python-client~=2.50.0
+Requires-Dist: pytest~=5.4.1
+Requires-Dist: parameterized~=0.8.1
+Requires-Dist: diskcache~=5.4.0
+Requires-Dist: requests_oauthlib~=1.3.1
+Requires-Dist: backtrader~=1.9.76
+Requires-Dist: pandas~=1.5.3
+Requires-Dist: python-binance~=1.0.12
+Requires-Dist: pytz~=2022.7.1
+Requires-Dist: functions-framework==3.*
+Requires-Dist: twscrape~=0.11.1
+
+# To use
+Run
+````
+$ ./script/run.sh
+````
+
+# To test
+Run
+````
+$ ./script/test.sh
+````

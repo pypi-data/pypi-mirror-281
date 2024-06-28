@@ -1,0 +1,7 @@
+TRADER_XO = 'Trader_XO'
+GANYMEDE = 'ganymede_0x'
+TRADER_SZ = 'trader1sz'
+NACHO = 'NachoTrades'
+AWAWAT = 'Awawat_Trades'
+PC_PRINCIPLE = 'PC_PR1NCIPAL'
+NINJA_SCALP = 'Ninjascalp'
