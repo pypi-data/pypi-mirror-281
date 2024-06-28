@@ -1,0 +1,15 @@
+toga_view/__init__.py,sha256=9C3o5Oyg4o85Fd-1euUNDXm4hlB6l8P8QUdwBOV3ncc,86
+toga_view/__main__.py,sha256=7br7vKuQ-cdAVWFWLNY5U1lOKV4Fw_kKZFBYgQm6V9M,2783
+toga_view/exceptions.py,sha256=TYTji4hi46daXZLohf2ZPDfjkrRf_FIcqWds9Llzzdo,376
+toga_view/inspector.py,sha256=mpnfTejwZcDZFO32p0xJ8st4ergX6wK2WKcCtq9ySn8,1058
+toga_view/archivers/__init__.py,sha256=ol0U7-bc-KcNxG8KN7OVfK83SJnkz0g9X9AthfW_4cY,152
+toga_view/archivers/json_archiver.py,sha256=iCxL3AJqUuXKMjczLYORJnJcjSvds_xHhPrgQSnL7dk,2607
+toga_view/archivers/xml_archiver.py,sha256=o6taiIERQApkM2ooPWQlPAqAUD9qVe1-LfCBrxqpjfI,3245
+toga_view/parsers/__init__.py,sha256=7OOy-H-J1Ysdo4_Jt6oJx_ReGdCrC3PBMg7_PMQdLgI,140
+toga_view/parsers/json_parser.py,sha256=8pNgWnGf7fukyxXF2Jd1SAdhGpufCXIKH5KhZvJLxOY,7307
+toga_view/parsers/xml_parser.py,sha256=WnudK3ZyCxuvvoDsUV9O4vBO1XOGQhg0iMHvB8sO5ws,9981
+toga_view-0.0.1.dist-info/entry_points.txt,sha256=czeVD5psstIgCuRCywvYgS8-q1_AblY1gcG_CGMS_JQ,60
+toga_view-0.0.1.dist-info/LICENSE,sha256=wGQH1UKQo6Uu-PXHmtoicFFNLDSgVlSH-1xmjJf_o6c,1077
+toga_view-0.0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+toga_view-0.0.1.dist-info/METADATA,sha256=Ei-NUThJVLi9jlq5KrIRZ5Awp8-kfJHo_OY8zjbkFMo,2562
+toga_view-0.0.1.dist-info/RECORD,,
