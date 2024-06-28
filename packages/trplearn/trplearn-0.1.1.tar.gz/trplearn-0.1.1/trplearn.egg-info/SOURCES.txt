@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+docs/source/conf.py
+trplearn/__init__.py
+trplearn/regression.py
+trplearn/trpalg.py
+trplearn.egg-info/PKG-INFO
+trplearn.egg-info/SOURCES.txt
+trplearn.egg-info/dependency_links.txt
+trplearn.egg-info/requires.txt
+trplearn.egg-info/top_level.txt
