@@ -1,0 +1,304 @@
+Metadata-Version: 2.1
+Name: scient
+Version: 0.3.0
+Summary: A python package about science compute algorithm, include natural language, image, neural network, optimize algorithm, machine learning, graphic algorithm, etc.
+Home-page: 
+Author: 
+Author-email: yaomsn@live.cn
+License: Licence
+Keywords: science compute,image,natural language,machine learning,neural network,optimize algorithm,graphic algorithm
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: numpy >=1.24.0
+Requires-Dist: scipy >=1.12.0
+
+# scient
+
+**scient**一个用python实现科学计算相关算法的包，包括自然语言、图像、神经网络、优化算法、机器学习、图计算等模块。
+
+**scient**源码和编译安装包可以在`Python package index`获取。
+
+The source code and binary installers for the latest released version are available at the [Python package index].
+
+[https://pypi.org/project/scient](https://pypi.org/project/scient)
+
+可以用`pip`安装`scient`。
+
+You can install `scient` like this:
+    
+```
+pip install scient
+```
+
+也可以用`setup.py`安装。
+
+Or in the `scient` directory, execute:
+
+```
+python setup.py install
+```
+
+## scient.image
+
+图像相关算法模块，包括边缘检测、图像相似度计算、图像质量评价、图像特征提取等。
+
+### scient.image.friqa
+
+全参考图像质量评价模块，包括峰值信噪比（PSNR），结构相似度（SSIM），直方图相似度（HistSim）。
+
+#### scient.image.friqa.psnr(image1,image2,max_pix=255)
+
+Parameters
+----------
+image1 : numpy.array 2D or 3D，参考图像
+
+image2 : numpy.array 2D or 3D，待评价图像
+
+max_pix : int, optional default is 255, 像素值的最大值，默认值是255.
+
+Returns
+-------
+float
+
+Algorithms
+-------
+PSNR(Peak Signal to Noise Ratio)，峰值信噪比，是一种评价图像的客观标准，单位dB。图像在经过压缩之后，会在某种程度与原始图像不同，PSNR值用来衡量经过处理后的图像品质是否令人满意。
+
+$$
+PSNR=10 \cdot \log _ {10} ( \frac { MAX _ I ^ 2 } { MSE }) = 20 \cdot \log _ {10} ( \frac { MAX _ I } { MSE })
+$$
+
+其中，$MAX _ I$是图像像素值的最大值，一般每个采样点用8位表示，那么$MAX _ I$就是255。
+
+$MSE$是待评价图像与参考图像的均方误差，$MSE$越小，PSNR越大；PSNR越大，待评价图像质量越好。
+
+* PSNR高于40dB说明待评价图像质量极好,非常接近原始图像；
+* PSNR在30—40dB说明待评价图像质量是较好，虽然有明显失真但可以接受；
+* PSNR在20—30dB说明待评价图像质量差；
+* PSNR低于20dB说明待评价图像质量不可接受。
+
+
+PSNR缺点：基于对应像素点间的误差，即基于误差敏感的图像质量评价。由于并未考虑到人眼的视觉特性（人眼对空间频率较低的对比差异敏感度较高，人眼对亮度对比差异的敏感度较色度高，人眼对一个 区域的感知结果会受到其周围邻近区域的影响等），因而经常出现评价结果与人的主观感觉不一致的情况。
+
+Examples
+-------
+
+```
+import os
+from scient.image import friqa
+import numpy
+from PIL import Image
+
+ref_image='test/data/I10.BMP'
+images=['test/data/I10.BMP','test/data/i10_23_3.bmp','test/data/i10_23_4.bmp','test/data/i10_23_5.bmp','test/data/i10_24_5.bmp']
+
+#读取图像文件
+ref_image=Image.open(os.path.join(os.path.dirname(friqa.__file__),'..',ref_image))
+images=[Image.open(os.path.join(os.path.dirname(friqa.__file__),'..',i)) for i in images]
+
+#计算psnr
+for i in images:
+    print(friqa.psnr(numpy.array(ref_image),numpy.array(i)))
+```
+
+运行结果
+
+```
+100
+32.436263852012544
+31.184291262813648
+30.272831107297733
+29.3584810257951
+```
+    
+    
+#### scient.image.friqa.ssim(image1,image2,k1=0.01,k2=0.03,block_size=(8, 8),max_pix=255)
+
+Parameters
+----------
+image1 : numpy.array 2D
+
+image2 : numpy.array 2D
+
+k1 : float, optional，k1<<1,避免分母为0造成不稳定. The default is 0.01.
+
+k2 : float, optional，k2<<1,避免分母为0造成不稳定. The default is 0.03.
+
+block_size : tuple, optional，将图像分成多个block,采用gaussian加权计算所有block的均值、方差、协方差,进而计算所有block的ssim,最后的ssim取所有block的平均值. The default is (8,8).
+
+max_pix : int, optional default is 255, 像素值的最大值，默认值是255.
+
+Returns
+-------
+float
+
+Algorithms
+-------
+
+SSIM(Structural Similarity)，结构相似度，用于衡量两个图像相似程度，或检测图像的失真程度。
+SSIM基于样本之间的亮度(luminance,像素平均值)、对比度(contrast,像素标准差)和结构(structure,像素减均值除以标准差)计算。
+
+$$
+SSIM(x,y)=f(l(x,y),c(x,y),s(x,y))
+$$
+
+$l(x,y)$为亮度对比函数，是关于图像的平均灰度$μ_x,μ_y$的函数；
+
+$$
+l(x,y)=\frac { 2μ_x μ_y + C1 } { μ_x^2 μ_y^2 + C1 } \\
+μ_x=\frac { 1 } { N } \sum^{N}_{i=1}{x_i} \\
+C1=(K_1 L)^2
+$$
+
+像素值的最大值，默认值是255. K1<<1。
+
+$c(x,y)$为对比度对比函数，是关于图像的标准差$σ_x,σ_y$的函数；
+
+$$
+c(x,y)=\frac { 2σ_x σ_y + C2 } { σ_x^2 σ_y^2 + C2 } \\
+σ_x=(\frac { 1 } { N-1 } \sum^{N}_{i=1}{(x_i-μ_x)^2})^{\frac { 1 } { 2 }} \\
+C2=(K_2 L)^2
+$$
+
+K2<<1
+
+$s(x,y)$为结构对比函数，是关于图像的标准化$\frac { x-μ_x } { σ_x },\frac { y-μ_y } { σ_y }$的函数；
+
+$$
+s(x,y)=\frac { σ_{xy} + C3 } { σ_x σ_y + C3 } \\
+σ_{xy}=\frac { 1 } { N-1 } (\sum^{N}_{i=1}{(x_i-μ_x)(y_i-μ_y)}) \\
+$$
+
+$$
+SSIM(x,y)=[l(x,y)]^α[c(x,y)]^β[s(x,y)]^γ
+$$
+
+α,β,γ取1，令$C_3=\frac { C_2 } { 2 }$，可将SSIM简化为：
+
+$$
+SSIM(x,y)=\frac { (2μ_x μ_y + C1)(2σ_{xy} + C2) } { (μ_x^2 μ_y^2 + C1)(σ_x^2 σ_y^2 + C2) }
+$$
+
+SSIM取值范围为[0,1]，值越大表示图像质量越好。
+SSIM具有：对称性，ssim(x,y)==ssim(y,x);
+         有界性,ssim(x,y)<=1;
+         最大值唯一性，当且仅当x==y时，ssim(x,y)==1。
+SSIM缺点：对于图像出现位移、缩放、旋转（皆属于非结构性的失真）的情况无法有效的判断。
+
+Examples
+-------
+
+```
+import os
+from scient.image import friqa
+import numpy
+from PIL import Image
+
+ref_image='test/data/I10.BMP'
+images=['test/data/I10.BMP','test/data/i10_23_3.bmp','test/data/i10_23_4.bmp','test/data/i10_23_5.bmp','test/data/i10_24_5.bmp']
+
+#读取图像文件
+ref_image=Image.open(os.path.join(os.path.dirname(friqa.__file__),'..',ref_image))
+images=[Image.open(os.path.join(os.path.dirname(friqa.__file__),'..',i)) for i in images]
+
+#计算ssim
+for i in images:
+    print(friqa.ssim(numpy.array(ref_image.convert("L")),numpy.array(i.convert("L"))))
+```
+
+运行结果
+
+```
+1.0
+0.8568124416229375
+0.6810351495300123
+0.5575398637742431
+0.5072153083460104
+```
+
+### scient.image.feature
+
+图像特征提取模块，包括BRISQUE，基于累积概率的锐化因子（CPB），曝光度。
+
+#### scient.image.feature.brisque(image)
+
+Parameters
+----------
+image : numpy.array 2D
+
+Returns
+-------
+tuple
+('gdd_α','gdd_σ',
+'aggd_α1','aggd_η1','aggd_σl1','aggd_σr1',
+'aggd_α2','aggd_η2','aggd_σl2','aggd_σr2',
+'aggd_α3','aggd_η3','aggd_σl3','aggd_σr3',
+'aggd_α4','aggd_η4','aggd_σl4','aggd_σr4')
+
+Algorithms
+-------
+ BRISQUE（Blind/Referenceless Image Spatial QUality Evaluator），是一种无参考的空间域图像质量评估算法。先计算Mean Subtracted Contrast Normalized Coefficients（MSCN系数），MSCN系数反映了由于失真的存在而改变的特征统计，可以用来作为图像失真的统计特征。再用MSCN系数估计Generalized Gaussian Distribution（GDD）的参数α、σ，以及Asymmetric Generalized Gaussian Distribution（AGGD）在Horizontal Neighbour, Vertical Neighbour, On Diagonal Neighbour, Off Diagonal Neighbour上的参数α、η、σl、σr，将GDD的两个参数和AGGD的16个参数作为输出的特征。
+
+MSCN系数：
+
+$$
+MSCN(i,j)=\frac { I(i,j)-μ(i,j) } { σ(i,j)+C } \\
+μ(i,j)=\sum^{K}_{k=-K}{\sum^{L}_{l=-L}{w_{k,l}I_{k,l}(i,j)}} \\
+σ(i,j)=\sqrt{\sum^{K}_{k=-K}{\sum^{L}_{l=-L}{w_{k,l}(I_{k,l}(i,j)-μ(i,j))^2}}}
+$$
+
+其中$I(i,j)$表示原始图像i行j列元素的值。
+
+Generalized Gaussian Distribution：
+
+$$
+f(x;α,σ^2)=\frac {α} {2βΓ(1/α)} e^{-(\frac {|x|}{β})^α} \\
+β=σ\sqrt{\frac{Γ(1/α)}{Γ(3/α)}} \\
+Γ(α)=\int^{\infty}_{0}{t^{α-1}e^{-t}dt} α>0
+$$
+
+Neighbours:
+
+$$
+HorizontalNeighbour(i,j)=MSCN(i,j)MSCN(i,j+1) \\
+VerticalNeighbour(i,j)=MSCN(i,j)MSCN(i+1,j) \\
+OnDiagonalNeighbour(i,j)=MSCN(i,j)MSCN(i+1,j+1) \\
+OffDiagonalNeighbour(i,j)=MSCN(i,j)MSCN(i+1,j-1)
+$$
+
+Asymmetric Generalized Gaussian Distribution:
+
+$$
+f(x;α,σ_l^2,σ_r^2)=
+\frac {α}{(β_l+β_r)Γ(1/α)}e^{-(\frac {-x}{β_l})^α} x<0
+\frac {α}{(β_l+β_r)Γ(1/α)}e^{-(\frac {x}{β_r})^α} x>=0
+β_l=σ_l\sqrt{\frac{Γ(1/α)}{Γ(3/α)}} \\
+β_r=σ_r\sqrt{\frac{Γ(1/α)}{Γ(3/α)}}
+$$
+
+Examples
+-------
+
+```
+import os
+from scient.image import feature
+import numpy
+from PIL import Image
+
+images=['test/data/I10.BMP','test/data/i10_23_3.bmp','test/data/i10_23_4.bmp','test/data/i10_23_5.bmp','test/data/i10_24_5.bmp']
+
+#读取图像文件
+images=[Image.open(os.path.join(os.path.dirname(feature.__file__),'..',i)) for i in images]
+
+#计算brisque
+brisques=[]
+for i in images:
+    brisques.append(feature.brisque(numpy.array(i.convert('L'))))
+print(brisques)
+```
+
+运行结果
+
+```
+[(2.8390000000000026, 0.5387382509471336, 0.8180000000000005, 0.1597336483186561, 0.19928197982139934, 0.4696747920784309, 0.8640000000000005, 0.17081167501931036, 0.1703080506100513, 0.440894038756712, 0.8610000000000007, -0.002437981115828319, 0.2983089768677447, 0.2943996123553127, 0.8670000000000007, 0.03657370089459203, 0.2641503963750437, 0.32229688865209727), (2.179000000000002, 0.3755805588864052, 0.6610000000000005, 0.2105638785869636, 0.06573065885425396, 0.3546433105372317, 0.7250000000000005, 0.2035633011201771, 0.04895566298941261, 0.2895746994148656, 0.7110000000000005, 0.09196294223642214, 0.10660221933416321, 0.22150476223116147, 0.7220000000000004, 0.10061626044729756, 0.09951649928883519, 0.22307536755643081), (1.489000000000001, 0.19567592119387475, 0.4370000000000002, 0.16656579278574843, 0.005144811587270607, 0.1595102390164801, 0.4400000000000002, 0.14819323960693676, 0.007946536338563829, 0.14400949152877282, 0.46900000000000025, 0.1304195444573072, 0.010840852166168865, 0.12285748598680354, 0.47300000000000025, 0.12785146234621667, 0.011051488263507676, 0.11939877242752284), (1.2570000000000008, 0.1189807661854071, 0.2940000000000001, 0.09858069094224381, 0.0033503171775502846, 0.1003980673321924, 0.2960000000000001, 0.09662228540309649, 0.0037953392707882772, 0.09854664422093222, 0.3160000000000001, 0.08840261656054116, 0.004225987220008733, 0.08029184471742051, 0.3180000000000001, 0.08631426420092875, 0.004399447310061135, 0.07751730107145516), (1.203000000000001, 0.14103130545847511, 0.3270000000000001, 0.10623288442963101, 0.008919473174326557, 0.12226537626029133, 0.3280000000000001, 0.06853644417080812, 0.02378947796849877, 0.10143999168472712, 0.33900000000000013, 0.05689116726400874, 0.02385946076111514, 0.08256978072093775, 0.33900000000000013, 0.05450324427873719, 0.02492368706293601, 0.0813272014967197)]
+```
