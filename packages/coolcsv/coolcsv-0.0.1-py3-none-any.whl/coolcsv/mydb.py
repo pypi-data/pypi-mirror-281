@@ -1,0 +1,136 @@
+import csv
+
+
+class mydb:
+    """
+    A class that provides database-like functionality using Python's csv module.
+    """
+
+    def __init__(self, filename):
+        """
+        Initializes the CSVDatabase object.
+
+        Args:
+            filename (str): The name of the CSV file to use as the database.
+        """
+        self.filename = filename
+        self.data = []  # Stores the loaded CSV data in memory
+
+        # Check if the file exists and create it if not
+        try:
+            with open(filename, "r") as csvfile:
+                reader = csv.reader(csvfile)
+                self.data = list(reader)
+        except FileNotFoundError:
+            with open(filename, "w", newline="") as csvfile:
+                pass  # Create the file if it doesn't exist
+
+    def load(self):
+        """
+        Loads the data from the CSV file into memory.
+        """
+        if not self.data:
+            with open(self.filename, "r") as csvfile:
+                reader = csv.reader(csvfile)
+                self.data = list(reader)
+
+    def save(self):
+        """
+        Saves the data in memory back to the CSV file.
+        """
+        with open(self.filename, "w", newline="") as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerows(self.data)
+
+    def insert(self, new_row):
+        """
+        Inserts a new row of data into the database.
+
+        Args:
+            new_row (list): A list representing the data to be inserted.
+        """
+        self.load()  # Ensure data is loaded before insertion
+        self.data.append(new_row)
+        self.save()
+
+    def update(self, row_index, new_data):
+        """
+        Updates an existing row of data in the database.
+
+        Args:
+            row_index (int): The index of the row to be updated.
+            new_data (list): A list containing the updated data.
+        """
+        self.load()  # Ensure data is loaded before update
+
+        if 0 <= row_index < len(self.data):
+            self.data[row_index] = new_data
+            self.save()
+        else:
+            print("Invalid row index. Update failed.")
+
+    def delete(self, row_index):
+        """
+        Deletes a row of data from the database.
+
+        Args:
+            row_index (int): The index of the row to be deleted.
+        """
+        self.load()  # Ensure data is loaded before deletion
+
+        if 0 <= row_index < len(self.data):
+            del self.data[row_index]
+            self.save()
+        else:
+            print("Invalid row index. Deletion failed.")
+
+    def find(self, search_term, column_index=None):
+        """
+        Searches for rows containing the search term in a specific column.
+
+        Args:
+            search_term (str): The term to search for.
+            column_index (int, optional): The index of the column to search in.
+                Defaults to None (searches all columns).
+
+        Returns:
+            list: A list of matching rows.
+        """
+        self.load()  # Ensure data is loaded before search
+
+        matching_rows = []
+        for row in self.data:
+            if column_index is None:
+                if search_term in row:
+                    matching_rows.append(row)
+            else:
+                if 0 <= column_index < len(row) and row[column_index] == search_term:
+                    matching_rows.append(row)
+        return matching_rows
+
+
+    def get_column(self, column_index):
+        """
+    Retrieves all values from a specific column in the database.
+
+    Args:
+        column_index (int): The index of the column to retrieve values from.
+
+    Returns:
+        list: A list containing all values from the specified column,
+              or None if the column index is invalid.
+    """
+        self.load()  # Ensure data is loaded before retrieval
+        if 0 <= column_index < len(self.data[0]):
+            return [row[column_index] for row in self.data]
+        else:
+            print("Invalid column index.")
+            return None
+    
+    def print_all(self):
+        """
+    Prints all rows of data from the database to the console.
+    """
+        self.load()  # Ensure data is loaded before printing
+        for row in self.data:
+            print(row)
