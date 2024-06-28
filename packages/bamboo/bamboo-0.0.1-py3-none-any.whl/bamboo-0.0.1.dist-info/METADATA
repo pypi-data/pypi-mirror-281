@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: bamboo
+Version: 0.0.1
+Dynamic: Requires-Dist
+Summary: bamboo
+Project-URL: Homepage, https://github.com/tomouellette/bamboo
+Project-URL: Issues, https://github.com/tomouellette/bamboo/issues
+Author: Tom W. Ouellette
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# bamboo
+
+Package ownership was just transferred. New package contents are coming soon.
