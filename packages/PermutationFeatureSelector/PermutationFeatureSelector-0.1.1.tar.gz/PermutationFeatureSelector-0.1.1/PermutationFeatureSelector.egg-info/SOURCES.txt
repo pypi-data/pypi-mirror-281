@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PermutationFeatureSelector/PermutationFeatureSelector.py
+PermutationFeatureSelector/__init__.py
+PermutationFeatureSelector.egg-info/PKG-INFO
+PermutationFeatureSelector.egg-info/SOURCES.txt
+PermutationFeatureSelector.egg-info/dependency_links.txt
+PermutationFeatureSelector.egg-info/requires.txt
+PermutationFeatureSelector.egg-info/top_level.txt
