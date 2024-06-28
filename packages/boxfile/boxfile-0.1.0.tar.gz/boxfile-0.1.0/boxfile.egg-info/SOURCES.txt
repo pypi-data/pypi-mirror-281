@@ -1,0 +1,7 @@
+README.md
+setup.py
+boxfile/__init__.py
+boxfile.egg-info/PKG-INFO
+boxfile.egg-info/SOURCES.txt
+boxfile.egg-info/dependency_links.txt
+boxfile.egg-info/top_level.txt
