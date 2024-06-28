@@ -1,0 +1,13 @@
+indipydriver/__init__.py,sha256=Dkjs6Z-rbFnzFSmB_Ece75FAvbnZKRu1M-sUGoY7Pvo,573
+indipydriver/comms.py,sha256=rQVKqP_TbnfEk6zRIAbCfB6SgqT3RX_ahBMmHQ4CmLI,24298
+indipydriver/events.py,sha256=ggg1DviztBCPfFjaKGnrsYdhTHA_epyvtRJPFU4x0_U,24981
+indipydriver/exdriver.py,sha256=8ZLzW54vtdvBLGwP-Q0SBI-wRMqhs1r_jbDnd67mc9E,11768
+indipydriver/ipydriver.py,sha256=ejaIsJXsAlHi5BN7frP2VBWEAwSTw9lgE4O9oRm99E0,22934
+indipydriver/ipyserver.py,sha256=9rmAFey2-yk7Fo8X9UMVPecbf4rxl01LPPANPFfWe_0,25962
+indipydriver/propertymembers.py,sha256=FPJDAgyEOvhxERGpGKl-g5vMPbiNYic4S6lbF88ZK_A,12159
+indipydriver/propertyvectors.py,sha256=rjIrPqabOaY4_UvfeWBcUNIy29UnYWqu4Tn23ZmQSd4,42594
+indipydriver/remote.py,sha256=K_rxwFaCcZbzf2oFQRfQp6c8Dv09uRyit1PVqHc9yiQ,7760
+indipydriver-1.5.2.dist-info/LICENSE,sha256=vzsel0hj2Qy7QLIbZigl5_HMbEOzur-sWtsiNIa_RyM,1073
+indipydriver-1.5.2.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+indipydriver-1.5.2.dist-info/METADATA,sha256=cAmJN7DwfM5ek8uvQTixWiWRoA88vXuFRTJBeOk5YN8,3618
+indipydriver-1.5.2.dist-info/RECORD,,
