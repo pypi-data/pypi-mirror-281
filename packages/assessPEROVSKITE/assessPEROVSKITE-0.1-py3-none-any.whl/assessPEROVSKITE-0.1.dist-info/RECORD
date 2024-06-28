@@ -1,0 +1,10 @@
+perovskite_assessment/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perovskite_assessment/input_generation.py,sha256=kx3-jMwwf5hVLdLPRvixDIF9VDHqeNDSvVqMnbbvtJ4,6452
+perovskite_assessment/output_extraction.py,sha256=O3y4sgpytpG2h-24BXL8wv1iNVGvzqBJlpdV7n-lfFQ,2183
+perovskite_assessment/overpotential.py,sha256=DQ3zH7dJk2OJef-QuzHGA3WsO8HoTp-AUm-8o3qZr4w,46
+perovskite_assessment/structure_generation.py,sha256=hLkn8EBAbsFIlKaBH0fljxq3Y0LAG5_bRxJ-F293_B0,11235
+assessPEROVSKITE-0.1.dist-info/METADATA,sha256=qqguLYmJ7rI4SzvJiBm2BuC4g4kC5_mx-lZLXKFSdYc,237
+assessPEROVSKITE-0.1.dist-info/WHEEL,sha256=cpQTJ5IWu9CdaPViMhC9YzF8gZuS5-vlfoFihTBC86A,91
+assessPEROVSKITE-0.1.dist-info/entry_points.txt,sha256=-kq82t1ph2DKupKVP6jIw7IH-m3XUsPNglmt40ez-XE,130
+assessPEROVSKITE-0.1.dist-info/top_level.txt,sha256=WSp3G6Ef7-yHUGvfmmrXzV-G0bBwSTas9NTAuF25d8E,22
+assessPEROVSKITE-0.1.dist-info/RECORD,,
