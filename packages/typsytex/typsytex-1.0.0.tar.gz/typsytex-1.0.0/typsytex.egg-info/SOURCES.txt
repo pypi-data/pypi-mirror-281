@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+typsytex.py
+typsytex.egg-info/PKG-INFO
+typsytex.egg-info/SOURCES.txt
+typsytex.egg-info/dependency_links.txt
+typsytex.egg-info/entry_points.txt
+typsytex.egg-info/top_level.txt
