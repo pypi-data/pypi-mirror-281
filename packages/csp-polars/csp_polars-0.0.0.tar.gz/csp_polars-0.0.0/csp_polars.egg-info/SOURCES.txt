@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+csp_polars.egg-info/PKG-INFO
+csp_polars.egg-info/SOURCES.txt
+csp_polars.egg-info/dependency_links.txt
+csp_polars.egg-info/top_level.txt
