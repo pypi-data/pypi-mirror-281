@@ -1,0 +1,17 @@
+::lc eng ::decimal-mark . ::digit-group-separator , ::secondary-digit-group-separator " " ::inter-number-regex-plus "\s*(?:-|and|)\s*" ::small-powers 10, 12, 20, 100 ::large-powers 1000, 100000, 1000000, 10000000, 1000000000, 1000000000000
+::lc ben ::small-powers 10, 100, 1000 ::large-powers 100000, 1000000, 10000000, 1000000000, 1000000000000
+::lc deu ::decimal-mark , ::digit-group-separator .
+::lc hun ::decimal-mark , ::digit-group-separator " " ::secondary-digit-group-separator .
+::lc jap ::small-powers 10, 100, 1000 ::large-powers 10000, 100000000, 1000000000000
+::lc kin ::decimal-mark , ::digit-group-separator .
+::lc kin ::small-powers 10, 100 ::large-powers 1000, 100000, 1000000, 10000000, 1000000000, 1000000000000
+::lc orm ::decimal-mark . ::digit-group-separator , ::small-powers ::large-powers ::inter-number-regex-plus "\s*(?:fi)\s*" ::exclude-build-function process_quantities process_complex_numbers
+::lc sin ::decimal-mark . ::digit-group-separator ,
+::lc sin ::small-powers 10, 100, 1000 ::large-powers 100000, 1000000, 10000000, 1000000000, 1000000000000
+::lc tam ::decimal-mark . ::digit-group-separator ,
+::lc tam ::small-powers 10, 100, 1000 ::large-powers 100000, 1000000, 10000000, 1000000000, 1000000000000
+::lc tgl ::decimal-mark . ::digit-group-separator , ::secondary-digit-group-separator " "
+::lc tgl ::small-powers 10, 100, 1000 ::large-powers 1000000, 1000000000, 1000000000000
+::lc tir ::small-powers 10, 100, 1000 ::large-powers 1000000, 1000000000, 1000000000000
+::lc uig ::decimal-mark . ::digit-group-separator , ::secondary-digit-group-separator " "
+::lc zho ::small-powers 10, 100, 1000 ::large-powers 10000, 100000000, 1000000000000 ::minus 负 ::plus 正 ::decimal-point 点
