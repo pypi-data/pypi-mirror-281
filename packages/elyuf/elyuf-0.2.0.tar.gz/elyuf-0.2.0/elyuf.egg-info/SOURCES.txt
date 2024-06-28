@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+elyuf.egg-info/PKG-INFO
+elyuf.egg-info/SOURCES.txt
+elyuf.egg-info/dependency_links.txt
+elyuf.egg-info/requires.txt
+elyuf.egg-info/top_level.txt
