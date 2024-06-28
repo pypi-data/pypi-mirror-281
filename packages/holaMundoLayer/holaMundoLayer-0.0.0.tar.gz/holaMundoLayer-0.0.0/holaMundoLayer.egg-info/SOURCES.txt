@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+holaMundoLayer.egg-info/PKG-INFO
+holaMundoLayer.egg-info/SOURCES.txt
+holaMundoLayer.egg-info/dependency_links.txt
+holaMundoLayer.egg-info/top_level.txt
+mundoplayer/__init__.py
+mundoplayer/lala.py
+mundoplayer/player.py
