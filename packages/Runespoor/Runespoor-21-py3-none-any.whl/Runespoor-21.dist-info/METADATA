@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Runespoor
+Version: 21
+Summary: Runespoor is now Loxoc
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: Loxoc
+
+# Runespoor is now Loxoc
+
+This package has been renamed. Use `pip install Loxoc` instead.
+
+New package: https://pypi.org/project/Loxoc/
