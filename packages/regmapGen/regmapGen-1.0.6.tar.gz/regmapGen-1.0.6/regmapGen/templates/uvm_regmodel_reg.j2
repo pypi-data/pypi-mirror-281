@@ -1,0 +1,41 @@
+{% for key, block in rmap.items() %}
+    {% for rkey, reg in block.iter_items() %}
+
+// -------------------------------------------------------------------------------------------------
+// Register {{ reg.name }}
+// -------------------------------------------------------------------------------------------------
+class {{ module }}_reg_{{ reg.name }} extends uvm_reg;
+
+    {% for fkey, field in reg.iter_items() %}
+    rand uvm_reg_field {{ field.name }};
+    {% endfor %}
+
+    {% if factory %}
+    `uvm_object_utils_begin({{ module }}_reg_{{ reg.name }})
+        {% for fkey, field in reg.iter_items() %}
+        `uvm_field_object({{ field.name }}, UVM_ALL_ON)
+        {% endfor %}
+    `uvm_object_utils_end
+    {% endif %}
+
+    function new(string name="{{ module }}_reg_{{ reg.name }}");
+        super.new(name, {{ block.width }}, {{ coverage }});
+    endfunction
+
+    virtual function void build();
+        {% for fkey, field in reg.iter_items() %}
+        {% if factory %}
+        {{ field.name }} = uvm_reg_field::type_id::create("{{ field.name }}");
+        {% else %}
+        {{ field.name }} = new("{{ field.name }}");
+        {% endif %}
+        {% endfor %}
+        // REG.configure(parent, size, lsb_pos, access, volatile, reset, has_reset, is_rand, individually_accessible);
+        {% for fkey, field in reg.iter_items() %}
+        {{ field.name }}.configure(this, {{ field.size }}, {{ field.lsb_pos }}, "{{ access_map[field.access] }}", {{ field.is_volatile }}, 'h{{ field.reset }}, {{ field.has_reset }}, {{ field.is_rand }}, 0);
+        {% endfor %}
+    endfunction
+
+endclass : {{ module }}_reg_{{ reg.name }}
+    {% endfor %}
+{% endfor %}

@@ -1,0 +1,60 @@
+{% for key, block in rmap.items() %}
+
+// -------------------------------------------------------------------------------------------------
+// Block {{ block.name }}
+// -------------------------------------------------------------------------------------------------
+class {{ module }}_blk_{{ block.name }} extends uvm_reg_block;
+
+    {% for key, reg in block.iter_items() %}
+    rand {{ module }}_reg_{{ reg.name }} {{ reg.name }};
+    {% endfor %}
+
+    {% if factory %}
+    `uvm_object_utils_begin({{ module }}_blk_{{ block.name }})
+        {% for key, reg in block.iter_items() %}
+        `uvm_field_object({{ reg.name }}, UVM_ALL_ON)
+        {% endfor %}
+    `uvm_object_utils_end
+    {% endif %}
+
+    function new(string name="{{ module }}_blk_{{ block.name  }}");
+        super.new(name, {{ coverage }});
+    endfunction
+
+    function void build();
+        // Create, configure and build the registers
+        {% for key, reg in block.iter_items() %}
+    
+        {% if factory %}
+        {{ reg.name }} = {{ module }}_reg_{{ reg.name }}::type_id::create("{{ reg.name }}");
+        {% else %}
+        {{ reg.name }} = new("{{ reg.name }}");
+        {% endif %}
+        {{ reg.name }}.configure(this, null, "");
+        {{ reg.name }}.build();
+        {% if reg.has_hdl_path %}
+        {{ reg.name }}.add_hdl_path('{
+        {% for key, field in reg.iter_items() %}
+            {% if field.size == width %}
+        '{"{{ field.hdl_path }}", -1, -1}
+            {% else %}
+            {% if field.index + 1 == reg.field_num %}
+        '{"{{ field.hdl_path }}", {{ field.lsb_pos }}, {{field.size }}}
+            {% else %}
+        '{"{{ field.hdl_path }}", {{ field.lsb_pos }}, {{field.size }}},
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+        });
+        {% endif %}
+        {% endfor %}
+
+        // Create map
+        default_map = create_map("default_map", {{ block.width }}'h{{ block.offset }}, {{ (block.width/8)|int }}, UVM_LITTLE_ENDIAN);
+        {% for key, reg in block.iter_items() %}
+        default_map.add_reg({{ reg.name }}, {{ block.width }}'h{{ reg.offset }},  "{{ access_map[reg.access] }}");
+        {% endfor %}
+    endfunction
+
+endclass : {{ module }}_blk_{{ block.name }}
+{% endfor %}

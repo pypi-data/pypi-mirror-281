@@ -1,0 +1,63 @@
+{% set access_map = {
+    'ro': 'RO',
+    'rw': 'RW',
+    'rw1c': 'W1C',
+    'rw1s': 'W1S',
+    'roc': 'RC',
+    'roll': 'RC',
+    'rolh': 'RS',
+    'wo': 'WO',
+    'wosc': 'WOC'
+} %}
+
+// Created with regmapGen v{{ regmapGen_ver }}
+
+`ifndef {{ module.upper() }}_REGMODEL_SV
+`define {{ module.upper() }}_REGMODEL_SV
+{% include "uvm_regmodel_reg.j2" %}
+{% include "uvm_regmodel_blk.j2" %}
+
+// -------------------------------------------------------------------------------------------------
+// Regmodel
+// -------------------------------------------------------------------------------------------------
+class {{ module }}_regmodel extends uvm_reg_block;
+
+    {% for key, block in rmap.items() %}
+    rand {{ module }}_blk_{{ block.name }} {{ block.name }};
+    {% endfor %}
+
+    {% if factory %}
+    `uvm_object_utils_begin({{ module }}_regmodel)
+        {% for key, block in rmap.items() %}
+        `uvm_field_object({{ block.name }}, UVM_ALL_ON)
+        {% endfor %}
+    `uvm_object_utils_end
+    {% endif %}
+
+    function new(string name="{{ module }}_regmodel");
+        super.new(name);
+    endfunction
+
+    function void build();
+        // Create, configure and build the blocks
+        {% for key, block in rmap.items() %}
+
+        {% if factory %}
+        {{ block.name }} = {{ module }}_blk_{{ block.name }}::type_id::create("{{ block.name }}");
+        {% else %}
+        {{ block.name }} = new("{{ block.name }}");
+        {% endif %}
+        {{ block.name }}.configure(this);
+        {{ block.name }}.build();
+        {% endfor %}
+
+        // Create map
+        default_map = create_map("default_map", 0, {{ (width/8)|int }}, UVM_LITTLE_ENDIAN);
+        {% for key, block in rmap.items() %}
+        default_map.add_submap({{ block.name }}.default_map, {{ block.width }}'h{{ block.offset }});
+        {% endfor %}
+    endfunction
+
+endclass : {{ module }}_regmodel
+
+`endif  // {{ module.upper() }}_REGMODEL_SV
