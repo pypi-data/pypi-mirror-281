@@ -1,0 +1,22 @@
+-c ./deps/constraints.txt
+chardet
+filetype
+python-magic
+lxml
+nltk
+tabulate
+requests
+beautifulsoup4
+emoji
+dataclasses-json
+python-iso639
+langdetect
+# NOTE(robinson) - pinned due to a feature being deprecated in the latest version. plan to
+# investigate and remove pin
+numpy<2
+rapidfuzz
+backoff
+typing-extensions
+unstructured-client
+wrapt
+tqdm
