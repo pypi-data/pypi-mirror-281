@@ -1,0 +1,4 @@
+pydantic
+crimson-code-extractor
+crimson-ast-dev-tool
+inflection
