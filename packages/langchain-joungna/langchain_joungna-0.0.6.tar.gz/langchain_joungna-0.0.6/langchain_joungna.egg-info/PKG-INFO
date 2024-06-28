@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: langchain-joungna
+Version: 0.0.6
+Summary: LangChain Helper Library
+Home-page: https://github.com/joungna/langchain-joungna
+Author: joungna
+Author-email: joungna@gmail.com
+Keywords: langchain,joungna
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: langchain
