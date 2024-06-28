@@ -1,0 +1,13 @@
+itk/Thickness3DPython.py,sha256=ScPMJYnG4gwA0VGcULHJ6l0Yupl6KLaH1BzqxECbYO4,2313
+itk/_Thickness3DPython.pyd,sha256=gVsf5QoNuhTnvHctQQijWWu0pkebOEWCLXeHHUWnONg,1113088
+itk/__init_thickness3d__.py,sha256=FYJNoAp75bqxOif9Gt7rlYcYBE08g7NJtzAdguK5sPU,345
+itk/itkThickness3DPython.py,sha256=BYODGDMCpEcZ6AyubROWdCzHwdSTeTshtUBrGHEM0QA,48528
+itk/Configuration/Thickness3DConfig.py,sha256=6d9pxUArYIUvawCXZuvZayuDzFPfN5SCs5xTniAa0iY,2789
+itk/Configuration/Thickness3D_snake_case.py,sha256=g9ASTTYHBijjkmyZ70KAVrPJRVisjZChnQncfgeLgmk,98
+itk_thickness3d-6.0.0.dist-info/licenses/LICENSE,sha256=6N4ac5NFfpyIdot45rp5BiL777BAzkgZTCyw8bbU6f8,11562
+itk_thickness3d.libs/msvcp140.dll,sha256=w73Hg-He0yrhxvTtZ4Hxa-fjesoGa3YjoH-4bk2rYrI,574952
+itk_thickness3d.libs/tbb12.dll,sha256=uAYeUFrGU4BfPGbeEDcO5SoBUd0xLQeYCBIUMYGAUwA,313344
+itk_thickness3d-6.0.0.dist-info/DELVEWHEEL,sha256=2g_kjLuz3bkH4gnBA4wYutcaMVGd13Wm17e970Pwr5M,278
+itk_thickness3d-6.0.0.dist-info/METADATA,sha256=pzaGV31AgsgYuAYalTtD7GGTueW0i6xDGpnVw1U8I7E,18873
+itk_thickness3d-6.0.0.dist-info/WHEEL,sha256=IiWCjDXU3WOqCrgcqcF7E9mCjly2HEDOFFhtOXhnisI,104
+itk_thickness3d-6.0.0.dist-info/RECORD,,
