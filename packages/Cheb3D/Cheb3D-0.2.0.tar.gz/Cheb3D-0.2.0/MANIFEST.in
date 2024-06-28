@@ -1,0 +1,5 @@
+include README.md
+include 3DCheb/*.hpp
+include 3DCheb/*.cpp
+include 3DCheb/*.pxd
+include 3DCheb/*.pyx
