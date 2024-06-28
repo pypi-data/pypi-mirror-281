@@ -1,0 +1,2 @@
+[console_scripts]
+nbs-viewer = nbs_viewer.viewer:main
