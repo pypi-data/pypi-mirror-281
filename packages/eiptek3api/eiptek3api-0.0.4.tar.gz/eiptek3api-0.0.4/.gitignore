@@ -1,0 +1,4 @@
+.venv
+.bearer
+__pycache__
+dist/*
