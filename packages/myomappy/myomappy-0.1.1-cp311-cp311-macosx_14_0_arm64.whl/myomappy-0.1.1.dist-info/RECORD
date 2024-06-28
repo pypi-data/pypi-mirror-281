@@ -1,0 +1,8 @@
+myomappy-0.1.1.dist-info/METADATA,sha256=cENkx8cl9sr-7jIr36_cg1teXJ-zhxRe-nJjdCgJjpY,40347
+myomappy-0.1.1.dist-info/WHEEL,sha256=k9O0Z5MyGup_xUQqItmkXXdrQTpD_5zTF196y8PuHc0,93
+myomappy-0.1.1.dist-info/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+myomappy/rungekutta/_runge_kutta_4_calcs.cpython-311-darwin.so,sha256=BYfLs33pD0k7Mk9QpjYVm9t7JgaQq9_Wo24cMaDh3Ws,50151
+myomappy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myomappy/rungekutta/__init__.py,sha256=sqRkAvPLipD1PX6082MWurPYIiQ6XfJOC7DOFEbF3xo,107
+myomappy/rungekutta/runge_kutta_4.py,sha256=JmWa-1-c18ZZFuDRadUqTf_uTtfP0OL8YaBnBz7sIAY,213
+myomappy-0.1.1.dist-info/RECORD,,
