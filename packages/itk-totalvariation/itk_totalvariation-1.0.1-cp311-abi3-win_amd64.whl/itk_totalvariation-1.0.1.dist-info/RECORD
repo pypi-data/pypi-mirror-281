@@ -1,0 +1,13 @@
+itk/TotalVariationPython.py,sha256=e4-qAaPxLkBn8manNTFknlZ_y2EmfeO3EXtKqo-ZapE,2256
+itk/_TotalVariationPython.pyd,sha256=zNsgPy0d72C-h3AAhYvrFGAlBB_M52KBOVlEYhoFYY8,868352
+itk/__init_totalvariation__.py,sha256=K5l10CGb_7bC65RjlP0FNHXT4H2mKOymvlqHUWjY4pc,348
+itk/itkProxTVImageFilterPython.py,sha256=0a1qVCTFq983Lhlx3Pom72m4hxRaCI81Zmqy6B2iD4o,27187
+itk/Configuration/TotalVariationConfig.py,sha256=9e_K97e2apRaNrwXLOD3Cmhszi8hCRPnw7BVhBxMxJ4,935
+itk/Configuration/TotalVariation_snake_case.py,sha256=I52LIT3LtM35BX6rzvSiVqdD85f7h2cJSKSo8LJAcBU,51
+itk_totalvariation-1.0.1.dist-info/licenses/LICENSE,sha256=6N4ac5NFfpyIdot45rp5BiL777BAzkgZTCyw8bbU6f8,11562
+itk_totalvariation.libs/msvcp140.dll,sha256=w73Hg-He0yrhxvTtZ4Hxa-fjesoGa3YjoH-4bk2rYrI,574952
+itk_totalvariation.libs/tbb12.dll,sha256=uAYeUFrGU4BfPGbeEDcO5SoBUd0xLQeYCBIUMYGAUwA,313344
+itk_totalvariation-1.0.1.dist-info/DELVEWHEEL,sha256=MRjlUQ8EB0wJxJ_69Rj0bTS-_t32Ie-y8K8qX7eQ1J8,281
+itk_totalvariation-1.0.1.dist-info/METADATA,sha256=KkFZ4sUfd1ppHUFKGScpuSbTM7y_Bb3S5-dzrlRRewA,16386
+itk_totalvariation-1.0.1.dist-info/WHEEL,sha256=IiWCjDXU3WOqCrgcqcF7E9mCjly2HEDOFFhtOXhnisI,104
+itk_totalvariation-1.0.1.dist-info/RECORD,,
