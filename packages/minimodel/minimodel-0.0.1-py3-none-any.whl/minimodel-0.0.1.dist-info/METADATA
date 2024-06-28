@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: minimodel
+Version: 0.0.1
+Summary: single neuron minimodels for visual cortex
+Home-page: https://github.com/MouseLand/minimodel
+Author: Fengtong Du and Carsen Stringer
+Author-email: carsenstringer@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy <2.0.0
+Requires-Dist: torch
+
+# minimodel
