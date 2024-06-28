@@ -1,0 +1,7 @@
+astral>=3.2
+gpxpy>=1.6.2
+markdown2>=2.4.13
+python-dateutil>=2.9
+
+[web]
+flask>=3.0.0
