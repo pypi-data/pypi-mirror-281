@@ -1,0 +1,9 @@
+gearlang/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gearlang/clibs/gear.h,sha256=K2iYfzNV4cf2pIV06CD-u_lEbCSeqMUQOm0CMh_LdZ4,1759
+gearlang/clibs/gear.so,sha256=yVMKZbGWd-bZrVlVc5-vuI-vZCgcyQ45XJgwAK5UCeo,5225536
+gearlang/main.py,sha256=6FdQw_Z5mOmmSLMOJpr2vlprWaMwmWFEmWm-lcduemg,883
+gearlang-0.0.17.dist-info/LICENSE,sha256=vKpFVa5hZkih3AMOPrJyhE5oDVBYO-oP_vpQf9Ik2V0,1077
+gearlang-0.0.17.dist-info/METADATA,sha256=Fudz4QieCaPz0s8iVeZwByD3ForKcHZcUi3Fat_nuro,1893
+gearlang-0.0.17.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+gearlang-0.0.17.dist-info/entry_points.txt,sha256=x38KwP5f85kO8NFhWv7m4mx8rDtFmACnJC1pPzw8fNA,42
+gearlang-0.0.17.dist-info/RECORD,,
