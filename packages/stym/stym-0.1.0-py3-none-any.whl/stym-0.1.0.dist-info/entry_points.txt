@@ -1,0 +1,2 @@
+[console_scripts]
+stym = stym.stym:main
