@@ -1,0 +1,10 @@
+charla/__about__.py,sha256=Blg6iKaeiQFme-iczvLMNAHKz6B_cwZ5xlz3GGaq-aA,146
+charla/__init__.py,sha256=Hi18ekz_kKsIjEqVYaHHs-MVJlgZZ0iyoNBNbrYKseU,104
+charla/chat.py,sha256=g89kxW_ORiOn64wN3-DmVCOuvt7OoTKOqtVuRnbikJs,2261
+charla/cli.py,sha256=W-wpe9uICm2_2M_cr0gLap1w43IpFM54UUY_2Bz1GX0,1777
+charla/config.py,sha256=1vKo-piBOqmpi7gOV3Hxdy4LbK6yZFRcPBpZ-A-IJFE,402
+charla-1.0.0.dist-info/METADATA,sha256=N90mp3D3A3EyeWCH3X5nAL3syr91z-HtCQMFRKq90G8,2556
+charla-1.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+charla-1.0.0.dist-info/entry_points.txt,sha256=tiU6hih4woARmY1PQ__iV2zJMXUCASiZv3UUZyjzhd0,43
+charla-1.0.0.dist-info/licenses/LICENSE.txt,sha256=xHAsOfDjwvLq-EgPUtcbXVleLyzpP-CoWJtpff97lcE,1096
+charla-1.0.0.dist-info/RECORD,,
