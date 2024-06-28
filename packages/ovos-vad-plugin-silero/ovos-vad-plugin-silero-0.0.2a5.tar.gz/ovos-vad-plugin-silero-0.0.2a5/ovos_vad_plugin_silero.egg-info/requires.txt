@@ -1,0 +1,3 @@
+numpy<=1.26.4
+onnxruntime
+ovos-plugin-manager>=0.0.11
