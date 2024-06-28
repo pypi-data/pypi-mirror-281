@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+smartsettings/__init__.py
+smartsettings/smartsettings.py
+smartsettings.egg-info/PKG-INFO
+smartsettings.egg-info/SOURCES.txt
+smartsettings.egg-info/dependency_links.txt
+smartsettings.egg-info/requires.txt
+smartsettings.egg-info/top_level.txt
+tests/test_smartsettings.py

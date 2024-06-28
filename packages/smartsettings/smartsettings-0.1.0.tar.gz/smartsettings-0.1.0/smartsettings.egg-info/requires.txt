@@ -1,0 +1,6 @@
+jsonpickle
+cryptomsg
+
+[dev]
+black
+pytest
