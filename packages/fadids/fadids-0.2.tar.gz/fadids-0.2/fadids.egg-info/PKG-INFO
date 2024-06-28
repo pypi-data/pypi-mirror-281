@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fadids
+Version: 0.2
+Summary: Personal
+Home-page: UNKNOWN
+Author: Rémi Prince
+License: UNKNOWN
+Description: # Fast Anomalies Detection in Data Stream - FADIDS
+        
+        Library including some anomaly detection models 
+        - MeanDeviationAD
+        - SpectralResidualAD
+        
+        Tools : 
+        - Stream simulator
+        
+        ## Installation
+        ```
+        pip install bash
+        ```
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
