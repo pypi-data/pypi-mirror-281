@@ -1,0 +1,7 @@
+tokenization_local_ray.py,sha256=ox2WI6UugROofv_gQUTYbN_ADwyVK4VcAMtKTzi0g68,2008
+tokenization_s3_ray.py,sha256=6Pk3LP0VjO97ViQBFFlK4lwnx9-XD5PE7UOa1nUwJAU,2167
+tokenization_transform_ray.py,sha256=AOZxiUD38QVV1wGDfl64DfngApx0fro59N4-bMNoRTE,1326
+dpk_tokenization_transform_ray-0.2.0.dist-info/METADATA,sha256=ydps7-KcLANFA6P7LltSjwhpbeuf2qymCV_D7PJDrdE,2352
+dpk_tokenization_transform_ray-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+dpk_tokenization_transform_ray-0.2.0.dist-info/top_level.txt,sha256=ldCs2wUt3SZQ4Vd5ilp2qbDYLGkk9jZSR5h8ujkC1ls,70
+dpk_tokenization_transform_ray-0.2.0.dist-info/RECORD,,
