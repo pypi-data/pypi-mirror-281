@@ -1,0 +1,8 @@
+LICENSE
+mystipy.py
+pyproject.toml
+mystipy.egg-info/PKG-INFO
+mystipy.egg-info/SOURCES.txt
+mystipy.egg-info/dependency_links.txt
+mystipy.egg-info/entry_points.txt
+mystipy.egg-info/top_level.txt
