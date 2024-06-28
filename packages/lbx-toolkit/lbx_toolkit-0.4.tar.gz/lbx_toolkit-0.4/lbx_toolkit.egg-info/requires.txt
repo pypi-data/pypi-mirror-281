@@ -1,0 +1,8 @@
+psycopg2
+pandas
+numpy
+urllib3
+msal
+requests
+selenium
+webdriver-manager
