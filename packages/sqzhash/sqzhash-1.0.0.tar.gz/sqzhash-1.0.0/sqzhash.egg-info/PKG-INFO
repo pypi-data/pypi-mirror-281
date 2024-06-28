@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sqzhash
+Version: 1.0.0
+Summary: SqzHash is a custom cryptographic hash algorithm implementation designed to compute hash values for strings and files. The algorithm combines shifts, XOR operations, and the use of prime numbers to efficiently and reliably compute unique hash sums for various data types.
+Author: Squizoff
+Requires-Python: >=3.6
+License-File: LICENSE
