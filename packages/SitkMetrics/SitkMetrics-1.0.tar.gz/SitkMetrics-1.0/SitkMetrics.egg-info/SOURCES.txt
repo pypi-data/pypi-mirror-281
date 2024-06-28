@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+SitkMetrics/__init__.py
+SitkMetrics/metrics.py
+SitkMetrics.egg-info/PKG-INFO
+SitkMetrics.egg-info/SOURCES.txt
+SitkMetrics.egg-info/dependency_links.txt
+SitkMetrics.egg-info/requires.txt
+SitkMetrics.egg-info/top_level.txt
