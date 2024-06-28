@@ -1,0 +1,10 @@
+email_broadcasting/__init__.py,sha256=DLv3yjADO5Z1rfIMP-wPhCAvYwH6Z007ah3GJaYg23A,188
+email_broadcasting/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+email_broadcasting/core/_async.py,sha256=rvBI-kimuSn1x_V6b4wcy67bYdtiqfckKjiFu5ZcV7o,684
+email_broadcasting/core/_base.py,sha256=vvJWfSKc0YHfwnpREk8k17veg09E4fbsfXvLv-hGGW0,1598
+email_broadcasting/core/_mixins.py,sha256=WntH9rmEStXLlQzp7zgK-3cF_T3x_SGEw-tBKzf3NRY,132
+email_broadcasting/core/_sync.py,sha256=Ow9zwk_w8lLsOXUHFYGUFfbdjPEKIUws8HknFzcqFlg,622
+email_broadcasting-0.1.0.dist-info/LICENSE,sha256=FSJ3PaKheXyCKJ0nZf-0VJ9Jr42PAYS1QWzcdccpZNk,1063
+email_broadcasting-0.1.0.dist-info/METADATA,sha256=DKbLlZaS2DDrD0Wv9NIHGJeVp4V_IOHgWGyAKj9AAT4,1943
+email_broadcasting-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+email_broadcasting-0.1.0.dist-info/RECORD,,
