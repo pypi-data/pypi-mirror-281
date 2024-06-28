@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: liltorch
+Version: 0.0.1
+Summary: Small neural network library made only with raw python
+Author: Mateus Souza
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Yes

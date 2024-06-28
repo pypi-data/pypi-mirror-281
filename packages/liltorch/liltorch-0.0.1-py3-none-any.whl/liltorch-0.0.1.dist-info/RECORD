@@ -1,0 +1,15 @@
+liltorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+liltorch/nn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+liltorch/nn/activation.py,sha256=zT-ue7x27Jb1aL3itEmnZFIY1DHqDsKxjWv35wcK-LU,396
+liltorch/nn/fully_connected.py,sha256=NtUZz77evZTnKDNiv9jEZTSToaeIdCOUZsO4HKSixr0,1226
+liltorch/nn/layer.py,sha256=DM81gEoeHIDjn_hXuhbmSsB50BWI4wxelEGqIK6pzxs,246
+liltorch/nn/loss.py,sha256=fXannWEWkZorvWlBo8yI54sy5y3xpxtt9ROCfCrpDuk,1176
+liltorch/nn/network.py,sha256=Iexw-LaEKZRK1DxqO0I1pjjWDXRgukRtkJQJ4UafkiQ,460
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/nn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/nn/test_fully_connected.py,sha256=EmojybAP8IR5glwV1DgcLr1EMI_USzMr4TeMEYLmq2g,556
+liltorch-0.0.1.dist-info/LICENSE,sha256=Ckesul9JIqqrAXajEeRKfiFYKtKWzG94dzIiXjQR6BA,1069
+liltorch-0.0.1.dist-info/METADATA,sha256=Bze9xI5ZDdSapAto6ZV_M6A6t8jGTBPwxkcNp9WM8BI,204
+liltorch-0.0.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+liltorch-0.0.1.dist-info/top_level.txt,sha256=rQ1mWXnVa032vwWTmJe3Q1_wKujHaWisfdNpg1__EY8,15
+liltorch-0.0.1.dist-info/RECORD,,
