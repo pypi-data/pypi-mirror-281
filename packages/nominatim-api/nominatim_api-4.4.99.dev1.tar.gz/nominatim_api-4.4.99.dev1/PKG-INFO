@@ -1,0 +1,59 @@
+Metadata-Version: 2.3
+Name: nominatim-api
+Version: 4.4.99.dev1
+Summary: A tool for building a database of OpenStreetMap for geocoding and for searching the database. Search library.
+Project-URL: Homepage, https://nominatim.org
+Project-URL: Issues, https://github.com/osm-search/Nominatim/issues
+Maintainer-email: Sarah Hoffmann <lonvia@denofr.de>
+License-Expression: GPL-3.0-or-later
+License-File: COPYING
+Keywords: OpenStreetMap,geocoding,search
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: psycopg
+Requires-Dist: pyicu
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml>=5.1
+Requires-Dist: sqlalchemy>=1.4.31
+Description-Content-Type: text/markdown
+
+# Nominatim - Frontend Library
+
+Nominatim is a tool to search OpenStreetMap data
+by name and address (geocoding) and to generate synthetic addresses of
+OSM points (reverse geocoding).
+
+This module implements the library for searching in a Nominatim database
+imported with the 'nominatim-db' package.
+
+## Installation
+
+To install the Nominatim API from pypi, run:
+
+    pip install nominatim-api
+
+## Running a Nominatim server
+
+You need falcon or starlette to run Nominatim as a service, as well as
+an ASGI-capable server like uvicorn. To install them from pypi run:
+
+    pip install falcon uvicorn
+
+You need to have a Nominatim database imported with the 'nominatim-db'
+package. Go to the project directory, then run uvicorn as:
+
+    uvicorn --factory nominatim.server.falcon.server:run_wsgi
+
+## Documentation
+
+The full documentation for the Nominatim library can be found at:
+https://nominatim.org/release-docs/develop/library/Getting-Started/
+
+The v1 API of the server is documented at:
+https://nominatim.org/release-docs/develop/api/Overview/
+
+## License
+
+The source code is available under a GPLv3 license.
