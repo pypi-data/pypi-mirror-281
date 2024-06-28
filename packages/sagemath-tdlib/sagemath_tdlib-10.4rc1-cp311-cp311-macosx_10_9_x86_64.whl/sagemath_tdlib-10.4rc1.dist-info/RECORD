@@ -1,0 +1,11 @@
+sagemath_tdlib-10.4rc1.dist-info/RECORD,,
+sagemath_tdlib-10.4rc1.dist-info/WHEEL,sha256=u3zN-Ocm3TNiBsRO2kGEVqFMLAAhxZAdHJFC7c-_tw8,110
+sagemath_tdlib-10.4rc1.dist-info/top_level.txt,sha256=hibFyzQHiLOMK68qL1OWsNKaXOmSXqZjeLTBem6Yy7I,5
+sagemath_tdlib-10.4rc1.dist-info/METADATA,sha256=vitNdkHgRfEoh_9kjI7c42k3i7govHEAMb0q7bWbZO0,2099
+sage/all__sagemath_tdlib.py,sha256=xwEAp-3HSleZKAjcgudzEBoWekMyMSx7mY9lzHCETcU,44
+sage/graphs/all__sagemath_tdlib.py,sha256=xwEAp-3HSleZKAjcgudzEBoWekMyMSx7mY9lzHCETcU,44
+sage/graphs/graph_decompositions/all__sagemath_tdlib.py,sha256=xwEAp-3HSleZKAjcgudzEBoWekMyMSx7mY9lzHCETcU,44
+sage/graphs/graph_decompositions/tdlib.pyx,sha256=vz-BOU5tBfvs1rhrths4_ByptE7qxjkXuhcN5_7Zi0w,5322
+sage/graphs/graph_decompositions/tdlib.cpython-311-darwin.so,sha256=bFzLKhk1aPeMY1vR67llblSMJ7pIgRBqeWM774oSJBo,269864
+sage/cython_debug/interpreter,sha256=8HS7dYvbwogmX3yzDKJXJiAaiPJ7HRYthpAjS8xfXsU,86
+sage/cython_debug/cython_debug_info_sage.graphs.graph_decompositions.tdlib,sha256=QS2plPf3DKL482PAhKlONG7x9P1pV0WIxJuuW9FQcYw,33534
