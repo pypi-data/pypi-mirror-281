@@ -1,0 +1,10 @@
+uniclip/__init__.py,sha256=bdVk-ELJW2cL49F7piSnQfdrzcIsKjDZDHd9q78BXLg,46
+uniclip/client.py,sha256=Dlth90VbeqCuv0cMJosLEE33VMMk1KWHRmHHnYnnWsM,8895
+uniclip/installer.py,sha256=tgLUjVAGa_PJLx_CKJh5wWSQTKK9LaH6qo0wIM4tWqs,2681
+uniclip/main.py,sha256=nsaohhXXSHGUAeUfa26rZAeVqtrSVt8HACfqqeLyMrk,3494
+uniclip/server.py,sha256=2LQeDOteeP95XRVWbqzBgJLl_mvx7hV0nWENUUPEK-Q,4757
+uniclip-0.2.0.dist-info/METADATA,sha256=0ZyR8p9m6V3j0uornlM3YA9JXtwLPUROOXeX4uGKG9c,6076
+uniclip-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+uniclip-0.2.0.dist-info/entry_points.txt,sha256=abvglFsI-7L6agZaBaibGb7lKM8xfxNcFyqFr2cuNO8,46
+uniclip-0.2.0.dist-info/top_level.txt,sha256=Gz2yoApndzOxdECdxnsFZD6E3cWAhYS9GWBznHNOHCY,8
+uniclip-0.2.0.dist-info/RECORD,,
