@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: piwigo2
+Version: 2.0.1
+Summary: piwigo API wrapper
+Home-page: https://github.com/DaanHolleman/piwigo.git
+Author: FrÃ©dÃ©ric Aoustin,Daan Holleman
+Author-email: fraoustin@gmail.com,dholleman123@gmail.com
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+License-File: LICENSE
+License-File: AUTHORS.txt
+Requires-Dist: requests
+
+piwigo
+======
+
+Piwigo is a famous open-source online photo gallery. 
+
+piwigo is a module python for communicate with API Piwigo.
+
+
+Installation
+------------
+
+::
+
+    pip install piwigo2
+        
+Or
+
+::
+
+    git clone https://github.com/DaanHolleman/piwigo.git
+    cd piwigo
+    python setup.py install
+
+Usage
+-----
+
+::
+
+    from piwigo import Piwigo
+    mysite = Piwigo('http://mysite.com')
+    print(mysite.pwg.getVersion())
+
+Piwigo object has attribute name of webservice.
+
+List of webservice at http://mysite.com/tools/ws.htm
+
+Sample of uplad file in category with id=1
+
+::
+
+    from piwigo import Piwigo
+    mysite = Piwigo('http://mysite.com')
+    mysite.pwg.session.login(username="test", password="test")
+    mysite.pwg.images.addSimple(image="myphoto.jpg", "category"=1)
+    mysite.pwg.session.logout()
+
+
+V. 1.0.0
+========
+
+- check version
+
+. 0.0.4
+========
+
+- manage types.BooleanType for python27
+- add close connection for python3
+
+V. 0.0.2
+========
+
+- add getParams
+
+V. 0.0.1
+========
+
+- init
