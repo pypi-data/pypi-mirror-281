@@ -1,0 +1,7 @@
+filter_local_ray.py,sha256=Iv_a2CDlErcdsjhqKHl-iNBdL5OhpYkfqbNbiWG79g8,2697
+filter_s3_ray.py,sha256=Mkts6C62sNArSS1tCvQdFRLvMASO4tr9WS4lX-3OMy4,2701
+filter_transform_ray.py,sha256=bendDLokygDY-7xiyZoW4O4mJEKAjMFmB-00PemyyFU,1301
+dpk_filter_transform_ray-0.2.0.dist-info/METADATA,sha256=V8KyaiNqS1gZ7GOO-ht7jSI_ZtaUH6IixpsGkkUdkIc,2305
+dpk_filter_transform_ray-0.2.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+dpk_filter_transform_ray-0.2.0.dist-info/top_level.txt,sha256=JCq1VWYr-c-6fHrxiZOi7-DXRzTYq340cJxMZUd-G4U,52
+dpk_filter_transform_ray-0.2.0.dist-info/RECORD,,
