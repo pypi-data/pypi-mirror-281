@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: video-audio-recorder
+Version: 0.1.0
+Summary: A package to record video and audio simultaneously
+Home-page: https://github.com/shami09/video_audio_recorder
+Author: Shamika Likhite
+Author-email: shamilikhite@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pyaudio
+Requires-Dist: opencv-python
+Requires-Dist: ffmpeg-python
+
+# Multimodal-speech-disfluency
+This is multimodal speech disfluency detection repo
+
