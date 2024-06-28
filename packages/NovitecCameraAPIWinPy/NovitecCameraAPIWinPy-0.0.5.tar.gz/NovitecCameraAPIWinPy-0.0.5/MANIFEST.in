@@ -1,0 +1,2 @@
+include NovitecCameraAPIWinPy/_internal/*.dll
+include NovitecCameraAPIWinPy/NovitecCameraAPIWinPy.py

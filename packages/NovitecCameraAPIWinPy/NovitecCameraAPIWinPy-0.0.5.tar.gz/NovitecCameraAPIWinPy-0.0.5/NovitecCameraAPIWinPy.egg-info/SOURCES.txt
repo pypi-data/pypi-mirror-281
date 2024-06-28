@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+NovitecCameraAPIWinPy/NovitecCameraAPIWinPy.py
+NovitecCameraAPIWinPy/__init__.py
+NovitecCameraAPIWinPy.egg-info/PKG-INFO
+NovitecCameraAPIWinPy.egg-info/SOURCES.txt
+NovitecCameraAPIWinPy.egg-info/dependency_links.txt
+NovitecCameraAPIWinPy.egg-info/top_level.txt
+NovitecCameraAPIWinPy/_internal/NOVITECCAMERAAPIC.dll
+NovitecCameraAPIWinPy/_internal/NovitecCameraAPI.dll
+NovitecCameraAPIWinPy/_internal/libcrypto-1_1-x64.dll
+NovitecCameraAPIWinPy/_internal/libcurl.dll
+NovitecCameraAPIWinPy/_internal/libssl-1_1-x64.dll
