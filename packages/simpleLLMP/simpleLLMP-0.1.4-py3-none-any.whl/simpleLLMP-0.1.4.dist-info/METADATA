@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: simpleLLMP
+Version: 0.1.4
+Summary: A simple library for interacting with OpenAI models.
+Home-page: https://github.com/ykim336/simpleML
+Author: Yvon Kim
+Author-email: kmyn7up@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: pytesseract
+Requires-Dist: pdf2image
+Requires-Dist: pillow
+Requires-Dist: PyPDF2
+Requires-Dist: requests
+
+# simpleLLMP
+
+`simpleLLMP` is a simple Python library for interacting with OpenAI models. This library provides easy-to-use methods for setting up the OpenAI API and generating responses from a given prompt. It also includes OCR and PDF preprocessing capabilities.
+
+## Features
+
+- Simplified interaction with OpenAI's ChatGPT models.
+- Easy setup with API key and model version.
+- Generate responses from text prompts.
+- Additional capabilities for OCR and PDF preprocessing (if needed).
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install simpleLLMP
