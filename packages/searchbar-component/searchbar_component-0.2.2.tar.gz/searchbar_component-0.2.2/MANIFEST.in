@@ -1,0 +1,3 @@
+include README.md
+include LICENSE
+recursive-include searchbar_component/frontend/build *
