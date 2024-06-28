@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: GenericSNN
+Version: 1.0.1
+Summary: Python package that implements generic functionalities for Spiking Neural Network creation, fit and prediction.
+Home-page: https://gitlab.eesysmart.de/public-ai-team/genericsnn
+Author: Eesy-Innovation GmbH
+License: Proprietary
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: tensorflow==2.9
+Requires-Dist: nengo==3.2
+Requires-Dist: nengo_dl==3.5
+Requires-Dist: nengo_extras==0.5.0
+Requires-Dist: numpy==1.24.2
+Requires-Dist: opencv-python==4.7.0.68
+Requires-Dist: matplotlib==3.6.3
+
+GenericSNN is a Python package for developing Spiking Neural Networks based on Nengo and Nengo DL. This package allows you to build SNN models, simulate, train and test them. GenericSNN enables the user to easily define all these steps and provide general configuration, if required, based on a selection of the problem type by the user. As a result, the whole process is easier than using other tools which aims at an expert user. It is not designed for detailed simulation of biological networks.
+
+# Installation instructions
+Use pip to install GenericSNN and required dependencies
+
+More details about the package can be found in the website of the Eesy innovation GmbH or in the Gitlab page of this package: https://gitlab.eesysmart.de/public-ai-team/genericsnn
+
+# License
+GenericSNN is released under a GPL license. 
