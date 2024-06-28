@@ -1,0 +1,2 @@
+[console_scripts]
+tihi = tihi.app:main
