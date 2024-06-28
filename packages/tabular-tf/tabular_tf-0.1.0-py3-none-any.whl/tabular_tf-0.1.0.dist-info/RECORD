@@ -1,0 +1,10 @@
+tf_tabular/__init__.py,sha256=iMt_xPax9F48b7Qa0ICytVnK92xlcgM8RHasH_8k6Wo,352
+tf_tabular/builder.py,sha256=oc814So7qxZVbfzU46DqMoETvODUwLYeqrCRtf2H5mw,5136
+tf_tabular/input_spec.py,sha256=1tUetzRwY59bIL51GHchypgOXs-UXwN0z4vmqUGXYPc,3865
+tf_tabular/numeric_processor.py,sha256=_M-ZBiguq-Eormu8urCfu56SoLcEin1Y8BaWUknsBTY,1349
+tf_tabular/sequence_processor.py,sha256=G1mqv1On1jlw-kmxNmtIH1b8bs2bXdRLdAp9JEPoaAA,1725
+tf_tabular/utils.py,sha256=NnTcSUdC1AoYuygtsPUX7wYWU0IG3wZAIOb9haw6N9A,8887
+tabular_tf-0.1.0.dist-info/LICENSE,sha256=vi6FiyClZ-ESrqlp0YtWyWNXAI4c-bBxi1sO-AwGUh8,1129
+tabular_tf-0.1.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+tabular_tf-0.1.0.dist-info/METADATA,sha256=3U1DnB50nPyhi4_NpIpmR9BYN1by2rgVtWhtYI9WOlU,4785
+tabular_tf-0.1.0.dist-info/RECORD,,
