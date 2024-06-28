@@ -1,0 +1,16 @@
+README.md
+setup.py
+_exemplo_uso/__init__.py
+_exemplo_uso/exemplo_uso.py
+pix_qrcode/__init__.py
+pix_qrcode/generate_pix_qrcode.py
+pix_qrcode/generator.py
+pix_qrcode/gui.py
+pix_qrcode/utils.py
+pixqrcode_generator.egg-info/PKG-INFO
+pixqrcode_generator.egg-info/SOURCES.txt
+pixqrcode_generator.egg-info/dependency_links.txt
+pixqrcode_generator.egg-info/requires.txt
+pixqrcode_generator.egg-info/top_level.txt
+tests/__init__.py
+tests/test_generator.py
