@@ -1,0 +1,5 @@
+anise-0.4.0.dist-info/METADATA,sha256=TtnrOSCua8EHRruzxxVhTVwPEaLZ6P0ir9KOZNfsqa0,6807
+anise-0.4.0.dist-info/WHEEL,sha256=pFkip4GCSjKMN5vn6Pkc9f9uVxGhOelzXmVFmYu4P0s,129
+anise/__init__.py,sha256=fxCM8U0C0Arf9lTTNySPgdYsVN94D95GuBje4ASb8J8,103
+anise/anise.cpython-39-aarch64-linux-gnu.so,sha256=Eq45-h314yYU2hngjvlgBVcahkn2JyTH1qVjAu8bkL8,15817256
+anise-0.4.0.dist-info/RECORD,,
