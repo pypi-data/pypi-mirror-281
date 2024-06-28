@@ -1,0 +1,11 @@
+sinking/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+sinking/cli.py,sha256=0nhQkgv9FlM2TruNL7mgFLE-Ft9EM5t2qlEeHtHCQgA,3379
+sinking/destination.py,sha256=GicpawqPjParNF2uUia7eDBee_Big48DFBA6-0S7iEc,1195
+sinking/options.py,sha256=rwmHULkOWjyyJ2AEODd1PSz31OwGg7T-viWAfIA261M,266
+sinking/source.py,sha256=h2YD8fGFkAAz_-48skdE8XKxNMHaHxyiPdLV0XrcCa4,1058
+sinking/utils.py,sha256=rL7F8W9Kbo9aHk6FiJr1umbimCkCAi2ORT_ETlJzYKs,196
+sinking-0.1.2.dist-info/METADATA,sha256=433xi_RpjGxQh7YER-ccJxFL-q5fZJIh_gHOKU-UlGg,1536
+sinking-0.1.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+sinking-0.1.2.dist-info/entry_points.txt,sha256=0R9oKPkHqnKAtdjM7lM2-6a0lQRbxNppy9oW_WFi9RM,45
+sinking-0.1.2.dist-info/licenses/LICENSE,sha256=zBCUm1JNb1yYbV6kh1oVAkonHJ2PRYQpzAcvdhLbU9g,1080
+sinking-0.1.2.dist-info/RECORD,,
