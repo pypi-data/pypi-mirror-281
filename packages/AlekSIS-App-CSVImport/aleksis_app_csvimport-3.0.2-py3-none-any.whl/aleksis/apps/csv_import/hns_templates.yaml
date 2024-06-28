@@ -1,0 +1,137 @@
+hns_students:
+  model: core.Person
+  verbose_name: "HNS: Students"
+  extra_args:
+    has_header_row: true
+    separator: ","
+  fields:
+    - ignore
+    - field_type: last_name
+      column_name: last_name
+    - field_type: first_name
+      column_name: first_name
+    - ignore
+    - ignore
+    - field_type: reg_ex
+      fail_if_no_match: true
+      reg_ex: "^(?P<street>[\\w\\s.\\-_']{3,})\\s+(?P<housenumber>\\d+\\s*[a-zA-Z_/]*(?:[\\-/]\\d+\\s*[a-zA-Z_]*)?)$"
+    - field_type: reg_ex
+      fail_if_no_match: true
+      reg_ex: "^(?P<postal_code>\\d+) (?P<place>.+)$"
+    - field_type: date_of_birth
+      column_name: date_of_birth
+    - sex
+    - ignore
+    - primary_group_short_name
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - ignore
+    - field_type: unique_reference
+      virtual: true
+      template: |
+        {{ first_name }}-{{ last_name }}-{{ date_of_birth }}
+    - field_type: username
+      virtual: true
+      template: |
+        {{ first_name|lower }}.{{ last_name|lower }}
+    - field_type: email
+      priority: -1
+      email_domain: "hnsb.eu"
+      virtual: true
+      template: |
+        {{ first_name|lower }}.{{ last_name|lower }}
+
+hns_untis_gpu004:
+  model: core.Person
+  verbose_name: "HNS: Untis: Teachers (GPU004.txt)"
+  extra_args:
+    has_header_row: false
+    separator: ","
+  fields:
+    - short_name # Name
+    - last_name # Langname
+    - ignore # Statistik 1
+    - field_type: username # Personal-Nr.
+      column_name: username
+    - ignore # Stammraum
+    - ignore # Kennzeichen
+    - ignore # Frei
+    - ignore # Std./Tag min
+    - ignore # Std./Tag max
+    - ignore # Hohlstd. min.
+    - ignore # Hohlstd. max.
+    - ignore # Mittagsp. min.
+    - ignore # Mittagsp. max.
+    - ignore # Std.-Folge max.
+    - ignore # Wochen-Soll
+    - ignore # Wochen-WErt
+    - ignore # Abteilung 1
+    - ignore # Wert-Faktor
+    - ignore # Abteilung 2
+    - ignore # Abteilung 3
+    - ignore # Status
+    - ignore # Jahres-Soll
+    - ignore # Text
+    - ignore # Beschreibung
+    - ignore # Farbe Vordergr.
+    - ignore # Farbe Hintergr.
+    - ignore # Statistik 2
+    - ignore # berechneter Faktor
+    - first_name # Vorname
+    - ignore # Titel
+    - sex # Geschlecht
+    - ignore # Stammschule
+    - ignore # E-Mail-Adresse
+    - ignore # Sperrvermerk
+    - ignore # Wochen-Soll maximal
+    - ignore # Alias
+    - ignore # Personalnummer 2
+    - ignore # Stundensatz
+    - phone_number # Telefonnummer
+    - mobile_number # Mobiltelefonnummer
+    - date_of_birth # Geburtsdatum
+    - ignore # Name als externes Element
+    - ignore # Text2
+    - ignore
+    - ignore
+    - field_type: email
+      priority: -1
+      email_domain: "hnsb.eu"
+      virtual: true
+      template: |
+        {{ username }}
+
+hns_iserv:
+  model: core.Person
+  verbose_name: "HNS: iServ users"
+  extra_args:
+    has_header_row: true
+    separator: ","
+  fields:
+    - ignore
+    - username
+    - first_name
+    - last_name
+    - ignore # Status
+    - ignore # Erstellt am
+    - ignore # Erstellt von
+    - ignore # Interne ID
+    - ignore # Benutzertype
+    - ignore # IMport-ID
+    - ignore # Klasse/Information
+    - email
+    - ignore
+  
