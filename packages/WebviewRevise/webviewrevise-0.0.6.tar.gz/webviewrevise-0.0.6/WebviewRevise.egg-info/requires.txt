@@ -1,0 +1,8 @@
+proxy_tools
+bottle
+cryptography
+typing_extensions
+pythonnet
+
+[:python_version < "3.7"]
+importlib_resources
