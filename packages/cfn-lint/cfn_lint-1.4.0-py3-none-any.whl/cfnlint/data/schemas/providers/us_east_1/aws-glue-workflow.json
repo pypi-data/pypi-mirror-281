@@ -1,0 +1,53 @@
+{
+ "additionalProperties": false,
+ "createOnlyProperties": [
+  "/properties/Name"
+ ],
+ "primaryIdentifier": [
+  "/properties/Id"
+ ],
+ "properties": {
+  "DefaultRunProperties": {
+   "format": "json",
+   "type": [
+    "object",
+    "string"
+   ]
+  },
+  "Description": {
+   "type": "string"
+  },
+  "Id": {
+   "type": "string"
+  },
+  "MaxConcurrentRuns": {
+   "type": "integer"
+  },
+  "Name": {
+   "type": "string"
+  },
+  "Tags": {
+   "items": {
+    "additionalProperties": false,
+    "properties": {
+     "Key": {
+      "type": "string"
+     },
+     "Value": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "Value",
+     "Key"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "readOnlyProperties": [
+  "/properties/Id"
+ ],
+ "typeName": "AWS::Glue::Workflow"
+}
