@@ -1,0 +1,12 @@
+nanolsap/_version.py,sha256=9GTNkADgEYZ6fEjCvZZUdKyqxiPIgtskLFZNJz7nq_U,411
+nanolsap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nanolsap/_lsap.pyi,sha256=CKGz4Ahf7EHp2zqjNvPaM2dkzcFBx_nDqoA7SZhqmOs,303
+nanolsap/_lsap.abi3.so,sha256=9lSMbvQ8_wowPWkw9S-l9jYg7jtLc1T9yDrqsoowJg8,134377
+nanolsap/__init__.py,sha256=dHaUu1dce1i5nRgsEAE_l0e0ujUYUXNQcGIrDiSHgBU,308
+nanolsap-0.1.4.dist-info/LICENSE,sha256=RTilDJ5sBi2gQli-c5_y0W0VeV5rN4dnEVbYxyeomy4,1494
+nanolsap-0.1.4.dist-info/WHEEL,sha256=poQ76wyMvkvRaK-KdKdH33hz_Qmfl3LUo-It6ysKIv0,110
+nanolsap-0.1.4.dist-info/top_level.txt,sha256=ww4bNRQKje7HYvcV29w7CJEHdcTSuxaceNEB6Dl4QBE,9
+nanolsap-0.1.4.dist-info/RECORD,,
+nanolsap-0.1.4.dist-info/METADATA,sha256=gUJxBIPSrpvm_RLmzhhss1wR60zfElF8oNBy8u-FQkY,3637
+nanolsap.libs/libstdc++-496613c0.so.6.0.32,sha256=AwZhL5WFT99I2Q6vIxXOhW7qddfuOZ1xecxiP9QTVY4,3494361
+nanolsap.libs/libgcc_s-a3a07607.so.1,sha256=5ptIUeAzZweNZrFehN0_Bb5B0FcJgux7NbAFoU8vwwo,148041
