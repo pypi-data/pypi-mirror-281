@@ -1,0 +1,23 @@
+{
+  "commitConvention": "angular",
+  "commitType": "docs",
+  "contributorsPerLine": 7,
+  "contributorsSortAlphabetically": true,
+  "files": [
+    "CONTRIBUTORS.md",
+    "README.md"
+  ],
+  "projectName": "boilercv",
+  "projectOwner": "softboiler",
+  "contributors": [
+    {
+      "avatar_url": "https://avatars.githubusercontent.com/u/119456024?v=4",
+      "contributions": [
+        "doc"
+      ],
+      "login": "asennain",
+      "name": "asennain",
+      "profile": "https://github.com/asennain"
+    }
+  ]
+}

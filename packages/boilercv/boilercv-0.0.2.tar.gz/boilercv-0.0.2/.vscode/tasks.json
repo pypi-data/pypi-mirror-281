@@ -1,0 +1,345 @@
+// Run tasks like `pwsh -C ". scripts/Initialize-Shell.ps1; {task}` to run profile-like
+// commands without requiring users to modify global profile.
+
+{
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "stage",
+      "type": "pickString",
+      "description": "stage",
+      "default": "",
+      "options": [
+        "",
+        "generate_reports",
+        "preview_binarized",
+        "preview_gray",
+        "find_contours",
+        "fill",
+        "preview_filled",
+        "find_unobstructed",
+        "find_tracks",
+        "compare_theory"
+      ]
+    },
+    {
+      "id": "preview",
+      "type": "pickString",
+      "description": "preview",
+      "default": "",
+      "options": ["gray", "binarized", "filled", "composite"]
+    },
+    {
+      "id": "correlations",
+      "type": "pickString",
+      "description": "correlations",
+      "default": "",
+      "options": [
+        "beta",
+        "nusselt",
+        "beta --overwrite",
+        "nusselt --overwrite",
+        "range"
+      ]
+    },
+    {
+      "id": "dependency",
+      "type": "promptString",
+      "description": "Show tree of packages requesting this dependency."
+    },
+    {
+      "id": "templateOptions",
+      "description": "Template options.",
+      "type": "pickString",
+      "options": ["", "-Stay", "-Stay -Prompt", "-Recopy -Prompt"]
+    },
+    {
+      "id": "changeType",
+      "description": "Change type.",
+      "type": "pickString",
+      "options": ["breaking", "deprecation", "change"]
+    }
+  ],
+  "tasks": [
+    {
+      "label": "proj: Generate correlation",
+      "type": "shell",
+      "command": "python ${file} ${input:correlations}",
+      "icon": { "id": "file-code" },
+      "problemMatcher": []
+    },
+    {
+      "label": "proj: Generate correlation docs",
+      "type": "shell",
+      "command": "python -m boilercv_pipeline.equations.make_docs",
+      "icon": { "id": "file-code" },
+      "problemMatcher": []
+    },
+    {
+      "label": "proj: remove empty data folders",
+      "type": "shell",
+      "command": "Get-ChildItem -Path ./data -Recurse -Directory | Where-Object { (Get-ChildItem -Path $_ -Recurse -File | Measure-Object).Count -eq 0 } | Remove-Item -Recurse -Force",
+      "icon": { "id": "terminal-powershell" },
+      "problemMatcher": []
+    },
+    {
+      "label": "proj: hide notebook inputs",
+      "type": "shell",
+      "command": "python -m boilercv_docs",
+      "icon": { "id": "graph" },
+      "problemMatcher": []
+    },
+    {
+      "label": "proj: Run file PREVIEW/WRITE",
+      "type": "shell",
+      "options": {
+        "env": {
+          "BOILERCV_PREVIEW": "True",
+          "BOILERCV_WRITE": "True"
+        }
+      },
+      "command": "python ${file}",
+      "icon": { "id": "repo" },
+      "problemMatcher": []
+    },
+    {
+      "label": "proj: Run file DEBUG/PREVIEW/WRITE",
+      "type": "shell",
+      "options": {
+        "env": {
+          "BOILERCV_DEBUG": "True",
+          "BOILERCV_PREVIEW": "True",
+          "BOILERCV_WRITE": "True"
+        }
+      },
+      "command": "python ${file}",
+      "icon": { "id": "repo" },
+      "problemMatcher": []
+    },
+    {
+      "label": "proj: Run file PREVIEW",
+      "type": "shell",
+      "options": {
+        "env": { "BOILERCV_PREVIEW": "True" }
+      },
+      "command": "python ${file}",
+      "icon": { "id": "repo" },
+      "problemMatcher": []
+    },
+    {
+      "label": "proj: Run file WRITE",
+      "type": "shell",
+      "options": {
+        "env": { "BOILERCV_WRITE": "True" }
+      },
+      "command": "python ${file}",
+      "icon": { "id": "repo" },
+      "problemMatcher": []
+    },
+    {
+      "label": "proj: preview",
+      "type": "shell",
+      "options": {
+        "env": { "BOILERCV_PREVIEW": "True" }
+      },
+      "command": "python -m boilercv.previews.${input:preview}",
+      "icon": { "id": "graph" },
+      "problemMatcher": []
+    },
+    {
+      "label": "dvc: repro (debug)",
+      "dependsOrder": "sequence",
+      "dependsOn": ["dvc: sync params"],
+      "type": "shell",
+      "options": {
+        "env": { "BOILERCV_DEBUG": "True" }
+      },
+      "command": "dvc repro ${input:stage}",
+      "icon": { "id": "graph" },
+      "problemMatcher": []
+    },
+    {
+      "label": "dvc: repro force (debug)",
+      "dependsOrder": "sequence",
+      "dependsOn": ["dvc: sync params"],
+      "type": "shell",
+      "options": {
+        "env": { "BOILERCV_DEBUG": "True" }
+      },
+      "command": "dvc repro --force ${input:stage}",
+      "icon": { "id": "graph" },
+      "problemMatcher": []
+    },
+    {
+      "label": "dvc: repro",
+      "dependsOrder": "sequence",
+      "dependsOn": ["dvc: sync params"],
+      "type": "shell",
+      "command": "dvc repro ${input:stage}",
+      "icon": { "id": "graph" },
+      "problemMatcher": []
+    },
+    {
+      "label": "dvc: repro force",
+      "dependsOrder": "sequence",
+      "dependsOn": ["dvc: sync params"],
+      "type": "shell",
+      "command": "dvc repro --force ${input:stage}",
+      "icon": { "id": "graph" },
+      "problemMatcher": []
+    },
+    {
+      "label": "dvc: dag",
+      "dependsOrder": "sequence",
+      "dependsOn": ["dvc: sync params"],
+      "type": "shell",
+      "command": "(dvc dag --md) -Replace 'mermaid', '{mermaid}' > docs/dag.md && . '~/.local/nodeenvs/markdownlint/scripts/activate.ps1' && markdownlint --fix docs/dag.md",
+      "icon": { "id": "graph" },
+      "problemMatcher": []
+    },
+    {
+      "label": "dvc: sync params",
+      "type": "shell",
+      "command": "python -m boilercv_pipeline.models.params",
+      "icon": { "id": "graph" },
+      "problemMatcher": []
+    },
+
+    // * -------------------------------------------------------------------------- * //
+    // * WSL-SPECIFIC * //
+
+    {
+      "label": "wsl: Copy PID of Python Debugger",
+      "type": "shell",
+      "command": "ps aux | grep python | grep --max-count 1 -- --adapter-access-token | grep --only-matching --perl-regexp 'user\\s+\\d+' | grep --only-matching --perl-regexp '\\d+' | clip.exe",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "close": false,
+        "focus": true,
+        "reveal": "always"
+      },
+      "icon": { "id": "terminal-linux" },
+      "problemMatcher": []
+    },
+
+    // * -------------------------------------------------------------------------- * //
+    // * PROJECT SETUP * //
+
+    {
+      "label": "setup: Sync with template",
+      "type": "shell",
+      "command": "scripts/Sync-Template.ps1 ${input:templateOptions}",
+      "icon": { "id": "file-symlink-directory" },
+      "problemMatcher": []
+    },
+    {
+      "label": "setup: Sync contributor environment",
+      "type": "shell",
+      "command": "if (!$Env:DEVCONTAINER) {scripts/Sync-Py.ps1}",
+      "icon": { "id": "file-symlink-directory" },
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "setup: Perform first-time setup",
+      "type": "shell",
+      "command": "scripts/Initialize-Repo.ps1",
+      "icon": { "id": "file-symlink-directory" },
+      "problemMatcher": []
+    },
+    {
+      "label": "setup: Remove *.rej",
+      "type": "shell",
+      "command": "Get-ChildItem -Recurse -Filter *.rej | Remove-Item",
+      "icon": { "id": "file-symlink-directory" },
+      "problemMatcher": []
+    },
+
+    // * -------------------------------------------------------------------------- * //
+    // * PRE-COMMIT * //
+
+    {
+      "label": "pre-commit",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; pre-commit",
+      "icon": { "id": "git-commit" },
+      "problemMatcher": []
+    },
+    {
+      "label": "pre-commit: all",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; pre-commit run --all-files",
+      "icon": { "id": "git-commit" },
+      "problemMatcher": []
+    },
+
+    // * -------------------------------------------------------------------------- * //
+    // * GIT * //
+
+    {
+      "label": "git: Rebase back to fork",
+      "type": "shell",
+      "command": "git rebase -i --fork-point main",
+      "icon": { "id": "git-branch" },
+      "problemMatcher": []
+    },
+
+    // * -------------------------------------------------------------------------- * //
+    // * OTHER TASKS * //
+
+    {
+      "label": "task: Generate changelog entry",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; python -m boilercv_tools add-change ${input:changeType}",
+      "icon": { "id": "request-changes" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: Show tree of packages requesting a dependency",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; pipdeptree --reverse --packages ${input:dependency}",
+      "icon": { "id": "versions" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: Run pytest with coverage",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; pytest --cov  --cov-config pyproject.toml --cov-report xml",
+      "icon": { "id": "check" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: Run ruff",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; ruff check .; ruff format .",
+      "icon": { "id": "check" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: sphinx-autobuild docs (preview)",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; sphinx-autobuild -T docs _site --ignore **/params.yaml --ignore **/params_schema.json --ignore **/apidocs --ignore docs/data --ignore docs/temp",
+      "icon": { "id": "book" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: profile this file",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; python -m cProfile -o .prof ${file}",
+      "icon": { "id": "graph-line" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: view profile results with snakeviz",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; snakeviz .prof",
+      "icon": { "id": "graph-line" },
+      "problemMatcher": []
+    }
+  ]
+}

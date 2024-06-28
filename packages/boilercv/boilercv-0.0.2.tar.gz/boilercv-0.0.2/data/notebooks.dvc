@@ -1,0 +1,6 @@
+outs:
+- md5: c02692b003dfa130fce1b9fc88a4b51a.dir
+  size: 2840942
+  nfiles: 11
+  hash: md5
+  path: notebooks

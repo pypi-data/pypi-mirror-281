@@ -1,0 +1,143 @@
+// Run tasks like `pwsh -C ". scripts/Initialize-Shell.ps1; {task}` to run profile-like
+// commands without requiring users to modify global profile.
+
+{
+  "version": "2.0.0",
+  "inputs": [
+    {
+      "id": "dependency",
+      "type": "promptString",
+      "description": "Show tree of packages requesting this dependency."
+    },
+    {
+      "id": "templateOptions",
+      "description": "Template options.",
+      "type": "pickString",
+      "options": ["", "-Stay", "-Stay -Prompt", "-Recopy -Prompt"]
+    },
+    {
+      "id": "changeType",
+      "description": "Change type.",
+      "type": "pickString",
+      "options": ["breaking", "deprecation", "change"]
+    }
+  ],
+  "tasks": [
+    // * -------------------------------------------------------------------------- * //
+    // * PROJECT SETUP * //
+
+    {
+      "label": "setup: Sync with template",
+      "type": "shell",
+      "command": "scripts/Sync-Template.ps1 ${input:templateOptions}",
+      "icon": { "id": "file-symlink-directory" },
+      "problemMatcher": []
+    },
+    {
+      "label": "setup: Sync contributor environment",
+      "type": "shell",
+      "command": "if (!$Env:DEVCONTAINER) {scripts/Sync-Py.ps1}",
+      "icon": { "id": "file-symlink-directory" },
+      "problemMatcher": [],
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "setup: Perform first-time setup",
+      "type": "shell",
+      "command": "scripts/Initialize-Repo.ps1",
+      "icon": { "id": "file-symlink-directory" },
+      "problemMatcher": []
+    },
+    {
+      "label": "setup: Remove *.rej",
+      "type": "shell",
+      "command": "Get-ChildItem -Recurse -Filter *.rej | Remove-Item",
+      "icon": { "id": "file-symlink-directory" },
+      "problemMatcher": []
+    },
+
+    // * -------------------------------------------------------------------------- * //
+    // * PRE-COMMIT * //
+
+    {
+      "label": "pre-commit",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; pre-commit",
+      "icon": { "id": "git-commit" },
+      "problemMatcher": []
+    },
+    {
+      "label": "pre-commit: all",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; pre-commit run --all-files",
+      "icon": { "id": "git-commit" },
+      "problemMatcher": []
+    },
+
+    // * -------------------------------------------------------------------------- * //
+    // * GIT * //
+
+    {
+      "label": "git: Rebase back to fork",
+      "type": "shell",
+      "command": "git rebase -i --fork-point main",
+      "icon": { "id": "git-branch" },
+      "problemMatcher": []
+    },
+
+    // * -------------------------------------------------------------------------- * //
+    // * OTHER TASKS * //
+
+    {
+      "label": "task: Generate changelog entry",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; python -m copier_python_tools add-change ${input:changeType}",
+      "icon": { "id": "request-changes" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: Show tree of packages requesting a dependency",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; pipdeptree --reverse --packages ${input:dependency}",
+      "icon": { "id": "versions" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: Run pytest with coverage",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; pytest --cov  --cov-config pyproject.toml --cov-report xml",
+      "icon": { "id": "check" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: Run ruff",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; ruff check .; ruff format .",
+      "icon": { "id": "check" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: sphinx-autobuild docs (preview)",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; sphinx-autobuild -T docs _site --ignore **/apidocs",
+      "icon": { "id": "book" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: profile this file",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; python -m cProfile -o .prof ${file}",
+      "icon": { "id": "graph-line" },
+      "problemMatcher": []
+    },
+    {
+      "label": "task: view profile results with snakeviz",
+      "type": "shell",
+      "command": ". scripts/Initialize-Shell.ps1; snakeviz .prof",
+      "icon": { "id": "graph-line" },
+      "problemMatcher": []
+    }
+  ]
+}

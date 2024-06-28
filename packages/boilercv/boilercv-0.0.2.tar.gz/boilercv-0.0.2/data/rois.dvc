@@ -1,0 +1,6 @@
+outs:
+- md5: 1008ab05cc564b0550ca9581de7cd46a.dir
+  size: 196348551
+  nfiles: 321
+  hash: md5
+  path: rois
