@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dedupe-variable-address
+Version: 1.0.0
+Summary: Address variable type for dedupe
+Home-page: https://github.com/datamade/dedupe-variables-address
+License: The MIT License: http://www.opensource.org/licenses/mit-license.php
+Description-Content-Type: text/markdown
+Requires-Dist: usaddress
+Requires-Dist: parseratorvariable>=1.0.0
+
+dedupe-variable-address
+=======================
+
+Provivde 'Address Variable Type' for dedupe
+
+Part of the [Dedupe.io](https://dedupe.io/) cloud service and open source toolset for de-duplicating and finding fuzzy matches in your data.
+
+[![Build Status](https://travis-ci.org/dedupeio/dedupe-variable-address.svg?branch=master)](https://travis-ci.org/dedupeio/dedupe-variable-address)
+[![Coverage Status](https://coveralls.io/repos/dedupeio/dedupe-variable-address/badge.png?branch=master)](https://coveralls.io/r/dedupeio/dedupe-variable-address?branch=master)
