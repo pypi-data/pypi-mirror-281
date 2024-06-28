@@ -1,0 +1,14 @@
+itk/TotalVariationPython.py,sha256=e4-qAaPxLkBn8manNTFknlZ_y2EmfeO3EXtKqo-ZapE,2256
+itk/_TotalVariationPython.pyd,sha256=HlsCsQZoiQBwwB-MmqwwbHK-9o2sqF5y3SfwypDkSbE,868352
+itk/__init_totalvariation__.py,sha256=W3weiqxxY3SDSxljFzltNzKwqYMi1nRk_L7uuOjd8yg,1402
+itk/itkProxTVImageFilterPython.py,sha256=fE3jM13VZ_4xVFj5je00yhLIlgkCddprbRXhnJGq7bQ,27187
+itk/Configuration/TotalVariationConfig.py,sha256=9e_K97e2apRaNrwXLOD3Cmhszi8hCRPnw7BVhBxMxJ4,935
+itk/Configuration/TotalVariation_snake_case.py,sha256=I52LIT3LtM35BX6rzvSiVqdD85f7h2cJSKSo8LJAcBU,51
+itk_totalvariation-1.0.1.dist-info/licenses/LICENSE,sha256=6N4ac5NFfpyIdot45rp5BiL777BAzkgZTCyw8bbU6f8,11562
+itk_totalvariation.libs/.load-order-itk_totalvariation-1.0.1,sha256=KPQ4liKDd3FKH5bk1FSwWY5X1xJ5X_7v2znxVTKFvlk,23
+itk_totalvariation.libs/msvcp140.dll,sha256=w73Hg-He0yrhxvTtZ4Hxa-fjesoGa3YjoH-4bk2rYrI,574952
+itk_totalvariation.libs/tbb12.dll,sha256=uAYeUFrGU4BfPGbeEDcO5SoBUd0xLQeYCBIUMYGAUwA,313344
+itk_totalvariation-1.0.1.dist-info/DELVEWHEEL,sha256=mKA1iZ4VnWIOJUG7F0WjeHK8tARr7_YmGJi8G1ewRFI,279
+itk_totalvariation-1.0.1.dist-info/METADATA,sha256=KkFZ4sUfd1ppHUFKGScpuSbTM7y_Bb3S5-dzrlRRewA,16386
+itk_totalvariation-1.0.1.dist-info/WHEEL,sha256=ZGqof_gNyiU0F9ZTzrw4zFIqyjwzlcLXZFe0-CwerKU,103
+itk_totalvariation-1.0.1.dist-info/RECORD,,
