@@ -1,0 +1,13 @@
+clamd
+plone.api
+Products.GenericSetup>=1.8.2
+setuptools
+z3c.jbot
+plone.app.registry
+Products.validation
+
+[test]
+plone.app.testing
+plone.testing>=7.0.2
+plone.app.contenttypes[test]
+Products.validation
