@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tm-easy
+Version: 0.0.7
+Summary: teachable machine easy
+Home-page: https://github.com/Yoon-JinSeok/tm-easy
+Author: yoonjinseok
+Author-email: insomang@hanmail.net
+Keywords: teachable,machine
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: keras
+Requires-Dist: opencv-python
+
