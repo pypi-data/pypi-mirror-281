@@ -1,0 +1,12 @@
+image: debian:bookworm
+job:
+  script:
+  - >
+    sh ${SPCD}
+    ${SPCD_SSH_KEY}
+    ${SPCD_SSH_HOSTS}
+
+  - spcd-list-environment
+  - spcd-clone-branch
+  - spcd-build-project
+  - spcd-browse-workspace

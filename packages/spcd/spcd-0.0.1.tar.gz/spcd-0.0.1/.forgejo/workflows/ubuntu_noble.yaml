@@ -1,0 +1,19 @@
+on: [push]
+jobs:
+  job:
+    container:
+      image: ubuntu:noble
+    steps:
+    - name: spcd
+      env:
+        SPCD_GIT_MAIN: ${{vars.SPCD_GIT_MAIN}}
+        SPCD_GIT_ROOT: ${{vars.SPCD_GIT_ROOT}}
+      run: >
+        ${{vars.SPCD}}
+        "${{secrets.SPCD_SSH_KEY}}"
+        "${{vars.SPCD_SSH_HOSTS}}"
+
+    - run: spcd-list-environment
+    - run: spcd-clone-branch
+    - run: spcd-build-project
+    - run: spcd-browse-workspace
