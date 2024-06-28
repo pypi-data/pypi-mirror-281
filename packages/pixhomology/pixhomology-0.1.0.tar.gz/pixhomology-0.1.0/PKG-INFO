@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pixhomology
+Version: 0.1.0
+Summary: PixHomology is an open-source software for image processing and analysis focused on persistent homology computation.
+Author: Riccardo Ceccaroni
+Author-email: riccardo.ceccaroni.95@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+PixHomology is an open-source software for image processing and analysis focused on persistent homology computation. It provides a set of tools and algorithms to explore the topological features of 2D images, enabling users to extract meaningful information about the underlying structures.
