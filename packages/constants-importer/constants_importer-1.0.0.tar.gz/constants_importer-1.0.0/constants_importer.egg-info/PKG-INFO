@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: constants-importer
+Version: 1.0.0
+Summary: A package for initialising the path to the Constants.py file in the repo, and then importing said constants
+Author: J J
+Author-email: 
