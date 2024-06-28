@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gcardenas_db/__init__.py
+gcardenas_db/carga_datos_efficient.py
+gcardenas_db.egg-info/PKG-INFO
+gcardenas_db.egg-info/SOURCES.txt
+gcardenas_db.egg-info/dependency_links.txt
+gcardenas_db.egg-info/top_level.txt
