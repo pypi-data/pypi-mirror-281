@@ -1,0 +1,9 @@
+README.md
+setup.py
+file_organizer_tool/__init__.py
+file_organizer_tool/organizer.py
+file_organizer_tool.egg-info/PKG-INFO
+file_organizer_tool.egg-info/SOURCES.txt
+file_organizer_tool.egg-info/dependency_links.txt
+file_organizer_tool.egg-info/entry_points.txt
+file_organizer_tool.egg-info/top_level.txt
