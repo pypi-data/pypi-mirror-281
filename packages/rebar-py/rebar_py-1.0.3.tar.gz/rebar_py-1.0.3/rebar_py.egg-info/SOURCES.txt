@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+rebar_py.egg-info/PKG-INFO
+rebar_py.egg-info/SOURCES.txt
+rebar_py.egg-info/dependency_links.txt
+rebar_py.egg-info/requires.txt
+rebar_py.egg-info/top_level.txt
