@@ -1,0 +1,6 @@
+openai
+pytesseract
+pdf2image
+pillow
+PyPDF2
+requests
