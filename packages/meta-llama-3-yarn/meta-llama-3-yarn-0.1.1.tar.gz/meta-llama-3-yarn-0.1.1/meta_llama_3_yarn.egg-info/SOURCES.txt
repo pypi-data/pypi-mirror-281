@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+meta_llama_3_yarn/__init__.py
+meta_llama_3_yarn/configuration_llama.py
+meta_llama_3_yarn/modeling_llama.py
+meta_llama_3_yarn.egg-info/PKG-INFO
+meta_llama_3_yarn.egg-info/SOURCES.txt
+meta_llama_3_yarn.egg-info/dependency_links.txt
+meta_llama_3_yarn.egg-info/requires.txt
+meta_llama_3_yarn.egg-info/top_level.txt

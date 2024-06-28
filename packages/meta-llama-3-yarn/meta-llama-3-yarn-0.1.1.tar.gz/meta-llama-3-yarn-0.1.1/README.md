@@ -1,0 +1,72 @@
+# meta-llama-3-yarn
+
+
+### Getting Started
+
+#### Install with pip
+
+```txt
+pip install meta-llama-3-yarn
+```
+
+#### Build from source
+
+You can also build and install meta-llama-3-yarn from source:
+
+```txt
+git clone https://github.com/MeetKai/meta-llama-3-yarn.git
+cd meta-llama-3-yarn
+pip install -e .
+```
+
+
+### Usage
+
+To use a Llama-3 model regardless whether it is a YaRN-scaled model:
+
+```python
+import torch
+from transformers import AutoTokenizer
+from meta_llama_3_yarn import LlamaForCausalLM
+
+model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = LlamaForCausalLM.from_pretrained(
+    model_name, device_map="auto", torch_dtype=torch.bfloat16
+)
+
+messages = [
+    {"role": "user", "content": "Write a piece of quicksort code in C++"}
+]
+input_tensor = tokenizer.apply_chat_template(messages, add_generation_prompt=True, return_tensors="pt")
+outputs = model.generate(input_tensor.to(model.device), max_new_tokens=100)
+
+result = tokenizer.decode(outputs[0][input_tensor.shape[1]:], skip_special_tokens=True)
+print(result)
+```
+
+To specifically scale a model using YaRN:
+
+```python
+import torch
+from transformers import AutoTokenizer
+from meta_llama_3_yarn import LlamaForCausalLM, LlamaConfig
+
+model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
+context_length = 32768
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+config = LlamaConfig.from_pretrained(model_name)
+config.rope_scaling = {"type": "yarn", "factor": context_length / config.max_position_embeddings}
+model = LlamaForCausalLM.from_pretrained(
+    model_name, config=config, device_map="auto", torch_dtype=torch.bfloat16
+)
+
+messages = [
+    {"role": "user", "content": "Write a piece of quicksort code in C++"}
+]
+input_tensor = tokenizer.apply_chat_template(messages, add_generation_prompt=True, return_tensors="pt")
+outputs = model.generate(input_tensor.to(model.device), max_new_tokens=100)
+
+result = tokenizer.decode(outputs[0][input_tensor.shape[1]:], skip_special_tokens=True)
+print(result)
+```
