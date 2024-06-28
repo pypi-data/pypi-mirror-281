@@ -1,0 +1,6 @@
+include LICENSE
+recursive-include docs/ *
+recursive-include cars/migrations *
+recursive-include cars/static *
+recursive-include cars/templates *
+recursive-include cars/management *
