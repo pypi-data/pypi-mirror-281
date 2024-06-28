@@ -1,0 +1,2 @@
+class Scad:
+    pass

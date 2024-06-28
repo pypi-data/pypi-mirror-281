@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: super_scad
+Version: 0.1.0
+Summary: An advanced Python application and library for generating 2D and 3D models in OpenSCAD
+Home-page: https://github.com/SuperSCAD/SuperSCAD
+License: MIT
+Keywords: OpenSCAD,SuperSCAD
+Author: P.R. Water
+Author-email: p.r.water@setbased.nl
+Requires-Python: >=3.10.0,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Classifier: Topic :: Software Development :: Code Generators
+Project-URL: Documentation, https://superscad.readthedocs.io/
+Project-URL: Repository, https://github.com/SuperSCAD/SuperSCAD
+Description-Content-Type: text/markdown
+
+# SuperSCAD
+
+An advanced Python application and library for generating 2D and 3D models in [OpenSCAD](https://openscad.org).
+
+# Links
+
+* [OpenSCAD SheetSheet](https://openscad.org/cheatsheet/index.html)
+
+# License
+
+This project is licensed under the terms of the [MIT license](LICENSE).
+
