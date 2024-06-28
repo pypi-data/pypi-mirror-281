@@ -1,0 +1,10 @@
+asyncio
+httpx[http2]
+
+[dev]
+build
+setuptools_scm
+flake8
+flake8-pyproject
+black
+isort
