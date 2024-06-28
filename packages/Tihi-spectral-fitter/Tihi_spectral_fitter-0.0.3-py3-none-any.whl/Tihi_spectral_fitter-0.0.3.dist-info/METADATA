@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Tihi_spectral_fitter
+Version: 0.0.3
+Summary: A peak identification and signal decomposition tools for chemical signals
+Author: Kyunghoon HAN
+Author-email: Kyunghoon Han <kyunghoon.h@gmail.com>
+Project-URL: Homepage, https://github.com/kyunghoon-han/Tihi_spectral_fitter
+Project-URL: Issues, https://github.com/kyunghoon-han/Tihi_spectral_fitter/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+![alt text](https://raw.githubusercontent.com/kyunghoon-han/Tihi_spectral_fitter/688758941fd63fb8998e23d9e3ef9c84c95aecbb/logo_small.png)
+
+# Peak finder GUI tool for chemical or biological signals
+
+## Installation  of the required libraries
+One simply needs to run the following to install the required libraries.
+```
+pip install -r requirements
+```
+If `pip` is not installed on your machine, you can run either
+```
+python get-pip.py
+```
+or
+```
+python -m ensurepip --upgrade
+```
+on your machine.
