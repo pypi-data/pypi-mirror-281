@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: fastnc
+Version: 1.1.13
+Summary: fastnc package
+Home-page: https://github.com/git-sunao/fastnc
+Author: Sunao Sugiyama, Rafael Heringer Gomes
+Author-email: sunaosugiyama@gmail.com
+Keywords: cosmology,large scale structure,three-point correlation function
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# fastnc
+fast computation of natural components from given bispectrum.
+
+Cite Sugiyama+2024 (in prep.)
+
+## Installation
+For now, you can install
+```
+python setup.py install
+```
+
+
+To be updated
+- pip
+- conda
+- manual
+
+## Get started
+Tutorial notebook is available at [tutorial.ipynb](docs/tutorial.ipynb).
+
+## Note on cache
+This package create cache. The directory is at ~/.fastnc by default.
+This can be changed by setting an environment variable `FASTNC_CACHE_DIR`. 
