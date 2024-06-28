@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pylsp-refactor"
+version = "0.1.0"
+description = "Refactoring tools for python-lsp-server"
+authors = ["Dmytro Selishchev <zibertscrem@gmail.com>"]
+repository = "https://github.com/venomlab/pylsp-refactor"
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.plugins."pylsp"]
+pylsp_refactor = "pylsp_refactor.plugin"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-lsp-server = "*"
+jedi = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
