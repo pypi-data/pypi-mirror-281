@@ -1,0 +1,7 @@
+torch
+transformers
+huggingface_hub>=0.23
+scikit-learn
+tqdm
+nltk
+datasketch
