@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: exouprf
+Version: 1.0.0
+Summary: Tools for Light Curve Fitting
+Home-page: https://github.com/radicamc/exoUPRF
+Author: Michael Radica
+Author-email: michael.radica@umontreal.ca
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
