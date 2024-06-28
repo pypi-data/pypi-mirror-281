@@ -1,0 +1,15 @@
+LICENSE,sha256=ORtkbSoSB05uDX4iSK4gzvKwOpIgWxZbk024R3OUr24,1068
+kaskade/__init__.py,sha256=vhnlAGAxmUX00WW82zchTowXXbNrNoDRdy3828T9Pak,707
+kaskade/admin.py,sha256=cBHA317-Z_cdC3RYsxwyybqAdxtfTyAhW9osdSjJIH4,14643
+kaskade/colors.py,sha256=MS1mWpiqUrMZEzsJfXvPFiHxgnQ9pc1dFfn9ruBQrJc,42
+kaskade/consumer.py,sha256=cHTQ3B_0ajGbiFtpRql97cKORIZFpUk07rmDB0NlbC4,5765
+kaskade/main.py,sha256=hGEA8020OvenV01lFSaP9TlpPpZkvWXbJpDPGB2q6iI,3349
+kaskade/models.py,sha256=uBtDsz6erLXK6omSAxZ39YyoocazxBZ833Vr5zOt3XA,9638
+kaskade/services.py,sha256=AQa-3oMnoL11Ny-UDxsWRL1KZ4CdDIt9-01iR7TNDFw,11090
+kaskade/styles.css,sha256=IhQPTtdzSu3RoWLrBxRp-fKNsgXTCCFXIgClto7otCQ,3065
+kaskade/unicodes.py,sha256=zgk1Hi4s-3MS8fgvt7nxW8JD0h7ogpdvYPyBewrFaIE,188
+kaskade-2.0.0.dist-info/LICENSE,sha256=ORtkbSoSB05uDX4iSK4gzvKwOpIgWxZbk024R3OUr24,1068
+kaskade-2.0.0.dist-info/METADATA,sha256=PH3B8u1dRjmXlhis2Jf-F5G7QVQ66Fq3LobJUjPTFQ4,4109
+kaskade-2.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+kaskade-2.0.0.dist-info/entry_points.txt,sha256=Yl3dh1NFP4cCc8Ed_gbASUHY4MkOBN4KnMrem5mWSVE,66
+kaskade-2.0.0.dist-info/RECORD,,
