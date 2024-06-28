@@ -1,0 +1,10 @@
+haystack_integrations/components/retrievers/opensearch/__init__.py,sha256=QsOnFVI6-UFPurvQATiwudLLVYxUxlPVbwgtveZAO2U,295
+haystack_integrations/components/retrievers/opensearch/bm25_retriever.py,sha256=KcuacBaTQVxkl9CBsucAttze-ezfOM6kjDVWKMnJPOw,6880
+haystack_integrations/components/retrievers/opensearch/embedding_retriever.py,sha256=QPwmJw7woFTBqdASXXv4FFYcfdDE-23csY5PBuRfrFw,5919
+haystack_integrations/document_stores/opensearch/__init__.py,sha256=dc7Q-78zM7JHHDfWcLP32bmeIQDLShPkU23DZ93MM1o,201
+haystack_integrations/document_stores/opensearch/document_store.py,sha256=4oaaANXSVEuvhFxYemLRDIRn84azcTWXlEkXsQpfSuM,21599
+haystack_integrations/document_stores/opensearch/filters.py,sha256=Fs1XG-9ZL-ttkG-CYebqTLRGmX18g78vMSbmwGS4VuU,9916
+opensearch_haystack-0.7.1.dist-info/METADATA,sha256=9QnNMtDChJlCCyZVRlYCq-zkXkgUmrsOJrZsiJEULCs,2108
+opensearch_haystack-0.7.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+opensearch_haystack-0.7.1.dist-info/licenses/LICENSE,sha256=_M2kulivnaiTHiW-5CRlZrPmH47tt04pBgAgeDvfYi4,11342
+opensearch_haystack-0.7.1.dist-info/RECORD,,
