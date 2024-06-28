@@ -1,0 +1,8 @@
+include README.md
+recursive-include SA_Framework *
+recursive-include SA_Framework/Framework_Common_Resources *.robot
+recursive-include SA_Framework/Custom_Library/*.py'
+recursive-include SA_Framework/CustomeKeywords/*.py
+recursive-include SA_Framework/HubConfiguration/*.robot
+recursive-include SA_Framework/VaultUtilities/*.robot
+recursive-include SA_Framework/VeevaWorkFlowPreReqAPIs/*.py
