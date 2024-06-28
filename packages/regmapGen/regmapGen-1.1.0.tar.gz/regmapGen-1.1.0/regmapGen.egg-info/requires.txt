@@ -1,0 +1,10 @@
+jinja2
+m2r2
+openpyxl
+pandoc
+python-docx
+pyyaml>=5.1
+sphinx
+sphinx_rtd_theme
+sphinxcontrib-wavedrom
+wavedrom

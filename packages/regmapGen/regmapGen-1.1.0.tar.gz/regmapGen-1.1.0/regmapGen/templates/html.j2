@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+
+  <link href="html_src/css/reset.css"  rel="stylesheet">
+  <link href="html_src/css/font.css"   rel="stylesheet" type="text/css">
+  <link href="html_src/css/style.css"  rel="stylesheet">
+  <script src="html_src/js/modernizr.js"></script>
+</head>
+<body id="top">
+  <nav id="regmapGen-address-map">
+    <a id="regmapGen-map-text" href="#top">Address Map</a>
+    <ul>
+      {% for key, block in rmap.items() %}
+      <li class="regmapGen-reg-block">
+        <a href="#0">{{block.name}} (0x{{block.offset}})&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <ul>
+          {% for key, reg in block.iter_items() %}
+          <li class="regmapGen-reg"><a href="#{{reg.name}}">{{reg.name}}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <header id="regmapGen-header">
+    <div id="regmapGen-header-text">{{title}}</div>
+  </header>
+  <main id="regmapGen-main-content">
+    {% for key, block in rmap.items() %}
+      {% for key, reg in block.iter_items() %}
+    <div>&nbsp;</div>
+    <hr class="divider" color=#ede8d6>
+    <div>&nbsp;</div>
+    <h3 id="{{reg.name}}" class="section">{{reg.name}}: {{block.offset | format_hex(reg.offset)}}</h3>
+    <div id="reg_desc">{{reg.description}}</div>
+    <div>&nbsp;</div>
+    <div id="attribute">Access: {{reg.access}}</div>
+    <table class="regmapGen-reg-table">
+      <thead>
+        <tr>
+          <th></th>
+          {% for idx in range(0, block.width) %}
+          <th>{{block.width-1-idx}}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>name</th>
+          {% for key, field in reg.iter_items() %}
+          {% if field.reserved %}
+          <td colspan="{{field.size}}" class="reserved-field">{{field.name}}</td>
+          {% else %}
+          <td colspan="{{field.size}}" class="used-field">{{field.name}}</td>
+          {% endif %}
+          {% endfor %}
+        </tr>
+        <tr>
+          <th>access</th>
+          {% for key, field in reg.iter_items() %}
+          {% if field.reserved %}
+          <td colspan="{{field.size}}" class="reserved-field">{{field.access}}</td>
+          {% else %}
+          <td colspan="{{field.size}}" class="used-field">{{field.access}}</td>
+          {% endif %}
+          {% endfor %}
+        </tr>
+        <tr>
+          <th>reset</th>
+          {% for idx in range(block.width-1, -1, -1) %}
+          <td>{{reg.reset | get_bit_reset(idx)}}</td>
+          {% endfor %}
+        </tr>
+      </tbody>
+    </table>
+    {% for key, field in reg.iter_items() %}
+    {% if loop.index % 2 == 1 %}
+      {% set field_class="field_even" %}
+    {% else %}
+      {% set field_class="field_odd" %}
+    {% endif %}
+    <div class={{ field_class }}>&nbsp;</div>
+    <h4 class={{ field_class }}>{{field.name}}</h4>
+    {% if field.size > 1 %}
+    <div id="attribute" class={{ field_class }}>Bits: [{{field.lsb_pos+field.size-1}}:{{field.lsb_pos}}]</div>
+    {% else %}
+    <div id="attribute" class={{ field_class }}>Bits: [{{field.lsb_pos}}]</div>
+    {% endif %}
+    <div id="attribute" class={{ field_class }}>Access: {{field.access}}</div>
+    <div id="field_desc" class={{ field_class }}>{{field.description}}</div>
+    <div class={{ field_class }}>&nbsp;</div>
+    {% endfor %}
+
+      {% endfor %}
+    {% endfor %}
+  </main>
+
+  
+  <script src="html_src/js/jquery.min.js"></script>
+  <script src="html_src/js/main.js"></script>
+</body>
+</html>
