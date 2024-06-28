@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: gearlang
+Version: 0.0.13
+Summary: Gear is a multi-target lalnguage and compiler with inline compilation instructions.
+Home-page: https://github.com/GearLang/gear
+License: MIT
+Keywords: Compiler,Transpiler,Optimization
+Author: Pacôme RUI-ETRILLARD
+Author-email: contact@neylz.dev
+Requires-Python: >=3.10.0,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: antlr4-tools (==0.2.1)
+Requires-Dist: poetry-dynamic-versioning (>=1.2.0,<2.0.0)
+Project-URL: Repository, https://github.com/GearLang/gear
+Description-Content-Type: text/markdown
+
+# Gear
+
+Gear is a logic based compiler for the Gear language. 
+
+
+## Installation
+
+```bash
+pip install gearlang
+```
+
+## Development
+
+First, make sure you have ``poetry`` installed and then build the project using the following command:
+```bash
+pip install poetry
+```
+
+Don't forget to add your Python installation's Scripts directory to your PATH if you haven't already. [Here](https://bobbyhadz.com/blog/python-the-script-is-installed-in-which-is-not-on-path) is a guide on how to do it.
+
+Then, you can build the project using:
+```bash
+make dev
+```
+You can then interact with the CLI using the following command:
+```bash
+poetry run gear <args>
+```
+
+To update ``pyproject.toml`` after adding a new dependency, use the following command:
+```bash	
+poetry lock
+```
+
+### Compiling Grammar
+
+```bash
+./scripts/compile-antlr.bat
+```
+
+
+## Troubleshooting
+
+If the CLI is not working, make sure that the Scripts directory of your Python installation is in your PATH. [Here](https://bobbyhadz.com/blog/python-the-script-is-installed-in-which-is-not-on-path) is a guide on how to do it.
+
+---
+License - [MIT](./LICENSE)
