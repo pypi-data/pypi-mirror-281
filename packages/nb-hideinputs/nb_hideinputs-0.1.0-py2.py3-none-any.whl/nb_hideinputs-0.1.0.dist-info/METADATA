@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nb_hideinputs
+Version: 0.1.0
+Summary: A simple exporter for nbconvert (>= 7.0.0) that hides all input cells
+Author-email: Connor Ferster <connor@structuralpython.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: nbconvert >= 7.0.0
+Requires-Dist: pytest ; extra == "test"
+Project-URL: Home, https://github.com/connorferster/nb_hideinputs
+Provides-Extra: test
+
+# nb_hideinputs
+
+A module for creating new exporters in the JupyterLab export menu to hide input (code) cells.
+
