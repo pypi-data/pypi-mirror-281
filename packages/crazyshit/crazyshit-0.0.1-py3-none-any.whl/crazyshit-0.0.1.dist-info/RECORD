@@ -1,0 +1,15 @@
+crazyshit/__init__.py,sha256=-vYuxlUvPOgFk0W-RZr24qxvQpESr64DbkQt2CNg6qQ,93
+crazyshit/client.py,sha256=1i4AQY0uwInDR4SkiThL5y1-LuCh2smLJi_c88ueUIQ,6593
+crazyshit/filters.py,sha256=ACfxB3n4O61OgGWdUsWqJzq7GeF8SzjdQIVbLw8AxQQ,254
+crazyshit/handlers/__init__.py,sha256=FYs0f3QZ7W5PjCdWQjEJ--maGDY9RDJzvaszw7ICDsk,77
+crazyshit/handlers/on_message.py,sha256=DQbh9uIBaw9VNUjTvWwF8aIXuZCV7vCHhUIAZ1b4yXc,353
+crazyshit/methods/__init__.py,sha256=c-Vo3bBpDTO7kXk7PX48_5G7MAyog_zSLzp9IIM09LU,175
+crazyshit/methods/esc.py,sha256=5gBcVaXQ0HfNoawxY8D_qBNMq7_F6vIedFBLxhj38W8,330
+crazyshit/methods/get_last_message.py,sha256=umnnCyodb3WZFrkVaAtl7KRLpdxkvXGU2ZlEnhM8TxQ,1258
+crazyshit/methods/send_message.py,sha256=hXnv1XXicXo3fs4KV1i4sEDPxOijbAn3KfX7rhGsONs,981
+crazyshit/types/update.py,sha256=iAg135oKbd8CPXEWSxhCSSmIo-r9gU7nFQJSQZz1Cas,1290
+crazyshit-0.0.1.dist-info/LICENSE,sha256=rw4uvYWE--tPbcvFBXABpDzaCSWPwOxcW2D5opWKgn8,1066
+crazyshit-0.0.1.dist-info/METADATA,sha256=zNqsYIeAvUC4dT3GBmA5j_2Q-CxLi0fnqqIv045maC8,1380
+crazyshit-0.0.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+crazyshit-0.0.1.dist-info/top_level.txt,sha256=klTlc-ve2US8W6CtpzPU1hmnG7BG5UdNRQPnxOZApCQ,10
+crazyshit-0.0.1.dist-info/RECORD,,
