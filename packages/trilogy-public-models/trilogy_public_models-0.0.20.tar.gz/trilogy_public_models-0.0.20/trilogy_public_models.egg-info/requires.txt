@@ -1,0 +1,4 @@
+pytrilogy
+google-auth
+google-cloud-bigquery
+sqlalchemy-bigquery
