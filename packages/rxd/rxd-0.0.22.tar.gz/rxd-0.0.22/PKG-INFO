@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: rxd
+Version: 0.0.22
+Summary: A reactive application manager
+Home-page: https://github.com/huyng/rxd
+Author: Huy Nguyen
+Author-email: 121183+huyng@users.noreply.github.com
+Description-Content-Type: text/markdown
+Requires-Dist: Flask
+Requires-Dist: Click
+Requires-Dist: tabulate
+Requires-Dist: pydantic
