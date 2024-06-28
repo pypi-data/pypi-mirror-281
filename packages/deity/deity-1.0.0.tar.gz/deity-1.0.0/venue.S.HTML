@@ -1,0 +1,95 @@
+
+
+
+<pre>
+
+	<h1>deity</h1>
+		# neurons
+	
+	
+	<h2>summary</h2>
+		
+		#
+		#	⚠️ ⚠️ ⚠️ ⚠️
+		#
+		#		Make sure that none of the stages that "deity"
+		#		utilizes rely on "deity".
+		#
+		#		For the sake of sanity, please keep the "reliability, testing, etc."
+		#		structure as a "tree, hierarchy, etc." etc. with no coodependencies.
+		#
+	
+	<h2>on</h2>
+		<h3>session 1</h3>
+			docker compose up -d; docker exec -it deity.1 bash;
+			. /habitat/_controls/build_1.sh
+			
+		<h3>session 2</h3>	
+			docker exec -it deity.2 bash;
+			. /habitat/_controls/build_2.sh
+			
+	<h2>off</h2>
+		docker container stop deity.1; docker container remove deity.1;
+
+
+	<h2>find and replace</h2>
+		#
+		#	1. need to build the "modules_pip"
+		#
+		#
+		
+		#
+		#
+		#	2. status check
+		#
+		python3 /habitat/venues/stages/deity/_status/status.proc.py
+		
+
+	<h2>git</h2>
+		git push --set-upstream git@gitlab.com:status600/climates/deity.git performance
+
+	
+	
+	<h2>important</h2>
+		python3 /habitat/venues/warehouse/0.7.1_various_simultaneous/start.proc.py
+		
+		
+	<h2>publishing</h2>
+
+		#
+		#	licenses
+		#
+		python3 -m venv /deity/venues/warehouse/license_venv
+		source /deity/venues/warehouse/license_venv/bin/activate
+
+		
+		#
+		#	statuses
+		#
+		python3 /habitat/venues/stages/deity/_status/status.proc.py
+		
+		#
+		#	git push
+		#
+		#		if Circle CI is successful, then publish
+		#
+		
+		#
+		#	increase version
+		#
+		
+		#
+		#	poetry auth
+		#
+		pip install poetry
+		(pip install poetry && cd /habitat && rm -rf dist && poetry build --format sdist --verbose && chmod -R 777 /habitat)
+		poetry publish --verbose;
+		
+
+	<h2>important</h2>
+		poetry show --tree
+
+
+	
+
+</pre>
