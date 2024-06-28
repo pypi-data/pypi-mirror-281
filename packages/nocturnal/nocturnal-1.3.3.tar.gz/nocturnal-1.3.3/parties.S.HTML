@@ -1,0 +1,43 @@
+
+
+
+<pre>
+	<h1>nocturnal</h1>
+
+
+	<h2>on</h2>
+		<h3>sesssion 1</h3>
+			docker compose up -d; sleep 5; docker exec -it nocturnal.1 bash
+			. /habitat/_controls/build_1.sh
+		
+		<h3>sesssion 2</h3>
+			docker exec -it nocturnal.1 bash; 
+			. /habitat/_controls/build_2.sh
+	
+	<h2>off</h2>
+		docker container stop nocturnal.1; docker container rm nocturnal.1; 
+
+	<h2>status</h2>
+		cd /habitat/parties/nocturnal/_status/
+	
+		python3 /habitat/parties/nocturnal/_status/status.proc.py
+
+
+	<h2>publishing</h2>
+		python3 /habitat/parties/nocturnal/_status/status.proc.py
+		
+		git add --all; git commit -m "save"; git tag 1.3.3
+		
+		(pip install poetry && cd /habitat && rm -rf dist && poetry build --format sdist --verbose && chmod -R 777 /habitat)
+		
+		poetry publish --verbose
+		
+		du -sh /habitat/dist
+		
+	<h2>important</h2>
+		@ keys
+			@ enzymes
+
+
+
+</pre>
