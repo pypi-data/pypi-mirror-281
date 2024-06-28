@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: Super-SCAD-Logo
+Version: 0.1.0
+Summary: Generates the logo of SuperSCAD
+Home-page: https://github.com/SuperSCAD/Logo
+License: MIT
+Keywords: OpenSCAD,SuperSCAD,Logo
+Author: P.R. Water
+Author-email: p.r.water@setbased.nl
+Requires-Python: >=3.10.0,<4.0.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Graphics :: 3D Modeling
+Classifier: Topic :: Software Development :: Code Generators
+Requires-Dist: super-scad (>=0.1.0,<0.2.0)
+Project-URL: Repository, https://github.com/SuperSCAD/Logo
+Description-Content-Type: text/markdown
+
+# SuperSCAD's Logo
+
+Any good language is defined by itself. So, the logo of SuperSCAD is generated in SuperSCAD.
+
+![logo](SuperSCAD.logo.png "SuperSCAD")
+
+# License
+
+This project is licensed under the terms of the [MIT license](LICENSE).
+
