@@ -1,0 +1,11 @@
+NovitecCameraAPIWinPy/NovitecCameraAPIWinPy.py,sha256=RkofJoC3FM3So4VUlH0EMppzI30Jcxny1etkRxoXw60,21439
+NovitecCameraAPIWinPy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+NovitecCameraAPIWinPy/_internal/NOVITECCAMERAAPIC.dll,sha256=iVCWAtq8HUn_EisLqtbCNZYXtUxCyuVNtyLDuXR3wi8,25600
+NovitecCameraAPIWinPy/_internal/NovitecCameraAPI.dll,sha256=pAkKbPXYPjKo5SLVaXkpxC1vXaAO4eE9qwRueNWCuLM,1225216
+NovitecCameraAPIWinPy/_internal/libcrypto-1_1-x64.dll,sha256=EwcdxyqXzzyE-nVHFMmfO5HzqnhDk5lEAb7Ap4ac21E,3412992
+NovitecCameraAPIWinPy/_internal/libcurl.dll,sha256=ZaB6JG6YIsoDQBMjCKhaWJWzkHUsJq8T8WsIuhiY7aU,525824
+NovitecCameraAPIWinPy/_internal/libssl-1_1-x64.dll,sha256=a6g3zouv4rrVlRZPFLw-hZBeXH_oigoO-5miup8CX3I,686080
+NovitecCameraAPIWinPy-0.0.5.dist-info/METADATA,sha256=T9Z5t0LheWCZfrp8zB1yXCCxImGByg9UArZESWT1y9Q,3179
+NovitecCameraAPIWinPy-0.0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+NovitecCameraAPIWinPy-0.0.5.dist-info/top_level.txt,sha256=KiB-nRQ3DXvzJyKHy_EGv8LEHbCOT4xQnGo2PqlpfdU,22
+NovitecCameraAPIWinPy-0.0.5.dist-info/RECORD,,
