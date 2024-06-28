@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: scraper-bot
+Version: 0.1.0
+Summary: A telegram bot to stay tuned on real estate ads
+Home-page: https://github.com/RobertoBochet/bot-scraper.git
+License: GPL-3.0-or-later
+Author: Roberto Bochet
+Author-email: r@robertobochet.me
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: apprise (>=1.8.0,<2.0.0)
+Requires-Dist: ischedule (>=1.2.2,<1.3.0)
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: playwright (>=1.44.0,<2.0.0)
+Requires-Dist: playwright-stealth (>=1.0.6,<2.0.0)
+Requires-Dist: pydantic (>=2.7.4,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.3.4,<3.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: redis (>=4.6.0,<5.0.0)
+Requires-Dist: termcolor (>=2.4.0,<3.0.0)
+Requires-Dist: urllib3 (>=2.2.2,<3.0.0)
+Project-URL: Repository, https://github.com/RobertoBochet/bot-scraper.git
+Description-Content-Type: text/markdown
+
+# Scraper Bot
+
+[![GitHub](https://img.shields.io/github/license/RobertoBochet/scraper-bot?style=flat-square)](https://github.com/RobertoBochet/scraper-bot)
+[![GitHub Version](https://img.shields.io/github/v/tag/RobertoBochet/scraper-bot?label=version&style=flat-square)](https://github.com/RobertoBochet/scraper-bot)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/RobertoBochet/scraper-bot/test-code.yml?label=test%20code&style=flat-square)](https://github.com/RobertoBochet/scraper-bot)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/RobertoBochet/scraper-bot/build-container.yml?label=build%20container&style=flat-square)](https://github.com/RobertoBochet/scraper-bot/pkgs/container/scraper-bot)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/RobertoBochet/scraper-bot?style=flat-square)](https://www.codefactor.io/repository/github/robertobochet/scraper-bot)
+
+This is a bot thought to do periodical scraping of ads from commercial websites.
+
+Found a new ad the bot will send it to you exploiting [Apprise](https://github.com/caronc/apprise) channels
+
+## Deploy
+
+The CI builds the container for each version and, it puts it on the public [GitHub registry](https://ghcr.io/robertobochet/scraper-bot)
+```
+ghcr.io/robertobochet/scraper-bot
+```
+
+As alternative, you can build by yourself the python package or the container
+
+### Fast deploy (docker-compose)
+
+1. [Create a telegram bot](https://core.telegram.org/bots#3-how-do-i-create-a-bot) and retrieve its token
+2. Download `config.example.yaml` and rename it to `config.yaml`
+3. Change the configuration follow the [guidelines](#configuration)
+4. Download `docker-compose.yaml`
+5. Start the scraper with `docker-compose`
+    ```bash
+    docker-compose up
+    ```
+6. Wait that the bot does its work!
+
+## Configuration
+
+By default the bot looks for a configuration file in the following path `./config.y(a)ml` and `/etc/scaraper-bot/config.y(a)ml`. You cna override this behavior passing via command line the `--config` argument followed by the config file path
+```bash
+scraper_bot --config /path/to/scraper-bot-config.yaml
+```
+
+The configuration file has to satisfy the pydantic model which you can find in `scraper_bot.settings`.
+Furthermore you can get the config json schema from command line with `--config-schema` argument
+```bash
+scraper_bot --config-schema
+```
+
+You can also find a configuration example in `config.example.yaml`.
+
