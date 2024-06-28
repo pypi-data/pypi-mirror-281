@@ -1,0 +1,8 @@
+netCDF4
+Jinja2
+pytest
+xarray
+zarr
+dask
+mkdocs
+mkdocs-material
