@@ -1,0 +1,4 @@
+Pillow
+numpy
+scipy
+typing_extensions
