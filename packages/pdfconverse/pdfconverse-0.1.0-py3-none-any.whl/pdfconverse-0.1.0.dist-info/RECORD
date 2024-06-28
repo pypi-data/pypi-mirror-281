@@ -1,0 +1,17 @@
+pdfconverse/__about__.py,sha256=-cmhB7FN10QfynhKycqVtIyFwi0iDeoOAmAUbGD60EE,127
+pdfconverse/__init__.py,sha256=KzArBH16Nz2BfzdITkadxCkhx9RMrZYvTUA88WsPuHA,105
+pdfconverse/gemini.py,sha256=RPQV5bj2hJq0z-dEHaw1aXr1hAiyZQeQkxyvejrOazo,707
+pdfconverse/mock_model.py,sha256=OF7h5exAPk635QbuY4Ou4CWVxmL2BkHKRIjbycY_q94,185
+pdfconverse/page.py,sha256=PU0Z4HSQng0WyAjTwYLKwOvvdU7vc6TXPp0W8vsWLX4,1034
+pdfconverse/pdfconverse.py,sha256=BwIYcq4p1oNRVs090vPQANr1srCHW_XJutjznDdEqpg,1145
+pdfconverse/prompts.py,sha256=rFPMae-BcR9GaBQH8GzE6WkLmdpLnPp3yhPDo4h7CLQ,218
+pdfconverse/validators.py,sha256=UvFrlJodMXqfkQkPUDFwfkuvhURyusDY5eVI8l3Dasg,2133
+pdfconverse/formats/gemini_expected_output.py,sha256=0gRPJedN-G6xFPRPGX2sjbGWcD5WPMlfUM1e7EKYhnU,1121
+pdfconverse/interfaces/__init__.py,sha256=KzArBH16Nz2BfzdITkadxCkhx9RMrZYvTUA88WsPuHA,105
+pdfconverse/interfaces/model.py,sha256=AwlJzTeM_kQxwgkGnPWe0Ylv0oz7vt156Rq2rnrlLkA,189
+pdfconverse/models/__init__.py,sha256=KzArBH16Nz2BfzdITkadxCkhx9RMrZYvTUA88WsPuHA,105
+pdfconverse/samples/gemini_test_file.pdf,sha256=wXCFDp0-cyNnngjclt5Mthp-utZ7CsVTidJ-ssJyD5E,21693
+pdfconverse-0.1.0.dist-info/METADATA,sha256=UtJTxyi2YxFihTFH1Pw31znPXzdtsuEuzIafSREpAzk,3441
+pdfconverse-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pdfconverse-0.1.0.dist-info/licenses/LICENSE.txt,sha256=BYc7lmpCwTsXxceF46RO49bAR-xIhsKb49xE5as0xds,1097
+pdfconverse-0.1.0.dist-info/RECORD,,
