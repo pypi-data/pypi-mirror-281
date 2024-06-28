@@ -1,0 +1,43 @@
+
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "nocturnal"
+version = "1.6.0"
+description = "For when your slice of crust if facing away from the motor."
+authors = []
+readme = "parties/nocturnal/readme.md"
+packages = [
+    { include = "nocturnal", from = "parties" }
+]
+include = [ "*.HTML", "*.html", "*.JSON", "*.json" ]
+license = "AGPL-3.0-only"
+keywords = []
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+biotech = "^1.0.3"
+rich = "^13.7.1"
+pydash = "^8.0.1"
+cryptography = "^42.0.8"
+rsa = "^4.9"
+ships = "^1.8.0"
+fs = "^2.4.16"
+pycryptodome = "^3.20.0"
+
+[tool.poetry.scripts]
+nocturnal = "nocturnal:clique"
+
+# [tool.poetry.urls]
+# GitLab = ""
+
+
+
