@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkvioneta_agro_frontend=self.webpackChunkvioneta_agro_frontend||[]).push([[86245],{79902:function(t,r,a){var o=a(58953),e=a(32565),n=a(82374),c=a(83841),f=a(73916).trim,i=a(70410),s=n("".charAt),u=o.parseFloat,l=o.Symbol,p=l&&l.iterator,b=1/u(i+"-0")!=-1/0||p&&!e((function(){u(Object(p))}));t.exports=b?function(t){var r=f(c(t)),a=u(r);return 0===a&&"-"===s(r,0)?-0:a}:u},86245:function(t,r,a){var o=a(87568),e=a(79902);o({global:!0,forced:parseFloat!==e},{parseFloat:e})}}]);
+//# sourceMappingURL=86245.5cyBhM2DadU.js.map
