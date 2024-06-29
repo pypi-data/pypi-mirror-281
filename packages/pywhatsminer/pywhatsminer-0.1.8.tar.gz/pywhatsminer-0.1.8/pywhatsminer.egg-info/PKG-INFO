@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pywhatsminer
+Version: 0.1.8
+Summary: Unofficial Python based Api-Client (Wrapper) for MicroBT Whatsminer ASIC`s
+Home-page: https://github.com/DAAMCS/PyWhatsminer
+Download-URL: https://github.com/DAAMCS/PyWhatsminer
+Author: DAAMCS | Forked from Satoshi Anonymoto
+Author-email: me@daamcs.ru
+License: MIT
+Keywords: whatsminer,microbt,api,btc,asic
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: passlib
+Requires-Dist: pycryptodome
+Requires-Dist: dataclasses-json
+Requires-Dist: Deprecated
+
+See full README at https://github.com/DAAMCS/PyWhatsminer

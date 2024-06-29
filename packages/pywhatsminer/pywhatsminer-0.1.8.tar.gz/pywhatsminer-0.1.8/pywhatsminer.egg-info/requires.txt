@@ -1,0 +1,4 @@
+passlib
+pycryptodome
+dataclasses-json
+Deprecated
