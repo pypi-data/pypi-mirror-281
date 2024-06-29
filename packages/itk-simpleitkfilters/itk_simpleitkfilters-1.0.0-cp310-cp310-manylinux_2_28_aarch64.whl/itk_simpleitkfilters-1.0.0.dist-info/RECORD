@@ -1,0 +1,15 @@
+itk_simpleitkfilters.libs/libtbb-e046f41a.so.12.9,sha256=VsCTHOeMiuITalkapwfZlLuploLjggiR7Ytz_bvBQ_M,3876241
+itk_simpleitkfilters-1.0.0.dist-info/LICENSE,sha256=qsc7MUj20dcRHbyjIJn2jSbGRMaBOuHk8F9leaomY_4,11360
+itk_simpleitkfilters-1.0.0.dist-info/WHEEL,sha256=zNOv8cmoFMjnPz6mx3kF9k446UFaF0bGqS-snM71WhQ,109
+itk_simpleitkfilters-1.0.0.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_simpleitkfilters-1.0.0.dist-info/RECORD,,
+itk_simpleitkfilters-1.0.0.dist-info/METADATA,sha256=9VMQxfSbVoGMg9QERpy1y804Due9Y3av6mcD2RmsjDo,1696
+itk/_SimpleITKFiltersPython.so,sha256=P6VZA_LGpmq24T34RDdbhyLYMJDtPGLFbMhSISnd4Rc,11009785
+itk/itkHessianImageFilterPython.py,sha256=fFkknVLuLQZ21VYCm8l4lUsqOMa1aBGPBCEof_pUYTY,45314
+itk/itkDICOMOrientImageFilterPython.py,sha256=u2NJZN6W5xpHN14g-fChp4wsajY2CN-BfyUodTrPq2E,69994
+itk/itkDICOMOrientationPython.py,sha256=qfEBdYGowazyhmXIrB9U2aK56oYmazczQTdoFGH5yEE,11791
+itk/SimpleITKFiltersPython.py,sha256=cJBHi-R4oWo5VNRrWU-aM75j6eexPW8zdVaf2g4JuNc,2343
+itk/itkNPasteImageFilterPython.py,sha256=W4oC4ePmWVSGef_DaJH8DwJ5GHEGColQFXpImLVow1Y,283674
+itk/itkObjectnessImageFilterPython.py,sha256=iZK0AiLNJ4QaWh5PMvHPTQ9Psh06TEROvNFyi3q2waY,40709
+itk/Configuration/SimpleITKFiltersConfig.py,sha256=XxyRRliSllQiYcurolYyw8UfarvbXESZIhfIUQAC_c8,10777
+itk/Configuration/SimpleITKFilters_snake_case.py,sha256=vy0wmLeU3SnKTGW0fgNTxyrW0_k1HXTUgNoCN-CaMKk,138
