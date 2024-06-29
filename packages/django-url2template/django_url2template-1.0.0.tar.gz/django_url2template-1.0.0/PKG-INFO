@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: django-url2template
+Version: 1.0.0
+Summary: Django url2template map
+Keywords: django
+Classifier: Framework :: Django
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: Django
+Requires-Dist: setuptools
+
+### Installation
+```bash
+$ pip install django-url2template
+```
+
+#### `settings.py`
+```python
+INSTALLED_APPS+=['django_url2template']
+```
+
+#### `migrate`
+```bash
+$ python manage.py migrate
+```
+
+#### `views.py`
+```python
+from django.shortcuts import render
+from django_url2template.utils import get_template_name
+
+template_name = get_template_name(request.path[1:])
+if template_name:
+    return render(request, template_name, {})
+### Models
+model|table|columns/fields
+-|-|-
+`Map`|`django_url2template_map`|id,url,template_name
+
