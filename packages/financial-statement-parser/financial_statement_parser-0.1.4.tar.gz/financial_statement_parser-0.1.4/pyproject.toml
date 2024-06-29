@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "financial-statement-parser"
+version = "0.1.4"
+description = ""
+authors = ["Xavier Armitage <xavier.armitage@databricks.com>"]
+readme = "README.md"
+packages = [{ include = "financial_statement_parser", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytz = "^2024.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+flake8 = "^7.1.0"
+flake8-pyproject = "^1.2.3"
+black = "^24.4.2"
+isort = "^5.13.2"
+mypy = "^1.10.1"
+types-pytz = "^2024.1.0.20240417"
+
+[tool.poetry.group.lint]
+optional = true
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.1.0"
+flake8-pyproject = "^1.2.3"
+black = "^24.4.2"
+isort = "^5.13.2"
+mypy = "^1.10.1"
+types-pytz = "^2024.1.0.20240417"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+
+[tool.poetry.scripts]
+fs-parser = "financial_statement_parser.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+per-file-ignores = ['__init__.py:F401']
+max-line-length = 100
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 100
