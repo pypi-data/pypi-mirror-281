@@ -1,0 +1,19 @@
+numpy
+six>=1.13
+
+[controller]
+traits
+
+[crypto]
+pycrypto
+
+[doc]
+sphinx>=1.0
+
+[subprocess]
+
+[subprocess:python_version < "3.2"]
+subprocess32
+
+[test_utils]
+argparse
