@@ -1,0 +1,13 @@
+asgimiddleware-0.1.3.dist-info/METADATA,sha256=EXwS1a0fllVkBKzRdROjKjMUuxDyd3HvSoB-4mqQnAk,4215
+asgimiddleware-0.1.3.dist-info/WHEEL,sha256=SOP-4bEE0jbVaCHQGVvF08uWxk5rcSsfEybvoQVHlD8,90
+asgimiddleware-0.1.3.dist-info/licenses/LICENSE.txt,sha256=E1j0R8x5FapDhiDwoLWK8sL5XA3Sifu2s11fDU9izPM,1057
+asgimiddlewares/__init__.py,sha256=1ltkB-g1aSmHOdlJk3-4nZtUqeJaeHkoJNxxRSi8q9A,1294
+asgimiddlewares/custom_exception.py,sha256=hqfurj1Wb03sGZVHyJH7777UOHP2ox_Vn_eKAWaLASQ,1193
+asgimiddlewares/custom_header.py,sha256=EktxW1NviomueCTopIA3gjzOdRwCUs2z70mBGJtKdJ8,1799
+asgimiddlewares/extended_logging.py,sha256=Mc7qeYtyQGWhxZfNqlNZdAVhk_aEjh55DPbuVY9EhiI,3939
+asgimiddlewares/path_id.py,sha256=1aYKs5oouBxF6Ps9T-th48HJSs9_QHrEiMud_0G64Lc,1429
+asgimiddlewares/prometheus.py,sha256=9RLQevdHYyYDhaUIlAZIvhcybB3P_4UYbreyFw-wRNM,4973
+asgimiddlewares/request_time.py,sha256=dFWWHm14FbyHb5fW2CqPK4XO4eL4gGLTs5EeWA97YsY,835
+asgimiddlewares/routing.py,sha256=NvefNHWrf_dv2FVyCUrMOGnIpSjNqEKIMOeeUDbfBzo,2868
+asgimiddlewares/utils.py,sha256=rkgYr2A8u33MsJ__73IRN-ku9EcB0ofvPwDD1Cq4Eyw,1520
+asgimiddleware-0.1.3.dist-info/RECORD,,
