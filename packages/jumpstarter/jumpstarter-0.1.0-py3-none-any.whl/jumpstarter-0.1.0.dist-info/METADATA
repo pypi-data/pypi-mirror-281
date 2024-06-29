@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: jumpstarter
+Version: 0.1.0
+Summary: 
+Author: Miguel Angel Ajo Pelayo
+Author-email: majopela@redhat.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: jumpstarter-protocol (>=0.1.0,<0.2.0)
+Requires-Dist: pytest (>=8.2.2,<9.0.0)
+Description-Content-Type: text/markdown
+
+# jumpstarter-python
+
+This project provides both a library, and a command line client to interact with the
+Jumpstarter resources and services.
+
+For more details see the following documents:
+
+* [Glossary](docs/glossary.md)
+* [Usage](docs/usage.md)
+* [Architecture](docs/architecture.md)
