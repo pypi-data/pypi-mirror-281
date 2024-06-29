@@ -1,0 +1,50 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "device_class": "\u88dd\u7f6e\u985e\u5225",
+                    "dry_tolerance": "\u8010\u65f1\u6027",
+                    "humidifier": "\u958b\u95dc",
+                    "min_cycle_duration": "\u6700\u5c0f\u9031\u671f\u6301\u7e8c\u6642\u9593",
+                    "name": "\u540d\u7a31",
+                    "target_sensor": "\u6fd5\u5ea6\u611f\u6e2c\u5668",
+                    "wet_tolerance": "\u8010\u6fd5\u6027"
+                },
+                "data_description": {
+                    "humidifier": "\u52a0\u6fd5\u5668\u6216\u9664\u6fd5\u5668\u958b\u95dc\uff1b\u5fc5\u9808\u70ba\u5207\u63db\u88dd\u7f6e\u3002",
+                    "target_sensor": "\u5177\u76ee\u524d\u6fd5\u5ea6\u611f\u6e2c\u5668\u3002"
+                },
+                "description": "\u65b0\u589e\u4e00\u500b\u53ef\u4ee5\u901a\u904e\u958b\u95dc\u8207\u611f\u6e2c\u5668\u63a7\u5236\u6fd5\u5ea6\u7684\u5be6\u9ad4\u3002",
+                "title": "\u65b0\u589e\u901a\u7528\u6046\u6fd5\u5668"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "device_class": "\u88dd\u7f6e\u985e\u5225",
+                    "dry_tolerance": "\u8010\u65f1\u6027",
+                    "humidifier": "\u958b\u95dc",
+                    "min_cycle_duration": "\u6700\u5c0f\u9031\u671f\u6301\u7e8c\u6642\u9593",
+                    "target_sensor": "\u6fd5\u5ea6\u611f\u6e2c\u5668",
+                    "wet_tolerance": "\u8010\u6fd5\u6027"
+                },
+                "data_description": {
+                    "humidifier": "\u52a0\u6fd5\u5668\u6216\u9664\u6fd5\u5668\u958b\u95dc\uff1b\u5fc5\u9808\u70ba\u5207\u63db\u88dd\u7f6e\u3002",
+                    "target_sensor": "\u5177\u76ee\u524d\u6fd5\u5ea6\u611f\u6e2c\u5668\u3002"
+                }
+            }
+        }
+    },
+    "selector": {
+        "device_class": {
+            "options": {
+                "dehumidifier": "\u9664\u6fd5\u6a5f",
+                "humidifier": "\u52a0\u6fd5\u5668"
+            }
+        }
+    },
+    "title": "\u901a\u7528\u6046\u6fd5\u5668"
+}

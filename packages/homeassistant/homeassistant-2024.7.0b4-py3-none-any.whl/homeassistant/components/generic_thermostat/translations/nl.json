@@ -1,0 +1,47 @@
+{
+    "config": {
+        "step": {
+            "presets": {
+                "data": {
+                    "activity_temp": "Activiteit",
+                    "away_temp": "Afwezig",
+                    "comfort_temp": "Comfort",
+                    "eco_temp": "Eco",
+                    "home_temp": "Thuis",
+                    "sleep_temp": "Slapen"
+                }
+            },
+            "user": {
+                "data": {
+                    "ac_mode": "Koelmodus",
+                    "name": "Naam"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "ac_mode": "Koelmodus"
+                }
+            },
+            "presets": {
+                "data": {
+                    "activity_temp": "Activiteit",
+                    "away_temp": "Afwezig",
+                    "comfort_temp": "Comfort",
+                    "eco_temp": "Eco",
+                    "home_temp": "Thuis",
+                    "sleep_temp": "Slapen"
+                }
+            }
+        }
+    },
+    "services": {
+        "reload": {
+            "description": "Herlaadt generieke thermostaten vanuit de YAML configuratie.",
+            "name": "Herladen"
+        }
+    }
+}
