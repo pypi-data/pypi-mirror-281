@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mysql_wrap"
+version = "1.1.0"
+dependencies = ["pandas", "mysql-connector-python"]
+authors = [
+  { name="emiliano lupo", email="emiliano.lupo@henn.com" },
+]
+description = "Simple wrapper for common mysql queries, including utilities for pandas DataFrames"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+]
+keywords = ["mysql", "pandas"]
+
+[project.urls]
+"Homepage" = "https://github.com/henn-dt/MySQL-wrap"
+"Bug Tracker" = "https://github.com/henn-dt/MySQL-wrap/issues"
+
+
