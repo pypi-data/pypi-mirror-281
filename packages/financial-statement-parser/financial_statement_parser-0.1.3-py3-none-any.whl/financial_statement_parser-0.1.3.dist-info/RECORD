@@ -1,0 +1,9 @@
+financial_statement_parser/__init__.py,sha256=1QpEqzQbMdc1UiX-pNDn0IAcbZWZqepL3ZlGHnFjdX0,33
+financial_statement_parser/cli.py,sha256=AIe44V8-5n0Dax1gmbJto2PwjbR9QeSyyLEm9lNecBk,462
+financial_statement_parser/config.py,sha256=P3tKmdT3BlP-yn2IRuEOjpbIY-UsnyPkv0UP7RFd9Wc,121
+financial_statement_parser/parser.py,sha256=RwwFZE25Bk0n7MT_kIlUwAHHaPtiM7_2dHVSTPBOZIU,4586
+financial_statement_parser-0.1.3.dist-info/LICENSE.txt,sha256=yb8d0RSZFzR1Hi2dz-wK9e4UNBcXdFvtQBwR7rkSYvE,1069
+financial_statement_parser-0.1.3.dist-info/METADATA,sha256=xRLjkA2c_FjsMy7qOD3BFMz9oN9SvcvS1A7ezoIgd88,2226
+financial_statement_parser-0.1.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+financial_statement_parser-0.1.3.dist-info/entry_points.txt,sha256=pHTHoFjiicoIX0X9PtybYA76BaICtf0BckZ2sSONplI,65
+financial_statement_parser-0.1.3.dist-info/RECORD,,
