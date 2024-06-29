@@ -1,0 +1,10 @@
+blurhash_pyside/_core.cpython-311-x86_64-linux-gnu.so,sha256=T-k6UoeAPGK4nycThTHD5G9Y3mr6x1hHcHfbKi2aimQ,146800
+blurhash_pyside/_core.pyi,sha256=wi-gELLbbvfSNXw45uyTIU3EiEkGLzLHOmhs_cz3Dt8,207
+blurhash_pyside/__init__.py,sha256=jKDUjlQCzAe2dRWsXBRZFZvjugjnH4-HLfjw4dHwtww,446
+blurhash_pyside/_wrapper.py,sha256=l3Os6gOnFCCsDMI_RUdYsLsTuEvEN-uAlcMfLkO5-Xs,2310
+blurhash_pyside/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blurhash_pyside/errors.py,sha256=nH4yseJibpeux3EOmLu89BoV1iTsPEdAFnIEzdOawOc,187
+blurhash_pyside-0.2.0.dist-info/RECORD,,
+blurhash_pyside-0.2.0.dist-info/METADATA,sha256=V2ltP0F4uiDu7vIPJxoJHac2mGk1RlzN8IP724zua6M,3317
+blurhash_pyside-0.2.0.dist-info/WHEEL,sha256=TI-UXImmPUaaxzdwCrA9C3bokPpPQ_W_9OvHDt2v6-Y,156
+blurhash_pyside-0.2.0.dist-info/licenses/LICENSE,sha256=M_X0mOCYH1vS8vXv2sykPs4vxY08VacQDqvq-CO_2Ew,1072
