@@ -1,0 +1,7 @@
+q_alchemy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+q_alchemy/qiskit_integration.py,sha256=elyElRo_zUbnd3hfCl7Q9aNWKhLdxY5MM5hf9glb4gs,8220
+q_alchemy/qiskit_to_pennylane.py,sha256=6UPH2Qe5a-Q4vl2k6U-8oMbQHfqlIlZ-WxzmYKYzJ1Q,4309
+q_alchemy_sdk_py-0.2.8.dist-info/METADATA,sha256=L-rShT1waS51KlM-escKEzL4DppamztWAgICh5p4LUM,3453
+q_alchemy_sdk_py-0.2.8.dist-info/WHEEL,sha256=SOP-4bEE0jbVaCHQGVvF08uWxk5rcSsfEybvoQVHlD8,90
+q_alchemy_sdk_py-0.2.8.dist-info/licenses/LICENSE,sha256=_0DaideWMJhqlqn6PDwJOtLcwqz_i5mSFxJsvAvB8Io,11556
+q_alchemy_sdk_py-0.2.8.dist-info/RECORD,,
