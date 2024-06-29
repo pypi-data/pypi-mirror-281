@@ -1,0 +1,12 @@
+romer_midibot/MPU.py,sha256=uLMH35RynA-ZygWkRm85Orebqs838y7KJYwX5nbKre4,8654
+romer_midibot/__init__.py,sha256=CFScOU7fgSdskVkWuj0SIq_mV88JxhnbqaZ6RrBUH24,264
+romer_midibot/default_configs.py,sha256=_WN0CBPImHpnTP7PrUnEx1bx-ItHn1O0jrDrYGuHOgs,2226
+romer_midibot/midibot.py,sha256=O2GCERgCTBwS_ca8qOIxpaXPI1WcEK8vRQVnbdXkQmw,19986
+romer_midibot/sensors.py,sha256=BBe2cZThehFGkxgMhADIw9xCG5JLaGRjSVfpEnJdlGA,10595
+romer_midibot/serial_comm.py,sha256=CH1IUH8IQJcqrQ4PNk5F87TFF73BmpSeYqPN5atkKYI,5739
+romer_midibot/socket_comm.py,sha256=_Ek0kN1qWPUzPuvMxu53pvMhUS77adnMZoS1CDf-3QU,3719
+romer_midibot-1.1.1.dist-info/LICENSE,sha256=te1eMZk7kLvxlEt31cKdKVQ1rI3hLebmjgvRuN1skIo,11562
+romer_midibot-1.1.1.dist-info/METADATA,sha256=9x8LNoBHkxCFy1FgdPp3Ln_rfUfaBss4fXFniRjsr7k,626
+romer_midibot-1.1.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+romer_midibot-1.1.1.dist-info/top_level.txt,sha256=FW5Rmx2jUYQdhsu4dJ4KHsFes7BNT4qBeOursm43aTs,14
+romer_midibot-1.1.1.dist-info/RECORD,,
