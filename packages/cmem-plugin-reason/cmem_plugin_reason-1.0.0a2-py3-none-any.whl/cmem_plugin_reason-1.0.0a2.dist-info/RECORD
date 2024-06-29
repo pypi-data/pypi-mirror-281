@@ -1,0 +1,10 @@
+cmem_plugin_reason/__init__.py,sha256=t8H97wu7qPufFrPXVM-WtNW7X4Lxztl2K2GSEQopXMM,28
+cmem_plugin_reason/bin/robot.jar,sha256=PREvR6XC6C_ZbCvEDlgqhtHmrST2dkjvED7F8hmFul4,93636279
+cmem_plugin_reason/obofoundry.png,sha256=Avosn3DezlxMIR5Y_WaPu8KQCpRMMg2G06TYK0S7MWw,10037
+cmem_plugin_reason/plugin_reason.py,sha256=eVPnqjb_RCeC55jhs4k-U01954wjnn9XCFUMILrJp4Q,13942
+cmem_plugin_reason/plugin_validate.py,sha256=4iLID_Y6173RrExD4FfTbkvNGVUDzxg19lz10XwArzg,8803
+cmem_plugin_reason/utils.py,sha256=H-bi8IMHQcpTdM9CJPBPpTjYQL6lvPOlKvFLVTnYrGs,3483
+cmem_plugin_reason-1.0.0a2.dist-info/LICENSE,sha256=5t6lcWcFU3TBO5wwq9PYNbgzfVfFUuL-80v5BTGuuMQ,11334
+cmem_plugin_reason-1.0.0a2.dist-info/METADATA,sha256=pC5KySgUKVV2ns9-ktnKAVHNIVfr5atu4twoXorGtY8,1296
+cmem_plugin_reason-1.0.0a2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cmem_plugin_reason-1.0.0a2.dist-info/RECORD,,
