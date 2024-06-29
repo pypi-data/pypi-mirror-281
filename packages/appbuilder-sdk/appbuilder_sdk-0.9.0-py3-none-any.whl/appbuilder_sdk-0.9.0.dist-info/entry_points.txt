@@ -1,0 +1,2 @@
+[console_scripts]
+appbuilder_bce_deploy = appbuilder.utils.bce_deploy:deploy
