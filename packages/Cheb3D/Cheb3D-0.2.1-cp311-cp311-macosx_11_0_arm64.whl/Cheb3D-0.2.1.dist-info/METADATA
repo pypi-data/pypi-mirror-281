@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: Cheb3D
+Version: 0.2.1
+Summary: fitting function with Chebichev polynomial on spectral grid
+Author: Marco Mancini
+Author-email: Marco Mancini <marco.mancini@obspm.fr>, Jerome Novak <jerome.novak@astro.unistra.fr>, Eric Gourgoulhon <eric.gourgoulhon@obspm.fr>
+Maintainer-email: Marco Mancini <marco.mancini@obspm.fr>
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Cheb3D library
+
+## Installation
+
+### Compile the C++ library
+
+- Install the package [fftw3](https://www.fftw.org/) (devel version).
+- Compile the library
+```bash
+cd Chab3D/Lib
+make
+```
+
+### Create a virtual environment and source it
+```bash
+cd ..
+python -m virtualenv venv
+source venv/bin/activate
+pip install cython
+```
+
+### Cythonize the library
+```bash
+python setup.py build_ext --inplace
+```
+
+
+### Test it
+```bash
+export LD_LIBRARY_PATH=./Lib
+python Test/verif.py
+```
+
+### Notes
+A try to explain how the library works is given in [Test_explaination.md](Test_explaination.md)
+
+
+
+
+
+
+## Packaging in PIP:
+
+``` bash
+pip install wheel
+```
+
+``` bash
+python setup.py sdist bdist_wheel
+```
+This will create two packages in the directory `dist/`:
+.A file .tar.gz (source distribution)
+.A file .whl (built distribution)
+
+### Chargiing on PyPI
+
+``` bash
+pip install twine
+```
+
+then
+
+``` bash
+twine upload dist/*
+
+```
