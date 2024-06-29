@@ -1,0 +1,35 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "py -m build",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "publish",
+      "type": "shell",
+      "command": "py -m twine upload --repository testpypi dist/*",
+      "problemMatcher": []
+    },
+    {
+      "label": "generate input",
+      "type": "shell",
+      "command": "datamodel-codegen --url https://cranfield-university-aedg.github.io/Pages/FLOPS/schemas/input.json --output src/FLOPS_modern_interface/input.py",
+      "problemMatcher": []
+    },
+    {
+      "label": "generate output",
+      "type": "shell",
+      "command": "datamodel-codegen --url https://cranfield-university-aedg.github.io/Pages/FLOPS/schemas/output.json --output src/FLOPS_modern_interface/output.py",
+      "problemMatcher": []
+    }
+  ]
+}

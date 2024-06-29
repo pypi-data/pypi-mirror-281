@@ -1,0 +1,25 @@
+[project]
+name = "FLOPS_modern_interface"
+version = "0.0.2"
+authors = [
+  { name="Sergio Jimeno", email="s.jimeno@cranfield.ac.uk" },
+]
+description = "Python pydantic classes for FLOPS input/output and web service"
+readme = "README.md"
+requires-python = ">=3.11.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "pydantic>=2.7.4",
+  "requests>=2.32"
+]
+
+[project.urls]
+Homepage = "https://cranfield-university-aedg.github.io/Pages/"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
