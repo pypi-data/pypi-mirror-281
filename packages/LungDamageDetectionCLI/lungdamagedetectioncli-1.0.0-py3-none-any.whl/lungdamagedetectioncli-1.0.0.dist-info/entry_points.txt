@@ -1,0 +1,3 @@
+[console_scripts]
+ldd-cli = main:run_cli
+

@@ -1,0 +1,11 @@
+data.py,sha256=U62pGdelFjPZ2bskHg6FZYcyZGVlZlhSWdXkFzJy4bg,3048
+lungdamagedetectioncli-1.0.0.dist-info/METADATA,sha256=4Rp71kzT6bDuu68O57DyO0xgB20BxNJXIp2veg6qUOk,4942
+lungdamagedetectioncli-1.0.0.dist-info/WHEEL,sha256=SOP-4bEE0jbVaCHQGVvF08uWxk5rcSsfEybvoQVHlD8,90
+lungdamagedetectioncli-1.0.0.dist-info/entry_points.txt,sha256=vIagtpS7JKComCfDz_l2frRBBZ4XAgFkrXYVotOdqF8,42
+lungdamagedetectioncli-1.0.0.dist-info/licenses/LICENSE,sha256=8PeA4YfbXu7ar8vYHfno0Da_IrqIq3jIIZ6zF6fM-aU,1084
+main.py,sha256=SP8Grb3kALlY4nVTFIg0DtHWd0j2aOeZGI6V_Oj91Vs,5411
+model.py,sha256=H8DAGqCi0-U-VK040RBda6LOJ3-2OYr8WwJ3wclffAA,9453
+settings.py,sha256=E082beZ3r2yX3mjZlrZ9mXqewawb02AKP_e36RWvp0A,6900
+tester.py,sha256=Lm6h0_j0OY1sdVU77h7siO7MtpKJnK5rxJKbC14z8qY,1386
+trainer.py,sha256=D-u9Oa4eoNkpMJXzgTKYtutiSjY3xeFK_KBUlG-513k,3008
+lungdamagedetectioncli-1.0.0.dist-info/RECORD,,
