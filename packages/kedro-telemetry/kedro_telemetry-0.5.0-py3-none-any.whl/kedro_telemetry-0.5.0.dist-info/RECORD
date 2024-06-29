@@ -1,0 +1,8 @@
+kedro_telemetry/__init__.py,sha256=wS9huBitHLG1T2aQKgg6JxmoQ0eLKv5CA89i4D_Z04Y,75
+kedro_telemetry/masking.py,sha256=zaw52Ob-4SMQ5eTCZF5ubouxBWinJzWF28FrIt1whSY,4722
+kedro_telemetry/plugin.py,sha256=OyMkH4EF2EW3C_ZD_i5MHA1VGq6gL-VJb9Qrvi5XI84,14149
+kedro_telemetry-0.5.0.dist-info/METADATA,sha256=zUhDyWeZsU5Y05aAfXZQuSSOvTIBDWKp3lf2msGi0PA,5435
+kedro_telemetry-0.5.0.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+kedro_telemetry-0.5.0.dist-info/entry_points.txt,sha256=aLClKxGTBYbqFteV4UURCZfcYyyiA_VbHowraB2YbUo,139
+kedro_telemetry-0.5.0.dist-info/top_level.txt,sha256=HDdei9GQSt1X8gm3RQhQdzTVs8XL2vIr0VGI5isNEHs,16
+kedro_telemetry-0.5.0.dist-info/RECORD,,
