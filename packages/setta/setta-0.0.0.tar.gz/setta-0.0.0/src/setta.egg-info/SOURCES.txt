@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/setta/__init__.py
+src/setta.egg-info/PKG-INFO
+src/setta.egg-info/SOURCES.txt
+src/setta.egg-info/dependency_links.txt
+src/setta.egg-info/top_level.txt
