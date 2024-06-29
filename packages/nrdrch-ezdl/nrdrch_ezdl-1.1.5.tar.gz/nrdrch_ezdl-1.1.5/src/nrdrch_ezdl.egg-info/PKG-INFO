@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: nrdrch-ezdl
+Version: 1.1.5
+Summary: yt-dlp wrapper for ultimate simplicity
+Home-page: https://github.com/nrdrch/nrdrch-ezdl
+Author: Lukas H
+Author-email: nrdrch@proton.com
+Project-URL: Bug Tracker, https://github.com/nrdrch/nrdrch-ezdl/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich>=13.7.1
+Requires-Dist: toml>=0.10.2
+Requires-Dist: yt-dlp>=2024.5.27
+
+# ezdl
+just another yt-dlp wrapper for even more simplicity with rich styling and loading animations.
+
+![](https://i.imgur.com/yLlcVOA.png)
+
+#### Dependencies
+[Python](https://www.python.org/downloads/)
+## Installation
+You can install ezdl using pip:
+
+```pwsh
+pip install nrdrch-ezdl
+```
+## usage examples:
+- Download a Youtube video (this will Ignore the rest of the playlist by default)
+```pwsh
+ezdl video https://youtu.be/dQw4w9WgXcQ
+```
+- just the audio
+```
+ezdl audio https://youtu.be/dQw4w9WgXcQ
+```
+- Download the whole playlist if the link leads to a playlist
+```
+ezdl video https://youtu.be/dQw4w9WgXcQ?list=PLE0hg-LdSfycrpTtMImPSqFLle4yYNzWD wp
+```
+- just the audio but the whole playlist
+```
+ezdl audio https://youtu.be/dQw4w9WgXcQ?list=PLE0hg-LdSfycrpTtMImPSqFLle4yYNzWD wp
+```
+- open locations by their name (settings, audio or video)
+```
+ezdl open settings
+```
