@@ -1,0 +1,4 @@
+[console_scripts]
+behavysis_make_classifier=behavysis_pipeline.__main__:make_behav_classifier
+behavysis_make_project=behavysis_pipeline.__main__:make_project
+
