@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: financial-statement-parser
+Version: 0.1.4
+Summary: 
+Author: Xavier Armitage
+Author-email: xavier.armitage@databricks.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pytz (>=2024.1,<2025.0)
+Description-Content-Type: text/markdown
+
+# Financial Statement Parser
+
+Financial Statement Parser is a Python package for processing financial statement data. It parses structured financial data, performs calculations, and generates rolled-up financial reports.
+
+## Features
+- Parse financial statement data from text files
+- Calculate rolled-up totals for financial categories
+- Generate formatted financial reports
+- Command-line interface for easy processing
+
+## Installation
+### Using pip
+```bash
+pip install financial-statements-parser
+```
+
+### Using poetry
+```bash
+poetry add financial-statements-parser
+```
+
+### Using Docker
+```bash
+docker build -t fs-parser .
+```
+
+## Usage
+### As a Python package
+```python
+from financial_statement_parser import process_file
+process_file('input_financial_data.txt', 'output_report.txt')
+```
+
+### Command-line interface
+```bash 
+fs-parser input_financial_data.txt -o output_report.txt
+```
+
+### Using Docker
+```bash
+docker run -v /path/to/your/local/directory:/path/to/your/container/directory fs-parser:latest examples/input/example_balance_sheet.txt -o /path/to/your/container/directory/output.txt
+```
+This command mounts your local directory to a defined directory in the container. Adjust the paths as necessary.
+
+For example:
+```bash
+docker run -v $HOME/Dropbox:/root/Dropbox fs-parser:latest examples/input/example_balance_sheet.txt -o /root/Dropbox/test/output.txt
+```
+
+To run the help message
+```bash
+docker run zaxier/fs-parser:latest --help
+```
+
+## Development
+To set up the development environment:
+1. Clone the repository:
+```bash
+git clone https://github.com/zaxier/financial-statement-parser.git
+cd financial-parser
+```
+2. Install dependencies:
+```bash
+poetry install
+```
+
+3. Run tests:
+```bash
+poetry run pytest
+```
+
+# References 
+- Claude - https://claude.ai/chat/40054fdd-4c36-41c5-b899-697f8d64cc0b
+
