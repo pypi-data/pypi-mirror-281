@@ -1,0 +1,83 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ICM RUN",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "ICM Update",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["update"],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "ICM Info",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "icm-run.py",
+            "args": ["info"],
+            //"console": "internalConsole",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "Clear terminal",
+        },
+        {
+            "name": "ICM install",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "icm-run.py",
+            "args": ["install","Collection-Jedi"],
+            //"console": "internalConsole",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "Clear terminal",
+        },
+        {
+            "name": "LIST",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "icm-run.py",
+            "args": ["lsgit"],
+            //"console": "internalConsole",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "Clear terminal",
+        },
+        {
+            "name": "ICM ls",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "icm-run.py",
+            "args": ["ls"],
+            //"console": "internalConsole",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "Clear terminal",
+        },
+        {
+            "name": "ICM rm",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "icm-run.py",
+            "args": ["rm","iceK"],
+            //"console": "internalConsole",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "Clear terminal",
+        }
+    ]
+}
+
