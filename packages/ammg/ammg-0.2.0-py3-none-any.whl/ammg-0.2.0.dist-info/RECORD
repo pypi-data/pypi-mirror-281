@@ -1,0 +1,12 @@
+ammg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ammg/ammg.py,sha256=ZZQ1MoW-yn20inZmyKN1raTTt1c_uogmlKh8SQU591g,12011
+ammg/ammg_cache.py,sha256=HjpOBYeiz72QiFYrsRhHOaB-UMoHnt4PjLhBZALHsVY,2644
+ammg/ammg_config.py,sha256=dfCf762P3eVISyxLOFy5TVZKYXMgyiX4qrUIoSBprpw,1203
+ammg/api_work.py,sha256=2TFULXNnctkhnYFWfxDN46Vq2IuM-gTF0kx3gw3tQGo,5487
+ammg/embed_metadata_to_file.py,sha256=dBdQkBFiC8-KMvycDpZpWo-VLRbY1j-yD0C1yr3O9tg,6714
+ammg/get_apple_music_token.py,sha256=tFpGgnZKJFnbWiiMV-sEclil0QqjmTlFgSQ0Rv5THrg,2763
+ammg-0.2.0.dist-info/METADATA,sha256=fPLrviAnppHw4jMGke37pu8Yy_plFFijP9EpjCvZkcU,43618
+ammg-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ammg-0.2.0.dist-info/entry_points.txt,sha256=2bvNmI6zl6LKWmfauR8oyGgAE7f2Qrn9C3vSc2s8JNo,40
+ammg-0.2.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ammg-0.2.0.dist-info/RECORD,,
