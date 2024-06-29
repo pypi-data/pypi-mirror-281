@@ -1,0 +1,9 @@
+README.md
+setup.py
+wapsok/__init__.py
+wapsok/main.py
+wapsok.egg-info/PKG-INFO
+wapsok.egg-info/SOURCES.txt
+wapsok.egg-info/dependency_links.txt
+wapsok.egg-info/requires.txt
+wapsok.egg-info/top_level.txt
