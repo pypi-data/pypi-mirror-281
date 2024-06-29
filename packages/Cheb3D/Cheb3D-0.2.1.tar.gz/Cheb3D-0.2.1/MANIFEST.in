@@ -1,0 +1,5 @@
+include README.md
+include Cheb3D/*.hpp
+include Cheb3D/*.cpp
+include Cheb3D/*.pxd
+include Cheb3D/*.pyx

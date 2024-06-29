@@ -1,0 +1,19 @@
+[build-system]
+requires = ['setuptools',"cython"]
+build-backend = 'setuptools.build_meta'
+
+
+[project]
+name='Cheb3D'
+version="0.2.1"
+description="fitting function with Chebichev polynomial on spectral grid"
+readme="README.md"
+requires-python = ">=3.8"
+authors = [
+	{name = "Marco Mancini", email = "marco.mancini@obspm.fr" },
+	{name = "Jerome Novak", email = "jerome.novak@astro.unistra.fr" },
+	{name = "Eric Gourgoulhon", email = "eric.gourgoulhon@obspm.fr" }
+]
+maintainers = [
+	    {name = "Marco Mancini", email = "marco.mancini@obspm.fr"}
+	    ]
