@@ -1,0 +1,47 @@
+[project]
+name = "nestml-server"
+description = "A server instance for NESTML"
+license = { file = "LICENSE" }
+authors = [
+  {name = "Sebastian Spreizer", email = "spreizer@web.de"},
+]
+readme = "README.md"
+requires-python = ">=3.8"
+# keywords = ["spiking neuronal networks", "simulation", "NEST", "model generation", custom model"]
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 4 - Beta",
+
+  # Indicate who your project is intended for
+  "Intended Audience :: End Users/Desktop",
+  "Intended Audience :: Science/Research",
+
+  "Topic :: Education",
+
+  # Pick your license as you wish (see also "license" above)
+  "License :: OSI Approved :: MIT License",
+
+  # Specify the Python versions you support here.
+  "Programming Language :: Python :: 3",
+]
+dependencies = [
+  "flask",
+  "flask-cors",
+  "gunicorn",
+  "nestml>=7.0",
+]
+dynamic = ["version"]
+
+[project.urls]
+repository = "https://github.com/babsey/nestml-server"
+documentation = "https://nestml.readthedocs.io"
+
+[tool.setuptools]
+package-dir = {"nestml_server" = "src"}
+script-files = ["scripts/nestml-server"]
+
+[tool.setuptools.dynamic]
+version = {attr = "src.__version__"}
