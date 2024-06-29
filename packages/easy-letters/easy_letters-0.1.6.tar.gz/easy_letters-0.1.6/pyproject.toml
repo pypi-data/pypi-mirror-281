@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "easy-letters"
+version = "0.1.6"
+description = "A Python package for generating draft application letters using generative AI"
+authors = ["Hassan Abedi <hassan.abedi.t@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "easy_letters", from = "." }]
+include = ["README.md", "LICENSE"]
+license = "MIT"
+repository = "https://github.com/habedi/easy-letters"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.16.1"
+qdrant-client = "^1.8.2"
+pandas = { version = "^2.2.2", optional = true }
+jupyter = { version = "^1.0.0", optional = true }
+pytest = { version = "^8.2.2", optional = true }
+black = { version = "^24.4.2", optional = true }
+pytest-cov = { version = "^5.0.0", optional = true }
+poetry-dynamic-versioning = { version = "^1.4.0", optional = true }
+tiktoken = { version = "^0.7.0", optional = true }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+versioning = "semver"  # Semantic Versioning
+
+[tool.poetry.extras]
+test = ["pytest", "pytest-cov", "black", "pandas"]
+dev = ["pytest", "pytest-cov", "black", "jupyter",
+    "tiktoken", "pandas", "poetry-dynamic-versioning"]
