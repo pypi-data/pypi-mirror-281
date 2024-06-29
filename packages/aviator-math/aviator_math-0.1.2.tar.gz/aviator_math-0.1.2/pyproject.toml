@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "aviator-math"
+version = "0.1.2"
+description = "Library used for math part of aviator project"
+authors = ["Gleb Grinchik <gleb.grinchik@celadon.ae>"]
+readme = "lib_desc.md"
+packages = [{include = "aviator_math"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.1.1"
+numpy = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

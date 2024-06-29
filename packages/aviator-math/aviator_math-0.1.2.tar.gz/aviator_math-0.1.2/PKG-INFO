@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: aviator-math
+Version: 0.1.2
+Summary: Library used for math part of aviator project
+Author: Gleb Grinchik
+Author-email: gleb.grinchik@celadon.ae
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# aviator-math
+
+## Usage
+
+- Library containing math functions used in aviator project
+
+## Coefficient generation
+
+To generate coefficients used in game 
+use coef_generation.generate_coefficient() function
+
+
