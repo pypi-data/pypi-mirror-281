@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+romer_midibot/MPU.py
+romer_midibot/__init__.py
+romer_midibot/default_configs.py
+romer_midibot/midibot.py
+romer_midibot/sensors.py
+romer_midibot/serial_comm.py
+romer_midibot/socket_comm.py
+romer_midibot.egg-info/PKG-INFO
+romer_midibot.egg-info/SOURCES.txt
+romer_midibot.egg-info/dependency_links.txt
+romer_midibot.egg-info/requires.txt
+romer_midibot.egg-info/top_level.txt
