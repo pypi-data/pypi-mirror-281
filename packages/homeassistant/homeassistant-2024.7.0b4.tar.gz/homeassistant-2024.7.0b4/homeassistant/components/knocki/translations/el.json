@@ -1,0 +1,15 @@
+{
+    "entity": {
+        "event": {
+            "knocki": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "triggered": "\u03a0\u03c5\u03c1\u03bf\u03b4\u03bf\u03c4\u03ae\u03b8\u03b7\u03ba\u03b5"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
