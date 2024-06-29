@@ -1,0 +1,14 @@
+itk/SimpleITKFiltersPython.py,sha256=cJBHi-R4oWo5VNRrWU-aM75j6eexPW8zdVaf2g4JuNc,2343
+itk/_SimpleITKFiltersPython.abi3.so,sha256=mQ7H1ecnFGQ01div2lvu7SO7uNtUoUueThQnf3hptc4,7242368
+itk/itkDICOMOrientImageFilterPython.py,sha256=vdqh5dxuDB3LFSr1V1fokEDLxdfHkhErk09XLbRkl7E,69994
+itk/itkDICOMOrientationPython.py,sha256=BkN-dtiH2LesuIGWb63Pf5zYaeBaB0atzBIqfKH6ujQ,11791
+itk/itkHessianImageFilterPython.py,sha256=lO1QqVpS1LbEIMuA_jq0dUFeIH8_uW4RPtjeC0ZCQ90,45314
+itk/itkNPasteImageFilterPython.py,sha256=rhJlHuIeEYvPLGVS_fC8BK-LEqQsaDuhpfAc6UC16N0,283664
+itk/itkObjectnessImageFilterPython.py,sha256=VBDSX00vKUx0YjZYeCpDw2GIYUML3_t1sa2xeIot2hk,40709
+itk/Configuration/SimpleITKFiltersConfig.py,sha256=XxyRRliSllQiYcurolYyw8UfarvbXESZIhfIUQAC_c8,10777
+itk/Configuration/SimpleITKFilters_snake_case.py,sha256=vy0wmLeU3SnKTGW0fgNTxyrW0_k1HXTUgNoCN-CaMKk,138
+itk_simpleitkfilters-1.0.0.dist-info/LICENSE,sha256=qsc7MUj20dcRHbyjIJn2jSbGRMaBOuHk8F9leaomY_4,11360
+itk_simpleitkfilters-1.0.0.dist-info/METADATA,sha256=9VMQxfSbVoGMg9QERpy1y804Due9Y3av6mcD2RmsjDo,1696
+itk_simpleitkfilters-1.0.0.dist-info/WHEEL,sha256=V6XYSkl3hGpA327R-096mQkKmqFZjh8INZLF0MuRok4,105
+itk_simpleitkfilters-1.0.0.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_simpleitkfilters-1.0.0.dist-info/RECORD,,
