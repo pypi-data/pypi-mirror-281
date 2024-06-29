@@ -1,0 +1,10 @@
+pycryptoex/__version__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+pycryptoex/_cli.py,sha256=q9-r9rd536ZFXkrvbm3Hbw4e_3y54Bj98OWJswMZFsg,2213
+pycryptoex/base/exceptions.py,sha256=IdPxC7go2BSdJHSr_2VFU9MvWbK-kc8R36aZR6e1kDY,205
+pycryptoex/base/exchange.py,sha256=VUTLz55HHRMJiaeGuEerBFi5mzit3PSAZiXWodXVkRw,3001
+pycryptoex/base/utils.py,sha256=ryym2D3SQDg98xsBkS2Pw5hAWT2ZIlz60ZZvaR6bWhA,626
+pycryptoex-0.2.0.dist-info/METADATA,sha256=5wxipXc_ZGWfwWRwL2rMUDs9nGboKBjW2ZM_yez_97I,2213
+pycryptoex-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pycryptoex-0.2.0.dist-info/entry_points.txt,sha256=vq4061cgpNs5UiYj4ezHkuqLHjYah9bv_qHpMgspCd8,51
+pycryptoex-0.2.0.dist-info/licenses/LICENSE,sha256=yPwqYEF9P21Q7U6MMKcds7kIy4xYWK4FgKyS1T5LLjs,1064
+pycryptoex-0.2.0.dist-info/RECORD,,
