@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pyfilecrypto
+Version: 0.2.0
+Summary: A module for file encryption and decryption
+Home-page: https://github.com/zshn1248/pyfilecrypto
+Author: Muhammad Zeeshan Saeed
+Author-email: zshn1248@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: cryptography
+
+# PyFileCrypto
+
+PyFileCrypto is a Python module for easy encryption and decryption of files using the `cryptography` library. It provides a simple interface to generate encryption keys, encrypt files, and decrypt files securely.
+
+## Installation
+
+You can install PyFileCrypto using pip:
+
+```bash
+pip install pyfilecrypto
+```
+
+## Usage
+### Generate Encryption Key and Encrypt File
+``` python
+from pyfilecrypto import crypto
+crypto.encFile("test.txt", "test.enc", "my_secret.key")
+```
+
+### Decrypt a File
+``` python
+from pyfilecrypto import crypto
+crypto.decFile("test.enc", "test.txt", "my_secret.key")
+```
+### Generate Encryption Key and Encrypt File
+``` python
+from pyfilecrypto.crypto import *
+crypt(filename = "test.txt", method = "encrypt")
+```
+### Decrypt
+```python
+from pyfilecrypto.crypto import *
+crypt(filename = "test.txt", method = "decrypt")
+```
