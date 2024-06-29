@@ -1,0 +1,15 @@
+[project]
+name="pygpas"
+version="0.0.1"
+authors=[
+    {name="Siemens"}
+]
+
+description="A library for executing gPROMS Packaged Activities."
+license={text="This library is provided with the standard gPROMS license."}
+# This is strict because it depends on gO:Python
+requires-python="~=3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
