@@ -1,0 +1,9 @@
+blocks/__init__.py,sha256=SKddptWmRbFHOkVhzasL45R3egPTSG692BeKmbEs5MQ,73
+blocks/models.py,sha256=Pi-L13Pr8UEQxY0fZDZtzO8RH3zM9YjePUxdSDDog_4,2996
+blocks/pipeline.py,sha256=XQdhuU5-B-TDvqcS04CyHiUXf2xr38Wwy6BTJYVgKzU,17220
+blocks/transformers.py,sha256=-wLGbUvrDVyxqPaty3ri4C_kqUAh2hGg2tUdBAm1cT8,4435
+blocks/union.py,sha256=C6MHlNAQST00Cm70JEl9JONKWKejiYEdGHPVj0r3cGw,4241
+python_blocks-0.1.6.dist-info/LICENSE,sha256=21uLyapFHtmAwFu9xSuBgWtL49QtMIzTmI9Lq0w94MI,1502
+python_blocks-0.1.6.dist-info/METADATA,sha256=Uaatdu2VCc4TjJWCcWva2PebuqLh4uPM6hRu1hpC7cs,6111
+python_blocks-0.1.6.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+python_blocks-0.1.6.dist-info/RECORD,,
