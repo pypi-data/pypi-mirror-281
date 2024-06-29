@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: itk-simpleitkfilters
+Version: 1.0.0
+Summary: This module contains a collension of ITK Filters used by SimpleITK. These filter are usefull to SimpleITK in that they may wrap existing ITK filters with an interface expected by SimpleITK, or may add important basic filters needed for completeness.
+Home-page: https://itk.org/
+Download-URL: https://github.com/SimpleITK/ITKSimpleITKFilters
+Author: SimpleITK
+Author-email: itk+community@discourse.itk.org
+License: Apache
+Keywords: ITK InsightToolkit
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C++
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: Android
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+License-File: LICENSE
+Requires-Dist: itk (~=5.4.0)
+
+ITK is an open-source, cross-platform library that provides developers with an extensive suite of software tools for image analysis. Developed through extreme programming methodologies, ITK employs leading-edge algorithms for registering and segmenting multidimensional scientific images.
