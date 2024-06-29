@@ -1,0 +1,6 @@
+src/__init__.py,sha256=v1ciJYERIpU-mpH9Nl9gGlxob_N2m_J6GEZ-wTHoHGg,33
+src/mysqlwrap.py,sha256=0RCc1nd1-5d1EMgGuupGqH3MaI50bTwzTVy17n0wkFI,26449
+mysql_wrap-1.0.3.dist-info/METADATA,sha256=rSAEpJsaiWTSHO1tDPuXVwJxUIAhaPsSsQMMGGyaoxA,5271
+mysql_wrap-1.0.3.dist-info/WHEEL,sha256=KGYbc1zXlYddvwxnNty23BeaKzh7YuoSIvIMO4jEhvw,87
+mysql_wrap-1.0.3.dist-info/licenses/LICENSE,sha256=_jkHc2ptqw2bnDZ0pKS0c7Y4F2j9WFvTXsUw3BStWjg,75
+mysql_wrap-1.0.3.dist-info/RECORD,,
