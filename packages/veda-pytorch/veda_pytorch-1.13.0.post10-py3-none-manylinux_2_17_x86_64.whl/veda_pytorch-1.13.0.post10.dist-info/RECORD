@@ -1,0 +1,8 @@
+veda/pytorch/__init__.py, sha256=ZlxwBNSC9gj0M-kDloW5EB13rFzpyIIhGQbXXO1JkCg, 18
+veda/pytorch/lib.py, sha256=z6wkZTeoi-lzpJxr7EKpqoEG4dHVN2F1bUYq1LD3R4Y, 4685
+veda/pytorch/lib64/libveda-pytorch.so, sha256=LjjjRe9Qdq98PdQbB1llPhod76eXvfiLbi9UTFZ3JwY, 1160136
+veda_pytorch-1.13.0.post10.dist-info/LICENSE, sha256=YnSGopDGJS9GdQ5iKK7kjgkcB9tcrtgilusqFvMPfNc, 1531
+veda_pytorch-1.13.0.post10.dist-info/METADATA, sha256=tCGi9kUtWkKQYo2r0zE7cEGKxbg84bgNoWX4mk7uhqs, 2971
+veda_pytorch-1.13.0.post10.dist-info/top_list.txt, sha256=sgW9QjJvB2Gdb2yhdOJEHj-4tk_N4N82wUwPpJvPMnY, 12
+veda_pytorch-1.13.0.post10.dist-info/WHEEL, sha256=Z_SeuDPw5PWl5IFwR12_fMgeQyPPOeoXlq9F0dYmNw8, 105
+veda_pytorch-1.13.0.post10.dist-info/RECORD, , 
