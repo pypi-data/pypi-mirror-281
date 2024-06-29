@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+st_justgage/__init__.py
+st_justgage.egg-info/PKG-INFO
+st_justgage.egg-info/SOURCES.txt
+st_justgage.egg-info/dependency_links.txt
+st_justgage.egg-info/requires.txt
+st_justgage.egg-info/top_level.txt
+st_justgage/frontend/build/bootstrap.min.css
