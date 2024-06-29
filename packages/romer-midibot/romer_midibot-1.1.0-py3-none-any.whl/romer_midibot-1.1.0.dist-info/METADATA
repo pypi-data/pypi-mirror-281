@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: romer-midibot
+Version: 1.1.0
+Summary: A Python API for Romer's MIDIbot
+Author: Omar Habib
+Author-email: omar1farouk@gmail.com
+License: Apache License 2.0
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyserial
+
+# romer_midibot PYTHON API 
+
+This is the Python API for MIDIbot. It can be used as a stand-alone Python API to perform basic interactions with MIDIbot or together with ROS2 packages for more complex tasks.
