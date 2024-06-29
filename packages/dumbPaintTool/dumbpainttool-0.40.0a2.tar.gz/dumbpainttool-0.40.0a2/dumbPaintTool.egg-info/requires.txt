@@ -1,0 +1,3 @@
+pyTermTk>=0.40.0a1
+pyperclip
+Pillow
