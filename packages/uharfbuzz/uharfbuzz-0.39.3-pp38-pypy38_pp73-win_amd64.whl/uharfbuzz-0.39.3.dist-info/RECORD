@@ -1,0 +1,9 @@
+uharfbuzz/__init__.py,sha256=lzvolaCgP_y3FrKC4apwnrWzPeuU9mToFv1khJDS8sQ,140
+uharfbuzz/_harfbuzz.pypy38-pp73-win_amd64.pyd,sha256=5sFKce3LjhrbN-4LQKr2kWQ0URpTbHQcGLD1YX9cGMc,2636800
+uharfbuzz/_harfbuzz_test.pypy38-pp73-win_amd64.pyd,sha256=eXKiM9B9YMrC5_VeudV6J8GjL-JlbnusLdwd9K6_5JM,16384
+uharfbuzz/_version.py,sha256=kyZMIAK3uxXRGovL8ffeCKLHO1VRDfL3NL1yvhiV6Bk,429
+uharfbuzz-0.39.3.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+uharfbuzz-0.39.3.dist-info/METADATA,sha256=1ziKAkaTI-T6HVxRkwN1XTceXMWlgKqgywUXjyYbBwI,2401
+uharfbuzz-0.39.3.dist-info/WHEEL,sha256=sR6XQXghR2d24Ojt2R0TkaHIHmR1UL7d76qmRbqQzLs,106
+uharfbuzz-0.39.3.dist-info/top_level.txt,sha256=7cR_9qHUIY8Tbh9RlhqonIA5WhZTP7Fus2kSo6wEM-I,10
+uharfbuzz-0.39.3.dist-info/RECORD,,
