@@ -1,0 +1,7 @@
+Metadata-Version: 2.3
+Name: pygpas
+Version: 0.0.1
+Summary: A library for executing gPROMS Packaged Activities.
+Author: Siemens
+License: This library is provided with the standard gPROMS license.
+Requires-Python: ~=3.11
