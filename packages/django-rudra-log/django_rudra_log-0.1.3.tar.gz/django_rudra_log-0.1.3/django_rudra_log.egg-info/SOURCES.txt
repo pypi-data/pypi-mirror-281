@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+django_rudra_log.egg-info/PKG-INFO
+django_rudra_log.egg-info/SOURCES.txt
+django_rudra_log.egg-info/dependency_links.txt
+django_rudra_log.egg-info/requires.txt
+django_rudra_log.egg-info/top_level.txt
+rudra_log/__init__.py
+rudra_log/apis.py
+rudra_log/helpers.py
+rudra_log/middleware.py
+rudra_log/ua_middleware.py
+rudra_log/ua_utils.py
+rudra_log/utils.py
