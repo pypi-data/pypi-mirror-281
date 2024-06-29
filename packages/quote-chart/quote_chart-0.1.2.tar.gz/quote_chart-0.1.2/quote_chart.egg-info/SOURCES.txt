@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+quote_chart.py
+setup.py
+quote_chart.egg-info/PKG-INFO
+quote_chart.egg-info/SOURCES.txt
+quote_chart.egg-info/dependency_links.txt
+quote_chart.egg-info/requires.txt
+quote_chart.egg-info/top_level.txt
